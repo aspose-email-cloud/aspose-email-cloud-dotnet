@@ -3,3 +3,5 @@
 /src/bin/Debug
 /src/.vs
 /src/Aspose.Email-Cloud.csproj.user
+/src/obj/Release
+/src/bin/Release
