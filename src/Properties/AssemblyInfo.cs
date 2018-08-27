@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Aspose.Email-Cloud")]
-[assembly: AssemblyDescription("Aspose.Email Cloud SDK")]
+[assembly: AssemblyTitle("Aspose.Email Cloud SDK for .NET")]
+[assembly: AssemblyDescription("Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats. It lets developers manipulate message formats such as Outlook MSG, EML and MHT files.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Aspose Pty Ltd")]
-[assembly: AssemblyProduct("Aspose.Email Cloud SDK")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyProduct("Aspose.Email Cloud SDK for .NET")]
+[assembly: AssemblyCopyright("Copyright (c) 2002-2018 Aspose Pty Ltd")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

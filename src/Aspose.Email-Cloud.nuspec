@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Aspose.Email-Cloud</id>
+    <version>18.07</version>
+    <title>Aspose.Email Cloud SDK for .NET</title>
+    <authors>Aspose.Email team</authors>
+	<owners>Aspose Pty Ltd</owners>
+    <licenseUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</projectUrl>
+    <iconUrl>https://www.aspose.cloud/templates/aspose/App_Themes/V3/images/header/aspose_email-for-cloud.png</iconUrl>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+		Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats. 
+		It lets developers manipulate message formats such as Outlook MSG, EML and MHT files.
+	</description>
+    <releaseNotes/>
+    <copyright>Copyright (c) 2002-2018 Aspose Pty Ltd</copyright>
+    <tags>ASPOSE EMAIL CLOUD SDK Outlook MSG EML and MHT</tags>
+    <dependencies>
+        <dependency id="RestSharp" version="105.1.0" />
+        <dependency id="Newtonsoft.Json" version="11.0.2" />
+    </dependencies>
+  </metadata>
+</package>
