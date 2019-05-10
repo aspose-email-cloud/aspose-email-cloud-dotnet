@@ -12,12 +12,13 @@ From the command line:
 	npm install @asposecloud/aspose-email-cloud --save
 
 # Licensing
-All Aspose.Email for Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
+All Aspose.Email Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
 
 # Resources
 + [**Website**](https://www.aspose.cloud)
 + [**Product Home**](https://products.aspose.cloud/Email/cloud)
 + [**Documentation**](https://docs.aspose.cloud/display/Emailcloud/Home)
++ [**API Reference**](https://apireference.aspose.cloud/email/)
 + [**Free Support Forum**](https://forum.aspose.cloud/c/email)
 + [**Paid Support Helpdesk**](https://helpdesk.aspose.cloud/)
 + [**Blog**](https://blog.aspose.cloud/category/aspose-products/aspose-email-cloud/)
