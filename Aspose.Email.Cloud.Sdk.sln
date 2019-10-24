@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Email-Cloud", "Aspose.Email-Cloud.csproj", "{87DC0C34-B5E3-47F7-A994-DA23A8685885}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Email.Cloud.Sdk", "Aspose.Email.Cloud.Sdk\Aspose.Email.Cloud.Sdk.csproj", "{87DC0C34-B5E3-47F7-A994-DA23A8685885}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
