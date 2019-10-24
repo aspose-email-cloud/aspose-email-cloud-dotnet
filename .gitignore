@@ -1,8 +1,8 @@
-﻿/src/packages
-/src/obj/Debug
-/src/bin/Debug
-/src/.vs
-/src/Aspose.Email-Cloud.csproj.user
-/src/obj/Release
-/src/bin/Release
-.idea/
+﻿/Aspose.Email.Cloud.Sdk/packages
+/Aspose.Email.Cloud.Sdk/obj/Debug
+/Aspose.Email.Cloud.Sdk/bin/Debug
+/Aspose.Email.Cloud.Sdk/.vs
+/Aspose.Email.Cloud.Sdk/Aspose.Email-Cloud.csproj.user
+/Aspose.Email.Cloud.Sdk/obj/
+/Aspose.Email.Cloud.Sdk/bin/
+/Aspose.Email.Cloud.Sdk/.idea/
