@@ -1,99 +1,128 @@
-using System;
-using System.Reflection;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright company="Aspose" file="Configuration.cs">
+//   Copyright (c) 2018-2019 Aspose Pty Ltd. All rights reserved.
+// </copyright>
+// <summary>
+//   Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+// 
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+// 
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
 
 namespace Aspose.Email.Cloud.Sdk.Client
 {
+    using System;
+
     /// <summary>
-    /// Represents a set of configuration settings
+    /// Represents a set of configuration settings.
     /// </summary>
     public class Configuration
     {
-  
+        #region Consts
+
         /// <summary>
-        /// Version of the package.
+        /// The default base URL
         /// </summary>
-        /// <value>Version of the package.</value>
-        public const string Version = "1.0.0";
-  
+        private const string DefaultBaseUrl = "https://api.aspose.cloud/";
+
         /// <summary>
-        /// Gets or sets the default API client for making HTTP calls.
+        /// The default API version
         /// </summary>
-        /// <value>The API client.</value>
-        public static ApiClient DefaultApiClient = new ApiClient();
-  
+        private const string DefaultApiVersion = "v3.0";
+
+        #endregion
+
+        #region Fields
+
         /// <summary>
-        /// Gets or sets the username (HTTP basic authentication).
+        /// The API base URL
         /// </summary>
-        /// <value>The username.</value>
-        public static String Username { get; set; }
-  
+        private string apiBaseUrl = DefaultBaseUrl;
+
+        #endregion
+
+        #region Properties
+
         /// <summary>
-        /// Gets or sets the password (HTTP basic authentication).
+        /// Aspose Cloud API base URL.
         /// </summary>
-        /// <value>The password.</value>
-        public static String Password { get; set; }
-  
-        /// <summary>
-        /// Gets or sets the API key based on the authentication name.
-        /// </summary>
-        /// <value>The API key.</value>
-        public static Dictionary<String, String> ApiKey = new Dictionary<String, String>();
-  
-        /// <summary>
-        /// Gets or sets the prefix (e.g. Token) of the API key based on the authentication name.
-        /// </summary>
-        /// <value>The prefix of the API key.</value>
-        public static Dictionary<String, String> ApiKeyPrefix = new Dictionary<String, String>();
-  
-        private static string _tempFolderPath = Path.GetTempPath();
-  
-        /// <summary>
-        /// Gets or sets the temporary folder path to store the files downloaded from the server.
-        /// </summary>
-        /// <value>Folder path.</value>
-        public static String TempFolderPath
+        public string ApiBaseUrl
         {
-            get { return _tempFolderPath; }
-  
-            set 
+            get => apiBaseUrl;
+
+            set
             {
-                if (String.IsNullOrEmpty(value))
+                if (value.StartsWith("v1") || value.StartsWith("v2"))
                 {
-                    _tempFolderPath = value;
-                    return;
+                    throw new Exception("This SDK is intended to be used only with API v3 " +
+                                        "and higher due to breaking changes!");
                 }
-      
-                // create the directory if it does not exist
-                if (!Directory.Exists(value)) 
-                    Directory.CreateDirectory(value);
-      
-                // check if the path contains directory separator at the end
-                if (value[value.Length - 1] == Path.DirectorySeparatorChar)
-                    _tempFolderPath = value;
-                else
-                    _tempFolderPath = value  + Path.DirectorySeparatorChar;
+
+                this.apiBaseUrl = value;
+                if (!this.apiBaseUrl.EndsWith("/"))
+                {
+                    this.apiBaseUrl += "/";
+                }
             }
         }
-  
+
         /// <summary>
-        /// Returns a string with essential information for debugging.
+        /// Gets or sets the API version.
         /// </summary>
-        public static String ToDebugReport()
+        /// <value>
+        /// The API version.
+        /// </value>
+        public string ApiVersion { get; set; } = DefaultApiVersion;
+
+        /// <summary>
+        /// Gets or sets the app key.
+        /// </summary>
+        public string AppKey { get; set; }
+
+        /// <summary>
+        /// Gets or sets the app sid.
+        /// </summary>
+        public string AppSid { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether debug mode.
+        /// </summary>
+        public bool DebugMode { get; set; } = false;
+
+        /// <summary>
+        /// If you use custom on-premise server with metered license.
+        /// This way, you only need to specify the API base URL.
+        /// </summary>
+        public bool OnPremise { get; set; } = false;
+
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Gets the API root URL.
+        /// </summary>
+        /// <returns></returns>
+        internal string GetApiRootUrl()
         {
-            String report = "C# SDK (Aspose.Email.Cloud.Sdk) Debug Report:\n";
-            report += "    OS: " + Environment.OSVersion + "\n";
-            report += "    .NET Framework Version: " + Assembly
-                     .GetExecutingAssembly()
-                     .GetReferencedAssemblies()
-                     .Where(x => x.Name == "System.Core").First().Version.ToString()  + "\n";
-            report += "    Version of the API: 1.1\n";
-            report += "    SDK Package Version: 1.0.0\n";
-  
-            return report;
+            return this.ApiBaseUrl + this.ApiVersion;
         }
+
+        #endregion
     }
 }

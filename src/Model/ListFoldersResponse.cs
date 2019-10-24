@@ -34,14 +34,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
   using Newtonsoft.Json.Converters;
 
   /// <summary>
-  /// Response object with array of mailbox folders.
+  /// Email account folders list
   /// </summary>  
-  public class ListFoldersResponse : SaaSposeResponse 
+  public class ListFoldersResponse : AsposeResponse 
   {                       
         /// <summary>
-        /// Gets or sets array of mailbox folders.
+        /// Gets or sets Value
         /// </summary>  
-        public List<MailServerFolder> Folders { get; set; }
+        public List<MailServerFolder> Value { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -51,7 +51,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class ListFoldersResponse {\n");
-          sb.Append("  Folders: ").Append(this.Folders).Append("\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -23,14 +23,15 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.Collections.Generic;
+using System.Collections.Specialized;
+
 namespace Aspose.Email.Cloud.Sdk
 {
     using RestSharp.Contrib;
     using System;
-    using System.Text.RegularExpressions;
-    using System.Web;
 
-    internal class UrlHelper
+    internal static class UrlHelper
     {
         public static string AddPathParameter(string url, string parameterName, object parameterValue)
         {
@@ -69,9 +70,21 @@ namespace Aspose.Email.Cloud.Sdk
             var uriBuilder = new UriBuilder(url);
             var query = HttpUtility.ParseQueryString(uriBuilder.Query);
             query.Add(parameterName, parameterValue.ToString());
-            uriBuilder.Query = query.ToString();
+            uriBuilder.Query = ToUrlQuery(query);
 
             return uriBuilder.ToString();
+        }
+        
+        private static string ToUrlQuery(NameValueCollection query)
+        {
+            var parts = new List<string>();
+            foreach (var key in query.AllKeys)
+            {
+                parts.Add($"{key}={HttpUtility.UrlEncode(query[key])}");
+            }
+            return string.Join(
+                "&",
+                parts.ToArray());
         }
     }
 }

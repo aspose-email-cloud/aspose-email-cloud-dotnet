@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ApiExceptionRequestHandler.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2019 Aspose Pty Ltd. All rights reserved.
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,57 +23,82 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Aspose.Email.Cloud.Sdk.RequestHandlers
+namespace Aspose.Email.Cloud.Sdk.Client.Internal.RequestHandlers
 {
     using System;
     using System.IO;
     using System.Net;
 
-    using Aspose.Email.Cloud.Sdk.Model;
+    using Client;
 
+    /// <summary>
+    /// API exception request handler
+    /// </summary>
+    /// <seealso cref="Aspose.Email.Cloud.Sdk.Client.Internal.RequestHandlers.IRequestHandler" />
     internal class ApiExceptionRequestHandler : IRequestHandler
     {
+        #region Methods
+
+        /// <summary>
+        /// Processes the URL.
+        /// </summary>
+        /// <param name="url">The URL.</param>
+        /// <returns>Processed URL.</returns>
         public string ProcessUrl(string url)
         {
             return url;
         }
 
+        /// <summary>
+        /// Processes parameters before sending.
+        /// </summary>
+        /// <param name="request">The request.</param>
+        /// <param name="streamToSend">The stream to send.</param>
         public void BeforeSend(WebRequest request, Stream streamToSend)
-        {            
+        {
         }
 
+        /// <summary>
+        /// Processes the response.
+        /// </summary>
+        /// <param name="response">The response.</param>
+        /// <param name="resultStream">The result stream.</param>
         public void ProcessResponse(HttpWebResponse response, Stream resultStream)
         {
-            if (response.StatusCode != System.Net.HttpStatusCode.OK)
+            if (response.StatusCode != HttpStatusCode.OK)
             {
                 this.ThrowApiException(response, resultStream);
             }
         }
 
+        /// <summary>
+        /// Throws the API exception.
+        /// </summary>
+        /// <param name="webResponse">The web response.</param>
+        /// <param name="resultStream">The result stream.</param>
+        /// <exception cref="Aspose.Email.Cloud.Sdk.Client.ApiException"></exception>
         private void ThrowApiException(HttpWebResponse webResponse, Stream resultStream)
         {
-            Exception resutException;
+            Exception resultException;
+            string responseData = null;
             try
             {
                 resultStream.Position = 0;
                 using (var responseReader = new StreamReader(resultStream))
-                {                    
-                    var responseData = responseReader.ReadToEnd();
-                    var errorResponse = (EmailApiErrorResponse)SerializationHelper.Deserialize(responseData, typeof(EmailApiErrorResponse));
-                    if (string.IsNullOrEmpty(errorResponse.Message))
-                    {
-                        errorResponse.Message = responseData;
-                    }
-
-                    resutException = new ApiException((int)webResponse.StatusCode, errorResponse.Message);
+                {
+                    responseData = responseReader.ReadToEnd();
+                    var error = SerializationHelper.Deserialize<ApiErrorModel>(responseData);
+                    resultException = new ApiException((int)webResponse.StatusCode, error.Error.Message, error.Error);
                 }
-            }          
+            }
             catch (Exception)
             {
-                throw new ApiException((int)webResponse.StatusCode, webResponse.StatusDescription);
+                resultException = new ApiException((int)webResponse.StatusCode, responseData ?? webResponse.StatusDescription);
             }
 
-            throw resutException;
+            throw resultException;
         }
+
+        #endregion
     }
 }

@@ -39,12 +39,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
   public class EmailDocument 
   {                       
         /// <summary>
-        /// Gets or sets links that originate from this document.
+        /// Links that originate from this document.
         /// </summary>  
         public List<Link> Links { get; set; }
 
         /// <summary>
-        /// Gets or sets list of document property.
+        /// List of document properties.
         /// </summary>  
         public EmailProperties DocumentProperties { get; set; }
 

@@ -23,6 +23,9 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Aspose.Email.Cloud.Sdk.Client;
+using Aspose.Email.Cloud.Sdk.Client.Internal.RequestHandlers;
+
 namespace Aspose.Email.Cloud.Sdk
 {
     using System;
@@ -42,7 +45,7 @@ namespace Aspose.Email.Cloud.Sdk
         {
             var sdkVersion = this.GetType().Assembly.GetName().Version;
             this.AddDefaultHeader(AsposeClientHeaderName, ".net sdk");
-            this.AddDefaultHeader(AsposeClientVersionHeaderName, string.Format("{0}.{1}", sdkVersion.Major, sdkVersion.Minor));
+            this.AddDefaultHeader(AsposeClientVersionHeaderName, $"{sdkVersion.Major}.{sdkVersion.Minor}");
             this.requestHandlers = requestHandlers;
         }
         
@@ -54,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk
             Dictionary<string, object> formParams = null,
             string contentType = "application/json")
         {
-            return this.InvokeInternal(path, method, false, body, headerParams, formParams, contentType) as string;
+            return InvokeInternal(path, method, false, body, headerParams, formParams, contentType) as string;
         }
 
         public Stream InvokeBinaryApi(
@@ -65,20 +68,20 @@ namespace Aspose.Email.Cloud.Sdk
             Dictionary<string, object> formParams,
             string contentType = "application/json")
         {
-            return (Stream)this.InvokeInternal(path, method, true, body, headerParams, formParams, contentType);
+            return (Stream)InvokeInternal(path, method, true, body, headerParams, formParams, contentType);
         }                     
        
         public FileInfo ToFileInfo(Stream stream, string paramName)
         {
-            // TODO: add contenttype
+            // TODO: add contentType
             return new FileInfo { Name = paramName, FileContent = StreamHelper.ReadAsBytes(stream) };
         }                 
 
         private static byte[] GetMultipartFormData(Dictionary<string, object> postParameters, string boundary)
         {
-            // TOOD: stream is not disposed
+            // TODO: stream is not disposed
             Stream formDataStream = new MemoryStream();
-            bool needsClrf = false;
+            var needsCrLf = false;
 
             if (postParameters.Count > 1)
             {
@@ -86,22 +89,17 @@ namespace Aspose.Email.Cloud.Sdk
                 {
                     // Thanks to feedback from commenters, add a CRLF to allow multiple parameters to be added.
                     // Skip it on the first parameter, add it to subsequent parameters.
-                    if (needsClrf)
+                    if (needsCrLf)
                     {
                         formDataStream.Write(Encoding.UTF8.GetBytes("\r\n"), 0, Encoding.UTF8.GetByteCount("\r\n"));
                     }
 
-                    needsClrf = true;
+                    needsCrLf = true;
 
-                    if (param.Value is FileInfo)
+                    if (param.Value is FileInfo fileInfo)
                     {
-                        var fileInfo = (FileInfo)param.Value;
-                        string postData =
-                            string.Format(
-                                "--{0}\r\nContent-Disposition: form-data; name=\"{1}\"; filename=\"{1}\"\r\nContent-Type: {2}\r\n\r\n",
-                                boundary,
-                                param.Key,
-                                fileInfo.MimeType);
+                        var postData =
+                            $"--{boundary}\r\nContent-Disposition: form-data; name=\"{param.Key}\"; filename=\"{param.Key}\"\r\nContent-Type: {fileInfo.MimeType}\r\n\r\n";
                         formDataStream.Write(Encoding.UTF8.GetBytes(postData), 0, Encoding.UTF8.GetByteCount(postData));
 
                         // Write the file data directly to the Stream, rather than serializing it to a string.
@@ -110,21 +108,17 @@ namespace Aspose.Email.Cloud.Sdk
                     else
                     {
                         string stringData;
-                        if (param.Value is string)
+                        if (param.Value is string value)
                         {
-                            stringData = (string)param.Value;
+                            stringData = value;
                         }
                         else
                         {
                             stringData = SerializationHelper.Serialize(param.Value);
                         }
                         
-                        string postData =
-                            string.Format(
-                                "--{0}\r\nContent-Disposition: form-data; name=\"{1}\"\r\n\r\n{2}",
-                                boundary,
-                                param.Key,
-                                stringData);
+                        var postData =
+                            $"--{boundary}\r\nContent-Disposition: form-data; name=\"{param.Key}\"\r\n\r\n{stringData}";
                         formDataStream.Write(Encoding.UTF8.GetBytes(postData), 0, Encoding.UTF8.GetByteCount(postData));
                     }
                 }
@@ -137,10 +131,8 @@ namespace Aspose.Email.Cloud.Sdk
             {
                 foreach (var param in postParameters)
                 {
-                    if (param.Value is FileInfo)
+                    if (param.Value is FileInfo fileInfo)
                     {
-                        var fileInfo = (FileInfo)param.Value;
-
                         // Write the file data directly to the Stream, rather than serializing it to a string.
                         formDataStream.Write(fileInfo.FileContent, 0, fileInfo.FileContent.Length);
                     }
@@ -202,13 +194,13 @@ namespace Aspose.Email.Cloud.Sdk
             WebRequest request;
             try
             {
-                request = this.PrepareRequest(path, method, formParams, headerParams, body, contentType);
-                return this.ReadResponse(request, binaryResponse);
+                request = PrepareRequest(path, method, formParams, headerParams, body, contentType);
+                return ReadResponse(request, binaryResponse);
             }
             catch (NeedRepeatRequestException)
             {
-                request = this.PrepareRequest(path, method, formParams, headerParams, body, contentType);
-                return this.ReadResponse(request, binaryResponse);               
+                request = PrepareRequest(path, method, formParams, headerParams, body, contentType);
+                return ReadResponse(request, binaryResponse);               
             }            
         }       
         
@@ -222,7 +214,7 @@ namespace Aspose.Email.Cloud.Sdk
             {
                 if (formParams.Count > 1)
                 {
-                    string formDataBoundary = "Somthing";
+                    const string formDataBoundary = "Something";
                     client.ContentType = "multipart/form-data; boundary=" + formDataBoundary;
                     formData = GetMultipartFormData(formParams, formDataBoundary);
                 }
@@ -293,10 +285,7 @@ namespace Aspose.Email.Cloud.Sdk
             }
             finally
             {
-                if (streamToSend != null)
-                {
-                    streamToSend.Dispose();
-                }
+                streamToSend?.Dispose();
             }
             
             return client;
@@ -310,7 +299,7 @@ namespace Aspose.Email.Cloud.Sdk
             StreamHelper.CopyTo(webResponse.GetResponseStream(), resultStream);
             try
             {
-                this.requestHandlers.ForEach(p => p.ProcessResponse(webResponse, resultStream));
+                requestHandlers.ForEach(p => p.ProcessResponse(webResponse, resultStream));
 
                 resultStream.Position = 0;
                 if (binaryResponse)

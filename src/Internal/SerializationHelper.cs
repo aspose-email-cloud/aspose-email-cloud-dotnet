@@ -23,32 +23,38 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.Collections.Generic;
+using System.Reflection;
+using Aspose.Email.Cloud.Sdk.Client;
+
 namespace Aspose.Email.Cloud.Sdk
 {
     using System;
     using System.IO;
-
-    using Aspose.Email.Cloud.Sdk.Model;
-
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
 
-    internal class SerializationHelper
+    internal static class SerializationHelper
     {
         public static string Serialize(object obj)
         {
             try
             {
                 return obj != null
-                           ? JsonConvert.SerializeObject(
-                               obj,
-                               new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })
-                           : null;
+                    ? JsonConvert.SerializeObject(
+                        obj,
+                        new JsonSerializerSettings {NullValueHandling = NullValueHandling.Ignore})
+                    : null;
             }
             catch (Exception e)
             {
                 throw new ApiException(500, e.Message);
             }
+        }
+
+        public static T Deserialize<T>(string json)
+        {
+            return (T) Deserialize(json, typeof(T));
         }
 
         public static object Deserialize(string json, Type type)
@@ -57,7 +63,7 @@ namespace Aspose.Email.Cloud.Sdk
             {
                 if (json.StartsWith("{") || json.StartsWith("["))
                 {
-                    return JsonConvert.DeserializeObject(json, type, new ResponseConverter());
+                    return JsonConvert.DeserializeObject(json, type, new JsonTypeDeriveConverter());
                 }
 
                 System.Xml.XmlDocument xmlDoc = new System.Xml.XmlDocument();
@@ -72,17 +78,20 @@ namespace Aspose.Email.Cloud.Sdk
             {
                 throw new ApiException(500, jse.Message);
             }
-            catch (System.Xml.XmlException xmle)
+            catch (System.Xml.XmlException xmlException)
             {
-                throw new ApiException(500, xmle.Message);
+                throw new ApiException(500, xmlException.Message);
             }
         }
 
-        internal abstract class JsonCreationConverter<T> : JsonConverter
-        {            
+        private class JsonTypeDeriveConverter : JsonConverter
+        {
+            private const string TypeProperty = "Type";
+            private static Dictionary<string, Type> models;
+
             public override bool CanConvert(Type objectType)
             {
-                return typeof(T).IsAssignableFrom(objectType);
+                return objectType.GetProperty(TypeProperty) != null;
             }
 
             public override object ReadJson(
@@ -92,7 +101,7 @@ namespace Aspose.Email.Cloud.Sdk
                 JsonSerializer serializer)
             {
                 var jsonObject = JObject.Load(reader);
-                T target = this.Create(objectType, jsonObject);
+                var target = Create(jsonObject, objectType);
                 serializer.Populate(jsonObject.CreateReader(), target);
                 return target;
             }
@@ -105,31 +114,46 @@ namespace Aspose.Email.Cloud.Sdk
             /// <summary>
             /// Create an instance of objectType, based properties in the JSON object.
             /// </summary>
-            /// <param name="objectType">type of object expected.</param>
             /// <param name="jsonObject">
-            /// Contents of JSON object that will be deserialized.
+            ///     Contents of JSON object that will be deserialized.
             /// </param>
+            /// <param name="objectType"></param>
             /// <returns>An instance of objectType.</returns>
-            protected abstract T Create(Type objectType, JObject jsonObject);
-        }
-
-        internal class ResponseConverter : JsonCreationConverter<string>
-        {
-            public override bool CanWrite
+            private static object Create(JObject jsonObject, Type objectType)
             {
-                get
+                var properties = jsonObject.Properties();
+                var derivedTypeName = string.Empty;
+                foreach (var property in properties)
                 {
-                    return false;
+                    if (!property.Name.Equals(TypeProperty, StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        continue;
+                    }
+                    derivedTypeName = property.Value.ToString();
+                    break;
                 }
+                var isDerived = GetModels().TryGetValue(derivedTypeName, out var derivedType);
+                var type = isDerived ? derivedType : objectType;
+                return Activator.CreateInstance(type);
             }
 
-            protected override string Create(Type objectType, JObject jsonObject)
+            private static Dictionary<string, Type> GetModels()
             {
-                if (jsonObject["TextInputFormat"] != null || jsonObject["TextInputDefault"] != null)
+                if (models != null)
                 {
-                    return jsonObject["TextInputFormat"].ToString();
+                    return models;
                 }
-                throw new ApiException(500, "Can not determine formfield type.");
+
+                models = new Dictionary<string, Type>();
+                foreach (var type in Assembly.GetExecutingAssembly().GetTypes())
+                {
+                    if (type.Namespace != null && type.Namespace.Equals("Aspose.Email.Cloud.Sdk.Model", StringComparison.Ordinal))
+                    {
+                        models.Add(type.Name, type);
+                    }
+                }
+
+                return models;
             }
         }
     }

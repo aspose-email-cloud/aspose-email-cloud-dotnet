@@ -28,7 +28,7 @@ namespace Aspose.Email.Cloud.Sdk
     using System.IO;
     using System.Text;
 
-    internal class StreamHelper
+    internal static class StreamHelper
     {
         public static void CopyTo(Stream source, Stream destination, int bufferSize = 81920)
         {

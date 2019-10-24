@@ -34,7 +34,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
   using Newtonsoft.Json.Converters;
 
   /// <summary>
-  /// 
+  /// Email account folder
   /// </summary>  
   public class MailServerFolder 
   {                       

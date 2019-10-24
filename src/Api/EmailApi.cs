@@ -27,16 +27,18 @@ namespace Aspose.Email.Cloud.Sdk
 {
     using System.Collections.Generic;
     using System.Text.RegularExpressions;
-    using Aspose.Email.Cloud.Sdk.Model;
-    using Aspose.Email.Cloud.Sdk.Model.Requests;
-    using RequestHandlers;
+    using Model;
+    using Model.Requests;
+    using Client;
+    using Client.Internal.RequestHandlers;
+
     /// <summary>
     /// Aspose.Email for Cloud API.
     /// </summary>
     public class EmailApi
-    {        
+    {
         private readonly ApiInvoker apiInvoker;
-        private readonly Configuration configuration;     
+        private readonly Configuration configuration;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailApi"/> class.
@@ -54,340 +56,281 @@ namespace Aspose.Email.Cloud.Sdk
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailApi"/> class.
-        /// </summary>    
+        /// </summary>
         /// <param name="configuration">Configuration settings</param>
         public EmailApi(Configuration configuration)
         {
             this.configuration = configuration;
-            
-            var requestHandlers = new List<IRequestHandler>();
-            requestHandlers.Add(new OAuthRequestHandler(this.configuration));
-            requestHandlers.Add(new DebugLogRequestHandler(this.configuration));
-            requestHandlers.Add(new ApiExceptionRequestHandler());
-            requestHandlers.Add(new AuthWithSignatureRequestHandler(this.configuration));
-            this.apiInvoker = new ApiInvoker(requestHandlers);
-        }                            
+
+            var requestHandlers = new List<IRequestHandler>
+            {
+                new AuthRequestHandler(this.configuration),
+                new DebugLogRequestHandler(this.configuration),
+                new ApiExceptionRequestHandler()
+            };
+            apiInvoker = new ApiInvoker(requestHandlers);
+        }
 
         /// <summary>
-        /// Get document 
+        /// Adds an attachment to Email document 
         /// </summary>
-        /// <param name="request">Request. <see cref="EmailGetDocumentRequest" /></param> 
-        /// <returns><see cref="System.IO.Stream"/></returns>            
-        public System.IO.Stream EmailGetDocument(EmailGetDocumentRequest request)
+        /// <param name="request">Request. <see cref="AddEmailAttachmentRequest" /></param> 
+        /// <returns><see cref="EmailDocumentResponse"/></returns>
+        public EmailDocumentResponse AddEmailAttachment(Model.Requests.AddEmailAttachmentRequest request)
         {
-            // verify the required parameter 'name' is set
-            if (request.name == null) 
+            // verify the required parameter 'attachmentName' is set
+            if (request.attachmentName == null)
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling EmailGetDocument");
+                throw new ApiException(400, "Missing required parameter 'attachmentName' when calling AddEmailAttachment");
+            }
+
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'fileName' when calling AddEmailAttachment");
+            }
+
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'request' when calling AddEmailAttachment");
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{name}";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{fileName}/attachments/{attachmentName}";
             resourcePath = Regex
                         .Replace(resourcePath, "\\*", string.Empty)
                         .Replace("&amp;", "&")
                         .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            
-            try 
-            {                               
-                var response = this.apiInvoker.InvokeApi(
-                    resourcePath, 
-                    "GET", 
-                    null, 
-                    null, 
-                    null);
-                if (response != null)
-                {
-                    return (System.IO.Stream)SerializationHelper.Deserialize(response, typeof(System.IO.Stream));
-                }
-                    
-                return null;
-            } 
-            catch (ApiException ex) 
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "attachmentName", request.attachmentName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+            if (response != null)
             {
-                if (ex.ErrorCode == 404) 
-                {
-                    return null;
-                }
-                
-                throw;                
+                return (EmailDocumentResponse)SerializationHelper.Deserialize(response, typeof(EmailDocumentResponse));
             }
+
+            return null;
         }
 
         /// <summary>
-        /// Get email attachment 
+        /// Create an email document 
         /// </summary>
-        /// <param name="request">Request. <see cref="EmailGetEmailAttachmentRequest" /></param> 
-        /// <returns><see cref="System.IO.Stream"/></returns>            
-        public System.IO.Stream EmailGetEmailAttachment(EmailGetEmailAttachmentRequest request)
+        /// <param name="request">Request. <see cref="CreateEmailRequest" /></param> 
+        /// <returns><see cref="EmailDocumentResponse"/></returns>
+        public EmailDocumentResponse CreateEmail(Model.Requests.CreateEmailRequest request)
         {
-            // verify the required parameter 'name' is set
-            if (request.name == null) 
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling EmailGetEmailAttachment");
+                throw new ApiException(400, "Missing required parameter 'fileName' when calling CreateEmail");
             }
 
-            // verify the required parameter 'attachName' is set
-            if (request.attachName == null) 
+            // verify the required parameter 'request' is set
+            if (request.request == null)
             {
-                throw new ApiException(400, "Missing required parameter 'attachName' when calling EmailGetEmailAttachment");
+                throw new ApiException(400, "Missing required parameter 'request' when calling CreateEmail");
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{name}/attachments/{attachName}";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{fileName}";
             resourcePath = Regex
                         .Replace(resourcePath, "\\*", string.Empty)
                         .Replace("&amp;", "&")
                         .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "attachName", request.attachName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            
-            try 
-            {                               
-                var response = this.apiInvoker.InvokeApi(
-                    resourcePath, 
-                    "GET", 
-                    null, 
-                    null, 
-                    null);
-                if (response != null)
-                {
-                    return (System.IO.Stream)SerializationHelper.Deserialize(response, typeof(System.IO.Stream));
-                }
-                    
-                return null;
-            } 
-            catch (ApiException ex) 
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
             {
-                if (ex.ErrorCode == 404) 
-                {
-                    return null;
-                }
-                
-                throw;                
+                return (EmailDocumentResponse)SerializationHelper.Deserialize(response, typeof(EmailDocumentResponse));
             }
+
+            return null;
         }
 
         /// <summary>
-        /// Get email property 
+        /// Get email document 
         /// </summary>
-        /// <param name="request">Request. <see cref="EmailGetEmailPropertyRequest" /></param> 
-        /// <returns><see cref="System.IO.Stream"/></returns>            
-        public System.IO.Stream EmailGetEmailProperty(EmailGetEmailPropertyRequest request)
+        /// <param name="request">Request. <see cref="GetEmailRequest" /></param> 
+        /// <returns><see cref="EmailDocument"/></returns>
+        public EmailDocument GetEmail(Model.Requests.GetEmailRequest request)
+        {
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'fileName' when calling GetEmail");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{fileName}";
+            resourcePath = Regex
+                        .Replace(resourcePath, "\\*", string.Empty)
+                        .Replace("&amp;", "&")
+                        .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return (EmailDocument)SerializationHelper.Deserialize(response, typeof(EmailDocument));
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Get email attachment by name 
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailAttachmentRequest" /></param> 
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream GetEmailAttachment(Model.Requests.GetEmailAttachmentRequest request)
+        {
+            // verify the required parameter 'attachment' is set
+            if (request.attachment == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'attachment' when calling GetEmailAttachment");
+            }
+
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'fileName' when calling GetEmailAttachment");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{fileName}/attachments/{attachment}";
+            resourcePath = Regex
+                        .Replace(resourcePath, "\\*", string.Empty)
+                        .Replace("&amp;", "&")
+                        .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "attachment", request.attachment);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return (System.IO.Stream)SerializationHelper.Deserialize(response, typeof(System.IO.Stream));
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Get an email document property by its name 
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailPropertyRequest" /></param> 
+        /// <returns><see cref="EmailPropertyResponse"/></returns>
+        public EmailPropertyResponse GetEmailProperty(Model.Requests.GetEmailPropertyRequest request)
         {
             // verify the required parameter 'propertyName' is set
-            if (request.propertyName == null) 
+            if (request.propertyName == null)
             {
-                throw new ApiException(400, "Missing required parameter 'propertyName' when calling EmailGetEmailProperty");
+                throw new ApiException(400, "Missing required parameter 'propertyName' when calling GetEmailProperty");
             }
 
-            // verify the required parameter 'name' is set
-            if (request.name == null) 
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
             {
-                throw new ApiException(400, "Missing required parameter 'name' when calling EmailGetEmailProperty");
+                throw new ApiException(400, "Missing required parameter 'fileName' when calling GetEmailProperty");
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{name}/properties/{propertyName}";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{fileName}/properties/{propertyName}";
             resourcePath = Regex
                         .Replace(resourcePath, "\\*", string.Empty)
                         .Replace("&amp;", "&")
                         .Replace("/?", "?");
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "propertyName", request.propertyName);
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             
-            try 
-            {                               
-                var response = this.apiInvoker.InvokeApi(
-                    resourcePath, 
-                    "GET", 
-                    null, 
-                    null, 
-                    null);
-                if (response != null)
-                {
-                    return (System.IO.Stream)SerializationHelper.Deserialize(response, typeof(System.IO.Stream));
-                }
-                    
-                return null;
-            } 
-            catch (ApiException ex) 
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
             {
-                if (ex.ErrorCode == 404) 
-                {
-                    return null;
-                }
-                
-                throw;                
+                return (EmailPropertyResponse)SerializationHelper.Deserialize(response, typeof(EmailPropertyResponse));
             }
+
+            return null;
         }
 
         /// <summary>
-        /// Post add email attachment 
+        /// Set email document property value 
         /// </summary>
-        /// <param name="request">Request. <see cref="EmailPostAddEmailAttachmentRequest" /></param> 
-        /// <returns><see cref="EmailDocumentResponse"/></returns>            
-        public EmailDocumentResponse EmailPostAddEmailAttachment(EmailPostAddEmailAttachmentRequest request)
+        /// <param name="request">Request. <see cref="SetEmailPropertyRequest" /></param> 
+        /// <returns><see cref="EmailPropertyResponse"/></returns>
+        public EmailPropertyResponse SetEmailProperty(Model.Requests.SetEmailPropertyRequest request)
         {
-            // verify the required parameter 'name' is set
-            if (request.name == null) 
-            {
-                throw new ApiException(400, "Missing required parameter 'name' when calling EmailPostAddEmailAttachment");
-            }
-
-            // verify the required parameter 'attachName' is set
-            if (request.attachName == null) 
-            {
-                throw new ApiException(400, "Missing required parameter 'attachName' when calling EmailPostAddEmailAttachment");
-            }
-
-            // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{name}/attachments";
-            resourcePath = Regex
-                        .Replace(resourcePath, "\\*", string.Empty)
-                        .Replace("&amp;", "&")
-                        .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "attachName", request.attachName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            
-            try 
-            {                               
-                var response = this.apiInvoker.InvokeApi(
-                    resourcePath, 
-                    "POST", 
-                    null, 
-                    null, 
-                    null);
-                if (response != null)
-                {
-                    return (EmailDocumentResponse)SerializationHelper.Deserialize(response, typeof(EmailDocumentResponse));
-                }
-                    
-                return null;
-            } 
-            catch (ApiException ex) 
-            {
-                if (ex.ErrorCode == 404) 
-                {
-                    return null;
-                }
-                
-                throw;                
-            }
-        }
-
-        /// <summary>
-        /// Put creatw new email 
-        /// </summary>
-        /// <param name="request">Request. <see cref="EmailPutCreateNewEmailRequest" /></param> 
-        /// <returns><see cref="EmailDocumentResponse"/></returns>            
-        public EmailDocumentResponse EmailPutCreateNewEmail(EmailPutCreateNewEmailRequest request)
-        {
-            // verify the required parameter 'name' is set
-            if (request.name == null) 
-            {
-                throw new ApiException(400, "Missing required parameter 'name' when calling EmailPutCreateNewEmail");
-            }
-
-            // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{name}";
-            resourcePath = Regex
-                        .Replace(resourcePath, "\\*", string.Empty)
-                        .Replace("&amp;", "&")
-                        .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            var postBody = SerializationHelper.Serialize(request.email); // http body (model) parameter
-            try 
-            {                               
-                var response = this.apiInvoker.InvokeApi(
-                    resourcePath, 
-                    "PUT", 
-                    postBody, 
-                    null, 
-                    null);
-                if (response != null)
-                {
-                    return (EmailDocumentResponse)SerializationHelper.Deserialize(response, typeof(EmailDocumentResponse));
-                }
-                    
-                return null;
-            } 
-            catch (ApiException ex) 
-            {
-                if (ex.ErrorCode == 404) 
-                {
-                    return null;
-                }
-                
-                throw;                
-            }
-        }
-
-        /// <summary>
-        /// Put set email property 
-        /// </summary>
-        /// <param name="request">Request. <see cref="EmailPutSetEmailPropertyRequest" /></param> 
-        /// <returns><see cref="EmailPropertyResponse"/></returns>            
-        public EmailPropertyResponse EmailPutSetEmailProperty(EmailPutSetEmailPropertyRequest request)
-        {
-            // verify the required parameter 'name' is set
-            if (request.name == null) 
-            {
-                throw new ApiException(400, "Missing required parameter 'name' when calling EmailPutSetEmailProperty");
-            }
-
             // verify the required parameter 'propertyName' is set
-            if (request.propertyName == null) 
+            if (request.propertyName == null)
             {
-                throw new ApiException(400, "Missing required parameter 'propertyName' when calling EmailPutSetEmailProperty");
+                throw new ApiException(400, "Missing required parameter 'propertyName' when calling SetEmailProperty");
+            }
+
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'fileName' when calling SetEmailProperty");
+            }
+
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400, "Missing required parameter 'request' when calling SetEmailProperty");
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{name}/properties/{propertyName}";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{fileName}/properties/{propertyName}";
             resourcePath = Regex
                         .Replace(resourcePath, "\\*", string.Empty)
                         .Replace("&amp;", "&")
                         .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "propertyName", request.propertyName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            var postBody = SerializationHelper.Serialize(request.property); // http body (model) parameter
-            try 
-            {                               
-                var response = this.apiInvoker.InvokeApi(
-                    resourcePath, 
-                    "PUT", 
-                    postBody, 
-                    null, 
-                    null);
-                if (response != null)
-                {
-                    return (EmailPropertyResponse)SerializationHelper.Deserialize(response, typeof(EmailPropertyResponse));
-                }
-                    
-                return null;
-            } 
-            catch (ApiException ex) 
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
             {
-                if (ex.ErrorCode == 404) 
-                {
-                    return null;
-                }
-                
-                throw;                
+                return (EmailPropertyResponse)SerializationHelper.Deserialize(response, typeof(EmailPropertyResponse));
             }
+
+            return null;
         }
     }
 }

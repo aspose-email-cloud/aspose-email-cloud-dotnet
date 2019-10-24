@@ -36,7 +36,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
   /// <summary>
   /// Email document property DTO.
   /// </summary>  
-  public class MimeResponse : SaaSposeResponse 
+  public class MimeResponse : AsposeResponse 
   {                       
         /// <summary>
         /// Gets or sets base64 encoded mime content.

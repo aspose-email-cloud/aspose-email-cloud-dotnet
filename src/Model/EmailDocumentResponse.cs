@@ -34,12 +34,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
   using Newtonsoft.Json.Converters;
 
   /// <summary>
-  /// Email document property DTO.
+  /// An email document response
   /// </summary>  
-  public class EmailDocumentResponse : SaaSposeResponse 
+  public class EmailDocumentResponse : AsposeResponse 
   {                       
         /// <summary>
-        /// Gets or sets email document.
+        /// An email document requested
         /// </summary>  
         public EmailDocument Document { get; set; }
 

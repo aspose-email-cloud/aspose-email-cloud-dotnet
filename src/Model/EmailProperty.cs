@@ -39,12 +39,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
   public class EmailProperty 
   {                       
         /// <summary>
-        /// Gets or sets link that originate from this document.
+        /// Gets or sets Link
         /// </summary>  
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets name of email property.
+        /// Gets or sets Name
         /// </summary>  
         public string Name { get; set; }
 
