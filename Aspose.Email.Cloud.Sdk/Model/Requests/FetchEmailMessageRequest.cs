@@ -28,7 +28,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailClientApi.FetchEmailMessage" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.FetchEmailMessage" /> operation.
   /// </summary>
   public class FetchEmailMessageRequest  
   {

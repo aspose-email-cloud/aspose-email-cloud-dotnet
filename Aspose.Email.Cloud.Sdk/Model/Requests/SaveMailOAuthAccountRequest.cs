@@ -28,7 +28,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailClientApi.SaveMailOAuthAccount" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.SaveMailOAuthAccount" /> operation.
   /// </summary>
   public class SaveMailOAuthAccountRequest  
   {
