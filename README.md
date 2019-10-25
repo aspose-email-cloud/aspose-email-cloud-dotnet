@@ -15,6 +15,7 @@ From the command line:
 All Aspose.Email Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
 
 # Resources
++ [**SDK Reference documentation**](docs/README.md)
 + [**Website**](https://www.aspose.cloud)
 + [**Product Home**](https://products.aspose.cloud/Email/cloud)
 + [**Documentation**](https://docs.aspose.cloud/display/Emailcloud/Home)
