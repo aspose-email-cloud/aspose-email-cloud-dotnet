@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Link** | [**Link**](Link.md) |  | [optional] 
 **Name** | **string** |  | 
+**Value** | **Object** |  | 
 
 
 

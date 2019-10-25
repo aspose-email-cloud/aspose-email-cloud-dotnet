@@ -39,82 +39,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
   public class EmailAccountRequest 
   {
         /// <summary>
-        /// Email account security options
-        /// </summary>
-        /// <value>Email account security options</value>
-        [JsonConverter(typeof(StringEnumConverter))]
-        public enum SecurityOptionsEnum
-        { 
-            /// <summary>
-            /// Enum None for "None"
-            /// </summary>            
-            None,
-            
-            /// <summary>
-            /// Enum SSLExplicit for "SSLExplicit"
-            /// </summary>            
-            SSLExplicit,
-            
-            /// <summary>
-            /// Enum SSLImplicit for "SSLImplicit"
-            /// </summary>            
-            SSLImplicit,
-            
-            /// <summary>
-            /// Enum SSLAuto for "SSLAuto"
-            /// </summary>            
-            SSLAuto,
-            
-            /// <summary>
-            /// Enum Auto for "Auto"
-            /// </summary>            
-            Auto            
-        }
-
-        /// <summary>
-        /// Email account protocol type
-        /// </summary>
-        /// <value>Email account protocol type</value>
-        [JsonConverter(typeof(StringEnumConverter))]
-        public enum ProtocolTypeEnum
-        { 
-            /// <summary>
-            /// Enum IMAP for "IMAP"
-            /// </summary>            
-            IMAP,
-            
-            /// <summary>
-            /// Enum POP3 for "POP3"
-            /// </summary>            
-            POP3,
-            
-            /// <summary>
-            /// Enum SMTP for "SMTP"
-            /// </summary>            
-            SMTP,
-            
-            /// <summary>
-            /// Enum EWS for "EWS"
-            /// </summary>            
-            EWS,
-            
-            /// <summary>
-            /// Enum WebDav for "WebDav"
-            /// </summary>            
-            WebDav            
-        }
-
-        /// <summary>
-        /// Email account security options
-        /// </summary>
-        public SecurityOptionsEnum? SecurityOptions { get; set; }
-
-        /// <summary>
-        /// Email account protocol type
-        /// </summary>
-        public ProtocolTypeEnum? ProtocolType { get; set; }
-
-        /// <summary>
         /// Email account host
         /// </summary>  
         public string Host { get; set; }
@@ -128,6 +52,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// Email account login
         /// </summary>  
         public string Login { get; set; }
+
+        /// <summary>
+        /// Email account security options
+        /// </summary>  
+        public Object SecurityOptions { get; set; }
+
+        /// <summary>
+        /// Email account protocol type
+        /// </summary>  
+        public Object ProtocolType { get; set; }
 
         /// <summary>
         /// Email account description

@@ -49,6 +49,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Name { get; set; }
 
         /// <summary>
+        /// Gets or sets Value
+        /// </summary>  
+        public Object Value { get; set; }
+
+        /// <summary>
         /// Get the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -58,6 +63,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("class EmailProperty {\n");
           sb.Append("  Link: ").Append(this.Link).Append("\n");
           sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
