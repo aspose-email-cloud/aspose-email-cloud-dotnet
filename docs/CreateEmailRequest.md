@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EmailDocument** | [**EmailDocument**](EmailDocument.md) | An email document that should be created | 
-**StorageFolder** | [**StorageFolder**](StorageFolder.md) | Email document location in storage | [optional] 
+**StorageFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Email document location in storage | [optional] 
 
 
 

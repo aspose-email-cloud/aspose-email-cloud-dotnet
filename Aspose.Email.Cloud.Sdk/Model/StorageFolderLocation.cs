@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="StorageFolder.cs">
+// <copyright company="Aspose" file="StorageFolderLocation.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -36,7 +36,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
   /// <summary>
   /// A storage folder location information
   /// </summary>
-  public class StorageFolder 
+  public class StorageFolderLocation 
   {
         /// <summary>
         /// A storage name
@@ -55,7 +55,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class StorageFolder {\n");
+          sb.Append("class StorageFolderLocation {\n");
           sb.Append("  Storage: ").Append(this.Storage).Append("\n");
           sb.Append("  FolderPath: ").Append(this.FolderPath).Append("\n");
           sb.Append("}\n");

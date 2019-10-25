@@ -137,7 +137,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// A storage file location info to store email account
         /// </summary>  
-        public StorageFile StorageFile { get; set; }
+        public StorageFileLocation StorageFile { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object

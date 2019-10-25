@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="StorageFile2.cs">
+// <copyright company="Aspose" file="StorageFileLocation.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -34,34 +34,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
   using Newtonsoft.Json.Converters;
 
   /// <summary>
-  /// File or folder information
+  /// A storage file location information
   /// </summary>
-  public class StorageFile2 
+  public class StorageFileLocation : StorageFolderLocation 
   {
         /// <summary>
-        /// File or folder name.
+        /// A file name in storage
         /// </summary>  
-        public string Name { get; set; }
-
-        /// <summary>
-        /// True if it is a folder.
-        /// </summary>  
-        public bool? IsFolder { get; set; }
-
-        /// <summary>
-        /// File or folder last modified DateTime.
-        /// </summary>  
-        public DateTime? ModifiedDate { get; set; }
-
-        /// <summary>
-        /// File or folder size.
-        /// </summary>  
-        public long? Size { get; set; }
-
-        /// <summary>
-        /// File or folder path.
-        /// </summary>  
-        public string Path { get; set; }
+        public string FileName { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -70,12 +50,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class StorageFile2 {\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  IsFolder: ").Append(this.IsFolder).Append("\n");
-          sb.Append("  ModifiedDate: ").Append(this.ModifiedDate).Append("\n");
-          sb.Append("  Size: ").Append(this.Size).Append("\n");
-          sb.Append("  Path: ").Append(this.Path).Append("\n");
+          sb.Append("class StorageFileLocation {\n");
+          sb.Append("  FileName: ").Append(this.FileName).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

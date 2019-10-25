@@ -41,7 +41,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Files and folders contained by folder StorageFile.
         /// </summary>  
-        public List<StorageFile2> Value { get; set; }
+        public List<StorageFile> Value { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object

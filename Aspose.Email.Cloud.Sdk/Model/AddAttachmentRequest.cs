@@ -41,12 +41,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Storage folder location of document
         /// </summary>  
-        public StorageFolder DocumentFolder { get; set; }
+        public StorageFolderLocation DocumentFolder { get; set; }
 
         /// <summary>
         /// Storage folder location of an attachment
         /// </summary>  
-        public StorageFolder AttachmentFolder { get; set; }
+        public StorageFolderLocation AttachmentFolder { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object

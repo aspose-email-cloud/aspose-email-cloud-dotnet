@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **FirstAccount** | **string** |  | 
 **SecondAccount** | **string** |  | [optional] 
-**StorageFolder** | [**StorageFolder**](StorageFolder.md) |  | [optional] 
+**StorageFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) |  | [optional] 
 
 
 

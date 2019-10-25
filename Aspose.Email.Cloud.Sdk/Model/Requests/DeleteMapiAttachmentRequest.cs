@@ -45,7 +45,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="name">Document file name</param>
         /// <param name="attachment">Attachment name or index</param>
         /// <param name="storage">Document file storage location info</param>
-        public DeleteMapiAttachmentRequest(string name, string attachment, StorageFolder storage)
+        public DeleteMapiAttachmentRequest(string name, string attachment, StorageFolderLocation storage)
         {
             this.name = name;
             this.attachment = attachment;
@@ -65,6 +65,6 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Document file storage location info
         /// </summary>
-        public StorageFolder storage { get; set; }
+        public StorageFolderLocation storage { get; set; }
   }
 }

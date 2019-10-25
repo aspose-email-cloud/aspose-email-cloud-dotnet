@@ -36,7 +36,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
   /// <summary>
   /// File Version
   /// </summary>
-  public class FileVersion : StorageFile2 
+  public class FileVersion : StorageFile 
   {
         /// <summary>
         /// File Version ID.

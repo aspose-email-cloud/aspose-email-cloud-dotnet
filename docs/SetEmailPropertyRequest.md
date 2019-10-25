@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **EmailProperty** | [**EmailProperty**](EmailProperty.md) | An email property that should be updated | 
-**StorageFolder** | [**StorageFolder**](StorageFolder.md) | An email document location in storage | [optional] 
+**StorageFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | An email document location in storage | [optional] 
 
 
 

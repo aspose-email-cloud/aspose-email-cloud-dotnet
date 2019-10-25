@@ -41,7 +41,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Email document (*.eml) file location in storage
         /// </summary>  
-        public StorageFile EmailFile { get; set; }
+        public StorageFileLocation EmailFile { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object

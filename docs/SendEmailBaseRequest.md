@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EmailFile** | [**StorageFile**](StorageFile.md) | Email document (*.eml) file location in storage | 
+**EmailFile** | [**StorageFileLocation**](StorageFileLocation.md) | Email document (*.eml) file location in storage | 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **HierarchicalObject** | [**HierarchicalObject**](HierarchicalObject.md) | Hierarchical properties of document | 
-**StorageFolder** | [**StorageFolder**](StorageFolder.md) | Document location in storage | [optional] 
+**StorageFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Document location in storage | [optional] 
 
 
 

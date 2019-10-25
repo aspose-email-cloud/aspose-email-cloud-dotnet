@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **SecurityOptions** | **string** | Email account security options | 
 **ProtocolType** | **string** | Email account protocol type | 
 **Description** | **string** | Email account description | [optional] 
-**StorageFile** | [**StorageFile**](StorageFile.md) | A storage file location info to store email account | 
+**StorageFile** | [**StorageFileLocation**](StorageFileLocation.md) | A storage file location info to store email account | 
 
 
 

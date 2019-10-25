@@ -46,7 +46,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="memberName">Indexed property name</param>
         /// <param name="index">Property index path</param>
         /// <param name="request">Storage detail to specify iCalendar file location</param>
-        public DeleteCalendarPropertyRequest(string name, string memberName, string index, StorageFolder request)
+        public DeleteCalendarPropertyRequest(string name, string memberName, string index, StorageFolderLocation request)
         {
             this.name = name;
             this.memberName = memberName;
@@ -72,6 +72,6 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Storage detail to specify iCalendar file location
         /// </summary>
-        public StorageFolder request { get; set; }
+        public StorageFolderLocation request { get; set; }
   }
 }

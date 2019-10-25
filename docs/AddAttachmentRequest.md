@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**DocumentFolder** | [**StorageFolder**](StorageFolder.md) | Storage folder location of document | [optional] 
-**AttachmentFolder** | [**StorageFolder**](StorageFolder.md) | Storage folder location of an attachment | [optional] 
+**DocumentFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Storage folder location of document | [optional] 
+**AttachmentFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Storage folder location of an attachment | [optional] 
 
 
 
