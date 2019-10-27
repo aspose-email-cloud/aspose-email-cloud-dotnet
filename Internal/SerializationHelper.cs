@@ -65,10 +65,14 @@ namespace Aspose.Email.Cloud.Sdk
                 {
                     return JsonConvert.DeserializeObject(json, type, new JsonTypeDeriveConverter());
                 }
-
+                #if (XAMARIN_IOS10 || XAMARIN_MAC20 || MONOANDROID60)
+                throw new NotSupportedException("XML is not supported on this platform");
+                #else
                 System.Xml.XmlDocument xmlDoc = new System.Xml.XmlDocument();
                 xmlDoc.LoadXml(json);
                 return JsonConvert.SerializeXmlNode(xmlDoc);
+                #endif
+
             }
             catch (IOException e)
             {

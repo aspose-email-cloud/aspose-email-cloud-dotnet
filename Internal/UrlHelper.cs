@@ -28,6 +28,9 @@ using System.Collections.Specialized;
 #if (NET452 || NETSTANDARD2_0)
 using System.Web;
 #endif
+#if (XAMARIN_IOS10 || XAMARIN_MAC20 || MONOANDROID60)
+using System.Net;
+#endif
 
 namespace Aspose.Email.Cloud.Sdk
 {
@@ -73,7 +76,12 @@ namespace Aspose.Email.Cloud.Sdk
             }
 
             var uriBuilder = new UriBuilder(url);
+            #if (XAMARIN_IOS10 || XAMARIN_MAC20 || MONOANDROID60)
+            var query = HelpFunctions.ParseQueryString(uriBuilder.Query);
+            #else
             var query = HttpUtility.ParseQueryString(uriBuilder.Query);
+            #endif
+
             query.Add(parameterName, parameterValue.ToString());
             uriBuilder.Query = ToUrlQuery(query);
 
@@ -85,7 +93,12 @@ namespace Aspose.Email.Cloud.Sdk
             var parts = new List<string>();
             foreach (var key in query.AllKeys)
             {
-                parts.Add($"{key}={HttpUtility.UrlEncode(query[key])}");
+                #if (XAMARIN_IOS10 || XAMARIN_MAC20 || MONOANDROID60)
+                var value = WebUtility.UrlEncode(query[key]);
+                #else
+                var value = HttpUtility.UrlEncode(query[key]);
+                #endif
+                parts.Add($"{key}={value}");
             }
             return string.Join(
                 "&",

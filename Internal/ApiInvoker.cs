@@ -32,7 +32,7 @@ using Aspose.Email.Cloud.Sdk.Client.Internal.RequestHandlers;
 namespace Aspose.Email.Cloud.Sdk
 {
     using System;
-    using System.Collections.Generic;    
+    using System.Collections.Generic;
     using System.IO;
     using System.Net;
     using System.Text;
