@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="attachment">Attachment name or index</param>
         /// <param name="folder">Path to folder in storage</param>
         /// <param name="storage">Storage name</param>
-        public GetContactAttachmentRequest(int? format, string name, string attachment, string folder = null, string storage = null)
+        public GetContactAttachmentRequest(string format, string name, string attachment, string folder = null, string storage = null)
         {
             this.format = format;
             this.name = name;
@@ -59,7 +59,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Contact document format
         /// </summary>
-        public int? format { get; set; }
+        public string format { get; set; }
 
         /// <summary>
         /// Contact document file name

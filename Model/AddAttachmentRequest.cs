@@ -25,19 +25,18 @@
 
 namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using System;
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
-
-  /// <summary>
-  /// Add attachment request
-  /// </summary>
-  public class AddAttachmentRequest 
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// Add attachment request
+    /// </summary>
+    public class AddAttachmentRequest 
+    {
         /// <summary>
         /// Storage folder location of document
         /// </summary>  

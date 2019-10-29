@@ -25,19 +25,18 @@
 
 namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using System;
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
-
-  /// <summary>
-  /// A storage folder location information
-  /// </summary>
-  public class StorageFolderLocation 
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// A storage folder location information
+    /// </summary>
+    public class StorageFolderLocation 
+    {
         /// <summary>
         /// A storage name
         /// </summary>  

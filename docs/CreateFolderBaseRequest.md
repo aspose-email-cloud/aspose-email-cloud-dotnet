@@ -1,5 +1,4 @@
 # Model.CreateFolderBaseRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

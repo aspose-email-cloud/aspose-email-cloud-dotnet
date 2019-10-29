@@ -25,19 +25,18 @@
 
 namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using System;
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
-
-  /// <summary>
-  /// File upload result
-  /// </summary>
-  public class FilesUploadResult 
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// File upload result
+    /// </summary>
+    public class FilesUploadResult 
+    {
         /// <summary>
         /// List of uploaded file names
         /// </summary>  

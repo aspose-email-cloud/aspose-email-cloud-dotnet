@@ -1,5 +1,4 @@
 # Model.SaveOAuthEmailAccountRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

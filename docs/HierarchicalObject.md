@@ -1,5 +1,4 @@
 # Model.HierarchicalObject
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

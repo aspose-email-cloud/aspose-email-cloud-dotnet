@@ -1,5 +1,4 @@
 # Model.EmailPropertyResponse
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

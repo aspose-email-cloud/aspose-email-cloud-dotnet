@@ -46,7 +46,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="name">Contact document file name</param>
         /// <param name="attachment">Attachment name</param>
         /// <param name="request">Add attachment request</param>
-        public AddContactAttachmentRequest(int? format, string name, string attachment, AddAttachmentRequest request)
+        public AddContactAttachmentRequest(string format, string name, string attachment, AddAttachmentRequest request)
         {
             this.format = format;
             this.name = name;
@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Contact document format
         /// </summary>
-        public int? format { get; set; }
+        public string format { get; set; }
 
         /// <summary>
         /// Contact document file name

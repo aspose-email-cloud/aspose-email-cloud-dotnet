@@ -1,5 +1,4 @@
 # Model.StorageFolderLocation
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

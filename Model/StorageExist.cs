@@ -25,19 +25,18 @@
 
 namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using System;
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
-
-  /// <summary>
-  /// Storage exists
-  /// </summary>
-  public class StorageExist 
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// Storage exists
+    /// </summary>
+    public class StorageExist 
+    {
         /// <summary>
         /// Shows that the storage exists.             
         /// </summary>  

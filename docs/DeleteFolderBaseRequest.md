@@ -1,5 +1,4 @@
 # Model.DeleteFolderBaseRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

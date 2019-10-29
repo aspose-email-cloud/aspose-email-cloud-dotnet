@@ -1,5 +1,4 @@
 # Model.AppendEmailAccountBaseRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

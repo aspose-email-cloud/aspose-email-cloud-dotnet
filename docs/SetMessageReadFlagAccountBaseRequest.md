@@ -1,5 +1,4 @@
 # Model.SetMessageReadFlagAccountBaseRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

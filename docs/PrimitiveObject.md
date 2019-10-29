@@ -1,5 +1,4 @@
 # Model.PrimitiveObject
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

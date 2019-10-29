@@ -25,19 +25,18 @@
 
 namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using System;
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
-
-  /// <summary>
-  /// Send email MIME request
-  /// </summary>
-  public class SendEmailMimeBaseRequest : AccountBaseRequest 
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// Send email MIME request
+    /// </summary>
+    public class SendEmailMimeBaseRequest : AccountBaseRequest 
+    {
         /// <summary>
         /// Email document serialized as MIME
         /// </summary>  

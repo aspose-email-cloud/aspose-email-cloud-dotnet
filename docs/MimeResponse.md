@@ -1,5 +1,4 @@
 # Model.MimeResponse
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,5 +1,4 @@
 # Model.CreateEmailRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -25,19 +25,18 @@
 
 namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using System;
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
-
-  /// <summary>
-  /// Append email to account request
-  /// </summary>
-  public class AppendEmailAccountBaseRequest : AccountBaseRequest 
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// Append email to account request
+    /// </summary>
+    public class AppendEmailAccountBaseRequest : AccountBaseRequest 
+    {
         /// <summary>
         /// Gets or sets Folder
         /// </summary>  

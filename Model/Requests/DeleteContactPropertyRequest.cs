@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="memberName">Indexed property name</param>
         /// <param name="index">Property index</param>
         /// <param name="folder">Calendar document location in storage information</param>
-        public DeleteContactPropertyRequest(int? format, string name, string memberName, int? index, StorageFolderLocation folder)
+        public DeleteContactPropertyRequest(string format, string name, string memberName, int? index, StorageFolderLocation folder)
         {
             this.format = format;
             this.name = name;
@@ -59,7 +59,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Contact document format
         /// </summary>
-        public int? format { get; set; }
+        public string format { get; set; }
 
         /// <summary>
         /// Contact document file name

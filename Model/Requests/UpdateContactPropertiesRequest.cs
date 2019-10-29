@@ -45,7 +45,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="format">Contact document format</param>
         /// <param name="name">Contact document file name</param>
         /// <param name="request">Properties that should be updated/added</param>
-        public UpdateContactPropertiesRequest(int? format, string name, HierarchicalObjectRequest request)
+        public UpdateContactPropertiesRequest(string format, string name, HierarchicalObjectRequest request)
         {
             this.format = format;
             this.name = name;
@@ -55,7 +55,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Contact document format
         /// </summary>
-        public int? format { get; set; }
+        public string format { get; set; }
 
         /// <summary>
         /// Contact document file name

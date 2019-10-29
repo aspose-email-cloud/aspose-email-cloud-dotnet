@@ -1,5 +1,4 @@
 # Model.ValueResponse
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,10 +1,8 @@
-# Model.ContactFormat
-
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-
-
+# Enum Model.ContactFormat
+## Enum values
+- VCard,
+- WebDav,
+- Msg,
 
 [[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 

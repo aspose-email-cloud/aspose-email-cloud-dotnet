@@ -1,5 +1,4 @@
 # Model.ListMessagesResponse
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

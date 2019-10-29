@@ -1,5 +1,4 @@
 # Model.ListFoldersResponse
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

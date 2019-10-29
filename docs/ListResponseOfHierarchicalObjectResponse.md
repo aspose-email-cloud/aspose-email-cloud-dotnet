@@ -1,5 +1,4 @@
 # Model.ListResponseOfHierarchicalObjectResponse
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

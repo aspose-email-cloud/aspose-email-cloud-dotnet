@@ -1,5 +1,4 @@
 # Model.IndexedPrimitiveObject
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="storage">Storage name</param>
         /// <param name="itemsPerPage">Count of items on page</param>
         /// <param name="pageNumber">Page number</param>
-        public GetContactListRequest(int? format, string folder = null, string storage = null, int? itemsPerPage = null, int? pageNumber = null)
+        public GetContactListRequest(string format, string folder = null, string storage = null, int? itemsPerPage = null, int? pageNumber = null)
         {
             this.format = format;
             this.folder = folder;
@@ -59,7 +59,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Contact document format
         /// </summary>
-        public int? format { get; set; }
+        public string format { get; set; }
 
         /// <summary>
         /// Path to folder in storage

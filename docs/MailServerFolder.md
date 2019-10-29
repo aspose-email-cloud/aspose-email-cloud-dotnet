@@ -1,5 +1,4 @@
 # Model.MailServerFolder
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

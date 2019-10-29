@@ -25,19 +25,18 @@
 
 namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using System;
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
-
-  /// <summary>
-  /// Send email file request
-  /// </summary>
-  public class SendEmailBaseRequest : AccountBaseRequest 
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// Send email file request
+    /// </summary>
+    public class SendEmailBaseRequest : AccountBaseRequest 
+    {
         /// <summary>
         /// Email document (*.eml) file location in storage
         /// </summary>  

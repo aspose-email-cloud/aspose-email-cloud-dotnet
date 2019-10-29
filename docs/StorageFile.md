@@ -1,5 +1,4 @@
 # Model.StorageFile
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

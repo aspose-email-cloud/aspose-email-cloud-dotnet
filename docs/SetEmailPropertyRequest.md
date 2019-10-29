@@ -1,5 +1,4 @@
 # Model.SetEmailPropertyRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

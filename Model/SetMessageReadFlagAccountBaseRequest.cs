@@ -25,19 +25,18 @@
 
 namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using System;
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
-
-  /// <summary>
-  /// Set message is read request
-  /// </summary>
-  public class SetMessageReadFlagAccountBaseRequest : AccountBaseRequest 
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// Set message is read request
+    /// </summary>
+    public class SetMessageReadFlagAccountBaseRequest : AccountBaseRequest 
+    {
         /// <summary>
         /// Message identifier
         /// </summary>  

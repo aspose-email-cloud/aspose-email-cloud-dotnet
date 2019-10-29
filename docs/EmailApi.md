@@ -84,7 +84,7 @@ new AddContactAttachmentRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **attachment** | **string**| Attachment name | 
  **request** | [**AddAttachmentRequest**](AddAttachmentRequest.md)| Add attachment request | 
@@ -117,7 +117,7 @@ new AddContactAttachmentRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **attachment** | **string**| Attachment name | 
  **request** | [**AddAttachmentRequest**](AddAttachmentRequest.md)| Add attachment request | 
@@ -559,7 +559,7 @@ new CreateContactRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **request** | [**HierarchicalObjectRequest**](HierarchicalObjectRequest.md)| Create contact request | 
 
@@ -590,7 +590,7 @@ new CreateContactRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **request** | [**HierarchicalObjectRequest**](HierarchicalObjectRequest.md)| Create contact request | 
 
@@ -905,7 +905,7 @@ new DeleteContactPropertyRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **memberName** | **string**| Indexed property name | 
  **index** | **int?**| Property index | 
@@ -940,7 +940,7 @@ new DeleteContactPropertyRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **memberName** | **string**| Indexed property name | 
  **index** | **int?**| Property index | 
@@ -1629,7 +1629,7 @@ new GetContactAttachmentRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **attachment** | **string**| Attachment name or index | 
  **folder** | **string**| Path to folder in storage | [optional] 
@@ -1664,7 +1664,7 @@ new GetContactAttachmentRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **attachment** | **string**| Attachment name or index | 
  **folder** | **string**| Path to folder in storage | [optional] 
@@ -1697,7 +1697,7 @@ new GetContactListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
  **itemsPerPage** | **int?**| Count of items on page | [optional] [default to 10]
@@ -1732,7 +1732,7 @@ new GetContactListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
  **itemsPerPage** | **int?**| Count of items on page | [optional] [default to 10]
@@ -1764,7 +1764,7 @@ new GetContactPropertiesRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
@@ -1797,7 +1797,7 @@ new GetContactPropertiesRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
@@ -3195,7 +3195,7 @@ new UpdateContactPropertiesRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **request** | [**HierarchicalObjectRequest**](HierarchicalObjectRequest.md)| Properties that should be updated/added | 
 
@@ -3226,7 +3226,7 @@ new UpdateContactPropertiesRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **int?**| Contact document format | 
+ **format** | **string**| Contact document format | 
  **name** | **string**| Contact document file name | 
  **request** | [**HierarchicalObjectRequest**](HierarchicalObjectRequest.md)| Properties that should be updated/added | 
 

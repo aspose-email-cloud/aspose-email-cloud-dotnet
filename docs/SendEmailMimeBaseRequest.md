@@ -1,5 +1,4 @@
 # Model.SendEmailMimeBaseRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

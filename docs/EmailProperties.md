@@ -1,5 +1,4 @@
 # Model.EmailProperties
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

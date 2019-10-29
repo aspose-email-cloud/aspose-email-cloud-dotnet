@@ -25,19 +25,18 @@
 
 namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using System;
-  using System.Collections;
-  using System.Collections.Generic;
-  using System.Runtime.Serialization;
-  using System.Text;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Converters;
-
-  /// <summary>
-  /// Save email account settings with login/password authentication request
-  /// </summary>
-  public class SaveEmailAccountRequest : EmailAccountRequest 
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// Save email account settings with login/password authentication request
+    /// </summary>
+    public class SaveEmailAccountRequest : EmailAccountRequest 
+    {
         /// <summary>
         /// Email account password
         /// </summary>  

@@ -1,5 +1,4 @@
 # Model.ListResponseOfString
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

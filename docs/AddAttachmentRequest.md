@@ -1,5 +1,4 @@
 # Model.AddAttachmentRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

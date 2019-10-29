@@ -9,7 +9,7 @@
     <License>MIT</License>
     <PackageIcon>aspose_email-for-cloud-icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</RepositoryUrl>
-    <PackageTags>ASPOSE EMAIL CLOUD SDK Outlook MSG EML and MHT</PackageTags>
+    <PackageTags>ASPOSE EMAIL CLOUD SDK Outlook MSG EML MHT</PackageTags>
     <RootNamespace>Aspose.Email.Cloud.Sdk</RootNamespace>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' OR '$(TargetFramework)' == 'Xamarin.Mac20' OR '$(TargetFramework)' == 'MonoAndroid60'">

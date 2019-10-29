@@ -1,5 +1,4 @@
 # Model.DeleteMessageBaseRequest
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
