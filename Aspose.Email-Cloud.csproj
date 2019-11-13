@@ -11,7 +11,7 @@
     <RepositoryUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</RepositoryUrl>
     <PackageTags>ASPOSE EMAIL CLOUD SDK Outlook MSG EML MHT</PackageTags>
     <RootNamespace>Aspose.Email.Cloud.Sdk</RootNamespace>
-    <Version>19.11.0</Version>
+    <Version>19.11.40</Version>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' OR '$(TargetFramework)' == 'Xamarin.Mac20' OR '$(TargetFramework)' == 'MonoAndroid60'">
     <PackageReference Include="Newtonsoft.Json" Version="8.0.3" />
@@ -28,7 +28,8 @@
   <ItemGroup>
     <None Include="resources\aspose_email-for-cloud-icon.png">
       <Pack>True</Pack>
-      <PackagePath></PackagePath>
+      <PackagePath>
+      </PackagePath>
     </None>
   </ItemGroup>
 </Project>
