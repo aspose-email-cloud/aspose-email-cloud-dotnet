@@ -45,7 +45,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Property type. Used for deserialization purposes
         /// </summary>  
-        public string Type { get; set; }
+        public string Type => GetType().Name;
 
         /// <summary>
         /// Get the string presentation of the object
