@@ -35,7 +35,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// <summary>
     /// An email document response
     /// </summary>
-    public class EmailDocumentResponse : AsposeResponse 
+    public class EmailDocumentResponse 
     {
         /// <summary>
         /// An email document requested

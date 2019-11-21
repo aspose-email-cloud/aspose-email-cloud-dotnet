@@ -35,7 +35,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// <summary>
     /// Email document property DTO.
     /// </summary>
-    public class ValueResponse : AsposeResponse 
+    public class ValueResponse 
     {
         /// <summary>
         /// Gets or sets string content.

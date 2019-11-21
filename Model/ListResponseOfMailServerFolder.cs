@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ListMessagesResponse.cs">
+// <copyright company="Aspose" file="ListResponseOfMailServerFolder.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,14 +33,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email messages list
+    /// 
     /// </summary>
-    public class ListMessagesResponse : AsposeResponse 
+    public class ListResponseOfMailServerFolder 
     {
         /// <summary>
-        /// Email messages serialized as MIME strings
+        /// Gets or sets Value
         /// </summary>  
-        public List<string> Value { get; set; }
+        public List<MailServerFolder> Value { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -49,7 +49,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ListMessagesResponse {\n");
+          sb.Append("class ListResponseOfMailServerFolder {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

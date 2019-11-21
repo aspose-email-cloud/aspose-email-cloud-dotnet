@@ -35,7 +35,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// <summary>
     /// Email property response.
     /// </summary>
-    public class EmailPropertyResponse : AsposeResponse 
+    public class EmailPropertyResponse 
     {
         /// <summary>
         /// Gets or sets email property.

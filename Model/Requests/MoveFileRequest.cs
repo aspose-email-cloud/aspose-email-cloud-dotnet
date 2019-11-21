@@ -28,7 +28,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.MoveFile" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.FileApi.MoveFile" /> operation.
   /// </summary>
   public class MoveFileRequest  
   {

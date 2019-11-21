@@ -28,7 +28,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.AppendEmailMessage" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailClientApi.AppendEmailMessage" /> operation.
   /// </summary>
   public class AppendEmailMessageRequest  
   {

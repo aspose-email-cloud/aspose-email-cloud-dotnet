@@ -28,7 +28,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.DeleteFile" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.FileApi.DeleteFile" /> operation.
   /// </summary>
   public class DeleteFileRequest  
   {
