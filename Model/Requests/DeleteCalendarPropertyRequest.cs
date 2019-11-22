@@ -28,7 +28,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.CalendarApi.DeleteCalendarProperty" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.DeleteCalendarProperty" /> operation.
   /// </summary>
   public class DeleteCalendarPropertyRequest  
   {
