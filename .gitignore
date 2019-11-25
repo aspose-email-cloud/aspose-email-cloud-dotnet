@@ -1,7 +1,6 @@
-﻿/src/packages
-/src/obj/Debug
-/src/bin/Debug
-/src/.vs
-/src/Aspose.Email-Cloud.csproj.user
-/src/obj/Release
-/src/bin/Release
+﻿packages/
+obj/
+bin/
+.vs
+*.csproj.user
+.idea/
