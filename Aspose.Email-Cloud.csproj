@@ -7,6 +7,7 @@
     <Copyright>Copyright (c) 2002-2018 Aspose Pty Ltd</Copyright>
     <PackageProjectUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</PackageProjectUrl>
     <License>MIT</License>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>aspose_email-for-cloud-icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</RepositoryUrl>
     <PackageTags>ASPOSE EMAIL CLOUD SDK Outlook MSG EML MHT</PackageTags>
