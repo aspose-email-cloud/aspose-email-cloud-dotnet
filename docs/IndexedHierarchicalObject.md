@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Index** | **int?** | Index of property in list | 
-**InternalProperties** | [**List&lt;BaseObject&gt;**](BaseObject.md) | List of internal properties | [optional] 
+**Index** | **int?** | Index of property in list              | 
+**InternalProperties** | [**List&lt;BaseObject&gt;**](BaseObject.md) | List of internal properties              | [optional] 
 
  Parent class: [BaseObject](BaseObject.md)
 

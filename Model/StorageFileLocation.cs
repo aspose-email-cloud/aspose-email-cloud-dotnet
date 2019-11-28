@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// A storage file location information
+    /// A storage file location information             
     /// </summary>
     public class StorageFileLocation : StorageFolderLocation 
     {
         /// <summary>
-        /// A file name in storage
+        /// A file name in storage             
         /// </summary>  
         public string FileName { get; set; }
 

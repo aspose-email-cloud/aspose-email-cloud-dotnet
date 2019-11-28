@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MessageId** | **string** | Message identifier | 
-**IsRead** | **bool?** | Specifies that message should be marked read or unread | 
+**MessageId** | **string** | Message identifier              | 
+**IsRead** | **bool?** | Specifies that message should be marked read or unread              | 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

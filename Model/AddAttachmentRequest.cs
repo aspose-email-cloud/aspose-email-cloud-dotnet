@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Add attachment request
+    /// Add attachment request             
     /// </summary>
     public class AddAttachmentRequest 
     {
         /// <summary>
-        /// Storage folder location of document
+        /// Storage folder location of document             
         /// </summary>  
         public StorageFolderLocation DocumentFolder { get; set; }
 
         /// <summary>
-        /// Storage folder location of an attachment
+        /// Storage folder location of an attachment             
         /// </summary>  
         public StorageFolderLocation AttachmentFolder { get; set; }
 

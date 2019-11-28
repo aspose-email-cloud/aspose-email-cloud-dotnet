@@ -45,7 +45,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="folder">A folder in email account</param>
         /// <param name="queryString">A MailQuery search string</param>
         /// <param name="firstAccount">Email account</param>
-        /// <param name="secondAccount">Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)</param>
+        /// <param name="secondAccount">Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
         /// <param name="recursive">Specifies that should message be searched in subfolders recursively</param>
@@ -76,7 +76,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string firstAccount { get; set; }
 
         /// <summary>
-        /// Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)
+        /// Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)             
         /// </summary>
         public string secondAccount { get; set; }
 

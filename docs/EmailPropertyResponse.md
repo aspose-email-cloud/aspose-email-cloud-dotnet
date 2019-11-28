@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EmailProperty** | [**EmailProperty**](EmailProperty.md) | Gets or sets email property. | [optional] 
+**EmailProperty** | [**EmailProperty**](EmailProperty.md) | Gets or sets email property.              | [optional] 
 
 
 

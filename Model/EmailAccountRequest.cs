@@ -33,42 +33,42 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email account settings request
+    /// Email account settings request             
     /// </summary>
     public class EmailAccountRequest 
     {
         /// <summary>
-        /// Email account host
+        /// Email account host             
         /// </summary>  
         public string Host { get; set; }
 
         /// <summary>
-        /// Email account port
+        /// Email account port             
         /// </summary>  
         public int? Port { get; set; }
 
         /// <summary>
-        /// Email account login
+        /// Email account login             
         /// </summary>  
         public string Login { get; set; }
 
         /// <summary>
-        /// Email account security options
+        /// Email account security options             
         /// </summary>  
         public Object SecurityOptions { get; set; }
 
         /// <summary>
-        /// Email account protocol type
+        /// Email account protocol type             
         /// </summary>  
         public Object ProtocolType { get; set; }
 
         /// <summary>
-        /// Email account description
+        /// Email account description             
         /// </summary>  
         public string Description { get; set; }
 
         /// <summary>
-        /// A storage file location info to store email account
+        /// A storage file location info to store email account             
         /// </summary>  
         public StorageFileLocation StorageFile { get; set; }
 

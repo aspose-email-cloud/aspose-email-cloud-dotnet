@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**InternalProperties** | [**List&lt;BaseObject&gt;**](BaseObject.md) | List of internal properties | [optional] 
+**InternalProperties** | [**List&lt;BaseObject&gt;**](BaseObject.md) | List of internal properties              | [optional] 
 
  Parent class: [BaseObject](BaseObject.md)
 

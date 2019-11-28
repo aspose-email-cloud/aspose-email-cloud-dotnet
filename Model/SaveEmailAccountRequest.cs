@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Save email account settings with login/password authentication request
+    /// Save email account settings with login/password authentication request             
     /// </summary>
     public class SaveEmailAccountRequest : EmailAccountRequest 
     {
         /// <summary>
-        /// Email account password
+        /// Email account password             
         /// </summary>  
         public string Password { get; set; }
 

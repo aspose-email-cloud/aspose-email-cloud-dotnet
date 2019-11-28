@@ -2,9 +2,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ClientId** | **string** | OAuth client identifier | 
-**ClientSecret** | **string** | OAuth client secret | 
-**RefreshToken** | **string** | OAuth refresh token | 
+**ClientId** | **string** | OAuth client identifier              | 
+**ClientSecret** | **string** | OAuth client secret              | 
+**RefreshToken** | **string** | OAuth refresh token              | 
 
  Parent class: [EmailAccountRequest](EmailAccountRequest.md)
 

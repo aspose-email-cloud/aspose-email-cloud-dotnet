@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** | Gets or sets the name of an object. | [optional] 
-**Type** | **string** | Property type. Used for deserialization purposes | [optional] 
+**Name** | **string** | Gets or sets the name of an object.              | [optional] 
+**Type** | **string** | Property type. Used for deserialization purposes              | [optional] 
 
 
 

@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Send email file request
+    /// Send email file request             
     /// </summary>
     public class SendEmailBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Email document (*.eml) file location in storage
+        /// Email document (*.eml) file location in storage             
         /// </summary>  
         public StorageFileLocation EmailFile { get; set; }
 

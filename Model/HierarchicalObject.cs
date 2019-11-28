@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Objects&#39; properties hierarchical representation
+    /// Objects&#39; properties hierarchical representation             
     /// </summary>
     public class HierarchicalObject : BaseObject 
     {
         /// <summary>
-        /// List of internal properties
+        /// List of internal properties             
         /// </summary>  
         public List<BaseObject> InternalProperties { get; set; }
 

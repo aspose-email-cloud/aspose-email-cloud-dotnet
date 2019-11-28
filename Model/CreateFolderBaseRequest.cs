@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Create folder request
+    /// Create folder request             
     /// </summary>
     public class CreateFolderBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Folder name
+        /// Folder name             
         /// </summary>  
         public string Folder { get; set; }
 
         /// <summary>
-        /// Parent folder path
+        /// Parent folder path             
         /// </summary>  
         public string ParentFolder { get; set; }
 

@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Document** | [**EmailDocument**](EmailDocument.md) | An email document requested | [optional] 
+**Document** | [**EmailDocument**](EmailDocument.md) | An email document requested              | [optional] 
 
 
 

@@ -43,7 +43,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Initializes a new instance of the <see cref="ListEmailFoldersRequest"/> class.
         /// </summary>
         /// <param name="firstAccount">Email account</param>
-        /// <param name="secondAccount">Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)</param>
+        /// <param name="secondAccount">Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
         /// <param name="parentFolder">Folder in which subfolders should be listed</param>
@@ -62,7 +62,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string firstAccount { get; set; }
 
         /// <summary>
-        /// Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)
+        /// Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)             
         /// </summary>
         public string secondAccount { get; set; }
 

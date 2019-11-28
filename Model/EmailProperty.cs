@@ -33,7 +33,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email property.
+    /// Email property.             
     /// </summary>
     public class EmailProperty 
     {

@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Delete folder request
+    /// Delete folder request             
     /// </summary>
     public class DeleteFolderBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Folder name
+        /// Folder name             
         /// </summary>  
         public string Folder { get; set; }
 
         /// <summary>
-        /// Specifies that folder should be deleted permanently
+        /// Specifies that folder should be deleted permanently             
         /// </summary>  
         public bool? DeletePermanently { get; set; }
 

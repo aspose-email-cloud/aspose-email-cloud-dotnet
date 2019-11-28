@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Send email MIME request
+    /// Send email MIME request             
     /// </summary>
     public class SendEmailMimeBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Email document serialized as MIME
+        /// Email document serialized as MIME             
         /// </summary>  
         public string Base64MimeMessage { get; set; }
 
