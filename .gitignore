@@ -3,4 +3,6 @@ obj/
 bin/
 .vs
 *.csproj.user
+*.DotSettings.user
 .idea/
+private-appsettings.json
