@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**FileName** | **string** | A file name in storage | 
+**FileName** | **string** | A file name in storage              | 
 
  Parent class: [StorageFolderLocation](StorageFolderLocation.md)
 

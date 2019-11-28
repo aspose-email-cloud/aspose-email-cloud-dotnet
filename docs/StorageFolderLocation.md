@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Storage** | **string** | A storage name | [optional] 
-**FolderPath** | **string** | A path to a folder in specified storage | [optional] 
+**Storage** | **string** | A storage name              | [optional] 
+**FolderPath** | **string** | A path to a folder in specified storage              | [optional] 
 
 
 

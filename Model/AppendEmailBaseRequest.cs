@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Append email from storage file to account request
+    /// Append email from storage file to account request             
     /// </summary>
     public class AppendEmailBaseRequest : AppendEmailAccountBaseRequest 
     {
         /// <summary>
-        /// Email document file location in storage
+        /// Email document file location in storage             
         /// </summary>  
         public StorageFileLocation EmailFile { get; set; }
 

@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Simple property object
+    /// Simple property object             
     /// </summary>
     public class PrimitiveObject : BaseObject 
     {
         /// <summary>
-        /// Property value
+        /// Property value             
         /// </summary>  
         public string Value { get; set; }
 

@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Base64MimeMessage** | **string** | Email document serialized as MIME | 
+**Base64MimeMessage** | **string** | Email document serialized as MIME              | 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

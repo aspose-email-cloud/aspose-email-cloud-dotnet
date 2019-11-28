@@ -33,22 +33,22 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Save email account settings with OAuth request
+    /// Save email account settings with OAuth request             
     /// </summary>
     public class SaveOAuthEmailAccountRequest : EmailAccountRequest 
     {
         /// <summary>
-        /// OAuth client identifier
+        /// OAuth client identifier             
         /// </summary>  
         public string ClientId { get; set; }
 
         /// <summary>
-        /// OAuth client secret
+        /// OAuth client secret             
         /// </summary>  
         public string ClientSecret { get; set; }
 
         /// <summary>
-        /// OAuth refresh token
+        /// OAuth refresh token             
         /// </summary>  
         public string RefreshToken { get; set; }
 

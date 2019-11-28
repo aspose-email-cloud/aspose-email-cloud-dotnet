@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Set message is read request
+    /// Set message is read request             
     /// </summary>
     public class SetMessageReadFlagAccountBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Message identifier
+        /// Message identifier             
         /// </summary>  
         public string MessageId { get; set; }
 
         /// <summary>
-        /// Specifies that message should be marked read or unread
+        /// Specifies that message should be marked read or unread             
         /// </summary>  
         public bool? IsRead { get; set; }
 

@@ -33,7 +33,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Append email to account request
+    /// Append email to account request             
     /// </summary>
     public class AppendEmailAccountBaseRequest : AccountBaseRequest 
     {

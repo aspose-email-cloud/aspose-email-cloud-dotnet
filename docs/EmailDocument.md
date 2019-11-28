@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Links** | [**List&lt;Link&gt;**](Link.md) | Links that originate from this document. | [optional] 
-**DocumentProperties** | [**EmailProperties**](EmailProperties.md) | List of document properties. | 
+**Links** | [**List&lt;Link&gt;**](Link.md) | Links that originate from this document.              | [optional] 
+**DocumentProperties** | [**EmailProperties**](EmailProperties.md) | List of document properties.              | 
 
 
 

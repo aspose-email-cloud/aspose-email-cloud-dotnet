@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Index** | **int?** | Index of property in list | 
-**Value** | **string** | Gets or sets the name of a property. | [optional] 
+**Index** | **int?** | Index of property in list              | 
+**Value** | **string** | Gets or sets the name of a property.              | [optional] 
 
  Parent class: [BaseObject](BaseObject.md)
 

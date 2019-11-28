@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | **string** | Property value | [optional] 
+**Value** | **string** | Property value              | [optional] 
 
  Parent class: [BaseObject](BaseObject.md)
 

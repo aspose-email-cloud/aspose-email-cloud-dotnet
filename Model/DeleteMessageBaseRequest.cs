@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Delete message request
+    /// Delete message request             
     /// </summary>
     public class DeleteMessageBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Message identifier
+        /// Message identifier             
         /// </summary>  
         public string MessageId { get; set; }
 
         /// <summary>
-        /// Specifies that message should be deleted permanently
+        /// Specifies that message should be deleted permanently             
         /// </summary>  
         public bool? DeletePermanently { get; set; }
 

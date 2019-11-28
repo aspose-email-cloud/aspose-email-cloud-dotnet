@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Simple indexed property
+    /// Simple indexed property             
     /// </summary>
     public class IndexedPrimitiveObject : BaseObject 
     {
         /// <summary>
-        /// Index of property in list
+        /// Index of property in list             
         /// </summary>  
         public int? Index { get; set; }
 
         /// <summary>
-        /// Gets or sets the name of a property.
+        /// Gets or sets the name of a property.             
         /// </summary>  
         public string Value { get; set; }
 
