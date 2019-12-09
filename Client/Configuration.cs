@@ -53,6 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Client
         /// The API base URL
         /// </summary>
         private string apiBaseUrl = DefaultBaseUrl;
+        private string authUrl;
 
         #endregion
 
@@ -77,6 +78,19 @@ namespace Aspose.Email.Cloud.Sdk.Client
                 if (!this.apiBaseUrl.EndsWith("/"))
                 {
                     this.apiBaseUrl += "/";
+                }
+            }
+        }
+
+        public string AuthUrl
+        {
+            get => authUrl ?? ApiBaseUrl;
+            set
+            {
+                authUrl = value;
+                if (!authUrl.EndsWith("/"))
+                {
+                    authUrl += "/";
                 }
             }
         }

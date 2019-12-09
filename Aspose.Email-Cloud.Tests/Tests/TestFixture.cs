@@ -37,7 +37,8 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 ApiVersion = "v3.0",
                 ApiBaseUrl = configurationHelper.GetValue("apiBaseUrl", "https://api-qa.aspose.cloud"),
                 AppKey = configurationHelper.GetValue("appKey", string.Empty),
-                AppSid = configurationHelper.GetValue("appSid", string.Empty)
+                AppSid = configurationHelper.GetValue("appSid", string.Empty),
+                AuthUrl = configurationHelper.GetValue<string>("authUrl", null)
             };
             emailApi = new EmailApi(apiConfiguration);
         }
