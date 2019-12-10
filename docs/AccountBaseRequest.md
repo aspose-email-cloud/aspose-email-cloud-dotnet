@@ -2,9 +2,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**FirstAccount** | **string** |  | 
-**SecondAccount** | **string** |  | [optional] 
-**StorageFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) |  | [optional] 
+**FirstAccount** | **string** | First account storage file name for receiving emails (or universal one)              | 
+**SecondAccount** | **string** | Second account storage file name for sending emails (ignored if first is universal)              | [optional] 
+**StorageFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Storage folder location of account files              | [optional] 
 
 
 

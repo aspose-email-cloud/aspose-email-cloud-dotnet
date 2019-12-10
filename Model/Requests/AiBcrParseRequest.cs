@@ -42,15 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="AiBcrParseRequest"/> class.
         /// </summary>
-        /// <param name="request">Request with base64 images data</param>
-        public AiBcrParseRequest(AiBcrBase64Request request)
+        /// <param name="rq">Request with base64 images data</param>
+        public AiBcrParseRequest(AiBcrBase64Rq rq)
         {
-            this.request = request;
+            this.rq = rq;
         }
 
         /// <summary>
         /// Request with base64 images data
         /// </summary>
-        public AiBcrBase64Request request { get; set; }
+        public AiBcrBase64Rq rq { get; set; }
   }
 }

@@ -42,15 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="AiNameMatchParsedRequest"/> class.
         /// </summary>
-        /// <param name="request">Parsed names to match</param>
-        public AiNameMatchParsedRequest(AiNameParsedMatchRequest request)
+        /// <param name="rq">Parsed names to match</param>
+        public AiNameMatchParsedRequest(AiNameParsedMatchRq rq)
         {
-            this.request = request;
+            this.rq = rq;
         }
 
         /// <summary>
         /// Parsed names to match
         /// </summary>
-        public AiNameParsedMatchRequest request { get; set; }
+        public AiNameParsedMatchRq rq { get; set; }
   }
 }

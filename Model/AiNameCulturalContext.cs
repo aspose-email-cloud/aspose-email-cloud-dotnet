@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrRequest.cs">
+// <copyright company="Aspose" file="AiNameCulturalContext.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,14 +33,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Business card recognition request             
+    /// AiName cultural context             
     /// </summary>
-    public class AiBcrRequest 
+    public class AiNameCulturalContext 
     {
         /// <summary>
-        /// Recognition options             
+        /// An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \"it\" or \"ita\" for Italian)             
         /// </summary>  
-        public AiBcrOptions Options { get; set; }
+        public string Language { get; set; }
+
+        /// <summary>
+        /// A geographic code such as an ISO-3166 two letter country code, for example \"FR\" for France             
+        /// </summary>  
+        public string Location { get; set; }
+
+        /// <summary>
+        /// A writing system code; starts with the ISO-15924 script name             
+        /// </summary>  
+        public string Script { get; set; }
+
+        /// <summary>
+        /// A character encoding name             
+        /// </summary>  
+        public string Encoding { get; set; }
+
+        /// <summary>
+        /// Name writing style. Enum, available values: Formal, Informal, Legal, Academic
+        /// </summary>  
+        public string Style { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -49,8 +69,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrRequest {\n");
-          sb.Append("  Options: ").Append(this.Options).Append("\n");
+          sb.Append("class AiNameCulturalContext {\n");
+          sb.Append("  Language: ").Append(this.Language).Append("\n");
+          sb.Append("  Location: ").Append(this.Location).Append("\n");
+          sb.Append("  Script: ").Append(this.Script).Append("\n");
+          sb.Append("  Encoding: ").Append(this.Encoding).Append("\n");
+          sb.Append("  Style: ").Append(this.Style).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

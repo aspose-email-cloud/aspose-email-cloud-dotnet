@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrBase64Request.cs">
+// <copyright company="Aspose" file="AiBcrStorageImageRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,14 +33,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Parse business card image request             
+    /// Business card images from storage for recognition             
     /// </summary>
-    public class AiBcrBase64Request : AiBcrRequest 
+    public class AiBcrStorageImageRq : AiBcrRq 
     {
         /// <summary>
-        /// Images to recognize             
+        /// List of images with business cards             
         /// </summary>  
-        public List<AiBcrBase64Image> Images { get; set; }
+        public List<AiBcrImageStorageFile> Images { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -49,7 +49,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrBase64Request {\n");
+          sb.Append("class AiBcrStorageImageRq {\n");
           sb.Append("  Images: ").Append(this.Images).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

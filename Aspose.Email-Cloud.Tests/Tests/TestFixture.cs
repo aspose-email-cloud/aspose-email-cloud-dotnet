@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Aspose.Email.Cloud.Sdk.Api;
 using Aspose.Email.Cloud.Sdk.Client;
@@ -16,6 +18,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
     public class TestsFixture
     {
         private const string StorageName = "First Storage";
+        private const string BcrAiTestFilePath = "TestData/test_single_0001.png";
         private EmailApi emailApi;
         private string folder;
 
@@ -59,6 +62,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// Synchronous API call test
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task SyncTest()
         {
             var calendarFile = await CreateCalendar();
@@ -73,6 +77,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// and properly used in serialization and deserialization
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task HierarchicalTest()
         {
             var calendarFile = await CreateCalendar();
@@ -93,6 +98,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// System.IO.Stream support test
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task StreamTest()
         {
             var calendarFile = await CreateCalendar();
@@ -116,6 +122,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// Test checks that value parsing works properly
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task ContactFormatTest()
         {
             foreach (var format in new[] {"vcard", "msg"})
@@ -144,6 +151,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// In most cases developer should carefully serialize and deserialize DateTime
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task DateTimeTest()
         {
             var startDate = DateTime.UtcNow.Date.AddDays(1).AddHours(12);
@@ -156,6 +164,112 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 .Parse(((PrimitiveObject) startDateProperty).Value)
                 .ToUniversalTime();
             Assert.AreEqual(startDate, factStartDate);
+        }
+
+        /// <summary>
+        /// Test name gender detection
+        /// </summary>
+        [Test]
+        public async Task AiNameGenderizeTest()
+        {
+            var result = await emailApi.AiNameGenderizeAsync(new AiNameGenderizeRequest("John Cane"));
+            Assert.GreaterOrEqual(result.Value.Count, 1);
+            Assert.True(result.Value.Any(item => item.Gender == "Male"));
+        }
+
+        /// <summary>
+        /// Test business card recognition with storage.
+        /// </summary>
+        [Test]
+        public async Task AiBcrParseStorageTest()
+        {
+            var fileName = $"{Guid.NewGuid().ToString()}.png";
+            // 1) Upload business card image to storage
+            using (var stream = File.OpenRead(BcrAiTestFilePath))
+            {
+                await emailApi.UploadFileAsync(new UploadFileRequest($"{folder}/{fileName}", stream, StorageName));
+            }
+
+            var outFolder = Guid.NewGuid().ToString();
+            var outFolderPath = $"{folder}/{outFolder}";
+            await emailApi.CreateFolderAsync(new CreateFolderRequest(outFolderPath, StorageName));
+            // 2) Call business card recognition action
+            var result = await emailApi.AiBcrParseStorageAsync(new AiBcrParseStorageRequest(
+                new AiBcrParseStorageRq
+                {
+                    Images = new List<AiBcrImageStorageFile>
+                    {
+                        new AiBcrImageStorageFile
+                        {
+                            File = new StorageFileLocation
+                            {
+                                Storage = StorageName,
+                                FileName = fileName,
+                                FolderPath = folder
+                            },
+                            IsSingle = true
+                        }
+                    },
+                    OutFolder = new StorageFolderLocation
+                    {
+                        Storage = StorageName,
+                        FolderPath = outFolderPath
+                    }
+                }));
+            //Check that only one file produced
+            Assert.True(result.Value.Count == 1);
+            // 3) Get file name from recognition result
+            var contactFile = result.Value.First();
+
+            // 4) Download VCard file, produced by recognition method, check it contains text "Thomas"
+            using (var contactFileStream = await emailApi.DownloadFileAsync(new DownloadFileRequest(
+                $"{contactFile.FolderPath}/{contactFile.FileName}", contactFile.Storage)))
+            using(var memoryStream = new MemoryStream())
+            {
+                contactFileStream.CopyTo(memoryStream);
+                var contactFileContent = Encoding.UTF8.GetString(memoryStream.ToArray());
+                Assert.True(contactFileContent.Contains("Thomas"));
+            }
+            
+            // 5) Get VCard object properties list, check that there is 3 properties or more
+            var contactProperties = await emailApi.GetContactPropertiesAsync(new GetContactPropertiesRequest(
+                "vcard", contactFile.FileName, contactFile.FolderPath, contactFile.Storage));
+            Assert.GreaterOrEqual(contactProperties.InternalProperties.Count, 3);
+        }
+
+        /// <summary>
+        ///     Test business card recognition without storage.
+        ///     Send image as Base64 string and get VCard properties without producing any files in storage.
+        /// </summary>
+        [Test]
+        public async Task AiBcrParseTest()
+        {
+            var result = await emailApi.AiBcrParseAsync(
+                new AiBcrParseRequest(
+                    new AiBcrBase64Rq
+                    {
+                        Images = new List<AiBcrBase64Image>
+                        {
+                            new AiBcrBase64Image
+                            {
+                                Base64Data = FileToBase64(BcrAiTestFilePath),
+                                IsSingle = true
+                            }
+                        }
+                    }));
+            Assert.AreEqual(1, result.Value.Count);
+            Assert.True(result.Value
+                .First()
+                .InternalProperties
+                .Where(property => property.Type == nameof(PrimitiveObject))
+                .Select(property => (PrimitiveObject)property)
+                .Any(property => property.Value?.Contains("Thomas") ?? false));
+        }
+
+        private static string FileToBase64(string filePath)
+        {
+            var bytes = File.ReadAllBytes(filePath);
+            return Convert.ToBase64String(bytes);
         }
 
         private async Task<bool> IsFileExist(string fileName, string folderPath = null)

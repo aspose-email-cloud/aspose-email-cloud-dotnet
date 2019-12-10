@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="location">A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France</param>
         /// <param name="encoding">A character encoding name</param>
         /// <param name="script">A writing system code; starts with the ISO-15924 script name</param>
-        /// <param name="style">Name writing style</param>
+        /// <param name="style">Name writing style. Enum, available values: Formal, Informal, Legal, Academic</param>
         public AiNameParseEmailAddressRequest(string emailAddress, string language = null, string location = null, string encoding = null, string script = null, string style = null)
         {
             this.emailAddress = emailAddress;
@@ -84,7 +84,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string script { get; set; }
 
         /// <summary>
-        /// Name writing style
+        /// Name writing style. Enum, available values: Formal, Informal, Legal, Academic
         /// </summary>
         public string style { get; set; }
   }

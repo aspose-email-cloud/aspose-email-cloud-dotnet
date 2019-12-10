@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiNameParsedMatchRequest.cs">
+// <copyright company="Aspose" file="AiBcrBase64Rq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,14 +33,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Two parsed names to match request             
+    /// Parse business card image request             
     /// </summary>
-    public class AiNameParsedMatchRequest : AiNameParsedRequest 
+    public class AiBcrBase64Rq : AiBcrRq 
     {
         /// <summary>
-        /// Other parsed name to match             
+        /// Images to recognize             
         /// </summary>  
-        public List<AiNameComponent> OtherParsedName { get; set; }
+        public List<AiBcrBase64Image> Images { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -49,8 +49,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiNameParsedMatchRequest {\n");
-          sb.Append("  OtherParsedName: ").Append(this.OtherParsedName).Append("\n");
+          sb.Append("class AiBcrBase64Rq {\n");
+          sb.Append("  Images: ").Append(this.Images).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

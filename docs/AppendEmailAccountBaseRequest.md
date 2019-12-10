@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Folder** | **string** |  | 
-**MarkAsSent** | **bool?** |  | 
+**Folder** | **string** | Email account folder to store a message              | 
+**MarkAsSent** | **bool?** | Mark message as sent              | 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

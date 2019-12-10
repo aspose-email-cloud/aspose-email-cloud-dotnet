@@ -42,15 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="AiBcrOcrStorageRequest"/> class.
         /// </summary>
-        /// <param name="request">Request with images located on storage</param>
-        public AiBcrOcrStorageRequest(AiBcrStorageImageRequest request)
+        /// <param name="rq">Request with images located on storage</param>
+        public AiBcrOcrStorageRequest(AiBcrStorageImageRq rq)
         {
-            this.request = request;
+            this.rq = rq;
         }
 
         /// <summary>
         /// Request with images located on storage
         /// </summary>
-        public AiBcrStorageImageRequest request { get; set; }
+        public AiBcrStorageImageRq rq { get; set; }
   }
 }

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiNameWritingStyle.cs">
+// <copyright company="Aspose" file="AiBcrRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -32,11 +32,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Text;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
-    public enum AiNameWritingStyle
+    /// <summary>
+    /// Business card recognition request             
+    /// </summary>
+    public class AiBcrRq 
     {
-        Formal,
-        Informal,
-        Legal,
-        Academic,
+        /// <summary>
+        /// Recognition options             
+        /// </summary>  
+        public AiBcrOptions Options { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object
+        /// </summary>
+        /// <returns>String presentation of the object</returns>
+        public override string ToString()  
+        {
+          var sb = new StringBuilder();
+          sb.Append("class AiBcrRq {\n");
+          sb.Append("  Options: ").Append(this.Options).Append("\n");
+          sb.Append("}\n");
+          return sb.ToString();
+        }
     }
 }

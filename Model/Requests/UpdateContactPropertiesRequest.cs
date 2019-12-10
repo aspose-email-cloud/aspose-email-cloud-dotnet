@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateContactPropertiesRequest"/> class.
         /// </summary>
-        /// <param name="format">Contact document format</param>
+        /// <param name="format">Contact document format Enum, available values: VCard, WebDav, Msg</param>
         /// <param name="name">Contact document file name</param>
         /// <param name="request">Properties that should be updated/added</param>
         public UpdateContactPropertiesRequest(string format, string name, HierarchicalObjectRequest request)
@@ -53,7 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// Contact document format
+        /// Contact document format Enum, available values: VCard, WebDav, Msg
         /// </summary>
         public string format { get; set; }
 

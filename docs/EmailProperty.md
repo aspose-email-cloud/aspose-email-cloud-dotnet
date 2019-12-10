@@ -2,9 +2,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Link** | [**Link**](Link.md) |  | [optional] 
-**Name** | **string** |  | 
-**Value** | **Object** |  | 
+**Link** | [**Link**](Link.md) | Link to property              | [optional] 
+**Name** | **string** | Property name              | 
+**Value** | **Object** | Property value              | 
 
 
 

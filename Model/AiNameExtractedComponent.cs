@@ -38,9 +38,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class AiNameExtractedComponent 
     {
         /// <summary>
-        /// Component category             
+        /// Extracted from email address name component category. Enum, available values: Unknown, GivenName, Surname, SomeName, NoName, Initial
         /// </summary>  
-        public Object Category { get; set; }
+        public string Category { get; set; }
 
         /// <summary>
         /// Extracted value             

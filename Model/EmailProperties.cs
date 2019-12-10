@@ -43,7 +43,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets List
+        /// List of properties             
         /// </summary>  
         public List<EmailProperty> List { get; set; }
 

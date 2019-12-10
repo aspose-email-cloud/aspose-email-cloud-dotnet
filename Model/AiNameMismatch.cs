@@ -38,9 +38,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class AiNameMismatch 
     {
         /// <summary>
-        /// Mismatch type             
+        /// Mismatch type. Enum, available values: Unknown, FirstName, MiddleName, MiddleLastName, MiddleNickname, Gender, Context
         /// </summary>  
-        public Object Category { get; set; }
+        public string Category { get; set; }
 
         /// <summary>
         /// Similarity score             

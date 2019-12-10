@@ -1,10 +1,10 @@
-# Model.AiBcrParseStorageRequest
+# Model.AiBcrParseOcrDataRq
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**OutFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Parse output folder location on storage              | 
+**Data** | [**List&lt;AiBcrOcrData&gt;**](AiBcrOcrData.md) | OCR data              | 
 
- Parent class: [AiBcrStorageImageRequest](AiBcrStorageImageRequest.md)
+ Parent class: [AiBcrRq](AiBcrRq.md)
 
 [[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 

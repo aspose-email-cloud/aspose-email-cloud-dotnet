@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ContactFormat.cs">
+// <copyright company="Aspose" file="AiNameParsedMatchRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -32,10 +32,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Text;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
-    public enum ContactFormat
+    /// <summary>
+    /// Two parsed names to match request             
+    /// </summary>
+    public class AiNameParsedMatchRq : AiNameParsedRq 
     {
-        VCard,
-        WebDav,
-        Msg,
+        /// <summary>
+        /// Other parsed name to match             
+        /// </summary>  
+        public List<AiNameComponent> OtherParsedName { get; set; }
+
+        /// <summary>
+        /// Get the string presentation of the object
+        /// </summary>
+        /// <returns>String presentation of the object</returns>
+        public override string ToString()  
+        {
+          var sb = new StringBuilder();
+          sb.Append("class AiNameParsedMatchRq {\n");
+          sb.Append("  OtherParsedName: ").Append(this.OtherParsedName).Append("\n");
+          sb.Append("}\n");
+          return sb.ToString();
+        }
     }
 }

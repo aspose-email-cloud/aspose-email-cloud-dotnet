@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrStorageImageRequest.cs">
+// <copyright company="Aspose" file="AiNameParsedRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,14 +33,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Business card images from storage for recognition             
+    /// Parsed name request model             
     /// </summary>
-    public class AiBcrStorageImageRequest : AiBcrRequest 
+    public class AiNameParsedRq 
     {
         /// <summary>
-        /// List of images with business cards             
+        /// AiName parser cultural context             
         /// </summary>  
-        public List<AiBcrImageStorageFile> Images { get; set; }
+        public AiNameCulturalContext CulturalContext { get; set; }
+
+        /// <summary>
+        /// Format of the name. Predefined format can be used by ID, or custom format can be specified. Predefined formats:      /format/default/ (= '%t%F%m%N%L%p')     /format/FN+LN/ (= '%F%L')     /format/title+FN+LN/ (= '%t%F%L')     /format/FN+MN+LN/ (= '%F%M%N%L')     /format/title+FN+MN+LN/ (= '%t%F%M%N%L')     /format/FN+MI+LN/ (= '%F%m%N%L')     /format/title+FN+MI+LN/ (= '%t%F%m%N%L')     /format/LN/ (= '%L')     /format/title+LN/ (= '%t%L')     /format/LN+FN+MN/ (= '%L,%F%M%N')     /format/LN+title+FN+MN/ (= '%L,%t%F%M%N')     /format/LN+FN+MI/ (= '%L,%F%m%N')     /format/LN+title+FN+MI/ (= '%L,%t%F%m%N')  Custom format string - custom combination of characters and the next term placeholders:      '%t' - Title (prefix)     '%F' - First name     '%f' - First initial     '%M' - Middle name(s)     '%m' - Middle initial(s)     '%N' - Nickname     '%L' - Last name     '%l' - Last initial     '%p' - Postfix  If no value for format option was provided, its default value is '%t%F%m%N%L%p'             
+        /// </summary>  
+        public string Format { get; set; }
+
+        /// <summary>
+        /// Parsed name             
+        /// </summary>  
+        public List<AiNameComponent> ParsedName { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -49,8 +59,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrStorageImageRequest {\n");
-          sb.Append("  Images: ").Append(this.Images).Append("\n");
+          sb.Append("class AiNameParsedRq {\n");
+          sb.Append("  CulturalContext: ").Append(this.CulturalContext).Append("\n");
+          sb.Append("  Format: ").Append(this.Format).Append("\n");
+          sb.Append("  ParsedName: ").Append(this.ParsedName).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

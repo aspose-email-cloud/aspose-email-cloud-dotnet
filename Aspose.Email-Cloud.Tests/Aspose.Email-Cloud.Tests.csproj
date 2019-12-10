@@ -4,6 +4,8 @@
         <TargetFramework>netcoreapp3.0</TargetFramework>
 
         <IsPackable>false</IsPackable>
+
+        <LangVersion>7</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -24,6 +26,13 @@
       <None Update="appsettings.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Update="TestData\test_single_0001.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="TestData" />
     </ItemGroup>
 
 </Project>

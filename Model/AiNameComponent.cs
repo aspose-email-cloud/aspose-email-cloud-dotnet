@@ -43,9 +43,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Value { get; set; }
 
         /// <summary>
-        /// Component category             
+        /// Name component category. Enum, available values: Unknown, Mononym, Score, Format, FirstInitial, FirstName, MiddleInitial, MiddleName, MiddleNickname, MiddleSobriquet, MiddleMaidenName, MiddlePatronym, MiddleMatronym, LastInitial, LastName, LastNobiliaryParticle, LastNominalConjunction, LastPaternalSurname, LastMaternalSurname, PrefixTitle, PostfixGenerationalTitle, PostfixPostnominalLetters, ArabicIsm, ArabicKunya, ArabicNasab, ArabicSlaqab, ArabicNisbah
         /// </summary>  
-        public Object Category { get; set; }
+        public string Category { get; set; }
 
         /// <summary>
         /// Score from 0.0 to 1.0             

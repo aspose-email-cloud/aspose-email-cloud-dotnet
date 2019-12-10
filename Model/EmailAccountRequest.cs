@@ -53,14 +53,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Login { get; set; }
 
         /// <summary>
-        /// Email account security options             
+        /// Security mode for a mail client Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
         /// </summary>  
-        public Object SecurityOptions { get; set; }
+        public string SecurityOptions { get; set; }
 
         /// <summary>
-        /// Email account protocol type             
+        /// Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav
         /// </summary>  
-        public Object ProtocolType { get; set; }
+        public string ProtocolType { get; set; }
 
         /// <summary>
         /// Email account description             

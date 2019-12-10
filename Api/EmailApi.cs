@@ -471,11 +471,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfAiBcrOcrData"/></returns>
         public ListResponseOfAiBcrOcrData AiBcrOcr(Model.Requests.AiBcrOcrRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrOcr");
+                    "Missing required parameter 'rq' when calling AiBcrOcr");
             }
 
             // create path and map variables
@@ -484,7 +484,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -507,11 +507,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfAiBcrOcrData"/></returns>
         public async Task<ListResponseOfAiBcrOcrData> AiBcrOcrAsync(Model.Requests.AiBcrOcrRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrOcr");
+                    "Missing required parameter 'rq' when calling AiBcrOcr");
             }
 
             // create path and map variables
@@ -520,7 +520,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
@@ -543,11 +543,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfAiBcrOcrData"/></returns>
         public ListResponseOfAiBcrOcrData AiBcrOcrStorage(Model.Requests.AiBcrOcrStorageRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrOcrStorage");
+                    "Missing required parameter 'rq' when calling AiBcrOcrStorage");
             }
 
             // create path and map variables
@@ -556,7 +556,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -579,11 +579,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfAiBcrOcrData"/></returns>
         public async Task<ListResponseOfAiBcrOcrData> AiBcrOcrStorageAsync(Model.Requests.AiBcrOcrStorageRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrOcrStorage");
+                    "Missing required parameter 'rq' when calling AiBcrOcrStorage");
             }
 
             // create path and map variables
@@ -592,7 +592,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
@@ -615,11 +615,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfHierarchicalObject"/></returns>
         public ListResponseOfHierarchicalObject AiBcrParse(Model.Requests.AiBcrParseRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrParse");
+                    "Missing required parameter 'rq' when calling AiBcrParse");
             }
 
             // create path and map variables
@@ -628,7 +628,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -651,11 +651,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfHierarchicalObject"/></returns>
         public async Task<ListResponseOfHierarchicalObject> AiBcrParseAsync(Model.Requests.AiBcrParseRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrParse");
+                    "Missing required parameter 'rq' when calling AiBcrParse");
             }
 
             // create path and map variables
@@ -664,7 +664,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
@@ -687,11 +687,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfHierarchicalObject"/></returns>
         public ListResponseOfHierarchicalObject AiBcrParseOcrData(Model.Requests.AiBcrParseOcrDataRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrParseOcrData");
+                    "Missing required parameter 'rq' when calling AiBcrParseOcrData");
             }
 
             // create path and map variables
@@ -700,7 +700,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -723,11 +723,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfHierarchicalObject"/></returns>
         public async Task<ListResponseOfHierarchicalObject> AiBcrParseOcrDataAsync(Model.Requests.AiBcrParseOcrDataRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrParseOcrData");
+                    "Missing required parameter 'rq' when calling AiBcrParseOcrData");
             }
 
             // create path and map variables
@@ -736,7 +736,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
@@ -759,11 +759,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfStorageFileLocation"/></returns>
         public ListResponseOfStorageFileLocation AiBcrParseOcrDataStorage(Model.Requests.AiBcrParseOcrDataStorageRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrParseOcrDataStorage");
+                    "Missing required parameter 'rq' when calling AiBcrParseOcrDataStorage");
             }
 
             // create path and map variables
@@ -772,7 +772,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -795,11 +795,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfStorageFileLocation"/></returns>
         public async Task<ListResponseOfStorageFileLocation> AiBcrParseOcrDataStorageAsync(Model.Requests.AiBcrParseOcrDataStorageRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrParseOcrDataStorage");
+                    "Missing required parameter 'rq' when calling AiBcrParseOcrDataStorage");
             }
 
             // create path and map variables
@@ -808,7 +808,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
@@ -831,11 +831,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfStorageFileLocation"/></returns>
         public ListResponseOfStorageFileLocation AiBcrParseStorage(Model.Requests.AiBcrParseStorageRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrParseStorage");
+                    "Missing required parameter 'rq' when calling AiBcrParseStorage");
             }
 
             // create path and map variables
@@ -844,7 +844,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -867,11 +867,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfStorageFileLocation"/></returns>
         public async Task<ListResponseOfStorageFileLocation> AiBcrParseStorageAsync(Model.Requests.AiBcrParseStorageRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiBcrParseStorage");
+                    "Missing required parameter 'rq' when calling AiBcrParseStorage");
             }
 
             // create path and map variables
@@ -880,7 +880,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
@@ -1067,11 +1067,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
         public AiNameWeightedVariants AiNameExpandParsed(Model.Requests.AiNameExpandParsedRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiNameExpandParsed");
+                    "Missing required parameter 'rq' when calling AiNameExpandParsed");
             }
 
             // create path and map variables
@@ -1080,7 +1080,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -1103,11 +1103,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
         public async Task<AiNameWeightedVariants> AiNameExpandParsedAsync(Model.Requests.AiNameExpandParsedRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiNameExpandParsed");
+                    "Missing required parameter 'rq' when calling AiNameExpandParsed");
             }
 
             // create path and map variables
@@ -1116,7 +1116,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
@@ -1157,6 +1157,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.location);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.encoding);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.script);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.style);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
@@ -1198,6 +1199,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.location);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.encoding);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.script);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.style);
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
@@ -1221,11 +1223,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="AiNameFormatted"/></returns>
         public AiNameFormatted AiNameFormatParsed(Model.Requests.AiNameFormatParsedRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiNameFormatParsed");
+                    "Missing required parameter 'rq' when calling AiNameFormatParsed");
             }
 
             // create path and map variables
@@ -1234,7 +1236,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -1257,11 +1259,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="AiNameFormatted"/></returns>
         public async Task<AiNameFormatted> AiNameFormatParsedAsync(Model.Requests.AiNameFormatParsedRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiNameFormatParsed");
+                    "Missing required parameter 'rq' when calling AiNameFormatParsed");
             }
 
             // create path and map variables
@@ -1270,7 +1272,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
@@ -1375,11 +1377,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfAiNameGenderHypothesis"/></returns>
         public ListResponseOfAiNameGenderHypothesis AiNameGenderizeParsed(Model.Requests.AiNameGenderizeParsedRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiNameGenderizeParsed");
+                    "Missing required parameter 'rq' when calling AiNameGenderizeParsed");
             }
 
             // create path and map variables
@@ -1388,7 +1390,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -1411,11 +1413,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ListResponseOfAiNameGenderHypothesis"/></returns>
         public async Task<ListResponseOfAiNameGenderHypothesis> AiNameGenderizeParsedAsync(Model.Requests.AiNameGenderizeParsedRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiNameGenderizeParsed");
+                    "Missing required parameter 'rq' when calling AiNameGenderizeParsed");
             }
 
             // create path and map variables
@@ -1424,7 +1426,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
@@ -1545,11 +1547,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="AiNameMatchResult"/></returns>
         public AiNameMatchResult AiNameMatchParsed(Model.Requests.AiNameMatchParsedRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiNameMatchParsed");
+                    "Missing required parameter 'rq' when calling AiNameMatchParsed");
             }
 
             // create path and map variables
@@ -1558,7 +1560,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -1581,11 +1583,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="AiNameMatchResult"/></returns>
         public async Task<AiNameMatchResult> AiNameMatchParsedAsync(Model.Requests.AiNameMatchParsedRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AiNameMatchParsed");
+                    "Missing required parameter 'rq' when calling AiNameMatchParsed");
             }
 
             // create path and map variables
@@ -1594,7 +1596,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",

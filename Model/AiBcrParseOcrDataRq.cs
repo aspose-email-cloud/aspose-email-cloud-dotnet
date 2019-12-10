@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrParseStorageRequest.cs">
+// <copyright company="Aspose" file="AiBcrParseOcrDataRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,14 +33,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Parse business card images from Storage request             
+    /// Parse ocr data request             
     /// </summary>
-    public class AiBcrParseStorageRequest : AiBcrStorageImageRequest 
+    public class AiBcrParseOcrDataRq : AiBcrRq 
     {
         /// <summary>
-        /// Parse output folder location on storage             
+        /// OCR data             
         /// </summary>  
-        public StorageFolderLocation OutFolder { get; set; }
+        public List<AiBcrOcrData> Data { get; set; }
 
         /// <summary>
         /// Get the string presentation of the object
@@ -49,8 +49,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrParseStorageRequest {\n");
-          sb.Append("  OutFolder: ").Append(this.OutFolder).Append("\n");
+          sb.Append("class AiBcrParseOcrDataRq {\n");
+          sb.Append("  Data: ").Append(this.Data).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

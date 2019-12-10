@@ -38,12 +38,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class AppendEmailAccountBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Gets or sets Folder
+        /// Email account folder to store a message             
         /// </summary>  
         public string Folder { get; set; }
 
         /// <summary>
-        /// Gets or sets MarkAsSent
+        /// Mark message as sent             
         /// </summary>  
         public bool? MarkAsSent { get; set; }
 

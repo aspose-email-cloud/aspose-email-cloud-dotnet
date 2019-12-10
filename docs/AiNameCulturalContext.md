@@ -1,4 +1,4 @@
-# Model.AiNameOptions
+# Model.AiNameCulturalContext
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **Location** | **string** | A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
 **Script** | **string** | A writing system code; starts with the ISO-15924 script name              | [optional] 
 **Encoding** | **string** | A character encoding name              | [optional] 
-**Style** | **string** | Name writing style. Allowed values are: \&quot;Formal\&quot;, \&quot;Informal\&quot;, \&quot;Legal\&quot;, \&quot;Academic\&quot;              | [optional] 
+**Style** | **string** | Name writing style. Enum, available values: Formal, Informal, Legal, Academic | 
 
 
 

@@ -42,15 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="AiBcrParseOcrDataStorageRequest"/> class.
         /// </summary>
-        /// <param name="request"></param>
-        public AiBcrParseOcrDataStorageRequest(AiBcrParseOcrDataStorageRequest request)
+        /// <param name="rq"></param>
+        public AiBcrParseOcrDataStorageRequest(AiBcrParseOcrDataStorageRq rq)
         {
-            this.request = request;
+            this.rq = rq;
         }
 
         /// <summary>
-        /// Gets or sets request
+        /// Gets or sets rq
         /// </summary>
-        public AiBcrParseOcrDataStorageRequest request { get; set; }
+        public AiBcrParseOcrDataStorageRq rq { get; set; }
   }
 }

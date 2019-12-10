@@ -42,15 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="AiNameGenderizeParsedRequest"/> class.
         /// </summary>
-        /// <param name="request">Gender detection request data</param>
-        public AiNameGenderizeParsedRequest(AiNameParsedRequest request)
+        /// <param name="rq">Gender detection request data</param>
+        public AiNameGenderizeParsedRequest(AiNameParsedRq rq)
         {
-            this.request = request;
+            this.rq = rq;
         }
 
         /// <summary>
         /// Gender detection request data
         /// </summary>
-        public AiNameParsedRequest request { get; set; }
+        public AiNameParsedRq rq { get; set; }
   }
 }

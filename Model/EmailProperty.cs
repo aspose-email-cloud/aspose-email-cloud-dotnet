@@ -38,17 +38,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class EmailProperty 
     {
         /// <summary>
-        /// Gets or sets Link
+        /// Link to property             
         /// </summary>  
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets Name
+        /// Property name             
         /// </summary>  
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Value
+        /// Property value             
         /// </summary>  
         public Object Value { get; set; }
 
