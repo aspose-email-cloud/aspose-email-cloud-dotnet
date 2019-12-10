@@ -231,7 +231,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 Assert.True(contactFileContent.Contains("Thomas"));
             }
             
-            // 5) Get VCard object properties list, check that there is 3 properties or more
+            // 5) Get VCard object properties list, check that there are 3 properties or more
             var contactProperties = await emailApi.GetContactPropertiesAsync(new GetContactPropertiesRequest(
                 "vcard", contactFile.FileName, contactFile.FolderPath, contactFile.Storage));
             Assert.GreaterOrEqual(contactProperties.InternalProperties.Count, 3);
