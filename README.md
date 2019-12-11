@@ -231,10 +231,15 @@ System.Console.WriteLine(surName.Value); // "Cane"
 ### Install Aspose.Email for Cloud via NuGet
 You can either directly use it in your project via source code or get [NuGet Package](https://www.nuget.org/packages/Aspose.Email-Cloud/).
 From Package Manager:
+
 `PM> Install-Package Aspose.Email-Cloud`
+
 Using .NET CLI:
+
 `dotnet add package Aspose.Email-Cloud`
+
 Or as Package reference:
+
 `<PackageReference Include="Aspose.Email-Cloud"/>`
 
 # Licensing
