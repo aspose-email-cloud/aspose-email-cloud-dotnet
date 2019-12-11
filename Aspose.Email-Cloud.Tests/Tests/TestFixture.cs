@@ -242,10 +242,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 new AiNameParseEmailAddressRequest(address));
             var extractedValues = result.Value
                 .SelectMany(value => value.Name)
-                .Select(nameExtracted => nameExtracted.Value)
                 .ToList();
-            Assert.Contains("John", extractedValues);
-            Assert.Contains("Cane", extractedValues);
+            var givenName = extractedValues.First(value => value.Category == "GivenName");
+            var surName = extractedValues.First(value => value.Category == "Surname");
+            Assert.AreEqual("John", givenName.Value);
+            Assert.AreEqual("Cane", surName.Value);
         }
 
         /// <summary>
