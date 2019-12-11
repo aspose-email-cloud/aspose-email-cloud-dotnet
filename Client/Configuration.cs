@@ -88,7 +88,7 @@ namespace Aspose.Email.Cloud.Sdk.Client
             set
             {
                 authUrl = value;
-                if (!authUrl.EndsWith("/"))
+                if (authUrl != null && !authUrl.EndsWith("/"))
                 {
                     authUrl += "/";
                 }
