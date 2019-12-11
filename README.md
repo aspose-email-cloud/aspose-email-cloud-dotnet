@@ -1,5 +1,5 @@
 ﻿Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats.
-- Lets developers manipulate formats related to emailing such as Outlook MSG, EML, VCard and iCalendar files.
+- Lets developers manipulate formats related to emailing such as Outlook MSG, EML, VCard and iCalendar files
 - Has built-in email client
 - Supports AI functionalities:
     - Business card recognition
