@@ -4,6 +4,7 @@
 - Supports AI functionalities:
     - Business card recognition
     - Name API for parsing and handling personal names
+
 To use these SDKs, you will need App SID and App Key which can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (free registration in Aspose Cloud is required for this).
 
 ## How to use the SDK?
