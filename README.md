@@ -1,11 +1,11 @@
-﻿Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats.
+﻿Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats. This SDK:
 - Lets developers manipulate formats related to emailing such as Outlook MSG, EML, VCard and iCalendar files
 - Has built-in email client
 - Supports AI functionalities:
     - Business card recognition
     - Name API for parsing and handling personal names
 
-To use these SDKs, you will need App SID and App Key which can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (free registration in Aspose Cloud is required for this).
+To use this SDK, you will need App SID and App Key which can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (free registration in Aspose Cloud is required for this).
 
 ## How to use the SDK?
 The complete source code is available in the GIT repository. 
