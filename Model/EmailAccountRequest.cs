@@ -53,7 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Login { get; set; }
 
         /// <summary>
-        /// Security mode for a mail client Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
+        /// Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
         /// </summary>  
         public string SecurityOptions { get; set; }
 
