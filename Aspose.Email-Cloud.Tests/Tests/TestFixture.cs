@@ -178,6 +178,77 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         }
 
         /// <summary>
+        /// Test name formatting
+        /// </summary>
+        [Test]
+        public async Task AiNameFormatTest()
+        {
+            var result = await emailApi.AiNameFormatAsync(
+                new AiNameFormatRequest(
+                    "Mr. John Michael Cane",
+                    format:"%t%L%f%m"));
+            Assert.AreEqual("Mr. Cane J. M.", result.Name);
+        }
+
+        /// <summary>
+        /// Name match test.
+        /// </summary>
+        [Test]
+        public async Task AiNameMatchTest()
+        {
+            const string first = "John Michael Cane";
+            const string second = "Cane J.";
+            var result = await emailApi.AiNameMatchAsync(
+                new AiNameMatchRequest(first, second));
+            Assert.True(result.Similarity > 0.5);
+        }
+
+        [Test]
+        public async Task AiNameExpandTest()
+        {
+            const string name = "Smith Bobby";
+            var result = await emailApi.AiNameExpandAsync(
+                new AiNameExpandRequest(name));
+            var expandedNames = result
+                .Names
+                .Select(weightedName => weightedName.Name)
+                .ToList();
+            Assert.Contains("Mr. Smith", expandedNames);
+            Assert.Contains("B. Smith", expandedNames);
+        }
+
+        /// <summary>
+        /// Name complete test
+        /// </summary>
+        [Test]
+        public async Task AiNameCompleteTest()
+        {
+            const string prefix = "Dav";
+            var result = await emailApi.AiNameCompleteAsync(
+                new AiNameCompleteRequest(prefix));
+            var names = result.Names
+                .Select(weightedName => $"{prefix}{weightedName.Name}")
+                .ToList();
+            Assert.Contains("David", names);
+            Assert.Contains("Dave", names);
+            Assert.Contains("Davis", names);
+        }
+
+        [Test]
+        public async Task AiNameParseEmailAddressTest()
+        {
+            const string address = "john-cane@gmail.com";
+            var result = await emailApi.AiNameParseEmailAddressAsync(
+                new AiNameParseEmailAddressRequest(address));
+            var extractedValues = result.Value
+                .SelectMany(value => value.Name)
+                .Select(nameExtracted => nameExtracted.Value)
+                .ToList();
+            Assert.Contains("John", extractedValues);
+            Assert.Contains("Cane", extractedValues);
+        }
+
+        /// <summary>
         /// Test business card recognition with storage.
         /// </summary>
         [Test]
