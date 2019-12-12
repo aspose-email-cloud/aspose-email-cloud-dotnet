@@ -1,22 +1,22 @@
-﻿Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats. This SDK:
-- Lets developers manipulate formats related to emailing such as Outlook MSG, EML, VCard and iCalendar files
-- Has built-in email client
+Aspose.Email Cloud is a REST API for creating email applications that work with standard email file formats. This SDK:
+- Lets developers manipulate different emails’ formats such as Outlook MSG, EML, VCard, and iCalendar files
+- Has a built-in email client
 - Supports AI functionalities:
-    - Business card recognition
-    - Name API for parsing and handling personal names
+    - The Business card recognition
+    - The Name API for parsing and handling personal names
 
-To use this SDK, you will need App SID and App Key which can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (free registration in Aspose Cloud is required for this).
+To use this SDK, you need an App SID and an App Key; they can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (it requires free registration in Aspose Cloud for this).
 
 ## How to use the SDK?
 The complete source code is available in the GIT repository. 
-Use reference documentation available [**here**](docs/README.md)
+Use reference documentation, available [**here**](docs/README.md)
 
 ### Usage examples
-To use API you should create EmailApi object:
+To use the API, you should create an EmailApi object:
 ```csharp
 using Aspose.Email.Cloud.Sdk.Api; //EmailApi class is here
-using Aspose.Email.Cloud.Sdk.Model; //REST API models here
-using Aspose.Email.Cloud.Sdk.Model.Requests; //Request models here (all API calls use corresponding request model class)
+using Aspose.Email.Cloud.Sdk.Model; //REST API models are here
+using Aspose.Email.Cloud.Sdk.Model.Requests; //Request models are here (all API calls use corresponding request model class)
 
 ...
 var appKey = "Your App Key";
@@ -24,35 +24,35 @@ var appSid = "Your App SID";
 var emailApi = new EmailApi(appKey, appSid);
 ```
 
-API calls could be synchronous or asynchronous (if supported by framework):
+API calls can be synchronous or asynchronous (if it's supported by the framework):
 ```csharp
 var result = emailApi.GetCalendar(new GetCalendarRequest(calendarFile, folder, StorageName));
 // or
 var result = await emailApi.GetCalendarAsync(new GetCalendarRequest(calendarFile, folder, StorageName));
 ```
 
-#### Business card recognition API
+#### Business cards recognition API
 See examples below:
 
 <details open>
     <summary>Parse business card images to VCard contact files</summary>
 
 ```csharp
-// Upload business card image to storage
+// Upload a business card image to storage
 var storageName = "First Storage"; //Your storage name
-var imageFileName = "someFileName.png"; //Different image formats are supported (PNG, JPEG, BMP, TIFF, GIF...)
+var imageFileName = "someFileName.png"; //Supports different image formats: PNG, JPEG, BMP, TIFF, GIF, etc.
 using (var stream = File.OpenRead("some/business/card/image/file/on/disk"))
 {
     await emailApi.UploadFileAsync(new UploadFileRequest(imageFileName, stream, storageName));
 }
 
-var outFolder = "some/folder/on/storage"; //Business card recognition results will be placed here
+var outFolder = "some/folder/on/storage"; //Business card recognition results will be saved here
 await emailApi.CreateFolderAsync(new CreateFolderRequest(outFolder, storageName));
 // Call business card recognition action
 var result = await emailApi.AiBcrParseStorageAsync(new AiBcrParseStorageRequest(
     new AiBcrParseStorageRq
     {
-        Images = new List<AiBcrImageStorageFile> //We can process multiple images in just one request
+        Images = new List<AiBcrImageStorageFile> //We can process multiple images in one request
         {
             new AiBcrImageStorageFile
             {
@@ -62,7 +62,7 @@ var result = await emailApi.AiBcrParseStorageAsync(new AiBcrParseStorageRequest(
                     FileName = imageFileName,
                     FolderPath = string.Empty //image was uploaded to the root directory of storage
                 },
-                IsSingle = true //image contains only one business card (you can upload image with multiple cards on it)
+                IsSingle = true //the image contains only one business card (you can upload image with multiple cards on it)
             }
         },
         OutFolder = new StorageFolderLocation
@@ -71,23 +71,23 @@ var result = await emailApi.AiBcrParseStorageAsync(new AiBcrParseStorageRequest(
             FolderPath = outFolder
         }
     }));
-// Get file name from recognition result
+// Get file name from a recognition result
 var contactFile = result.Value.First(); //result.Value can contain multiple files, if we sent multicard images or multiple images
 
-// You can download VCard file, produced by recognition method ...
+// You can download the VCard file, which produced by the recognition method ...
 using (var contactFileStream = await emailApi.DownloadFileAsync(new DownloadFileRequest(
     $"{contactFile.FolderPath}/{contactFile.FileName}", contactFile.Storage)))
-//... and save it to a "contact.vcf" file
+//... and save it to the "contact.vcf" file
 using (var fileStream = File.Create("path/to/contact.vcf"))
 {
     contactFileStream.CopyTo(fileStream);
 }
 
-// Or get VCard object properties list using Contact API
+// Also, you can get VCard object properties’ list using Contact API
 var contactProperties = await emailApi.GetContactPropertiesAsync(new GetContactPropertiesRequest(
     "vcard", contactFile.FileName, contactFile.FolderPath, contactFile.Storage));
-//All VCard properties available as a list. Complex properties represented as hierarchical structures.
-//Let's print all primitive property values:
+//All VCard’s properties are available as a list. Complex properties are represented as hierarchical structures.
+//Let's print all primitive properties’ values:
 var primitiveProperties = contactProperties.InternalProperties
     .Where(property => property is PrimitiveObject)
     .Select(property => property as PrimitiveObject)
@@ -101,7 +101,7 @@ foreach(var primitiveProperty in primitiveProperties)
 
 
 <details>
-    <summary>Parse images directly, without use of storage</summary>
+    <summary>Parse images directly, without the using of a storage</summary>
 
 ```csharp
 //Read image from file and convert it to Base64 string
@@ -120,10 +120,10 @@ var result = await emailApi.AiBcrParseAsync(
                 }
             }
         }));
-//Result contains all recognized VCard objects (only one in our case)
+//Result contains all recognized VCard objects (only the one in our case)
 var contactProperties = result.Value.First();
 
-//VCard object is available as list of properties, without any external calls:
+//VCard object is available as a list of properties, without any external calls:
 var primitiveProperties = contactProperties.InternalProperties
     .Where(property => property is PrimitiveObject)
     .Select(property => property as PrimitiveObject)
@@ -138,14 +138,14 @@ foreach(var primitiveProperty in primitiveProperties)
 #### Name API
 See examples below:
 <details open>
-    <summary>Detect person's gender by name</summary>
+    <summary>Detect a person's gender by name</summary>
 
 ```csharp
 var name = "John Cane";
 var result = await emailApi.AiNameGenderizeAsync(
     new AiNameGenderizeRequest(name));
-//result contains list of hypothesis about person's gender.
-//all hypothesis include score, so you can use most scored version, which will be first in list:
+//the result contains a list of hypothesis about a person's gender.
+//all hypothesis include score, so you can use the most scored version, which will be the first in a list:
 System.Console.WriteLine(result.Value.First().Gender); //prints "Male"
 ```
 </details>
@@ -163,7 +163,7 @@ System.Console.WriteLine(result.Name); //prints "Mr. Cane J. M."
 </details>
 
 <details>
-    <summary>Compare names to detect that they related to same person or not</summary>
+    <summary>Compare the names to find out if they belong to the same person or not</summary>
 
 ```csharp
 const string first = "John Michael Cane";
@@ -205,13 +205,13 @@ var names = result.Names
     .ToList();
 foreach(var name in names)
 {
-    System.Console.WriteLine(name); //prints David", "Dave", "Davis", etc.
+    System.Console.WriteLine(name); //prints "David", "Dave", "Davis", etc.
 }
 ```
 </details>
 
 <details>
-    <summary>Parse the person's name out of an email address.</summary>
+    <summary>Parse out a person's name from an email address.</summary>
 
 ```csharp
 const string address = "john-cane@gmail.com";
@@ -229,8 +229,8 @@ System.Console.WriteLine(surName.Value); // "Cane"
 </details>
 
 ### Install Aspose.Email for Cloud via NuGet
-You can either directly use it in your project via source code or get [NuGet Package](https://www.nuget.org/packages/Aspose.Email-Cloud/).
-From Package Manager:
+You can use it directly in your project via the source code or get a [NuGet Package](https://www.nuget.org/packages/Aspose.Email-Cloud/).
+From the Package Manager:
 
 `PM> Install-Package Aspose.Email-Cloud`
 
@@ -238,7 +238,7 @@ Using .NET CLI:
 
 `dotnet add package Aspose.Email-Cloud`
 
-Or as Package reference:
+Or as a Package reference:
 
 `<PackageReference Include="Aspose.Email-Cloud"/>`
 
