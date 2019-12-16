@@ -232,15 +232,15 @@ System.Console.WriteLine(surName.Value); // "Cane"
 You can use it directly in your project via the source code or get a [NuGet Package](https://www.nuget.org/packages/Aspose.Email-Cloud/).
 From the Package Manager:
 
-`PM> Install-Package Aspose.Email-Cloud`
+    PM> Install-Package Aspose.Email-Cloud
 
 Using .NET CLI:
 
-`dotnet add package Aspose.Email-Cloud`
+    dotnet add package Aspose.Email-Cloud
 
 Or as a Package reference:
 
-`<PackageReference Include="Aspose.Email-Cloud"/>`
+    <PackageReference Include="Aspose.Email-Cloud"/>
 
 # Licensing
 All Aspose.Email Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
