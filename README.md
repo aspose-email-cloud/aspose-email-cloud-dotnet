@@ -1,3 +1,10 @@
+# Aspose.Email Cloud SDK for .NET [![NuGet](https://img.shields.io/nuget/v/Aspose.Email-Cloud.svg)](https://www.nuget.org/packages/Aspose.Email-Cloud/)
+This repository contains Aspose.Email Cloud SDK for .NET source code. This SDK allows you to work with Aspose.Email Cloud REST APIs in your .NET applications quickly and easily, with zero initial cost.
+
+[Aspose.Email Cloud home](https://products.aspose.cloud/email/family "Aspose.Email Cloud")  
+[API Reference](https://apireference.aspose.cloud/email/)  
+
+# Key features
 Aspose.Email Cloud is a REST API for creating email applications that work with standard email file formats. This SDK:
 - Lets developers manipulate different emails’ formats such as Outlook MSG, EML, VCard, and iCalendar files
 - Has a built-in email client
@@ -5,11 +12,35 @@ Aspose.Email Cloud is a REST API for creating email applications that work with 
     - The Business card recognition
     - The Name API for parsing and handling personal names
 
-To use this SDK, you need an App SID and an App Key; they can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (it requires free registration in Aspose Cloud for this).
-
 ## How to use the SDK?
 The complete source code is available in the GIT repository. 
 Use reference documentation, available [**here**](docs/README.md)
+
+### Prerequisites
+
+To use this SDK, you need:
+- One of supported (or compatible with supported) .NET frameworks:
+    - .NETFramework 2.0
+    - .NETFramework 4.5.2
+    - .NETStandard 2.0
+    - MonoAndroid 6.0
+    - Xamarin.iOS 1.0
+    - Xamarin.Mac 2.0
+- An App SID and an App Key; they can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (it requires free registration in Aspose Cloud for this).
+
+### Installation
+You can use SDK directly in your project via the source code or get a [NuGet Package](https://www.nuget.org/packages/Aspose.Email-Cloud/).
+From the Package Manager:
+
+    PM> Install-Package Aspose.Email-Cloud
+
+Using .NET CLI:
+
+    dotnet add package Aspose.Email-Cloud
+
+Or as a Package reference:
+
+    <PackageReference Include="Aspose.Email-Cloud"/>
 
 ### Usage examples
 To use the API, you should create an EmailApi object:
@@ -144,8 +175,9 @@ See examples below:
 var name = "John Cane";
 var result = await emailApi.AiNameGenderizeAsync(
     new AiNameGenderizeRequest(name));
-//the result contains a list of hypothesis about a person's gender.
-//all hypothesis include score, so you can use the most scored version, which will be the first in a list:
+// the result contains a list of hypothesis about a person's gender.
+// all hypothesis include score, so you can use the most scored version,
+// which will be the first in a list:
 System.Console.WriteLine(result.Value.First().Gender); //prints "Male"
 ```
 </details>
@@ -228,27 +260,13 @@ System.Console.WriteLine(surName.Value); // "Cane"
 ```
 </details>
 
-### Install Aspose.Email for Cloud via NuGet
-You can use it directly in your project via the source code or get a [NuGet Package](https://www.nuget.org/packages/Aspose.Email-Cloud/).
-From the Package Manager:
-
-    PM> Install-Package Aspose.Email-Cloud
-
-Using .NET CLI:
-
-    dotnet add package Aspose.Email-Cloud
-
-Or as a Package reference:
-
-    <PackageReference Include="Aspose.Email-Cloud"/>
-
 # Licensing
 All Aspose.Email Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
 
 # Resources
 + [**SDK Reference documentation**](docs/README.md)
 + [**Website**](https://www.aspose.cloud)
-+ [**Product Home**](https://products.aspose.cloud/Email/cloud)
++ [**Product Home**](https://products.aspose.cloud/Email)
 + [**Documentation**](https://docs.aspose.cloud/display/Emailcloud/Home)
 + [**API Reference**](https://apireference.aspose.cloud/email/)
 + [**Free Support Forum**](https://forum.aspose.cloud/c/email)
