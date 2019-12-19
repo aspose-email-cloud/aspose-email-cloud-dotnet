@@ -42,6 +42,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string FileName { get; set; }
 
+        /// <summary>StorageFileLocation constructor</summary>
+        public StorageFileLocation() {}
+
+        /// <summary>StorageFileLocation constructor</summary>
+        /// <param name="storage">A storage name             </param>
+        /// <param name="folderPath">A path to a folder in specified storage             </param>
+        /// <param name="fileName">A file name in storage             </param>
+        public StorageFileLocation(string storage, string folderPath, string fileName)
+        {
+            Storage = storage;
+            FolderPath = folderPath;
+            FileName = fileName;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +63,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class StorageFileLocation {\n");
+          sb.Append("  Storage: ").Append(this.Storage).Append("\n");
+          sb.Append("  FolderPath: ").Append(this.FolderPath).Append("\n");
           sb.Append("  FileName: ").Append(this.FileName).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

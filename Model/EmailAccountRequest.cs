@@ -72,6 +72,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public StorageFileLocation StorageFile { get; set; }
 
+        /// <summary>EmailAccountRequest constructor</summary>
+        public EmailAccountRequest() {}
+
+        /// <summary>EmailAccountRequest constructor</summary>
+        /// <param name="host">Email account host             </param>
+        /// <param name="port">Email account port             </param>
+        /// <param name="login">Email account login             </param>
+        /// <param name="securityOptions">Security mode for a mail client Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
+        /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
+        /// <param name="description">Email account description             </param>
+        /// <param name="storageFile">A storage file location info to store email account             </param>
+        public EmailAccountRequest(string host, int? port, string login, string securityOptions, string protocolType, string description, StorageFileLocation storageFile)
+        {
+            Host = host;
+            Port = port;
+            Login = login;
+            SecurityOptions = securityOptions;
+            ProtocolType = protocolType;
+            Description = description;
+            StorageFile = storageFile;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

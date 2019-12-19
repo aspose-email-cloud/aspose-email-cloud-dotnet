@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<AiBcrOcrData> Value { get; set; }
 
+        /// <summary>ListResponseOfAiBcrOcrData constructor</summary>
+        public ListResponseOfAiBcrOcrData() {}
+
+        /// <summary>ListResponseOfAiBcrOcrData constructor</summary>
+        /// <param name="value"></param>
+        public ListResponseOfAiBcrOcrData(List<AiBcrOcrData> value)
+        {
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

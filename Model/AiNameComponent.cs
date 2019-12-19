@@ -57,6 +57,21 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public int? Position { get; set; }
 
+        /// <summary>AiNameComponent constructor</summary>
+        public AiNameComponent() {}
+
+        /// <summary>AiNameComponent constructor</summary>
+        /// <param name="value">Component value             </param>
+        /// <param name="category">Name component category. Enum, available values: Unknown, Mononym, Score, Format, FirstInitial, FirstName, MiddleInitial, MiddleName, MiddleNickname, MiddleSobriquet, MiddleMaidenName, MiddlePatronym, MiddleMatronym, LastInitial, LastName, LastNobiliaryParticle, LastNominalConjunction, LastPaternalSurname, LastMaternalSurname, PrefixTitle, PostfixGenerationalTitle, PostfixPostnominalLetters, ArabicIsm, ArabicKunya, ArabicNasab, ArabicSlaqab, ArabicNisbah</param>
+        /// <param name="score">Score from 0.0 to 1.0             </param>
+        /// <param name="position">Component position from 0             </param>
+        public AiNameComponent(string value, string category, double? score, int? position)
+        {
+            Value = value;
+            Category = category;
+            Score = score;
+            Position = position;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

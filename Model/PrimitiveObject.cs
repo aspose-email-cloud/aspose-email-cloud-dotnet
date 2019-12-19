@@ -42,6 +42,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Value { get; set; }
 
+        /// <summary>PrimitiveObject constructor</summary>
+        public PrimitiveObject() {}
+
+        /// <summary>PrimitiveObject constructor</summary>
+        /// <param name="name">Gets or sets the name of an object.             </param>
+        /// <param name="type">Property type. Used for deserialization purposes             </param>
+        /// <param name="value">Property value             </param>
+        public PrimitiveObject(string name, string type, string value)
+        {
+            Name = name;
+            Type = type;
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +63,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class PrimitiveObject {\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public StorageFolderLocation StorageFolder { get; set; }
 
+        /// <summary>CreateEmailRequest constructor</summary>
+        public CreateEmailRequest() {}
+
+        /// <summary>CreateEmailRequest constructor</summary>
+        /// <param name="emailDocument">An email document that should be created             </param>
+        /// <param name="storageFolder">Email document location in storage             </param>
+        public CreateEmailRequest(EmailDocument emailDocument, StorageFolderLocation storageFolder)
+        {
+            EmailDocument = emailDocument;
+            StorageFolder = storageFolder;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Countries { get; set; }
 
+        /// <summary>AiBcrOptions constructor</summary>
+        public AiBcrOptions() {}
+
+        /// <summary>AiBcrOptions constructor</summary>
+        /// <param name="languages">Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \"it\" or \"ita\" for Italian); it's \"\" by default             </param>
+        /// <param name="countries">Comma-separated codes of countries             </param>
+        public AiBcrOptions(string languages, string countries)
+        {
+            Languages = languages;
+            Countries = countries;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

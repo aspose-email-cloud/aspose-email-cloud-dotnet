@@ -47,6 +47,21 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Value { get; set; }
 
+        /// <summary>IndexedPrimitiveObject constructor</summary>
+        public IndexedPrimitiveObject() {}
+
+        /// <summary>IndexedPrimitiveObject constructor</summary>
+        /// <param name="name">Gets or sets the name of an object.             </param>
+        /// <param name="type">Property type. Used for deserialization purposes             </param>
+        /// <param name="index">Index of property in list             </param>
+        /// <param name="value">Gets or sets the name of a property.             </param>
+        public IndexedPrimitiveObject(string name, string type, int? index, string value)
+        {
+            Name = name;
+            Type = type;
+            Index = index;
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -55,6 +70,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class IndexedPrimitiveObject {\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("  Index: ").Append(this.Index).Append("\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");

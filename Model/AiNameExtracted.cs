@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public double? Score { get; set; }
 
+        /// <summary>AiNameExtracted constructor</summary>
+        public AiNameExtracted() {}
+
+        /// <summary>AiNameExtracted constructor</summary>
+        /// <param name="name">Extracted name components             </param>
+        /// <param name="score">Extracted name score             </param>
+        public AiNameExtracted(List<AiNameExtractedComponent> name, double? score)
+        {
+            Name = name;
+            Score = score;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public AiBcrOptions Options { get; set; }
 
+        /// <summary>AiBcrRq constructor</summary>
+        public AiBcrRq() {}
+
+        /// <summary>AiBcrRq constructor</summary>
+        /// <param name="options">Recognition options             </param>
+        public AiBcrRq(AiBcrOptions options)
+        {
+            Options = options;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

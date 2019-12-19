@@ -42,6 +42,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<AiBcrOcrData> Data { get; set; }
 
+        /// <summary>AiBcrParseOcrDataRq constructor</summary>
+        public AiBcrParseOcrDataRq() {}
+
+        /// <summary>AiBcrParseOcrDataRq constructor</summary>
+        /// <param name="options">Recognition options             </param>
+        /// <param name="data">OCR data             </param>
+        public AiBcrParseOcrDataRq(AiBcrOptions options, List<AiBcrOcrData> data)
+        {
+            Options = options;
+            Data = data;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +61,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AiBcrParseOcrDataRq {\n");
+          sb.Append("  Options: ").Append(this.Options).Append("\n");
           sb.Append("  Data: ").Append(this.Data).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

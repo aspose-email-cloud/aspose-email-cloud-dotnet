@@ -42,6 +42,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public StorageFileLocation File { get; set; }
 
+        /// <summary>AiBcrImageStorageFile constructor</summary>
+        public AiBcrImageStorageFile() {}
+
+        /// <summary>AiBcrImageStorageFile constructor</summary>
+        /// <param name="isSingle">Determines that image contains single VCard or more             </param>
+        /// <param name="file">Image location             </param>
+        public AiBcrImageStorageFile(bool? isSingle, StorageFileLocation file)
+        {
+            IsSingle = isSingle;
+            File = file;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +61,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AiBcrImageStorageFile {\n");
+          sb.Append("  IsSingle: ").Append(this.IsSingle).Append("\n");
           sb.Append("  File: ").Append(this.File).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

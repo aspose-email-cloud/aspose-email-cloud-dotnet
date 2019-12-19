@@ -81,27 +81,12 @@ var outFolder = "some/folder/on/storage"; //Business card recognition results wi
 await emailApi.CreateFolderAsync(new CreateFolderRequest(outFolder, storageName));
 // Call business card recognition action
 var result = await emailApi.AiBcrParseStorageAsync(new AiBcrParseStorageRequest(
-    new AiBcrParseStorageRq
-    {
-        Images = new List<AiBcrImageStorageFile> //We can process multiple images in one request
-        {
-            new AiBcrImageStorageFile
-            {
-                File = new StorageFileLocation
-                {
-                    Storage = storageName,
-                    FileName = imageFileName,
-                    FolderPath = string.Empty //image was uploaded to the root directory of storage
-                },
-                IsSingle = true //the image contains only one business card (you can upload image with multiple cards on it)
-            }
-        },
-        OutFolder = new StorageFolderLocation
-        {
-            Storage = storageName,
-            FolderPath = outFolder
-        }
-    }));
+    new AiBcrParseStorageRq(null,
+        new List<AiBcrImageStorageFile> //We can process multiple images in one 
+            {new AiBcrImageStorageFile(
+                true, //the image contains only one business card (you can upload image with multiple cards on it)
+                new StorageFileLocation(storageName, string.Empty, imageFileName))},
+        new StorageFolderLocation(storageName, outFolder))));
 // Get file name from a recognition result
 var contactFile = result.Value.First(); //result.Value can contain multiple files, if we sent multicard images or multiple images
 
@@ -138,19 +123,8 @@ foreach(var primitiveProperty in primitiveProperties)
 //Read image from file and convert it to Base64 string
 var bytes = File.ReadAllBytes("some/business/card/image/file/on/disk");
 var base64Image = Convert.ToBase64String(bytes);
-var result = await emailApi.AiBcrParseAsync(
-    new AiBcrParseRequest(
-        new AiBcrBase64Rq
-        {
-            Images = new List<AiBcrBase64Image>
-            {
-                new AiBcrBase64Image
-                {
-                    Base64Data = base64Image,
-                    IsSingle = true
-                }
-            }
-        }));
+var result = await emailApi.AiBcrParseAsync(new AiBcrParseRequest(new AiBcrBase64Rq(null,
+    new List<AiBcrBase64Image> {new AiBcrBase64Image(true, base64Image)})));
 //Result contains all recognized VCard objects (only the one in our case)
 var contactProperties = result.Value.First();
 

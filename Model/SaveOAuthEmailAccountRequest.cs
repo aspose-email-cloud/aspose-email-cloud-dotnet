@@ -52,6 +52,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string RefreshToken { get; set; }
 
+        /// <summary>SaveOAuthEmailAccountRequest constructor</summary>
+        public SaveOAuthEmailAccountRequest() {}
+
+        /// <summary>SaveOAuthEmailAccountRequest constructor</summary>
+        /// <param name="host">Email account host             </param>
+        /// <param name="port">Email account port             </param>
+        /// <param name="login">Email account login             </param>
+        /// <param name="securityOptions">Security mode for a mail client Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
+        /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
+        /// <param name="description">Email account description             </param>
+        /// <param name="storageFile">A storage file location info to store email account             </param>
+        /// <param name="clientId">OAuth client identifier             </param>
+        /// <param name="clientSecret">OAuth client secret             </param>
+        /// <param name="refreshToken">OAuth refresh token             </param>
+        public SaveOAuthEmailAccountRequest(string host, int? port, string login, string securityOptions, string protocolType, string description, StorageFileLocation storageFile, string clientId, string clientSecret, string refreshToken)
+        {
+            Host = host;
+            Port = port;
+            Login = login;
+            SecurityOptions = securityOptions;
+            ProtocolType = protocolType;
+            Description = description;
+            StorageFile = storageFile;
+            ClientId = clientId;
+            ClientSecret = clientSecret;
+            RefreshToken = refreshToken;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -60,6 +87,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class SaveOAuthEmailAccountRequest {\n");
+          sb.Append("  Host: ").Append(this.Host).Append("\n");
+          sb.Append("  Port: ").Append(this.Port).Append("\n");
+          sb.Append("  Login: ").Append(this.Login).Append("\n");
+          sb.Append("  SecurityOptions: ").Append(this.SecurityOptions).Append("\n");
+          sb.Append("  ProtocolType: ").Append(this.ProtocolType).Append("\n");
+          sb.Append("  Description: ").Append(this.Description).Append("\n");
+          sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
           sb.Append("  ClientId: ").Append(this.ClientId).Append("\n");
           sb.Append("  ClientSecret: ").Append(this.ClientSecret).Append("\n");
           sb.Append("  RefreshToken: ").Append(this.RefreshToken).Append("\n");

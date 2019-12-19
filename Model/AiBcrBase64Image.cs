@@ -42,6 +42,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Base64Data { get; set; }
 
+        /// <summary>AiBcrBase64Image constructor</summary>
+        public AiBcrBase64Image() {}
+
+        /// <summary>AiBcrBase64Image constructor</summary>
+        /// <param name="isSingle">Determines that image contains single VCard or more             </param>
+        /// <param name="base64Data">Image data in base64             </param>
+        public AiBcrBase64Image(bool? isSingle, string base64Data)
+        {
+            IsSingle = isSingle;
+            Base64Data = base64Data;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +61,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AiBcrBase64Image {\n");
+          sb.Append("  IsSingle: ").Append(this.IsSingle).Append("\n");
           sb.Append("  Base64Data: ").Append(this.Base64Data).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

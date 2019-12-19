@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Mime { get; set; }
 
+        /// <summary>MimeResponse constructor</summary>
+        public MimeResponse() {}
+
+        /// <summary>MimeResponse constructor</summary>
+        /// <param name="mime">Gets or sets base64 encoded mime content.             </param>
+        public MimeResponse(string mime)
+        {
+            Mime = mime;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

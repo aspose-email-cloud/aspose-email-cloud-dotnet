@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<HierarchicalObject> Value { get; set; }
 
+        /// <summary>ListResponseOfHierarchicalObject constructor</summary>
+        public ListResponseOfHierarchicalObject() {}
+
+        /// <summary>ListResponseOfHierarchicalObject constructor</summary>
+        /// <param name="value"></param>
+        public ListResponseOfHierarchicalObject(List<HierarchicalObject> value)
+        {
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

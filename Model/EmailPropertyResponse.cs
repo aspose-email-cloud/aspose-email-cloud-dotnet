@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public EmailProperty EmailProperty { get; set; }
 
+        /// <summary>EmailPropertyResponse constructor</summary>
+        public EmailPropertyResponse() {}
+
+        /// <summary>EmailPropertyResponse constructor</summary>
+        /// <param name="emailProperty">Gets or sets email property.             </param>
+        public EmailPropertyResponse(EmailProperty emailProperty)
+        {
+            EmailProperty = emailProperty;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

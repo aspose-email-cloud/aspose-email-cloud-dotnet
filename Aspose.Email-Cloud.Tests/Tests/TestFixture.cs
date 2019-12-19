@@ -81,8 +81,8 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task HierarchicalTest()
         {
             var calendarFile = await CreateCalendar();
-            var request = new GetCalendarRequest(calendarFile, folder, StorageName);
-            var calendar = await emailApi.GetCalendarAsync(request);
+            var calendar = await emailApi.GetCalendarAsync(
+                new GetCalendarRequest(calendarFile, folder, StorageName));
             Assert.AreEqual("CALENDAR", calendar.Name);
             Assert.GreaterOrEqual(
                 calendar.InternalProperties
@@ -104,15 +104,15 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var calendarFile = await CreateCalendar();
             var newFileName = $"{Guid.NewGuid().ToString()}.ics";
             var newPath = $"{folder}/{newFileName}";
-            var request = new DownloadFileRequest($"{folder}/{calendarFile}", StorageName);
-            using (var stream = await emailApi.DownloadFileAsync(request))
+            using (var stream = await emailApi.DownloadFileAsync(
+                new DownloadFileRequest($"{folder}/{calendarFile}", StorageName)))
             {
                 var uploadRequest = new UploadFileRequest(newPath, stream, StorageName);
                 await emailApi.UploadFileAsync(uploadRequest);
             }
 
-            var existRequest = new ObjectExistsRequest(newPath, StorageName);
-            var newFileExist = await emailApi.ObjectExistsAsync(existRequest);
+            var newFileExist = await emailApi.ObjectExistsAsync(
+                new ObjectExistsRequest(newPath, StorageName));
             Assert.IsTrue(newFileExist.Exists);
             Assert.IsFalse(newFileExist.IsFolder);
         }
@@ -128,19 +128,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             foreach (var format in new[] {"vcard", "msg"})
             {
                 var extension = format == "vcard" ? ".vcf" : ".msg";
-                var request = new CreateContactRequest
-                {
-                    format = format,
-                    name = $"{Guid.NewGuid().ToString()}{extension}",
-                    request = new HierarchicalObjectRequest
-                    {
-                        StorageFolder = new StorageFolderLocation {Storage = StorageName, FolderPath = folder},
-                        HierarchicalObject = new HierarchicalObject
-                            {Name = "CONTACT", InternalProperties = new List<BaseObject>()}
-                    }
-                };
-                await emailApi.CreateContactAsync(request);
-                var contactExist = await IsFileExist(request.name);
+                var name = $"{Guid.NewGuid().ToString()}{extension}";
+                await emailApi.CreateContactAsync(new CreateContactRequest(format, name,
+                    new HierarchicalObjectRequest(new HierarchicalObject("CONTACT", null, new List<BaseObject>()),
+                        new StorageFolderLocation(StorageName, folder))));
+                var contactExist = await IsFileExist(name);
                 Assert.IsTrue(contactExist);
             }
         }
@@ -156,8 +148,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         {
             var startDate = DateTime.UtcNow.Date.AddDays(1).AddHours(12);
             var calendarFile = await CreateCalendar(startDate);
-            var request = new GetCalendarRequest(calendarFile, folder, StorageName);
-            var calendar = await emailApi.GetCalendarAsync(request);
+            var calendar = await emailApi.GetCalendarAsync(new GetCalendarRequest(calendarFile, folder, StorageName));
             var startDateProperty = calendar.InternalProperties
                 .First(property => property.Name == "STARTDATE");
             var factStartDate = DateTime
@@ -184,9 +175,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task AiNameFormatTest()
         {
             var result = await emailApi.AiNameFormatAsync(
-                new AiNameFormatRequest(
-                    "Mr. John Michael Cane",
-                    format:"%t%L%f%m"));
+                new AiNameFormatRequest("Mr. John Michael Cane", format: "%t%L%f%m"));
             Assert.AreEqual("Mr. Cane J. M.", result.Name);
         }
 
@@ -209,8 +198,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             const string name = "Smith Bobby";
             var result = await emailApi.AiNameExpandAsync(
                 new AiNameExpandRequest(name));
-            var expandedNames = result
-                .Names
+            var expandedNames = result.Names
                 .Select(weightedName => weightedName.Name)
                 .ToList();
             Assert.Contains("Mr. Smith", expandedNames);
@@ -267,27 +255,10 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             await emailApi.CreateFolderAsync(new CreateFolderRequest(outFolderPath, StorageName));
             // 2) Call business card recognition action
             var result = await emailApi.AiBcrParseStorageAsync(new AiBcrParseStorageRequest(
-                new AiBcrParseStorageRq
-                {
-                    Images = new List<AiBcrImageStorageFile>
-                    {
-                        new AiBcrImageStorageFile
-                        {
-                            File = new StorageFileLocation
-                            {
-                                Storage = StorageName,
-                                FileName = fileName,
-                                FolderPath = folder
-                            },
-                            IsSingle = true
-                        }
-                    },
-                    OutFolder = new StorageFolderLocation
-                    {
-                        Storage = StorageName,
-                        FolderPath = outFolderPath
-                    }
-                }));
+                new AiBcrParseStorageRq(null,
+                    new List<AiBcrImageStorageFile>
+                        {new AiBcrImageStorageFile(true, new StorageFileLocation(StorageName, folder, fileName))},
+                    new StorageFolderLocation(StorageName, outFolderPath))));
             //Check that only one file produced
             Assert.True(result.Value.Count == 1);
             // 3) Get file name from recognition result
@@ -296,13 +267,13 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             // 4) Download VCard file, produced by recognition method, check it contains text "Thomas"
             using (var contactFileStream = await emailApi.DownloadFileAsync(new DownloadFileRequest(
                 $"{contactFile.FolderPath}/{contactFile.FileName}", contactFile.Storage)))
-            using(var memoryStream = new MemoryStream())
+            using (var memoryStream = new MemoryStream())
             {
                 contactFileStream.CopyTo(memoryStream);
                 var contactFileContent = Encoding.UTF8.GetString(memoryStream.ToArray());
                 Assert.True(contactFileContent.Contains("Thomas"));
             }
-            
+
             // 5) Get VCard object properties list, check that there are 3 properties or more
             var contactProperties = await emailApi.GetContactPropertiesAsync(new GetContactPropertiesRequest(
                 "vcard", contactFile.FileName, contactFile.FolderPath, contactFile.Storage));
@@ -316,25 +287,14 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         [Test]
         public async Task AiBcrParseTest()
         {
-            var result = await emailApi.AiBcrParseAsync(
-                new AiBcrParseRequest(
-                    new AiBcrBase64Rq
-                    {
-                        Images = new List<AiBcrBase64Image>
-                        {
-                            new AiBcrBase64Image
-                            {
-                                Base64Data = FileToBase64(BcrAiTestFilePath),
-                                IsSingle = true
-                            }
-                        }
-                    }));
+            var result = await emailApi.AiBcrParseAsync(new AiBcrParseRequest(new AiBcrBase64Rq(null,
+                new List<AiBcrBase64Image> {new AiBcrBase64Image(true, FileToBase64(BcrAiTestFilePath))})));
             Assert.AreEqual(1, result.Value.Count);
             Assert.True(result.Value
                 .First()
                 .InternalProperties
                 .Where(property => property.Type == nameof(PrimitiveObject))
-                .Select(property => (PrimitiveObject)property)
+                .Select(property => (PrimitiveObject) property)
                 .Any(property => property.Value?.Contains("Thomas") ?? false));
         }
 
@@ -357,49 +317,31 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var fileName = $"{Guid.NewGuid().ToString()}.ics";
             startDate = startDate ?? DateTime.UtcNow.Date.AddDays(1).AddHours(12);
             var endDate = startDate.Value.AddHours(1);
-            var request = new CreateCalendarRequest
-            {
-                name = fileName,
-                request = new HierarchicalObjectRequest
-                {
-                    HierarchicalObject = new HierarchicalObject
-                    {
-                        Name = "CALENDAR", InternalProperties = new List<BaseObject>
+            var request = new CreateCalendarRequest(fileName,
+                new HierarchicalObjectRequest(
+                    new HierarchicalObject("CALENDAR", null,
+                        new List<BaseObject>
                         {
-                            new PrimitiveObject {Name = "LOCATION", Value = "location"},
-                            new PrimitiveObject {Name = "STARTDATE", Value = startDate.Value.ToString("u")},
-                            new PrimitiveObject {Name = "ENDDATE", Value = endDate.ToString("u")},
-                            new HierarchicalObject
-                            {
-                                Name = "ORGANIZER", InternalProperties = new List<BaseObject>
+                            new PrimitiveObject("LOCATION", null, "location"),
+                            new PrimitiveObject("STARTDATE", null, startDate.Value.ToString("u")),
+                            new PrimitiveObject("ENDDATE", null, endDate.ToString("u")),
+                            new HierarchicalObject("ORGANIZER", null,
+                                new List<BaseObject>
                                 {
-                                    new PrimitiveObject {Name = "ADDRESS", Value = "organizer@am.ru"},
-                                    new PrimitiveObject {Name = "DISPLAYNAME", Value = "Piu Man"}
-                                }
-                            },
-                            new HierarchicalObject
-                            {
-                                Name = "ATTENDEES", InternalProperties = new List<BaseObject>
+                                    new PrimitiveObject("ADDRESS", null, "organizer@am.ru"),
+                                    new PrimitiveObject("DISPLAYNAME", null, "Piu Man")
+                                }),
+                            new HierarchicalObject("ATTENDEES", null,
+                                new List<BaseObject>
                                 {
-                                    new IndexedHierarchicalObject
-                                    {
-                                        Index = 0, Name = "ATTENDEE", InternalProperties = new List<BaseObject>
+                                    new IndexedHierarchicalObject("ATTENDEE", null, 0,
+                                        new List<BaseObject>
                                         {
-                                            new PrimitiveObject {Name = "ADDRESS", Value = "attendee@am.ru"},
-                                            new PrimitiveObject {Name = "DISPLAYNAME", Value = "Attendee Name"}
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    StorageFolder = new StorageFolderLocation
-                    {
-                        Storage = "First Storage",
-                        FolderPath = folder
-                    }
-                }
-            };
+                                            new PrimitiveObject("ADDRESS", null, "attendee@am.ru"),
+                                            new PrimitiveObject("DISPLAYNAME", null, "Attendee Name")
+                                        })
+                                })
+                        }), new StorageFolderLocation(StorageName, folder)));
             await emailApi.CreateCalendarAsync(request);
             return fileName;
         }

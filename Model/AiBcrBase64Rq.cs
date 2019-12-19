@@ -42,6 +42,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<AiBcrBase64Image> Images { get; set; }
 
+        /// <summary>AiBcrBase64Rq constructor</summary>
+        public AiBcrBase64Rq() {}
+
+        /// <summary>AiBcrBase64Rq constructor</summary>
+        /// <param name="options">Recognition options             </param>
+        /// <param name="images">Images to recognize             </param>
+        public AiBcrBase64Rq(AiBcrOptions options, List<AiBcrBase64Image> images)
+        {
+            Options = options;
+            Images = images;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +61,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AiBcrBase64Rq {\n");
+          sb.Append("  Options: ").Append(this.Options).Append("\n");
           sb.Append("  Images: ").Append(this.Images).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

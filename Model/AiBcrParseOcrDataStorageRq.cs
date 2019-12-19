@@ -42,6 +42,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public StorageFolderLocation OutFolder { get; set; }
 
+        /// <summary>AiBcrParseOcrDataStorageRq constructor</summary>
+        public AiBcrParseOcrDataStorageRq() {}
+
+        /// <summary>AiBcrParseOcrDataStorageRq constructor</summary>
+        /// <param name="options">Recognition options             </param>
+        /// <param name="data">OCR data             </param>
+        /// <param name="outFolder">Output folder location on storage             </param>
+        public AiBcrParseOcrDataStorageRq(AiBcrOptions options, List<AiBcrOcrData> data, StorageFolderLocation outFolder)
+        {
+            Options = options;
+            Data = data;
+            OutFolder = outFolder;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +63,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AiBcrParseOcrDataStorageRq {\n");
+          sb.Append("  Options: ").Append(this.Options).Append("\n");
+          sb.Append("  Data: ").Append(this.Data).Append("\n");
           sb.Append("  OutFolder: ").Append(this.OutFolder).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

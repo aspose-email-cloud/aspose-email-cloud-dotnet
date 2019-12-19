@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Comments { get; set; }
 
+        /// <summary>AiNameWeightedVariants constructor</summary>
+        public AiNameWeightedVariants() {}
+
+        /// <summary>AiNameWeightedVariants constructor</summary>
+        /// <param name="names">List of name variations             </param>
+        /// <param name="comments">Usually empty; can contain extra message describing some issue occurred during processing             </param>
+        public AiNameWeightedVariants(List<AiNameWeighted> names, string comments)
+        {
+            Names = names;
+            Comments = comments;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -47,6 +47,23 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public bool? DeletePermanently { get; set; }
 
+        /// <summary>DeleteFolderBaseRequest constructor</summary>
+        public DeleteFolderBaseRequest() {}
+
+        /// <summary>DeleteFolderBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        /// <param name="folder">Folder name             </param>
+        /// <param name="deletePermanently">Specifies that folder should be deleted permanently             </param>
+        public DeleteFolderBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? deletePermanently)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+            Folder = folder;
+            DeletePermanently = deletePermanently;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -55,6 +72,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class DeleteFolderBaseRequest {\n");
+          sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
+          sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  Folder: ").Append(this.Folder).Append("\n");
           sb.Append("  DeletePermanently: ").Append(this.DeletePermanently).Append("\n");
           sb.Append("}\n");

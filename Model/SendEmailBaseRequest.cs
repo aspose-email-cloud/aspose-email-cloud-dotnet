@@ -42,6 +42,21 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public StorageFileLocation EmailFile { get; set; }
 
+        /// <summary>SendEmailBaseRequest constructor</summary>
+        public SendEmailBaseRequest() {}
+
+        /// <summary>SendEmailBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        /// <param name="emailFile">Email document (*.eml) file location in storage             </param>
+        public SendEmailBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, StorageFileLocation emailFile)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+            EmailFile = emailFile;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class SendEmailBaseRequest {\n");
+          sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
+          sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  EmailFile: ").Append(this.EmailFile).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

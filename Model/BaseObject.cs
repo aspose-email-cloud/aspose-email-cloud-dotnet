@@ -45,8 +45,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Property type. Used for deserialization purposes             
         /// </summary>  
-        public string Type => GetType().Name;
+        
+        public string Type
+        {
+            get { return GetType().Name; }
+            set { /*do nothing*/}
+        }
 
+        /// <summary>BaseObject constructor</summary>
+        public BaseObject() {}
+
+        /// <summary>BaseObject constructor</summary>
+        /// <param name="name">Gets or sets the name of an object.             </param>
+        /// <param name="type">Property type. Used for deserialization purposes             </param>
+        public BaseObject(string name, string type)
+        {
+            Name = name;
+            Type = type;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public StorageFileLocation StorageFile { get; set; }
 
+        /// <summary>HierarchicalObjectResponse constructor</summary>
+        public HierarchicalObjectResponse() {}
+
+        /// <summary>HierarchicalObjectResponse constructor</summary>
+        /// <param name="hierarchicalObject">Document properties             </param>
+        /// <param name="storageFile">Document location in storage             </param>
+        public HierarchicalObjectResponse(HierarchicalObject hierarchicalObject, StorageFileLocation storageFile)
+        {
+            HierarchicalObject = hierarchicalObject;
+            StorageFile = storageFile;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

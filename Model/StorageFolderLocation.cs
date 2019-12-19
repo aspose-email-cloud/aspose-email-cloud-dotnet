@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string FolderPath { get; set; }
 
+        /// <summary>StorageFolderLocation constructor</summary>
+        public StorageFolderLocation() {}
+
+        /// <summary>StorageFolderLocation constructor</summary>
+        /// <param name="storage">A storage name             </param>
+        /// <param name="folderPath">A path to a folder in specified storage             </param>
+        public StorageFolderLocation(string storage, string folderPath)
+        {
+            Storage = storage;
+            FolderPath = folderPath;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<AiNameGenderHypothesis> Value { get; set; }
 
+        /// <summary>ListResponseOfAiNameGenderHypothesis constructor</summary>
+        public ListResponseOfAiNameGenderHypothesis() {}
+
+        /// <summary>ListResponseOfAiNameGenderHypothesis constructor</summary>
+        /// <param name="value"></param>
+        public ListResponseOfAiNameGenderHypothesis(List<AiNameGenderHypothesis> value)
+        {
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

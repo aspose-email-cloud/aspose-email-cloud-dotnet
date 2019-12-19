@@ -47,6 +47,21 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<BaseObject> InternalProperties { get; set; }
 
+        /// <summary>IndexedHierarchicalObject constructor</summary>
+        public IndexedHierarchicalObject() {}
+
+        /// <summary>IndexedHierarchicalObject constructor</summary>
+        /// <param name="name">Gets or sets the name of an object.             </param>
+        /// <param name="type">Property type. Used for deserialization purposes             </param>
+        /// <param name="index">Index of property in list             </param>
+        /// <param name="internalProperties">List of internal properties             </param>
+        public IndexedHierarchicalObject(string name, string type, int? index, List<BaseObject> internalProperties)
+        {
+            Name = name;
+            Type = type;
+            Index = index;
+            InternalProperties = internalProperties;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -55,6 +70,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class IndexedHierarchicalObject {\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("  Index: ").Append(this.Index).Append("\n");
           sb.Append("  InternalProperties: ").Append(this.InternalProperties).Append("\n");
           sb.Append("}\n");

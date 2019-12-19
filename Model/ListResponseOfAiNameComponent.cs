@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<AiNameComponent> Value { get; set; }
 
+        /// <summary>ListResponseOfAiNameComponent constructor</summary>
+        public ListResponseOfAiNameComponent() {}
+
+        /// <summary>ListResponseOfAiNameComponent constructor</summary>
+        /// <param name="value"></param>
+        public ListResponseOfAiNameComponent(List<AiNameComponent> value)
+        {
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

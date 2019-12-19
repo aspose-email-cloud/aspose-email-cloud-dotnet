@@ -52,6 +52,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public StorageFolderLocation StorageFolder { get; set; }
 
+        /// <summary>AccountBaseRequest constructor</summary>
+        public AccountBaseRequest() {}
+
+        /// <summary>AccountBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        public AccountBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

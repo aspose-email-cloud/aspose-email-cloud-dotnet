@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public EmailDocument Document { get; set; }
 
+        /// <summary>EmailDocumentResponse constructor</summary>
+        public EmailDocumentResponse() {}
+
+        /// <summary>EmailDocumentResponse constructor</summary>
+        /// <param name="document">An email document requested             </param>
+        public EmailDocumentResponse(EmailDocument document)
+        {
+            Document = document;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

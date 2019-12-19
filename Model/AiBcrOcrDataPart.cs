@@ -67,6 +67,25 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public Dictionary<string, string> Details { get; set; }
 
+        /// <summary>AiBcrOcrDataPart constructor</summary>
+        public AiBcrOcrDataPart() {}
+
+        /// <summary>AiBcrOcrDataPart constructor</summary>
+        /// <param name="x">X position of text block             </param>
+        /// <param name="y">Y position of text block             </param>
+        /// <param name="width">Width of text block             </param>
+        /// <param name="height">Height of text block             </param>
+        /// <param name="text">Recognized text             </param>
+        /// <param name="details">Additional recognition result details             </param>
+        public AiBcrOcrDataPart(double? x, double? y, double? width, double? height, string text, Dictionary<string, string> details)
+        {
+            X = x;
+            Y = y;
+            Width = width;
+            Height = height;
+            Text = text;
+            Details = details;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -47,6 +47,23 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string ParentFolder { get; set; }
 
+        /// <summary>CreateFolderBaseRequest constructor</summary>
+        public CreateFolderBaseRequest() {}
+
+        /// <summary>CreateFolderBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        /// <param name="folder">Folder name             </param>
+        /// <param name="parentFolder">Parent folder path             </param>
+        public CreateFolderBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, string parentFolder)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+            Folder = folder;
+            ParentFolder = parentFolder;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -55,6 +72,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class CreateFolderBaseRequest {\n");
+          sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
+          sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  Folder: ").Append(this.Folder).Append("\n");
           sb.Append("  ParentFolder: ").Append(this.ParentFolder).Append("\n");
           sb.Append("}\n");

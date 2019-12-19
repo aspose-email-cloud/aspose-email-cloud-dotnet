@@ -42,6 +42,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<AiBcrImageStorageFile> Images { get; set; }
 
+        /// <summary>AiBcrStorageImageRq constructor</summary>
+        public AiBcrStorageImageRq() {}
+
+        /// <summary>AiBcrStorageImageRq constructor</summary>
+        /// <param name="options">Recognition options             </param>
+        /// <param name="images">List of images with business cards             </param>
+        public AiBcrStorageImageRq(AiBcrOptions options, List<AiBcrImageStorageFile> images)
+        {
+            Options = options;
+            Images = images;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +61,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AiBcrStorageImageRq {\n");
+          sb.Append("  Options: ").Append(this.Options).Append("\n");
           sb.Append("  Images: ").Append(this.Images).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

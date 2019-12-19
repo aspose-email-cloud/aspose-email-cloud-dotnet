@@ -57,6 +57,21 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<AiBcrOcrDataPart> Data { get; set; }
 
+        /// <summary>AiBcrOcrData constructor</summary>
+        public AiBcrOcrData() {}
+
+        /// <summary>AiBcrOcrData constructor</summary>
+        /// <param name="id">Image identifier             </param>
+        /// <param name="image">Image with possible pre-processing in Base64             </param>
+        /// <param name="details">Additional details from OCR engine             </param>
+        /// <param name="data">OCR results             </param>
+        public AiBcrOcrData(string id, string image, Dictionary<string, string> details, List<AiBcrOcrDataPart> data)
+        {
+            Id = id;
+            Image = image;
+            Details = details;
+            Data = data;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

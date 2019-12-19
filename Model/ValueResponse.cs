@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Value { get; set; }
 
+        /// <summary>ValueResponse constructor</summary>
+        public ValueResponse() {}
+
+        /// <summary>ValueResponse constructor</summary>
+        /// <param name="value">Gets or sets string content.             </param>
+        public ValueResponse(string value)
+        {
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

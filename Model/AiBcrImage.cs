@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public bool? IsSingle { get; set; }
 
+        /// <summary>AiBcrImage constructor</summary>
+        public AiBcrImage() {}
+
+        /// <summary>AiBcrImage constructor</summary>
+        /// <param name="isSingle">Determines that image contains single VCard or more             </param>
+        public AiBcrImage(bool? isSingle)
+        {
+            IsSingle = isSingle;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public EmailProperties DocumentProperties { get; set; }
 
+        /// <summary>EmailDocument constructor</summary>
+        public EmailDocument() {}
+
+        /// <summary>EmailDocument constructor</summary>
+        /// <param name="links">Links that originate from this document.             </param>
+        /// <param name="documentProperties">List of document properties.             </param>
+        public EmailDocument(List<Link> links, EmailProperties documentProperties)
+        {
+            Links = links;
+            DocumentProperties = documentProperties;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

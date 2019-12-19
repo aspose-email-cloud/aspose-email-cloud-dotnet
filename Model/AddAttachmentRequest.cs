@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public StorageFolderLocation AttachmentFolder { get; set; }
 
+        /// <summary>AddAttachmentRequest constructor</summary>
+        public AddAttachmentRequest() {}
+
+        /// <summary>AddAttachmentRequest constructor</summary>
+        /// <param name="documentFolder">Storage folder location of document             </param>
+        /// <param name="attachmentFolder">Storage folder location of an attachment             </param>
+        public AddAttachmentRequest(StorageFolderLocation documentFolder, StorageFolderLocation attachmentFolder)
+        {
+            DocumentFolder = documentFolder;
+            AttachmentFolder = attachmentFolder;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
