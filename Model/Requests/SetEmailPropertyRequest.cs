@@ -44,7 +44,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// </summary>
         /// <param name="propertyName">A property name that should be changed</param>
         /// <param name="fileName">Email document file name</param>
-        /// <param name="request">A property that should be changed and optional Storage info to specify             where the file located</param>
+        /// <param name="request">A property that should be changed and optional Storage info to specify where the file located             </param>
         public SetEmailPropertyRequest(string propertyName, string fileName, SetEmailPropertyRequest request)
         {
             this.propertyName = propertyName;
@@ -63,7 +63,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string fileName { get; set; }
 
         /// <summary>
-        /// A property that should be changed and optional Storage info to specify             where the file located
+        /// A property that should be changed and optional Storage info to specify where the file located             
         /// </summary>
         public SetEmailPropertyRequest request { get; set; }
   }

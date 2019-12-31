@@ -33,15 +33,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Append email from MIME string to account request
+    /// Append email from MIME string to account request             
     /// </summary>
     public class AppendEmailMimeBaseRequest : AppendEmailAccountBaseRequest 
     {
         /// <summary>
-        /// Email document serialized as MIME string
+        /// Email document serialized as MIME string             
         /// </summary>  
         public string Base64MimeMessage { get; set; }
 
+        /// <summary>AppendEmailMimeBaseRequest constructor</summary>
+        public AppendEmailMimeBaseRequest() {}
+
+        /// <summary>AppendEmailMimeBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        /// <param name="folder">Email account folder to store a message             </param>
+        /// <param name="markAsSent">Mark message as sent             </param>
+        /// <param name="base64MimeMessage">Email document serialized as MIME string             </param>
+        public AppendEmailMimeBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, string base64MimeMessage)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+            Folder = folder;
+            MarkAsSent = markAsSent;
+            Base64MimeMessage = base64MimeMessage;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +69,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AppendEmailMimeBaseRequest {\n");
+          sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
+          sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
+          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
+          sb.Append("  MarkAsSent: ").Append(this.MarkAsSent).Append("\n");
           sb.Append("  Base64MimeMessage: ").Append(this.Base64MimeMessage).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

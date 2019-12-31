@@ -33,20 +33,31 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email account folder
+    /// Email account folder             
     /// </summary>
     public class MailServerFolder 
     {
         /// <summary>
-        /// Gets or sets mail folder name
+        /// Gets or sets mail folder name             
         /// </summary>  
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets mail folder id
+        /// Gets or sets mail folder id             
         /// </summary>  
         public string Id { get; set; }
 
+        /// <summary>MailServerFolder constructor</summary>
+        public MailServerFolder() {}
+
+        /// <summary>MailServerFolder constructor</summary>
+        /// <param name="name">Gets or sets mail folder name             </param>
+        /// <param name="id">Gets or sets mail folder id             </param>
+        public MailServerFolder(string name, string id)
+        {
+            Name = name;
+            Id = id;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

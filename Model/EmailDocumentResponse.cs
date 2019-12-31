@@ -33,15 +33,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// An email document response
+    /// An email document response             
     /// </summary>
     public class EmailDocumentResponse 
     {
         /// <summary>
-        /// An email document requested
+        /// An email document requested             
         /// </summary>  
         public EmailDocument Document { get; set; }
 
+        /// <summary>EmailDocumentResponse constructor</summary>
+        public EmailDocumentResponse() {}
+
+        /// <summary>EmailDocumentResponse constructor</summary>
+        /// <param name="document">An email document requested             </param>
+        public EmailDocumentResponse(EmailDocument document)
+        {
+            Document = document;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

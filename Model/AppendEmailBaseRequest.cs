@@ -33,15 +33,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Append email from storage file to account request
+    /// Append email from storage file to account request             
     /// </summary>
     public class AppendEmailBaseRequest : AppendEmailAccountBaseRequest 
     {
         /// <summary>
-        /// Email document file location in storage
+        /// Email document file location in storage             
         /// </summary>  
         public StorageFileLocation EmailFile { get; set; }
 
+        /// <summary>AppendEmailBaseRequest constructor</summary>
+        public AppendEmailBaseRequest() {}
+
+        /// <summary>AppendEmailBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        /// <param name="folder">Email account folder to store a message             </param>
+        /// <param name="markAsSent">Mark message as sent             </param>
+        /// <param name="emailFile">Email document file location in storage             </param>
+        public AppendEmailBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, StorageFileLocation emailFile)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+            Folder = folder;
+            MarkAsSent = markAsSent;
+            EmailFile = emailFile;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +69,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AppendEmailBaseRequest {\n");
+          sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
+          sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
+          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
+          sb.Append("  MarkAsSent: ").Append(this.MarkAsSent).Append("\n");
           sb.Append("  EmailFile: ").Append(this.EmailFile).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

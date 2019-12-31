@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<MailServerFolder> Value { get; set; }
 
+        /// <summary>ListResponseOfMailServerFolder constructor</summary>
+        public ListResponseOfMailServerFolder() {}
+
+        /// <summary>ListResponseOfMailServerFolder constructor</summary>
+        /// <param name="value"></param>
+        public ListResponseOfMailServerFolder(List<MailServerFolder> value)
+        {
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

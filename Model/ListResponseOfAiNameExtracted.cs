@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ContactFormat.cs">
+// <copyright company="Aspose" file="ListResponseOfAiNameExtracted.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -32,10 +32,36 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Text;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
-    public enum ContactFormat
+    /// <summary>
+    /// 
+    /// </summary>
+    public class ListResponseOfAiNameExtracted 
     {
-        VCard,
-        WebDav,
-        Msg,
+        /// <summary>
+        /// Gets or sets Value
+        /// </summary>  
+        public List<AiNameExtracted> Value { get; set; }
+
+        /// <summary>ListResponseOfAiNameExtracted constructor</summary>
+        public ListResponseOfAiNameExtracted() {}
+
+        /// <summary>ListResponseOfAiNameExtracted constructor</summary>
+        /// <param name="value"></param>
+        public ListResponseOfAiNameExtracted(List<AiNameExtracted> value)
+        {
+            Value = value;
+        }
+        /// <summary>
+        /// Get the string presentation of the object
+        /// </summary>
+        /// <returns>String presentation of the object</returns>
+        public override string ToString()  
+        {
+          var sb = new StringBuilder();
+          sb.Append("class ListResponseOfAiNameExtracted {\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("}\n");
+          return sb.ToString();
+        }
     }
 }

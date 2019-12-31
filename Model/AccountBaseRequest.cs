@@ -33,25 +33,38 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// EmailClient accounts request             
     /// </summary>
     public class AccountBaseRequest 
     {
         /// <summary>
-        /// Gets or sets FirstAccount
+        /// First account storage file name for receiving emails (or universal one)             
         /// </summary>  
         public string FirstAccount { get; set; }
 
         /// <summary>
-        /// Gets or sets SecondAccount
+        /// Second account storage file name for sending emails (ignored if first is universal)             
         /// </summary>  
         public string SecondAccount { get; set; }
 
         /// <summary>
-        /// Gets or sets StorageFolder
+        /// Storage folder location of account files             
         /// </summary>  
         public StorageFolderLocation StorageFolder { get; set; }
 
+        /// <summary>AccountBaseRequest constructor</summary>
+        public AccountBaseRequest() {}
+
+        /// <summary>AccountBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        public AccountBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Password** | **string** | Email account password | 
+**Password** | **string** | Email account password              | 
 
  Parent class: [EmailAccountRequest](EmailAccountRequest.md)
 

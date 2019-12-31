@@ -33,20 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Append email to account request
+    /// Append email to account request             
     /// </summary>
     public class AppendEmailAccountBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Gets or sets Folder
+        /// Email account folder to store a message             
         /// </summary>  
         public string Folder { get; set; }
 
         /// <summary>
-        /// Gets or sets MarkAsSent
+        /// Mark message as sent             
         /// </summary>  
         public bool? MarkAsSent { get; set; }
 
+        /// <summary>AppendEmailAccountBaseRequest constructor</summary>
+        public AppendEmailAccountBaseRequest() {}
+
+        /// <summary>AppendEmailAccountBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        /// <param name="folder">Email account folder to store a message             </param>
+        /// <param name="markAsSent">Mark message as sent             </param>
+        public AppendEmailAccountBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+            Folder = folder;
+            MarkAsSent = markAsSent;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -55,6 +72,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class AppendEmailAccountBaseRequest {\n");
+          sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
+          sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  Folder: ").Append(this.Folder).Append("\n");
           sb.Append("  MarkAsSent: ").Append(this.MarkAsSent).Append("\n");
           sb.Append("}\n");

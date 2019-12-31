@@ -2,13 +2,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Host** | **string** | Email account host | 
-**Port** | **int?** | Email account port | 
-**Login** | **string** | Email account login | 
-**SecurityOptions** | **Object** | Email account security options | 
-**ProtocolType** | **Object** | Email account protocol type | 
-**Description** | **string** | Email account description | [optional] 
-**StorageFile** | [**StorageFileLocation**](StorageFileLocation.md) | A storage file location info to store email account | 
+**Host** | **string** | Email account host              | 
+**Port** | **int?** | Email account port              | 
+**Login** | **string** | Email account login              | 
+**SecurityOptions** | **string** | Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto | 
+**ProtocolType** | **string** | Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav | 
+**Description** | **string** | Email account description              | [optional] 
+**StorageFile** | [**StorageFileLocation**](StorageFileLocation.md) | A storage file location info to store email account              | 
 
 
 

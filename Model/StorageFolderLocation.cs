@@ -33,20 +33,31 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// A storage folder location information
+    /// A storage folder location information             
     /// </summary>
     public class StorageFolderLocation 
     {
         /// <summary>
-        /// A storage name
+        /// A storage name             
         /// </summary>  
         public string Storage { get; set; }
 
         /// <summary>
-        /// A path to a folder in specified storage
+        /// A path to a folder in specified storage             
         /// </summary>  
         public string FolderPath { get; set; }
 
+        /// <summary>StorageFolderLocation constructor</summary>
+        public StorageFolderLocation() {}
+
+        /// <summary>StorageFolderLocation constructor</summary>
+        /// <param name="storage">A storage name             </param>
+        /// <param name="folderPath">A path to a folder in specified storage             </param>
+        public StorageFolderLocation(string storage, string folderPath)
+        {
+            Storage = storage;
+            FolderPath = folderPath;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MessageId** | **string** | Message identifier | 
-**DeletePermanently** | **bool?** | Specifies that message should be deleted permanently | 
+**MessageId** | **string** | Message identifier              | 
+**DeletePermanently** | **bool?** | Specifies that message should be deleted permanently              | 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<FileVersion> Value { get; set; }
 
+        /// <summary>FileVersions constructor</summary>
+        public FileVersions() {}
+
+        /// <summary>FileVersions constructor</summary>
+        /// <param name="value">File versions FileVersion.</param>
+        public FileVersions(List<FileVersion> value)
+        {
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

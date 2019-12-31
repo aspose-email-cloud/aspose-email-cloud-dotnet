@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public List<Error> Errors { get; set; }
 
+        /// <summary>FilesUploadResult constructor</summary>
+        public FilesUploadResult() {}
+
+        /// <summary>FilesUploadResult constructor</summary>
+        /// <param name="uploaded">List of uploaded file names</param>
+        /// <param name="errors">List of errors.</param>
+        public FilesUploadResult(List<string> uploaded, List<Error> errors)
+        {
+            Uploaded = uploaded;
+            Errors = errors;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

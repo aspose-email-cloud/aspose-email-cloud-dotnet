@@ -33,20 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Set message is read request
+    /// Set message is read request             
     /// </summary>
     public class SetMessageReadFlagAccountBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Message identifier
+        /// Message identifier             
         /// </summary>  
         public string MessageId { get; set; }
 
         /// <summary>
-        /// Specifies that message should be marked read or unread
+        /// Specifies that message should be marked read or unread             
         /// </summary>  
         public bool? IsRead { get; set; }
 
+        /// <summary>SetMessageReadFlagAccountBaseRequest constructor</summary>
+        public SetMessageReadFlagAccountBaseRequest() {}
+
+        /// <summary>SetMessageReadFlagAccountBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        /// <param name="messageId">Message identifier             </param>
+        /// <param name="isRead">Specifies that message should be marked read or unread             </param>
+        public SetMessageReadFlagAccountBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string messageId, bool? isRead)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+            MessageId = messageId;
+            IsRead = isRead;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -55,6 +72,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class SetMessageReadFlagAccountBaseRequest {\n");
+          sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
+          sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  MessageId: ").Append(this.MessageId).Append("\n");
           sb.Append("  IsRead: ").Append(this.IsRead).Append("\n");
           sb.Append("}\n");

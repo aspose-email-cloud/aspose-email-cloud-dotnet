@@ -33,15 +33,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email document property DTO.
+    /// Email document property DTO.             
     /// </summary>
     public class MimeResponse 
     {
         /// <summary>
-        /// Gets or sets base64 encoded mime content.
+        /// Gets or sets base64 encoded mime content.             
         /// </summary>  
         public string Mime { get; set; }
 
+        /// <summary>MimeResponse constructor</summary>
+        public MimeResponse() {}
+
+        /// <summary>MimeResponse constructor</summary>
+        /// <param name="mime">Gets or sets base64 encoded mime content.             </param>
+        public MimeResponse(string mime)
+        {
+            Mime = mime;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

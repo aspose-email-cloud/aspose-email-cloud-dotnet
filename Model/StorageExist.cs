@@ -42,6 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public bool? Exists { get; set; }
 
+        /// <summary>StorageExist constructor</summary>
+        public StorageExist() {}
+
+        /// <summary>StorageExist constructor</summary>
+        /// <param name="exists">Shows that the storage exists.             </param>
+        public StorageExist(bool? exists)
+        {
+            Exists = exists;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

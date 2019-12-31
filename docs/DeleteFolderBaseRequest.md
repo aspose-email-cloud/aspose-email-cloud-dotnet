@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Folder** | **string** | Folder name | 
-**DeletePermanently** | **bool?** | Specifies that folder should be deleted permanently | 
+**Folder** | **string** | Folder name              | 
+**DeletePermanently** | **bool?** | Specifies that folder should be deleted permanently              | 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

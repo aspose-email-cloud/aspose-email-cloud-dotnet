@@ -57,6 +57,21 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public ErrorDetails InnerError { get; set; }
 
+        /// <summary>Error constructor</summary>
+        public Error() {}
+
+        /// <summary>Error constructor</summary>
+        /// <param name="code">Code             </param>
+        /// <param name="message">Message             </param>
+        /// <param name="description">Description             </param>
+        /// <param name="innerError">Inner Error             </param>
+        public Error(string code, string message, string description, ErrorDetails innerError)
+        {
+            Code = code;
+            Message = message;
+            Description = description;
+            InnerError = innerError;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

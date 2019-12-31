@@ -47,6 +47,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public DateTime? Date { get; set; }
 
+        /// <summary>ErrorDetails constructor</summary>
+        public ErrorDetails() {}
+
+        /// <summary>ErrorDetails constructor</summary>
+        /// <param name="requestId">The request id</param>
+        /// <param name="date">Date</param>
+        public ErrorDetails(string requestId, DateTime? date)
+        {
+            RequestId = requestId;
+            Date = date;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

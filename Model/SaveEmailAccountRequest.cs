@@ -33,15 +33,38 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Save email account settings with login/password authentication request
+    /// Save email account settings with login/password authentication request             
     /// </summary>
     public class SaveEmailAccountRequest : EmailAccountRequest 
     {
         /// <summary>
-        /// Email account password
+        /// Email account password             
         /// </summary>  
         public string Password { get; set; }
 
+        /// <summary>SaveEmailAccountRequest constructor</summary>
+        public SaveEmailAccountRequest() {}
+
+        /// <summary>SaveEmailAccountRequest constructor</summary>
+        /// <param name="host">Email account host             </param>
+        /// <param name="port">Email account port             </param>
+        /// <param name="login">Email account login             </param>
+        /// <param name="securityOptions">Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
+        /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
+        /// <param name="description">Email account description             </param>
+        /// <param name="storageFile">A storage file location info to store email account             </param>
+        /// <param name="password">Email account password             </param>
+        public SaveEmailAccountRequest(string host, int? port, string login, string securityOptions, string protocolType, string description, StorageFileLocation storageFile, string password)
+        {
+            Host = host;
+            Port = port;
+            Login = login;
+            SecurityOptions = securityOptions;
+            ProtocolType = protocolType;
+            Description = description;
+            StorageFile = storageFile;
+            Password = password;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +73,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class SaveEmailAccountRequest {\n");
+          sb.Append("  Host: ").Append(this.Host).Append("\n");
+          sb.Append("  Port: ").Append(this.Port).Append("\n");
+          sb.Append("  Login: ").Append(this.Login).Append("\n");
+          sb.Append("  SecurityOptions: ").Append(this.SecurityOptions).Append("\n");
+          sb.Append("  ProtocolType: ").Append(this.ProtocolType).Append("\n");
+          sb.Append("  Description: ").Append(this.Description).Append("\n");
+          sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
           sb.Append("  Password: ").Append(this.Password).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

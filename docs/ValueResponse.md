@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | **string** | Gets or sets string content. | [optional] 
+**Value** | **string** | Gets or sets string content.              | [optional] 
 
 
 

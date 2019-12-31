@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**HierarchicalObject** | [**HierarchicalObject**](HierarchicalObject.md) | Hierarchical properties of document | 
-**StorageFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Document location in storage | [optional] 
+**HierarchicalObject** | [**HierarchicalObject**](HierarchicalObject.md) | Hierarchical properties of document              | 
+**StorageFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Document location in storage              | [optional] 
 
 
 

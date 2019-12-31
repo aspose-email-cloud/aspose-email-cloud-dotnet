@@ -33,20 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Delete message request
+    /// Delete message request             
     /// </summary>
     public class DeleteMessageBaseRequest : AccountBaseRequest 
     {
         /// <summary>
-        /// Message identifier
+        /// Message identifier             
         /// </summary>  
         public string MessageId { get; set; }
 
         /// <summary>
-        /// Specifies that message should be deleted permanently
+        /// Specifies that message should be deleted permanently             
         /// </summary>  
         public bool? DeletePermanently { get; set; }
 
+        /// <summary>DeleteMessageBaseRequest constructor</summary>
+        public DeleteMessageBaseRequest() {}
+
+        /// <summary>DeleteMessageBaseRequest constructor</summary>
+        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
+        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        /// <param name="messageId">Message identifier             </param>
+        /// <param name="deletePermanently">Specifies that message should be deleted permanently             </param>
+        public DeleteMessageBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string messageId, bool? deletePermanently)
+        {
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+            MessageId = messageId;
+            DeletePermanently = deletePermanently;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -55,6 +72,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class DeleteMessageBaseRequest {\n");
+          sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
+          sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  MessageId: ").Append(this.MessageId).Append("\n");
           sb.Append("  DeletePermanently: ").Append(this.DeletePermanently).Append("\n");
           sb.Append("}\n");

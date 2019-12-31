@@ -33,45 +33,66 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email account settings request
+    /// Email account settings request             
     /// </summary>
     public class EmailAccountRequest 
     {
         /// <summary>
-        /// Email account host
+        /// Email account host             
         /// </summary>  
         public string Host { get; set; }
 
         /// <summary>
-        /// Email account port
+        /// Email account port             
         /// </summary>  
         public int? Port { get; set; }
 
         /// <summary>
-        /// Email account login
+        /// Email account login             
         /// </summary>  
         public string Login { get; set; }
 
         /// <summary>
-        /// Email account security options
+        /// Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
         /// </summary>  
-        public Object SecurityOptions { get; set; }
+        public string SecurityOptions { get; set; }
 
         /// <summary>
-        /// Email account protocol type
+        /// Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav
         /// </summary>  
-        public Object ProtocolType { get; set; }
+        public string ProtocolType { get; set; }
 
         /// <summary>
-        /// Email account description
+        /// Email account description             
         /// </summary>  
         public string Description { get; set; }
 
         /// <summary>
-        /// A storage file location info to store email account
+        /// A storage file location info to store email account             
         /// </summary>  
         public StorageFileLocation StorageFile { get; set; }
 
+        /// <summary>EmailAccountRequest constructor</summary>
+        public EmailAccountRequest() {}
+
+        /// <summary>EmailAccountRequest constructor</summary>
+        /// <param name="host">Email account host             </param>
+        /// <param name="port">Email account port             </param>
+        /// <param name="login">Email account login             </param>
+        /// <param name="securityOptions">Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
+        /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
+        /// <param name="description">Email account description             </param>
+        /// <param name="storageFile">A storage file location info to store email account             </param>
+        public EmailAccountRequest(string host, int? port, string login, string securityOptions, string protocolType, string description, StorageFileLocation storageFile)
+        {
+            Host = host;
+            Port = port;
+            Login = login;
+            SecurityOptions = securityOptions;
+            ProtocolType = protocolType;
+            Description = description;
+            StorageFile = storageFile;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

@@ -33,15 +33,28 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Objects&#39; properties hierarchical representation
+    /// Objects&#39; properties hierarchical representation             
     /// </summary>
     public class HierarchicalObject : BaseObject 
     {
         /// <summary>
-        /// List of internal properties
+        /// List of internal properties             
         /// </summary>  
         public List<BaseObject> InternalProperties { get; set; }
 
+        /// <summary>HierarchicalObject constructor</summary>
+        public HierarchicalObject() {}
+
+        /// <summary>HierarchicalObject constructor</summary>
+        /// <param name="name">Gets or sets the name of an object.             </param>
+        /// <param name="type">Property type. Used for deserialization purposes             </param>
+        /// <param name="internalProperties">List of internal properties             </param>
+        public HierarchicalObject(string name, string type, List<BaseObject> internalProperties)
+        {
+            Name = name;
+            Type = type;
+            InternalProperties = internalProperties;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
@@ -50,6 +63,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class HierarchicalObject {\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Type: ").Append(this.Type).Append("\n");
           sb.Append("  InternalProperties: ").Append(this.InternalProperties).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

@@ -33,20 +33,31 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email list properties.
+    /// Email list properties.             
     /// </summary>
     public class EmailProperties 
     {
         /// <summary>
-        /// Gets or sets link that originate from this document.
+        /// Gets or sets link that originate from this document.             
         /// </summary>  
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets List
+        /// List of properties             
         /// </summary>  
         public List<EmailProperty> List { get; set; }
 
+        /// <summary>EmailProperties constructor</summary>
+        public EmailProperties() {}
+
+        /// <summary>EmailProperties constructor</summary>
+        /// <param name="link">Gets or sets link that originate from this document.             </param>
+        /// <param name="list">List of properties             </param>
+        public EmailProperties(Link link, List<EmailProperty> list)
+        {
+            Link = link;
+            List = list;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

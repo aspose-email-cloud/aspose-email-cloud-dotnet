@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Folder** | **string** | Folder name | 
-**ParentFolder** | **string** | Parent folder path | [optional] 
+**Folder** | **string** | Folder name              | 
+**ParentFolder** | **string** | Parent folder path              | [optional] 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

@@ -7,7 +7,7 @@
 void AddCalendarAttachment(AddCalendarAttachmentRequest request)
 ```
 
-Adds an attachment to iCalendar file
+Adds an attachment to iCalendar file             
 
 ### Return type
 
@@ -36,7 +36,7 @@ Name | Type | Description  | Notes
 async Task AddCalendarAttachmentAsync(AddCalendarAttachmentRequest request)
 ```
 
-Adds an attachment to iCalendar file
+Adds an attachment to iCalendar file             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 void AddContactAttachment(AddContactAttachmentRequest request)
 ```
 
-Add attachment to contact document
+Add attachment to contact document             
 
 ### Return type
 
@@ -84,7 +84,7 @@ new AddContactAttachmentRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **attachment** | **string**| Attachment name | 
  **request** | [**AddAttachmentRequest**](AddAttachmentRequest.md)| Add attachment request | 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 async Task AddContactAttachmentAsync(AddContactAttachmentRequest request)
 ```
 
-Add attachment to contact document
+Add attachment to contact document             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -117,7 +117,7 @@ new AddContactAttachmentRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **attachment** | **string**| Attachment name | 
  **request** | [**AddAttachmentRequest**](AddAttachmentRequest.md)| Add attachment request | 
@@ -131,7 +131,7 @@ Name | Type | Description  | Notes
 EmailDocumentResponse AddEmailAttachment(AddEmailAttachmentRequest request)
 ```
 
-Adds an attachment to Email document
+Adds an attachment to Email document             
 
 ### Return type
 
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 async Task<EmailDocumentResponse> AddEmailAttachmentAsync(AddEmailAttachmentRequest request)
 ```
 
-Adds an attachment to Email document
+Adds an attachment to Email document             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
 void AddMapiAttachment(AddMapiAttachmentRequest request)
 ```
 
-Add attachment to document
+Add attachment to document             
 
 ### Return type
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 async Task AddMapiAttachmentAsync(AddMapiAttachmentRequest request)
 ```
 
-Add attachment to document
+Add attachment to document             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -244,6 +244,934 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="aibcrocr"></a>
+# **AiBcrOcr**
+
+```csharp
+ListResponseOfAiBcrOcrData AiBcrOcr(AiBcrOcrRequest request)
+```
+
+Ocr images             
+
+### Return type
+
+[**ListResponseOfAiBcrOcrData**](ListResponseOfAiBcrOcrData.md)
+
+### Request Parameters
+```csharp
+new AiBcrOcrRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrBase64Rq**](AiBcrBase64Rq.md)| Request with base64 images data | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrocr"></a>
+# **AiBcrOcrAsync**
+
+```csharp
+async Task<ListResponseOfAiBcrOcrData> AiBcrOcrAsync(AiBcrOcrRequest request)
+```
+
+Ocr images             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfAiBcrOcrData**](ListResponseOfAiBcrOcrData.md)>
+
+### Request Parameters
+```csharp
+new AiBcrOcrRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrBase64Rq**](AiBcrBase64Rq.md)| Request with base64 images data | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrocrstorage"></a>
+# **AiBcrOcrStorage**
+
+```csharp
+ListResponseOfAiBcrOcrData AiBcrOcrStorage(AiBcrOcrStorageRequest request)
+```
+
+Ocr images from storage             
+
+### Return type
+
+[**ListResponseOfAiBcrOcrData**](ListResponseOfAiBcrOcrData.md)
+
+### Request Parameters
+```csharp
+new AiBcrOcrStorageRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrStorageImageRq**](AiBcrStorageImageRq.md)| Request with images located on storage | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrocrstorage"></a>
+# **AiBcrOcrStorageAsync**
+
+```csharp
+async Task<ListResponseOfAiBcrOcrData> AiBcrOcrStorageAsync(AiBcrOcrStorageRequest request)
+```
+
+Ocr images from storage             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfAiBcrOcrData**](ListResponseOfAiBcrOcrData.md)>
+
+### Request Parameters
+```csharp
+new AiBcrOcrStorageRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrStorageImageRq**](AiBcrStorageImageRq.md)| Request with images located on storage | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrparse"></a>
+# **AiBcrParse**
+
+```csharp
+ListResponseOfHierarchicalObject AiBcrParse(AiBcrParseRequest request)
+```
+
+Parse images to vCard properties             
+
+### Return type
+
+[**ListResponseOfHierarchicalObject**](ListResponseOfHierarchicalObject.md)
+
+### Request Parameters
+```csharp
+new AiBcrParseRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrBase64Rq**](AiBcrBase64Rq.md)| Request with base64 images data | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrparse"></a>
+# **AiBcrParseAsync**
+
+```csharp
+async Task<ListResponseOfHierarchicalObject> AiBcrParseAsync(AiBcrParseRequest request)
+```
+
+Parse images to vCard properties             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfHierarchicalObject**](ListResponseOfHierarchicalObject.md)>
+
+### Request Parameters
+```csharp
+new AiBcrParseRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrBase64Rq**](AiBcrBase64Rq.md)| Request with base64 images data | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrparsestorage"></a>
+# **AiBcrParseStorage**
+
+```csharp
+ListResponseOfStorageFileLocation AiBcrParseStorage(AiBcrParseStorageRequest request)
+```
+
+Parse images from storage to vCard files             
+
+### Return type
+
+[**ListResponseOfStorageFileLocation**](ListResponseOfStorageFileLocation.md)
+
+### Request Parameters
+```csharp
+new AiBcrParseStorageRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrParseStorageRq**](AiBcrParseStorageRq.md)| Request with images located on storage | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrparsestorage"></a>
+# **AiBcrParseStorageAsync**
+
+```csharp
+async Task<ListResponseOfStorageFileLocation> AiBcrParseStorageAsync(AiBcrParseStorageRequest request)
+```
+
+Parse images from storage to vCard files             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfStorageFileLocation**](ListResponseOfStorageFileLocation.md)>
+
+### Request Parameters
+```csharp
+new AiBcrParseStorageRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrParseStorageRq**](AiBcrParseStorageRq.md)| Request with images located on storage | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamecomplete"></a>
+# **AiNameComplete**
+
+```csharp
+AiNameWeightedVariants AiNameComplete(AiNameCompleteRequest request)
+```
+
+The call proposes k most probable names for given starting characters             
+
+### Return type
+
+[**AiNameWeightedVariants**](AiNameWeightedVariants.md)
+
+### Request Parameters
+```csharp
+new AiNameCompleteRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to complete (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamecomplete"></a>
+# **AiNameCompleteAsync**
+
+```csharp
+async Task<AiNameWeightedVariants> AiNameCompleteAsync(AiNameCompleteRequest request)
+```
+
+The call proposes k most probable names for given starting characters             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
+
+### Request Parameters
+```csharp
+new AiNameCompleteRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to complete (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameexpand"></a>
+# **AiNameExpand**
+
+```csharp
+AiNameWeightedVariants AiNameExpand(AiNameExpandRequest request)
+```
+
+Expands a person's name into a list of possible alternatives using options for expanding instructions             
+
+### Return type
+
+[**AiNameWeightedVariants**](AiNameWeightedVariants.md)
+
+### Request Parameters
+```csharp
+new AiNameExpandRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to format (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameexpand"></a>
+# **AiNameExpandAsync**
+
+```csharp
+async Task<AiNameWeightedVariants> AiNameExpandAsync(AiNameExpandRequest request)
+```
+
+Expands a person's name into a list of possible alternatives using options for expanding instructions             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
+
+### Request Parameters
+```csharp
+new AiNameExpandRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to format (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameexpandparsed"></a>
+# **AiNameExpandParsed**
+
+```csharp
+AiNameWeightedVariants AiNameExpandParsed(AiNameExpandParsedRequest request)
+```
+
+Expands a person's parsed name into a list of possible alternatives using options for expanding instructions             
+
+### Return type
+
+[**AiNameWeightedVariants**](AiNameWeightedVariants.md)
+
+### Request Parameters
+```csharp
+new AiNameExpandParsedRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Parsed name with options | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameexpandparsed"></a>
+# **AiNameExpandParsedAsync**
+
+```csharp
+async Task<AiNameWeightedVariants> AiNameExpandParsedAsync(AiNameExpandParsedRequest request)
+```
+
+Expands a person's parsed name into a list of possible alternatives using options for expanding instructions             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
+
+### Request Parameters
+```csharp
+new AiNameExpandParsedRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Parsed name with options | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameformat"></a>
+# **AiNameFormat**
+
+```csharp
+AiNameFormatted AiNameFormat(AiNameFormatRequest request)
+```
+
+Formats a person's name in correct case and name order using options for formatting instructions             
+
+### Return type
+
+[**AiNameFormatted**](AiNameFormatted.md)
+
+### Request Parameters
+```csharp
+new AiNameFormatRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    format=format,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to format (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **format** | **string**| Format of the name. Predefined format can be used by ID, or custom format can be specified. Predefined formats:      /format/default/ (&#x3D; &#39;%t%F%m%N%L%p&#39;)     /format/FN+LN/ (&#x3D; &#39;%F%L&#39;)     /format/title+FN+LN/ (&#x3D; &#39;%t%F%L&#39;)     /format/FN+MN+LN/ (&#x3D; &#39;%F%M%N%L&#39;)     /format/title+FN+MN+LN/ (&#x3D; &#39;%t%F%M%N%L&#39;)     /format/FN+MI+LN/ (&#x3D; &#39;%F%m%N%L&#39;)     /format/title+FN+MI+LN/ (&#x3D; &#39;%t%F%m%N%L&#39;)     /format/LN/ (&#x3D; &#39;%L&#39;)     /format/title+LN/ (&#x3D; &#39;%t%L&#39;)     /format/LN+FN+MN/ (&#x3D; &#39;%L,%F%M%N&#39;)     /format/LN+title+FN+MN/ (&#x3D; &#39;%L,%t%F%M%N&#39;)     /format/LN+FN+MI/ (&#x3D; &#39;%L,%F%m%N&#39;)     /format/LN+title+FN+MI/ (&#x3D; &#39;%L,%t%F%m%N&#39;)  Custom format string - custom combination of characters and the next term placeholders:      &#39;%t&#39; - Title (prefix)     &#39;%F&#39; - First name     &#39;%f&#39; - First initial     &#39;%M&#39; - Middle name(s)     &#39;%m&#39; - Middle initial(s)     &#39;%N&#39; - Nickname     &#39;%L&#39; - Last name     &#39;%l&#39; - Last initial     &#39;%p&#39; - Postfix  If no value for format option was provided, its default value is &#39;%t%F%m%N%L%p&#39;              | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameformat"></a>
+# **AiNameFormatAsync**
+
+```csharp
+async Task<AiNameFormatted> AiNameFormatAsync(AiNameFormatRequest request)
+```
+
+Formats a person's name in correct case and name order using options for formatting instructions             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**AiNameFormatted**](AiNameFormatted.md)>
+
+### Request Parameters
+```csharp
+new AiNameFormatRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    format=format,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to format (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **format** | **string**| Format of the name. Predefined format can be used by ID, or custom format can be specified. Predefined formats:      /format/default/ (&#x3D; &#39;%t%F%m%N%L%p&#39;)     /format/FN+LN/ (&#x3D; &#39;%F%L&#39;)     /format/title+FN+LN/ (&#x3D; &#39;%t%F%L&#39;)     /format/FN+MN+LN/ (&#x3D; &#39;%F%M%N%L&#39;)     /format/title+FN+MN+LN/ (&#x3D; &#39;%t%F%M%N%L&#39;)     /format/FN+MI+LN/ (&#x3D; &#39;%F%m%N%L&#39;)     /format/title+FN+MI+LN/ (&#x3D; &#39;%t%F%m%N%L&#39;)     /format/LN/ (&#x3D; &#39;%L&#39;)     /format/title+LN/ (&#x3D; &#39;%t%L&#39;)     /format/LN+FN+MN/ (&#x3D; &#39;%L,%F%M%N&#39;)     /format/LN+title+FN+MN/ (&#x3D; &#39;%L,%t%F%M%N&#39;)     /format/LN+FN+MI/ (&#x3D; &#39;%L,%F%m%N&#39;)     /format/LN+title+FN+MI/ (&#x3D; &#39;%L,%t%F%m%N&#39;)  Custom format string - custom combination of characters and the next term placeholders:      &#39;%t&#39; - Title (prefix)     &#39;%F&#39; - First name     &#39;%f&#39; - First initial     &#39;%M&#39; - Middle name(s)     &#39;%m&#39; - Middle initial(s)     &#39;%N&#39; - Nickname     &#39;%L&#39; - Last name     &#39;%l&#39; - Last initial     &#39;%p&#39; - Postfix  If no value for format option was provided, its default value is &#39;%t%F%m%N%L%p&#39;              | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameformatparsed"></a>
+# **AiNameFormatParsed**
+
+```csharp
+AiNameFormatted AiNameFormatParsed(AiNameFormatParsedRequest request)
+```
+
+Formats a person's parsed name in correct case and name order using options for formatting instructions             
+
+### Return type
+
+[**AiNameFormatted**](AiNameFormatted.md)
+
+### Request Parameters
+```csharp
+new AiNameFormatParsedRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Parsed name with options | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameformatparsed"></a>
+# **AiNameFormatParsedAsync**
+
+```csharp
+async Task<AiNameFormatted> AiNameFormatParsedAsync(AiNameFormatParsedRequest request)
+```
+
+Formats a person's parsed name in correct case and name order using options for formatting instructions             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**AiNameFormatted**](AiNameFormatted.md)>
+
+### Request Parameters
+```csharp
+new AiNameFormatParsedRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Parsed name with options | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamegenderize"></a>
+# **AiNameGenderize**
+
+```csharp
+ListResponseOfAiNameGenderHypothesis AiNameGenderize(AiNameGenderizeRequest request)
+```
+
+Detect person's gender from name string             
+
+### Return type
+
+[**ListResponseOfAiNameGenderHypothesis**](ListResponseOfAiNameGenderHypothesis.md)
+
+### Request Parameters
+```csharp
+new AiNameGenderizeRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to parse (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamegenderize"></a>
+# **AiNameGenderizeAsync**
+
+```csharp
+async Task<ListResponseOfAiNameGenderHypothesis> AiNameGenderizeAsync(AiNameGenderizeRequest request)
+```
+
+Detect person's gender from name string             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfAiNameGenderHypothesis**](ListResponseOfAiNameGenderHypothesis.md)>
+
+### Request Parameters
+```csharp
+new AiNameGenderizeRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to parse (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamegenderizeparsed"></a>
+# **AiNameGenderizeParsed**
+
+```csharp
+ListResponseOfAiNameGenderHypothesis AiNameGenderizeParsed(AiNameGenderizeParsedRequest request)
+```
+
+Detect person's gender from parsed name             
+
+### Return type
+
+[**ListResponseOfAiNameGenderHypothesis**](ListResponseOfAiNameGenderHypothesis.md)
+
+### Request Parameters
+```csharp
+new AiNameGenderizeParsedRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Gender detection request data | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamegenderizeparsed"></a>
+# **AiNameGenderizeParsedAsync**
+
+```csharp
+async Task<ListResponseOfAiNameGenderHypothesis> AiNameGenderizeParsedAsync(AiNameGenderizeParsedRequest request)
+```
+
+Detect person's gender from parsed name             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfAiNameGenderHypothesis**](ListResponseOfAiNameGenderHypothesis.md)>
+
+### Request Parameters
+```csharp
+new AiNameGenderizeParsedRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Gender detection request data | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamematch"></a>
+# **AiNameMatch**
+
+```csharp
+AiNameMatchResult AiNameMatch(AiNameMatchRequest request)
+```
+
+Compare people's names. Uses options for comparing instructions             
+
+### Return type
+
+[**AiNameMatchResult**](AiNameMatchResult.md)
+
+### Request Parameters
+```csharp
+new AiNameMatchRequest(
+    name,
+    otherName,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to match (required) | 
+ **otherName** | **string**| Another name to match (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamematch"></a>
+# **AiNameMatchAsync**
+
+```csharp
+async Task<AiNameMatchResult> AiNameMatchAsync(AiNameMatchRequest request)
+```
+
+Compare people's names. Uses options for comparing instructions             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
+
+### Request Parameters
+```csharp
+new AiNameMatchRequest(
+    name,
+    otherName,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to match (required) | 
+ **otherName** | **string**| Another name to match (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamematchparsed"></a>
+# **AiNameMatchParsed**
+
+```csharp
+AiNameMatchResult AiNameMatchParsed(AiNameMatchParsedRequest request)
+```
+
+Compare people's parsed names and attributes. Uses options for comparing instructions             
+
+### Return type
+
+[**AiNameMatchResult**](AiNameMatchResult.md)
+
+### Request Parameters
+```csharp
+new AiNameMatchParsedRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiNameParsedMatchRq**](AiNameParsedMatchRq.md)| Parsed names to match | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainamematchparsed"></a>
+# **AiNameMatchParsedAsync**
+
+```csharp
+async Task<AiNameMatchResult> AiNameMatchParsedAsync(AiNameMatchParsedRequest request)
+```
+
+Compare people's parsed names and attributes. Uses options for comparing instructions             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
+
+### Request Parameters
+```csharp
+new AiNameMatchParsedRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiNameParsedMatchRq**](AiNameParsedMatchRq.md)| Parsed names to match | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameparse"></a>
+# **AiNameParse**
+
+```csharp
+ListResponseOfAiNameComponent AiNameParse(AiNameParseRequest request)
+```
+
+Parse name to components             
+
+### Return type
+
+[**ListResponseOfAiNameComponent**](ListResponseOfAiNameComponent.md)
+
+### Request Parameters
+```csharp
+new AiNameParseRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to parse (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameparse"></a>
+# **AiNameParseAsync**
+
+```csharp
+async Task<ListResponseOfAiNameComponent> AiNameParseAsync(AiNameParseRequest request)
+```
+
+Parse name to components             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfAiNameComponent**](ListResponseOfAiNameComponent.md)>
+
+### Request Parameters
+```csharp
+new AiNameParseRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to parse (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameparseemailaddress"></a>
+# **AiNameParseEmailAddress**
+
+```csharp
+ListResponseOfAiNameExtracted AiNameParseEmailAddress(AiNameParseEmailAddressRequest request)
+```
+
+Parse person's name out of an email address             
+
+### Return type
+
+[**ListResponseOfAiNameExtracted**](ListResponseOfAiNameExtracted.md)
+
+### Request Parameters
+```csharp
+new AiNameParseEmailAddressRequest(
+    emailAddress,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailAddress** | **string**| Email address to parse (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="ainameparseemailaddress"></a>
+# **AiNameParseEmailAddressAsync**
+
+```csharp
+async Task<ListResponseOfAiNameExtracted> AiNameParseEmailAddressAsync(AiNameParseEmailAddressRequest request)
+```
+
+Parse person's name out of an email address             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfAiNameExtracted**](ListResponseOfAiNameExtracted.md)>
+
+### Request Parameters
+```csharp
+new AiNameParseEmailAddressRequest(
+    emailAddress,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailAddress** | **string**| Email address to parse (required) | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian) | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France | [optional] 
+ **encoding** | **string**| A character encoding name | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="appendemailmessage"></a>
 # **AppendEmailMessage**
 
@@ -251,7 +1179,7 @@ Name | Type | Description  | Notes
 EmailPropertyResponse AppendEmailMessage(AppendEmailMessageRequest request)
 ```
 
-Adds an email from *.eml file to specified folder in email account
+Adds an email from *.eml file to specified folder in email account             
 
 ### Return type
 
@@ -276,7 +1204,7 @@ Name | Type | Description  | Notes
 async Task<EmailPropertyResponse> AppendEmailMessageAsync(AppendEmailMessageRequest request)
 ```
 
-Adds an email from *.eml file to specified folder in email account
+Adds an email from *.eml file to specified folder in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -303,7 +1231,7 @@ Name | Type | Description  | Notes
 ValueResponse AppendMimeMessage(AppendMimeMessageRequest request)
 ```
 
-Adds an email from MIME to specified folder in email account
+Adds an email from MIME to specified folder in email account             
 
 ### Return type
 
@@ -328,7 +1256,7 @@ Name | Type | Description  | Notes
 async Task<ValueResponse> AppendMimeMessageAsync(AppendMimeMessageRequest request)
 ```
 
-Adds an email from MIME to specified folder in email account
+Adds an email from MIME to specified folder in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -487,7 +1415,7 @@ Name | Type | Description  | Notes
 void CreateCalendar(CreateCalendarRequest request)
 ```
 
-Create calendar file
+Create calendar file             
 
 ### Return type
 
@@ -514,7 +1442,7 @@ Name | Type | Description  | Notes
 async Task CreateCalendarAsync(CreateCalendarRequest request)
 ```
 
-Create calendar file
+Create calendar file             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -543,7 +1471,7 @@ Name | Type | Description  | Notes
 void CreateContact(CreateContactRequest request)
 ```
 
-Create contact document
+Create contact document             
 
 ### Return type
 
@@ -559,7 +1487,7 @@ new CreateContactRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **request** | [**HierarchicalObjectRequest**](HierarchicalObjectRequest.md)| Create contact request | 
 
@@ -572,7 +1500,7 @@ Name | Type | Description  | Notes
 async Task CreateContactAsync(CreateContactRequest request)
 ```
 
-Create contact document
+Create contact document             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -590,7 +1518,7 @@ new CreateContactRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **request** | [**HierarchicalObjectRequest**](HierarchicalObjectRequest.md)| Create contact request | 
 
@@ -603,7 +1531,7 @@ Name | Type | Description  | Notes
 EmailDocumentResponse CreateEmail(CreateEmailRequest request)
 ```
 
-Create an email document
+Create an email document             
 
 ### Return type
 
@@ -630,7 +1558,7 @@ Name | Type | Description  | Notes
 async Task<EmailDocumentResponse> CreateEmailAsync(CreateEmailRequest request)
 ```
 
-Create an email document
+Create an email document             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -659,7 +1587,7 @@ Name | Type | Description  | Notes
 void CreateEmailFolder(CreateEmailFolderRequest request)
 ```
 
-Create new folder in email account
+Create new folder in email account             
 
 ### Return type
 
@@ -684,7 +1612,7 @@ Name | Type | Description  | Notes
 async Task CreateEmailFolderAsync(CreateEmailFolderRequest request)
 ```
 
-Create new folder in email account
+Create new folder in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -767,7 +1695,7 @@ Name | Type | Description  | Notes
 void CreateMapi(CreateMapiRequest request)
 ```
 
-Create new document
+Create new document             
 
 ### Return type
 
@@ -794,7 +1722,7 @@ Name | Type | Description  | Notes
 async Task CreateMapiAsync(CreateMapiRequest request)
 ```
 
-Create new document
+Create new document             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -823,7 +1751,7 @@ Name | Type | Description  | Notes
 void DeleteCalendarProperty(DeleteCalendarPropertyRequest request)
 ```
 
-Deletes indexed property by index and name. To delete Reminder attachment, use path ReminderAttachment/{ReminderIndex}/{AttachmentIndex}
+Deletes indexed property by index and name. To delete Reminder attachment, use path ReminderAttachment/{ReminderIndex}/{AttachmentIndex}             
 
 ### Return type
 
@@ -854,7 +1782,7 @@ Name | Type | Description  | Notes
 async Task DeleteCalendarPropertyAsync(DeleteCalendarPropertyRequest request)
 ```
 
-Deletes indexed property by index and name. To delete Reminder attachment, use path ReminderAttachment/{ReminderIndex}/{AttachmentIndex}
+Deletes indexed property by index and name. To delete Reminder attachment, use path ReminderAttachment/{ReminderIndex}/{AttachmentIndex}             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -887,7 +1815,7 @@ Name | Type | Description  | Notes
 void DeleteContactProperty(DeleteContactPropertyRequest request)
 ```
 
-Delete property from indexed property list
+Delete property from indexed property list             
 
 ### Return type
 
@@ -905,7 +1833,7 @@ new DeleteContactPropertyRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **memberName** | **string**| Indexed property name | 
  **index** | **int?**| Property index | 
@@ -920,7 +1848,7 @@ Name | Type | Description  | Notes
 async Task DeleteContactPropertyAsync(DeleteContactPropertyRequest request)
 ```
 
-Delete property from indexed property list
+Delete property from indexed property list             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -940,7 +1868,7 @@ new DeleteContactPropertyRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **memberName** | **string**| Indexed property name | 
  **index** | **int?**| Property index | 
@@ -955,7 +1883,7 @@ Name | Type | Description  | Notes
 void DeleteEmailFolder(DeleteEmailFolderRequest request)
 ```
 
-Delete a folder in email account
+Delete a folder in email account             
 
 ### Return type
 
@@ -980,7 +1908,7 @@ Name | Type | Description  | Notes
 async Task DeleteEmailFolderAsync(DeleteEmailFolderRequest request)
 ```
 
-Delete a folder in email account
+Delete a folder in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1007,7 +1935,7 @@ Name | Type | Description  | Notes
 void DeleteEmailMessage(DeleteEmailMessageRequest request)
 ```
 
-Delete message from email account by id
+Delete message from email account by id             
 
 ### Return type
 
@@ -1032,7 +1960,7 @@ Name | Type | Description  | Notes
 async Task DeleteEmailMessageAsync(DeleteEmailMessageRequest request)
 ```
 
-Delete message from email account by id
+Delete message from email account by id             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1179,7 +2107,7 @@ Name | Type | Description  | Notes
 void DeleteMapiAttachment(DeleteMapiAttachmentRequest request)
 ```
 
-Remove attachment from document
+Remove attachment from document             
 
 ### Return type
 
@@ -1208,7 +2136,7 @@ Name | Type | Description  | Notes
 async Task DeleteMapiAttachmentAsync(DeleteMapiAttachmentRequest request)
 ```
 
-Remove attachment from document
+Remove attachment from document             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1239,7 +2167,7 @@ Name | Type | Description  | Notes
 void DeleteMapiProperties(DeleteMapiPropertiesRequest request)
 ```
 
-Delete document properties
+Delete document properties             
 
 ### Return type
 
@@ -1266,7 +2194,7 @@ Name | Type | Description  | Notes
 async Task DeleteMapiPropertiesAsync(DeleteMapiPropertiesRequest request)
 ```
 
-Delete document properties
+Delete document properties             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1355,7 +2283,7 @@ Name | Type | Description  | Notes
 MimeResponse FetchEmailMessage(FetchEmailMessageRequest request)
 ```
 
-Fetch message mime from email account
+Fetch message mime from email account             
 
 ### Return type
 
@@ -1375,7 +2303,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account) | [optional] 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -1388,7 +2316,7 @@ Name | Type | Description  | Notes
 async Task<MimeResponse> FetchEmailMessageAsync(FetchEmailMessageRequest request)
 ```
 
-Fetch message mime from email account
+Fetch message mime from email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1410,7 +2338,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account) | [optional] 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -1423,7 +2351,7 @@ Name | Type | Description  | Notes
 HierarchicalObject GetCalendar(GetCalendarRequest request)
 ```
 
-Get calendar file properties
+Get calendar file properties             
 
 ### Return type
 
@@ -1452,7 +2380,7 @@ Name | Type | Description  | Notes
 async Task<HierarchicalObject> GetCalendarAsync(GetCalendarRequest request)
 ```
 
-Get calendar file properties
+Get calendar file properties             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1483,7 +2411,7 @@ Name | Type | Description  | Notes
 System.IO.Stream GetCalendarAttachment(GetCalendarAttachmentRequest request)
 ```
 
-Get iCalendar document attachment by name
+Get iCalendar document attachment by name             
 
 ### Return type
 
@@ -1514,7 +2442,7 @@ Name | Type | Description  | Notes
 async Task<System.IO.Stream> GetCalendarAttachmentAsync(GetCalendarAttachmentRequest request)
 ```
 
-Get iCalendar document attachment by name
+Get iCalendar document attachment by name             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1547,7 +2475,7 @@ Name | Type | Description  | Notes
 ListResponseOfHierarchicalObjectResponse GetCalendarList(GetCalendarListRequest request)
 ```
 
-Get iCalendar files list in folder on storage
+Get iCalendar files list in folder on storage             
 
 ### Return type
 
@@ -1578,7 +2506,7 @@ Name | Type | Description  | Notes
 async Task<ListResponseOfHierarchicalObjectResponse> GetCalendarListAsync(GetCalendarListRequest request)
 ```
 
-Get iCalendar files list in folder on storage
+Get iCalendar files list in folder on storage             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1611,7 +2539,7 @@ Name | Type | Description  | Notes
 System.IO.Stream GetContactAttachment(GetContactAttachmentRequest request)
 ```
 
-Get attachment file by name
+Get attachment file by name             
 
 ### Return type
 
@@ -1629,7 +2557,7 @@ new GetContactAttachmentRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **attachment** | **string**| Attachment name or index | 
  **folder** | **string**| Path to folder in storage | [optional] 
@@ -1644,7 +2572,7 @@ Name | Type | Description  | Notes
 async Task<System.IO.Stream> GetContactAttachmentAsync(GetContactAttachmentRequest request)
 ```
 
-Get attachment file by name
+Get attachment file by name             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1664,7 +2592,7 @@ new GetContactAttachmentRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **attachment** | **string**| Attachment name or index | 
  **folder** | **string**| Path to folder in storage | [optional] 
@@ -1679,7 +2607,7 @@ Name | Type | Description  | Notes
 ListResponseOfHierarchicalObjectResponse GetContactList(GetContactListRequest request)
 ```
 
-Get contact list from storage folder
+Get contact list from storage folder             
 
 ### Return type
 
@@ -1697,7 +2625,7 @@ new GetContactListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
  **itemsPerPage** | **int?**| Count of items on page | [optional] [default to 10]
@@ -1712,7 +2640,7 @@ Name | Type | Description  | Notes
 async Task<ListResponseOfHierarchicalObjectResponse> GetContactListAsync(GetContactListRequest request)
 ```
 
-Get contact list from storage folder
+Get contact list from storage folder             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1732,7 +2660,7 @@ new GetContactListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
  **itemsPerPage** | **int?**| Count of items on page | [optional] [default to 10]
@@ -1747,7 +2675,7 @@ Name | Type | Description  | Notes
 HierarchicalObject GetContactProperties(GetContactPropertiesRequest request)
 ```
 
-Get contact document properties
+Get contact document properties             
 
 ### Return type
 
@@ -1764,7 +2692,7 @@ new GetContactPropertiesRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
@@ -1778,7 +2706,7 @@ Name | Type | Description  | Notes
 async Task<HierarchicalObject> GetContactPropertiesAsync(GetContactPropertiesRequest request)
 ```
 
-Get contact document properties
+Get contact document properties             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1797,7 +2725,7 @@ new GetContactPropertiesRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
@@ -1863,7 +2791,7 @@ Name | Type | Description  | Notes
 EmailDocument GetEmail(GetEmailRequest request)
 ```
 
-Get email document
+Get email document             
 
 ### Return type
 
@@ -1892,7 +2820,7 @@ Name | Type | Description  | Notes
 async Task<EmailDocument> GetEmailAsync(GetEmailRequest request)
 ```
 
-Get email document
+Get email document             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1923,7 +2851,7 @@ Name | Type | Description  | Notes
 System.IO.Stream GetEmailAttachment(GetEmailAttachmentRequest request)
 ```
 
-Get email attachment by name
+Get email attachment by name             
 
 ### Return type
 
@@ -1954,7 +2882,7 @@ Name | Type | Description  | Notes
 async Task<System.IO.Stream> GetEmailAttachmentAsync(GetEmailAttachmentRequest request)
 ```
 
-Get email attachment by name
+Get email attachment by name             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1987,7 +2915,7 @@ Name | Type | Description  | Notes
 EmailPropertyResponse GetEmailProperty(GetEmailPropertyRequest request)
 ```
 
-Get an email document property by its name
+Get an email document property by its name             
 
 ### Return type
 
@@ -2018,7 +2946,7 @@ Name | Type | Description  | Notes
 async Task<EmailPropertyResponse> GetEmailPropertyAsync(GetEmailPropertyRequest request)
 ```
 
-Get an email document property by its name
+Get an email document property by its name             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2163,7 +3091,7 @@ Name | Type | Description  | Notes
 System.IO.Stream GetMapiAttachment(GetMapiAttachmentRequest request)
 ```
 
-Get document attachment as file stream
+Get document attachment as file stream             
 
 ### Return type
 
@@ -2194,7 +3122,7 @@ Name | Type | Description  | Notes
 async Task<System.IO.Stream> GetMapiAttachmentAsync(GetMapiAttachmentRequest request)
 ```
 
-Get document attachment as file stream
+Get document attachment as file stream             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2227,7 +3155,7 @@ Name | Type | Description  | Notes
 ListResponseOfString GetMapiAttachments(GetMapiAttachmentsRequest request)
 ```
 
-Get document attachment list
+Get document attachment list             
 
 ### Return type
 
@@ -2256,7 +3184,7 @@ Name | Type | Description  | Notes
 async Task<ListResponseOfString> GetMapiAttachmentsAsync(GetMapiAttachmentsRequest request)
 ```
 
-Get document attachment list
+Get document attachment list             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2287,7 +3215,7 @@ Name | Type | Description  | Notes
 ListResponseOfHierarchicalObjectResponse GetMapiList(GetMapiListRequest request)
 ```
 
-Get document list from storage folder
+Get document list from storage folder             
 
 ### Return type
 
@@ -2318,7 +3246,7 @@ Name | Type | Description  | Notes
 async Task<ListResponseOfHierarchicalObjectResponse> GetMapiListAsync(GetMapiListRequest request)
 ```
 
-Get document list from storage folder
+Get document list from storage folder             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2351,7 +3279,7 @@ Name | Type | Description  | Notes
 HierarchicalObjectResponse GetMapiProperties(GetMapiPropertiesRequest request)
 ```
 
-Get document properties
+Get document properties             
 
 ### Return type
 
@@ -2380,7 +3308,7 @@ Name | Type | Description  | Notes
 async Task<HierarchicalObjectResponse> GetMapiPropertiesAsync(GetMapiPropertiesRequest request)
 ```
 
-Get document properties
+Get document properties             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2411,7 +3339,7 @@ Name | Type | Description  | Notes
 ListResponseOfMailServerFolder ListEmailFolders(ListEmailFoldersRequest request)
 ```
 
-Get folders list in email account
+Get folders list in email account             
 
 ### Return type
 
@@ -2430,7 +3358,7 @@ new ListEmailFoldersRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account) | [optional] 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
@@ -2444,7 +3372,7 @@ Name | Type | Description  | Notes
 async Task<ListResponseOfMailServerFolder> ListEmailFoldersAsync(ListEmailFoldersRequest request)
 ```
 
-Get folders list in email account
+Get folders list in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2465,7 +3393,7 @@ new ListEmailFoldersRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account) | [optional] 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
@@ -2479,9 +3407,9 @@ Name | Type | Description  | Notes
 ListResponseOfString ListEmailMessages(ListEmailMessagesRequest request)
 ```
 
-Get messages from folder, filtered by query
+Get messages from folder, filtered by query             
 
-The query string should have the following view.  The example of a simple expression:   '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.  The number of simple expressions can make a compound one, ex.: (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3>,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator  At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message  Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message  Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item  Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once  The field value (<Field value>) can take the following values: For text fields - any string, For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\", For flags (fields of boolean type) - either \"True\", or \"False\"
+The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3>,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
 
 ### Return type
 
@@ -2504,7 +3432,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| A folder in email account | 
  **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account) | [optional] 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
@@ -2518,11 +3446,11 @@ Name | Type | Description  | Notes
 async Task<ListResponseOfString> ListEmailMessagesAsync(ListEmailMessagesRequest request)
 ```
 
-Get messages from folder, filtered by query
+Get messages from folder, filtered by query             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-The query string should have the following view.  The example of a simple expression:   '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.  The number of simple expressions can make a compound one, ex.: (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3>,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator  At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message  Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message  Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item  Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once  The field value (<Field value>) can take the following values: For text fields - any string, For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\", For flags (fields of boolean type) - either \"True\", or \"False\"
+The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3>,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
 
 ### Return type
 
@@ -2545,7 +3473,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| A folder in email account | 
  **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account) | [optional] 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
@@ -2751,7 +3679,7 @@ Name | Type | Description  | Notes
 void SaveMailAccount(SaveMailAccountRequest request)
 ```
 
-Create email account file (*.account) with login/password authentication
+Create email account file (*.account) with login/password authentication             
 
 ### Return type
 
@@ -2776,7 +3704,7 @@ Name | Type | Description  | Notes
 async Task SaveMailAccountAsync(SaveMailAccountRequest request)
 ```
 
-Create email account file (*.account) with login/password authentication
+Create email account file (*.account) with login/password authentication             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2803,7 +3731,7 @@ Name | Type | Description  | Notes
 void SaveMailOAuthAccount(SaveMailOAuthAccountRequest request)
 ```
 
-Create email account file (*.account) with OAuth
+Create email account file (*.account) with OAuth             
 
 ### Return type
 
@@ -2828,7 +3756,7 @@ Name | Type | Description  | Notes
 async Task SaveMailOAuthAccountAsync(SaveMailOAuthAccountRequest request)
 ```
 
-Create email account file (*.account) with OAuth
+Create email account file (*.account) with OAuth             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2855,7 +3783,7 @@ Name | Type | Description  | Notes
 void SendEmail(SendEmailRequest request)
 ```
 
-Send an email from *.eml file located on storage
+Send an email from *.eml file located on storage             
 
 ### Return type
 
@@ -2880,7 +3808,7 @@ Name | Type | Description  | Notes
 async Task SendEmailAsync(SendEmailRequest request)
 ```
 
-Send an email from *.eml file located on storage
+Send an email from *.eml file located on storage             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2907,7 +3835,7 @@ Name | Type | Description  | Notes
 void SendEmailMime(SendEmailMimeRequest request)
 ```
 
-Send an email specified by MIME in request
+Send an email specified by MIME in request             
 
 ### Return type
 
@@ -2932,7 +3860,7 @@ Name | Type | Description  | Notes
 async Task SendEmailMimeAsync(SendEmailMimeRequest request)
 ```
 
-Send an email specified by MIME in request
+Send an email specified by MIME in request             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2959,7 +3887,7 @@ Name | Type | Description  | Notes
 EmailPropertyResponse SetEmailProperty(SetEmailPropertyRequest request)
 ```
 
-Set email document property value
+Set email document property value             
 
 ### Return type
 
@@ -2977,7 +3905,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **propertyName** | **string**| A property name that should be changed | 
  **fileName** | **string**| Email document file name | 
- **request** | [**SetEmailPropertyRequest**](SetEmailPropertyRequest.md)| A property that should be changed and optional Storage info to specify             where the file located | 
+ **request** | [**SetEmailPropertyRequest**](SetEmailPropertyRequest.md)| A property that should be changed and optional Storage info to specify where the file located              | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2988,7 +3916,7 @@ Name | Type | Description  | Notes
 async Task<EmailPropertyResponse> SetEmailPropertyAsync(SetEmailPropertyRequest request)
 ```
 
-Set email document property value
+Set email document property value             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -3008,7 +3936,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **propertyName** | **string**| A property name that should be changed | 
  **fileName** | **string**| Email document file name | 
- **request** | [**SetEmailPropertyRequest**](SetEmailPropertyRequest.md)| A property that should be changed and optional Storage info to specify             where the file located | 
+ **request** | [**SetEmailPropertyRequest**](SetEmailPropertyRequest.md)| A property that should be changed and optional Storage info to specify where the file located              | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -3019,7 +3947,7 @@ Name | Type | Description  | Notes
 void SetEmailReadFlag(SetEmailReadFlagRequest request)
 ```
 
-Sets \"Message is read\" flag
+Sets \"Message is read\" flag             
 
 ### Return type
 
@@ -3044,7 +3972,7 @@ Name | Type | Description  | Notes
 async Task SetEmailReadFlagAsync(SetEmailReadFlagRequest request)
 ```
 
-Sets \"Message is read\" flag
+Sets \"Message is read\" flag             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -3123,7 +4051,7 @@ Name | Type | Description  | Notes
 void UpdateCalendarProperties(UpdateCalendarPropertiesRequest request)
 ```
 
-Update calendar file properties
+Update calendar file properties             
 
 ### Return type
 
@@ -3150,7 +4078,7 @@ Name | Type | Description  | Notes
 async Task UpdateCalendarPropertiesAsync(UpdateCalendarPropertiesRequest request)
 ```
 
-Update calendar file properties
+Update calendar file properties             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -3179,7 +4107,7 @@ Name | Type | Description  | Notes
 void UpdateContactProperties(UpdateContactPropertiesRequest request)
 ```
 
-Update contact document properties
+Update contact document properties             
 
 ### Return type
 
@@ -3195,7 +4123,7 @@ new UpdateContactPropertiesRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **request** | [**HierarchicalObjectRequest**](HierarchicalObjectRequest.md)| Properties that should be updated/added | 
 
@@ -3208,7 +4136,7 @@ Name | Type | Description  | Notes
 async Task UpdateContactPropertiesAsync(UpdateContactPropertiesRequest request)
 ```
 
-Update contact document properties
+Update contact document properties             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -3226,7 +4154,7 @@ new UpdateContactPropertiesRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format | 
+ **format** | **string**| Contact document format Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name | 
  **request** | [**HierarchicalObjectRequest**](HierarchicalObjectRequest.md)| Properties that should be updated/added | 
 
@@ -3239,7 +4167,7 @@ Name | Type | Description  | Notes
 void UpdateMapiProperties(UpdateMapiPropertiesRequest request)
 ```
 
-Update document properties
+Update document properties             
 
 ### Return type
 
@@ -3266,7 +4194,7 @@ Name | Type | Description  | Notes
 async Task UpdateMapiPropertiesAsync(UpdateMapiPropertiesRequest request)
 ```
 
-Update document properties
+Update document properties             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 

@@ -33,20 +33,31 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Object represented as hierarchical properties request 
+    /// Object represented as hierarchical properties request             
     /// </summary>
     public class HierarchicalObjectRequest 
     {
         /// <summary>
-        /// Hierarchical properties of document
+        /// Hierarchical properties of document             
         /// </summary>  
         public HierarchicalObject HierarchicalObject { get; set; }
 
         /// <summary>
-        /// Document location in storage
+        /// Document location in storage             
         /// </summary>  
         public StorageFolderLocation StorageFolder { get; set; }
 
+        /// <summary>HierarchicalObjectRequest constructor</summary>
+        public HierarchicalObjectRequest() {}
+
+        /// <summary>HierarchicalObjectRequest constructor</summary>
+        /// <param name="hierarchicalObject">Hierarchical properties of document             </param>
+        /// <param name="storageFolder">Document location in storage             </param>
+        public HierarchicalObjectRequest(HierarchicalObject hierarchicalObject, StorageFolderLocation storageFolder)
+        {
+            HierarchicalObject = hierarchicalObject;
+            StorageFolder = storageFolder;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>

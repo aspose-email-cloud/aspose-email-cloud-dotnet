@@ -33,25 +33,38 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email property.
+    /// Email property.             
     /// </summary>
     public class EmailProperty 
     {
         /// <summary>
-        /// Gets or sets Link
+        /// Link to property             
         /// </summary>  
         public Link Link { get; set; }
 
         /// <summary>
-        /// Gets or sets Name
+        /// Property name             
         /// </summary>  
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets Value
+        /// Property value             
         /// </summary>  
         public Object Value { get; set; }
 
+        /// <summary>EmailProperty constructor</summary>
+        public EmailProperty() {}
+
+        /// <summary>EmailProperty constructor</summary>
+        /// <param name="link">Link to property             </param>
+        /// <param name="name">Property name             </param>
+        /// <param name="value">Property value             </param>
+        public EmailProperty(Link link, string name, Object value)
+        {
+            Link = link;
+            Name = name;
+            Value = value;
+        }
         /// <summary>
         /// Get the string presentation of the object
         /// </summary>
