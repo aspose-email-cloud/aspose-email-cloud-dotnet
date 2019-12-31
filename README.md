@@ -84,7 +84,7 @@ var result = await emailApi.AiBcrParseStorageAsync(new AiBcrParseStorageRequest(
     new AiBcrParseStorageRq(null,
         new List<AiBcrImageStorageFile> //We can process multiple images in one 
             {new AiBcrImageStorageFile(
-                true, //the image contains only one business card (you can upload image with multiple cards on it)
+                true, //Flag isSingle determines that image contains single VCard or more. Only single VCard on image supported in current version
                 new StorageFileLocation(storageName, string.Empty, imageFileName))},
         new StorageFolderLocation(storageName, outFolder))));
 // Get file name from a recognition result
