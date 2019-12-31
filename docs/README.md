@@ -18,10 +18,6 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**AiBcrOcrStorageAsync**](EmailApi.md#aibcrocrstorageasync) | **POST** /email/AiBcr/ocr-storage | Ocr images from storage             . Not available on .NETFramework v2.0
 *EmailApi* | [**AiBcrParse**](EmailApi.md#aibcrparse) | **POST** /email/AiBcr/parse | Parse images to vCard properties             
 *EmailApi* | [**AiBcrParseAsync**](EmailApi.md#aibcrparseasync) | **POST** /email/AiBcr/parse | Parse images to vCard properties             . Not available on .NETFramework v2.0
-*EmailApi* | [**AiBcrParseOcrData**](EmailApi.md#aibcrparseocrdata) | **POST** /email/AiBcr/parse-ocr-data | Parse OCR data to vCard properties             
-*EmailApi* | [**AiBcrParseOcrDataAsync**](EmailApi.md#aibcrparseocrdataasync) | **POST** /email/AiBcr/parse-ocr-data | Parse OCR data to vCard properties             . Not available on .NETFramework v2.0
-*EmailApi* | [**AiBcrParseOcrDataStorage**](EmailApi.md#aibcrparseocrdatastorage) | **POST** /email/AiBcr/parse-ocr-data-storage | Parse vCards from OCR data and save them to Storage             
-*EmailApi* | [**AiBcrParseOcrDataStorageAsync**](EmailApi.md#aibcrparseocrdatastorageasync) | **POST** /email/AiBcr/parse-ocr-data-storage | Parse vCards from OCR data and save them to Storage             . Not available on .NETFramework v2.0
 *EmailApi* | [**AiBcrParseStorage**](EmailApi.md#aibcrparsestorage) | **POST** /email/AiBcr/parse-storage | Parse images from storage to vCard files             
 *EmailApi* | [**AiBcrParseStorageAsync**](EmailApi.md#aibcrparsestorageasync) | **POST** /email/AiBcr/parse-storage | Parse images from storage to vCard files             . Not available on .NETFramework v2.0
 *EmailApi* | [**AiNameComplete**](EmailApi.md#ainamecomplete) | **GET** /email/AiName/complete | The call proposes k most probable names for given starting characters             
@@ -209,7 +205,6 @@ Class | Method | HTTP request | Description
  - [Model.AiBcrBase64Image](AiBcrBase64Image.md)
  - [Model.AiBcrBase64Rq](AiBcrBase64Rq.md)
  - [Model.AiBcrImageStorageFile](AiBcrImageStorageFile.md)
- - [Model.AiBcrParseOcrDataRq](AiBcrParseOcrDataRq.md)
  - [Model.AiBcrStorageImageRq](AiBcrStorageImageRq.md)
  - [Model.AiNameParsedMatchRq](AiNameParsedMatchRq.md)
  - [Model.AppendEmailAccountBaseRequest](AppendEmailAccountBaseRequest.md)
@@ -227,7 +222,6 @@ Class | Method | HTTP request | Description
  - [Model.SendEmailMimeBaseRequest](SendEmailMimeBaseRequest.md)
  - [Model.SetMessageReadFlagAccountBaseRequest](SetMessageReadFlagAccountBaseRequest.md)
  - [Model.StorageFileLocation](StorageFileLocation.md)
- - [Model.AiBcrParseOcrDataStorageRq](AiBcrParseOcrDataStorageRq.md)
  - [Model.AiBcrParseStorageRq](AiBcrParseStorageRq.md)
  - [Model.AppendEmailBaseRequest](AppendEmailBaseRequest.md)
  - [Model.AppendEmailMimeBaseRequest](AppendEmailMimeBaseRequest.md)

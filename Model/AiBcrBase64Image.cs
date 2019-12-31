@@ -46,7 +46,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public AiBcrBase64Image() {}
 
         /// <summary>AiBcrBase64Image constructor</summary>
-        /// <param name="isSingle">Determines that image contains single VCard or more             </param>
+        /// <param name="isSingle">Determines that image contains single VCard or more. Ignored in current version. Multiple cards on image support will be added soon             </param>
         /// <param name="base64Data">Image data in base64             </param>
         public AiBcrBase64Image(bool? isSingle, string base64Data)
         {

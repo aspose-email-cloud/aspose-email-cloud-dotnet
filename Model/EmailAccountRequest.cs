@@ -53,7 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Login { get; set; }
 
         /// <summary>
-        /// Security mode for a mail client Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
+        /// Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
         /// </summary>  
         public string SecurityOptions { get; set; }
 
@@ -79,7 +79,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="host">Email account host             </param>
         /// <param name="port">Email account port             </param>
         /// <param name="login">Email account login             </param>
-        /// <param name="securityOptions">Security mode for a mail client Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
+        /// <param name="securityOptions">Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
         /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
         /// <param name="description">Email account description             </param>
         /// <param name="storageFile">A storage file location info to store email account             </param>
