@@ -335,7 +335,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
 
             var exists = await IsFileExist(calendarFile);
             Assert.True(exists);
-            
+
             var alternate = await emailApi.ConvertCalendarModelToAlternateAsync(
                 new ConvertCalendarModelToAlternateRequest(
                     new CalendarDtoAlternateRq(calendar, "Create", null)));
@@ -343,7 +343,8 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             {
                 AlternateViews = new List<AlternateView> {alternate},
                 From = new MailAddress("From address", "cloud.em@yandex.ru", "Accepted"),
-                To = new List<MailAddress> {new MailAddress("To address", "cloud.em@yandex.ru", null)},
+                To = new List<MailAddress>
+                    {new MailAddress("To address", "cloud.em@yandex.ru", null)},
                 Subject = "Some subject",
                 Body = "Some body"
             };
@@ -358,6 +359,60 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var fileReader = new StreamReader(emlFile);
             var emlFileContent = await fileReader.ReadToEndAsync();
             Assert.That(emlFileContent.Contains("cloud.em@yandex.ru"));
+        }
+
+        [Test]
+        [Pipeline]
+        public async Task ContactModelTest()
+        {
+            var contact = new ContactDto
+            {
+                Gender = "Male",
+                Surname = "Thomas",
+                GivenName = "Alex",
+                EmailAddresses = new List<EmailAddress>
+                {
+                    new EmailAddress
+                    {
+                        Category = new EnumWithCustomOfEmailAddressCategory("Work", null),
+                        Address = "alex.thomas@work.com",
+                        Preferred = true,
+                        DisplayName = "Alex Thomas"
+                    }
+                },
+                PhoneNumbers = new List<PhoneNumber>
+                {
+                    new PhoneNumber
+                    {
+                        Category = new EnumWithCustomOfPhoneNumberCategory("Work", null),
+                        Number = "+49211424721",
+                        Preferred = true
+                    }
+                }
+            };
+
+            var contactFile = $"{Guid.NewGuid().ToString()}.vcf";
+            await emailApi.SaveContactModelAsync(
+                new SaveContactModelRequest(
+                    "VCard", contactFile,
+                    new StorageModelRqOfContactDto(contact,
+                        new StorageFolderLocation(StorageName, folder))));
+            var exists = await IsFileExist(contactFile);
+            Assert.True(exists);
+        }
+
+        [Test]
+        public async Task AiBcrParseModelTest()
+        {
+            var result = await emailApi.AiBcrParseModelAsync(
+                new AiBcrParseModelRequest(
+                    new AiBcrBase64Rq(
+                        null,
+                        new List<AiBcrBase64Image>
+                        {
+                            new AiBcrBase64Image(true, FileToBase64(BcrAiTestFilePath))
+                        })));
+            Assert.AreEqual("Alex Thomas", result.Value.First().DisplayName);
         }
 
         private static string FileToBase64(string filePath)
