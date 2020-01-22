@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AppendEmailModelRequest.cs">
+// <copyright company="Aspose" file="AppendEmailModelRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -35,24 +35,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// <summary>
     /// Append email request             
     /// </summary>
-    public class AppendEmailModelRequest : AppendEmailAccountBaseRequest 
+    public class AppendEmailModelRq : AppendEmailAccountBaseRequest 
     {
         /// <summary>
         /// Email document             
         /// </summary>  
         public EmailDto Message { get; set; }
 
-        /// <summary>AppendEmailModelRequest constructor</summary>
-        public AppendEmailModelRequest() {}
+        /// <summary>AppendEmailModelRq constructor</summary>
+        public AppendEmailModelRq() {}
 
-        /// <summary>AppendEmailModelRequest constructor</summary>
+        /// <summary>AppendEmailModelRq constructor</summary>
         /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
         /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="folder">Email account folder to store a message             </param>
         /// <param name="markAsSent">Mark message as sent             </param>
         /// <param name="message">Email document             </param>
-        public AppendEmailModelRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, EmailDto message)
+        public AppendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, EmailDto message)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;
@@ -68,7 +68,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AppendEmailModelRequest {\n");
+          sb.Append("class AppendEmailModelRq {\n");
           sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
           sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
           sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");

@@ -42,15 +42,15 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="SendEmailModelRequest"/> class.
         /// </summary>
-        /// <param name="request">Send email request</param>
-        public SendEmailModelRequest(SendEmailModelRequest request)
+        /// <param name="rq">Send email request</param>
+        public SendEmailModelRequest(SendEmailModelRq rq)
         {
-            this.request = request;
+            this.rq = rq;
         }
 
         /// <summary>
         /// Send email request
         /// </summary>
-        public SendEmailModelRequest request { get; set; }
+        public SendEmailModelRq rq { get; set; }
   }
 }

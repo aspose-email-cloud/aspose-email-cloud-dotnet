@@ -78,7 +78,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DateTime? Date { get; set; }
 
         /// <summary>
-        /// Delivery notifications.             
+        /// Delivery notifications. Items: Email delivery notification options. Enum, available values: Delay, Never, None, OnFailure, OnSuccess
         /// </summary>  
         public List<string> DeliveryNotificationOptions { get; set; }
 
@@ -209,7 +209,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="bodyType">The content type of message body. Enum, available values: PlainText, Html, Rtf</param>
         /// <param name="cc">CC recipients.             </param>
         /// <param name="date">Message date.             </param>
-        /// <param name="deliveryNotificationOptions">Delivery notifications.             </param>
+        /// <param name="deliveryNotificationOptions">Delivery notifications.</param>
         /// <param name="from">From address.             </param>
         /// <param name="headers">Document headers.             </param>
         /// <param name="htmlBody">HTML body.             </param>

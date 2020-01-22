@@ -1,4 +1,4 @@
-# Model.AppendEmailModelRequest
+# Model.AppendEmailModelRq
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

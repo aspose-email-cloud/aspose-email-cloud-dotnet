@@ -33,47 +33,47 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// iCalendar document representation             
+    /// iCalendar document representation.             
     /// </summary>
     public class CalendarDto 
     {
         /// <summary>
-        /// Document attachments
+        /// Document attachments.
         /// </summary>  
         public List<Attachment> Attachments { get; set; }
 
         /// <summary>
-        /// Event attendees
+        /// Event attendees.
         /// </summary>  
         public List<MailAddress> Attendees { get; set; }
 
         /// <summary>
-        /// Description
+        /// Description.
         /// </summary>  
         public string Description { get; set; }
 
         /// <summary>
-        /// End date
+        /// End date.
         /// </summary>  
         public DateTime? EndDate { get; set; }
 
         /// <summary>
-        /// End time zone
+        /// End time zone.
         /// </summary>  
         public string EndTimeZone { get; set; }
 
         /// <summary>
-        /// Appointment flags
+        /// Appointment flags. Items: Enumerates iCalendar flags. Enum, available values: None, AllDayEvent
         /// </summary>  
         public List<string> Flags { get; set; }
 
         /// <summary>
-        /// Indicates if description is in HTML format
+        /// Indicates if description is in HTML format.
         /// </summary>  
         public bool? IsDescriptionHtml { get; set; }
 
         /// <summary>
-        /// Location
+        /// Location.
         /// </summary>  
         public string Location { get; set; }
 
@@ -93,12 +93,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string MicrosoftIntendedStatus { get; set; }
 
         /// <summary>
-        /// Optional attendees             
+        /// Optional attendees.             
         /// </summary>  
         public List<MailAddress> OptionalAttendees { get; set; }
 
         /// <summary>
-        /// Event organizer             
+        /// Event organizer.             
         /// </summary>  
         public MailAddress Organizer { get; set; }
 
@@ -108,7 +108,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string RecurrenceString { get; set; }
 
         /// <summary>
-        /// Reminders
+        /// Reminders.
         /// </summary>  
         public List<CalendarReminder> Reminders { get; set; }
 
@@ -118,12 +118,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string SequenceId { get; set; }
 
         /// <summary>
-        /// Start date
+        /// Start date.
         /// </summary>  
         public DateTime? StartDate { get; set; }
 
         /// <summary>
-        /// Start time zone
+        /// Start time zone.
         /// </summary>  
         public string StartTimeZone { get; set; }
 
@@ -133,7 +133,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Status { get; set; }
 
         /// <summary>
-        /// Summary
+        /// Summary.
         /// </summary>  
         public string Summary { get; set; }
 
@@ -146,26 +146,26 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public CalendarDto() {}
 
         /// <summary>CalendarDto constructor</summary>
-        /// <param name="attachments">Document attachments</param>
-        /// <param name="attendees">Event attendees</param>
-        /// <param name="description">Description</param>
-        /// <param name="endDate">End date</param>
-        /// <param name="endTimeZone">End time zone</param>
-        /// <param name="flags">Appointment flags</param>
-        /// <param name="isDescriptionHtml">Indicates if description is in HTML format</param>
-        /// <param name="location">Location</param>
+        /// <param name="attachments">Document attachments.</param>
+        /// <param name="attendees">Event attendees.</param>
+        /// <param name="description">Description.</param>
+        /// <param name="endDate">End date.</param>
+        /// <param name="endTimeZone">End time zone.</param>
+        /// <param name="flags">Appointment flags.</param>
+        /// <param name="isDescriptionHtml">Indicates if description is in HTML format.</param>
+        /// <param name="location">Location.</param>
         /// <param name="method">Defines the iCalendar object method type associated with the calendar document. Enum, available values: None, Publish, Request, Reply, Add, Cancel, Refresh, Counter, DeclineCounter</param>
         /// <param name="microsoftBusyStatus">Specifies the BUSY status. Enum, available values: NotDefined, Free, Tentative, Busy, Oof</param>
         /// <param name="microsoftIntendedStatus">Specifies the INTENDED status. Enum, available values: NotDefined, Free, Tentative, Busy, Oof</param>
-        /// <param name="optionalAttendees">Optional attendees             </param>
-        /// <param name="organizer">Event organizer             </param>
+        /// <param name="optionalAttendees">Optional attendees.             </param>
+        /// <param name="organizer">Event organizer.             </param>
         /// <param name="recurrenceString">String representation of recurrence pattern (See iCalendar RFC, \"Recurrence rule\" section). For example:               For daily recurrence:         \"FREQ=DAILY;COUNT=10;WKST=MO\"                   For monthly recurrence:         \"BYSETPOS=1;BYDAY=MO,TU,WE,TH,FR;FREQ=MONTHLY;INTERVAL=10;WKST=MO\"                   For yearly recurrence:         \"BYMONTHDAY=30;BYMONTH=1;FREQ=YEARLY;WKST=MO\"                   </param>
-        /// <param name="reminders">Reminders</param>
+        /// <param name="reminders">Reminders.</param>
         /// <param name="sequenceId">The sequence id. Read only.</param>
-        /// <param name="startDate">Start date</param>
-        /// <param name="startTimeZone">Start time zone</param>
+        /// <param name="startDate">Start date.</param>
+        /// <param name="startTimeZone">Start time zone.</param>
         /// <param name="status">Defines the overall status or confirmation for the calendar document. Enum, available values: NotDefined, Cancelled, Tentative, Confirmed</param>
-        /// <param name="summary">Summary</param>
+        /// <param name="summary">Summary.</param>
         /// <param name="transparency">Specifies whether or not this appointment is intended to be visible in availability searches. Enum, available values: NotDefined, Transparent, Opaque</param>
         public CalendarDto(List<Attachment> attachments, List<MailAddress> attendees, string description, DateTime? endDate, string endTimeZone, List<string> flags, bool? isDescriptionHtml, string location, string method, string microsoftBusyStatus, string microsoftIntendedStatus, List<MailAddress> optionalAttendees, MailAddress organizer, string recurrenceString, List<CalendarReminder> reminders, string sequenceId, DateTime? startDate, string startTimeZone, string status, string summary, string transparency)
         {

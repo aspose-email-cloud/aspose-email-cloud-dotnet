@@ -1855,11 +1855,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ValueResponse"/></returns>
         public ValueResponse AppendEmailModelMessage(Model.Requests.AppendEmailModelMessageRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AppendEmailModelMessage");
+                    "Missing required parameter 'rq' when calling AppendEmailModelMessage");
             }
 
             // create path and map variables
@@ -1868,7 +1868,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "PUT",
@@ -1891,11 +1891,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="ValueResponse"/></returns>
         public async Task<ValueResponse> AppendEmailModelMessageAsync(Model.Requests.AppendEmailModelMessageRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling AppendEmailModelMessage");
+                    "Missing required parameter 'rq' when calling AppendEmailModelMessage");
             }
 
             // create path and map variables
@@ -1904,7 +1904,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "PUT",
@@ -6694,11 +6694,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Request. <see cref="SendEmailModelRequest" /></param>
         public void SendEmailModel(Model.Requests.SendEmailModelRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling SendEmailModel");
+                    "Missing required parameter 'rq' when calling SendEmailModel");
             }
 
             // create path and map variables
@@ -6707,7 +6707,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -6723,11 +6723,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Request. <see cref="SendEmailModelRequest" /></param>
         public async Task SendEmailModelAsync(Model.Requests.SendEmailModelRequest request)
         {
-            // verify the required parameter 'request' is set
-            if (request.request == null)
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'request' when calling SendEmailModel");
+                    "Missing required parameter 'rq' when calling SendEmailModel");
             }
 
             // create path and map variables
@@ -6736,7 +6736,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",

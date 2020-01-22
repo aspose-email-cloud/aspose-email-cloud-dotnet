@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SendEmailModelRequest.cs">
+// <copyright company="Aspose" file="SendEmailModelRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -35,22 +35,22 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// <summary>
     /// Send email model request             
     /// </summary>
-    public class SendEmailModelRequest : AccountBaseRequest 
+    public class SendEmailModelRq : AccountBaseRequest 
     {
         /// <summary>
         /// Message to send             
         /// </summary>  
         public EmailDto Message { get; set; }
 
-        /// <summary>SendEmailModelRequest constructor</summary>
-        public SendEmailModelRequest() {}
+        /// <summary>SendEmailModelRq constructor</summary>
+        public SendEmailModelRq() {}
 
-        /// <summary>SendEmailModelRequest constructor</summary>
+        /// <summary>SendEmailModelRq constructor</summary>
         /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
         /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="message">Message to send             </param>
-        public SendEmailModelRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, EmailDto message)
+        public SendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, EmailDto message)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;
@@ -64,7 +64,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class SendEmailModelRequest {\n");
+          sb.Append("class SendEmailModelRq {\n");
           sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
           sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
           sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");

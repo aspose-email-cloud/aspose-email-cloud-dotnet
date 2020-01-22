@@ -302,11 +302,11 @@ Class | Method | HTTP request | Description
  - [Model.SaveOAuthEmailAccountRequest](SaveOAuthEmailAccountRequest.md)
  - [Model.SendEmailBaseRequest](SendEmailBaseRequest.md)
  - [Model.SendEmailMimeBaseRequest](SendEmailMimeBaseRequest.md)
- - [Model.SendEmailModelRequest](SendEmailModelRequest.md)
+ - [Model.SendEmailModelRq](SendEmailModelRq.md)
  - [Model.SetMessageReadFlagAccountBaseRequest](SetMessageReadFlagAccountBaseRequest.md)
  - [Model.StorageFileLocation](StorageFileLocation.md)
  - [Model.AiBcrParseStorageRq](AiBcrParseStorageRq.md)
  - [Model.AppendEmailBaseRequest](AppendEmailBaseRequest.md)
  - [Model.AppendEmailMimeBaseRequest](AppendEmailMimeBaseRequest.md)
- - [Model.AppendEmailModelRequest](AppendEmailModelRequest.md)
+ - [Model.AppendEmailModelRq](AppendEmailModelRq.md)
 

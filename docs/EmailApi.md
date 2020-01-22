@@ -1344,12 +1344,12 @@ Adds an email from model to specified folder in email account
 ### Request Parameters
 ```csharp
 new AppendEmailModelMessageRequest(
-    request)
+    rq)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AppendEmailModelRequest**](AppendEmailModelRequest.md)| Append email request | 
+ **rq** | [**AppendEmailModelRq**](AppendEmailModelRq.md)| Append email request | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1371,12 +1371,12 @@ Task<[**ValueResponse**](ValueResponse.md)>
 ### Request Parameters
 ```csharp
 new AppendEmailModelMessageRequest(
-    request)
+    rq)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**AppendEmailModelRequest**](AppendEmailModelRequest.md)| Append email request | 
+ **rq** | [**AppendEmailModelRq**](AppendEmailModelRq.md)| Append email request | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5004,12 +5004,12 @@ void (empty response body)
 ### Request Parameters
 ```csharp
 new SendEmailModelRequest(
-    request)
+    rq)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SendEmailModelRequest**](SendEmailModelRequest.md)| Send email request | 
+ **rq** | [**SendEmailModelRq**](SendEmailModelRq.md)| Send email request | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5031,12 +5031,12 @@ Task (empty response body)
 ### Request Parameters
 ```csharp
 new SendEmailModelRequest(
-    request)
+    rq)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**SendEmailModelRequest**](SendEmailModelRequest.md)| Send email request | 
+ **rq** | [**SendEmailModelRq**](SendEmailModelRq.md)| Send email request | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
