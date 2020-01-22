@@ -400,6 +400,110 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="aibcrparsemodel"></a>
+# **AiBcrParseModel**
+
+```csharp
+ListResponseOfContactDto AiBcrParseModel(AiBcrParseModelRequest request)
+```
+
+Parse images to vCard document models             
+
+### Return type
+
+[**ListResponseOfContactDto**](ListResponseOfContactDto.md)
+
+### Request Parameters
+```csharp
+new AiBcrParseModelRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrBase64Rq**](AiBcrBase64Rq.md)| Request with base64 images data | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrparsemodel"></a>
+# **AiBcrParseModelAsync**
+
+```csharp
+async Task<ListResponseOfContactDto> AiBcrParseModelAsync(AiBcrParseModelRequest request)
+```
+
+Parse images to vCard document models             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfContactDto**](ListResponseOfContactDto.md)>
+
+### Request Parameters
+```csharp
+new AiBcrParseModelRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrBase64Rq**](AiBcrBase64Rq.md)| Request with base64 images data | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrparseocrdatamodel"></a>
+# **AiBcrParseOcrDataModel**
+
+```csharp
+ListResponseOfContactDto AiBcrParseOcrDataModel(AiBcrParseOcrDataModelRequest request)
+```
+
+Parse OCR data to vCard document models             
+
+### Return type
+
+[**ListResponseOfContactDto**](ListResponseOfContactDto.md)
+
+### Request Parameters
+```csharp
+new AiBcrParseOcrDataModelRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrParseOcrDataRq**](AiBcrParseOcrDataRq.md)|  | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="aibcrparseocrdatamodel"></a>
+# **AiBcrParseOcrDataModelAsync**
+
+```csharp
+async Task<ListResponseOfContactDto> AiBcrParseOcrDataModelAsync(AiBcrParseOcrDataModelRequest request)
+```
+
+Parse OCR data to vCard document models             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfContactDto**](ListResponseOfContactDto.md)>
+
+### Request Parameters
+```csharp
+new AiBcrParseOcrDataModelRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**AiBcrParseOcrDataRq**](AiBcrParseOcrDataRq.md)|  | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="aibcrparsestorage"></a>
 # **AiBcrParseStorage**
 
@@ -1224,6 +1328,58 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="appendemailmodelmessage"></a>
+# **AppendEmailModelMessage**
+
+```csharp
+ValueResponse AppendEmailModelMessage(AppendEmailModelMessageRequest request)
+```
+
+Adds an email from model to specified folder in email account             
+
+### Return type
+
+[**ValueResponse**](ValueResponse.md)
+
+### Request Parameters
+```csharp
+new AppendEmailModelMessageRequest(
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request** | [**AppendEmailModelRequest**](AppendEmailModelRequest.md)| Append email request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="appendemailmodelmessage"></a>
+# **AppendEmailModelMessageAsync**
+
+```csharp
+async Task<ValueResponse> AppendEmailModelMessageAsync(AppendEmailModelMessageRequest request)
+```
+
+Adds an email from model to specified folder in email account             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ValueResponse**](ValueResponse.md)>
+
+### Request Parameters
+```csharp
+new AppendEmailModelMessageRequest(
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request** | [**AppendEmailModelRequest**](AppendEmailModelRequest.md)| Append email request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="appendmimemessage"></a>
 # **AppendMimeMessage**
 
@@ -1273,6 +1429,114 @@ new AppendMimeMessageRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **request** | [**AppendEmailMimeBaseRequest**](AppendEmailMimeBaseRequest.md)| Append email request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcalendarmodeltoalternate"></a>
+# **ConvertCalendarModelToAlternate**
+
+```csharp
+AlternateView ConvertCalendarModelToAlternate(ConvertCalendarModelToAlternateRequest request)
+```
+
+Convert iCalendar to AlternateView             
+
+### Return type
+
+[**AlternateView**](AlternateView.md)
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToAlternateRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**CalendarDtoAlternateRq**](CalendarDtoAlternateRq.md)| iCalendar to AlternateView request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcalendarmodeltoalternate"></a>
+# **ConvertCalendarModelToAlternateAsync**
+
+```csharp
+async Task<AlternateView> ConvertCalendarModelToAlternateAsync(ConvertCalendarModelToAlternateRequest request)
+```
+
+Convert iCalendar to AlternateView             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**AlternateView**](AlternateView.md)>
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToAlternateRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**CalendarDtoAlternateRq**](CalendarDtoAlternateRq.md)| iCalendar to AlternateView request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertemail"></a>
+# **ConvertEmail**
+
+```csharp
+System.IO.Stream ConvertEmail(ConvertEmailRequest request)
+```
+
+Converts email document to specified format and returns as file             
+
+### Return type
+
+**System.IO.Stream**
+
+### Request Parameters
+```csharp
+new ConvertEmailRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **file** | **System.IO.Stream**| File to upload | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertemail"></a>
+# **ConvertEmailAsync**
+
+```csharp
+async Task<System.IO.Stream> ConvertEmailAsync(ConvertEmailRequest request)
+```
+
+Converts email document to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<System.IO.Stream>**
+
+### Request Parameters
+```csharp
+new ConvertEmailRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **file** | **System.IO.Stream**| File to upload | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2344,6 +2608,74 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="fetchemailmodel"></a>
+# **FetchEmailModel**
+
+```csharp
+EmailDto FetchEmailModel(FetchEmailModelRequest request)
+```
+
+Fetch message model from email account             
+
+### Return type
+
+[**EmailDto**](EmailDto.md)
+
+### Request Parameters
+```csharp
+new FetchEmailModelRequest(
+    messageId,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **messageId** | **string**| Message identifier | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="fetchemailmodel"></a>
+# **FetchEmailModelAsync**
+
+```csharp
+async Task<EmailDto> FetchEmailModelAsync(FetchEmailModelRequest request)
+```
+
+Fetch message model from email account             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailDto**](EmailDto.md)>
+
+### Request Parameters
+```csharp
+new FetchEmailModelRequest(
+    messageId,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **messageId** | **string**| Message identifier | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getcalendar"></a>
 # **GetCalendar**
 
@@ -2532,6 +2864,198 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getcalendarmodel"></a>
+# **GetCalendarModel**
+
+```csharp
+CalendarDto GetCalendarModel(GetCalendarModelRequest request)
+```
+
+Get calendar file             
+
+### Return type
+
+[**CalendarDto**](CalendarDto.md)
+
+### Request Parameters
+```csharp
+new GetCalendarModelRequest(
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| iCalendar file name in storage | 
+ **folder** | **string**| Path to folder in storage | [optional] 
+ **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarmodel"></a>
+# **GetCalendarModelAsync**
+
+```csharp
+async Task<CalendarDto> GetCalendarModelAsync(GetCalendarModelRequest request)
+```
+
+Get calendar file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**CalendarDto**](CalendarDto.md)>
+
+### Request Parameters
+```csharp
+new GetCalendarModelRequest(
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| iCalendar file name in storage | 
+ **folder** | **string**| Path to folder in storage | [optional] 
+ **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarmodelasalternate"></a>
+# **GetCalendarModelAsAlternate**
+
+```csharp
+AlternateView GetCalendarModelAsAlternate(GetCalendarModelAsAlternateRequest request)
+```
+
+Get iCalendar from storage as AlternateView             
+
+### Return type
+
+[**AlternateView**](AlternateView.md)
+
+### Request Parameters
+```csharp
+new GetCalendarModelAsAlternateRequest(
+    name,
+    calendarAction,
+    sequenceId=sequenceId,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| iCalendar file name in storage | 
+ **calendarAction** | **string**| iCalendar method type Enum, available values: Create, Update, Cancel | 
+ **sequenceId** | **string**| The sequence id | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+ **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarmodelasalternate"></a>
+# **GetCalendarModelAsAlternateAsync**
+
+```csharp
+async Task<AlternateView> GetCalendarModelAsAlternateAsync(GetCalendarModelAsAlternateRequest request)
+```
+
+Get iCalendar from storage as AlternateView             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**AlternateView**](AlternateView.md)>
+
+### Request Parameters
+```csharp
+new GetCalendarModelAsAlternateRequest(
+    name,
+    calendarAction,
+    sequenceId=sequenceId,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| iCalendar file name in storage | 
+ **calendarAction** | **string**| iCalendar method type Enum, available values: Create, Update, Cancel | 
+ **sequenceId** | **string**| The sequence id | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+ **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarmodellist"></a>
+# **GetCalendarModelList**
+
+```csharp
+CalendarDtoList GetCalendarModelList(GetCalendarModelListRequest request)
+```
+
+Get iCalendar list from storage folder             
+
+### Return type
+
+[**CalendarDtoList**](CalendarDtoList.md)
+
+### Request Parameters
+```csharp
+new GetCalendarModelListRequest(
+    folder,
+    itemsPerPage=itemsPerPage,
+    pageNumber=pageNumber,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **folder** | **string**| Path to folder in storage | 
+ **itemsPerPage** | **int?**| Count of items on page | [optional] [default to 10]
+ **pageNumber** | **int?**| Page number | [optional] [default to 0]
+ **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarmodellist"></a>
+# **GetCalendarModelListAsync**
+
+```csharp
+async Task<CalendarDtoList> GetCalendarModelListAsync(GetCalendarModelListRequest request)
+```
+
+Get iCalendar list from storage folder             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**CalendarDtoList**](CalendarDtoList.md)>
+
+### Request Parameters
+```csharp
+new GetCalendarModelListRequest(
+    folder,
+    itemsPerPage=itemsPerPage,
+    pageNumber=pageNumber,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **folder** | **string**| Path to folder in storage | 
+ **itemsPerPage** | **int?**| Count of items on page | [optional] [default to 10]
+ **pageNumber** | **int?**| Page number | [optional] [default to 0]
+ **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getcontactattachment"></a>
 # **GetContactAttachment**
 
@@ -2665,6 +3189,138 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name | [optional] 
  **itemsPerPage** | **int?**| Count of items on page | [optional] [default to 10]
  **pageNumber** | **int?**| Page number | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactmodel"></a>
+# **GetContactModel**
+
+```csharp
+ContactDto GetContactModel(GetContactModelRequest request)
+```
+
+Get contact document.             
+
+### Return type
+
+[**ContactDto**](ContactDto.md)
+
+### Request Parameters
+```csharp
+new GetContactModelRequest(
+    format,
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactmodel"></a>
+# **GetContactModelAsync**
+
+```csharp
+async Task<ContactDto> GetContactModelAsync(GetContactModelRequest request)
+```
+
+Get contact document.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ContactDto**](ContactDto.md)>
+
+### Request Parameters
+```csharp
+new GetContactModelRequest(
+    format,
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactmodellist"></a>
+# **GetContactModelList**
+
+```csharp
+ContactDtoList GetContactModelList(GetContactModelListRequest request)
+```
+
+Get contact list from storage folder.             
+
+### Return type
+
+[**ContactDtoList**](ContactDtoList.md)
+
+### Request Parameters
+```csharp
+new GetContactModelListRequest(
+    format,
+    folder=folder,
+    storage=storage,
+    itemsPerPage=itemsPerPage,
+    pageNumber=pageNumber)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+ **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
+ **pageNumber** | **int?**| Page number. | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactmodellist"></a>
+# **GetContactModelListAsync**
+
+```csharp
+async Task<ContactDtoList> GetContactModelListAsync(GetContactModelListRequest request)
+```
+
+Get contact list from storage folder.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ContactDtoList**](ContactDtoList.md)>
+
+### Request Parameters
+```csharp
+new GetContactModelListRequest(
+    format,
+    folder=folder,
+    storage=storage,
+    itemsPerPage=itemsPerPage,
+    pageNumber=pageNumber)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+ **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
+ **pageNumber** | **int?**| Page number. | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2844,6 +3500,70 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getemailasfile"></a>
+# **GetEmailAsFile**
+
+```csharp
+System.IO.Stream GetEmailAsFile(GetEmailAsFileRequest request)
+```
+
+Converts email document from storage to specified format and returns as file             
+
+### Return type
+
+**System.IO.Stream**
+
+### Request Parameters
+```csharp
+new GetEmailAsFileRequest(
+    fileName,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Email document file name | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailasfile"></a>
+# **GetEmailAsFileAsync**
+
+```csharp
+async Task<System.IO.Stream> GetEmailAsFileAsync(GetEmailAsFileRequest request)
+```
+
+Converts email document from storage to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<System.IO.Stream>**
+
+### Request Parameters
+```csharp
+new GetEmailAsFileRequest(
+    fileName,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Email document file name | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getemailattachment"></a>
 # **GetEmailAttachment**
 
@@ -2905,6 +3625,138 @@ Name | Type | Description  | Notes
  **fileName** | **string**| Email document file name | 
  **storage** | **string**| Storage name | [optional] 
  **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailmodel"></a>
+# **GetEmailModel**
+
+```csharp
+EmailDto GetEmailModel(GetEmailModelRequest request)
+```
+
+Get email document.             
+
+### Return type
+
+[**EmailDto**](EmailDto.md)
+
+### Request Parameters
+```csharp
+new GetEmailModelRequest(
+    format,
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **name** | **string**| Email document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailmodel"></a>
+# **GetEmailModelAsync**
+
+```csharp
+async Task<EmailDto> GetEmailModelAsync(GetEmailModelRequest request)
+```
+
+Get email document.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailDto**](EmailDto.md)>
+
+### Request Parameters
+```csharp
+new GetEmailModelRequest(
+    format,
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **name** | **string**| Email document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailmodellist"></a>
+# **GetEmailModelList**
+
+```csharp
+EmailDtoList GetEmailModelList(GetEmailModelListRequest request)
+```
+
+Get email list from storage folder.             
+
+### Return type
+
+[**EmailDtoList**](EmailDtoList.md)
+
+### Request Parameters
+```csharp
+new GetEmailModelListRequest(
+    format,
+    folder=folder,
+    storage=storage,
+    itemsPerPage=itemsPerPage,
+    pageNumber=pageNumber)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+ **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
+ **pageNumber** | **int?**| Page number. | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailmodellist"></a>
+# **GetEmailModelListAsync**
+
+```csharp
+async Task<EmailDtoList> GetEmailModelListAsync(GetEmailModelListRequest request)
+```
+
+Get email list from storage folder.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailDtoList**](EmailDtoList.md)>
+
+### Request Parameters
+```csharp
+new GetEmailModelListRequest(
+    format,
+    folder=folder,
+    storage=storage,
+    itemsPerPage=itemsPerPage,
+    pageNumber=pageNumber)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+ **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
+ **pageNumber** | **int?**| Page number. | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -3409,7 +4261,7 @@ ListResponseOfString ListEmailMessages(ListEmailMessagesRequest request)
 
 Get messages from folder, filtered by query             
 
-The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3>,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
+The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3     >,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
 
 ### Return type
 
@@ -3450,7 +4302,7 @@ Get messages from folder, filtered by query
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3>,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
+The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3     >,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
 
 ### Return type
 
@@ -3459,6 +4311,86 @@ Task<[**ListResponseOfString**](ListResponseOfString.md)>
 ### Request Parameters
 ```csharp
 new ListEmailMessagesRequest(
+    folder,
+    queryString,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder,
+    recursive=recursive)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **folder** | **string**| A folder in email account | 
+ **queryString** | **string**| A MailQuery search string | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+ **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="listemailmodels"></a>
+# **ListEmailModels**
+
+```csharp
+ListResponseOfEmailDto ListEmailModels(ListEmailModelsRequest request)
+```
+
+Get messages from folder, filtered by query             
+
+The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3     >,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
+
+### Return type
+
+[**ListResponseOfEmailDto**](ListResponseOfEmailDto.md)
+
+### Request Parameters
+```csharp
+new ListEmailModelsRequest(
+    folder,
+    queryString,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder,
+    recursive=recursive)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **folder** | **string**| A folder in email account | 
+ **queryString** | **string**| A MailQuery search string | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+ **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="listemailmodels"></a>
+# **ListEmailModelsAsync**
+
+```csharp
+async Task<ListResponseOfEmailDto> ListEmailModelsAsync(ListEmailModelsRequest request)
+```
+
+Get messages from folder, filtered by query             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3     >,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
+
+### Return type
+
+Task<[**ListResponseOfEmailDto**](ListResponseOfEmailDto.md)>
+
+### Request Parameters
+```csharp
+new ListEmailModelsRequest(
     folder,
     queryString,
     firstAccount,
@@ -3672,6 +4604,182 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="savecalendarmodel"></a>
+# **SaveCalendarModel**
+
+```csharp
+void SaveCalendarModel(SaveCalendarModelRequest request)
+```
+
+Save iCalendar             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SaveCalendarModelRequest(
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| iCalendar file name in storage | 
+ **rq** | [**StorageModelRqOfCalendarDto**](StorageModelRqOfCalendarDto.md)| Calendar properties update request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="savecalendarmodel"></a>
+# **SaveCalendarModelAsync**
+
+```csharp
+async Task SaveCalendarModelAsync(SaveCalendarModelRequest request)
+```
+
+Save iCalendar             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SaveCalendarModelRequest(
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| iCalendar file name in storage | 
+ **rq** | [**StorageModelRqOfCalendarDto**](StorageModelRqOfCalendarDto.md)| Calendar properties update request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="savecontactmodel"></a>
+# **SaveContactModel**
+
+```csharp
+void SaveContactModel(SaveContactModelRequest request)
+```
+
+Save contact.             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SaveContactModelRequest(
+    format,
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
+ **rq** | [**StorageModelRqOfContactDto**](StorageModelRqOfContactDto.md)| Create contact request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="savecontactmodel"></a>
+# **SaveContactModelAsync**
+
+```csharp
+async Task SaveContactModelAsync(SaveContactModelRequest request)
+```
+
+Save contact.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SaveContactModelRequest(
+    format,
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
+ **rq** | [**StorageModelRqOfContactDto**](StorageModelRqOfContactDto.md)| Create contact request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="saveemailmodel"></a>
+# **SaveEmailModel**
+
+```csharp
+void SaveEmailModel(SaveEmailModelRequest request)
+```
+
+Save email document.             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SaveEmailModelRequest(
+    format,
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **name** | **string**| iCalendar file name in storage. | 
+ **rq** | [**StorageModelRqOfEmailDto**](StorageModelRqOfEmailDto.md)| Calendar properties update request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="saveemailmodel"></a>
+# **SaveEmailModelAsync**
+
+```csharp
+async Task SaveEmailModelAsync(SaveEmailModelRequest request)
+```
+
+Save email document.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SaveEmailModelRequest(
+    format,
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **name** | **string**| iCalendar file name in storage. | 
+ **rq** | [**StorageModelRqOfEmailDto**](StorageModelRqOfEmailDto.md)| Calendar properties update request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="savemailaccount"></a>
 # **SaveMailAccount**
 
@@ -3877,6 +4985,58 @@ new SendEmailMimeRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **request** | [**SendEmailMimeBaseRequest**](SendEmailMimeBaseRequest.md)| Send email request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="sendemailmodel"></a>
+# **SendEmailModel**
+
+```csharp
+void SendEmailModel(SendEmailModelRequest request)
+```
+
+Send an email specified by model in request             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SendEmailModelRequest(
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request** | [**SendEmailModelRequest**](SendEmailModelRequest.md)| Send email request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="sendemailmodel"></a>
+# **SendEmailModelAsync**
+
+```csharp
+async Task SendEmailModelAsync(SendEmailModelRequest request)
+```
+
+Send an email specified by model in request             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SendEmailModelRequest(
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request** | [**SendEmailModelRequest**](SendEmailModelRequest.md)| Send email request | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="Url.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Url and its category.             
     /// </summary>
-    public class ValueResponse 
+    public class Url 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Url category.             
         /// </summary>  
-        public string Value { get; set; }
+        public EnumWithCustomOfUrlCategory Category { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Defines whether url is preferred.             
+        /// </summary>  
+        public bool? Preferred { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>
+        /// URL.             
+        /// </summary>  
+        public string Href { get; set; }
+
+        /// <summary>Url constructor</summary>
+        public Url() {}
+
+        /// <summary>Url constructor</summary>
+        /// <param name="category">Url category.             </param>
+        /// <param name="preferred">Defines whether url is preferred.             </param>
+        /// <param name="href">URL.             </param>
+        public Url(EnumWithCustomOfUrlCategory category, bool? preferred, string href)
         {
-            Value = value;
+            Category = category;
+            Preferred = preferred;
+            Href = href;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +72,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class Url {\n");
+          sb.Append("  Category: ").Append(this.Category).Append("\n");
+          sb.Append("  Preferred: ").Append(this.Preferred).Append("\n");
+          sb.Append("  Href: ").Append(this.Href).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

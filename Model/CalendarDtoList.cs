@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="CalendarDtoList.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,21 +33,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// List of iCalendar documents             
     /// </summary>
-    public class ValueResponse 
+    public class CalendarDtoList : ListResponseOfStorageModelOfCalendarDto 
     {
-        /// <summary>
-        /// Gets or sets string content.             
-        /// </summary>  
-        public string Value { get; set; }
+        /// <summary>CalendarDtoList constructor</summary>
+        public CalendarDtoList() {}
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
-
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>CalendarDtoList constructor</summary>
+        /// <param name="value"></param>
+        public CalendarDtoList(List<StorageModelOfCalendarDto> value)
         {
             Value = value;
         }
@@ -58,7 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
+          sb.Append("class CalendarDtoList {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

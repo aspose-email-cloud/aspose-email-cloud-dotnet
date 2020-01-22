@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="AlternateView.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,38 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Represents the format to view a message.             
     /// </summary>
-    public class ValueResponse 
+    public class AlternateView : AttachmentBase 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Base URI.             
         /// </summary>  
-        public string Value { get; set; }
+        public string BaseUri { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Embedded resources referred to by this alternate view.             
+        /// </summary>  
+        public List<LinkedResource> LinkedResources { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>AlternateView constructor</summary>
+        public AlternateView() {}
+
+        /// <summary>AlternateView constructor</summary>
+        /// <param name="base64Data">Attachment file content as Base64 string.             </param>
+        /// <param name="contentId">Attachment content id             </param>
+        /// <param name="contentType">Content type             </param>
+        /// <param name="headers">Attachment headers.             </param>
+        /// <param name="baseUri">Base URI.             </param>
+        /// <param name="linkedResources">Embedded resources referred to by this alternate view.             </param>
+        public AlternateView(string base64Data, string contentId, ContentType contentType, Dictionary<string, string> headers, string baseUri, List<LinkedResource> linkedResources)
         {
-            Value = value;
+            Base64Data = base64Data;
+            ContentId = contentId;
+            ContentType = contentType;
+            Headers = headers;
+            BaseUri = baseUri;
+            LinkedResources = linkedResources;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +73,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class AlternateView {\n");
+          sb.Append("  Base64Data: ").Append(this.Base64Data).Append("\n");
+          sb.Append("  ContentId: ").Append(this.ContentId).Append("\n");
+          sb.Append("  ContentType: ").Append(this.ContentType).Append("\n");
+          sb.Append("  Headers: ").Append(this.Headers).Append("\n");
+          sb.Append("  BaseUri: ").Append(this.BaseUri).Append("\n");
+          sb.Append("  LinkedResources: ").Append(this.LinkedResources).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

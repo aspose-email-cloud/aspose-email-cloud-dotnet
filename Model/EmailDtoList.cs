@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="EmailDtoList.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,21 +33,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// List of email documents             
     /// </summary>
-    public class ValueResponse 
+    public class EmailDtoList : ListResponseOfStorageModelOfEmailDto 
     {
-        /// <summary>
-        /// Gets or sets string content.             
-        /// </summary>  
-        public string Value { get; set; }
+        /// <summary>EmailDtoList constructor</summary>
+        public EmailDtoList() {}
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
-
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>EmailDtoList constructor</summary>
+        /// <param name="value"></param>
+        public EmailDtoList(List<StorageModelOfEmailDto> value)
         {
             Value = value;
         }
@@ -58,7 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
+          sb.Append("class EmailDtoList {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

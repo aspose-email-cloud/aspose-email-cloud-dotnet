@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="ReminderTrigger.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Specifies when an alarm will trigger.
     /// </summary>
-    public class ValueResponse 
+    public class ReminderTrigger 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// A trigger set to an absolute date/time.
         /// </summary>  
-        public string Value { get; set; }
+        public DateTime? DateTime { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Specifies a relative time in ticks for the trigger of the alarm.             
+        /// </summary>  
+        public long? Duration { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>
+        /// Specify the relationship of the alarm trigger with respect to the start or end of the event. Enum, available values: Start, End
+        /// </summary>  
+        public string Related { get; set; }
+
+        /// <summary>ReminderTrigger constructor</summary>
+        public ReminderTrigger() {}
+
+        /// <summary>ReminderTrigger constructor</summary>
+        /// <param name="dateTime">A trigger set to an absolute date/time.</param>
+        /// <param name="duration">Specifies a relative time in ticks for the trigger of the alarm.             </param>
+        /// <param name="related">Specify the relationship of the alarm trigger with respect to the start or end of the event. Enum, available values: Start, End</param>
+        public ReminderTrigger(DateTime? dateTime, long? duration, string related)
         {
-            Value = value;
+            DateTime = dateTime;
+            Duration = duration;
+            Related = related;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +72,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class ReminderTrigger {\n");
+          sb.Append("  DateTime: ").Append(this.DateTime).Append("\n");
+          sb.Append("  Duration: ").Append(this.Duration).Append("\n");
+          sb.Append("  Related: ").Append(this.Related).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

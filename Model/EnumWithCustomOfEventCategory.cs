@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="EnumWithCustomOfEventCategory.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// 
     /// </summary>
-    public class ValueResponse 
+    public class EnumWithCustomOfEventCategory 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Event category. Enum, available values: Custom, Birthday, Anniversary
         /// </summary>  
         public string Value { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Gets or sets Description
+        /// </summary>  
+        public string Description { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>EnumWithCustomOfEventCategory constructor</summary>
+        public EnumWithCustomOfEventCategory() {}
+
+        /// <summary>EnumWithCustomOfEventCategory constructor</summary>
+        /// <param name="value">Event category. Enum, available values: Custom, Birthday, Anniversary</param>
+        /// <param name="description"></param>
+        public EnumWithCustomOfEventCategory(string value, string description)
         {
             Value = value;
+            Description = description;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
+          sb.Append("class EnumWithCustomOfEventCategory {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("  Description: ").Append(this.Description).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

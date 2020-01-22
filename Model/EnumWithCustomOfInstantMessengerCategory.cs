@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="EnumWithCustomOfInstantMessengerCategory.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// 
     /// </summary>
-    public class ValueResponse 
+    public class EnumWithCustomOfInstantMessengerCategory 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Instant messenger address category. Enum, available values: GoogleTalk, Aim, Yahoo, Skype, Qq, Msn, Icq, Jabber, Custom, ImAddress1, ImAddress2, ImAddress3
         /// </summary>  
         public string Value { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Gets or sets Description
+        /// </summary>  
+        public string Description { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>EnumWithCustomOfInstantMessengerCategory constructor</summary>
+        public EnumWithCustomOfInstantMessengerCategory() {}
+
+        /// <summary>EnumWithCustomOfInstantMessengerCategory constructor</summary>
+        /// <param name="value">Instant messenger address category. Enum, available values: GoogleTalk, Aim, Yahoo, Skype, Qq, Msn, Icq, Jabber, Custom, ImAddress1, ImAddress2, ImAddress3</param>
+        /// <param name="description"></param>
+        public EnumWithCustomOfInstantMessengerCategory(string value, string description)
         {
             Value = value;
+            Description = description;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
+          sb.Append("class EnumWithCustomOfInstantMessengerCategory {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("  Description: ").Append(this.Description).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

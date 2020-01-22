@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="ContactPhoto.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Person&#39;s photo.             
     /// </summary>
-    public class ValueResponse 
+    public class ContactPhoto 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff
         /// </summary>  
-        public string Value { get; set; }
+        public string PhotoImageFormat { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Photo serialized as base64 string.             
+        /// </summary>  
+        public string Base64Data { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>ContactPhoto constructor</summary>
+        public ContactPhoto() {}
+
+        /// <summary>ContactPhoto constructor</summary>
+        /// <param name="photoImageFormat">MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff</param>
+        /// <param name="base64Data">Photo serialized as base64 string.             </param>
+        public ContactPhoto(string photoImageFormat, string base64Data)
         {
-            Value = value;
+            PhotoImageFormat = photoImageFormat;
+            Base64Data = base64Data;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class ContactPhoto {\n");
+          sb.Append("  PhotoImageFormat: ").Append(this.PhotoImageFormat).Append("\n");
+          sb.Append("  Base64Data: ").Append(this.Base64Data).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

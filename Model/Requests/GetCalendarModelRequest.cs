@@ -1,6 +1,7 @@
+
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+// <copyright company="Aspose" file="GetCalendarModelRequest.cs">
+//   Copyright (c) 2018 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,46 +23,48 @@
 //  SOFTWARE.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
-namespace Aspose.Email.Cloud.Sdk.Model
+namespace Aspose.Email.Cloud.Sdk.Model.Requests
 {
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Runtime.Serialization;
-    using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
-    /// <summary>
-    /// String value object             
-    /// </summary>
-    public class ValueResponse 
-    {
-        /// <summary>
-        /// Gets or sets string content.             
-        /// </summary>  
-        public string Value { get; set; }
+  using Model;
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
-
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
-        {
-            Value = value;
-        }
+  /// <summary>
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.GetCalendarModel" /> operation.
+  /// </summary>
+  public class GetCalendarModelRequest  
+  {
         /// <summary>
-        /// Get the string presentation of the object
+        /// Initializes a new instance of the <see cref="GetCalendarModelRequest"/> class.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public GetCalendarModelRequest()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
         }
-    }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetCalendarModelRequest"/> class.
+        /// </summary>
+        /// <param name="name">iCalendar file name in storage</param>
+        /// <param name="folder">Path to folder in storage</param>
+        /// <param name="storage">Storage name</param>
+        public GetCalendarModelRequest(string name, string folder = null, string storage = null)
+        {
+            this.name = name;
+            this.folder = folder;
+            this.storage = storage;
+        }
+
+        /// <summary>
+        /// iCalendar file name in storage
+        /// </summary>
+        public string name { get; set; }
+
+        /// <summary>
+        /// Path to folder in storage
+        /// </summary>
+        public string folder { get; set; }
+
+        /// <summary>
+        /// Storage name
+        /// </summary>
+        public string storage { get; set; }
+  }
 }

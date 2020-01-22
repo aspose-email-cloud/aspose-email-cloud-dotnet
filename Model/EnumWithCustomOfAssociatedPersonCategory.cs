@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="EnumWithCustomOfAssociatedPersonCategory.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// 
     /// </summary>
-    public class ValueResponse 
+    public class EnumWithCustomOfAssociatedPersonCategory 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Associated person's category. Enum, available values: Spouse, Child, Mother, Father, Parent, Brother, Sister, Friend, Relative, Manager, Assistant, ReferredBy, Partner, DomesticPartner, Custom
         /// </summary>  
         public string Value { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Gets or sets Description
+        /// </summary>  
+        public string Description { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>EnumWithCustomOfAssociatedPersonCategory constructor</summary>
+        public EnumWithCustomOfAssociatedPersonCategory() {}
+
+        /// <summary>EnumWithCustomOfAssociatedPersonCategory constructor</summary>
+        /// <param name="value">Associated person's category. Enum, available values: Spouse, Child, Mother, Father, Parent, Brother, Sister, Friend, Relative, Manager, Assistant, ReferredBy, Partner, DomesticPartner, Custom</param>
+        /// <param name="description"></param>
+        public EnumWithCustomOfAssociatedPersonCategory(string value, string description)
         {
             Value = value;
+            Description = description;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
+          sb.Append("class EnumWithCustomOfAssociatedPersonCategory {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("  Description: ").Append(this.Description).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
