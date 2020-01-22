@@ -235,6 +235,130 @@ System.Console.WriteLine(surName.Value); // "Cane"
 ```
 </details>
 
+#### Model API
+There are 2 ways to operate with Eml/VCard/iCalendar files available in Aspose.Email Cloud.
+First is operating files as property sets. For example:
+<details>
+    <summary>Create iCalendar using property set</summary>
+
+```csharp
+var fileName = $"{Guid.NewGuid().ToString()}.ics";
+startDate = startDate ?? DateTime.UtcNow.Date.AddDays(1).AddHours(12);
+var endDate = startDate.Value.AddHours(1);
+var request = new CreateCalendarRequest(fileName,
+    new HierarchicalObjectRequest(
+        new HierarchicalObject("CALENDAR", null,
+            new List<BaseObject>
+            {
+                new PrimitiveObject("LOCATION", null, "location"),
+                new PrimitiveObject("STARTDATE", null, startDate.Value.ToString("u")),
+                new PrimitiveObject("ENDDATE", null, endDate.ToString("u")),
+                new HierarchicalObject("ORGANIZER", null,
+                    new List<BaseObject>
+                    {
+                        new PrimitiveObject("ADDRESS", null, "organizer@am.ru"),
+                        new PrimitiveObject("DISPLAYNAME", null, "Piu Man")
+                    }),
+                new HierarchicalObject("ATTENDEES", null,
+                    new List<BaseObject>
+                    {
+                        new IndexedHierarchicalObject("ATTENDEE", null, 0,
+                            new List<BaseObject>
+                            {
+                                new PrimitiveObject("ADDRESS", null, "attendee@am.ru"),
+                                new PrimitiveObject("DISPLAYNAME", null,
+                                    "Attendee Name")
+                            })
+                    })
+            }), new StorageFolderLocation(StorageName, folder)));
+await emailApi.CreateCalendarAsync(request);
+``` 
+</details>
+
+And second way is **Model API**, where files are represented using models:
+<details open>
+    <summary>Operate iCalendar using Model API</summary>
+
+First, we can create **CalendarDto** object:
+
+```csharp
+var calendar = new CalendarDto
+{
+    Attendees = new List<MailAddress>
+    {
+        new MailAddress("Attendee Name", "attendee@am.ru", "Accepted")
+    },
+    Description = "Some description",
+    Summary = "Some summary",
+    Organizer = new MailAddress("Organizer Name", "organizer@am.ru", null),
+    StartDate = DateTime.UtcNow.AddDays(1).AddHours(12),
+    EndDate = DateTime.UtcNow.AddDays(1).AddHours(13),
+    Location = "Some location"
+};
+```
+This model could be saved as an .ics file:
+```csharp
+var calendarFileName = $"{Guid.NewGuid()}.ics";
+var folderLocation = new StorageFolderLocation(StorageName, folder);
+await emailApi.SaveCalendarModelAsync(
+    new SaveCalendarModelRequest(calendarFileName, new StorageModelRqOfCalendarDto(
+        calendar, folderLocation)));
+```
+Or converted to an AlternateView:
+```csharp
+var alternate = await emailApi.ConvertCalendarModelToAlternateAsync(
+    new ConvertCalendarModelToAlternateRequest(
+        new CalendarDtoAlternateRq(calendar, "Create", null)));
+```
+This AlternateView can be added to **EmailDto** object:
+```csharp
+var email = new EmailDto
+{
+    AlternateViews = new List<AlternateView> {alternate},
+    From = new MailAddress("From address", "organizer@am.ru", "Accepted"),
+    To = new List<MailAddress> {new MailAddress("To address", "attendee@am.ru", null)},
+    Subject = "Some subject",
+    Body = "Some body"
+};
+```
+So, the email variable now represents an email with iCalendar in it. This email can be saved to a .eml file:
+```csharp
+var emailFile = $"{Guid.NewGuid().ToString()}.eml";
+await emailApi.SaveEmailModelAsync(
+    new SaveEmailModelRequest("Eml", emailFile,
+        new StorageModelRqOfEmailDto(email,
+            folderLocation)));
+```
+Also, email can be sent using built-in email client:
+```csharp
+//First, if there is no email client account configuration on storage:
+//Create IMAP account
+var imapFile = $"{Guid.NewGuid().ToString()}.account";
+var imap = new SaveMailAccountRequest(
+    new SaveEmailAccountRequest(
+        "imap.am.ru", 993, "organizer@am.ru", "Auto", "IMAP", "IMAP account",
+        new StorageFileLocation(StorageName, folder, imapFile), "OrganizerPassword"));
+await emailApi.SaveMailAccountAsync(imap);
+//Create SMTP account
+var smtpFile = $"{Guid.NewGuid().ToString()}.account";
+var smtp = new SaveMailAccountRequest(
+    new SaveEmailAccountRequest(
+        "smtp.am.ru", 465, "organizer@am.ru", "Auto", "SMTP", "SMTP account",
+        new StorageFileLocation(StorageName, folder, smtpFile), "OrganizerPassword"));
+await emailApi.SaveMailAccountAsync(smtp);
+
+//Then, send email
+await emailApi.SendEmailModelAsync(
+    new SendEmailModelRequest(
+        new SendEmailModelRq(
+            imapFile,
+            smtpFile,
+            new StorageFolderLocation(StorageName, folder),
+            email)));
+```
+</details>
+
+
 # Licensing
 All Aspose.Email Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
 

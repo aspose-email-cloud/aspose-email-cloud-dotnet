@@ -322,27 +322,20 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 },
                 Description = "Some description",
                 Summary = "Some summary",
-                Reminders = new List<CalendarReminder>
-                {
-                    new CalendarReminder
-                    {
-                        Action = "Email",
-                        Description = "Reminder",
-                        Duration = TimeSpan.FromMinutes(5).Ticks,
-                        Repeat = 3,
-                        Summary = "Reminder summary",
-                        Trigger = new ReminderTrigger(DateTime.Today, TimeSpan.FromMinutes(5).Ticks, "Start"),
-                        Attendees = new List<ReminderAttendee>
-                        {
-                            new ReminderAttendee("cloud.em@yandex.ru")
-                        }
-                    }
-                },
                 Organizer = new MailAddress("Organizer Name", "cloud.em@yandex.ru", null),
-                StartDate = DateTime.Now,
-                EndDate = DateTime.Now.AddHours(1),
+                StartDate = DateTime.UtcNow.AddDays(1).AddHours(12),
+                EndDate = DateTime.UtcNow.AddDays(1).AddHours(13),
                 Location = "Some location"
             };
+            var folderLocation = new StorageFolderLocation(StorageName, folder);
+            var calendarFile = $"{Guid.NewGuid()}.ics";
+            await emailApi.SaveCalendarModelAsync(
+                new SaveCalendarModelRequest(calendarFile, new StorageModelRqOfCalendarDto(
+                    calendar, folderLocation)));
+
+            var exists = await IsFileExist(calendarFile);
+            Assert.True(exists);
+            
             var alternate = await emailApi.ConvertCalendarModelToAlternateAsync(
                 new ConvertCalendarModelToAlternateRequest(
                     new CalendarDtoAlternateRq(calendar, "Create", null)));
@@ -354,14 +347,13 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 Subject = "Some subject",
                 Body = "Some body"
             };
-            var file = $"{Guid.NewGuid().ToString()}.eml";
-            var folderLocation = new StorageFolderLocation(StorageName, folder);
+            var emailFile = $"{Guid.NewGuid().ToString()}.eml";
             await emailApi.SaveEmailModelAsync(
-                new SaveEmailModelRequest("Eml", file,
+                new SaveEmailModelRequest("Eml", emailFile,
                     new StorageModelRqOfEmailDto(email,
                         folderLocation)));
             var emlFile = await emailApi.DownloadFileAsync(
-                new DownloadFileRequest($"{folder}/{file}", StorageName));
+                new DownloadFileRequest($"{folder}/{emailFile}", StorageName));
             emlFile.Seek(0, SeekOrigin.Begin);
             var fileReader = new StreamReader(emlFile);
             var emlFileContent = await fileReader.ReadToEndAsync();
