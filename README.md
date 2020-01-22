@@ -321,7 +321,7 @@ var email = new EmailDto
     Body = "Some body"
 };
 ```
-So, the email variable now represents an email with iCalendar in it. This email can be saved to a .eml file:
+So, the email variable now represents an email message with iCalendar in it. This email can be saved to a .eml file:
 ```csharp
 var emailFile = $"{Guid.NewGuid().ToString()}.eml";
 await emailApi.SaveEmailModelAsync(
