@@ -165,6 +165,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// Test name gender detection
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task AiNameGenderizeTest()
         {
             var result =
@@ -177,6 +178,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// Test name formatting
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task AiNameFormatTest()
         {
             var result = await emailApi.AiNameFormatAsync(
@@ -188,6 +190,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// Name match test.
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task AiNameMatchTest()
         {
             const string first = "John Michael Cane";
@@ -198,6 +201,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         }
 
         [Test]
+        [Pipeline]
         public async Task AiNameExpandTest()
         {
             const string name = "Smith Bobby";
@@ -214,6 +218,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// Name complete test
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task AiNameCompleteTest()
         {
             const string prefix = "Dav";
@@ -228,6 +233,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         }
 
         [Test]
+        [Pipeline]
         public async Task AiNameParseEmailAddressTest()
         {
             const string address = "john-cane@gmail.com";
@@ -246,6 +252,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// Test business card recognition with storage.
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task AiBcrParseStorageTest()
         {
             var fileName = $"{Guid.NewGuid().ToString()}.png";
@@ -295,6 +302,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         ///     Send image as Base64 string and get VCard properties without producing any files in storage.
         /// </summary>
         [Test]
+        [Pipeline]
         public async Task AiBcrParseTest()
         {
             var result = await emailApi.AiBcrParseAsync(new AiBcrParseRequest(new AiBcrBase64Rq(
@@ -402,6 +410,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         }
 
         [Test]
+        [Pipeline]
         public async Task AiBcrParseModelTest()
         {
             var result = await emailApi.AiBcrParseModelAsync(
