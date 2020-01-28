@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="InstantMessengerAddress.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Instant messenger address.             
     /// </summary>
-    public class ValueResponse 
+    public class InstantMessengerAddress 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Address category.             
         /// </summary>  
-        public string Value { get; set; }
+        public EnumWithCustomOfInstantMessengerCategory Category { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Address.             
+        /// </summary>  
+        public string Address { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>
+        /// Determines whether this address is preferred.             
+        /// </summary>  
+        public bool? Preferred { get; set; }
+
+        /// <summary>InstantMessengerAddress constructor</summary>
+        public InstantMessengerAddress() {}
+
+        /// <summary>InstantMessengerAddress constructor</summary>
+        /// <param name="category">Address category.             </param>
+        /// <param name="address">Address.             </param>
+        /// <param name="preferred">Determines whether this address is preferred.             </param>
+        public InstantMessengerAddress(EnumWithCustomOfInstantMessengerCategory category, string address, bool? preferred)
         {
-            Value = value;
+            Category = category;
+            Address = address;
+            Preferred = preferred;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +72,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class InstantMessengerAddress {\n");
+          sb.Append("  Category: ").Append(this.Category).Append("\n");
+          sb.Append("  Address: ").Append(this.Address).Append("\n");
+          sb.Append("  Preferred: ").Append(this.Preferred).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

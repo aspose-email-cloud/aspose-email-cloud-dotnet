@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="ContentType.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,51 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Represents a Content-Type header.             
     /// </summary>
-    public class ValueResponse 
+    public class ContentType 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// The boundary parameter included in the Content-Type header.             
         /// </summary>  
-        public string Value { get; set; }
+        public string Boundary { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// CharSet parameter.             
+        /// </summary>  
+        public string CharSet { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>
+        /// The internet media type.             
+        /// </summary>  
+        public string MediaType { get; set; }
+
+        /// <summary>
+        /// Name parameter.             
+        /// </summary>  
+        public string Name { get; set; }
+
+        /// <summary>
+        /// Full list of parameters             
+        /// </summary>  
+        public List<ContentTypeParameter> Parameters { get; set; }
+
+        /// <summary>ContentType constructor</summary>
+        public ContentType() {}
+
+        /// <summary>ContentType constructor</summary>
+        /// <param name="boundary">The boundary parameter included in the Content-Type header.             </param>
+        /// <param name="charSet">CharSet parameter.             </param>
+        /// <param name="mediaType">The internet media type.             </param>
+        /// <param name="name">Name parameter.             </param>
+        /// <param name="parameters">Full list of parameters             </param>
+        public ContentType(string boundary, string charSet, string mediaType, string name, List<ContentTypeParameter> parameters)
         {
-            Value = value;
+            Boundary = boundary;
+            CharSet = charSet;
+            MediaType = mediaType;
+            Name = name;
+            Parameters = parameters;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +86,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class ContentType {\n");
+          sb.Append("  Boundary: ").Append(this.Boundary).Append("\n");
+          sb.Append("  CharSet: ").Append(this.CharSet).Append("\n");
+          sb.Append("  MediaType: ").Append(this.MediaType).Append("\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Parameters: ").Append(this.Parameters).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -681,6 +681,150 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Parse images to vCard document models              
+        /// </summary>
+        /// <param name="request">Request. <see cref="AiBcrParseModelRequest" /></param>
+        /// <returns><see cref="ListResponseOfContactDto"/></returns>
+        public ListResponseOfContactDto AiBcrParseModel(Model.Requests.AiBcrParseModelRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling AiBcrParseModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiBcr/parse-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ListResponseOfContactDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Parse images to vCard document models              
+        /// </summary>
+        /// <param name="request">Request. <see cref="AiBcrParseModelRequest" /></param>
+        /// <returns><see cref="ListResponseOfContactDto"/></returns>
+        public async Task<ListResponseOfContactDto> AiBcrParseModelAsync(Model.Requests.AiBcrParseModelRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling AiBcrParseModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiBcr/parse-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ListResponseOfContactDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Parse OCR data to vCard document models              
+        /// </summary>
+        /// <param name="request">Request. <see cref="AiBcrParseOcrDataModelRequest" /></param>
+        /// <returns><see cref="ListResponseOfContactDto"/></returns>
+        public ListResponseOfContactDto AiBcrParseOcrDataModel(Model.Requests.AiBcrParseOcrDataModelRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling AiBcrParseOcrDataModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiBcr/parse-ocr-data-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ListResponseOfContactDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Parse OCR data to vCard document models              
+        /// </summary>
+        /// <param name="request">Request. <see cref="AiBcrParseOcrDataModelRequest" /></param>
+        /// <returns><see cref="ListResponseOfContactDto"/></returns>
+        public async Task<ListResponseOfContactDto> AiBcrParseOcrDataModelAsync(Model.Requests.AiBcrParseOcrDataModelRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling AiBcrParseOcrDataModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiBcr/parse-ocr-data-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ListResponseOfContactDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Parse images from storage to vCard files              
         /// </summary>
         /// <param name="request">Request. <see cref="AiBcrParseStorageRequest" /></param>
@@ -1705,6 +1849,78 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Adds an email from model to specified folder in email account              
+        /// </summary>
+        /// <param name="request">Request. <see cref="AppendEmailModelMessageRequest" /></param>
+        /// <returns><see cref="ValueResponse"/></returns>
+        public ValueResponse AppendEmailModelMessage(Model.Requests.AppendEmailModelMessageRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling AppendEmailModelMessage");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/AppendModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ValueResponse>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Adds an email from model to specified folder in email account              
+        /// </summary>
+        /// <param name="request">Request. <see cref="AppendEmailModelMessageRequest" /></param>
+        /// <returns><see cref="ValueResponse"/></returns>
+        public async Task<ValueResponse> AppendEmailModelMessageAsync(Model.Requests.AppendEmailModelMessageRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling AppendEmailModelMessage");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/AppendModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ValueResponse>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Adds an email from MIME to specified folder in email account              
         /// </summary>
         /// <param name="request">Request. <see cref="AppendMimeMessageRequest" /></param>
@@ -1770,6 +1986,178 @@ namespace Aspose.Email.Cloud.Sdk.Api
             if (response != null)
             {
                 return SerializationHelper.Deserialize<ValueResponse>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Convert iCalendar to AlternateView              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarModelToAlternateRequest" /></param>
+        /// <returns><see cref="AlternateView"/></returns>
+        public AlternateView ConvertCalendarModelToAlternate(Model.Requests.ConvertCalendarModelToAlternateRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling ConvertCalendarModelToAlternate");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/as-alternate";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<AlternateView>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Convert iCalendar to AlternateView              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarModelToAlternateRequest" /></param>
+        /// <returns><see cref="AlternateView"/></returns>
+        public async Task<AlternateView> ConvertCalendarModelToAlternateAsync(Model.Requests.ConvertCalendarModelToAlternateRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling ConvertCalendarModelToAlternate");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/as-alternate";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<AlternateView>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts email document to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertEmailRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream ConvertEmail(Model.Requests.ConvertEmailRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling ConvertEmail");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling ConvertEmail");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/convert/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<System.IO.Stream>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts email document to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertEmailRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> ConvertEmailAsync(Model.Requests.ConvertEmailRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling ConvertEmail");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling ConvertEmail");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/convert/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<System.IO.Stream>(response);
             }
 
             return null;
@@ -3171,6 +3559,100 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Fetch message model from email account              
+        /// </summary>
+        /// <param name="request">Request. <see cref="FetchEmailModelRequest" /></param>
+        /// <returns><see cref="EmailDto"/></returns>
+        public EmailDto FetchEmailModel(Model.Requests.FetchEmailModelRequest request)
+        {
+            // verify the required parameter 'messageId' is set
+            if (request.messageId == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'messageId' when calling FetchEmailModel");
+            }
+
+            // verify the required parameter 'firstAccount' is set
+            if (request.firstAccount == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'firstAccount' when calling FetchEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/FetchModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.messageId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Fetch message model from email account              
+        /// </summary>
+        /// <param name="request">Request. <see cref="FetchEmailModelRequest" /></param>
+        /// <returns><see cref="EmailDto"/></returns>
+        public async Task<EmailDto> FetchEmailModelAsync(Model.Requests.FetchEmailModelRequest request)
+        {
+            // verify the required parameter 'messageId' is set
+            if (request.messageId == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'messageId' when calling FetchEmailModel");
+            }
+
+            // verify the required parameter 'firstAccount' is set
+            if (request.firstAccount == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'firstAccount' when calling FetchEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/FetchModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.messageId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Get calendar file properties              
         /// </summary>
         /// <param name="request">Request. <see cref="GetCalendarRequest" /></param>
@@ -3445,6 +3927,254 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Get calendar file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarModelRequest" /></param>
+        /// <returns><see cref="CalendarDto"/></returns>
+        public CalendarDto GetCalendarModel(Model.Requests.GetCalendarModelRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<CalendarDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get calendar file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarModelRequest" /></param>
+        /// <returns><see cref="CalendarDto"/></returns>
+        public async Task<CalendarDto> GetCalendarModelAsync(Model.Requests.GetCalendarModelRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<CalendarDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get iCalendar from storage as AlternateView              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarModelAsAlternateRequest" /></param>
+        /// <returns><see cref="AlternateView"/></returns>
+        public AlternateView GetCalendarModelAsAlternate(Model.Requests.GetCalendarModelAsAlternateRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetCalendarModelAsAlternate");
+            }
+
+            // verify the required parameter 'calendarAction' is set
+            if (request.calendarAction == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'calendarAction' when calling GetCalendarModelAsAlternate");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/{name}/as-alternate/{calendarAction}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "calendarAction", request.calendarAction);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "sequenceId", request.sequenceId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<AlternateView>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get iCalendar from storage as AlternateView              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarModelAsAlternateRequest" /></param>
+        /// <returns><see cref="AlternateView"/></returns>
+        public async Task<AlternateView> GetCalendarModelAsAlternateAsync(Model.Requests.GetCalendarModelAsAlternateRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetCalendarModelAsAlternate");
+            }
+
+            // verify the required parameter 'calendarAction' is set
+            if (request.calendarAction == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'calendarAction' when calling GetCalendarModelAsAlternate");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/{name}/as-alternate/{calendarAction}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "calendarAction", request.calendarAction);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "sequenceId", request.sequenceId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<AlternateView>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get iCalendar list from storage folder              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarModelListRequest" /></param>
+        /// <returns><see cref="CalendarDtoList"/></returns>
+        public CalendarDtoList GetCalendarModelList(Model.Requests.GetCalendarModelListRequest request)
+        {
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling GetCalendarModelList");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "itemsPerPage", request.itemsPerPage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "pageNumber", request.pageNumber);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<CalendarDtoList>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get iCalendar list from storage folder              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarModelListRequest" /></param>
+        /// <returns><see cref="CalendarDtoList"/></returns>
+        public async Task<CalendarDtoList> GetCalendarModelListAsync(Model.Requests.GetCalendarModelListRequest request)
+        {
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling GetCalendarModelList");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "itemsPerPage", request.itemsPerPage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "pageNumber", request.pageNumber);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<CalendarDtoList>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Get attachment file by name              
         /// </summary>
         /// <param name="request">Request. <see cref="GetContactAttachmentRequest" /></param>
@@ -3626,6 +4356,178 @@ namespace Aspose.Email.Cloud.Sdk.Api
             if (response != null)
             {
                 return SerializationHelper.Deserialize<ListResponseOfHierarchicalObjectResponse>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get contact document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactModelRequest" /></param>
+        /// <returns><see cref="ContactDto"/></returns>
+        public ContactDto GetContactModel(Model.Requests.GetContactModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetContactModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ContactDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get contact document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactModelRequest" /></param>
+        /// <returns><see cref="ContactDto"/></returns>
+        public async Task<ContactDto> GetContactModelAsync(Model.Requests.GetContactModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetContactModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ContactDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get contact list from storage folder.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactModelListRequest" /></param>
+        /// <returns><see cref="ContactDtoList"/></returns>
+        public ContactDtoList GetContactModelList(Model.Requests.GetContactModelListRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetContactModelList");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "itemsPerPage", request.itemsPerPage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "pageNumber", request.pageNumber);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ContactDtoList>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get contact list from storage folder.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactModelListRequest" /></param>
+        /// <returns><see cref="ContactDtoList"/></returns>
+        public async Task<ContactDtoList> GetContactModelListAsync(Model.Requests.GetContactModelListRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetContactModelList");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "itemsPerPage", request.itemsPerPage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "pageNumber", request.pageNumber);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ContactDtoList>(response);
             }
 
             return null;
@@ -3859,6 +4761,98 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Converts email document from storage to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailAsFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream GetEmailAsFile(Model.Requests.GetEmailAsFileRequest request)
+        {
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileName' when calling GetEmailAsFile");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetEmailAsFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{fileName}/as-file/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<System.IO.Stream>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts email document from storage to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailAsFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> GetEmailAsFileAsync(Model.Requests.GetEmailAsFileRequest request)
+        {
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileName' when calling GetEmailAsFile");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetEmailAsFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/{fileName}/as-file/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<System.IO.Stream>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Get email attachment by name              
         /// </summary>
         /// <param name="request">Request. <see cref="GetEmailAttachmentRequest" /></param>
@@ -3944,6 +4938,178 @@ namespace Aspose.Email.Cloud.Sdk.Api
             if (response != null)
             {
                 return SerializationHelper.Deserialize<System.IO.Stream>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get email document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailModelRequest" /></param>
+        /// <returns><see cref="EmailDto"/></returns>
+        public EmailDto GetEmailModel(Model.Requests.GetEmailModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetEmailModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get email document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailModelRequest" /></param>
+        /// <returns><see cref="EmailDto"/></returns>
+        public async Task<EmailDto> GetEmailModelAsync(Model.Requests.GetEmailModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetEmailModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get email list from storage folder.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailModelListRequest" /></param>
+        /// <returns><see cref="EmailDtoList"/></returns>
+        public EmailDtoList GetEmailModelList(Model.Requests.GetEmailModelListRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetEmailModelList");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "itemsPerPage", request.itemsPerPage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "pageNumber", request.pageNumber);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDtoList>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get email list from storage folder.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailModelListRequest" /></param>
+        /// <returns><see cref="EmailDtoList"/></returns>
+        public async Task<EmailDtoList> GetEmailModelListAsync(Model.Requests.GetEmailModelListRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetEmailModelList");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "itemsPerPage", request.itemsPerPage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "pageNumber", request.pageNumber);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDtoList>(response);
             }
 
             return null;
@@ -4579,7 +5745,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Get messages from folder, filtered by query              The query string should have the following view.      The example of a simple expression:       &#39;&lt;Field name&gt;&#39; &lt;Comparison operator&gt; &#39;&lt;Field value&gt;&#39;,  where &amp;lt;Field Name&amp;gt; - the name of a message field through which filtering is made, &amp;lt;Comparison operator&amp;gt; - comparison operators, as their name implies, allow to compare message field and specified value, &amp;lt;Field value&amp;gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (&lt;Simple expression 1&gt; &amp; &lt;Simple expression 2&gt;) | &lt;Simple expression 3&gt;,  where \&quot;&amp;amp;\&quot; - logical-AND operator, \&quot;|\&quot; - logical-OR operator      At present the following values are allowed as a field name (&lt;Field name&gt;):  \&quot;To\&quot; - represents a TO field of message, \&quot;Text\&quot; - represents string in the header or body of the message, \&quot;Bcc\&quot; - represents a BCC field of message, \&quot;Body\&quot; - represents a string in the body of message, \&quot;Cc\&quot; - represents a CC field of message, \&quot;From\&quot; - represents a From field of message, \&quot;Subject\&quot; - represents a string in the subject of message, \&quot;InternalDate\&quot; - represents an internal date of message, \&quot;SentDate\&quot; - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \&quot;Answered\&quot; - represents an /Answered flag of message \&quot;Seen\&quot; - represents a /Seen flag of message \&quot;Flagged\&quot; - represents a /Flagged flag of message \&quot;Draft\&quot; - represents a /Draft flag of message \&quot;Deleted\&quot; - represents a Deleted/ flag of message \&quot;Recent\&quot; - represents a Deleted/ flag of message \&quot;MessageSize\&quot; - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \&quot;IsRead\&quot; - Indicates whether the message has been read \&quot;HasAttachment\&quot; - Indicates whether or not the message has attachments \&quot;IsSubmitted\&quot; - Indicates whether the message has been submitted to the Outbox \&quot;ContentClass\&quot; - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \&quot;MessageClass\&quot; - Represents a message class \&quot;ContainerClass\&quot; - Represents a folder container class \&quot;Importance\&quot; - Represents a message importance \&quot;MessageSize\&quot; - represents a size (in bytes) of message \&quot;FolderName\&quot; - represents a folder name \&quot;ContentsCount\&quot; - represents a total number of items in the folder \&quot;UnreadContentsCount\&quot; - represents the number of unread items in the folder. \&quot;Subfolders\&quot; - Indicates whether or not the folder has subfolders \&quot;Read\&quot; - the message is marked as having been read \&quot;HasAttachment\&quot; - the message has at least one attachment \&quot;Unsent\&quot; - the message is still being composed \&quot;Unmodified\&quot; - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \&quot;FromMe\&quot; - the user receiving the message was also the user who sent the message \&quot;Resend\&quot; - the message includes a request for a resend operation with a non-delivery report \&quot;NotifyRead\&quot; - the user who sent the message has requested notification when a recipient first reads it \&quot;NotifyUnread\&quot; - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \&quot;EverRead\&quot; - the message has been read at least once      The field value (&lt;Field value&gt;) can take the following values:     For text fields - any string,     For date type fields - the string of \&quot;d-MMM-yyy\&quot; format, ex. \&quot;10-Feb-2009\&quot;,     For flags (fields of boolean type) - either \&quot;True\&quot;, or \&quot;False\&quot;              
+        /// Get messages from folder, filtered by query              The query string should have the following view.      The example of a simple expression:       &#39;&lt;Field name&gt;&#39; &lt;Comparison operator&gt; &#39;&lt;Field value&gt;&#39;,  where &amp;lt;Field Name&amp;gt; - the name of a message field through which filtering is made, &amp;lt;Comparison operator&amp;gt; - comparison operators, as their name implies, allow to compare message field and specified value, &amp;lt;Field value&amp;gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (&lt;Simple expression 1&gt; &amp; &lt;Simple expression 2&gt;) | &lt;Simple expression 3     &gt;,  where \&quot;&amp;amp;\&quot; - logical-AND operator, \&quot;|\&quot; - logical-OR operator      At present the following values are allowed as a field name (&lt;Field name&gt;):  \&quot;To\&quot; - represents a TO field of message, \&quot;Text\&quot; - represents string in the header or body of the message, \&quot;Bcc\&quot; - represents a BCC field of message, \&quot;Body\&quot; - represents a string in the body of message, \&quot;Cc\&quot; - represents a CC field of message, \&quot;From\&quot; - represents a From field of message, \&quot;Subject\&quot; - represents a string in the subject of message, \&quot;InternalDate\&quot; - represents an internal date of message, \&quot;SentDate\&quot; - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \&quot;Answered\&quot; - represents an /Answered flag of message \&quot;Seen\&quot; - represents a /Seen flag of message \&quot;Flagged\&quot; - represents a /Flagged flag of message \&quot;Draft\&quot; - represents a /Draft flag of message \&quot;Deleted\&quot; - represents a Deleted/ flag of message \&quot;Recent\&quot; - represents a Deleted/ flag of message \&quot;MessageSize\&quot; - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \&quot;IsRead\&quot; - Indicates whether the message has been read \&quot;HasAttachment\&quot; - Indicates whether or not the message has attachments \&quot;IsSubmitted\&quot; - Indicates whether the message has been submitted to the Outbox \&quot;ContentClass\&quot; - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \&quot;MessageClass\&quot; - Represents a message class \&quot;ContainerClass\&quot; - Represents a folder container class \&quot;Importance\&quot; - Represents a message importance \&quot;MessageSize\&quot; - represents a size (in bytes) of message \&quot;FolderName\&quot; - represents a folder name \&quot;ContentsCount\&quot; - represents a total number of items in the folder \&quot;UnreadContentsCount\&quot; - represents the number of unread items in the folder. \&quot;Subfolders\&quot; - Indicates whether or not the folder has subfolders \&quot;Read\&quot; - the message is marked as having been read \&quot;HasAttachment\&quot; - the message has at least one attachment \&quot;Unsent\&quot; - the message is still being composed \&quot;Unmodified\&quot; - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \&quot;FromMe\&quot; - the user receiving the message was also the user who sent the message \&quot;Resend\&quot; - the message includes a request for a resend operation with a non-delivery report \&quot;NotifyRead\&quot; - the user who sent the message has requested notification when a recipient first reads it \&quot;NotifyUnread\&quot; - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \&quot;EverRead\&quot; - the message has been read at least once      The field value (&lt;Field value&gt;) can take the following values:     For text fields - any string,     For date type fields - the string of \&quot;d-MMM-yyy\&quot; format, ex. \&quot;10-Feb-2009\&quot;,     For flags (fields of boolean type) - either \&quot;True\&quot;, or \&quot;False\&quot;              
         /// </summary>
         /// <param name="request">Request. <see cref="ListEmailMessagesRequest" /></param>
         /// <returns><see cref="ListResponseOfString"/></returns>
@@ -4635,7 +5801,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Get messages from folder, filtered by query              The query string should have the following view.      The example of a simple expression:       &#39;&lt;Field name&gt;&#39; &lt;Comparison operator&gt; &#39;&lt;Field value&gt;&#39;,  where &amp;lt;Field Name&amp;gt; - the name of a message field through which filtering is made, &amp;lt;Comparison operator&amp;gt; - comparison operators, as their name implies, allow to compare message field and specified value, &amp;lt;Field value&amp;gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (&lt;Simple expression 1&gt; &amp; &lt;Simple expression 2&gt;) | &lt;Simple expression 3&gt;,  where \&quot;&amp;amp;\&quot; - logical-AND operator, \&quot;|\&quot; - logical-OR operator      At present the following values are allowed as a field name (&lt;Field name&gt;):  \&quot;To\&quot; - represents a TO field of message, \&quot;Text\&quot; - represents string in the header or body of the message, \&quot;Bcc\&quot; - represents a BCC field of message, \&quot;Body\&quot; - represents a string in the body of message, \&quot;Cc\&quot; - represents a CC field of message, \&quot;From\&quot; - represents a From field of message, \&quot;Subject\&quot; - represents a string in the subject of message, \&quot;InternalDate\&quot; - represents an internal date of message, \&quot;SentDate\&quot; - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \&quot;Answered\&quot; - represents an /Answered flag of message \&quot;Seen\&quot; - represents a /Seen flag of message \&quot;Flagged\&quot; - represents a /Flagged flag of message \&quot;Draft\&quot; - represents a /Draft flag of message \&quot;Deleted\&quot; - represents a Deleted/ flag of message \&quot;Recent\&quot; - represents a Deleted/ flag of message \&quot;MessageSize\&quot; - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \&quot;IsRead\&quot; - Indicates whether the message has been read \&quot;HasAttachment\&quot; - Indicates whether or not the message has attachments \&quot;IsSubmitted\&quot; - Indicates whether the message has been submitted to the Outbox \&quot;ContentClass\&quot; - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \&quot;MessageClass\&quot; - Represents a message class \&quot;ContainerClass\&quot; - Represents a folder container class \&quot;Importance\&quot; - Represents a message importance \&quot;MessageSize\&quot; - represents a size (in bytes) of message \&quot;FolderName\&quot; - represents a folder name \&quot;ContentsCount\&quot; - represents a total number of items in the folder \&quot;UnreadContentsCount\&quot; - represents the number of unread items in the folder. \&quot;Subfolders\&quot; - Indicates whether or not the folder has subfolders \&quot;Read\&quot; - the message is marked as having been read \&quot;HasAttachment\&quot; - the message has at least one attachment \&quot;Unsent\&quot; - the message is still being composed \&quot;Unmodified\&quot; - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \&quot;FromMe\&quot; - the user receiving the message was also the user who sent the message \&quot;Resend\&quot; - the message includes a request for a resend operation with a non-delivery report \&quot;NotifyRead\&quot; - the user who sent the message has requested notification when a recipient first reads it \&quot;NotifyUnread\&quot; - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \&quot;EverRead\&quot; - the message has been read at least once      The field value (&lt;Field value&gt;) can take the following values:     For text fields - any string,     For date type fields - the string of \&quot;d-MMM-yyy\&quot; format, ex. \&quot;10-Feb-2009\&quot;,     For flags (fields of boolean type) - either \&quot;True\&quot;, or \&quot;False\&quot;              
+        /// Get messages from folder, filtered by query              The query string should have the following view.      The example of a simple expression:       &#39;&lt;Field name&gt;&#39; &lt;Comparison operator&gt; &#39;&lt;Field value&gt;&#39;,  where &amp;lt;Field Name&amp;gt; - the name of a message field through which filtering is made, &amp;lt;Comparison operator&amp;gt; - comparison operators, as their name implies, allow to compare message field and specified value, &amp;lt;Field value&amp;gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (&lt;Simple expression 1&gt; &amp; &lt;Simple expression 2&gt;) | &lt;Simple expression 3     &gt;,  where \&quot;&amp;amp;\&quot; - logical-AND operator, \&quot;|\&quot; - logical-OR operator      At present the following values are allowed as a field name (&lt;Field name&gt;):  \&quot;To\&quot; - represents a TO field of message, \&quot;Text\&quot; - represents string in the header or body of the message, \&quot;Bcc\&quot; - represents a BCC field of message, \&quot;Body\&quot; - represents a string in the body of message, \&quot;Cc\&quot; - represents a CC field of message, \&quot;From\&quot; - represents a From field of message, \&quot;Subject\&quot; - represents a string in the subject of message, \&quot;InternalDate\&quot; - represents an internal date of message, \&quot;SentDate\&quot; - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \&quot;Answered\&quot; - represents an /Answered flag of message \&quot;Seen\&quot; - represents a /Seen flag of message \&quot;Flagged\&quot; - represents a /Flagged flag of message \&quot;Draft\&quot; - represents a /Draft flag of message \&quot;Deleted\&quot; - represents a Deleted/ flag of message \&quot;Recent\&quot; - represents a Deleted/ flag of message \&quot;MessageSize\&quot; - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \&quot;IsRead\&quot; - Indicates whether the message has been read \&quot;HasAttachment\&quot; - Indicates whether or not the message has attachments \&quot;IsSubmitted\&quot; - Indicates whether the message has been submitted to the Outbox \&quot;ContentClass\&quot; - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \&quot;MessageClass\&quot; - Represents a message class \&quot;ContainerClass\&quot; - Represents a folder container class \&quot;Importance\&quot; - Represents a message importance \&quot;MessageSize\&quot; - represents a size (in bytes) of message \&quot;FolderName\&quot; - represents a folder name \&quot;ContentsCount\&quot; - represents a total number of items in the folder \&quot;UnreadContentsCount\&quot; - represents the number of unread items in the folder. \&quot;Subfolders\&quot; - Indicates whether or not the folder has subfolders \&quot;Read\&quot; - the message is marked as having been read \&quot;HasAttachment\&quot; - the message has at least one attachment \&quot;Unsent\&quot; - the message is still being composed \&quot;Unmodified\&quot; - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \&quot;FromMe\&quot; - the user receiving the message was also the user who sent the message \&quot;Resend\&quot; - the message includes a request for a resend operation with a non-delivery report \&quot;NotifyRead\&quot; - the user who sent the message has requested notification when a recipient first reads it \&quot;NotifyUnread\&quot; - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \&quot;EverRead\&quot; - the message has been read at least once      The field value (&lt;Field value&gt;) can take the following values:     For text fields - any string,     For date type fields - the string of \&quot;d-MMM-yyy\&quot; format, ex. \&quot;10-Feb-2009\&quot;,     For flags (fields of boolean type) - either \&quot;True\&quot;, or \&quot;False\&quot;              
         /// </summary>
         /// <param name="request">Request. <see cref="ListEmailMessagesRequest" /></param>
         /// <returns><see cref="ListResponseOfString"/></returns>
@@ -4684,6 +5850,118 @@ namespace Aspose.Email.Cloud.Sdk.Api
             if (response != null)
             {
                 return SerializationHelper.Deserialize<ListResponseOfString>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get messages from folder, filtered by query              The query string should have the following view.      The example of a simple expression:       &#39;&lt;Field name&gt;&#39; &lt;Comparison operator&gt; &#39;&lt;Field value&gt;&#39;,  where &amp;lt;Field Name&amp;gt; - the name of a message field through which filtering is made, &amp;lt;Comparison operator&amp;gt; - comparison operators, as their name implies, allow to compare message field and specified value, &amp;lt;Field value&amp;gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (&lt;Simple expression 1&gt; &amp; &lt;Simple expression 2&gt;) | &lt;Simple expression 3     &gt;,  where \&quot;&amp;amp;\&quot; - logical-AND operator, \&quot;|\&quot; - logical-OR operator      At present the following values are allowed as a field name (&lt;Field name&gt;):  \&quot;To\&quot; - represents a TO field of message, \&quot;Text\&quot; - represents string in the header or body of the message, \&quot;Bcc\&quot; - represents a BCC field of message, \&quot;Body\&quot; - represents a string in the body of message, \&quot;Cc\&quot; - represents a CC field of message, \&quot;From\&quot; - represents a From field of message, \&quot;Subject\&quot; - represents a string in the subject of message, \&quot;InternalDate\&quot; - represents an internal date of message, \&quot;SentDate\&quot; - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \&quot;Answered\&quot; - represents an /Answered flag of message \&quot;Seen\&quot; - represents a /Seen flag of message \&quot;Flagged\&quot; - represents a /Flagged flag of message \&quot;Draft\&quot; - represents a /Draft flag of message \&quot;Deleted\&quot; - represents a Deleted/ flag of message \&quot;Recent\&quot; - represents a Deleted/ flag of message \&quot;MessageSize\&quot; - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \&quot;IsRead\&quot; - Indicates whether the message has been read \&quot;HasAttachment\&quot; - Indicates whether or not the message has attachments \&quot;IsSubmitted\&quot; - Indicates whether the message has been submitted to the Outbox \&quot;ContentClass\&quot; - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \&quot;MessageClass\&quot; - Represents a message class \&quot;ContainerClass\&quot; - Represents a folder container class \&quot;Importance\&quot; - Represents a message importance \&quot;MessageSize\&quot; - represents a size (in bytes) of message \&quot;FolderName\&quot; - represents a folder name \&quot;ContentsCount\&quot; - represents a total number of items in the folder \&quot;UnreadContentsCount\&quot; - represents the number of unread items in the folder. \&quot;Subfolders\&quot; - Indicates whether or not the folder has subfolders \&quot;Read\&quot; - the message is marked as having been read \&quot;HasAttachment\&quot; - the message has at least one attachment \&quot;Unsent\&quot; - the message is still being composed \&quot;Unmodified\&quot; - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \&quot;FromMe\&quot; - the user receiving the message was also the user who sent the message \&quot;Resend\&quot; - the message includes a request for a resend operation with a non-delivery report \&quot;NotifyRead\&quot; - the user who sent the message has requested notification when a recipient first reads it \&quot;NotifyUnread\&quot; - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \&quot;EverRead\&quot; - the message has been read at least once      The field value (&lt;Field value&gt;) can take the following values:     For text fields - any string,     For date type fields - the string of \&quot;d-MMM-yyy\&quot; format, ex. \&quot;10-Feb-2009\&quot;,     For flags (fields of boolean type) - either \&quot;True\&quot;, or \&quot;False\&quot;              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ListEmailModelsRequest" /></param>
+        /// <returns><see cref="ListResponseOfEmailDto"/></returns>
+        public ListResponseOfEmailDto ListEmailModels(Model.Requests.ListEmailModelsRequest request)
+        {
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling ListEmailModels");
+            }
+
+            // verify the required parameter 'queryString' is set
+            if (request.queryString == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'queryString' when calling ListEmailModels");
+            }
+
+            // verify the required parameter 'firstAccount' is set
+            if (request.firstAccount == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'firstAccount' when calling ListEmailModels");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/ListMessagesModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "queryString", request.queryString);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "recursive", request.recursive);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ListResponseOfEmailDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get messages from folder, filtered by query              The query string should have the following view.      The example of a simple expression:       &#39;&lt;Field name&gt;&#39; &lt;Comparison operator&gt; &#39;&lt;Field value&gt;&#39;,  where &amp;lt;Field Name&amp;gt; - the name of a message field through which filtering is made, &amp;lt;Comparison operator&amp;gt; - comparison operators, as their name implies, allow to compare message field and specified value, &amp;lt;Field value&amp;gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (&lt;Simple expression 1&gt; &amp; &lt;Simple expression 2&gt;) | &lt;Simple expression 3     &gt;,  where \&quot;&amp;amp;\&quot; - logical-AND operator, \&quot;|\&quot; - logical-OR operator      At present the following values are allowed as a field name (&lt;Field name&gt;):  \&quot;To\&quot; - represents a TO field of message, \&quot;Text\&quot; - represents string in the header or body of the message, \&quot;Bcc\&quot; - represents a BCC field of message, \&quot;Body\&quot; - represents a string in the body of message, \&quot;Cc\&quot; - represents a CC field of message, \&quot;From\&quot; - represents a From field of message, \&quot;Subject\&quot; - represents a string in the subject of message, \&quot;InternalDate\&quot; - represents an internal date of message, \&quot;SentDate\&quot; - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \&quot;Answered\&quot; - represents an /Answered flag of message \&quot;Seen\&quot; - represents a /Seen flag of message \&quot;Flagged\&quot; - represents a /Flagged flag of message \&quot;Draft\&quot; - represents a /Draft flag of message \&quot;Deleted\&quot; - represents a Deleted/ flag of message \&quot;Recent\&quot; - represents a Deleted/ flag of message \&quot;MessageSize\&quot; - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \&quot;IsRead\&quot; - Indicates whether the message has been read \&quot;HasAttachment\&quot; - Indicates whether or not the message has attachments \&quot;IsSubmitted\&quot; - Indicates whether the message has been submitted to the Outbox \&quot;ContentClass\&quot; - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \&quot;MessageClass\&quot; - Represents a message class \&quot;ContainerClass\&quot; - Represents a folder container class \&quot;Importance\&quot; - Represents a message importance \&quot;MessageSize\&quot; - represents a size (in bytes) of message \&quot;FolderName\&quot; - represents a folder name \&quot;ContentsCount\&quot; - represents a total number of items in the folder \&quot;UnreadContentsCount\&quot; - represents the number of unread items in the folder. \&quot;Subfolders\&quot; - Indicates whether or not the folder has subfolders \&quot;Read\&quot; - the message is marked as having been read \&quot;HasAttachment\&quot; - the message has at least one attachment \&quot;Unsent\&quot; - the message is still being composed \&quot;Unmodified\&quot; - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \&quot;FromMe\&quot; - the user receiving the message was also the user who sent the message \&quot;Resend\&quot; - the message includes a request for a resend operation with a non-delivery report \&quot;NotifyRead\&quot; - the user who sent the message has requested notification when a recipient first reads it \&quot;NotifyUnread\&quot; - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \&quot;EverRead\&quot; - the message has been read at least once      The field value (&lt;Field value&gt;) can take the following values:     For text fields - any string,     For date type fields - the string of \&quot;d-MMM-yyy\&quot; format, ex. \&quot;10-Feb-2009\&quot;,     For flags (fields of boolean type) - either \&quot;True\&quot;, or \&quot;False\&quot;              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ListEmailModelsRequest" /></param>
+        /// <returns><see cref="ListResponseOfEmailDto"/></returns>
+        public async Task<ListResponseOfEmailDto> ListEmailModelsAsync(Model.Requests.ListEmailModelsRequest request)
+        {
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling ListEmailModels");
+            }
+
+            // verify the required parameter 'queryString' is set
+            if (request.queryString == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'queryString' when calling ListEmailModels");
+            }
+
+            // verify the required parameter 'firstAccount' is set
+            if (request.firstAccount == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'firstAccount' when calling ListEmailModels");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/ListMessagesModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "queryString", request.queryString);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "recursive", request.recursive);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ListResponseOfEmailDto>(response);
             }
 
             return null;
@@ -4925,6 +6203,260 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Save iCalendar              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveCalendarModelRequest" /></param>
+        public void SaveCalendarModel(Model.Requests.SaveCalendarModelRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveCalendarModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Save iCalendar              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveCalendarModelRequest" /></param>
+        public async Task SaveCalendarModelAsync(Model.Requests.SaveCalendarModelRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveCalendarModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
+        /// Save contact.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveContactModelRequest" /></param>
+        public void SaveContactModel(Model.Requests.SaveContactModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveContactModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveContactModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Save contact.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveContactModelRequest" /></param>
+        public async Task SaveContactModelAsync(Model.Requests.SaveContactModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveContactModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveContactModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
+        /// Save email document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveEmailModelRequest" /></param>
+        public void SaveEmailModel(Model.Requests.SaveEmailModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveEmailModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveEmailModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Save email document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveEmailModelRequest" /></param>
+        public async Task SaveEmailModelAsync(Model.Requests.SaveEmailModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveEmailModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveEmailModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
         /// Create email account file (*.account) with login/password authentication              
         /// </summary>
         /// <param name="request">Request. <see cref="SaveMailAccountRequest" /></param>
@@ -5147,6 +6679,64 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
+        /// Send an email specified by model in request              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SendEmailModelRequest" /></param>
+        public void SendEmailModel(Model.Requests.SendEmailModelRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SendEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/SendModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Send an email specified by model in request              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SendEmailModelRequest" /></param>
+        public async Task SendEmailModelAsync(Model.Requests.SendEmailModelRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SendEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/SendModel";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
             await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",

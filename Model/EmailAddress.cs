@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="EmailAddress.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,51 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Email address.             
     /// </summary>
-    public class ValueResponse 
+    public class EmailAddress 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Address category.             
         /// </summary>  
-        public string Value { get; set; }
+        public EnumWithCustomOfEmailAddressCategory Category { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Display name.             
+        /// </summary>  
+        public string DisplayName { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>
+        /// Defines whether email address is preferred.             
+        /// </summary>  
+        public bool? Preferred { get; set; }
+
+        /// <summary>
+        /// A routing type for an email.             
+        /// </summary>  
+        public string RoutingType { get; set; }
+
+        /// <summary>
+        /// Email address.             
+        /// </summary>  
+        public string Address { get; set; }
+
+        /// <summary>EmailAddress constructor</summary>
+        public EmailAddress() {}
+
+        /// <summary>EmailAddress constructor</summary>
+        /// <param name="category">Address category.             </param>
+        /// <param name="displayName">Display name.             </param>
+        /// <param name="preferred">Defines whether email address is preferred.             </param>
+        /// <param name="routingType">A routing type for an email.             </param>
+        /// <param name="address">Email address.             </param>
+        public EmailAddress(EnumWithCustomOfEmailAddressCategory category, string displayName, bool? preferred, string routingType, string address)
         {
-            Value = value;
+            Category = category;
+            DisplayName = displayName;
+            Preferred = preferred;
+            RoutingType = routingType;
+            Address = address;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +86,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class EmailAddress {\n");
+          sb.Append("  Category: ").Append(this.Category).Append("\n");
+          sb.Append("  DisplayName: ").Append(this.DisplayName).Append("\n");
+          sb.Append("  Preferred: ").Append(this.Preferred).Append("\n");
+          sb.Append("  RoutingType: ").Append(this.RoutingType).Append("\n");
+          sb.Append("  Address: ").Append(this.Address).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

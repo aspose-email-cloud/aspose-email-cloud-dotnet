@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="CustomerEvent.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Event.             
     /// </summary>
-    public class ValueResponse 
+    public class CustomerEvent 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Event category.             
         /// </summary>  
-        public string Value { get; set; }
+        public EnumWithCustomOfEventCategory Category { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Event date.             
+        /// </summary>  
+        public DateTime? Date { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>CustomerEvent constructor</summary>
+        public CustomerEvent() {}
+
+        /// <summary>CustomerEvent constructor</summary>
+        /// <param name="category">Event category.             </param>
+        /// <param name="date">Event date.             </param>
+        public CustomerEvent(EnumWithCustomOfEventCategory category, DateTime? date)
         {
-            Value = value;
+            Category = category;
+            Date = date;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class CustomerEvent {\n");
+          sb.Append("  Category: ").Append(this.Category).Append("\n");
+          sb.Append("  Date: ").Append(this.Date).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

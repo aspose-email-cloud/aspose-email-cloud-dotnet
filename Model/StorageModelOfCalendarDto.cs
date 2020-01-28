@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="StorageModelOfCalendarDto.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,22 +33,29 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// 
     /// </summary>
-    public class ValueResponse 
+    public class StorageModelOfCalendarDto 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Gets or sets StorageFile
         /// </summary>  
-        public string Value { get; set; }
+        public StorageFileLocation StorageFile { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Gets or sets Value
+        /// </summary>  
+        public CalendarDto Value { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>StorageModelOfCalendarDto constructor</summary>
+        public StorageModelOfCalendarDto() {}
+
+        /// <summary>StorageModelOfCalendarDto constructor</summary>
+        /// <param name="storageFile"></param>
+        /// <param name="value"></param>
+        public StorageModelOfCalendarDto(StorageFileLocation storageFile, CalendarDto value)
         {
+            StorageFile = storageFile;
             Value = value;
         }
         /// <summary>
@@ -58,7 +65,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
+          sb.Append("class StorageModelOfCalendarDto {\n");
+          sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="AssociatedPerson.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Describes associated person.             
     /// </summary>
-    public class ValueResponse 
+    public class AssociatedPerson 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Associated person's name.             
         /// </summary>  
-        public string Value { get; set; }
+        public string Name { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Associated person's category.             
+        /// </summary>  
+        public EnumWithCustomOfAssociatedPersonCategory Category { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>
+        /// Defines whether associated person is preferred.             
+        /// </summary>  
+        public bool? Preferred { get; set; }
+
+        /// <summary>AssociatedPerson constructor</summary>
+        public AssociatedPerson() {}
+
+        /// <summary>AssociatedPerson constructor</summary>
+        /// <param name="name">Associated person's name.             </param>
+        /// <param name="category">Associated person's category.             </param>
+        /// <param name="preferred">Defines whether associated person is preferred.             </param>
+        public AssociatedPerson(string name, EnumWithCustomOfAssociatedPersonCategory category, bool? preferred)
         {
-            Value = value;
+            Name = name;
+            Category = category;
+            Preferred = preferred;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +72,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class AssociatedPerson {\n");
+          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Category: ").Append(this.Category).Append("\n");
+          sb.Append("  Preferred: ").Append(this.Preferred).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="AiBcrParseOcrDataRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,25 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Parse ocr data request             
     /// </summary>
-    public class ValueResponse 
+    public class AiBcrParseOcrDataRq : AiBcrRq 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// OCR data             
         /// </summary>  
-        public string Value { get; set; }
+        public List<AiBcrOcrData> Data { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>AiBcrParseOcrDataRq constructor</summary>
+        public AiBcrParseOcrDataRq() {}
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>AiBcrParseOcrDataRq constructor</summary>
+        /// <param name="options">Recognition options             </param>
+        /// <param name="data">OCR data             </param>
+        public AiBcrParseOcrDataRq(AiBcrOptions options, List<AiBcrOcrData> data)
         {
-            Value = value;
+            Options = options;
+            Data = data;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +60,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class AiBcrParseOcrDataRq {\n");
+          sb.Append("  Options: ").Append(this.Options).Append("\n");
+          sb.Append("  Data: ").Append(this.Data).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

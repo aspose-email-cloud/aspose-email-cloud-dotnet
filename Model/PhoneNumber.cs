@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="PhoneNumber.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// A phone number.             
     /// </summary>
-    public class ValueResponse 
+    public class PhoneNumber 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Phone number category.             
         /// </summary>  
-        public string Value { get; set; }
+        public EnumWithCustomOfPhoneNumberCategory Category { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Phone number.             
+        /// </summary>  
+        public string Number { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>
+        /// Defines whether phone number is preferred.             
+        /// </summary>  
+        public bool? Preferred { get; set; }
+
+        /// <summary>PhoneNumber constructor</summary>
+        public PhoneNumber() {}
+
+        /// <summary>PhoneNumber constructor</summary>
+        /// <param name="category">Phone number category.             </param>
+        /// <param name="number">Phone number.             </param>
+        /// <param name="preferred">Defines whether phone number is preferred.             </param>
+        public PhoneNumber(EnumWithCustomOfPhoneNumberCategory category, string number, bool? preferred)
         {
-            Value = value;
+            Category = category;
+            Number = number;
+            Preferred = preferred;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +72,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class PhoneNumber {\n");
+          sb.Append("  Category: ").Append(this.Category).Append("\n");
+          sb.Append("  Number: ").Append(this.Number).Append("\n");
+          sb.Append("  Preferred: ").Append(this.Preferred).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

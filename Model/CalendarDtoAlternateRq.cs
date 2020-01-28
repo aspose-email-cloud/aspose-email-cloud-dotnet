@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="CalendarDtoAlternateRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// iCalendar document as AlternateView request             
     /// </summary>
-    public class ValueResponse 
+    public class CalendarDtoAlternateRq 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// iCalendar document model             
         /// </summary>  
-        public string Value { get; set; }
+        public CalendarDto Value { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// iCalendar actions. Enum, available values: Create, Update, Cancel
+        /// </summary>  
+        public string Action { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>
+        /// iCalendar sequence id             
+        /// </summary>  
+        public string SequenceId { get; set; }
+
+        /// <summary>CalendarDtoAlternateRq constructor</summary>
+        public CalendarDtoAlternateRq() {}
+
+        /// <summary>CalendarDtoAlternateRq constructor</summary>
+        /// <param name="value">iCalendar document model             </param>
+        /// <param name="action">iCalendar actions. Enum, available values: Create, Update, Cancel</param>
+        /// <param name="sequenceId">iCalendar sequence id             </param>
+        public CalendarDtoAlternateRq(CalendarDto value, string action, string sequenceId)
         {
             Value = value;
+            Action = action;
+            SequenceId = sequenceId;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +72,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
+          sb.Append("class CalendarDtoAlternateRq {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("  Action: ").Append(this.Action).Append("\n");
+          sb.Append("  SequenceId: ").Append(this.SequenceId).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

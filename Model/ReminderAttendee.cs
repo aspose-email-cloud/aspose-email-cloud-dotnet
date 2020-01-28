@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="ReminderAttendee.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,23 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// Defines an \&quot;Attendee\&quot; within a alarm.
     /// </summary>
-    public class ValueResponse 
+    public class ReminderAttendee 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Contains the email address.
         /// </summary>  
-        public string Value { get; set; }
+        public string Address { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>ReminderAttendee constructor</summary>
+        public ReminderAttendee() {}
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>ReminderAttendee constructor</summary>
+        /// <param name="address">Contains the email address.</param>
+        public ReminderAttendee(string address)
         {
-            Value = value;
+            Address = address;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +58,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class ReminderAttendee {\n");
+          sb.Append("  Address: ").Append(this.Address).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

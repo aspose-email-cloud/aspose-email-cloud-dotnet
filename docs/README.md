@@ -18,6 +18,10 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**AiBcrOcrStorageAsync**](EmailApi.md#aibcrocrstorageasync) | **POST** /email/AiBcr/ocr-storage | Ocr images from storage             . Not available on .NETFramework v2.0
 *EmailApi* | [**AiBcrParse**](EmailApi.md#aibcrparse) | **POST** /email/AiBcr/parse | Parse images to vCard properties             
 *EmailApi* | [**AiBcrParseAsync**](EmailApi.md#aibcrparseasync) | **POST** /email/AiBcr/parse | Parse images to vCard properties             . Not available on .NETFramework v2.0
+*EmailApi* | [**AiBcrParseModel**](EmailApi.md#aibcrparsemodel) | **POST** /email/AiBcr/parse-model | Parse images to vCard document models             
+*EmailApi* | [**AiBcrParseModelAsync**](EmailApi.md#aibcrparsemodelasync) | **POST** /email/AiBcr/parse-model | Parse images to vCard document models             . Not available on .NETFramework v2.0
+*EmailApi* | [**AiBcrParseOcrDataModel**](EmailApi.md#aibcrparseocrdatamodel) | **POST** /email/AiBcr/parse-ocr-data-model | Parse OCR data to vCard document models             
+*EmailApi* | [**AiBcrParseOcrDataModelAsync**](EmailApi.md#aibcrparseocrdatamodelasync) | **POST** /email/AiBcr/parse-ocr-data-model | Parse OCR data to vCard document models             . Not available on .NETFramework v2.0
 *EmailApi* | [**AiBcrParseStorage**](EmailApi.md#aibcrparsestorage) | **POST** /email/AiBcr/parse-storage | Parse images from storage to vCard files             
 *EmailApi* | [**AiBcrParseStorageAsync**](EmailApi.md#aibcrparsestorageasync) | **POST** /email/AiBcr/parse-storage | Parse images from storage to vCard files             . Not available on .NETFramework v2.0
 *EmailApi* | [**AiNameComplete**](EmailApi.md#ainamecomplete) | **GET** /email/AiName/complete | The call proposes k most probable names for given starting characters             
@@ -44,8 +48,14 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**AiNameParseEmailAddressAsync**](EmailApi.md#ainameparseemailaddressasync) | **GET** /email/AiName/parse-email-address | Parse person&#39;s name out of an email address             . Not available on .NETFramework v2.0
 *EmailApi* | [**AppendEmailMessage**](EmailApi.md#appendemailmessage) | **PUT** /email/client/Append | Adds an email from *.eml file to specified folder in email account             
 *EmailApi* | [**AppendEmailMessageAsync**](EmailApi.md#appendemailmessageasync) | **PUT** /email/client/Append | Adds an email from *.eml file to specified folder in email account             . Not available on .NETFramework v2.0
+*EmailApi* | [**AppendEmailModelMessage**](EmailApi.md#appendemailmodelmessage) | **PUT** /email/client/AppendModel | Adds an email from model to specified folder in email account             
+*EmailApi* | [**AppendEmailModelMessageAsync**](EmailApi.md#appendemailmodelmessageasync) | **PUT** /email/client/AppendModel | Adds an email from model to specified folder in email account             . Not available on .NETFramework v2.0
 *EmailApi* | [**AppendMimeMessage**](EmailApi.md#appendmimemessage) | **PUT** /email/client/AppendMime | Adds an email from MIME to specified folder in email account             
 *EmailApi* | [**AppendMimeMessageAsync**](EmailApi.md#appendmimemessageasync) | **PUT** /email/client/AppendMime | Adds an email from MIME to specified folder in email account             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertCalendarModelToAlternate**](EmailApi.md#convertcalendarmodeltoalternate) | **PUT** /email/CalendarModel/as-alternate | Convert iCalendar to AlternateView             
+*EmailApi* | [**ConvertCalendarModelToAlternateAsync**](EmailApi.md#convertcalendarmodeltoalternateasync) | **PUT** /email/CalendarModel/as-alternate | Convert iCalendar to AlternateView             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertEmail**](EmailApi.md#convertemail) | **PUT** /email/convert/{format} | Converts email document to specified format and returns as file             
+*EmailApi* | [**ConvertEmailAsync**](EmailApi.md#convertemailasync) | **PUT** /email/convert/{format} | Converts email document to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**CopyFile**](EmailApi.md#copyfile) | **PUT** /email/storage/file/copy/{srcPath} | Copy file
 *EmailApi* | [**CopyFileAsync**](EmailApi.md#copyfileasync) | **PUT** /email/storage/file/copy/{srcPath} | Copy file. Not available on .NETFramework v2.0
 *EmailApi* | [**CopyFolder**](EmailApi.md#copyfolder) | **PUT** /email/storage/folder/copy/{srcPath} | Copy folder
@@ -82,24 +92,42 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**DownloadFileAsync**](EmailApi.md#downloadfileasync) | **GET** /email/storage/file/{path} | Download file. Not available on .NETFramework v2.0
 *EmailApi* | [**FetchEmailMessage**](EmailApi.md#fetchemailmessage) | **GET** /email/client/Fetch | Fetch message mime from email account             
 *EmailApi* | [**FetchEmailMessageAsync**](EmailApi.md#fetchemailmessageasync) | **GET** /email/client/Fetch | Fetch message mime from email account             . Not available on .NETFramework v2.0
+*EmailApi* | [**FetchEmailModel**](EmailApi.md#fetchemailmodel) | **GET** /email/client/FetchModel | Fetch message model from email account             
+*EmailApi* | [**FetchEmailModelAsync**](EmailApi.md#fetchemailmodelasync) | **GET** /email/client/FetchModel | Fetch message model from email account             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendar**](EmailApi.md#getcalendar) | **GET** /email/Calendar/{name}/properties | Get calendar file properties             
 *EmailApi* | [**GetCalendarAsync**](EmailApi.md#getcalendarasync) | **GET** /email/Calendar/{name}/properties | Get calendar file properties             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendarAttachment**](EmailApi.md#getcalendarattachment) | **GET** /email/Calendar/{name}/attachments/{attachment} | Get iCalendar document attachment by name             
 *EmailApi* | [**GetCalendarAttachmentAsync**](EmailApi.md#getcalendarattachmentasync) | **GET** /email/Calendar/{name}/attachments/{attachment} | Get iCalendar document attachment by name             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendarList**](EmailApi.md#getcalendarlist) | **GET** /email/Calendar | Get iCalendar files list in folder on storage             
 *EmailApi* | [**GetCalendarListAsync**](EmailApi.md#getcalendarlistasync) | **GET** /email/Calendar | Get iCalendar files list in folder on storage             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetCalendarModel**](EmailApi.md#getcalendarmodel) | **GET** /email/CalendarModel/{name} | Get calendar file             
+*EmailApi* | [**GetCalendarModelAsync**](EmailApi.md#getcalendarmodelasync) | **GET** /email/CalendarModel/{name} | Get calendar file             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetCalendarModelAsAlternate**](EmailApi.md#getcalendarmodelasalternate) | **GET** /email/CalendarModel/{name}/as-alternate/{calendarAction} | Get iCalendar from storage as AlternateView             
+*EmailApi* | [**GetCalendarModelAsAlternateAsync**](EmailApi.md#getcalendarmodelasalternateasync) | **GET** /email/CalendarModel/{name}/as-alternate/{calendarAction} | Get iCalendar from storage as AlternateView             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetCalendarModelList**](EmailApi.md#getcalendarmodellist) | **GET** /email/CalendarModel | Get iCalendar list from storage folder             
+*EmailApi* | [**GetCalendarModelListAsync**](EmailApi.md#getcalendarmodellistasync) | **GET** /email/CalendarModel | Get iCalendar list from storage folder             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetContactAttachment**](EmailApi.md#getcontactattachment) | **GET** /email/Contact/{format}/{name}/attachments/{attachment} | Get attachment file by name             
 *EmailApi* | [**GetContactAttachmentAsync**](EmailApi.md#getcontactattachmentasync) | **GET** /email/Contact/{format}/{name}/attachments/{attachment} | Get attachment file by name             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetContactList**](EmailApi.md#getcontactlist) | **GET** /email/Contact/{format} | Get contact list from storage folder             
 *EmailApi* | [**GetContactListAsync**](EmailApi.md#getcontactlistasync) | **GET** /email/Contact/{format} | Get contact list from storage folder             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetContactModel**](EmailApi.md#getcontactmodel) | **GET** /email/ContactModel/{format}/{name} | Get contact document.             
+*EmailApi* | [**GetContactModelAsync**](EmailApi.md#getcontactmodelasync) | **GET** /email/ContactModel/{format}/{name} | Get contact document.             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetContactModelList**](EmailApi.md#getcontactmodellist) | **GET** /email/ContactModel/{format} | Get contact list from storage folder.             
+*EmailApi* | [**GetContactModelListAsync**](EmailApi.md#getcontactmodellistasync) | **GET** /email/ContactModel/{format} | Get contact list from storage folder.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetContactProperties**](EmailApi.md#getcontactproperties) | **GET** /email/Contact/{format}/{name}/properties | Get contact document properties             
 *EmailApi* | [**GetContactPropertiesAsync**](EmailApi.md#getcontactpropertiesasync) | **GET** /email/Contact/{format}/{name}/properties | Get contact document properties             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetDiscUsage**](EmailApi.md#getdiscusage) | **GET** /email/storage/disc | Get disc usage
 *EmailApi* | [**GetDiscUsageAsync**](EmailApi.md#getdiscusageasync) | **GET** /email/storage/disc | Get disc usage. Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmail**](EmailApi.md#getemail) | **GET** /email/{fileName} | Get email document             
 *EmailApi* | [**GetEmailAsync**](EmailApi.md#getemailasync) | **GET** /email/{fileName} | Get email document             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetEmailAsFile**](EmailApi.md#getemailasfile) | **GET** /email/{fileName}/as-file/{format} | Converts email document from storage to specified format and returns as file             
+*EmailApi* | [**GetEmailAsFileAsync**](EmailApi.md#getemailasfileasync) | **GET** /email/{fileName}/as-file/{format} | Converts email document from storage to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailAttachment**](EmailApi.md#getemailattachment) | **GET** /email/{fileName}/attachments/{attachment} | Get email attachment by name             
 *EmailApi* | [**GetEmailAttachmentAsync**](EmailApi.md#getemailattachmentasync) | **GET** /email/{fileName}/attachments/{attachment} | Get email attachment by name             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetEmailModel**](EmailApi.md#getemailmodel) | **GET** /email/model/{format}/{name} | Get email document.             
+*EmailApi* | [**GetEmailModelAsync**](EmailApi.md#getemailmodelasync) | **GET** /email/model/{format}/{name} | Get email document.             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetEmailModelList**](EmailApi.md#getemailmodellist) | **GET** /email/model/{format} | Get email list from storage folder.             
+*EmailApi* | [**GetEmailModelListAsync**](EmailApi.md#getemailmodellistasync) | **GET** /email/model/{format} | Get email list from storage folder.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailProperty**](EmailApi.md#getemailproperty) | **GET** /email/{fileName}/properties/{propertyName} | Get an email document property by its name             
 *EmailApi* | [**GetEmailPropertyAsync**](EmailApi.md#getemailpropertyasync) | **GET** /email/{fileName}/properties/{propertyName} | Get an email document property by its name             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetFileVersions**](EmailApi.md#getfileversions) | **GET** /email/storage/version/{path} | Get file versions
@@ -118,12 +146,20 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**ListEmailFoldersAsync**](EmailApi.md#listemailfoldersasync) | **GET** /email/client/ListFolders | Get folders list in email account             . Not available on .NETFramework v2.0
 *EmailApi* | [**ListEmailMessages**](EmailApi.md#listemailmessages) | **GET** /email/client/ListMessages | Get messages from folder, filtered by query             
 *EmailApi* | [**ListEmailMessagesAsync**](EmailApi.md#listemailmessagesasync) | **GET** /email/client/ListMessages | Get messages from folder, filtered by query             . Not available on .NETFramework v2.0
+*EmailApi* | [**ListEmailModels**](EmailApi.md#listemailmodels) | **GET** /email/client/ListMessagesModel | Get messages from folder, filtered by query             
+*EmailApi* | [**ListEmailModelsAsync**](EmailApi.md#listemailmodelsasync) | **GET** /email/client/ListMessagesModel | Get messages from folder, filtered by query             . Not available on .NETFramework v2.0
 *EmailApi* | [**MoveFile**](EmailApi.md#movefile) | **PUT** /email/storage/file/move/{srcPath} | Move file
 *EmailApi* | [**MoveFileAsync**](EmailApi.md#movefileasync) | **PUT** /email/storage/file/move/{srcPath} | Move file. Not available on .NETFramework v2.0
 *EmailApi* | [**MoveFolder**](EmailApi.md#movefolder) | **PUT** /email/storage/folder/move/{srcPath} | Move folder
 *EmailApi* | [**MoveFolderAsync**](EmailApi.md#movefolderasync) | **PUT** /email/storage/folder/move/{srcPath} | Move folder. Not available on .NETFramework v2.0
 *EmailApi* | [**ObjectExists**](EmailApi.md#objectexists) | **GET** /email/storage/exist/{path} | Check if file or folder exists
 *EmailApi* | [**ObjectExistsAsync**](EmailApi.md#objectexistsasync) | **GET** /email/storage/exist/{path} | Check if file or folder exists. Not available on .NETFramework v2.0
+*EmailApi* | [**SaveCalendarModel**](EmailApi.md#savecalendarmodel) | **PUT** /email/CalendarModel/{name} | Save iCalendar             
+*EmailApi* | [**SaveCalendarModelAsync**](EmailApi.md#savecalendarmodelasync) | **PUT** /email/CalendarModel/{name} | Save iCalendar             . Not available on .NETFramework v2.0
+*EmailApi* | [**SaveContactModel**](EmailApi.md#savecontactmodel) | **PUT** /email/ContactModel/{format}/{name} | Save contact.             
+*EmailApi* | [**SaveContactModelAsync**](EmailApi.md#savecontactmodelasync) | **PUT** /email/ContactModel/{format}/{name} | Save contact.             . Not available on .NETFramework v2.0
+*EmailApi* | [**SaveEmailModel**](EmailApi.md#saveemailmodel) | **PUT** /email/model/{format}/{name} | Save email document.             
+*EmailApi* | [**SaveEmailModelAsync**](EmailApi.md#saveemailmodelasync) | **PUT** /email/model/{format}/{name} | Save email document.             . Not available on .NETFramework v2.0
 *EmailApi* | [**SaveMailAccount**](EmailApi.md#savemailaccount) | **POST** /email/client/SaveMailAccount | Create email account file (*.account) with login/password authentication             
 *EmailApi* | [**SaveMailAccountAsync**](EmailApi.md#savemailaccountasync) | **POST** /email/client/SaveMailAccount | Create email account file (*.account) with login/password authentication             . Not available on .NETFramework v2.0
 *EmailApi* | [**SaveMailOAuthAccount**](EmailApi.md#savemailoauthaccount) | **POST** /email/client/SaveMailOAuthAccount | Create email account file (*.account) with OAuth             
@@ -132,6 +168,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**SendEmailAsync**](EmailApi.md#sendemailasync) | **POST** /email/client/Send | Send an email from *.eml file located on storage             . Not available on .NETFramework v2.0
 *EmailApi* | [**SendEmailMime**](EmailApi.md#sendemailmime) | **POST** /email/client/SendMime | Send an email specified by MIME in request             
 *EmailApi* | [**SendEmailMimeAsync**](EmailApi.md#sendemailmimeasync) | **POST** /email/client/SendMime | Send an email specified by MIME in request             . Not available on .NETFramework v2.0
+*EmailApi* | [**SendEmailModel**](EmailApi.md#sendemailmodel) | **POST** /email/client/SendModel | Send an email specified by model in request             
+*EmailApi* | [**SendEmailModelAsync**](EmailApi.md#sendemailmodelasync) | **POST** /email/client/SendModel | Send an email specified by model in request             . Not available on .NETFramework v2.0
 *EmailApi* | [**SetEmailProperty**](EmailApi.md#setemailproperty) | **PUT** /email/{fileName}/properties/{propertyName} | Set email document property value             
 *EmailApi* | [**SetEmailPropertyAsync**](EmailApi.md#setemailpropertyasync) | **PUT** /email/{fileName}/properties/{propertyName} | Set email document property value             . Not available on .NETFramework v2.0
 *EmailApi* | [**SetEmailReadFlag**](EmailApi.md#setemailreadflag) | **POST** /email/client/SetReadFlag | Sets \&quot;Message is read\&quot; flag             
@@ -168,15 +206,34 @@ Class | Method | HTTP request | Description
  - [Model.AiNameParsedRq](AiNameParsedRq.md)
  - [Model.AiNameWeighted](AiNameWeighted.md)
  - [Model.AiNameWeightedVariants](AiNameWeightedVariants.md)
+ - [Model.AssociatedPerson](AssociatedPerson.md)
+ - [Model.AttachmentBase](AttachmentBase.md)
  - [Model.BaseObject](BaseObject.md)
+ - [Model.CalendarDto](CalendarDto.md)
+ - [Model.CalendarDtoAlternateRq](CalendarDtoAlternateRq.md)
+ - [Model.CalendarReminder](CalendarReminder.md)
+ - [Model.ContactDto](ContactDto.md)
+ - [Model.ContactPhoto](ContactPhoto.md)
+ - [Model.ContentType](ContentType.md)
+ - [Model.ContentTypeParameter](ContentTypeParameter.md)
  - [Model.CreateEmailRequest](CreateEmailRequest.md)
+ - [Model.CustomerEvent](CustomerEvent.md)
  - [Model.DiscUsage](DiscUsage.md)
  - [Model.EmailAccountRequest](EmailAccountRequest.md)
+ - [Model.EmailAddress](EmailAddress.md)
  - [Model.EmailDocument](EmailDocument.md)
  - [Model.EmailDocumentResponse](EmailDocumentResponse.md)
+ - [Model.EmailDto](EmailDto.md)
  - [Model.EmailProperties](EmailProperties.md)
  - [Model.EmailProperty](EmailProperty.md)
  - [Model.EmailPropertyResponse](EmailPropertyResponse.md)
+ - [Model.EnumWithCustomOfAssociatedPersonCategory](EnumWithCustomOfAssociatedPersonCategory.md)
+ - [Model.EnumWithCustomOfEmailAddressCategory](EnumWithCustomOfEmailAddressCategory.md)
+ - [Model.EnumWithCustomOfEventCategory](EnumWithCustomOfEventCategory.md)
+ - [Model.EnumWithCustomOfInstantMessengerCategory](EnumWithCustomOfInstantMessengerCategory.md)
+ - [Model.EnumWithCustomOfPhoneNumberCategory](EnumWithCustomOfPhoneNumberCategory.md)
+ - [Model.EnumWithCustomOfPostalAddressCategory](EnumWithCustomOfPostalAddressCategory.md)
+ - [Model.EnumWithCustomOfUrlCategory](EnumWithCustomOfUrlCategory.md)
  - [Model.Error](Error.md)
  - [Model.ErrorDetails](ErrorDetails.md)
  - [Model.FileVersions](FileVersions.md)
@@ -184,45 +241,72 @@ Class | Method | HTTP request | Description
  - [Model.FilesUploadResult](FilesUploadResult.md)
  - [Model.HierarchicalObjectRequest](HierarchicalObjectRequest.md)
  - [Model.HierarchicalObjectResponse](HierarchicalObjectResponse.md)
+ - [Model.InstantMessengerAddress](InstantMessengerAddress.md)
  - [Model.Link](Link.md)
  - [Model.ListResponseOfAiBcrOcrData](ListResponseOfAiBcrOcrData.md)
  - [Model.ListResponseOfAiNameComponent](ListResponseOfAiNameComponent.md)
  - [Model.ListResponseOfAiNameExtracted](ListResponseOfAiNameExtracted.md)
  - [Model.ListResponseOfAiNameGenderHypothesis](ListResponseOfAiNameGenderHypothesis.md)
+ - [Model.ListResponseOfContactDto](ListResponseOfContactDto.md)
+ - [Model.ListResponseOfEmailDto](ListResponseOfEmailDto.md)
  - [Model.ListResponseOfHierarchicalObject](ListResponseOfHierarchicalObject.md)
  - [Model.ListResponseOfHierarchicalObjectResponse](ListResponseOfHierarchicalObjectResponse.md)
  - [Model.ListResponseOfMailServerFolder](ListResponseOfMailServerFolder.md)
  - [Model.ListResponseOfStorageFileLocation](ListResponseOfStorageFileLocation.md)
+ - [Model.ListResponseOfStorageModelOfCalendarDto](ListResponseOfStorageModelOfCalendarDto.md)
+ - [Model.ListResponseOfStorageModelOfContactDto](ListResponseOfStorageModelOfContactDto.md)
+ - [Model.ListResponseOfStorageModelOfEmailDto](ListResponseOfStorageModelOfEmailDto.md)
  - [Model.ListResponseOfString](ListResponseOfString.md)
+ - [Model.MailAddress](MailAddress.md)
  - [Model.MailServerFolder](MailServerFolder.md)
  - [Model.MimeResponse](MimeResponse.md)
  - [Model.ObjectExist](ObjectExist.md)
+ - [Model.PhoneNumber](PhoneNumber.md)
+ - [Model.PostalAddress](PostalAddress.md)
+ - [Model.ReminderAttendee](ReminderAttendee.md)
+ - [Model.ReminderTrigger](ReminderTrigger.md)
  - [Model.SetEmailPropertyRequest](SetEmailPropertyRequest.md)
  - [Model.StorageExist](StorageExist.md)
  - [Model.StorageFile](StorageFile.md)
  - [Model.StorageFolderLocation](StorageFolderLocation.md)
+ - [Model.StorageModelOfCalendarDto](StorageModelOfCalendarDto.md)
+ - [Model.StorageModelOfContactDto](StorageModelOfContactDto.md)
+ - [Model.StorageModelOfEmailDto](StorageModelOfEmailDto.md)
+ - [Model.StorageModelRqOfCalendarDto](StorageModelRqOfCalendarDto.md)
+ - [Model.StorageModelRqOfContactDto](StorageModelRqOfContactDto.md)
+ - [Model.StorageModelRqOfEmailDto](StorageModelRqOfEmailDto.md)
+ - [Model.Url](Url.md)
  - [Model.ValueResponse](ValueResponse.md)
  - [Model.AiBcrBase64Image](AiBcrBase64Image.md)
  - [Model.AiBcrBase64Rq](AiBcrBase64Rq.md)
  - [Model.AiBcrImageStorageFile](AiBcrImageStorageFile.md)
+ - [Model.AiBcrParseOcrDataRq](AiBcrParseOcrDataRq.md)
  - [Model.AiBcrStorageImageRq](AiBcrStorageImageRq.md)
  - [Model.AiNameParsedMatchRq](AiNameParsedMatchRq.md)
+ - [Model.AlternateView](AlternateView.md)
  - [Model.AppendEmailAccountBaseRequest](AppendEmailAccountBaseRequest.md)
+ - [Model.Attachment](Attachment.md)
+ - [Model.CalendarDtoList](CalendarDtoList.md)
+ - [Model.ContactDtoList](ContactDtoList.md)
  - [Model.CreateFolderBaseRequest](CreateFolderBaseRequest.md)
  - [Model.DeleteFolderBaseRequest](DeleteFolderBaseRequest.md)
  - [Model.DeleteMessageBaseRequest](DeleteMessageBaseRequest.md)
+ - [Model.EmailDtoList](EmailDtoList.md)
  - [Model.FileVersion](FileVersion.md)
  - [Model.HierarchicalObject](HierarchicalObject.md)
  - [Model.IndexedHierarchicalObject](IndexedHierarchicalObject.md)
  - [Model.IndexedPrimitiveObject](IndexedPrimitiveObject.md)
+ - [Model.LinkedResource](LinkedResource.md)
  - [Model.PrimitiveObject](PrimitiveObject.md)
  - [Model.SaveEmailAccountRequest](SaveEmailAccountRequest.md)
  - [Model.SaveOAuthEmailAccountRequest](SaveOAuthEmailAccountRequest.md)
  - [Model.SendEmailBaseRequest](SendEmailBaseRequest.md)
  - [Model.SendEmailMimeBaseRequest](SendEmailMimeBaseRequest.md)
+ - [Model.SendEmailModelRq](SendEmailModelRq.md)
  - [Model.SetMessageReadFlagAccountBaseRequest](SetMessageReadFlagAccountBaseRequest.md)
  - [Model.StorageFileLocation](StorageFileLocation.md)
  - [Model.AiBcrParseStorageRq](AiBcrParseStorageRq.md)
  - [Model.AppendEmailBaseRequest](AppendEmailBaseRequest.md)
  - [Model.AppendEmailMimeBaseRequest](AppendEmailMimeBaseRequest.md)
+ - [Model.AppendEmailModelRq](AppendEmailModelRq.md)
 

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
+// <copyright company="Aspose" file="StorageModelRqOfContactDto.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,23 +33,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// String value object             
+    /// 
     /// </summary>
-    public class ValueResponse 
+    public class StorageModelRqOfContactDto 
     {
         /// <summary>
-        /// Gets or sets string content.             
+        /// Gets or sets Value
         /// </summary>  
-        public string Value { get; set; }
+        public ContactDto Value { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
+        /// <summary>
+        /// Gets or sets StorageFolder
+        /// </summary>  
+        public StorageFolderLocation StorageFolder { get; set; }
 
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
+        /// <summary>StorageModelRqOfContactDto constructor</summary>
+        public StorageModelRqOfContactDto() {}
+
+        /// <summary>StorageModelRqOfContactDto constructor</summary>
+        /// <param name="value"></param>
+        /// <param name="storageFolder"></param>
+        public StorageModelRqOfContactDto(ContactDto value, StorageFolderLocation storageFolder)
         {
             Value = value;
+            StorageFolder = storageFolder;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -58,8 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
+          sb.Append("class StorageModelRqOfContactDto {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

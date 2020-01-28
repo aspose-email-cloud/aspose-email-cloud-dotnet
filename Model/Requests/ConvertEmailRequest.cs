@@ -1,6 +1,7 @@
+
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ValueResponse.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+// <copyright company="Aspose" file="ConvertEmailRequest.cs">
+//   Copyright (c) 2018 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,46 +23,41 @@
 //  SOFTWARE.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
-namespace Aspose.Email.Cloud.Sdk.Model
+namespace Aspose.Email.Cloud.Sdk.Model.Requests
 {
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Runtime.Serialization;
-    using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
-    /// <summary>
-    /// String value object             
-    /// </summary>
-    public class ValueResponse 
-    {
-        /// <summary>
-        /// Gets or sets string content.             
-        /// </summary>  
-        public string Value { get; set; }
+  using Model;
 
-        /// <summary>ValueResponse constructor</summary>
-        public ValueResponse() {}
-
-        /// <summary>ValueResponse constructor</summary>
-        /// <param name="value">Gets or sets string content.             </param>
-        public ValueResponse(string value)
-        {
-            Value = value;
-        }
+  /// <summary>
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertEmail" /> operation.
+  /// </summary>
+  public class ConvertEmailRequest  
+  {
         /// <summary>
-        /// Get the string presentation of the object
+        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
         /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()  
+        public ConvertEmailRequest()
         {
-          var sb = new StringBuilder();
-          sb.Append("class ValueResponse {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
-          sb.Append("}\n");
-          return sb.ToString();
         }
-    }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// </summary>
+        /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
+        /// <param name="file">File to upload</param>
+        public ConvertEmailRequest(string format, System.IO.Stream file)
+        {
+            this.format = format;
+            this.File = file;
+        }
+
+        /// <summary>
+        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// </summary>
+        public string format { get; set; }
+
+        /// <summary>
+        /// File to upload
+        /// </summary>
+        public System.IO.Stream File { get; set; }
+  }
 }
