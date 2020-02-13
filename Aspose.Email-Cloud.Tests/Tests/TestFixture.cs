@@ -429,14 +429,14 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task DiscoverEmailConfigTest()
         {
             var configs = await emailApi.DiscoverEmailConfigAsync(
-                new DiscoverEmailConfigRequest("example@gmail.com"));
+                new DiscoverEmailConfigRequest("example@gmail.com", true));
             var protocols = configs.Value
-                .Select(config => config.Type)
+                .Select(config => config.ProtocolType)
                 .ToList();
             Assert.Contains("SMTP", protocols);
             Assert.Contains("IMAP", protocols);
             Assert.AreEqual("smtp.gmail.com", configs.Value
-                .First(config => config.Type == "SMTP").Host);
+                .First(config => config.ProtocolType == "SMTP").Host);
         }
 
         private static string FileToBase64(string filePath)

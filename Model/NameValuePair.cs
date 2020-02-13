@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// An extended property.
     /// </summary>
     public class NameValuePair 
     {
         /// <summary>
-        /// Gets or sets Value
+        /// Name of the property 
         /// </summary>  
         public string Value { get; set; }
 
         /// <summary>
-        /// Gets or sets Name
+        /// Value of the property
         /// </summary>  
         public string Name { get; set; }
 
@@ -51,8 +51,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public NameValuePair() {}
 
         /// <summary>NameValuePair constructor</summary>
-        /// <param name="value"></param>
-        /// <param name="name"></param>
+        /// <param name="value">Name of the property </param>
+        /// <param name="name">Value of the property</param>
         public NameValuePair(string value, string name)
         {
             Value = value;

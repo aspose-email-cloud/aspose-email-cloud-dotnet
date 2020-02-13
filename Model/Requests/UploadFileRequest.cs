@@ -1,4 +1,3 @@
-
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="UploadFileRequest.cs">
 //   Copyright (c) 2018 Aspose.Email for Cloud

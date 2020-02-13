@@ -45,7 +45,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav
         /// </summary>  
-        public string Type { get; set; }
+        public string ProtocolType { get; set; }
 
         /// <summary>
         /// Email account host.             
@@ -58,7 +58,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public int? Port { get; set; }
 
         /// <summary>
-        /// Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
+        /// Security mode for a mail client Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
         /// </summary>  
         public string SocketType { get; set; }
 
@@ -82,17 +82,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>EmailAccountConfig constructor</summary>
         /// <param name="displayName">Email account display name             </param>
-        /// <param name="type">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
+        /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
         /// <param name="host">Email account host.             </param>
         /// <param name="port">Port.             </param>
-        /// <param name="socketType">Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
+        /// <param name="socketType">Security mode for a mail client Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
         /// <param name="authenticationTypes">Supported authentication types.             </param>
         /// <param name="extraInfo">Extra account information.             </param>
         /// <param name="isValidated">Determines that configuration validated. Set to false if validation skipped.             </param>
-        public EmailAccountConfig(string displayName, string type, string host, int? port, string socketType, List<string> authenticationTypes, List<NameValuePair> extraInfo, bool? isValidated)
+        public EmailAccountConfig(string displayName, string protocolType, string host, int? port, string socketType, List<string> authenticationTypes, List<NameValuePair> extraInfo, bool? isValidated)
         {
             DisplayName = displayName;
-            Type = type;
+            ProtocolType = protocolType;
             Host = host;
             Port = port;
             SocketType = socketType;
@@ -109,7 +109,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           var sb = new StringBuilder();
           sb.Append("class EmailAccountConfig {\n");
           sb.Append("  DisplayName: ").Append(this.DisplayName).Append("\n");
-          sb.Append("  Type: ").Append(this.Type).Append("\n");
+          sb.Append("  ProtocolType: ").Append(this.ProtocolType).Append("\n");
           sb.Append("  Host: ").Append(this.Host).Append("\n");
           sb.Append("  Port: ").Append(this.Port).Append("\n");
           sb.Append("  SocketType: ").Append(this.SocketType).Append("\n");
