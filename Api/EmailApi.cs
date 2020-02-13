@@ -3399,6 +3399,224 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Discover email accounts by email address. Does not validate discovered accounts.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="DiscoverEmailConfigRequest" /></param>
+        /// <returns><see cref="EmailAccountConfigList"/></returns>
+        public EmailAccountConfigList DiscoverEmailConfig(Model.Requests.DiscoverEmailConfigRequest request)
+        {
+            // verify the required parameter 'address' is set
+            if (request.address == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'address' when calling DiscoverEmailConfig");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/config/discover";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "address", request.address);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fastProcessing", request.fastProcessing);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailAccountConfigList>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Discover email accounts by email address. Does not validate discovered accounts.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="DiscoverEmailConfigRequest" /></param>
+        /// <returns><see cref="EmailAccountConfigList"/></returns>
+        public async Task<EmailAccountConfigList> DiscoverEmailConfigAsync(Model.Requests.DiscoverEmailConfigRequest request)
+        {
+            // verify the required parameter 'address' is set
+            if (request.address == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'address' when calling DiscoverEmailConfig");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/config/discover";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "address", request.address);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fastProcessing", request.fastProcessing);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailAccountConfigList>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="DiscoverEmailConfigOauthRequest" /></param>
+        /// <returns><see cref="EmailAccountConfigList"/></returns>
+        public EmailAccountConfigList DiscoverEmailConfigOauth(Model.Requests.DiscoverEmailConfigOauthRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling DiscoverEmailConfigOauth");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/config/discover/oauth";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailAccountConfigList>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="DiscoverEmailConfigOauthRequest" /></param>
+        /// <returns><see cref="EmailAccountConfigList"/></returns>
+        public async Task<EmailAccountConfigList> DiscoverEmailConfigOauthAsync(Model.Requests.DiscoverEmailConfigOauthRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling DiscoverEmailConfigOauth");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/config/discover/oauth";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailAccountConfigList>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Discover email accounts by email address. Validates discovered accounts using login and password.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="DiscoverEmailConfigPasswordRequest" /></param>
+        /// <returns><see cref="EmailAccountConfigList"/></returns>
+        public EmailAccountConfigList DiscoverEmailConfigPassword(Model.Requests.DiscoverEmailConfigPasswordRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling DiscoverEmailConfigPassword");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/config/discover/password";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailAccountConfigList>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Discover email accounts by email address. Validates discovered accounts using login and password.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="DiscoverEmailConfigPasswordRequest" /></param>
+        /// <returns><see cref="EmailAccountConfigList"/></returns>
+        public async Task<EmailAccountConfigList> DiscoverEmailConfigPasswordAsync(Model.Requests.DiscoverEmailConfigPasswordRequest request)
+        {
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling DiscoverEmailConfigPassword");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/config/discover/password";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "POST",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailAccountConfigList>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Download file 
         /// </summary>
         /// <param name="request">Request. <see cref="DownloadFileRequest" /></param>
