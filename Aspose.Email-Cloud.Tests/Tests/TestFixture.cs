@@ -424,6 +424,21 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             Assert.AreEqual("Alex Thomas", result.Value.First().DisplayName);
         }
 
+        [Test]
+        [Pipeline]
+        public async Task DiscoverEmailConfigTest()
+        {
+            var configs = await emailApi.DiscoverEmailConfigAsync(
+                new DiscoverEmailConfigRequest("example@gmail.com"));
+            var protocols = configs.Value
+                .Select(config => config.Type)
+                .ToList();
+            Assert.Contains("SMTP", protocols);
+            Assert.Contains("IMAP", protocols);
+            Assert.AreEqual("smtp.gmail.com", configs.Value
+                .First(config => config.Type == "SMTP").Host);
+        }
+
         private static string FileToBase64(string filePath)
         {
             var bytes = File.ReadAllBytes(filePath);
