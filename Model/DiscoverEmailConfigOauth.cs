@@ -35,7 +35,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// <summary>
     /// 
     /// </summary>
-    public class DiscoverEmailConfigOauth : DiscoverEmailConfigRequest 
+    public class DiscoverEmailConfigOauth : DiscoverEmailConfigRq 
     {
         /// <summary>
         /// OAuth client id.             

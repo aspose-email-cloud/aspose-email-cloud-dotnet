@@ -225,7 +225,7 @@ Class | Method | HTTP request | Description
  - [Model.CreateEmailRequest](CreateEmailRequest.md)
  - [Model.CustomerEvent](CustomerEvent.md)
  - [Model.DiscUsage](DiscUsage.md)
- - [Model.DiscoverEmailConfigRequest](DiscoverEmailConfigRequest.md)
+ - [Model.DiscoverEmailConfigRq](DiscoverEmailConfigRq.md)
  - [Model.EmailAccountConfig](EmailAccountConfig.md)
  - [Model.EmailAccountRequest](EmailAccountRequest.md)
  - [Model.EmailAddress](EmailAddress.md)

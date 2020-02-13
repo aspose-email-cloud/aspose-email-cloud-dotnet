@@ -35,7 +35,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// <summary>
     /// 
     /// </summary>
-    public class DiscoverEmailConfigPassword : DiscoverEmailConfigRequest 
+    public class DiscoverEmailConfigPassword : DiscoverEmailConfigRq 
     {
         /// <summary>
         /// Email account password.             
