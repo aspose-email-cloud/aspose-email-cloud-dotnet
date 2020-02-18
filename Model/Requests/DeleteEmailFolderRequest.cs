@@ -1,3 +1,4 @@
+
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DeleteEmailFolderRequest.cs">
 //   Copyright (c) 2018 Aspose.Email for Cloud
