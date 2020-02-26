@@ -43,7 +43,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Initializes a new instance of the <see cref="CreateEmailRequest"/> class.
         /// </summary>
         /// <param name="fileName">Email document file name in storage</param>
-        /// <param name="request">An email document and optional Storage info to specify where the file should be located</param>
+        /// <param name="request">An email document and optional Storage info to specify where the file should be located             </param>
         public CreateEmailRequest(string fileName, CreateEmailRequest request)
         {
             this.fileName = fileName;
@@ -56,7 +56,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string fileName { get; set; }
 
         /// <summary>
-        /// An email document and optional Storage info to specify where the file should be located
+        /// An email document and optional Storage info to specify where the file should be located             
         /// </summary>
         public CreateEmailRequest request { get; set; }
   }
