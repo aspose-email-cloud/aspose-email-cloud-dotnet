@@ -3977,18 +3977,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "attachment", request.attachment);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            var response = apiInvoker.InvokeApi(
+            return apiInvoker.InvokeBinaryApi(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -4023,18 +4018,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "attachment", request.attachment);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            var response = await apiInvoker.InvokeApiAsync(
+            return await apiInvoker.InvokeBinaryApiAsync(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
         #endif
 
@@ -4431,18 +4421,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "attachment", request.attachment);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            var response = apiInvoker.InvokeApi(
+            return apiInvoker.InvokeBinaryApi(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -4485,18 +4470,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "attachment", request.attachment);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            var response = await apiInvoker.InvokeApiAsync(
+            return await apiInvoker.InvokeBinaryApiAsync(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
         #endif
 
@@ -5009,18 +4989,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            var response = apiInvoker.InvokeApi(
+            return apiInvoker.InvokeBinaryApi(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -5055,18 +5030,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            var response = await apiInvoker.InvokeApiAsync(
+            return await apiInvoker.InvokeBinaryApiAsync(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
         #endif
 
@@ -5101,18 +5071,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            var response = apiInvoker.InvokeApi(
+            return apiInvoker.InvokeBinaryApi(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -5147,18 +5112,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            var response = await apiInvoker.InvokeApiAsync(
+            return await apiInvoker.InvokeBinaryApiAsync(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
         #endif
 
@@ -5605,18 +5565,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "attachment", request.attachment);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            var response = apiInvoker.InvokeApi(
+            return apiInvoker.InvokeBinaryApi(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -5651,18 +5606,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "attachment", request.attachment);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            var response = await apiInvoker.InvokeApiAsync(
+            return await apiInvoker.InvokeBinaryApiAsync(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
         #endif
 
@@ -5876,6 +5826,78 @@ namespace Aspose.Email.Cloud.Sdk.Api
             if (response != null)
             {
                 return SerializationHelper.Deserialize<HierarchicalObjectResponse>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Check email address is disposable              
+        /// </summary>
+        /// <param name="request">Request. <see cref="IsEmailAddressDisposableRequest" /></param>
+        /// <returns><see cref="ValueTOfBoolean"/></returns>
+        public ValueTOfBoolean IsEmailAddressDisposable(Model.Requests.IsEmailAddressDisposableRequest request)
+        {
+            // verify the required parameter 'address' is set
+            if (request.address == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'address' when calling IsEmailAddressDisposable");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/disposable/isDisposable/{address}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "address", request.address);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ValueTOfBoolean>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Check email address is disposable              
+        /// </summary>
+        /// <param name="request">Request. <see cref="IsEmailAddressDisposableRequest" /></param>
+        /// <returns><see cref="ValueTOfBoolean"/></returns>
+        public async Task<ValueTOfBoolean> IsEmailAddressDisposableAsync(Model.Requests.IsEmailAddressDisposableRequest request)
+        {
+            // verify the required parameter 'address' is set
+            if (request.address == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'address' when calling IsEmailAddressDisposable");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/disposable/isDisposable/{address}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "address", request.address);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ValueTOfBoolean>(response);
             }
 
             return null;

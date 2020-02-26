@@ -1811,7 +1811,7 @@ new CreateEmailRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileName** | **string**| Email document file name in storage | 
- **request** | [**CreateEmailRequest**](CreateEmailRequest.md)| An email document and optional Storage info to specify where the file should be located | 
+ **request** | [**CreateEmailRequest**](CreateEmailRequest.md)| An email document and optional Storage info to specify where the file should be located              | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1840,7 +1840,7 @@ new CreateEmailRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileName** | **string**| Email document file name in storage | 
- **request** | [**CreateEmailRequest**](CreateEmailRequest.md)| An email document and optional Storage info to specify where the file should be located | 
+ **request** | [**CreateEmailRequest**](CreateEmailRequest.md)| An email document and optional Storage info to specify where the file should be located              | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2900,14 +2900,14 @@ Name | Type | Description  | Notes
 # **GetCalendarAttachment**
 
 ```csharp
-System.IO.Stream GetCalendarAttachment(GetCalendarAttachmentRequest request)
+Stream GetCalendarAttachment(GetCalendarAttachmentRequest request)
 ```
 
 Get iCalendar document attachment by name             
 
 ### Return type
 
-**System.IO.Stream**
+**Stream**
 
 ### Request Parameters
 ```csharp
@@ -2931,7 +2931,7 @@ Name | Type | Description  | Notes
 # **GetCalendarAttachmentAsync**
 
 ```csharp
-async Task<System.IO.Stream> GetCalendarAttachmentAsync(GetCalendarAttachmentRequest request)
+async Task<Stream> GetCalendarAttachmentAsync(GetCalendarAttachmentRequest request)
 ```
 
 Get iCalendar document attachment by name             
@@ -2940,7 +2940,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-**Task<System.IO.Stream>**
+**Task<Stream>**
 
 ### Request Parameters
 ```csharp
@@ -3220,14 +3220,14 @@ Name | Type | Description  | Notes
 # **GetContactAttachment**
 
 ```csharp
-System.IO.Stream GetContactAttachment(GetContactAttachmentRequest request)
+Stream GetContactAttachment(GetContactAttachmentRequest request)
 ```
 
 Get attachment file by name             
 
 ### Return type
 
-**System.IO.Stream**
+**Stream**
 
 ### Request Parameters
 ```csharp
@@ -3253,7 +3253,7 @@ Name | Type | Description  | Notes
 # **GetContactAttachmentAsync**
 
 ```csharp
-async Task<System.IO.Stream> GetContactAttachmentAsync(GetContactAttachmentRequest request)
+async Task<Stream> GetContactAttachmentAsync(GetContactAttachmentRequest request)
 ```
 
 Get attachment file by name             
@@ -3262,7 +3262,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-**Task<System.IO.Stream>**
+**Task<Stream>**
 
 ### Request Parameters
 ```csharp
@@ -3664,14 +3664,14 @@ Name | Type | Description  | Notes
 # **GetEmailAsFile**
 
 ```csharp
-System.IO.Stream GetEmailAsFile(GetEmailAsFileRequest request)
+Stream GetEmailAsFile(GetEmailAsFileRequest request)
 ```
 
 Converts email document from storage to specified format and returns as file             
 
 ### Return type
 
-**System.IO.Stream**
+**Stream**
 
 ### Request Parameters
 ```csharp
@@ -3695,7 +3695,7 @@ Name | Type | Description  | Notes
 # **GetEmailAsFileAsync**
 
 ```csharp
-async Task<System.IO.Stream> GetEmailAsFileAsync(GetEmailAsFileRequest request)
+async Task<Stream> GetEmailAsFileAsync(GetEmailAsFileRequest request)
 ```
 
 Converts email document from storage to specified format and returns as file             
@@ -3704,7 +3704,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-**Task<System.IO.Stream>**
+**Task<Stream>**
 
 ### Request Parameters
 ```csharp
@@ -3728,14 +3728,14 @@ Name | Type | Description  | Notes
 # **GetEmailAttachment**
 
 ```csharp
-System.IO.Stream GetEmailAttachment(GetEmailAttachmentRequest request)
+Stream GetEmailAttachment(GetEmailAttachmentRequest request)
 ```
 
 Get email attachment by name             
 
 ### Return type
 
-**System.IO.Stream**
+**Stream**
 
 ### Request Parameters
 ```csharp
@@ -3759,7 +3759,7 @@ Name | Type | Description  | Notes
 # **GetEmailAttachmentAsync**
 
 ```csharp
-async Task<System.IO.Stream> GetEmailAttachmentAsync(GetEmailAttachmentRequest request)
+async Task<Stream> GetEmailAttachmentAsync(GetEmailAttachmentRequest request)
 ```
 
 Get email attachment by name             
@@ -3768,7 +3768,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-**Task<System.IO.Stream>**
+**Task<Stream>**
 
 ### Request Parameters
 ```csharp
@@ -4100,14 +4100,14 @@ Name | Type | Description  | Notes
 # **GetMapiAttachment**
 
 ```csharp
-System.IO.Stream GetMapiAttachment(GetMapiAttachmentRequest request)
+Stream GetMapiAttachment(GetMapiAttachmentRequest request)
 ```
 
 Get document attachment as file stream             
 
 ### Return type
 
-**System.IO.Stream**
+**Stream**
 
 ### Request Parameters
 ```csharp
@@ -4131,7 +4131,7 @@ Name | Type | Description  | Notes
 # **GetMapiAttachmentAsync**
 
 ```csharp
-async Task<System.IO.Stream> GetMapiAttachmentAsync(GetMapiAttachmentRequest request)
+async Task<Stream> GetMapiAttachmentAsync(GetMapiAttachmentRequest request)
 ```
 
 Get document attachment as file stream             
@@ -4140,7 +4140,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-**Task<System.IO.Stream>**
+**Task<Stream>**
 
 ### Request Parameters
 ```csharp
@@ -4341,6 +4341,58 @@ Name | Type | Description  | Notes
  **name** | **string**| Document file name | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="isemailaddressdisposable"></a>
+# **IsEmailAddressDisposable**
+
+```csharp
+ValueTOfBoolean IsEmailAddressDisposable(IsEmailAddressDisposableRequest request)
+```
+
+Check email address is disposable             
+
+### Return type
+
+[**ValueTOfBoolean**](ValueTOfBoolean.md)
+
+### Request Parameters
+```csharp
+new IsEmailAddressDisposableRequest(
+    address)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **address** | **string**| An email address to check | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="isemailaddressdisposable"></a>
+# **IsEmailAddressDisposableAsync**
+
+```csharp
+async Task<ValueTOfBoolean> IsEmailAddressDisposableAsync(IsEmailAddressDisposableRequest request)
+```
+
+Check email address is disposable             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ValueTOfBoolean**](ValueTOfBoolean.md)>
+
+### Request Parameters
+```csharp
+new IsEmailAddressDisposableRequest(
+    address)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **address** | **string**| An email address to check | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

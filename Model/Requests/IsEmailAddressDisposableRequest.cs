@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrParseStorageRequest.cs">
+// <copyright company="Aspose" file="IsEmailAddressDisposableRequest.cs">
 //   Copyright (c) 2018 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,29 +27,29 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.AiBcrParseStorage" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.IsEmailAddressDisposable" /> operation.
   /// </summary>
-  public class AiBcrParseStorageRequest  
+  public class IsEmailAddressDisposableRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="AiBcrParseStorageRequest"/> class.
+        /// Initializes a new instance of the <see cref="IsEmailAddressDisposableRequest"/> class.
         /// </summary>
-        public AiBcrParseStorageRequest()
+        public IsEmailAddressDisposableRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AiBcrParseStorageRequest"/> class.
+        /// Initializes a new instance of the <see cref="IsEmailAddressDisposableRequest"/> class.
         /// </summary>
-        /// <param name="rq">Request with images located on storage</param>
-        public AiBcrParseStorageRequest(AiBcrParseStorageRq rq)
+        /// <param name="address">An email address to check</param>
+        public IsEmailAddressDisposableRequest(string address)
         {
-            this.rq = rq;
+            this.address = address;
         }
 
         /// <summary>
-        /// Request with images located on storage
+        /// An email address to check
         /// </summary>
-        public AiBcrParseStorageRq rq { get; set; }
+        public string address { get; set; }
   }
 }

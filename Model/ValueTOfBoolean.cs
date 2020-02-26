@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrParseStorageRequest.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+// <copyright company="Aspose" file="ValueTOfBoolean.cs">
+//   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -22,34 +22,46 @@
 //  SOFTWARE.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Aspose.Email.Cloud.Sdk.Model.Requests
+
+namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using Model;
-
-  /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.AiBcrParseStorage" /> operation.
-  /// </summary>
-  public class AiBcrParseStorageRequest  
-  {
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    using System.Text;
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Converters;
+    /// <summary>
+    /// 
+    /// </summary>
+    public class ValueTOfBoolean 
+    {
         /// <summary>
-        /// Initializes a new instance of the <see cref="AiBcrParseStorageRequest"/> class.
-        /// </summary>
-        public AiBcrParseStorageRequest()
+        /// Gets or sets Value
+        /// </summary>  
+        public bool? Value { get; set; }
+
+        /// <summary>ValueTOfBoolean constructor</summary>
+        public ValueTOfBoolean() {}
+
+        /// <summary>ValueTOfBoolean constructor</summary>
+        /// <param name="value"></param>
+        public ValueTOfBoolean(bool? value)
         {
+            Value = value;
         }
-
         /// <summary>
-        /// Initializes a new instance of the <see cref="AiBcrParseStorageRequest"/> class.
+        /// Get the string presentation of the object
         /// </summary>
-        /// <param name="rq">Request with images located on storage</param>
-        public AiBcrParseStorageRequest(AiBcrParseStorageRq rq)
+        /// <returns>String presentation of the object</returns>
+        public override string ToString()  
         {
-            this.rq = rq;
+          var sb = new StringBuilder();
+          sb.Append("class ValueTOfBoolean {\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("}\n");
+          return sb.ToString();
         }
-
-        /// <summary>
-        /// Request with images located on storage
-        /// </summary>
-        public AiBcrParseStorageRq rq { get; set; }
-  }
+    }
 }

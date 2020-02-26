@@ -148,6 +148,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetMapiListAsync**](EmailApi.md#getmapilistasync) | **GET** /email/Mapi | Get document list from storage folder             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetMapiProperties**](EmailApi.md#getmapiproperties) | **GET** /email/Mapi/{name}/properties | Get document properties             
 *EmailApi* | [**GetMapiPropertiesAsync**](EmailApi.md#getmapipropertiesasync) | **GET** /email/Mapi/{name}/properties | Get document properties             . Not available on .NETFramework v2.0
+*EmailApi* | [**IsEmailAddressDisposable**](EmailApi.md#isemailaddressdisposable) | **GET** /email/disposable/isDisposable/{address} | Check email address is disposable             
+*EmailApi* | [**IsEmailAddressDisposableAsync**](EmailApi.md#isemailaddressdisposableasync) | **GET** /email/disposable/isDisposable/{address} | Check email address is disposable             . Not available on .NETFramework v2.0
 *EmailApi* | [**ListEmailFolders**](EmailApi.md#listemailfolders) | **GET** /email/client/ListFolders | Get folders list in email account             
 *EmailApi* | [**ListEmailFoldersAsync**](EmailApi.md#listemailfoldersasync) | **GET** /email/client/ListFolders | Get folders list in email account             . Not available on .NETFramework v2.0
 *EmailApi* | [**ListEmailMessages**](EmailApi.md#listemailmessages) | **GET** /email/client/ListMessages | Get messages from folder, filtered by query             
@@ -287,6 +289,7 @@ Class | Method | HTTP request | Description
  - [Model.StorageModelRqOfEmailDto](StorageModelRqOfEmailDto.md)
  - [Model.Url](Url.md)
  - [Model.ValueResponse](ValueResponse.md)
+ - [Model.ValueTOfBoolean](ValueTOfBoolean.md)
  - [Model.AiBcrBase64Image](AiBcrBase64Image.md)
  - [Model.AiBcrBase64Rq](AiBcrBase64Rq.md)
  - [Model.AiBcrImageStorageFile](AiBcrImageStorageFile.md)
