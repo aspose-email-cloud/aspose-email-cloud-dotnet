@@ -2480,6 +2480,166 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="discoveremailconfig"></a>
+# **DiscoverEmailConfig**
+
+```csharp
+EmailAccountConfigList DiscoverEmailConfig(DiscoverEmailConfigRequest request)
+```
+
+Discover email accounts by email address. Does not validate discovered accounts.             
+
+### Return type
+
+[**EmailAccountConfigList**](EmailAccountConfigList.md)
+
+### Request Parameters
+```csharp
+new DiscoverEmailConfigRequest(
+    address,
+    fastProcessing=fastProcessing)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **address** | **string**| Email address | 
+ **fastProcessing** | **bool?**| Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned              | [optional] [default to false]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="discoveremailconfig"></a>
+# **DiscoverEmailConfigAsync**
+
+```csharp
+async Task<EmailAccountConfigList> DiscoverEmailConfigAsync(DiscoverEmailConfigRequest request)
+```
+
+Discover email accounts by email address. Does not validate discovered accounts.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
+
+### Request Parameters
+```csharp
+new DiscoverEmailConfigRequest(
+    address,
+    fastProcessing=fastProcessing)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **address** | **string**| Email address | 
+ **fastProcessing** | **bool?**| Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned              | [optional] [default to false]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="discoveremailconfigoauth"></a>
+# **DiscoverEmailConfigOauth**
+
+```csharp
+EmailAccountConfigList DiscoverEmailConfigOauth(DiscoverEmailConfigOauthRequest request)
+```
+
+Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
+
+### Return type
+
+[**EmailAccountConfigList**](EmailAccountConfigList.md)
+
+### Request Parameters
+```csharp
+new DiscoverEmailConfigOauthRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**DiscoverEmailConfigOauth**](DiscoverEmailConfigOauth.md)| Discover email configuration request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="discoveremailconfigoauth"></a>
+# **DiscoverEmailConfigOauthAsync**
+
+```csharp
+async Task<EmailAccountConfigList> DiscoverEmailConfigOauthAsync(DiscoverEmailConfigOauthRequest request)
+```
+
+Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
+
+### Request Parameters
+```csharp
+new DiscoverEmailConfigOauthRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**DiscoverEmailConfigOauth**](DiscoverEmailConfigOauth.md)| Discover email configuration request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="discoveremailconfigpassword"></a>
+# **DiscoverEmailConfigPassword**
+
+```csharp
+EmailAccountConfigList DiscoverEmailConfigPassword(DiscoverEmailConfigPasswordRequest request)
+```
+
+Discover email accounts by email address. Validates discovered accounts using login and password.             
+
+### Return type
+
+[**EmailAccountConfigList**](EmailAccountConfigList.md)
+
+### Request Parameters
+```csharp
+new DiscoverEmailConfigPasswordRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**DiscoverEmailConfigPassword**](DiscoverEmailConfigPassword.md)| Discover email configuration request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="discoveremailconfigpassword"></a>
+# **DiscoverEmailConfigPasswordAsync**
+
+```csharp
+async Task<EmailAccountConfigList> DiscoverEmailConfigPasswordAsync(DiscoverEmailConfigPasswordRequest request)
+```
+
+Discover email accounts by email address. Validates discovered accounts using login and password.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
+
+### Request Parameters
+```csharp
+new DiscoverEmailConfigPasswordRequest(
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **rq** | [**DiscoverEmailConfigPassword**](DiscoverEmailConfigPassword.md)| Discover email configuration request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="downloadfile"></a>
 # **DownloadFile**
 

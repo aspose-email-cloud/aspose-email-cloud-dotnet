@@ -88,6 +88,12 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**DeleteMapiAttachmentAsync**](EmailApi.md#deletemapiattachmentasync) | **DELETE** /email/Mapi/{name}/attachments/{attachment} | Remove attachment from document             . Not available on .NETFramework v2.0
 *EmailApi* | [**DeleteMapiProperties**](EmailApi.md#deletemapiproperties) | **DELETE** /email/Mapi/{name}/properties | Delete document properties             
 *EmailApi* | [**DeleteMapiPropertiesAsync**](EmailApi.md#deletemapipropertiesasync) | **DELETE** /email/Mapi/{name}/properties | Delete document properties             . Not available on .NETFramework v2.0
+*EmailApi* | [**DiscoverEmailConfig**](EmailApi.md#discoveremailconfig) | **GET** /email/config/discover | Discover email accounts by email address. Does not validate discovered accounts.             
+*EmailApi* | [**DiscoverEmailConfigAsync**](EmailApi.md#discoveremailconfigasync) | **GET** /email/config/discover | Discover email accounts by email address. Does not validate discovered accounts.             . Not available on .NETFramework v2.0
+*EmailApi* | [**DiscoverEmailConfigOauth**](EmailApi.md#discoveremailconfigoauth) | **POST** /email/config/discover/oauth | Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
+*EmailApi* | [**DiscoverEmailConfigOauthAsync**](EmailApi.md#discoveremailconfigoauthasync) | **POST** /email/config/discover/oauth | Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             . Not available on .NETFramework v2.0
+*EmailApi* | [**DiscoverEmailConfigPassword**](EmailApi.md#discoveremailconfigpassword) | **POST** /email/config/discover/password | Discover email accounts by email address. Validates discovered accounts using login and password.             
+*EmailApi* | [**DiscoverEmailConfigPasswordAsync**](EmailApi.md#discoveremailconfigpasswordasync) | **POST** /email/config/discover/password | Discover email accounts by email address. Validates discovered accounts using login and password.             . Not available on .NETFramework v2.0
 *EmailApi* | [**DownloadFile**](EmailApi.md#downloadfile) | **GET** /email/storage/file/{path} | Download file
 *EmailApi* | [**DownloadFileAsync**](EmailApi.md#downloadfileasync) | **GET** /email/storage/file/{path} | Download file. Not available on .NETFramework v2.0
 *EmailApi* | [**FetchEmailMessage**](EmailApi.md#fetchemailmessage) | **GET** /email/client/Fetch | Fetch message mime from email account             
@@ -219,6 +225,8 @@ Class | Method | HTTP request | Description
  - [Model.CreateEmailRequest](CreateEmailRequest.md)
  - [Model.CustomerEvent](CustomerEvent.md)
  - [Model.DiscUsage](DiscUsage.md)
+ - [Model.DiscoverEmailConfigRq](DiscoverEmailConfigRq.md)
+ - [Model.EmailAccountConfig](EmailAccountConfig.md)
  - [Model.EmailAccountRequest](EmailAccountRequest.md)
  - [Model.EmailAddress](EmailAddress.md)
  - [Model.EmailDocument](EmailDocument.md)
@@ -248,6 +256,7 @@ Class | Method | HTTP request | Description
  - [Model.ListResponseOfAiNameExtracted](ListResponseOfAiNameExtracted.md)
  - [Model.ListResponseOfAiNameGenderHypothesis](ListResponseOfAiNameGenderHypothesis.md)
  - [Model.ListResponseOfContactDto](ListResponseOfContactDto.md)
+ - [Model.ListResponseOfEmailAccountConfig](ListResponseOfEmailAccountConfig.md)
  - [Model.ListResponseOfEmailDto](ListResponseOfEmailDto.md)
  - [Model.ListResponseOfHierarchicalObject](ListResponseOfHierarchicalObject.md)
  - [Model.ListResponseOfHierarchicalObjectResponse](ListResponseOfHierarchicalObjectResponse.md)
@@ -260,6 +269,7 @@ Class | Method | HTTP request | Description
  - [Model.MailAddress](MailAddress.md)
  - [Model.MailServerFolder](MailServerFolder.md)
  - [Model.MimeResponse](MimeResponse.md)
+ - [Model.NameValuePair](NameValuePair.md)
  - [Model.ObjectExist](ObjectExist.md)
  - [Model.PhoneNumber](PhoneNumber.md)
  - [Model.PostalAddress](PostalAddress.md)
@@ -291,6 +301,9 @@ Class | Method | HTTP request | Description
  - [Model.CreateFolderBaseRequest](CreateFolderBaseRequest.md)
  - [Model.DeleteFolderBaseRequest](DeleteFolderBaseRequest.md)
  - [Model.DeleteMessageBaseRequest](DeleteMessageBaseRequest.md)
+ - [Model.DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
+ - [Model.DiscoverEmailConfigPassword](DiscoverEmailConfigPassword.md)
+ - [Model.EmailAccountConfigList](EmailAccountConfigList.md)
  - [Model.EmailDtoList](EmailDtoList.md)
  - [Model.FileVersion](FileVersion.md)
  - [Model.HierarchicalObject](HierarchicalObject.md)
