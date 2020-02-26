@@ -439,6 +439,18 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 .First(config => config.ProtocolType == "SMTP").Host);
         }
 
+        [Test]
+        [Pipeline]
+        public async Task IsDisposableEmailTest()
+        {
+            var disposable = await emailApi.IsEmailAddressDisposableAsync(
+                new IsEmailAddressDisposableRequest("example@mailcatch.com"));
+            Assert.IsTrue(disposable.Value);
+            var regular = await emailApi.IsEmailAddressDisposableAsync(
+                new IsEmailAddressDisposableRequest("example@gmail.com"));
+            Assert.IsFalse(regular.Value);
+        }
+
         private static string FileToBase64(string filePath)
         {
             var bytes = File.ReadAllBytes(filePath);
