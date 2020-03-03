@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="EmailAccountRequest.cs">
+// <copyright company="Aspose" file="EmailClientAccount.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,24 +33,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email account settings request             
+    /// A universal email client account             
     /// </summary>
-    public class EmailAccountRequest 
+    public class EmailClientAccount 
     {
         /// <summary>
-        /// Email account host             
+        /// Mail server host name or IP address             
         /// </summary>  
         public string Host { get; set; }
 
         /// <summary>
-        /// Email account port             
+        /// Mail server port             
         /// </summary>  
         public int? Port { get; set; }
-
-        /// <summary>
-        /// Email account login             
-        /// </summary>  
-        public string Login { get; set; }
 
         /// <summary>
         /// Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
@@ -63,35 +58,26 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string ProtocolType { get; set; }
 
         /// <summary>
-        /// Email account description             
+        /// Email client account credentials             
         /// </summary>  
-        public string Description { get; set; }
+        public EmailClientAccountCredentials Credentials { get; set; }
 
-        /// <summary>
-        /// A storage file location info to store email account             
-        /// </summary>  
-        public StorageFileLocation StorageFile { get; set; }
+        /// <summary>EmailClientAccount constructor</summary>
+        public EmailClientAccount() {}
 
-        /// <summary>EmailAccountRequest constructor</summary>
-        public EmailAccountRequest() {}
-
-        /// <summary>EmailAccountRequest constructor</summary>
-        /// <param name="host">Email account host             </param>
-        /// <param name="port">Email account port             </param>
-        /// <param name="login">Email account login             </param>
+        /// <summary>EmailClientAccount constructor</summary>
+        /// <param name="host">Mail server host name or IP address             </param>
+        /// <param name="port">Mail server port             </param>
         /// <param name="securityOptions">Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
         /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
-        /// <param name="description">Email account description             </param>
-        /// <param name="storageFile">A storage file location info to store email account             </param>
-        public EmailAccountRequest(string host, int? port, string login, string securityOptions, string protocolType, string description, StorageFileLocation storageFile)
+        /// <param name="credentials">Email client account credentials             </param>
+        public EmailClientAccount(string host, int? port, string securityOptions, string protocolType, EmailClientAccountCredentials credentials)
         {
             Host = host;
             Port = port;
-            Login = login;
             SecurityOptions = securityOptions;
             ProtocolType = protocolType;
-            Description = description;
-            StorageFile = storageFile;
+            Credentials = credentials;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -100,14 +86,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class EmailAccountRequest {\n");
+          sb.Append("class EmailClientAccount {\n");
           sb.Append("  Host: ").Append(this.Host).Append("\n");
           sb.Append("  Port: ").Append(this.Port).Append("\n");
-          sb.Append("  Login: ").Append(this.Login).Append("\n");
           sb.Append("  SecurityOptions: ").Append(this.SecurityOptions).Append("\n");
           sb.Append("  ProtocolType: ").Append(this.ProtocolType).Append("\n");
-          sb.Append("  Description: ").Append(this.Description).Append("\n");
-          sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
+          sb.Append("  Credentials: ").Append(this.Credentials).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

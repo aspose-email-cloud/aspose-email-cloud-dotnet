@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="NameValuePair.cs">
+// <copyright company="Aspose" file="StorageFileRqOfEmailClientAccount.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,30 +33,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Name-Value property             
+    /// 
     /// </summary>
-    public class NameValuePair 
+    public class StorageFileRqOfEmailClientAccount 
     {
         /// <summary>
-        /// Property name             
+        /// Gets or sets Value
         /// </summary>  
-        public string Name { get; set; }
+        public EmailClientAccount Value { get; set; }
 
         /// <summary>
-        /// Property value             
+        /// Gets or sets StorageFile
         /// </summary>  
-        public string Value { get; set; }
+        public StorageFileLocation StorageFile { get; set; }
 
-        /// <summary>NameValuePair constructor</summary>
-        public NameValuePair() {}
+        /// <summary>StorageFileRqOfEmailClientAccount constructor</summary>
+        public StorageFileRqOfEmailClientAccount() {}
 
-        /// <summary>NameValuePair constructor</summary>
-        /// <param name="name">Property name             </param>
-        /// <param name="value">Property value             </param>
-        public NameValuePair(string name, string value)
+        /// <summary>StorageFileRqOfEmailClientAccount constructor</summary>
+        /// <param name="value"></param>
+        /// <param name="storageFile"></param>
+        public StorageFileRqOfEmailClientAccount(EmailClientAccount value, StorageFileLocation storageFile)
         {
-            Name = name;
             Value = value;
+            StorageFile = storageFile;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -65,9 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class NameValuePair {\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("class StorageFileRqOfEmailClientAccount {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

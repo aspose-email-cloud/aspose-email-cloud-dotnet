@@ -130,6 +130,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetEmailAsFileAsync**](EmailApi.md#getemailasfileasync) | **GET** /email/{fileName}/as-file/{format} | Converts email document from storage to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailAttachment**](EmailApi.md#getemailattachment) | **GET** /email/{fileName}/attachments/{attachment} | Get email attachment by name             
 *EmailApi* | [**GetEmailAttachmentAsync**](EmailApi.md#getemailattachmentasync) | **GET** /email/{fileName}/attachments/{attachment} | Get email attachment by name             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetEmailClientAccount**](EmailApi.md#getemailclientaccount) | **GET** /email/client/email-client-account | Get email client account from storage             
+*EmailApi* | [**GetEmailClientAccountAsync**](EmailApi.md#getemailclientaccountasync) | **GET** /email/client/email-client-account | Get email client account from storage             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailModel**](EmailApi.md#getemailmodel) | **GET** /email/model/{format}/{name} | Get email document.             
 *EmailApi* | [**GetEmailModelAsync**](EmailApi.md#getemailmodelasync) | **GET** /email/model/{format}/{name} | Get email document.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailModelList**](EmailApi.md#getemailmodellist) | **GET** /email/model/{format} | Get email list from storage folder.             
@@ -166,6 +168,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**SaveCalendarModelAsync**](EmailApi.md#savecalendarmodelasync) | **PUT** /email/CalendarModel/{name} | Save iCalendar             . Not available on .NETFramework v2.0
 *EmailApi* | [**SaveContactModel**](EmailApi.md#savecontactmodel) | **PUT** /email/ContactModel/{format}/{name} | Save contact.             
 *EmailApi* | [**SaveContactModelAsync**](EmailApi.md#savecontactmodelasync) | **PUT** /email/ContactModel/{format}/{name} | Save contact.             . Not available on .NETFramework v2.0
+*EmailApi* | [**SaveEmailClientAccount**](EmailApi.md#saveemailclientaccount) | **PUT** /email/client/email-client-account | Create email client account file (*.account) with any of supported credentials             
+*EmailApi* | [**SaveEmailClientAccountAsync**](EmailApi.md#saveemailclientaccountasync) | **PUT** /email/client/email-client-account | Create email client account file (*.account) with any of supported credentials             . Not available on .NETFramework v2.0
 *EmailApi* | [**SaveEmailModel**](EmailApi.md#saveemailmodel) | **PUT** /email/model/{format}/{name} | Save email document.             
 *EmailApi* | [**SaveEmailModelAsync**](EmailApi.md#saveemailmodelasync) | **PUT** /email/model/{format}/{name} | Save email document.             . Not available on .NETFramework v2.0
 *EmailApi* | [**SaveMailAccount**](EmailApi.md#savemailaccount) | **POST** /email/client/SaveMailAccount | Create email account file (*.account) with login/password authentication             
@@ -231,6 +235,8 @@ Class | Method | HTTP request | Description
  - [Model.EmailAccountConfig](EmailAccountConfig.md)
  - [Model.EmailAccountRequest](EmailAccountRequest.md)
  - [Model.EmailAddress](EmailAddress.md)
+ - [Model.EmailClientAccount](EmailClientAccount.md)
+ - [Model.EmailClientAccountCredentials](EmailClientAccountCredentials.md)
  - [Model.EmailDocument](EmailDocument.md)
  - [Model.EmailDocumentResponse](EmailDocumentResponse.md)
  - [Model.EmailDto](EmailDto.md)
@@ -280,6 +286,7 @@ Class | Method | HTTP request | Description
  - [Model.SetEmailPropertyRequest](SetEmailPropertyRequest.md)
  - [Model.StorageExist](StorageExist.md)
  - [Model.StorageFile](StorageFile.md)
+ - [Model.StorageFileRqOfEmailClientAccount](StorageFileRqOfEmailClientAccount.md)
  - [Model.StorageFolderLocation](StorageFolderLocation.md)
  - [Model.StorageModelOfCalendarDto](StorageModelOfCalendarDto.md)
  - [Model.StorageModelOfContactDto](StorageModelOfContactDto.md)
@@ -307,6 +314,8 @@ Class | Method | HTTP request | Description
  - [Model.DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
  - [Model.DiscoverEmailConfigPassword](DiscoverEmailConfigPassword.md)
  - [Model.EmailAccountConfigList](EmailAccountConfigList.md)
+ - [Model.EmailClientAccountOauthCredentials](EmailClientAccountOauthCredentials.md)
+ - [Model.EmailClientAccountPasswordCredentials](EmailClientAccountPasswordCredentials.md)
  - [Model.EmailDtoList](EmailDtoList.md)
  - [Model.FileVersion](FileVersion.md)
  - [Model.HierarchicalObject](HierarchicalObject.md)

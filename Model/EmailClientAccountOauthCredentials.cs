@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="SaveOAuthEmailAccountRequest.cs">
+// <copyright company="Aspose" file="EmailClientAccountOauthCredentials.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,54 +33,44 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Save email account settings with OAuth request             
+    /// Represents email client account OAuth 2.0 credentials             
     /// </summary>
-    public class SaveOAuthEmailAccountRequest : EmailAccountRequest 
+    public class EmailClientAccountOauthCredentials : EmailClientAccountCredentials 
     {
         /// <summary>
-        /// OAuth client identifier             
+        /// The client ID obtained from the Google Cloud Console during application registration.             
         /// </summary>  
         public string ClientId { get; set; }
 
         /// <summary>
-        /// OAuth client secret             
+        /// The client secret obtained during application registration.             
         /// </summary>  
         public string ClientSecret { get; set; }
 
         /// <summary>
-        /// OAuth refresh token             
+        /// OAuth 2.0 refresh token             
         /// </summary>  
         public string RefreshToken { get; set; }
 
         /// <summary>
-        /// The url to obtain access token. If not specified, will try to discover from email account host.             
+        /// The url to obtain access token. If not specified, will try to discover from email client account host.             
         /// </summary>  
         public string RequestUrl { get; set; }
 
-        /// <summary>SaveOAuthEmailAccountRequest constructor</summary>
-        public SaveOAuthEmailAccountRequest() {}
+        /// <summary>EmailClientAccountOauthCredentials constructor</summary>
+        public EmailClientAccountOauthCredentials() {}
 
-        /// <summary>SaveOAuthEmailAccountRequest constructor</summary>
-        /// <param name="host">Email account host             </param>
-        /// <param name="port">Email account port             </param>
-        /// <param name="login">Email account login             </param>
-        /// <param name="securityOptions">Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
-        /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
-        /// <param name="description">Email account description             </param>
-        /// <param name="storageFile">A storage file location info to store email account             </param>
-        /// <param name="clientId">OAuth client identifier             </param>
-        /// <param name="clientSecret">OAuth client secret             </param>
-        /// <param name="refreshToken">OAuth refresh token             </param>
-        /// <param name="requestUrl">The url to obtain access token. If not specified, will try to discover from email account host.             </param>
-        public SaveOAuthEmailAccountRequest(string host, int? port, string login, string securityOptions, string protocolType, string description, StorageFileLocation storageFile, string clientId, string clientSecret, string refreshToken, string requestUrl)
+        /// <summary>EmailClientAccountOauthCredentials constructor</summary>
+        /// <param name="login">Email client account login             </param>
+        /// <param name="discriminator"></param>
+        /// <param name="clientId">The client ID obtained from the Google Cloud Console during application registration.             </param>
+        /// <param name="clientSecret">The client secret obtained during application registration.             </param>
+        /// <param name="refreshToken">OAuth 2.0 refresh token             </param>
+        /// <param name="requestUrl">The url to obtain access token. If not specified, will try to discover from email client account host.             </param>
+        public EmailClientAccountOauthCredentials(string login, string discriminator, string clientId, string clientSecret, string refreshToken, string requestUrl)
         {
-            Host = host;
-            Port = port;
             Login = login;
-            SecurityOptions = securityOptions;
-            ProtocolType = protocolType;
-            Description = description;
-            StorageFile = storageFile;
+            Discriminator = discriminator;
             ClientId = clientId;
             ClientSecret = clientSecret;
             RefreshToken = refreshToken;
@@ -93,14 +83,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class SaveOAuthEmailAccountRequest {\n");
-          sb.Append("  Host: ").Append(this.Host).Append("\n");
-          sb.Append("  Port: ").Append(this.Port).Append("\n");
+          sb.Append("class EmailClientAccountOauthCredentials {\n");
           sb.Append("  Login: ").Append(this.Login).Append("\n");
-          sb.Append("  SecurityOptions: ").Append(this.SecurityOptions).Append("\n");
-          sb.Append("  ProtocolType: ").Append(this.ProtocolType).Append("\n");
-          sb.Append("  Description: ").Append(this.Description).Append("\n");
-          sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
+          sb.Append("  Discriminator: ").Append(this.Discriminator).Append("\n");
           sb.Append("  ClientId: ").Append(this.ClientId).Append("\n");
           sb.Append("  ClientSecret: ").Append(this.ClientSecret).Append("\n");
           sb.Append("  RefreshToken: ").Append(this.RefreshToken).Append("\n");

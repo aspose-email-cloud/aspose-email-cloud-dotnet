@@ -1,9 +1,9 @@
-# Model.NameValuePair
+# Model.StorageFileRqOfEmailClientAccount
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** | Property name              | [optional] 
-**Value** | **string** | Property value              | [optional] 
+**Value** | [**EmailClientAccount**](EmailClientAccount.md) |  | [optional] 
+**StorageFile** | [**StorageFileLocation**](StorageFileLocation.md) |  | [optional] 
 
 
 

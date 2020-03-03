@@ -1,11 +1,10 @@
-# Model.NameValuePair
+# Model.EmailClientAccountPasswordCredentials
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** | Property name              | [optional] 
-**Value** | **string** | Property value              | [optional] 
+**Password** | **string** | Email client account password              | 
 
-
+ Parent class: [EmailClientAccountCredentials](EmailClientAccountCredentials.md)
 
 [[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 

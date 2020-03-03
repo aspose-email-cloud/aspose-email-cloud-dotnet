@@ -1,9 +1,9 @@
-# Model.NameValuePair
+# Model.EmailClientAccountCredentials
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** | Property name              | [optional] 
-**Value** | **string** | Property value              | [optional] 
+**Login** | **string** | Email client account login              | 
+**Discriminator** | **string** |  | 
 
 
 

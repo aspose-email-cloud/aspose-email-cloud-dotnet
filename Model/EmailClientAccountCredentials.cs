@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="NameValuePair.cs">
+// <copyright company="Aspose" file="EmailClientAccountCredentials.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,30 +33,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Name-Value property             
+    /// Represents email client account credentials             
     /// </summary>
-    public class NameValuePair 
+    public class EmailClientAccountCredentials 
     {
         /// <summary>
-        /// Property name             
+        /// Email client account login             
         /// </summary>  
-        public string Name { get; set; }
+        public string Login { get; set; }
 
         /// <summary>
-        /// Property value             
+        /// Gets or sets Discriminator
         /// </summary>  
-        public string Value { get; set; }
+        public string Discriminator { get; set; }
 
-        /// <summary>NameValuePair constructor</summary>
-        public NameValuePair() {}
+        /// <summary>EmailClientAccountCredentials constructor</summary>
+        public EmailClientAccountCredentials() {}
 
-        /// <summary>NameValuePair constructor</summary>
-        /// <param name="name">Property name             </param>
-        /// <param name="value">Property value             </param>
-        public NameValuePair(string name, string value)
+        /// <summary>EmailClientAccountCredentials constructor</summary>
+        /// <param name="login">Email client account login             </param>
+        /// <param name="discriminator"></param>
+        public EmailClientAccountCredentials(string login, string discriminator)
         {
-            Name = name;
-            Value = value;
+            Login = login;
+            Discriminator = discriminator;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -65,9 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class NameValuePair {\n");
-          sb.Append("  Name: ").Append(this.Name).Append("\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class EmailClientAccountCredentials {\n");
+          sb.Append("  Login: ").Append(this.Login).Append("\n");
+          sb.Append("  Discriminator: ").Append(this.Discriminator).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

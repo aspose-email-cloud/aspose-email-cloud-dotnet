@@ -91,14 +91,14 @@ namespace Aspose.Email.Cloud.Sdk
         private class JsonTypeDeriveConverter : JsonConverter
         {
             private const string TypeProperty = "Type";
-            private const string DerivedTypeProperty = "DerivedType";
+            private const string DiscriminatorProperty = "Discriminator";
             private static Dictionary<string, Type> models;
 
             public override bool CanConvert(Type objectType)
             {
                 return 
                     objectType.GetProperty(TypeProperty) != null ||
-                    objectType.GetProperty(DerivedTypeProperty) != null;
+                    objectType.GetProperty(DiscriminatorProperty) != null;
             }
 
             public override object ReadJson(
@@ -132,8 +132,8 @@ namespace Aspose.Email.Cloud.Sdk
                 var derivedTypeName = string.Empty;
                 foreach (var property in properties)
                 {
-                    if (!property.Name.Equals(TypeProperty, StringComparison.InvariantCultureIgnoreCase) ||
-                        !property.Name.Equals(DerivedTypeProperty, StringComparison.InvariantCultureIgnoreCase))
+                    if (!property.Name.Equals(TypeProperty, StringComparison.InvariantCultureIgnoreCase) &&
+                        !property.Name.Equals(DiscriminatorProperty, StringComparison.InvariantCultureIgnoreCase))
                     {
                         continue;
                     }
