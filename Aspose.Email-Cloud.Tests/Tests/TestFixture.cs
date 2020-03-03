@@ -451,6 +451,35 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             Assert.IsFalse(regular.Value);
         }
 
+        [Test]
+        [Pipeline]
+        public async Task EmailClientAccountTest()
+        {
+            var emailClientAccount = new EmailClientAccount
+            {
+                Host = "smtp.gmail.com",
+                Port = 511,
+                ProtocolType = "SMTP",
+                SecurityOptions = "SSLAuto",
+                Credentials = new EmailClientAccountPasswordCredentials
+                {
+                    Login = "example@gmail.com",
+                    Password = "password"
+                }
+            };
+            var fileName = $"{Guid.NewGuid().ToString()}.account";
+            await emailApi.SaveEmailClientAccountAsync(new SaveEmailClientAccountRequest(
+                new StorageFileRqOfEmailClientAccount(
+                    emailClientAccount,
+                    new StorageFileLocation(StorageName, folder, fileName))));
+            var response = await emailApi.GetEmailClientAccountAsync(
+                new GetEmailClientAccountRequest(
+                    fileName, folder, StorageName));
+            Assert.IsTrue(response.Credentials.GetType() ==
+                          typeof(EmailClientAccountPasswordCredentials));
+            Assert.AreEqual(emailClientAccount.Host, response.Host);
+        }
+
         private static string FileToBase64(string filePath)
         {
             var bytes = File.ReadAllBytes(filePath);

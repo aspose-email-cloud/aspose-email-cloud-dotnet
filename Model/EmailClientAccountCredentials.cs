@@ -45,7 +45,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Gets or sets Discriminator
         /// </summary>  
-        public string Discriminator { get; set; }
+        
+        public string Discriminator
+        {
+            get { return GetType().Name; }
+            set { /*do nothing*/}
+        }
 
         /// <summary>EmailClientAccountCredentials constructor</summary>
         public EmailClientAccountCredentials() {}
