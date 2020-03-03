@@ -42,8 +42,8 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Initializes a new instance of the <see cref="AiNameGenderizeRequest"/> class.
         /// </summary>
         /// <param name="name">A name to parse (required)</param>
-        /// <param name="language">An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)</param>
-        /// <param name="location">A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France</param>
+        /// <param name="language">An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)             </param>
+        /// <param name="location">A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France             </param>
         /// <param name="encoding">A character encoding name</param>
         /// <param name="script">A writing system code; starts with the ISO-15924 script name</param>
         /// <param name="style">Name writing style. Enum, available values: Formal, Informal, Legal, Academic</param>
@@ -63,12 +63,12 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string name { get; set; }
 
         /// <summary>
-        /// An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \"it\" or \"ita\" for Italian)
+        /// An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \"it\" or \"ita\" for Italian)             
         /// </summary>
         public string language { get; set; }
 
         /// <summary>
-        /// A geographic code such as an ISO-3166 two letter country code, for example \"FR\" for France
+        /// A geographic code such as an ISO-3166 two letter country code, for example \"FR\" for France             
         /// </summary>
         public string location { get; set; }
 
