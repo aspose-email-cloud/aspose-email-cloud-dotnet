@@ -5230,7 +5230,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.              
         /// </summary>
         /// <param name="request">Request. <see cref="GetEmailClientMultiAccountRequest" /></param>
-        public void GetEmailClientMultiAccount(Model.Requests.GetEmailClientMultiAccountRequest request)
+        /// <returns><see cref="EmailClientMultiAccount"/></returns>
+        public EmailClientMultiAccount GetEmailClientMultiAccount(Model.Requests.GetEmailClientMultiAccountRequest request)
         {
             // verify the required parameter 'name' is set
             if (request.name == null)
@@ -5262,12 +5263,18 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            apiInvoker.InvokeApi(
+            var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailClientMultiAccount>(response);
+            }
+
+            return null;
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -5275,7 +5282,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.              
         /// </summary>
         /// <param name="request">Request. <see cref="GetEmailClientMultiAccountRequest" /></param>
-        public async Task GetEmailClientMultiAccountAsync(Model.Requests.GetEmailClientMultiAccountRequest request)
+        /// <returns><see cref="EmailClientMultiAccount"/></returns>
+        public async Task<EmailClientMultiAccount> GetEmailClientMultiAccountAsync(Model.Requests.GetEmailClientMultiAccountRequest request)
         {
             // verify the required parameter 'name' is set
             if (request.name == null)
@@ -5307,12 +5315,18 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            await apiInvoker.InvokeApiAsync(
+            var response = await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "GET",
                 null,
                 null,
                 null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailClientMultiAccount>(response);
+            }
+
+            return null;
         }
         #endif
 

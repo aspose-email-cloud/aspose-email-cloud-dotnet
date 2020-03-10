@@ -3852,14 +3852,14 @@ Name | Type | Description  | Notes
 # **GetEmailClientMultiAccount**
 
 ```csharp
-void GetEmailClientMultiAccount(GetEmailClientMultiAccountRequest request)
+EmailClientMultiAccount GetEmailClientMultiAccount(GetEmailClientMultiAccountRequest request)
 ```
 
 Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
 
 ### Return type
 
-void (empty response body)
+[**EmailClientMultiAccount**](EmailClientMultiAccount.md)
 
 ### Request Parameters
 ```csharp
@@ -3881,7 +3881,7 @@ Name | Type | Description  | Notes
 # **GetEmailClientMultiAccountAsync**
 
 ```csharp
-async Task GetEmailClientMultiAccountAsync(GetEmailClientMultiAccountRequest request)
+async Task<EmailClientMultiAccount> GetEmailClientMultiAccountAsync(GetEmailClientMultiAccountRequest request)
 ```
 
 Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
@@ -3890,7 +3890,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task (empty response body)
+Task<[**EmailClientMultiAccount**](EmailClientMultiAccount.md)>
 
 ### Request Parameters
 ```csharp
