@@ -3848,6 +3848,66 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getemailclientmultiaccount"></a>
+# **GetEmailClientMultiAccount**
+
+```csharp
+void GetEmailClientMultiAccount(GetEmailClientMultiAccountRequest request)
+```
+
+Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new GetEmailClientMultiAccountRequest(
+    name,
+    folder,
+    storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| File name on storage | 
+ **folder** | **string**| Folder on storage | 
+ **storage** | **string**| Storage name | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailclientmultiaccount"></a>
+# **GetEmailClientMultiAccountAsync**
+
+```csharp
+async Task GetEmailClientMultiAccountAsync(GetEmailClientMultiAccountRequest request)
+```
+
+Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new GetEmailClientMultiAccountRequest(
+    name,
+    folder,
+    storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| File name on storage | 
+ **folder** | **string**| Folder on storage | 
+ **storage** | **string**| Storage name | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getemailmodel"></a>
 # **GetEmailModel**
 
@@ -5041,6 +5101,58 @@ new SaveEmailClientAccountRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **request** | [**StorageFileRqOfEmailClientAccount**](StorageFileRqOfEmailClientAccount.md)| Email account information | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="saveemailclientmultiaccount"></a>
+# **SaveEmailClientMultiAccount**
+
+```csharp
+void SaveEmailClientMultiAccount(SaveEmailClientMultiAccountRequest request)
+```
+
+Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SaveEmailClientMultiAccountRequest(
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request** | [**StorageFileRqOfEmailClientMultiAccount**](StorageFileRqOfEmailClientMultiAccount.md)| Email accounts information | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="saveemailclientmultiaccount"></a>
+# **SaveEmailClientMultiAccountAsync**
+
+```csharp
+async Task SaveEmailClientMultiAccountAsync(SaveEmailClientMultiAccountRequest request)
+```
+
+Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SaveEmailClientMultiAccountRequest(
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request** | [**StorageFileRqOfEmailClientMultiAccount**](StorageFileRqOfEmailClientMultiAccount.md)| Email accounts information | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

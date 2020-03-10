@@ -132,6 +132,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetEmailAttachmentAsync**](EmailApi.md#getemailattachmentasync) | **GET** /email/{fileName}/attachments/{attachment} | Get email attachment by name             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailClientAccount**](EmailApi.md#getemailclientaccount) | **GET** /email/client/email-client-account | Get email client account from storage             
 *EmailApi* | [**GetEmailClientAccountAsync**](EmailApi.md#getemailclientaccountasync) | **GET** /email/client/email-client-account | Get email client account from storage             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetEmailClientMultiAccount**](EmailApi.md#getemailclientmultiaccount) | **GET** /email/client/multi-account | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
+*EmailApi* | [**GetEmailClientMultiAccountAsync**](EmailApi.md#getemailclientmultiaccountasync) | **GET** /email/client/multi-account | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailModel**](EmailApi.md#getemailmodel) | **GET** /email/model/{format}/{name} | Get email document.             
 *EmailApi* | [**GetEmailModelAsync**](EmailApi.md#getemailmodelasync) | **GET** /email/model/{format}/{name} | Get email document.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailModelList**](EmailApi.md#getemailmodellist) | **GET** /email/model/{format} | Get email list from storage folder.             
@@ -170,6 +172,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**SaveContactModelAsync**](EmailApi.md#savecontactmodelasync) | **PUT** /email/ContactModel/{format}/{name} | Save contact.             . Not available on .NETFramework v2.0
 *EmailApi* | [**SaveEmailClientAccount**](EmailApi.md#saveemailclientaccount) | **PUT** /email/client/email-client-account | Create email client account file (*.account) with any of supported credentials             
 *EmailApi* | [**SaveEmailClientAccountAsync**](EmailApi.md#saveemailclientaccountasync) | **PUT** /email/client/email-client-account | Create email client account file (*.account) with any of supported credentials             . Not available on .NETFramework v2.0
+*EmailApi* | [**SaveEmailClientMultiAccount**](EmailApi.md#saveemailclientmultiaccount) | **PUT** /email/client/multi-account | Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
+*EmailApi* | [**SaveEmailClientMultiAccountAsync**](EmailApi.md#saveemailclientmultiaccountasync) | **PUT** /email/client/multi-account | Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
 *EmailApi* | [**SaveEmailModel**](EmailApi.md#saveemailmodel) | **PUT** /email/model/{format}/{name} | Save email document.             
 *EmailApi* | [**SaveEmailModelAsync**](EmailApi.md#saveemailmodelasync) | **PUT** /email/model/{format}/{name} | Save email document.             . Not available on .NETFramework v2.0
 *EmailApi* | [**SaveMailAccount**](EmailApi.md#savemailaccount) | **POST** /email/client/SaveMailAccount | Create email account file (*.account) with login/password authentication             
@@ -237,6 +241,7 @@ Class | Method | HTTP request | Description
  - [Model.EmailAddress](EmailAddress.md)
  - [Model.EmailClientAccount](EmailClientAccount.md)
  - [Model.EmailClientAccountCredentials](EmailClientAccountCredentials.md)
+ - [Model.EmailClientMultiAccount](EmailClientMultiAccount.md)
  - [Model.EmailDocument](EmailDocument.md)
  - [Model.EmailDocumentResponse](EmailDocumentResponse.md)
  - [Model.EmailDto](EmailDto.md)
@@ -287,6 +292,7 @@ Class | Method | HTTP request | Description
  - [Model.StorageExist](StorageExist.md)
  - [Model.StorageFile](StorageFile.md)
  - [Model.StorageFileRqOfEmailClientAccount](StorageFileRqOfEmailClientAccount.md)
+ - [Model.StorageFileRqOfEmailClientMultiAccount](StorageFileRqOfEmailClientMultiAccount.md)
  - [Model.StorageFolderLocation](StorageFolderLocation.md)
  - [Model.StorageModelOfCalendarDto](StorageModelOfCalendarDto.md)
  - [Model.StorageModelOfContactDto](StorageModelOfContactDto.md)
