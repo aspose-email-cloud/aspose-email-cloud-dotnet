@@ -439,6 +439,111 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 .First(config => config.ProtocolType == "SMTP").Host);
         }
 
+        [Test]
+        [Pipeline]
+        public async Task IsDisposableEmailTest()
+        {
+            var disposable = await emailApi.IsEmailAddressDisposableAsync(
+                new IsEmailAddressDisposableRequest("example@mailcatch.com"));
+            Assert.IsTrue(disposable.Value);
+            var regular = await emailApi.IsEmailAddressDisposableAsync(
+                new IsEmailAddressDisposableRequest("example@gmail.com"));
+            Assert.IsFalse(regular.Value);
+        }
+
+        [Test]
+        [Pipeline]
+        public async Task EmailClientAccountTest()
+        {
+            var emailClientAccount = new EmailClientAccount
+            {
+                Host = "smtp.gmail.com",
+                Port = 511,
+                ProtocolType = "SMTP",
+                SecurityOptions = "SSLAuto",
+                Credentials = new EmailClientAccountPasswordCredentials
+                {
+                    Login = "example@gmail.com",
+                    Password = "password"
+                }
+            };
+            var fileName = $"{Guid.NewGuid().ToString()}.account";
+            await emailApi.SaveEmailClientAccountAsync(new SaveEmailClientAccountRequest(
+                new StorageFileRqOfEmailClientAccount(
+                    emailClientAccount,
+                    new StorageFileLocation(StorageName, folder, fileName))));
+            var response = await emailApi.GetEmailClientAccountAsync(
+                new GetEmailClientAccountRequest(
+                    fileName, folder, StorageName));
+            Assert.IsTrue(response.Credentials.GetType() ==
+                          typeof(EmailClientAccountPasswordCredentials));
+            Assert.AreEqual(emailClientAccount.Host, response.Host);
+        }
+
+        [Test]
+        [Pipeline]
+        public async Task EmailClientMultiAccountTest()
+        {
+            var multiAccount = new EmailClientMultiAccount
+            {
+                ReceiveAccounts = new List<EmailClientAccount>
+                {
+                    new EmailClientAccount
+                    {
+                        Host = "imap.gmail.com",
+                        Port = 993,
+                        ProtocolType = "IMAP",
+                        SecurityOptions = "SSLAuto",
+                        Credentials = new EmailClientAccountOauthCredentials
+                        {
+                            Login = "example@gmail.com",
+                            ClientId = "client-id",
+                            ClientSecret = "clientSecret",
+                            RefreshToken = "refreshToken"
+                        }
+                    },
+                    new EmailClientAccount
+                    {
+                        Host = "exchange.outlook.com",
+                        Port = 443,
+                        ProtocolType = "EWS",
+                        SecurityOptions = "SSLAuto",
+                        Credentials = new EmailClientAccountPasswordCredentials
+                        {
+                            Login = "example@outlook.com",
+                            Password = "password"
+                        }
+                    }
+                },
+                SendAccount = new EmailClientAccount
+                {
+                    Host = "smtp.gmail.com",
+                    Port = 465,
+                    ProtocolType = "SMTP",
+                    SecurityOptions = "SSLAuto",
+                    Credentials = new EmailClientAccountOauthCredentials
+                    {
+                        Login = "example@gmail.com",
+                        ClientId = "client-id",
+                        ClientSecret = "clientSecret",
+                        RefreshToken = "refreshToken"
+                    }
+                }
+            };
+            var fileName = $"{Guid.NewGuid()}.multi.account";
+            await emailApi.SaveEmailClientMultiAccountAsync(
+                new SaveEmailClientMultiAccountRequest(
+                    new StorageFileRqOfEmailClientMultiAccount(
+                        multiAccount,
+                        new StorageFileLocation(StorageName, folder, fileName))));
+            var multiAccountFromStorage = await emailApi.GetEmailClientMultiAccountAsync(
+                new GetEmailClientMultiAccountRequest(
+                    fileName, folder, StorageName));
+            Assert.AreEqual(2, multiAccountFromStorage.ReceiveAccounts.Count);
+            Assert.AreEqual(multiAccount.SendAccount.Credentials.Discriminator,
+                multiAccountFromStorage.SendAccount.Credentials.Discriminator);
+        }
+
         private static string FileToBase64(string filePath)
         {
             var bytes = File.ReadAllBytes(filePath);

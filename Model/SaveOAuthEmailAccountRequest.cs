@@ -52,6 +52,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string RefreshToken { get; set; }
 
+        /// <summary>
+        /// The url to obtain access token. If not specified, will try to discover from email account host.             
+        /// </summary>  
+        public string RequestUrl { get; set; }
+
         /// <summary>SaveOAuthEmailAccountRequest constructor</summary>
         public SaveOAuthEmailAccountRequest() {}
 
@@ -59,14 +64,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="host">Email account host             </param>
         /// <param name="port">Email account port             </param>
         /// <param name="login">Email account login             </param>
-        /// <param name="securityOptions">Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
+        /// <param name="securityOptions">Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
         /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
         /// <param name="description">Email account description             </param>
         /// <param name="storageFile">A storage file location info to store email account             </param>
         /// <param name="clientId">OAuth client identifier             </param>
         /// <param name="clientSecret">OAuth client secret             </param>
         /// <param name="refreshToken">OAuth refresh token             </param>
-        public SaveOAuthEmailAccountRequest(string host, int? port, string login, string securityOptions, string protocolType, string description, StorageFileLocation storageFile, string clientId, string clientSecret, string refreshToken)
+        /// <param name="requestUrl">The url to obtain access token. If not specified, will try to discover from email account host.             </param>
+        public SaveOAuthEmailAccountRequest(string host, int? port, string login, string securityOptions, string protocolType, string description, StorageFileLocation storageFile, string clientId, string clientSecret, string refreshToken, string requestUrl)
         {
             Host = host;
             Port = port;
@@ -78,6 +84,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
             ClientId = clientId;
             ClientSecret = clientSecret;
             RefreshToken = refreshToken;
+            RequestUrl = requestUrl;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -97,6 +104,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  ClientId: ").Append(this.ClientId).Append("\n");
           sb.Append("  ClientSecret: ").Append(this.ClientSecret).Append("\n");
           sb.Append("  RefreshToken: ").Append(this.RefreshToken).Append("\n");
+          sb.Append("  RequestUrl: ").Append(this.RequestUrl).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

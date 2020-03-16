@@ -5123,6 +5123,214 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Get email client account from storage              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailClientAccountRequest" /></param>
+        /// <returns><see cref="EmailClientAccount"/></returns>
+        public EmailClientAccount GetEmailClientAccount(Model.Requests.GetEmailClientAccountRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetEmailClientAccount");
+            }
+
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling GetEmailClientAccount");
+            }
+
+            // verify the required parameter 'storage' is set
+            if (request.storage == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'storage' when calling GetEmailClientAccount");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/email-client-account";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailClientAccount>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get email client account from storage              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailClientAccountRequest" /></param>
+        /// <returns><see cref="EmailClientAccount"/></returns>
+        public async Task<EmailClientAccount> GetEmailClientAccountAsync(Model.Requests.GetEmailClientAccountRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetEmailClientAccount");
+            }
+
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling GetEmailClientAccount");
+            }
+
+            // verify the required parameter 'storage' is set
+            if (request.storage == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'storage' when calling GetEmailClientAccount");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/email-client-account";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailClientAccount>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailClientMultiAccountRequest" /></param>
+        /// <returns><see cref="EmailClientMultiAccount"/></returns>
+        public EmailClientMultiAccount GetEmailClientMultiAccount(Model.Requests.GetEmailClientMultiAccountRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetEmailClientMultiAccount");
+            }
+
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling GetEmailClientMultiAccount");
+            }
+
+            // verify the required parameter 'storage' is set
+            if (request.storage == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'storage' when calling GetEmailClientMultiAccount");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/multi-account";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailClientMultiAccount>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailClientMultiAccountRequest" /></param>
+        /// <returns><see cref="EmailClientMultiAccount"/></returns>
+        public async Task<EmailClientMultiAccount> GetEmailClientMultiAccountAsync(Model.Requests.GetEmailClientMultiAccountRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetEmailClientMultiAccount");
+            }
+
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling GetEmailClientMultiAccount");
+            }
+
+            // verify the required parameter 'storage' is set
+            if (request.storage == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'storage' when calling GetEmailClientMultiAccount");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/multi-account";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailClientMultiAccount>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Get email document.              
         /// </summary>
         /// <param name="request">Request. <see cref="GetEmailModelRequest" /></param>
@@ -5833,6 +6041,78 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Check email address is disposable              
+        /// </summary>
+        /// <param name="request">Request. <see cref="IsEmailAddressDisposableRequest" /></param>
+        /// <returns><see cref="ValueTOfBoolean"/></returns>
+        public ValueTOfBoolean IsEmailAddressDisposable(Model.Requests.IsEmailAddressDisposableRequest request)
+        {
+            // verify the required parameter 'address' is set
+            if (request.address == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'address' when calling IsEmailAddressDisposable");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/disposable/isDisposable/{address}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "address", request.address);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ValueTOfBoolean>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Check email address is disposable              
+        /// </summary>
+        /// <param name="request">Request. <see cref="IsEmailAddressDisposableRequest" /></param>
+        /// <returns><see cref="ValueTOfBoolean"/></returns>
+        public async Task<ValueTOfBoolean> IsEmailAddressDisposableAsync(Model.Requests.IsEmailAddressDisposableRequest request)
+        {
+            // verify the required parameter 'address' is set
+            if (request.address == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'address' when calling IsEmailAddressDisposable");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/disposable/isDisposable/{address}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "address", request.address);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ValueTOfBoolean>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Get folders list in email account              
         /// </summary>
         /// <param name="request">Request. <see cref="ListEmailFoldersRequest" /></param>
@@ -6525,6 +6805,122 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
             var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
+        /// Create email client account file (*.account) with any of supported credentials              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveEmailClientAccountRequest" /></param>
+        public void SaveEmailClientAccount(Model.Requests.SaveEmailClientAccountRequest request)
+        {
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'request' when calling SaveEmailClientAccount");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/email-client-account";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Create email client account file (*.account) with any of supported credentials              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveEmailClientAccountRequest" /></param>
+        public async Task SaveEmailClientAccountAsync(Model.Requests.SaveEmailClientAccountRequest request)
+        {
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'request' when calling SaveEmailClientAccount");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/email-client-account";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
+        /// Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveEmailClientMultiAccountRequest" /></param>
+        public void SaveEmailClientMultiAccount(Model.Requests.SaveEmailClientMultiAccountRequest request)
+        {
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'request' when calling SaveEmailClientMultiAccount");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/multi-account";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveEmailClientMultiAccountRequest" /></param>
+        public async Task SaveEmailClientMultiAccountAsync(Model.Requests.SaveEmailClientMultiAccountRequest request)
+        {
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'request' when calling SaveEmailClientMultiAccount");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/multi-account";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
             await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "PUT",

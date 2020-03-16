@@ -58,7 +58,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public int? Port { get; set; }
 
         /// <summary>
-        /// Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
+        /// Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
         /// </summary>  
         public string SocketType { get; set; }
 
@@ -85,7 +85,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
         /// <param name="host">Email account host.             </param>
         /// <param name="port">Port.             </param>
-        /// <param name="socketType">Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
+        /// <param name="socketType">Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
         /// <param name="authenticationTypes">Supported authentication types.             </param>
         /// <param name="extraInfo">Extra account information.             </param>
         /// <param name="isValidated">Determines that configuration validated. Set to false if validation skipped.             </param>

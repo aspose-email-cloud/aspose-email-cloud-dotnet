@@ -33,30 +33,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// Name-Value property             
     /// </summary>
     public class NameValuePair 
     {
         /// <summary>
-        /// Gets or sets Value
-        /// </summary>  
-        public string Value { get; set; }
-
-        /// <summary>
-        /// Gets or sets Name
+        /// Property name             
         /// </summary>  
         public string Name { get; set; }
+
+        /// <summary>
+        /// Property value             
+        /// </summary>  
+        public string Value { get; set; }
 
         /// <summary>NameValuePair constructor</summary>
         public NameValuePair() {}
 
         /// <summary>NameValuePair constructor</summary>
-        /// <param name="value"></param>
-        /// <param name="name"></param>
-        public NameValuePair(string value, string name)
+        /// <param name="name">Property name             </param>
+        /// <param name="value">Property value             </param>
+        public NameValuePair(string name, string value)
         {
-            Value = value;
             Name = name;
+            Value = value;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -66,8 +66,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         {
           var sb = new StringBuilder();
           sb.Append("class NameValuePair {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("  Name: ").Append(this.Name).Append("\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
