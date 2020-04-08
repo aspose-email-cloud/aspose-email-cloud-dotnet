@@ -43,7 +43,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// </summary>
         /// <param name="messageId">Message identifier</param>
         /// <param name="firstAccount">Email account</param>
-        /// <param name="secondAccount">Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)             </param>
+        /// <param name="secondAccount">Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
         public FetchEmailModelRequest(string messageId, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null)
@@ -66,7 +66,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string firstAccount { get; set; }
 
         /// <summary>
-        /// Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)             
+        /// Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             
         /// </summary>
         public string secondAccount { get; set; }
 

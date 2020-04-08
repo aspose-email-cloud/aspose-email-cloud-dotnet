@@ -51,8 +51,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DeleteFolderBaseRequest() {}
 
         /// <summary>DeleteFolderBaseRequest constructor</summary>
-        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
-        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="firstAccount">First account storage file name             </param>
+        /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="folder">Folder name             </param>
         /// <param name="deletePermanently">Specifies that folder should be deleted permanently             </param>

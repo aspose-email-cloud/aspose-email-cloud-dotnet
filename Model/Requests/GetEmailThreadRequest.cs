@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ListEmailMessagesRequest.cs">
+// <copyright company="Aspose" file="GetEmailThreadRequest.cs">
 //   Copyright (c) 2018 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,47 +27,38 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ListEmailMessages" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.GetEmailThread" /> operation.
   /// </summary>
-  public class ListEmailMessagesRequest  
+  public class GetEmailThreadRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ListEmailMessagesRequest"/> class.
+        /// Initializes a new instance of the <see cref="GetEmailThreadRequest"/> class.
         /// </summary>
-        public ListEmailMessagesRequest()
+        public GetEmailThreadRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ListEmailMessagesRequest"/> class.
+        /// Initializes a new instance of the <see cref="GetEmailThreadRequest"/> class.
         /// </summary>
-        /// <param name="folder">A folder in email account</param>
-        /// <param name="queryString">A MailQuery search string</param>
+        /// <param name="threadId">Thread identifier</param>
         /// <param name="firstAccount">Email account</param>
         /// <param name="secondAccount">Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
-        /// <param name="recursive">Specifies that should message be searched in subfolders recursively</param>
-        public ListEmailMessagesRequest(string folder, string queryString, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null, bool? recursive = null)
+        public GetEmailThreadRequest(string threadId, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null)
         {
-            this.folder = folder;
-            this.queryString = queryString;
+            this.threadId = threadId;
             this.firstAccount = firstAccount;
             this.secondAccount = secondAccount;
             this.storage = storage;
             this.storageFolder = storageFolder;
-            this.recursive = recursive;
         }
 
         /// <summary>
-        /// A folder in email account
+        /// Thread identifier
         /// </summary>
-        public string folder { get; set; }
-
-        /// <summary>
-        /// A MailQuery search string
-        /// </summary>
-        public string queryString { get; set; }
+        public string threadId { get; set; }
 
         /// <summary>
         /// Email account
@@ -88,10 +79,5 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Folder in storage where account file(s) located
         /// </summary>
         public string storageFolder { get; set; }
-
-        /// <summary>
-        /// Specifies that should message be searched in subfolders recursively
-        /// </summary>
-        public bool? recursive { get; set; }
   }
 }

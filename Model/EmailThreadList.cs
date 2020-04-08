@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="EmailDtoList.cs">
+// <copyright company="Aspose" file="EmailThreadList.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,16 +33,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// List of email documents from storage             
+    /// List of email threads             
     /// </summary>
-    public class EmailDtoList : ListResponseOfStorageModelOfEmailDto 
+    public class EmailThreadList : ListResponseOfEmailThread 
     {
-        /// <summary>EmailDtoList constructor</summary>
-        public EmailDtoList() {}
+        /// <summary>EmailThreadList constructor</summary>
+        public EmailThreadList() {}
 
-        /// <summary>EmailDtoList constructor</summary>
+        /// <summary>EmailThreadList constructor</summary>
         /// <param name="value"></param>
-        public EmailDtoList(List<StorageModelOfEmailDto> value)
+        public EmailThreadList(List<EmailThread> value)
         {
             Value = value;
         }
@@ -53,7 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class EmailDtoList {\n");
+          sb.Append("class EmailThreadList {\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

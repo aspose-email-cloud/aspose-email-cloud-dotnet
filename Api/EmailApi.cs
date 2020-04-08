@@ -5595,6 +5595,100 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailThreadRequest" /></param>
+        /// <returns><see cref="EmailThread"/></returns>
+        public EmailThread GetEmailThread(Model.Requests.GetEmailThreadRequest request)
+        {
+            // verify the required parameter 'threadId' is set
+            if (request.threadId == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'threadId' when calling GetEmailThread");
+            }
+
+            // verify the required parameter 'firstAccount' is set
+            if (request.firstAccount == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'firstAccount' when calling GetEmailThread");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/threads/{threadId}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "threadId", request.threadId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailThread>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailThreadRequest" /></param>
+        /// <returns><see cref="EmailThread"/></returns>
+        public async Task<EmailThread> GetEmailThreadAsync(Model.Requests.GetEmailThreadRequest request)
+        {
+            // verify the required parameter 'threadId' is set
+            if (request.threadId == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'threadId' when calling GetEmailThread");
+            }
+
+            // verify the required parameter 'firstAccount' is set
+            if (request.firstAccount == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'firstAccount' when calling GetEmailThread");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/threads/{threadId}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "threadId", request.threadId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailThread>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Get file versions 
         /// </summary>
         /// <param name="request">Request. <see cref="GetFileVersionsRequest" /></param>
@@ -6410,6 +6504,102 @@ namespace Aspose.Email.Cloud.Sdk.Api
             if (response != null)
             {
                 return SerializationHelper.Deserialize<ListResponseOfEmailDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get message threads from folder. All messages are partly fetched (without email body and other fields)              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ListEmailThreadsRequest" /></param>
+        /// <returns><see cref="EmailThreadList"/></returns>
+        public EmailThreadList ListEmailThreads(Model.Requests.ListEmailThreadsRequest request)
+        {
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling ListEmailThreads");
+            }
+
+            // verify the required parameter 'firstAccount' is set
+            if (request.firstAccount == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'firstAccount' when calling ListEmailThreads");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/threads";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "updateFolderCache", request.updateFolderCache);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailThreadList>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get message threads from folder. All messages are partly fetched (without email body and other fields)              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ListEmailThreadsRequest" /></param>
+        /// <returns><see cref="EmailThreadList"/></returns>
+        public async Task<EmailThreadList> ListEmailThreadsAsync(Model.Requests.ListEmailThreadsRequest request)
+        {
+            // verify the required parameter 'folder' is set
+            if (request.folder == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'folder' when calling ListEmailThreads");
+            }
+
+            // verify the required parameter 'firstAccount' is set
+            if (request.firstAccount == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'firstAccount' when calling ListEmailThreads");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/threads";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "updateFolderCache", request.updateFolderCache);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailThreadList>(response);
             }
 
             return null;

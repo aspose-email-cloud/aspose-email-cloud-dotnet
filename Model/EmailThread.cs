@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="EmailDtoList.cs">
+// <copyright company="Aspose" file="EmailThread.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,18 +33,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// List of email documents from storage             
+    /// Email messages thread             
     /// </summary>
-    public class EmailDtoList : ListResponseOfStorageModelOfEmailDto 
+    public class EmailThread 
     {
-        /// <summary>EmailDtoList constructor</summary>
-        public EmailDtoList() {}
+        /// <summary>
+        /// Thread identifier             
+        /// </summary>  
+        public string Id { get; set; }
 
-        /// <summary>EmailDtoList constructor</summary>
-        /// <param name="value"></param>
-        public EmailDtoList(List<StorageModelOfEmailDto> value)
+        /// <summary>
+        /// Thread subject             
+        /// </summary>  
+        public string Subject { get; set; }
+
+        /// <summary>
+        /// List of messages in thread             
+        /// </summary>  
+        public List<EmailDto> Messages { get; set; }
+
+        /// <summary>EmailThread constructor</summary>
+        public EmailThread() {}
+
+        /// <summary>EmailThread constructor</summary>
+        /// <param name="id">Thread identifier             </param>
+        /// <param name="subject">Thread subject             </param>
+        /// <param name="messages">List of messages in thread             </param>
+        public EmailThread(string id, string subject, List<EmailDto> messages)
         {
-            Value = value;
+            Id = id;
+            Subject = subject;
+            Messages = messages;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -53,8 +72,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class EmailDtoList {\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class EmailThread {\n");
+          sb.Append("  Id: ").Append(this.Id).Append("\n");
+          sb.Append("  Subject: ").Append(this.Subject).Append("\n");
+          sb.Append("  Messages: ").Append(this.Messages).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

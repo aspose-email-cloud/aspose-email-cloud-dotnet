@@ -2727,7 +2727,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -2762,7 +2762,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -2795,7 +2795,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -2830,7 +2830,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -4104,6 +4104,74 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getemailthread"></a>
+# **GetEmailThread**
+
+```csharp
+EmailThread GetEmailThread(GetEmailThreadRequest request)
+```
+
+Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+
+### Return type
+
+[**EmailThread**](EmailThread.md)
+
+### Request Parameters
+```csharp
+new GetEmailThreadRequest(
+    threadId,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread identifier | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailthread"></a>
+# **GetEmailThreadAsync**
+
+```csharp
+async Task<EmailThread> GetEmailThreadAsync(GetEmailThreadRequest request)
+```
+
+Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailThread**](EmailThread.md)>
+
+### Request Parameters
+```csharp
+new GetEmailThreadRequest(
+    threadId,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread identifier | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getfileversions"></a>
 # **GetFileVersions**
 
@@ -4542,7 +4610,7 @@ new ListEmailFoldersRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
@@ -4577,7 +4645,7 @@ new ListEmailFoldersRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
@@ -4616,7 +4684,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| A folder in email account | 
  **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
@@ -4657,7 +4725,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| A folder in email account | 
  **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
@@ -4696,7 +4764,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| A folder in email account | 
  **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
@@ -4737,10 +4805,82 @@ Name | Type | Description  | Notes
  **folder** | **string**| A folder in email account | 
  **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="listemailthreads"></a>
+# **ListEmailThreads**
+
+```csharp
+EmailThreadList ListEmailThreads(ListEmailThreadsRequest request)
+```
+
+Get message threads from folder. All messages are partly fetched (without email body and other fields)             
+
+### Return type
+
+[**EmailThreadList**](EmailThreadList.md)
+
+### Request Parameters
+```csharp
+new ListEmailThreadsRequest(
+    folder,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder,
+    updateFolderCache=updateFolderCache)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **folder** | **string**| A folder in email account | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+ **updateFolderCache** | **bool?**| This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account              | [optional] [default to true]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="listemailthreads"></a>
+# **ListEmailThreadsAsync**
+
+```csharp
+async Task<EmailThreadList> ListEmailThreadsAsync(ListEmailThreadsRequest request)
+```
+
+Get message threads from folder. All messages are partly fetched (without email body and other fields)             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailThreadList**](EmailThreadList.md)>
+
+### Request Parameters
+```csharp
+new ListEmailThreadsRequest(
+    folder,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder,
+    updateFolderCache=updateFolderCache)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **folder** | **string**| A folder in email account | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+ **updateFolderCache** | **bool?**| This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account              | [optional] [default to true]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

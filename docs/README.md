@@ -140,6 +140,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetEmailModelListAsync**](EmailApi.md#getemailmodellistasync) | **GET** /email/model/{format} | Get email list from storage folder.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailProperty**](EmailApi.md#getemailproperty) | **GET** /email/{fileName}/properties/{propertyName} | Get an email document property by its name             
 *EmailApi* | [**GetEmailPropertyAsync**](EmailApi.md#getemailpropertyasync) | **GET** /email/{fileName}/properties/{propertyName} | Get an email document property by its name             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetEmailThread**](EmailApi.md#getemailthread) | **GET** /email/client/threads/{threadId} | Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+*EmailApi* | [**GetEmailThreadAsync**](EmailApi.md#getemailthreadasync) | **GET** /email/client/threads/{threadId} | Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetFileVersions**](EmailApi.md#getfileversions) | **GET** /email/storage/version/{path} | Get file versions
 *EmailApi* | [**GetFileVersionsAsync**](EmailApi.md#getfileversionsasync) | **GET** /email/storage/version/{path} | Get file versions. Not available on .NETFramework v2.0
 *EmailApi* | [**GetFilesList**](EmailApi.md#getfileslist) | **GET** /email/storage/folder/{path} | Get all files and folders within a folder
@@ -160,6 +162,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**ListEmailMessagesAsync**](EmailApi.md#listemailmessagesasync) | **GET** /email/client/ListMessages | Get messages from folder, filtered by query             . Not available on .NETFramework v2.0
 *EmailApi* | [**ListEmailModels**](EmailApi.md#listemailmodels) | **GET** /email/client/ListMessagesModel | Get messages from folder, filtered by query             
 *EmailApi* | [**ListEmailModelsAsync**](EmailApi.md#listemailmodelsasync) | **GET** /email/client/ListMessagesModel | Get messages from folder, filtered by query             . Not available on .NETFramework v2.0
+*EmailApi* | [**ListEmailThreads**](EmailApi.md#listemailthreads) | **GET** /email/client/threads | Get message threads from folder. All messages are partly fetched (without email body and other fields)             
+*EmailApi* | [**ListEmailThreadsAsync**](EmailApi.md#listemailthreadsasync) | **GET** /email/client/threads | Get message threads from folder. All messages are partly fetched (without email body and other fields)             . Not available on .NETFramework v2.0
 *EmailApi* | [**MoveFile**](EmailApi.md#movefile) | **PUT** /email/storage/file/move/{srcPath} | Move file
 *EmailApi* | [**MoveFileAsync**](EmailApi.md#movefileasync) | **PUT** /email/storage/file/move/{srcPath} | Move file. Not available on .NETFramework v2.0
 *EmailApi* | [**MoveFolder**](EmailApi.md#movefolder) | **PUT** /email/storage/folder/move/{srcPath} | Move folder
@@ -248,6 +252,7 @@ Class | Method | HTTP request | Description
  - [Model.EmailProperties](EmailProperties.md)
  - [Model.EmailProperty](EmailProperty.md)
  - [Model.EmailPropertyResponse](EmailPropertyResponse.md)
+ - [Model.EmailThread](EmailThread.md)
  - [Model.EnumWithCustomOfAssociatedPersonCategory](EnumWithCustomOfAssociatedPersonCategory.md)
  - [Model.EnumWithCustomOfEmailAddressCategory](EnumWithCustomOfEmailAddressCategory.md)
  - [Model.EnumWithCustomOfEventCategory](EnumWithCustomOfEventCategory.md)
@@ -271,6 +276,7 @@ Class | Method | HTTP request | Description
  - [Model.ListResponseOfContactDto](ListResponseOfContactDto.md)
  - [Model.ListResponseOfEmailAccountConfig](ListResponseOfEmailAccountConfig.md)
  - [Model.ListResponseOfEmailDto](ListResponseOfEmailDto.md)
+ - [Model.ListResponseOfEmailThread](ListResponseOfEmailThread.md)
  - [Model.ListResponseOfHierarchicalObject](ListResponseOfHierarchicalObject.md)
  - [Model.ListResponseOfHierarchicalObjectResponse](ListResponseOfHierarchicalObjectResponse.md)
  - [Model.ListResponseOfMailServerFolder](ListResponseOfMailServerFolder.md)
@@ -323,6 +329,7 @@ Class | Method | HTTP request | Description
  - [Model.EmailClientAccountOauthCredentials](EmailClientAccountOauthCredentials.md)
  - [Model.EmailClientAccountPasswordCredentials](EmailClientAccountPasswordCredentials.md)
  - [Model.EmailDtoList](EmailDtoList.md)
+ - [Model.EmailThreadList](EmailThreadList.md)
  - [Model.FileVersion](FileVersion.md)
  - [Model.HierarchicalObject](HierarchicalObject.md)
  - [Model.IndexedHierarchicalObject](IndexedHierarchicalObject.md)

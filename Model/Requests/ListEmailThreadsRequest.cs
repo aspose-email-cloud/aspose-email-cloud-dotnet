@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ListEmailMessagesRequest.cs">
+// <copyright company="Aspose" file="ListEmailThreadsRequest.cs">
 //   Copyright (c) 2018 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,47 +27,40 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ListEmailMessages" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ListEmailThreads" /> operation.
   /// </summary>
-  public class ListEmailMessagesRequest  
+  public class ListEmailThreadsRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ListEmailMessagesRequest"/> class.
+        /// Initializes a new instance of the <see cref="ListEmailThreadsRequest"/> class.
         /// </summary>
-        public ListEmailMessagesRequest()
+        public ListEmailThreadsRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ListEmailMessagesRequest"/> class.
+        /// Initializes a new instance of the <see cref="ListEmailThreadsRequest"/> class.
         /// </summary>
         /// <param name="folder">A folder in email account</param>
-        /// <param name="queryString">A MailQuery search string</param>
         /// <param name="firstAccount">Email account</param>
         /// <param name="secondAccount">Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
-        /// <param name="recursive">Specifies that should message be searched in subfolders recursively</param>
-        public ListEmailMessagesRequest(string folder, string queryString, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null, bool? recursive = null)
+        /// <param name="updateFolderCache">This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account             </param>
+        public ListEmailThreadsRequest(string folder, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null, bool? updateFolderCache = null)
         {
             this.folder = folder;
-            this.queryString = queryString;
             this.firstAccount = firstAccount;
             this.secondAccount = secondAccount;
             this.storage = storage;
             this.storageFolder = storageFolder;
-            this.recursive = recursive;
+            this.updateFolderCache = updateFolderCache;
         }
 
         /// <summary>
         /// A folder in email account
         /// </summary>
         public string folder { get; set; }
-
-        /// <summary>
-        /// A MailQuery search string
-        /// </summary>
-        public string queryString { get; set; }
 
         /// <summary>
         /// Email account
@@ -90,8 +83,8 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string storageFolder { get; set; }
 
         /// <summary>
-        /// Specifies that should message be searched in subfolders recursively
+        /// This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account             
         /// </summary>
-        public bool? recursive { get; set; }
+        public bool? updateFolderCache { get; set; }
   }
 }
