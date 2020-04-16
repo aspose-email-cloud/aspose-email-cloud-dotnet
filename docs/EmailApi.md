@@ -2244,6 +2244,62 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="deleteemailthread"></a>
+# **DeleteEmailThread**
+
+```csharp
+void DeleteEmailThread(DeleteEmailThreadRequest request)
+```
+
+Delete thread by id. All messages from thread will also be deleted             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new DeleteEmailThreadRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread id | 
+ **request** | [**DeleteEmailThreadAccountRq**](DeleteEmailThreadAccountRq.md)| Email account specifier | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="deleteemailthread"></a>
+# **DeleteEmailThreadAsync**
+
+```csharp
+async Task DeleteEmailThreadAsync(DeleteEmailThreadRequest request)
+```
+
+Delete thread by id. All messages from thread will also be deleted             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new DeleteEmailThreadRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread id | 
+ **request** | [**DeleteEmailThreadAccountRq**](DeleteEmailThreadAccountRq.md)| Email account specifier | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="deletefile"></a>
 # **DeleteFile**
 
@@ -4751,8 +4807,8 @@ The query string should have the following view.      The example of a simple ex
 ```csharp
 new ListEmailModelsRequest(
     folder,
-    queryString,
     firstAccount,
+    queryString=queryString,
     secondAccount=secondAccount,
     storage=storage,
     storageFolder=storageFolder,
@@ -4762,8 +4818,8 @@ new ListEmailModelsRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **folder** | **string**| A folder in email account | 
- **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
+ **queryString** | **string**| A MailQuery search string | [optional] 
  **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
@@ -4792,8 +4848,8 @@ Task<[**ListResponseOfEmailDto**](ListResponseOfEmailDto.md)>
 ```csharp
 new ListEmailModelsRequest(
     folder,
-    queryString,
     firstAccount,
+    queryString=queryString,
     secondAccount=secondAccount,
     storage=storage,
     storageFolder=storageFolder,
@@ -4803,8 +4859,8 @@ new ListEmailModelsRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **folder** | **string**| A folder in email account | 
- **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
+ **queryString** | **string**| A MailQuery search string | [optional] 
  **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
@@ -4833,7 +4889,8 @@ new ListEmailThreadsRequest(
     secondAccount=secondAccount,
     storage=storage,
     storageFolder=storageFolder,
-    updateFolderCache=updateFolderCache)
+    updateFolderCache=updateFolderCache,
+    messagesCacheLimit=messagesCacheLimit)
 ```
 
 Name | Type | Description  | Notes
@@ -4844,6 +4901,7 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **updateFolderCache** | **bool?**| This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account              | [optional] [default to true]
+ **messagesCacheLimit** | **int?**| Limit messages cache size if CacheFile is used. Ignored in accounts without limits support              | [optional] [default to 200]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4870,7 +4928,8 @@ new ListEmailThreadsRequest(
     secondAccount=secondAccount,
     storage=storage,
     storageFolder=storageFolder,
-    updateFolderCache=updateFolderCache)
+    updateFolderCache=updateFolderCache,
+    messagesCacheLimit=messagesCacheLimit)
 ```
 
 Name | Type | Description  | Notes
@@ -4881,6 +4940,7 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **updateFolderCache** | **bool?**| This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account              | [optional] [default to true]
+ **messagesCacheLimit** | **int?**| Limit messages cache size if CacheFile is used. Ignored in accounts without limits support              | [optional] [default to 200]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5725,6 +5785,62 @@ new SetEmailReadFlagRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **request** | [**SetMessageReadFlagAccountBaseRequest**](SetMessageReadFlagAccountBaseRequest.md)| Message is read request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="setemailthreadreadflag"></a>
+# **SetEmailThreadReadFlag**
+
+```csharp
+void SetEmailThreadReadFlag(SetEmailThreadReadFlagRequest request)
+```
+
+Mar all messages in thread as read or unread             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SetEmailThreadReadFlagRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread id | 
+ **request** | [**EmailThreadReadFlagRq**](EmailThreadReadFlagRq.md)| Email account specifier and IsRead flag | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="setemailthreadreadflag"></a>
+# **SetEmailThreadReadFlagAsync**
+
+```csharp
+async Task SetEmailThreadReadFlagAsync(SetEmailThreadReadFlagRequest request)
+```
+
+Mar all messages in thread as read or unread             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SetEmailThreadReadFlagRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread id | 
+ **request** | [**EmailThreadReadFlagRq**](EmailThreadReadFlagRq.md)| Email account specifier and IsRead flag | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

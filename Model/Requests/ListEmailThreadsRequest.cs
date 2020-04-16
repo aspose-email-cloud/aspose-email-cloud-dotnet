@@ -47,7 +47,8 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
         /// <param name="updateFolderCache">This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account             </param>
-        public ListEmailThreadsRequest(string folder, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null, bool? updateFolderCache = null)
+        /// <param name="messagesCacheLimit">Limit messages cache size if CacheFile is used. Ignored in accounts without limits support             </param>
+        public ListEmailThreadsRequest(string folder, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null, bool? updateFolderCache = null, int? messagesCacheLimit = null)
         {
             this.folder = folder;
             this.firstAccount = firstAccount;
@@ -55,6 +56,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
             this.storage = storage;
             this.storageFolder = storageFolder;
             this.updateFolderCache = updateFolderCache;
+            this.messagesCacheLimit = messagesCacheLimit;
         }
 
         /// <summary>
@@ -86,5 +88,10 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account             
         /// </summary>
         public bool? updateFolderCache { get; set; }
+
+        /// <summary>
+        /// Limit messages cache size if CacheFile is used. Ignored in accounts without limits support             
+        /// </summary>
+        public int? messagesCacheLimit { get; set; }
   }
 }

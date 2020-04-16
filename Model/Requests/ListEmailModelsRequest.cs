@@ -42,17 +42,17 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Initializes a new instance of the <see cref="ListEmailModelsRequest"/> class.
         /// </summary>
         /// <param name="folder">A folder in email account</param>
-        /// <param name="queryString">A MailQuery search string</param>
         /// <param name="firstAccount">Email account</param>
+        /// <param name="queryString">A MailQuery search string</param>
         /// <param name="secondAccount">Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
         /// <param name="recursive">Specifies that should message be searched in subfolders recursively</param>
-        public ListEmailModelsRequest(string folder, string queryString, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null, bool? recursive = null)
+        public ListEmailModelsRequest(string folder, string firstAccount, string queryString = null, string secondAccount = null, string storage = null, string storageFolder = null, bool? recursive = null)
         {
             this.folder = folder;
-            this.queryString = queryString;
             this.firstAccount = firstAccount;
+            this.queryString = queryString;
             this.secondAccount = secondAccount;
             this.storage = storage;
             this.storageFolder = storageFolder;
@@ -65,14 +65,14 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string folder { get; set; }
 
         /// <summary>
-        /// A MailQuery search string
-        /// </summary>
-        public string queryString { get; set; }
-
-        /// <summary>
         /// Email account
         /// </summary>
         public string firstAccount { get; set; }
+
+        /// <summary>
+        /// A MailQuery search string
+        /// </summary>
+        public string queryString { get; set; }
 
         /// <summary>
         /// Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             

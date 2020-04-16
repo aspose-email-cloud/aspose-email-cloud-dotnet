@@ -80,6 +80,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**DeleteEmailFolderAsync**](EmailApi.md#deleteemailfolderasync) | **DELETE** /email/client/DeleteFolder | Delete a folder in email account             . Not available on .NETFramework v2.0
 *EmailApi* | [**DeleteEmailMessage**](EmailApi.md#deleteemailmessage) | **DELETE** /email/client/DeleteMessage | Delete message from email account by id             
 *EmailApi* | [**DeleteEmailMessageAsync**](EmailApi.md#deleteemailmessageasync) | **DELETE** /email/client/DeleteMessage | Delete message from email account by id             . Not available on .NETFramework v2.0
+*EmailApi* | [**DeleteEmailThread**](EmailApi.md#deleteemailthread) | **DELETE** /email/client/threads/{threadId} | Delete thread by id. All messages from thread will also be deleted             
+*EmailApi* | [**DeleteEmailThreadAsync**](EmailApi.md#deleteemailthreadasync) | **DELETE** /email/client/threads/{threadId} | Delete thread by id. All messages from thread will also be deleted             . Not available on .NETFramework v2.0
 *EmailApi* | [**DeleteFile**](EmailApi.md#deletefile) | **DELETE** /email/storage/file/{path} | Delete file
 *EmailApi* | [**DeleteFileAsync**](EmailApi.md#deletefileasync) | **DELETE** /email/storage/file/{path} | Delete file. Not available on .NETFramework v2.0
 *EmailApi* | [**DeleteFolder**](EmailApi.md#deletefolder) | **DELETE** /email/storage/folder/{path} | Delete folder
@@ -194,6 +196,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**SetEmailPropertyAsync**](EmailApi.md#setemailpropertyasync) | **PUT** /email/{fileName}/properties/{propertyName} | Set email document property value             . Not available on .NETFramework v2.0
 *EmailApi* | [**SetEmailReadFlag**](EmailApi.md#setemailreadflag) | **POST** /email/client/SetReadFlag | Sets \&quot;Message is read\&quot; flag             
 *EmailApi* | [**SetEmailReadFlagAsync**](EmailApi.md#setemailreadflagasync) | **POST** /email/client/SetReadFlag | Sets \&quot;Message is read\&quot; flag             . Not available on .NETFramework v2.0
+*EmailApi* | [**SetEmailThreadReadFlag**](EmailApi.md#setemailthreadreadflag) | **PUT** /email/client/threads/{threadId}/read-flag | Mar all messages in thread as read or unread             
+*EmailApi* | [**SetEmailThreadReadFlagAsync**](EmailApi.md#setemailthreadreadflagasync) | **PUT** /email/client/threads/{threadId}/read-flag | Mar all messages in thread as read or unread             . Not available on .NETFramework v2.0
 *EmailApi* | [**StorageExists**](EmailApi.md#storageexists) | **GET** /email/storage/{storageName}/exist | Check if storage exists
 *EmailApi* | [**StorageExistsAsync**](EmailApi.md#storageexistsasync) | **GET** /email/storage/{storageName}/exist | Check if storage exists. Not available on .NETFramework v2.0
 *EmailApi* | [**UpdateCalendarProperties**](EmailApi.md#updatecalendarproperties) | **PUT** /email/Calendar/{name}/properties | Update calendar file properties             
@@ -321,6 +325,7 @@ Class | Method | HTTP request | Description
  - [Model.CalendarDtoList](CalendarDtoList.md)
  - [Model.ContactDtoList](ContactDtoList.md)
  - [Model.CreateFolderBaseRequest](CreateFolderBaseRequest.md)
+ - [Model.DeleteEmailThreadAccountRq](DeleteEmailThreadAccountRq.md)
  - [Model.DeleteFolderBaseRequest](DeleteFolderBaseRequest.md)
  - [Model.DeleteMessageBaseRequest](DeleteMessageBaseRequest.md)
  - [Model.DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
@@ -330,6 +335,7 @@ Class | Method | HTTP request | Description
  - [Model.EmailClientAccountPasswordCredentials](EmailClientAccountPasswordCredentials.md)
  - [Model.EmailDtoList](EmailDtoList.md)
  - [Model.EmailThreadList](EmailThreadList.md)
+ - [Model.EmailThreadReadFlagRq](EmailThreadReadFlagRq.md)
  - [Model.FileVersion](FileVersion.md)
  - [Model.HierarchicalObject](HierarchicalObject.md)
  - [Model.IndexedHierarchicalObject](IndexedHierarchicalObject.md)
