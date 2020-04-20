@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="EmailThread.cs">
+// <copyright company="Aspose" file="MoveEmailThreadRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,44 +33,29 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Email messages thread             
+    /// Email thread move request             
     /// </summary>
-    public class EmailThread 
+    public class MoveEmailThreadRq : AccountBaseRequest 
     {
         /// <summary>
-        /// Thread identifier             
+        /// Email account folder to move thread to             
         /// </summary>  
-        public string Id { get; set; }
+        public string DestinationFolder { get; set; }
 
-        /// <summary>
-        /// Thread subject             
-        /// </summary>  
-        public string Subject { get; set; }
+        /// <summary>MoveEmailThreadRq constructor</summary>
+        public MoveEmailThreadRq() {}
 
-        /// <summary>
-        /// List of messages in thread             
-        /// </summary>  
-        public List<EmailDto> Messages { get; set; }
-
-        /// <summary>
-        /// Thread folder location             
-        /// </summary>  
-        public string Folder { get; set; }
-
-        /// <summary>EmailThread constructor</summary>
-        public EmailThread() {}
-
-        /// <summary>EmailThread constructor</summary>
-        /// <param name="id">Thread identifier             </param>
-        /// <param name="subject">Thread subject             </param>
-        /// <param name="messages">List of messages in thread             </param>
-        /// <param name="folder">Thread folder location             </param>
-        public EmailThread(string id, string subject, List<EmailDto> messages, string folder)
+        /// <summary>MoveEmailThreadRq constructor</summary>
+        /// <param name="firstAccount">First account storage file name             </param>
+        /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
+        /// <param name="storageFolder">Storage folder location of account files             </param>
+        /// <param name="destinationFolder">Email account folder to move thread to             </param>
+        public MoveEmailThreadRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string destinationFolder)
         {
-            Id = id;
-            Subject = subject;
-            Messages = messages;
-            Folder = folder;
+            FirstAccount = firstAccount;
+            SecondAccount = secondAccount;
+            StorageFolder = storageFolder;
+            DestinationFolder = destinationFolder;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -79,11 +64,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class EmailThread {\n");
-          sb.Append("  Id: ").Append(this.Id).Append("\n");
-          sb.Append("  Subject: ").Append(this.Subject).Append("\n");
-          sb.Append("  Messages: ").Append(this.Messages).Append("\n");
-          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
+          sb.Append("class MoveEmailThreadRq {\n");
+          sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
+          sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
+          sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
+          sb.Append("  DestinationFolder: ").Append(this.DestinationFolder).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

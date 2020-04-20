@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="EmailApi.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -3786,6 +3786,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.messageId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
             var response = apiInvoker.InvokeApi(
@@ -3833,6 +3834,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.messageId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
             var response = await apiInvoker.InvokeApiAsync(
@@ -3880,6 +3882,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.messageId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
             var response = apiInvoker.InvokeApi(
@@ -3927,6 +3930,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.messageId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
             var response = await apiInvoker.InvokeApiAsync(
@@ -6669,6 +6673,138 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Move message to another folder              
+        /// </summary>
+        /// <param name="request">Request. <see cref="MoveEmailMessageRequest" /></param>
+        public void MoveEmailMessage(Model.Requests.MoveEmailMessageRequest request)
+        {
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'request' when calling MoveEmailMessage");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/move";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Move message to another folder              
+        /// </summary>
+        /// <param name="request">Request. <see cref="MoveEmailMessageRequest" /></param>
+        public async Task MoveEmailMessageAsync(Model.Requests.MoveEmailMessageRequest request)
+        {
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'request' when calling MoveEmailMessage");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/move";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
+        /// Move thread to another folder              
+        /// </summary>
+        /// <param name="request">Request. <see cref="MoveEmailThreadRequest" /></param>
+        public void MoveEmailThread(Model.Requests.MoveEmailThreadRequest request)
+        {
+            // verify the required parameter 'threadId' is set
+            if (request.threadId == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'threadId' when calling MoveEmailThread");
+            }
+
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'request' when calling MoveEmailThread");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/threads/{threadId}/move";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "threadId", request.threadId);
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Move thread to another folder              
+        /// </summary>
+        /// <param name="request">Request. <see cref="MoveEmailThreadRequest" /></param>
+        public async Task MoveEmailThreadAsync(Model.Requests.MoveEmailThreadRequest request)
+        {
+            // verify the required parameter 'threadId' is set
+            if (request.threadId == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'threadId' when calling MoveEmailThread");
+            }
+
+            // verify the required parameter 'request' is set
+            if (request.request == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'request' when calling MoveEmailThread");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/threads/{threadId}/move";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "threadId", request.threadId);
+            var postBody = SerializationHelper.Serialize(request.request); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
         /// Move file 
         /// </summary>
         /// <param name="request">Request. <see cref="MoveFileRequest" /></param>
@@ -7725,7 +7861,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Mar all messages in thread as read or unread              
+        /// Mark all messages in thread as read or unread              
         /// </summary>
         /// <param name="request">Request. <see cref="SetEmailThreadReadFlagRequest" /></param>
         public void SetEmailThreadReadFlag(Model.Requests.SetEmailThreadReadFlagRequest request)
@@ -7762,7 +7898,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Mar all messages in thread as read or unread              
+        /// Mark all messages in thread as read or unread              
         /// </summary>
         /// <param name="request">Request. <see cref="SetEmailThreadReadFlagRequest" /></param>
         public async Task SetEmailThreadReadFlagAsync(Model.Requests.SetEmailThreadReadFlagRequest request)

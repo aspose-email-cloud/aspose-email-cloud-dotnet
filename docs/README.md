@@ -166,6 +166,10 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**ListEmailModelsAsync**](EmailApi.md#listemailmodelsasync) | **GET** /email/client/ListMessagesModel | Get messages from folder, filtered by query             . Not available on .NETFramework v2.0
 *EmailApi* | [**ListEmailThreads**](EmailApi.md#listemailthreads) | **GET** /email/client/threads | Get message threads from folder. All messages are partly fetched (without email body and other fields)             
 *EmailApi* | [**ListEmailThreadsAsync**](EmailApi.md#listemailthreadsasync) | **GET** /email/client/threads | Get message threads from folder. All messages are partly fetched (without email body and other fields)             . Not available on .NETFramework v2.0
+*EmailApi* | [**MoveEmailMessage**](EmailApi.md#moveemailmessage) | **PUT** /email/client/move | Move message to another folder             
+*EmailApi* | [**MoveEmailMessageAsync**](EmailApi.md#moveemailmessageasync) | **PUT** /email/client/move | Move message to another folder             . Not available on .NETFramework v2.0
+*EmailApi* | [**MoveEmailThread**](EmailApi.md#moveemailthread) | **PUT** /email/client/threads/{threadId}/move | Move thread to another folder             
+*EmailApi* | [**MoveEmailThreadAsync**](EmailApi.md#moveemailthreadasync) | **PUT** /email/client/threads/{threadId}/move | Move thread to another folder             . Not available on .NETFramework v2.0
 *EmailApi* | [**MoveFile**](EmailApi.md#movefile) | **PUT** /email/storage/file/move/{srcPath} | Move file
 *EmailApi* | [**MoveFileAsync**](EmailApi.md#movefileasync) | **PUT** /email/storage/file/move/{srcPath} | Move file. Not available on .NETFramework v2.0
 *EmailApi* | [**MoveFolder**](EmailApi.md#movefolder) | **PUT** /email/storage/folder/move/{srcPath} | Move folder
@@ -196,8 +200,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**SetEmailPropertyAsync**](EmailApi.md#setemailpropertyasync) | **PUT** /email/{fileName}/properties/{propertyName} | Set email document property value             . Not available on .NETFramework v2.0
 *EmailApi* | [**SetEmailReadFlag**](EmailApi.md#setemailreadflag) | **POST** /email/client/SetReadFlag | Sets \&quot;Message is read\&quot; flag             
 *EmailApi* | [**SetEmailReadFlagAsync**](EmailApi.md#setemailreadflagasync) | **POST** /email/client/SetReadFlag | Sets \&quot;Message is read\&quot; flag             . Not available on .NETFramework v2.0
-*EmailApi* | [**SetEmailThreadReadFlag**](EmailApi.md#setemailthreadreadflag) | **PUT** /email/client/threads/{threadId}/read-flag | Mar all messages in thread as read or unread             
-*EmailApi* | [**SetEmailThreadReadFlagAsync**](EmailApi.md#setemailthreadreadflagasync) | **PUT** /email/client/threads/{threadId}/read-flag | Mar all messages in thread as read or unread             . Not available on .NETFramework v2.0
+*EmailApi* | [**SetEmailThreadReadFlag**](EmailApi.md#setemailthreadreadflag) | **PUT** /email/client/threads/{threadId}/read-flag | Mark all messages in thread as read or unread             
+*EmailApi* | [**SetEmailThreadReadFlagAsync**](EmailApi.md#setemailthreadreadflagasync) | **PUT** /email/client/threads/{threadId}/read-flag | Mark all messages in thread as read or unread             . Not available on .NETFramework v2.0
 *EmailApi* | [**StorageExists**](EmailApi.md#storageexists) | **GET** /email/storage/{storageName}/exist | Check if storage exists
 *EmailApi* | [**StorageExistsAsync**](EmailApi.md#storageexistsasync) | **GET** /email/storage/{storageName}/exist | Check if storage exists. Not available on .NETFramework v2.0
 *EmailApi* | [**UpdateCalendarProperties**](EmailApi.md#updatecalendarproperties) | **PUT** /email/Calendar/{name}/properties | Update calendar file properties             
@@ -341,6 +345,8 @@ Class | Method | HTTP request | Description
  - [Model.IndexedHierarchicalObject](IndexedHierarchicalObject.md)
  - [Model.IndexedPrimitiveObject](IndexedPrimitiveObject.md)
  - [Model.LinkedResource](LinkedResource.md)
+ - [Model.MoveEmailMessageRq](MoveEmailMessageRq.md)
+ - [Model.MoveEmailThreadRq](MoveEmailThreadRq.md)
  - [Model.PrimitiveObject](PrimitiveObject.md)
  - [Model.SaveEmailAccountRequest](SaveEmailAccountRequest.md)
  - [Model.SaveOAuthEmailAccountRequest](SaveOAuthEmailAccountRequest.md)

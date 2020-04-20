@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DeleteMessageBaseRequest.cs">
+// <copyright company="Aspose" file="MoveEmailMessageRq.cs">
 //   Copyright (c) 2016 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,9 +33,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Delete message request             
+    /// Move email message request             
     /// </summary>
-    public class DeleteMessageBaseRequest : AccountBaseRequest 
+    public class MoveEmailMessageRq : AccountBaseRequest 
     {
         /// <summary>
         /// Message identifier             
@@ -43,33 +43,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string MessageId { get; set; }
 
         /// <summary>
-        /// Account folder where message located. Should be specified for some accounts             
+        /// Message source folder. Account root folder by default             
         /// </summary>  
-        public string Folder { get; set; }
+        public string SourceFolder { get; set; }
 
         /// <summary>
-        /// Specifies that message should be deleted permanently             
+        /// Folder in email account to move message to             
         /// </summary>  
-        public bool? DeletePermanently { get; set; }
+        public string DestinationFolder { get; set; }
 
-        /// <summary>DeleteMessageBaseRequest constructor</summary>
-        public DeleteMessageBaseRequest() {}
+        /// <summary>MoveEmailMessageRq constructor</summary>
+        public MoveEmailMessageRq() {}
 
-        /// <summary>DeleteMessageBaseRequest constructor</summary>
+        /// <summary>MoveEmailMessageRq constructor</summary>
         /// <param name="firstAccount">First account storage file name             </param>
         /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="messageId">Message identifier             </param>
-        /// <param name="folder">Account folder where message located. Should be specified for some accounts             </param>
-        /// <param name="deletePermanently">Specifies that message should be deleted permanently             </param>
-        public DeleteMessageBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string messageId, string folder, bool? deletePermanently)
+        /// <param name="sourceFolder">Message source folder. Account root folder by default             </param>
+        /// <param name="destinationFolder">Folder in email account to move message to             </param>
+        public MoveEmailMessageRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string messageId, string sourceFolder, string destinationFolder)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;
             StorageFolder = storageFolder;
             MessageId = messageId;
-            Folder = folder;
-            DeletePermanently = deletePermanently;
+            SourceFolder = sourceFolder;
+            DestinationFolder = destinationFolder;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -78,13 +78,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class DeleteMessageBaseRequest {\n");
+          sb.Append("class MoveEmailMessageRq {\n");
           sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
           sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
           sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  MessageId: ").Append(this.MessageId).Append("\n");
-          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
-          sb.Append("  DeletePermanently: ").Append(this.DeletePermanently).Append("\n");
+          sb.Append("  SourceFolder: ").Append(this.SourceFolder).Append("\n");
+          sb.Append("  DestinationFolder: ").Append(this.DestinationFolder).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
