@@ -42,6 +42,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public bool? IsRead { get; set; }
 
+        /// <summary>
+        /// Specifies account folder to get thread from (required for some account types, such as EWS)             
+        /// </summary>  
+        public string Folder { get; set; }
+
         /// <summary>EmailThreadReadFlagRq constructor</summary>
         public EmailThreadReadFlagRq() {}
 
@@ -50,12 +55,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="isRead">Read flag to set. \"true\" by default             </param>
-        public EmailThreadReadFlagRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, bool? isRead)
+        /// <param name="folder">Specifies account folder to get thread from (required for some account types, such as EWS)             </param>
+        public EmailThreadReadFlagRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, bool? isRead, string folder)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;
             StorageFolder = storageFolder;
             IsRead = isRead;
+            Folder = folder;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -69,6 +76,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
           sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  IsRead: ").Append(this.IsRead).Append("\n");
+          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

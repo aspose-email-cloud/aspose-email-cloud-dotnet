@@ -5702,6 +5702,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "threadId", request.threadId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
             var response = apiInvoker.InvokeApi(
@@ -5749,6 +5750,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "threadId", request.threadId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
             var response = await apiInvoker.InvokeApiAsync(

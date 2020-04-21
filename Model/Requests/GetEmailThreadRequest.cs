@@ -44,13 +44,15 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <param name="threadId">Thread identifier</param>
         /// <param name="firstAccount">Email account</param>
         /// <param name="secondAccount">Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             </param>
+        /// <param name="folder">Specifies account folder to get thread from (required for some account types, such as EWS)             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
-        public GetEmailThreadRequest(string threadId, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null)
+        public GetEmailThreadRequest(string threadId, string firstAccount, string secondAccount = null, string folder = null, string storage = null, string storageFolder = null)
         {
             this.threadId = threadId;
             this.firstAccount = firstAccount;
             this.secondAccount = secondAccount;
+            this.folder = folder;
             this.storage = storage;
             this.storageFolder = storageFolder;
         }
@@ -69,6 +71,11 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             
         /// </summary>
         public string secondAccount { get; set; }
+
+        /// <summary>
+        /// Specifies account folder to get thread from (required for some account types, such as EWS)             
+        /// </summary>
+        public string folder { get; set; }
 
         /// <summary>
         /// Storage name where account file(s) located

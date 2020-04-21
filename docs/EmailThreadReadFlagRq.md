@@ -3,6 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **IsRead** | **bool?** | Read flag to set. \&quot;true\&quot; by default              | 
+**Folder** | **string** | Specifies account folder to get thread from (required for some account types, such as EWS)              | [optional] 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

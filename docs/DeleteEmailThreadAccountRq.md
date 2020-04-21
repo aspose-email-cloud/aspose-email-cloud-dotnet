@@ -2,6 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Folder** | **string** | Specifies account folder to get thread from (required for some account types, such as EWS)              | [optional] 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 
