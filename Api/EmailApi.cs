@@ -5702,7 +5702,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "threadId", request.threadId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folderId", request.folderId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
             var response = apiInvoker.InvokeApi(
@@ -5750,7 +5750,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "threadId", request.threadId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folderId", request.folderId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageFolder", request.storageFolder);
             var response = await apiInvoker.InvokeApiAsync(
@@ -6583,11 +6583,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="EmailThreadList"/></returns>
         public EmailThreadList ListEmailThreads(Model.Requests.ListEmailThreadsRequest request)
         {
-            // verify the required parameter 'folder' is set
-            if (request.folder == null)
+            // verify the required parameter 'folderId' is set
+            if (request.folderId == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'folder' when calling ListEmailThreads");
+                    "Missing required parameter 'folderId' when calling ListEmailThreads");
             }
 
             // verify the required parameter 'firstAccount' is set
@@ -6603,7 +6603,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folderId", request.folderId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
@@ -6632,11 +6632,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="EmailThreadList"/></returns>
         public async Task<EmailThreadList> ListEmailThreadsAsync(Model.Requests.ListEmailThreadsRequest request)
         {
-            // verify the required parameter 'folder' is set
-            if (request.folder == null)
+            // verify the required parameter 'folderId' is set
+            if (request.folderId == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'folder' when calling ListEmailThreads");
+                    "Missing required parameter 'folderId' when calling ListEmailThreads");
             }
 
             // verify the required parameter 'firstAccount' is set
@@ -6652,7 +6652,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folderId", request.folderId);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "firstAccount", request.firstAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "secondAccount", request.secondAccount);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);

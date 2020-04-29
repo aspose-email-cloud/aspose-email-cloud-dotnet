@@ -326,11 +326,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             {
                 Attendees = new List<MailAddress>
                 {
-                    new MailAddress("Attendee Name", "attendee@am.ru", "Accepted")
+                    new MailAddress("Attendee Name", "attendee@am.ru", "Accepted", null)
                 },
                 Description = "Some description",
                 Summary = "Some summary",
-                Organizer = new MailAddress("Organizer Name", "cloud.em@yandex.ru", null),
+                Organizer = new MailAddress("Organizer Name", "cloud.em@yandex.ru", null, null),
                 StartDate = DateTime.UtcNow.AddDays(1).AddHours(12),
                 EndDate = DateTime.UtcNow.AddDays(1).AddHours(13),
                 Location = "Some location"
@@ -350,9 +350,9 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var email = new EmailDto
             {
                 AlternateViews = new List<AlternateView> {alternate},
-                From = new MailAddress("From address", "cloud.em@yandex.ru", "Accepted"),
+                From = new MailAddress("From address", "cloud.em@yandex.ru", "Accepted", null),
                 To = new List<MailAddress>
-                    {new MailAddress("To address", "cloud.em@yandex.ru", null)},
+                    {new MailAddress("To address", "cloud.em@yandex.ru", null, null)},
                 Subject = "Some subject",
                 Body = "Some body"
             };

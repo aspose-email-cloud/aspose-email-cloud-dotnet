@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Preferred** | **bool?** | Defines whether email address is preferred.              | 
 **RoutingType** | **string** | A routing type for an email.              | [optional] 
 **Address** | **string** | Email address.              | [optional] 
+**OriginalAddressString** | **string** | The original e-mail address string              | [optional] 
 
 
 

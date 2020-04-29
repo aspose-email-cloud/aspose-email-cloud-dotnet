@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ListEmailThreadsRequest.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -41,16 +41,16 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="ListEmailThreadsRequest"/> class.
         /// </summary>
-        /// <param name="folder">A folder in email account</param>
+        /// <param name="folderId">A folder id in email account. Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             </param>
         /// <param name="firstAccount">Email account</param>
         /// <param name="secondAccount">Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
         /// <param name="updateFolderCache">This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account             </param>
         /// <param name="messagesCacheLimit">Limit messages cache size if CacheFile is used. Ignored in accounts without limits support             </param>
-        public ListEmailThreadsRequest(string folder, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null, bool? updateFolderCache = null, int? messagesCacheLimit = null)
+        public ListEmailThreadsRequest(string folderId, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null, bool? updateFolderCache = null, int? messagesCacheLimit = null)
         {
-            this.folder = folder;
+            this.folderId = folderId;
             this.firstAccount = firstAccount;
             this.secondAccount = secondAccount;
             this.storage = storage;
@@ -60,9 +60,9 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// A folder in email account
+        /// A folder id in email account. Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             
         /// </summary>
-        public string folder { get; set; }
+        public string folderId { get; set; }
 
         /// <summary>
         /// Email account

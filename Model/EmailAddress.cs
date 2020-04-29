@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="EmailAddress.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -62,6 +62,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Address { get; set; }
 
+        /// <summary>
+        /// The original e-mail address string             
+        /// </summary>  
+        public string OriginalAddressString { get; set; }
+
         /// <summary>EmailAddress constructor</summary>
         public EmailAddress() {}
 
@@ -71,13 +76,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="preferred">Defines whether email address is preferred.             </param>
         /// <param name="routingType">A routing type for an email.             </param>
         /// <param name="address">Email address.             </param>
-        public EmailAddress(EnumWithCustomOfEmailAddressCategory category, string displayName, bool? preferred, string routingType, string address)
+        /// <param name="originalAddressString">The original e-mail address string             </param>
+        public EmailAddress(EnumWithCustomOfEmailAddressCategory category, string displayName, bool? preferred, string routingType, string address, string originalAddressString)
         {
             Category = category;
             DisplayName = displayName;
             Preferred = preferred;
             RoutingType = routingType;
             Address = address;
+            OriginalAddressString = originalAddressString;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -92,6 +99,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  Preferred: ").Append(this.Preferred).Append("\n");
           sb.Append("  RoutingType: ").Append(this.RoutingType).Append("\n");
           sb.Append("  Address: ").Append(this.Address).Append("\n");
+          sb.Append("  OriginalAddressString: ").Append(this.OriginalAddressString).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

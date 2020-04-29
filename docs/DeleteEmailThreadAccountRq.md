@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Folder** | **string** | Specifies account folder to get thread from (required for some account types, such as EWS)              | [optional] 
+**FolderId** | **string** | Specifies account folder to get thread from (required for some account types, such as EWS). Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.              | [optional] 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="EmailThreadReadFlagRq.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -43,9 +43,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public bool? IsRead { get; set; }
 
         /// <summary>
-        /// Specifies account folder to get thread from (required for some account types, such as EWS)             
+        /// Specifies account folder to get thread from (required for some account types, such as EWS). Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             
         /// </summary>  
-        public string Folder { get; set; }
+        public string FolderId { get; set; }
 
         /// <summary>EmailThreadReadFlagRq constructor</summary>
         public EmailThreadReadFlagRq() {}
@@ -55,14 +55,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="isRead">Read flag to set. \"true\" by default             </param>
-        /// <param name="folder">Specifies account folder to get thread from (required for some account types, such as EWS)             </param>
-        public EmailThreadReadFlagRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, bool? isRead, string folder)
+        /// <param name="folderId">Specifies account folder to get thread from (required for some account types, such as EWS). Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             </param>
+        public EmailThreadReadFlagRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, bool? isRead, string folderId)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;
             StorageFolder = storageFolder;
             IsRead = isRead;
-            Folder = folder;
+            FolderId = folderId;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -76,7 +76,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
           sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  IsRead: ").Append(this.IsRead).Append("\n");
-          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
+          sb.Append("  FolderId: ").Append(this.FolderId).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
