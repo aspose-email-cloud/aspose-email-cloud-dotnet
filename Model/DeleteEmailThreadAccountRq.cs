@@ -38,9 +38,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class DeleteEmailThreadAccountRq : AccountBaseRequest 
     {
         /// <summary>
-        /// Specifies account folder to get thread from (required for some account types, such as EWS). Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             
+        /// Specifies account folder to get thread from             
         /// </summary>  
-        public string FolderId { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>DeleteEmailThreadAccountRq constructor</summary>
         public DeleteEmailThreadAccountRq() {}
@@ -49,13 +49,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="firstAccount">First account storage file name             </param>
         /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
-        /// <param name="folderId">Specifies account folder to get thread from (required for some account types, such as EWS). Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             </param>
-        public DeleteEmailThreadAccountRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folderId)
+        /// <param name="folder">Specifies account folder to get thread from             </param>
+        public DeleteEmailThreadAccountRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;
             StorageFolder = storageFolder;
-            FolderId = folderId;
+            Folder = folder;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -68,7 +68,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
           sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
           sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
-          sb.Append("  FolderId: ").Append(this.FolderId).Append("\n");
+          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

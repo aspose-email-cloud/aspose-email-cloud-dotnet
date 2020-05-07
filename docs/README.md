@@ -102,6 +102,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**FetchEmailMessageAsync**](EmailApi.md#fetchemailmessageasync) | **GET** /email/client/Fetch | Fetch message mime from email account             . Not available on .NETFramework v2.0
 *EmailApi* | [**FetchEmailModel**](EmailApi.md#fetchemailmodel) | **GET** /email/client/FetchModel | Fetch message model from email account             
 *EmailApi* | [**FetchEmailModelAsync**](EmailApi.md#fetchemailmodelasync) | **GET** /email/client/FetchModel | Fetch message model from email account             . Not available on .NETFramework v2.0
+*EmailApi* | [**FetchEmailThreadMessages**](EmailApi.md#fetchemailthreadmessages) | **GET** /email/client/threads/{threadId}/messages | Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+*EmailApi* | [**FetchEmailThreadMessagesAsync**](EmailApi.md#fetchemailthreadmessagesasync) | **GET** /email/client/threads/{threadId}/messages | Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendar**](EmailApi.md#getcalendar) | **GET** /email/Calendar/{name}/properties | Get calendar file properties             
 *EmailApi* | [**GetCalendarAsync**](EmailApi.md#getcalendarasync) | **GET** /email/Calendar/{name}/properties | Get calendar file properties             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendarAttachment**](EmailApi.md#getcalendarattachment) | **GET** /email/Calendar/{name}/attachments/{attachment} | Get iCalendar document attachment by name             
@@ -142,8 +144,6 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetEmailModelListAsync**](EmailApi.md#getemailmodellistasync) | **GET** /email/model/{format} | Get email list from storage folder.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailProperty**](EmailApi.md#getemailproperty) | **GET** /email/{fileName}/properties/{propertyName} | Get an email document property by its name             
 *EmailApi* | [**GetEmailPropertyAsync**](EmailApi.md#getemailpropertyasync) | **GET** /email/{fileName}/properties/{propertyName} | Get an email document property by its name             . Not available on .NETFramework v2.0
-*EmailApi* | [**GetEmailThread**](EmailApi.md#getemailthread) | **GET** /email/client/threads/{threadId} | Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
-*EmailApi* | [**GetEmailThreadAsync**](EmailApi.md#getemailthreadasync) | **GET** /email/client/threads/{threadId} | Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetFileVersions**](EmailApi.md#getfileversions) | **GET** /email/storage/version/{path} | Get file versions
 *EmailApi* | [**GetFileVersionsAsync**](EmailApi.md#getfileversionsasync) | **GET** /email/storage/version/{path} | Get file versions. Not available on .NETFramework v2.0
 *EmailApi* | [**GetFilesList**](EmailApi.md#getfileslist) | **GET** /email/storage/folder/{path} | Get all files and folders within a folder

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="GetEmailThreadRequest.cs">
+// <copyright company="Aspose" file="FetchEmailThreadMessagesRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,32 +27,32 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.GetEmailThread" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.FetchEmailThreadMessages" /> operation.
   /// </summary>
-  public class GetEmailThreadRequest  
+  public class FetchEmailThreadMessagesRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetEmailThreadRequest"/> class.
+        /// Initializes a new instance of the <see cref="FetchEmailThreadMessagesRequest"/> class.
         /// </summary>
-        public GetEmailThreadRequest()
+        public FetchEmailThreadMessagesRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetEmailThreadRequest"/> class.
+        /// Initializes a new instance of the <see cref="FetchEmailThreadMessagesRequest"/> class.
         /// </summary>
         /// <param name="threadId">Thread identifier</param>
         /// <param name="firstAccount">Email account</param>
         /// <param name="secondAccount">Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             </param>
-        /// <param name="folderId">Specifies account folder to get thread from (required for some account types, such as EWS). Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             </param>
+        /// <param name="folder">Specifies account folder to get thread from             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
-        public GetEmailThreadRequest(string threadId, string firstAccount, string secondAccount = null, string folderId = null, string storage = null, string storageFolder = null)
+        public FetchEmailThreadMessagesRequest(string threadId, string firstAccount, string secondAccount = null, string folder = null, string storage = null, string storageFolder = null)
         {
             this.threadId = threadId;
             this.firstAccount = firstAccount;
             this.secondAccount = secondAccount;
-            this.folderId = folderId;
+            this.folder = folder;
             this.storage = storage;
             this.storageFolder = storageFolder;
         }
@@ -73,9 +73,9 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string secondAccount { get; set; }
 
         /// <summary>
-        /// Specifies account folder to get thread from (required for some account types, such as EWS). Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             
+        /// Specifies account folder to get thread from             
         /// </summary>
-        public string folderId { get; set; }
+        public string folder { get; set; }
 
         /// <summary>
         /// Storage name where account file(s) located

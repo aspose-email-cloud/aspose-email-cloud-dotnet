@@ -2900,6 +2900,78 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="fetchemailthreadmessages"></a>
+# **FetchEmailThreadMessages**
+
+```csharp
+ListResponseOfEmailDto FetchEmailThreadMessages(FetchEmailThreadMessagesRequest request)
+```
+
+Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+
+### Return type
+
+[**ListResponseOfEmailDto**](ListResponseOfEmailDto.md)
+
+### Request Parameters
+```csharp
+new FetchEmailThreadMessagesRequest(
+    threadId,
+    firstAccount,
+    secondAccount=secondAccount,
+    folder=folder,
+    storage=storage,
+    storageFolder=storageFolder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread identifier | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **folder** | **string**| Specifies account folder to get thread from              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="fetchemailthreadmessages"></a>
+# **FetchEmailThreadMessagesAsync**
+
+```csharp
+async Task<ListResponseOfEmailDto> FetchEmailThreadMessagesAsync(FetchEmailThreadMessagesRequest request)
+```
+
+Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfEmailDto**](ListResponseOfEmailDto.md)>
+
+### Request Parameters
+```csharp
+new FetchEmailThreadMessagesRequest(
+    threadId,
+    firstAccount,
+    secondAccount=secondAccount,
+    folder=folder,
+    storage=storage,
+    storageFolder=storageFolder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread identifier | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **folder** | **string**| Specifies account folder to get thread from              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getcalendar"></a>
 # **GetCalendar**
 
@@ -4168,78 +4240,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="getemailthread"></a>
-# **GetEmailThread**
-
-```csharp
-EmailThread GetEmailThread(GetEmailThreadRequest request)
-```
-
-Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
-
-### Return type
-
-[**EmailThread**](EmailThread.md)
-
-### Request Parameters
-```csharp
-new GetEmailThreadRequest(
-    threadId,
-    firstAccount,
-    secondAccount=secondAccount,
-    folderId=folderId,
-    storage=storage,
-    storageFolder=storageFolder)
-```
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **threadId** | **string**| Thread identifier | 
- **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
- **folderId** | **string**| Specifies account folder to get thread from (required for some account types, such as EWS). Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.              | [optional] 
- **storage** | **string**| Storage name where account file(s) located | [optional] 
- **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
-
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="getemailthread"></a>
-# **GetEmailThreadAsync**
-
-```csharp
-async Task<EmailThread> GetEmailThreadAsync(GetEmailThreadRequest request)
-```
-
-Get message thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
-
-Performs operation asynchronously. Not available on .NETFramework v2.0
-
-### Return type
-
-Task<[**EmailThread**](EmailThread.md)>
-
-### Request Parameters
-```csharp
-new GetEmailThreadRequest(
-    threadId,
-    firstAccount,
-    secondAccount=secondAccount,
-    folderId=folderId,
-    storage=storage,
-    storageFolder=storageFolder)
-```
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **threadId** | **string**| Thread identifier | 
- **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
- **folderId** | **string**| Specifies account folder to get thread from (required for some account types, such as EWS). Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.              | [optional] 
- **storage** | **string**| Storage name where account file(s) located | [optional] 
- **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
-
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
 <a name="getfileversions"></a>
 # **GetFileVersions**
 
@@ -4896,7 +4896,7 @@ Get message threads from folder. All messages are partly fetched (without email 
 ### Request Parameters
 ```csharp
 new ListEmailThreadsRequest(
-    folderId,
+    folder,
     firstAccount,
     secondAccount=secondAccount,
     storage=storage,
@@ -4907,7 +4907,7 @@ new ListEmailThreadsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **folderId** | **string**| A folder id in email account. Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.              | 
+ **folder** | **string**| A folder in email account.              | 
  **firstAccount** | **string**| Email account | 
  **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
@@ -4935,7 +4935,7 @@ Task<[**EmailThreadList**](EmailThreadList.md)>
 ### Request Parameters
 ```csharp
 new ListEmailThreadsRequest(
-    folderId,
+    folder,
     firstAccount,
     secondAccount=secondAccount,
     storage=storage,
@@ -4946,7 +4946,7 @@ new ListEmailThreadsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **folderId** | **string**| A folder id in email account. Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.              | 
+ **folder** | **string**| A folder in email account.              | 
  **firstAccount** | **string**| Email account | 
  **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 

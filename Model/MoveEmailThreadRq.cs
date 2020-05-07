@@ -38,9 +38,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class MoveEmailThreadRq : AccountBaseRequest 
     {
         /// <summary>
-        /// Email account folder id to move thread to. Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             
+        /// Email account folder to move thread to             
         /// </summary>  
-        public string DestinationFolderId { get; set; }
+        public string DestinationFolder { get; set; }
 
         /// <summary>MoveEmailThreadRq constructor</summary>
         public MoveEmailThreadRq() {}
@@ -49,13 +49,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="firstAccount">First account storage file name             </param>
         /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
-        /// <param name="destinationFolderId">Email account folder id to move thread to. Use folder Id from ListEmailFolders (MailServerFolder.Id). For IMAP folder Id is always same as folder name.             </param>
-        public MoveEmailThreadRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string destinationFolderId)
+        /// <param name="destinationFolder">Email account folder to move thread to             </param>
+        public MoveEmailThreadRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string destinationFolder)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;
             StorageFolder = storageFolder;
-            DestinationFolderId = destinationFolderId;
+            DestinationFolder = destinationFolder;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -68,7 +68,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  FirstAccount: ").Append(this.FirstAccount).Append("\n");
           sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
           sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
-          sb.Append("  DestinationFolderId: ").Append(this.DestinationFolderId).Append("\n");
+          sb.Append("  DestinationFolder: ").Append(this.DestinationFolder).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
