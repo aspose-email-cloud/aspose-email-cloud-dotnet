@@ -1432,6 +1432,62 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="convertcalendar"></a>
+# **ConvertCalendar**
+
+```csharp
+System.IO.Stream ConvertCalendar(ConvertCalendarRequest request)
+```
+
+Converts calendar document to specified format and returns as file             
+
+### Return type
+
+**System.IO.Stream**
+
+### Request Parameters
+```csharp
+new ConvertCalendarRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcalendar"></a>
+# **ConvertCalendarAsync**
+
+```csharp
+async Task<System.IO.Stream> ConvertCalendarAsync(ConvertCalendarRequest request)
+```
+
+Converts calendar document to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<System.IO.Stream>**
+
+### Request Parameters
+```csharp
+new ConvertCalendarRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="convertcalendarmodeltoalternate"></a>
 # **ConvertCalendarModelToAlternate**
 
@@ -1484,6 +1540,178 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="convertcalendarmodeltofile"></a>
+# **ConvertCalendarModelToFile**
+
+```csharp
+Stream ConvertCalendarModelToFile(ConvertCalendarModelToFileRequest request)
+```
+
+Converts calendar model to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToFileRequest(
+    format,
+    calendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **calendarDto** | [**CalendarDto**](CalendarDto.md)| Calendar model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcalendarmodeltofile"></a>
+# **ConvertCalendarModelToFileAsync**
+
+```csharp
+async Task<Stream> ConvertCalendarModelToFileAsync(ConvertCalendarModelToFileRequest request)
+```
+
+Converts calendar model to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToFileRequest(
+    format,
+    calendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **calendarDto** | [**CalendarDto**](CalendarDto.md)| Calendar model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcontact"></a>
+# **ConvertContact**
+
+```csharp
+System.IO.Stream ConvertContact(ConvertContactRequest request)
+```
+
+Converts contact document to specified format and returns as file             
+
+### Return type
+
+**System.IO.Stream**
+
+### Request Parameters
+```csharp
+new ConvertContactRequest(
+    destinationFormat,
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format to convert to Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcontact"></a>
+# **ConvertContactAsync**
+
+```csharp
+async Task<System.IO.Stream> ConvertContactAsync(ConvertContactRequest request)
+```
+
+Converts contact document to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<System.IO.Stream>**
+
+### Request Parameters
+```csharp
+new ConvertContactRequest(
+    destinationFormat,
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format to convert to Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcontactmodeltofile"></a>
+# **ConvertContactModelToFile**
+
+```csharp
+Stream ConvertContactModelToFile(ConvertContactModelToFileRequest request)
+```
+
+Converts contact model to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertContactModelToFileRequest(
+    destinationFormat,
+    contactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **contactDto** | [**ContactDto**](ContactDto.md)| Contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcontactmodeltofile"></a>
+# **ConvertContactModelToFileAsync**
+
+```csharp
+async Task<Stream> ConvertContactModelToFileAsync(ConvertContactModelToFileRequest request)
+```
+
+Converts contact model to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertContactModelToFileRequest(
+    destinationFormat,
+    contactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **contactDto** | [**ContactDto**](ContactDto.md)| Contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="convertemail"></a>
 # **ConvertEmail**
 
@@ -1507,7 +1735,7 @@ new ConvertEmailRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
- **file** | **System.IO.Stream**| File to upload | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1536,7 +1764,7 @@ new ConvertEmailRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
- **file** | **System.IO.Stream**| File to upload | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -3032,6 +3260,70 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getcalendarasfile"></a>
+# **GetCalendarAsFile**
+
+```csharp
+Stream GetCalendarAsFile(GetCalendarAsFileRequest request)
+```
+
+Converts calendar document from storage to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new GetCalendarAsFileRequest(
+    fileName,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Calendar document file name | 
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarasfile"></a>
+# **GetCalendarAsFileAsync**
+
+```csharp
+async Task<Stream> GetCalendarAsFileAsync(GetCalendarAsFileRequest request)
+```
+
+Converts calendar document from storage to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new GetCalendarAsFileRequest(
+    fileName,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Calendar document file name | 
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getcalendarattachment"></a>
 # **GetCalendarAttachment**
 
@@ -3349,6 +3641,74 @@ Name | Type | Description  | Notes
  **itemsPerPage** | **int?**| Count of items on page | [optional] [default to 10]
  **pageNumber** | **int?**| Page number | [optional] [default to 0]
  **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactasfile"></a>
+# **GetContactAsFile**
+
+```csharp
+Stream GetContactAsFile(GetContactAsFileRequest request)
+```
+
+Converts calendar document from storage to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new GetContactAsFileRequest(
+    fileName,
+    destinationFormat,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Calendar document file name | 
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactasfile"></a>
+# **GetContactAsFileAsync**
+
+```csharp
+async Task<Stream> GetContactAsFileAsync(GetContactAsFileRequest request)
+```
+
+Converts calendar document from storage to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new GetContactAsFileRequest(
+    fileName,
+    destinationFormat,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Calendar document file name | 
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

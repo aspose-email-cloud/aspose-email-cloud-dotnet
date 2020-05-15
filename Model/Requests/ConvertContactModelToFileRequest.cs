@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ConvertEmailRequest.cs">
+// <copyright company="Aspose" file="ConvertContactModelToFileRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,36 +27,36 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertEmail" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertContactModelToFile" /> operation.
   /// </summary>
-  public class ConvertEmailRequest  
+  public class ConvertContactModelToFileRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertContactModelToFileRequest"/> class.
         /// </summary>
-        public ConvertEmailRequest()
+        public ConvertContactModelToFileRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertContactModelToFileRequest"/> class.
         /// </summary>
-        /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
-        /// <param name="file">File to convert</param>
-        public ConvertEmailRequest(string format, System.IO.Stream file)
+        /// <param name="destinationFormat">File format Enum, available values: VCard, WebDav, Msg</param>
+        /// <param name="contactDto">Contact model to convert</param>
+        public ConvertContactModelToFileRequest(string destinationFormat, ContactDto contactDto)
         {
-            this.format = format;
-            this.File = file;
+            this.destinationFormat = destinationFormat;
+            this.contactDto = contactDto;
         }
 
         /// <summary>
-        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// File format Enum, available values: VCard, WebDav, Msg
         /// </summary>
-        public string format { get; set; }
+        public string destinationFormat { get; set; }
 
         /// <summary>
-        /// File to convert
+        /// Contact model to convert
         /// </summary>
-        public System.IO.Stream File { get; set; }
+        public ContactDto contactDto { get; set; }
   }
 }

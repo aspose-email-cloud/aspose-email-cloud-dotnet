@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ConvertEmailRequest.cs">
+// <copyright company="Aspose" file="ConvertCalendarRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,30 +27,30 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertEmail" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertCalendar" /> operation.
   /// </summary>
-  public class ConvertEmailRequest  
+  public class ConvertCalendarRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertCalendarRequest"/> class.
         /// </summary>
-        public ConvertEmailRequest()
+        public ConvertCalendarRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertCalendarRequest"/> class.
         /// </summary>
-        /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
+        /// <param name="format">File format Enum, available values: Ics, Msg</param>
         /// <param name="file">File to convert</param>
-        public ConvertEmailRequest(string format, System.IO.Stream file)
+        public ConvertCalendarRequest(string format, System.IO.Stream file)
         {
             this.format = format;
             this.File = file;
         }
 
         /// <summary>
-        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// File format Enum, available values: Ics, Msg
         /// </summary>
         public string format { get; set; }
 

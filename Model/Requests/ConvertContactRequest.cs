@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ConvertEmailRequest.cs">
+// <copyright company="Aspose" file="ConvertContactRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,30 +27,37 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertEmail" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertContact" /> operation.
   /// </summary>
-  public class ConvertEmailRequest  
+  public class ConvertContactRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertContactRequest"/> class.
         /// </summary>
-        public ConvertEmailRequest()
+        public ConvertContactRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertContactRequest"/> class.
         /// </summary>
-        /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
+        /// <param name="destinationFormat">File format to convert to Enum, available values: VCard, WebDav, Msg</param>
+        /// <param name="format">File format to convert from Enum, available values: VCard, WebDav, Msg</param>
         /// <param name="file">File to convert</param>
-        public ConvertEmailRequest(string format, System.IO.Stream file)
+        public ConvertContactRequest(string destinationFormat, string format, System.IO.Stream file)
         {
+            this.destinationFormat = destinationFormat;
             this.format = format;
             this.File = file;
         }
 
         /// <summary>
-        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// File format to convert to Enum, available values: VCard, WebDav, Msg
+        /// </summary>
+        public string destinationFormat { get; set; }
+
+        /// <summary>
+        /// File format to convert from Enum, available values: VCard, WebDav, Msg
         /// </summary>
         public string format { get; set; }
 

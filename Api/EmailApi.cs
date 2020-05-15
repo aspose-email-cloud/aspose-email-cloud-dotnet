@@ -1993,6 +1993,106 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Converts calendar document to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream ConvertCalendar(Model.Requests.ConvertCalendarRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling ConvertCalendar");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling ConvertCalendar");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/convert/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<System.IO.Stream>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts calendar document to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> ConvertCalendarAsync(Model.Requests.ConvertCalendarRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling ConvertCalendar");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling ConvertCalendar");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/convert/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<System.IO.Stream>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Convert iCalendar to AlternateView              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertCalendarModelToAlternateRequest" /></param>
@@ -2061,6 +2161,278 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
 
             return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts calendar model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream ConvertCalendarModelToFile(Model.Requests.ConvertCalendarModelToFileRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling ConvertCalendarModelToFile");
+            }
+
+            // verify the required parameter 'calendarDto' is set
+            if (request.calendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'calendarDto' when calling ConvertCalendarModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/model-as-file/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            var postBody = SerializationHelper.Serialize(request.calendarDto); // http body (model) parameter
+            return apiInvoker.InvokeBinaryApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts calendar model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> ConvertCalendarModelToFileAsync(Model.Requests.ConvertCalendarModelToFileRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling ConvertCalendarModelToFile");
+            }
+
+            // verify the required parameter 'calendarDto' is set
+            if (request.calendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'calendarDto' when calling ConvertCalendarModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/model-as-file/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            var postBody = SerializationHelper.Serialize(request.calendarDto); // http body (model) parameter
+            return await apiInvoker.InvokeBinaryApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+        #endif
+
+        /// <summary>
+        /// Converts contact document to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertContactRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream ConvertContact(Model.Requests.ConvertContactRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertContact");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling ConvertContact");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling ConvertContact");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/convert/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<System.IO.Stream>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts contact document to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertContactRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> ConvertContactAsync(Model.Requests.ConvertContactRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertContact");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling ConvertContact");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling ConvertContact");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/convert/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<System.IO.Stream>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts contact model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertContactModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream ConvertContactModelToFile(Model.Requests.ConvertContactModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertContactModelToFile");
+            }
+
+            // verify the required parameter 'contactDto' is set
+            if (request.contactDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'contactDto' when calling ConvertContactModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.contactDto); // http body (model) parameter
+            return apiInvoker.InvokeBinaryApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts contact model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertContactModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> ConvertContactModelToFileAsync(Model.Requests.ConvertContactModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertContactModelToFile");
+            }
+
+            // verify the required parameter 'contactDto' is set
+            if (request.contactDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'contactDto' when calling ConvertContactModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.contactDto); // http body (model) parameter
+            return await apiInvoker.InvokeBinaryApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
         }
         #endif
 
@@ -4121,6 +4493,88 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Converts calendar document from storage to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarAsFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream GetCalendarAsFile(Model.Requests.GetCalendarAsFileRequest request)
+        {
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileName' when calling GetCalendarAsFile");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetCalendarAsFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/{fileName}/as-file/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            return apiInvoker.InvokeBinaryApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts calendar document from storage to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarAsFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> GetCalendarAsFileAsync(Model.Requests.GetCalendarAsFileRequest request)
+        {
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileName' when calling GetCalendarAsFile");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetCalendarAsFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/{fileName}/as-file/{format}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            return await apiInvoker.InvokeBinaryApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            
+        }
+        #endif
+
+        /// <summary>
         /// Get iCalendar document attachment by name              
         /// </summary>
         /// <param name="request">Request. <see cref="GetCalendarAttachmentRequest" /></param>
@@ -4553,6 +5007,104 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
 
             return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts calendar document from storage to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactAsFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream GetContactAsFile(Model.Requests.GetContactAsFileRequest request)
+        {
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileName' when calling GetContactAsFile");
+            }
+
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling GetContactAsFile");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetContactAsFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/{fileName}/as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            return apiInvoker.InvokeBinaryApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts calendar document from storage to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactAsFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> GetContactAsFileAsync(Model.Requests.GetContactAsFileRequest request)
+        {
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileName' when calling GetContactAsFile");
+            }
+
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling GetContactAsFile");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetContactAsFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/{fileName}/as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileName", request.fileName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            return await apiInvoker.InvokeBinaryApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            
         }
         #endif
 

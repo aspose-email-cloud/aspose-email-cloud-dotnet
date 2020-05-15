@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ConvertEmailRequest.cs">
+// <copyright company="Aspose" file="ConvertCalendarModelToFileRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,36 +27,36 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertEmail" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertCalendarModelToFile" /> operation.
   /// </summary>
-  public class ConvertEmailRequest  
+  public class ConvertCalendarModelToFileRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertCalendarModelToFileRequest"/> class.
         /// </summary>
-        public ConvertEmailRequest()
+        public ConvertCalendarModelToFileRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertCalendarModelToFileRequest"/> class.
         /// </summary>
-        /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
-        /// <param name="file">File to convert</param>
-        public ConvertEmailRequest(string format, System.IO.Stream file)
+        /// <param name="format">File format Enum, available values: Ics, Msg</param>
+        /// <param name="calendarDto">Calendar model to convert</param>
+        public ConvertCalendarModelToFileRequest(string format, CalendarDto calendarDto)
         {
             this.format = format;
-            this.File = file;
+            this.calendarDto = calendarDto;
         }
 
         /// <summary>
-        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// File format Enum, available values: Ics, Msg
         /// </summary>
         public string format { get; set; }
 
         /// <summary>
-        /// File to convert
+        /// Calendar model to convert
         /// </summary>
-        public System.IO.Stream File { get; set; }
+        public CalendarDto calendarDto { get; set; }
   }
 }

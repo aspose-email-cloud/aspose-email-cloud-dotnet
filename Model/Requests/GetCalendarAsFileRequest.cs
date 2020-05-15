@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ConvertEmailRequest.cs">
+// <copyright company="Aspose" file="GetCalendarAsFileRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,36 +27,50 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertEmail" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.GetCalendarAsFile" /> operation.
   /// </summary>
-  public class ConvertEmailRequest  
+  public class GetCalendarAsFileRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="GetCalendarAsFileRequest"/> class.
         /// </summary>
-        public ConvertEmailRequest()
+        public GetCalendarAsFileRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
+        /// Initializes a new instance of the <see cref="GetCalendarAsFileRequest"/> class.
         /// </summary>
-        /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
-        /// <param name="file">File to convert</param>
-        public ConvertEmailRequest(string format, System.IO.Stream file)
+        /// <param name="fileName">Calendar document file name</param>
+        /// <param name="format">File format Enum, available values: Ics, Msg</param>
+        /// <param name="storage">Storage name</param>
+        /// <param name="folder">Path to folder in storage</param>
+        public GetCalendarAsFileRequest(string fileName, string format, string storage = null, string folder = null)
         {
+            this.fileName = fileName;
             this.format = format;
-            this.File = file;
+            this.storage = storage;
+            this.folder = folder;
         }
 
         /// <summary>
-        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// Calendar document file name
+        /// </summary>
+        public string fileName { get; set; }
+
+        /// <summary>
+        /// File format Enum, available values: Ics, Msg
         /// </summary>
         public string format { get; set; }
 
         /// <summary>
-        /// File to convert
+        /// Storage name
         /// </summary>
-        public System.IO.Stream File { get; set; }
+        public string storage { get; set; }
+
+        /// <summary>
+        /// Path to folder in storage
+        /// </summary>
+        public string folder { get; set; }
   }
 }
