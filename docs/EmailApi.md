@@ -1436,14 +1436,14 @@ Name | Type | Description  | Notes
 # **ConvertCalendar**
 
 ```csharp
-System.IO.Stream ConvertCalendar(ConvertCalendarRequest request)
+Stream ConvertCalendar(ConvertCalendarRequest request)
 ```
 
 Converts calendar document to specified format and returns as file             
 
 ### Return type
 
-**System.IO.Stream**
+**Stream**
 
 ### Request Parameters
 ```csharp
@@ -1463,7 +1463,7 @@ Name | Type | Description  | Notes
 # **ConvertCalendarAsync**
 
 ```csharp
-async Task<System.IO.Stream> ConvertCalendarAsync(ConvertCalendarRequest request)
+async Task<Stream> ConvertCalendarAsync(ConvertCalendarRequest request)
 ```
 
 Converts calendar document to specified format and returns as file             
@@ -1472,7 +1472,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-**Task<System.IO.Stream>**
+**Task<Stream>**
 
 ### Request Parameters
 ```csharp
@@ -1600,14 +1600,14 @@ Name | Type | Description  | Notes
 # **ConvertContact**
 
 ```csharp
-System.IO.Stream ConvertContact(ConvertContactRequest request)
+Stream ConvertContact(ConvertContactRequest request)
 ```
 
 Converts contact document to specified format and returns as file             
 
 ### Return type
 
-**System.IO.Stream**
+**Stream**
 
 ### Request Parameters
 ```csharp
@@ -1629,7 +1629,7 @@ Name | Type | Description  | Notes
 # **ConvertContactAsync**
 
 ```csharp
-async Task<System.IO.Stream> ConvertContactAsync(ConvertContactRequest request)
+async Task<Stream> ConvertContactAsync(ConvertContactRequest request)
 ```
 
 Converts contact document to specified format and returns as file             
@@ -1638,7 +1638,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-**Task<System.IO.Stream>**
+**Task<Stream>**
 
 ### Request Parameters
 ```csharp
@@ -1765,6 +1765,62 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
  **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertemailmodeltofile"></a>
+# **ConvertEmailModelToFile**
+
+```csharp
+Stream ConvertEmailModelToFile(ConvertEmailModelToFileRequest request)
+```
+
+Converts Email model to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertEmailModelToFileRequest(
+    destinationFormat,
+    emailDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertemailmodeltofile"></a>
+# **ConvertEmailModelToFileAsync**
+
+```csharp
+async Task<Stream> ConvertEmailModelToFileAsync(ConvertEmailModelToFileRequest request)
+```
+
+Converts Email model to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertEmailModelToFileRequest(
+    destinationFormat,
+    emailDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -3388,6 +3444,58 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getcalendarfileasmodel"></a>
+# **GetCalendarFileAsModel**
+
+```csharp
+CalendarDto GetCalendarFileAsModel(GetCalendarFileAsModelRequest request)
+```
+
+Converts calendar document to a model representation             
+
+### Return type
+
+[**CalendarDto**](CalendarDto.md)
+
+### Request Parameters
+```csharp
+new GetCalendarFileAsModelRequest(
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarfileasmodel"></a>
+# **GetCalendarFileAsModelAsync**
+
+```csharp
+async Task<CalendarDto> GetCalendarFileAsModelAsync(GetCalendarFileAsModelRequest request)
+```
+
+Converts calendar document to a model representation             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**CalendarDto**](CalendarDto.md)>
+
+### Request Parameters
+```csharp
+new GetCalendarFileAsModelRequest(
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getcalendarlist"></a>
 # **GetCalendarList**
 
@@ -3777,6 +3885,62 @@ Name | Type | Description  | Notes
  **attachment** | **string**| Attachment name or index | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactfileasmodel"></a>
+# **GetContactFileAsModel**
+
+```csharp
+ContactDto GetContactFileAsModel(GetContactFileAsModelRequest request)
+```
+
+Converts contact document to a model representation             
+
+### Return type
+
+[**ContactDto**](ContactDto.md)
+
+### Request Parameters
+```csharp
+new GetContactFileAsModelRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactfileasmodel"></a>
+# **GetContactFileAsModelAsync**
+
+```csharp
+async Task<ContactDto> GetContactFileAsModelAsync(GetContactFileAsModelRequest request)
+```
+
+Converts contact document to a model representation             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ContactDto**](ContactDto.md)>
+
+### Request Parameters
+```csharp
+new GetContactFileAsModelRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4401,6 +4565,62 @@ Name | Type | Description  | Notes
  **name** | **string**| File name on storage | 
  **folder** | **string**| Folder on storage | 
  **storage** | **string**| Storage name | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailfileasmodel"></a>
+# **GetEmailFileAsModel**
+
+```csharp
+EmailDto GetEmailFileAsModel(GetEmailFileAsModelRequest request)
+```
+
+Converts email document to a model representation             
+
+### Return type
+
+[**EmailDto**](EmailDto.md)
+
+### Request Parameters
+```csharp
+new GetEmailFileAsModelRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailfileasmodel"></a>
+# **GetEmailFileAsModelAsync**
+
+```csharp
+async Task<EmailDto> GetEmailFileAsModelAsync(GetEmailFileAsModelRequest request)
+```
+
+Converts email document to a model representation             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailDto**](EmailDto.md)>
+
+### Request Parameters
+```csharp
+new GetEmailFileAsModelRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

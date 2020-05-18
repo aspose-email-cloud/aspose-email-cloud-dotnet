@@ -2027,18 +2027,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
                     apiInvoker.ToFileInfo(request.File, "File"));
                 
             }
-            var response = apiInvoker.InvokeApi(
+            return apiInvoker.InvokeBinaryApi(
                 resourcePath,
                 "PUT",
                 null,
                 null,
                 formParams);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -2077,18 +2072,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
                     apiInvoker.ToFileInfo(request.File, "File"));
                 
             }
-            var response = await apiInvoker.InvokeApiAsync(
+            return await apiInvoker.InvokeBinaryApiAsync(
                 resourcePath,
                 "PUT",
                 null,
                 null,
                 formParams);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
         #endif
 
@@ -2285,18 +2275,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
                     apiInvoker.ToFileInfo(request.File, "File"));
                 
             }
-            var response = apiInvoker.InvokeApi(
+            return apiInvoker.InvokeBinaryApi(
                 resourcePath,
                 "PUT",
                 null,
                 null,
                 formParams);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -2343,18 +2328,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
                     apiInvoker.ToFileInfo(request.File, "File"));
                 
             }
-            var response = await apiInvoker.InvokeApiAsync(
+            return await apiInvoker.InvokeBinaryApiAsync(
                 resourcePath,
                 "PUT",
                 null,
                 null,
                 formParams);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<System.IO.Stream>(response);
-            }
-
-            return null;
+            
         }
         #endif
 
@@ -2533,6 +2513,84 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
 
             return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts Email model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertEmailModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream ConvertEmailModelToFile(Model.Requests.ConvertEmailModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertEmailModelToFile");
+            }
+
+            // verify the required parameter 'emailDto' is set
+            if (request.emailDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'emailDto' when calling ConvertEmailModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.emailDto); // http body (model) parameter
+            return apiInvoker.InvokeBinaryApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts Email model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertEmailModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> ConvertEmailModelToFileAsync(Model.Requests.ConvertEmailModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertEmailModelToFile");
+            }
+
+            // verify the required parameter 'emailDto' is set
+            if (request.emailDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'emailDto' when calling ConvertEmailModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.emailDto); // http body (model) parameter
+            return await apiInvoker.InvokeBinaryApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
         }
         #endif
 
@@ -4657,6 +4715,90 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Converts calendar document to a model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarFileAsModelRequest" /></param>
+        /// <returns><see cref="CalendarDto"/></returns>
+        public CalendarDto GetCalendarFileAsModel(Model.Requests.GetCalendarFileAsModelRequest request)
+        {
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetCalendarFileAsModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<CalendarDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts calendar document to a model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarFileAsModelRequest" /></param>
+        /// <returns><see cref="CalendarDto"/></returns>
+        public async Task<CalendarDto> GetCalendarFileAsModelAsync(Model.Requests.GetCalendarFileAsModelRequest request)
+        {
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetCalendarFileAsModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<CalendarDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Get iCalendar files list in folder on storage              
         /// </summary>
         /// <param name="request">Request. <see cref="GetCalendarListRequest" /></param>
@@ -5203,6 +5345,106 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 null,
                 null);
             
+        }
+        #endif
+
+        /// <summary>
+        /// Converts contact document to a model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactFileAsModelRequest" /></param>
+        /// <returns><see cref="ContactDto"/></returns>
+        public ContactDto GetContactFileAsModel(Model.Requests.GetContactFileAsModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetContactFileAsModel");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetContactFileAsModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ContactDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts contact document to a model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactFileAsModelRequest" /></param>
+        /// <returns><see cref="ContactDto"/></returns>
+        public async Task<ContactDto> GetContactFileAsModelAsync(Model.Requests.GetContactFileAsModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetContactFileAsModel");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetContactFileAsModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/{format}/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ContactDto>(response);
+            }
+
+            return null;
         }
         #endif
 
@@ -6050,6 +6292,106 @@ namespace Aspose.Email.Cloud.Sdk.Api
             if (response != null)
             {
                 return SerializationHelper.Deserialize<EmailClientMultiAccount>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts email document to a model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailFileAsModelRequest" /></param>
+        /// <returns><see cref="EmailDto"/></returns>
+        public EmailDto GetEmailFileAsModel(Model.Requests.GetEmailFileAsModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetEmailFileAsModel");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetEmailFileAsModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts email document to a model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailFileAsModelRequest" /></param>
+        /// <returns><see cref="EmailDto"/></returns>
+        public async Task<EmailDto> GetEmailFileAsModelAsync(Model.Requests.GetEmailFileAsModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetEmailFileAsModel");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetEmailFileAsModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDto>(response);
             }
 
             return null;

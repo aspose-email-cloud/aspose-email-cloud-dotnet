@@ -64,6 +64,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**ConvertContactModelToFileAsync**](EmailApi.md#convertcontactmodeltofileasync) | **PUT** /email/ContactModel/model-as-file/{destinationFormat} | Converts contact model to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**ConvertEmail**](EmailApi.md#convertemail) | **PUT** /email/convert/{format} | Converts email document to specified format and returns as file             
 *EmailApi* | [**ConvertEmailAsync**](EmailApi.md#convertemailasync) | **PUT** /email/convert/{format} | Converts email document to specified format and returns as file             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertEmailModelToFile**](EmailApi.md#convertemailmodeltofile) | **PUT** /email/model/model-as-file/{destinationFormat} | Converts Email model to specified format and returns as file             
+*EmailApi* | [**ConvertEmailModelToFileAsync**](EmailApi.md#convertemailmodeltofileasync) | **PUT** /email/model/model-as-file/{destinationFormat} | Converts Email model to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**CopyFile**](EmailApi.md#copyfile) | **PUT** /email/storage/file/copy/{srcPath} | Copy file
 *EmailApi* | [**CopyFileAsync**](EmailApi.md#copyfileasync) | **PUT** /email/storage/file/copy/{srcPath} | Copy file. Not available on .NETFramework v2.0
 *EmailApi* | [**CopyFolder**](EmailApi.md#copyfolder) | **PUT** /email/storage/folder/copy/{srcPath} | Copy folder
@@ -118,6 +120,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetCalendarAsFileAsync**](EmailApi.md#getcalendarasfileasync) | **GET** /email/CalendarModel/{fileName}/as-file/{format} | Converts calendar document from storage to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendarAttachment**](EmailApi.md#getcalendarattachment) | **GET** /email/Calendar/{name}/attachments/{attachment} | Get iCalendar document attachment by name             
 *EmailApi* | [**GetCalendarAttachmentAsync**](EmailApi.md#getcalendarattachmentasync) | **GET** /email/Calendar/{name}/attachments/{attachment} | Get iCalendar document attachment by name             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetCalendarFileAsModel**](EmailApi.md#getcalendarfileasmodel) | **PUT** /email/CalendarModel/file-as-model | Converts calendar document to a model representation             
+*EmailApi* | [**GetCalendarFileAsModelAsync**](EmailApi.md#getcalendarfileasmodelasync) | **PUT** /email/CalendarModel/file-as-model | Converts calendar document to a model representation             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendarList**](EmailApi.md#getcalendarlist) | **GET** /email/Calendar | Get iCalendar files list in folder on storage             
 *EmailApi* | [**GetCalendarListAsync**](EmailApi.md#getcalendarlistasync) | **GET** /email/Calendar | Get iCalendar files list in folder on storage             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendarModel**](EmailApi.md#getcalendarmodel) | **GET** /email/CalendarModel/{name} | Get calendar file             
@@ -130,6 +134,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetContactAsFileAsync**](EmailApi.md#getcontactasfileasync) | **GET** /email/ContactModel/{format}/{fileName}/as-file/{destinationFormat} | Converts calendar document from storage to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetContactAttachment**](EmailApi.md#getcontactattachment) | **GET** /email/Contact/{format}/{name}/attachments/{attachment} | Get attachment file by name             
 *EmailApi* | [**GetContactAttachmentAsync**](EmailApi.md#getcontactattachmentasync) | **GET** /email/Contact/{format}/{name}/attachments/{attachment} | Get attachment file by name             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetContactFileAsModel**](EmailApi.md#getcontactfileasmodel) | **PUT** /email/ContactModel/{format}/file-as-model | Converts contact document to a model representation             
+*EmailApi* | [**GetContactFileAsModelAsync**](EmailApi.md#getcontactfileasmodelasync) | **PUT** /email/ContactModel/{format}/file-as-model | Converts contact document to a model representation             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetContactList**](EmailApi.md#getcontactlist) | **GET** /email/Contact/{format} | Get contact list from storage folder             
 *EmailApi* | [**GetContactListAsync**](EmailApi.md#getcontactlistasync) | **GET** /email/Contact/{format} | Get contact list from storage folder             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetContactModel**](EmailApi.md#getcontactmodel) | **GET** /email/ContactModel/{format}/{name} | Get contact document.             
@@ -150,6 +156,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetEmailClientAccountAsync**](EmailApi.md#getemailclientaccountasync) | **GET** /email/client/email-client-account | Get email client account from storage             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailClientMultiAccount**](EmailApi.md#getemailclientmultiaccount) | **GET** /email/client/multi-account | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
 *EmailApi* | [**GetEmailClientMultiAccountAsync**](EmailApi.md#getemailclientmultiaccountasync) | **GET** /email/client/multi-account | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetEmailFileAsModel**](EmailApi.md#getemailfileasmodel) | **PUT** /email/model/{format}/file-as-model | Converts email document to a model representation             
+*EmailApi* | [**GetEmailFileAsModelAsync**](EmailApi.md#getemailfileasmodelasync) | **PUT** /email/model/{format}/file-as-model | Converts email document to a model representation             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailModel**](EmailApi.md#getemailmodel) | **GET** /email/model/{format}/{name} | Get email document.             
 *EmailApi* | [**GetEmailModelAsync**](EmailApi.md#getemailmodelasync) | **GET** /email/model/{format}/{name} | Get email document.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailModelList**](EmailApi.md#getemailmodellist) | **GET** /email/model/{format} | Get email list from storage folder.             
