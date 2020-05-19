@@ -1716,14 +1716,14 @@ Name | Type | Description  | Notes
 # **ConvertEmail**
 
 ```csharp
-System.IO.Stream ConvertEmail(ConvertEmailRequest request)
+Stream ConvertEmail(ConvertEmailRequest request)
 ```
 
 Converts email document to specified format and returns as file             
 
 ### Return type
 
-**System.IO.Stream**
+**Stream**
 
 ### Request Parameters
 ```csharp
@@ -1743,7 +1743,7 @@ Name | Type | Description  | Notes
 # **ConvertEmailAsync**
 
 ```csharp
-async Task<System.IO.Stream> ConvertEmailAsync(ConvertEmailRequest request)
+async Task<Stream> ConvertEmailAsync(ConvertEmailRequest request)
 ```
 
 Converts email document to specified format and returns as file             
@@ -1752,7 +1752,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-**Task<System.IO.Stream>**
+**Task<Stream>**
 
 ### Request Parameters
 ```csharp
