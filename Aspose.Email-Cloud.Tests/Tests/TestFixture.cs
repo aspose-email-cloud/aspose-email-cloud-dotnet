@@ -651,7 +651,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 To = new List<MailAddress>{new MailAddress{Address = "to@aspose.com"}},
                 Subject = "Some subject",
                 Body = "Some body",
-                //Date = DateTime.MinValue.AddDays(1)
+                Date = DateTime.MinValue.AddDays(1)
             };
             var mapiStream = await emailApi.ConvertEmailModelToFileAsync(
                 new ConvertEmailModelToFileRequest(
