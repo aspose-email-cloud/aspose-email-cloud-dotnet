@@ -603,6 +603,74 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             Assert.AreEqual(location, dto.Location);
         }
 
+        [Test]
+        [Pipeline]
+        public async Task ConvertContactTest()
+        {
+            const string surname = "Cane";
+            var contactDto = new ContactDto
+            {
+                Gender = "Male",
+                Surname = surname,
+                GivenName = "John",
+                EmailAddresses = new List<EmailAddress>
+                {
+                    new EmailAddress {Address = "address@aspose.com"}
+                },
+                PhoneNumbers = new List<PhoneNumber>
+                {
+                    new PhoneNumber {Number = "+47235345346"}
+                }
+            };
+            var mapiStream = await emailApi.ConvertContactModelToFileAsync(
+                new ConvertContactModelToFileRequest(
+                    "Msg", contactDto));
+            var vcardStream = await emailApi.ConvertContactAsync(new ConvertContactRequest(
+                "VCard", "Msg", mapiStream));
+            using (var memoryStream = new MemoryStream())
+            {
+                await vcardStream.CopyToAsync(memoryStream);
+                var vcardString = Encoding.UTF8.GetString(memoryStream.ToArray());
+                Assert.IsTrue(vcardString.Contains(surname));
+            }
+
+            vcardStream.Seek(0, SeekOrigin.Begin);
+            var dto = await emailApi.GetContactFileAsModelAsync(
+                new GetContactFileAsModelRequest("VCard", vcardStream));
+            Assert.AreEqual(surname, dto.Surname);
+        }
+        
+        [Test]
+        [Pipeline]
+        public async Task ConvertEmailTest()
+        {
+            const string from = "from@aspose.com";
+            var emailDto = new EmailDto
+            {
+                From = new MailAddress{Address = from},
+                To = new List<MailAddress>{new MailAddress{Address = "to@aspose.com"}},
+                Subject = "Some subject",
+                Body = "Some body",
+                //Date = DateTime.MinValue.AddDays(1)
+            };
+            var mapiStream = await emailApi.ConvertEmailModelToFileAsync(
+                new ConvertEmailModelToFileRequest(
+                    "Msg", emailDto));
+            var emlStream = await emailApi.ConvertEmailAsync(new ConvertEmailRequest(
+                "Eml", mapiStream));
+            using (var memoryStream = new MemoryStream())
+            {
+                await emlStream.CopyToAsync(memoryStream);
+                var emlString = Encoding.UTF8.GetString(memoryStream.ToArray());
+                Assert.IsTrue(emlString.Contains(from));
+            }
+
+            emlStream.Seek(0, SeekOrigin.Begin);
+            var dto = await emailApi.GetEmailFileAsModelAsync(
+                new GetEmailFileAsModelRequest(emlStream));
+            Assert.AreEqual(from, dto.From.Address);
+        }
+
         private static string FileToBase64(string filePath)
         {
             var bytes = File.ReadAllBytes(filePath);

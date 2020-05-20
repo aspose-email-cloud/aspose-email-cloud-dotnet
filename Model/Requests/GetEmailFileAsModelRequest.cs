@@ -41,18 +41,11 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="GetEmailFileAsModelRequest"/> class.
         /// </summary>
-        /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
         /// <param name="file">File to convert</param>
-        public GetEmailFileAsModelRequest(string format, System.IO.Stream file)
+        public GetEmailFileAsModelRequest(System.IO.Stream file)
         {
-            this.format = format;
             this.File = file;
         }
-
-        /// <summary>
-        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
-        /// </summary>
-        public string format { get; set; }
 
         /// <summary>
         /// File to convert

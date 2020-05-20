@@ -6295,13 +6295,6 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="EmailDto"/></returns>
         public EmailDto GetEmailFileAsModel(Model.Requests.GetEmailFileAsModelRequest request)
         {
-            // verify the required parameter 'format' is set
-            if (request.format == null)
-            {
-                throw new ApiException(400,
-                    "Missing required parameter 'format' when calling GetEmailFileAsModel");
-            }
-
             // verify the required parameter 'file' is set
             if (request.File == null)
             {
@@ -6310,13 +6303,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}/file-as-model";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/file-as-model";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var formParams = new Dictionary<string, object>();
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
             if (request.File != null)
             {
                 formParams.Add("file",
@@ -6345,13 +6337,6 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="EmailDto"/></returns>
         public async Task<EmailDto> GetEmailFileAsModelAsync(Model.Requests.GetEmailFileAsModelRequest request)
         {
-            // verify the required parameter 'format' is set
-            if (request.format == null)
-            {
-                throw new ApiException(400,
-                    "Missing required parameter 'format' when calling GetEmailFileAsModel");
-            }
-
             // verify the required parameter 'file' is set
             if (request.File == null)
             {
@@ -6360,13 +6345,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/{format}/file-as-model";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/file-as-model";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var formParams = new Dictionary<string, object>();
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
             if (request.File != null)
             {
                 formParams.Add("file",
