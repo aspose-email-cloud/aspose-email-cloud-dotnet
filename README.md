@@ -14,7 +14,7 @@ Aspose.Email Cloud is a REST API for creating email applications that work with 
 
 ## How to use the SDK?
 The complete source code is available in the GIT repository. 
-Use [reference documentation](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/README.md), [examples from this document](#usage-examples) and [wiki](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/wiki)
+Use [SDK tutorials](https://docs.aspose.cloud/display/emailcloud/SDK+Tutorials), [reference documentation](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/README.md) and [examples from this document](#usage-examples)
 
 ### Prerequisites
 
