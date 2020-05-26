@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// File versions FileVersion.
+    /// 
     /// </summary>
     public class FileVersions 
     {
         /// <summary>
-        /// File versions FileVersion.
+        /// Gets or sets Value
         /// </summary>  
         public List<FileVersion> Value { get; set; }
 
@@ -46,7 +46,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public FileVersions() {}
 
         /// <summary>FileVersions constructor</summary>
-        /// <param name="value">File versions FileVersion.</param>
+        /// <param name="value"></param>
         public FileVersions(List<FileVersion> value)
         {
             Value = value;

@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Message** | [**EmailDto**](EmailDto.md) | Email document              | 
+**Message** | **Object** | Email document              | 
 
  Parent class: [AppendEmailAccountBaseRequest](AppendEmailAccountBaseRequest.md)
 

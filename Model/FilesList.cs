@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Files list
+    /// 
     /// </summary>
     public class FilesList 
     {
         /// <summary>
-        /// Files and folders contained by folder StorageFile.
+        /// Gets or sets Value
         /// </summary>  
         public List<StorageFile> Value { get; set; }
 
@@ -46,7 +46,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public FilesList() {}
 
         /// <summary>FilesList constructor</summary>
-        /// <param name="value">Files and folders contained by folder StorageFile.</param>
+        /// <param name="value"></param>
         public FilesList(List<StorageFile> value)
         {
             Value = value;

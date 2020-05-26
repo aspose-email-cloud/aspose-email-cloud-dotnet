@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Class for disc space information.
+    /// 
     /// </summary>
     public class DiscUsage 
     {
         /// <summary>
-        /// Application used disc space.
+        /// Gets or sets UsedSize
         /// </summary>  
         public long? UsedSize { get; set; }
 
         /// <summary>
-        /// Total disc space.
+        /// Gets or sets TotalSize
         /// </summary>  
         public long? TotalSize { get; set; }
 
@@ -51,8 +51,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DiscUsage() {}
 
         /// <summary>DiscUsage constructor</summary>
-        /// <param name="usedSize">Application used disc space.</param>
-        /// <param name="totalSize">Total disc space.</param>
+        /// <param name="usedSize"></param>
+        /// <param name="totalSize"></param>
         public DiscUsage(long? usedSize, long? totalSize)
         {
             UsedSize = usedSize;

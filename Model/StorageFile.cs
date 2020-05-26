@@ -33,32 +33,32 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// File or folder information
+    /// 
     /// </summary>
     public class StorageFile 
     {
         /// <summary>
-        /// File or folder name.
+        /// Gets or sets Name
         /// </summary>  
         public string Name { get; set; }
 
         /// <summary>
-        /// True if it is a folder.
+        /// Gets or sets IsFolder
         /// </summary>  
         public bool? IsFolder { get; set; }
 
         /// <summary>
-        /// File or folder last modified DateTime.
+        /// Gets or sets ModifiedDate
         /// </summary>  
         public DateTime? ModifiedDate { get; set; }
 
         /// <summary>
-        /// File or folder size.
+        /// Gets or sets Size
         /// </summary>  
         public long? Size { get; set; }
 
         /// <summary>
-        /// File or folder path.
+        /// Gets or sets Path
         /// </summary>  
         public string Path { get; set; }
 
@@ -66,11 +66,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public StorageFile() {}
 
         /// <summary>StorageFile constructor</summary>
-        /// <param name="name">File or folder name.</param>
-        /// <param name="isFolder">True if it is a folder.</param>
-        /// <param name="modifiedDate">File or folder last modified DateTime.</param>
-        /// <param name="size">File or folder size.</param>
-        /// <param name="path">File or folder path.</param>
+        /// <param name="name"></param>
+        /// <param name="isFolder"></param>
+        /// <param name="modifiedDate"></param>
+        /// <param name="size"></param>
+        /// <param name="path"></param>
         public StorageFile(string name, bool? isFolder, DateTime? modifiedDate, long? size, string path)
         {
             Name = name;

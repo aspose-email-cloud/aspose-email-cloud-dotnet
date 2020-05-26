@@ -40,7 +40,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Email document file location in storage             
         /// </summary>  
-        public StorageFileLocation EmailFile { get; set; }
+        public Object EmailFile { get; set; }
 
         /// <summary>AppendEmailBaseRequest constructor</summary>
         public AppendEmailBaseRequest() {}
@@ -52,7 +52,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="folder">Email account folder to store a message             </param>
         /// <param name="markAsSent">Mark message as sent             </param>
         /// <param name="emailFile">Email document file location in storage             </param>
-        public AppendEmailBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, StorageFileLocation emailFile)
+        public AppendEmailBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, Object emailFile)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;

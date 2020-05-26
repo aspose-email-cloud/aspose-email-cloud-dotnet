@@ -41,9 +41,9 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="DownloadFileRequest"/> class.
         /// </summary>
-        /// <param name="path">File path e.g. &#39;/folder/file.ext&#39;</param>
-        /// <param name="storageName">Storage name</param>
-        /// <param name="versionId">File version ID to download</param>
+        /// <param name="path"></param>
+        /// <param name="storageName"></param>
+        /// <param name="versionId"></param>
         public DownloadFileRequest(string path, string storageName = null, string versionId = null)
         {
             this.path = path;
@@ -52,17 +52,17 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// File path e.g. '/folder/file.ext'
+        /// Gets or sets path
         /// </summary>
         public string path { get; set; }
 
         /// <summary>
-        /// Storage name
+        /// Gets or sets storageName
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// File version ID to download
+        /// Gets or sets versionId
         /// </summary>
         public string versionId { get; set; }
   }

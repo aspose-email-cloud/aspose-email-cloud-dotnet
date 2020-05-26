@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EmailFile** | [**StorageFileLocation**](StorageFileLocation.md) | Email document file location in storage              | 
+**EmailFile** | **Object** | Email document file location in storage              | 
 
  Parent class: [AppendEmailAccountBaseRequest](AppendEmailAccountBaseRequest.md)
 

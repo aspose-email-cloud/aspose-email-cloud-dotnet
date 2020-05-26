@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// File Version
+    /// 
     /// </summary>
     public class FileVersion : StorageFile 
     {
         /// <summary>
-        /// File Version ID.
+        /// Gets or sets VersionId
         /// </summary>  
         public string VersionId { get; set; }
 
         /// <summary>
-        /// Specifies whether the file is (true) or is not (false) the latest version of an file.
+        /// Gets or sets IsLatest
         /// </summary>  
         public bool? IsLatest { get; set; }
 
@@ -51,13 +51,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public FileVersion() {}
 
         /// <summary>FileVersion constructor</summary>
-        /// <param name="name">File or folder name.</param>
-        /// <param name="isFolder">True if it is a folder.</param>
-        /// <param name="modifiedDate">File or folder last modified DateTime.</param>
-        /// <param name="size">File or folder size.</param>
-        /// <param name="path">File or folder path.</param>
-        /// <param name="versionId">File Version ID.</param>
-        /// <param name="isLatest">Specifies whether the file is (true) or is not (false) the latest version of an file.</param>
+        /// <param name="name"></param>
+        /// <param name="isFolder"></param>
+        /// <param name="modifiedDate"></param>
+        /// <param name="size"></param>
+        /// <param name="path"></param>
+        /// <param name="versionId"></param>
+        /// <param name="isLatest"></param>
         public FileVersion(string name, bool? isFolder, DateTime? modifiedDate, long? size, string path, string versionId, bool? isLatest)
         {
             Name = name;

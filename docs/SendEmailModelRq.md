@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Message** | [**EmailDto**](EmailDto.md) | Message to send              | [optional] 
+**Message** | **Object** | Message to send              | [optional] 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)
 

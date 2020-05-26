@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// The error details
+    /// 
     /// </summary>
     public class ErrorDetails 
     {
         /// <summary>
-        /// The request id
+        /// Gets or sets RequestId
         /// </summary>  
         public string RequestId { get; set; }
 
         /// <summary>
-        /// Date
+        /// Gets or sets Date
         /// </summary>  
         public DateTime? Date { get; set; }
 
@@ -51,8 +51,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public ErrorDetails() {}
 
         /// <summary>ErrorDetails constructor</summary>
-        /// <param name="requestId">The request id</param>
-        /// <param name="date">Date</param>
+        /// <param name="requestId"></param>
+        /// <param name="date"></param>
         public ErrorDetails(string requestId, DateTime? date)
         {
             RequestId = requestId;
