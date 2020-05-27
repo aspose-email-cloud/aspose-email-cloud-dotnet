@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="SendEmailModelRq.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,17 +40,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Message to send             
         /// </summary>  
-        public EmailDto Message { get; set; }
+        public Object Message { get; set; }
 
         /// <summary>SendEmailModelRq constructor</summary>
         public SendEmailModelRq() {}
 
         /// <summary>SendEmailModelRq constructor</summary>
-        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
-        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="firstAccount">First account storage file name             </param>
+        /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="message">Message to send             </param>
-        public SendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, EmailDto message)
+        public SendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, Object message)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;

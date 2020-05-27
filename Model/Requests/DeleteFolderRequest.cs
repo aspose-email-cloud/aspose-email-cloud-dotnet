@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DeleteFolderRequest.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -41,9 +41,9 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteFolderRequest"/> class.
         /// </summary>
-        /// <param name="path">Folder path e.g. &#39;/folder&#39;</param>
-        /// <param name="storageName">Storage name</param>
-        /// <param name="recursive">Enable to delete folders, subfolders and files</param>
+        /// <param name="path"></param>
+        /// <param name="storageName"></param>
+        /// <param name="recursive"></param>
         public DeleteFolderRequest(string path, string storageName = null, bool? recursive = null)
         {
             this.path = path;
@@ -52,17 +52,17 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// Folder path e.g. '/folder'
+        /// Gets or sets path
         /// </summary>
         public string path { get; set; }
 
         /// <summary>
-        /// Storage name
+        /// Gets or sets storageName
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Enable to delete folders, subfolders and files
+        /// Gets or sets recursive
         /// </summary>
         public bool? recursive { get; set; }
   }

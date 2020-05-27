@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="StorageExistsRequest.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -41,14 +41,14 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="StorageExistsRequest"/> class.
         /// </summary>
-        /// <param name="storageName">Storage name</param>
+        /// <param name="storageName"></param>
         public StorageExistsRequest(string storageName)
         {
             this.storageName = storageName;
         }
 
         /// <summary>
-        /// Storage name
+        /// Gets or sets storageName
         /// </summary>
         public string storageName { get; set; }
   }

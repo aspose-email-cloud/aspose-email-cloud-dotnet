@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="FetchEmailMessageRequest.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -43,14 +43,16 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// </summary>
         /// <param name="messageId">Message identifier</param>
         /// <param name="firstAccount">Email account</param>
-        /// <param name="secondAccount">Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)             </param>
+        /// <param name="secondAccount">Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             </param>
+        /// <param name="folder">Account folder to fetch from (should be specified for some protocols such as IMAP)             </param>
         /// <param name="storage">Storage name where account file(s) located</param>
         /// <param name="storageFolder">Folder in storage where account file(s) located</param>
-        public FetchEmailMessageRequest(string messageId, string firstAccount, string secondAccount = null, string storage = null, string storageFolder = null)
+        public FetchEmailMessageRequest(string messageId, string firstAccount, string secondAccount = null, string folder = null, string storage = null, string storageFolder = null)
         {
             this.messageId = messageId;
             this.firstAccount = firstAccount;
             this.secondAccount = secondAccount;
+            this.folder = folder;
             this.storage = storage;
             this.storageFolder = storageFolder;
         }
@@ -66,9 +68,14 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string firstAccount { get; set; }
 
         /// <summary>
-        /// Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)             
+        /// Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)             
         /// </summary>
         public string secondAccount { get; set; }
+
+        /// <summary>
+        /// Account folder to fetch from (should be specified for some protocols such as IMAP)             
+        /// </summary>
+        public string folder { get; set; }
 
         /// <summary>
         /// Storage name where account file(s) located

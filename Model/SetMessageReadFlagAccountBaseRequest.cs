@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="SetMessageReadFlagAccountBaseRequest.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -51,8 +51,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public SetMessageReadFlagAccountBaseRequest() {}
 
         /// <summary>SetMessageReadFlagAccountBaseRequest constructor</summary>
-        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
-        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="firstAccount">First account storage file name             </param>
+        /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="messageId">Message identifier             </param>
         /// <param name="isRead">Specifies that message should be marked read or unread             </param>

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="FilesUploadResult.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// File upload result
+    /// 
     /// </summary>
     public class FilesUploadResult 
     {
         /// <summary>
-        /// List of uploaded file names
+        /// Gets or sets Uploaded
         /// </summary>  
         public List<string> Uploaded { get; set; }
 
         /// <summary>
-        /// List of errors.
+        /// Gets or sets Errors
         /// </summary>  
         public List<Error> Errors { get; set; }
 
@@ -51,8 +51,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public FilesUploadResult() {}
 
         /// <summary>FilesUploadResult constructor</summary>
-        /// <param name="uploaded">List of uploaded file names</param>
-        /// <param name="errors">List of errors.</param>
+        /// <param name="uploaded"></param>
+        /// <param name="errors"></param>
         public FilesUploadResult(List<string> uploaded, List<Error> errors)
         {
             Uploaded = uploaded;

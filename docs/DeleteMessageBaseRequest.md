@@ -3,6 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **MessageId** | **string** | Message identifier              | 
+**Folder** | **string** | Account folder where message located. Should be specified for some accounts              | [optional] 
 **DeletePermanently** | **bool?** | Specifies that message should be deleted permanently              | 
 
  Parent class: [AccountBaseRequest](AccountBaseRequest.md)

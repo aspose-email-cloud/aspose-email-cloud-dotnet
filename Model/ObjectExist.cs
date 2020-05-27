@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ObjectExist.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,17 +33,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Object exists
+    /// 
     /// </summary>
     public class ObjectExist 
     {
         /// <summary>
-        /// Indicates that the file or folder exists.
+        /// Gets or sets Exists
         /// </summary>  
         public bool? Exists { get; set; }
 
         /// <summary>
-        /// True if it is a folder, false if it is a file.
+        /// Gets or sets IsFolder
         /// </summary>  
         public bool? IsFolder { get; set; }
 
@@ -51,8 +51,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public ObjectExist() {}
 
         /// <summary>ObjectExist constructor</summary>
-        /// <param name="exists">Indicates that the file or folder exists.</param>
-        /// <param name="isFolder">True if it is a folder, false if it is a file.</param>
+        /// <param name="exists"></param>
+        /// <param name="isFolder"></param>
         public ObjectExist(bool? exists, bool? isFolder)
         {
             Exists = exists;

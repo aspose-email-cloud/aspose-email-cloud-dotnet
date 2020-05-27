@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="FilesList.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Files list
+    /// 
     /// </summary>
     public class FilesList 
     {
         /// <summary>
-        /// Files and folders contained by folder StorageFile.
+        /// Gets or sets Value
         /// </summary>  
         public List<StorageFile> Value { get; set; }
 
@@ -46,7 +46,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public FilesList() {}
 
         /// <summary>FilesList constructor</summary>
-        /// <param name="value">Files and folders contained by folder StorageFile.</param>
+        /// <param name="value"></param>
         public FilesList(List<StorageFile> value)
         {
             Value = value;

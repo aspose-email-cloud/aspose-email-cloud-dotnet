@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="AiBcrImageStorageFile.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,7 +40,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Image location             
         /// </summary>  
-        public StorageFileLocation File { get; set; }
+        public Object File { get; set; }
 
         /// <summary>AiBcrImageStorageFile constructor</summary>
         public AiBcrImageStorageFile() {}
@@ -48,7 +48,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>AiBcrImageStorageFile constructor</summary>
         /// <param name="isSingle">Determines that image contains single VCard or more. Ignored in current version. Multiple cards on image support will be added soon             </param>
         /// <param name="file">Image location             </param>
-        public AiBcrImageStorageFile(bool? isSingle, StorageFileLocation file)
+        public AiBcrImageStorageFile(bool? isSingle, Object file)
         {
             IsSingle = isSingle;
             File = file;

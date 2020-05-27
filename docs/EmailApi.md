@@ -1432,6 +1432,62 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="convertcalendar"></a>
+# **ConvertCalendar**
+
+```csharp
+Stream ConvertCalendar(ConvertCalendarRequest request)
+```
+
+Converts calendar document to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertCalendarRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcalendar"></a>
+# **ConvertCalendarAsync**
+
+```csharp
+async Task<Stream> ConvertCalendarAsync(ConvertCalendarRequest request)
+```
+
+Converts calendar document to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertCalendarRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="convertcalendarmodeltoalternate"></a>
 # **ConvertCalendarModelToAlternate**
 
@@ -1484,18 +1540,190 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="convertcalendarmodeltofile"></a>
+# **ConvertCalendarModelToFile**
+
+```csharp
+Stream ConvertCalendarModelToFile(ConvertCalendarModelToFileRequest request)
+```
+
+Converts calendar model to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToFileRequest(
+    format,
+    calendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **calendarDto** | [**CalendarDto**](CalendarDto.md)| Calendar model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcalendarmodeltofile"></a>
+# **ConvertCalendarModelToFileAsync**
+
+```csharp
+async Task<Stream> ConvertCalendarModelToFileAsync(ConvertCalendarModelToFileRequest request)
+```
+
+Converts calendar model to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToFileRequest(
+    format,
+    calendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **calendarDto** | [**CalendarDto**](CalendarDto.md)| Calendar model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcontact"></a>
+# **ConvertContact**
+
+```csharp
+Stream ConvertContact(ConvertContactRequest request)
+```
+
+Converts contact document to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertContactRequest(
+    destinationFormat,
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format to convert to Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcontact"></a>
+# **ConvertContactAsync**
+
+```csharp
+async Task<Stream> ConvertContactAsync(ConvertContactRequest request)
+```
+
+Converts contact document to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertContactRequest(
+    destinationFormat,
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format to convert to Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcontactmodeltofile"></a>
+# **ConvertContactModelToFile**
+
+```csharp
+Stream ConvertContactModelToFile(ConvertContactModelToFileRequest request)
+```
+
+Converts contact model to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertContactModelToFileRequest(
+    destinationFormat,
+    contactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **contactDto** | [**ContactDto**](ContactDto.md)| Contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcontactmodeltofile"></a>
+# **ConvertContactModelToFileAsync**
+
+```csharp
+async Task<Stream> ConvertContactModelToFileAsync(ConvertContactModelToFileRequest request)
+```
+
+Converts contact model to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertContactModelToFileRequest(
+    destinationFormat,
+    contactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **contactDto** | [**ContactDto**](ContactDto.md)| Contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="convertemail"></a>
 # **ConvertEmail**
 
 ```csharp
-System.IO.Stream ConvertEmail(ConvertEmailRequest request)
+Stream ConvertEmail(ConvertEmailRequest request)
 ```
 
 Converts email document to specified format and returns as file             
 
 ### Return type
 
-**System.IO.Stream**
+**Stream**
 
 ### Request Parameters
 ```csharp
@@ -1507,7 +1735,7 @@ new ConvertEmailRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
- **file** | **System.IO.Stream**| File to upload | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1515,7 +1743,7 @@ Name | Type | Description  | Notes
 # **ConvertEmailAsync**
 
 ```csharp
-async Task<System.IO.Stream> ConvertEmailAsync(ConvertEmailRequest request)
+async Task<Stream> ConvertEmailAsync(ConvertEmailRequest request)
 ```
 
 Converts email document to specified format and returns as file             
@@ -1524,7 +1752,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-**Task<System.IO.Stream>**
+**Task<Stream>**
 
 ### Request Parameters
 ```csharp
@@ -1536,7 +1764,63 @@ new ConvertEmailRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
- **file** | **System.IO.Stream**| File to upload | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertemailmodeltofile"></a>
+# **ConvertEmailModelToFile**
+
+```csharp
+Stream ConvertEmailModelToFile(ConvertEmailModelToFileRequest request)
+```
+
+Converts Email model to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertEmailModelToFileRequest(
+    destinationFormat,
+    emailDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertemailmodeltofile"></a>
+# **ConvertEmailModelToFileAsync**
+
+```csharp
+async Task<Stream> ConvertEmailModelToFileAsync(ConvertEmailModelToFileRequest request)
+```
+
+Converts Email model to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertEmailModelToFileRequest(
+    destinationFormat,
+    emailDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1547,7 +1831,7 @@ Name | Type | Description  | Notes
 void CopyFile(CopyFileRequest request)
 ```
 
-Copy file
+
 
 ### Return type
 
@@ -1565,11 +1849,11 @@ new CopyFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Source file path e.g. &#39;/folder/file.ext&#39; | 
- **destPath** | **string**| Destination file path | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
- **versionId** | **string**| File version ID to copy | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1580,7 +1864,7 @@ Name | Type | Description  | Notes
 async Task CopyFileAsync(CopyFileRequest request)
 ```
 
-Copy file
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1600,11 +1884,11 @@ new CopyFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Source file path e.g. &#39;/folder/file.ext&#39; | 
- **destPath** | **string**| Destination file path | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
- **versionId** | **string**| File version ID to copy | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1615,7 +1899,7 @@ Name | Type | Description  | Notes
 void CopyFolder(CopyFolderRequest request)
 ```
 
-Copy folder
+
 
 ### Return type
 
@@ -1632,10 +1916,10 @@ new CopyFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Source folder path e.g. &#39;/src&#39; | 
- **destPath** | **string**| Destination folder path e.g. &#39;/dst&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1646,7 +1930,7 @@ Name | Type | Description  | Notes
 async Task CopyFolderAsync(CopyFolderRequest request)
 ```
 
-Copy folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1665,10 +1949,10 @@ new CopyFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Source folder path e.g. &#39;/src&#39; | 
- **destPath** | **string**| Destination folder path e.g. &#39;/dst&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1903,7 +2187,7 @@ Name | Type | Description  | Notes
 void CreateFolder(CreateFolderRequest request)
 ```
 
-Create the folder
+
 
 ### Return type
 
@@ -1918,8 +2202,8 @@ new CreateFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -1930,7 +2214,7 @@ Name | Type | Description  | Notes
 async Task CreateFolderAsync(CreateFolderRequest request)
 ```
 
-Create the folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1947,8 +2231,8 @@ new CreateFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2244,6 +2528,62 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="deleteemailthread"></a>
+# **DeleteEmailThread**
+
+```csharp
+void DeleteEmailThread(DeleteEmailThreadRequest request)
+```
+
+Delete thread by id. All messages from thread will also be deleted             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new DeleteEmailThreadRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread id | 
+ **request** | [**DeleteEmailThreadAccountRq**](DeleteEmailThreadAccountRq.md)| Email account specifier | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="deleteemailthread"></a>
+# **DeleteEmailThreadAsync**
+
+```csharp
+async Task DeleteEmailThreadAsync(DeleteEmailThreadRequest request)
+```
+
+Delete thread by id. All messages from thread will also be deleted             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new DeleteEmailThreadRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread id | 
+ **request** | [**DeleteEmailThreadAccountRq**](DeleteEmailThreadAccountRq.md)| Email account specifier | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="deletefile"></a>
 # **DeleteFile**
 
@@ -2251,7 +2591,7 @@ Name | Type | Description  | Notes
 void DeleteFile(DeleteFileRequest request)
 ```
 
-Delete file
+
 
 ### Return type
 
@@ -2267,9 +2607,9 @@ new DeleteFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **versionId** | **string**| File version ID to delete | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2280,7 +2620,7 @@ Name | Type | Description  | Notes
 async Task DeleteFileAsync(DeleteFileRequest request)
 ```
 
-Delete file
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2298,9 +2638,9 @@ new DeleteFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **versionId** | **string**| File version ID to delete | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2311,7 +2651,7 @@ Name | Type | Description  | Notes
 void DeleteFolder(DeleteFolderRequest request)
 ```
 
-Delete folder
+
 
 ### Return type
 
@@ -2327,9 +2667,9 @@ new DeleteFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **recursive** | **bool?**|  | [optional] [default to false]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2340,7 +2680,7 @@ Name | Type | Description  | Notes
 async Task DeleteFolderAsync(DeleteFolderRequest request)
 ```
 
-Delete folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2358,9 +2698,9 @@ new DeleteFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **recursive** | **bool?**|  | [optional] [default to false]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2647,7 +2987,7 @@ Name | Type | Description  | Notes
 Stream DownloadFile(DownloadFileRequest request)
 ```
 
-Download file
+
 
 ### Return type
 
@@ -2663,9 +3003,9 @@ new DownloadFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **versionId** | **string**| File version ID to download | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2676,7 +3016,7 @@ Name | Type | Description  | Notes
 async Task<Stream> DownloadFileAsync(DownloadFileRequest request)
 ```
 
-Download file
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2694,9 +3034,9 @@ new DownloadFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **versionId** | **string**| File version ID to download | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -2719,6 +3059,7 @@ new FetchEmailMessageRequest(
     messageId,
     firstAccount,
     secondAccount=secondAccount,
+    folder=folder,
     storage=storage,
     storageFolder=storageFolder)
 ```
@@ -2727,7 +3068,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **folder** | **string**| Account folder to fetch from (should be specified for some protocols such as IMAP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -2754,6 +3096,7 @@ new FetchEmailMessageRequest(
     messageId,
     firstAccount,
     secondAccount=secondAccount,
+    folder=folder,
     storage=storage,
     storageFolder=storageFolder)
 ```
@@ -2762,7 +3105,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **folder** | **string**| Account folder to fetch from (should be specified for some protocols such as IMAP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -2787,6 +3131,7 @@ new FetchEmailModelRequest(
     messageId,
     firstAccount,
     secondAccount=secondAccount,
+    folder=folder,
     storage=storage,
     storageFolder=storageFolder)
 ```
@@ -2795,7 +3140,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **folder** | **string**| Account folder to fetch from (should be specified for some protocols such as IMAP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -2822,6 +3168,7 @@ new FetchEmailModelRequest(
     messageId,
     firstAccount,
     secondAccount=secondAccount,
+    folder=folder,
     storage=storage,
     storageFolder=storageFolder)
 ```
@@ -2830,7 +3177,80 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **messageId** | **string**| Message identifier | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **folder** | **string**| Account folder to fetch from (should be specified for some protocols such as IMAP)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="fetchemailthreadmessages"></a>
+# **FetchEmailThreadMessages**
+
+```csharp
+ListResponseOfEmailDto FetchEmailThreadMessages(FetchEmailThreadMessagesRequest request)
+```
+
+Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+
+### Return type
+
+[**ListResponseOfEmailDto**](ListResponseOfEmailDto.md)
+
+### Request Parameters
+```csharp
+new FetchEmailThreadMessagesRequest(
+    threadId,
+    firstAccount,
+    secondAccount=secondAccount,
+    folder=folder,
+    storage=storage,
+    storageFolder=storageFolder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread identifier | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **folder** | **string**| Specifies account folder to get thread from              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="fetchemailthreadmessages"></a>
+# **FetchEmailThreadMessagesAsync**
+
+```csharp
+async Task<ListResponseOfEmailDto> FetchEmailThreadMessagesAsync(FetchEmailThreadMessagesRequest request)
+```
+
+Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ListResponseOfEmailDto**](ListResponseOfEmailDto.md)>
+
+### Request Parameters
+```csharp
+new FetchEmailThreadMessagesRequest(
+    threadId,
+    firstAccount,
+    secondAccount=secondAccount,
+    folder=folder,
+    storage=storage,
+    storageFolder=storageFolder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread identifier | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **folder** | **string**| Specifies account folder to get thread from              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
 
@@ -2896,6 +3316,70 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getcalendarasfile"></a>
+# **GetCalendarAsFile**
+
+```csharp
+Stream GetCalendarAsFile(GetCalendarAsFileRequest request)
+```
+
+Converts calendar document from storage to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new GetCalendarAsFileRequest(
+    fileName,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Calendar document file name | 
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarasfile"></a>
+# **GetCalendarAsFileAsync**
+
+```csharp
+async Task<Stream> GetCalendarAsFileAsync(GetCalendarAsFileRequest request)
+```
+
+Converts calendar document from storage to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new GetCalendarAsFileRequest(
+    fileName,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Calendar document file name | 
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getcalendarattachment"></a>
 # **GetCalendarAttachment**
 
@@ -2957,6 +3441,58 @@ Name | Type | Description  | Notes
  **attachment** | **string**| Attachment name or index | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarfileasmodel"></a>
+# **GetCalendarFileAsModel**
+
+```csharp
+CalendarDto GetCalendarFileAsModel(GetCalendarFileAsModelRequest request)
+```
+
+Converts calendar document to a model representation             
+
+### Return type
+
+[**CalendarDto**](CalendarDto.md)
+
+### Request Parameters
+```csharp
+new GetCalendarFileAsModelRequest(
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarfileasmodel"></a>
+# **GetCalendarFileAsModelAsync**
+
+```csharp
+async Task<CalendarDto> GetCalendarFileAsModelAsync(GetCalendarFileAsModelRequest request)
+```
+
+Converts calendar document to a model representation             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**CalendarDto**](CalendarDto.md)>
+
+### Request Parameters
+```csharp
+new GetCalendarFileAsModelRequest(
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -3216,6 +3752,74 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getcontactasfile"></a>
+# **GetContactAsFile**
+
+```csharp
+Stream GetContactAsFile(GetContactAsFileRequest request)
+```
+
+Converts calendar document from storage to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new GetContactAsFileRequest(
+    fileName,
+    destinationFormat,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Calendar document file name | 
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactasfile"></a>
+# **GetContactAsFileAsync**
+
+```csharp
+async Task<Stream> GetContactAsFileAsync(GetContactAsFileRequest request)
+```
+
+Converts calendar document from storage to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new GetContactAsFileRequest(
+    fileName,
+    destinationFormat,
+    format,
+    storage=storage,
+    folder=folder)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Calendar document file name | 
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getcontactattachment"></a>
 # **GetContactAttachment**
 
@@ -3281,6 +3885,62 @@ Name | Type | Description  | Notes
  **attachment** | **string**| Attachment name or index | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactfileasmodel"></a>
+# **GetContactFileAsModel**
+
+```csharp
+ContactDto GetContactFileAsModel(GetContactFileAsModelRequest request)
+```
+
+Converts contact document to a model representation             
+
+### Return type
+
+[**ContactDto**](ContactDto.md)
+
+### Request Parameters
+```csharp
+new GetContactFileAsModelRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactfileasmodel"></a>
+# **GetContactFileAsModelAsync**
+
+```csharp
+async Task<ContactDto> GetContactFileAsModelAsync(GetContactFileAsModelRequest request)
+```
+
+Converts contact document to a model representation             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ContactDto**](ContactDto.md)>
+
+### Request Parameters
+```csharp
+new GetContactFileAsModelRequest(
+    format,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -3555,7 +4215,7 @@ Name | Type | Description  | Notes
 DiscUsage GetDiscUsage(GetDiscUsageRequest request)
 ```
 
-Get disc usage
+
 
 ### Return type
 
@@ -3569,7 +4229,7 @@ new GetDiscUsageRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storageName** | **string**| Storage name | [optional] 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -3580,7 +4240,7 @@ Name | Type | Description  | Notes
 async Task<DiscUsage> GetDiscUsageAsync(GetDiscUsageRequest request)
 ```
 
-Get disc usage
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -3596,7 +4256,7 @@ new GetDiscUsageRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storageName** | **string**| Storage name | [optional] 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -3908,6 +4568,58 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getemailfileasmodel"></a>
+# **GetEmailFileAsModel**
+
+```csharp
+EmailDto GetEmailFileAsModel(GetEmailFileAsModelRequest request)
+```
+
+Converts email document to a model representation             
+
+### Return type
+
+[**EmailDto**](EmailDto.md)
+
+### Request Parameters
+```csharp
+new GetEmailFileAsModelRequest(
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailfileasmodel"></a>
+# **GetEmailFileAsModelAsync**
+
+```csharp
+async Task<EmailDto> GetEmailFileAsModelAsync(GetEmailFileAsModelRequest request)
+```
+
+Converts email document to a model representation             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailDto**](EmailDto.md)>
+
+### Request Parameters
+```csharp
+new GetEmailFileAsModelRequest(
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getemailmodel"></a>
 # **GetEmailModel**
 
@@ -4111,7 +4823,7 @@ Name | Type | Description  | Notes
 FileVersions GetFileVersions(GetFileVersionsRequest request)
 ```
 
-Get file versions
+
 
 ### Return type
 
@@ -4126,8 +4838,8 @@ new GetFileVersionsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4138,7 +4850,7 @@ Name | Type | Description  | Notes
 async Task<FileVersions> GetFileVersionsAsync(GetFileVersionsRequest request)
 ```
 
-Get file versions
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -4155,8 +4867,8 @@ new GetFileVersionsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4167,7 +4879,7 @@ Name | Type | Description  | Notes
 FilesList GetFilesList(GetFilesListRequest request)
 ```
 
-Get all files and folders within a folder
+
 
 ### Return type
 
@@ -4182,8 +4894,8 @@ new GetFilesListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4194,7 +4906,7 @@ Name | Type | Description  | Notes
 async Task<FilesList> GetFilesListAsync(GetFilesListRequest request)
 ```
 
-Get all files and folders within a folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -4211,8 +4923,8 @@ new GetFilesListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4542,7 +5254,7 @@ new ListEmailFoldersRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
@@ -4577,7 +5289,7 @@ new ListEmailFoldersRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
@@ -4616,7 +5328,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| A folder in email account | 
  **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
@@ -4657,7 +5369,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| A folder in email account | 
  **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
@@ -4683,8 +5395,8 @@ The query string should have the following view.      The example of a simple ex
 ```csharp
 new ListEmailModelsRequest(
     folder,
-    queryString,
     firstAccount,
+    queryString=queryString,
     secondAccount=secondAccount,
     storage=storage,
     storageFolder=storageFolder,
@@ -4694,9 +5406,9 @@ new ListEmailModelsRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **folder** | **string**| A folder in email account | 
- **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **queryString** | **string**| A MailQuery search string | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
@@ -4724,8 +5436,8 @@ Task<[**ListResponseOfEmailDto**](ListResponseOfEmailDto.md)>
 ```csharp
 new ListEmailModelsRequest(
     folder,
-    queryString,
     firstAccount,
+    queryString=queryString,
     secondAccount=secondAccount,
     storage=storage,
     storageFolder=storageFolder,
@@ -4735,12 +5447,196 @@ new ListEmailModelsRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **folder** | **string**| A folder in email account | 
- **queryString** | **string**| A MailQuery search string | 
  **firstAccount** | **string**| Email account | 
- **secondAccount** | **string**| Additional email account (should be specified for POP/IMAP accounts and should be SMTP account)              | [optional] 
+ **queryString** | **string**| A MailQuery search string | [optional] 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
  **storage** | **string**| Storage name where account file(s) located | [optional] 
  **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
  **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="listemailthreads"></a>
+# **ListEmailThreads**
+
+```csharp
+EmailThreadList ListEmailThreads(ListEmailThreadsRequest request)
+```
+
+Get message threads from folder. All messages are partly fetched (without email body and other fields)             
+
+### Return type
+
+[**EmailThreadList**](EmailThreadList.md)
+
+### Request Parameters
+```csharp
+new ListEmailThreadsRequest(
+    folder,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder,
+    updateFolderCache=updateFolderCache,
+    messagesCacheLimit=messagesCacheLimit)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **folder** | **string**| A folder in email account.              | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+ **updateFolderCache** | **bool?**| This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account              | [optional] [default to true]
+ **messagesCacheLimit** | **int?**| Limit messages cache size if CacheFile is used. Ignored in accounts without limits support              | [optional] [default to 200]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="listemailthreads"></a>
+# **ListEmailThreadsAsync**
+
+```csharp
+async Task<EmailThreadList> ListEmailThreadsAsync(ListEmailThreadsRequest request)
+```
+
+Get message threads from folder. All messages are partly fetched (without email body and other fields)             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailThreadList**](EmailThreadList.md)>
+
+### Request Parameters
+```csharp
+new ListEmailThreadsRequest(
+    folder,
+    firstAccount,
+    secondAccount=secondAccount,
+    storage=storage,
+    storageFolder=storageFolder,
+    updateFolderCache=updateFolderCache,
+    messagesCacheLimit=messagesCacheLimit)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **folder** | **string**| A folder in email account.              | 
+ **firstAccount** | **string**| Email account | 
+ **secondAccount** | **string**| Additional email account (for example, firstAccount could be IMAP, and second one could be SMTP)              | [optional] 
+ **storage** | **string**| Storage name where account file(s) located | [optional] 
+ **storageFolder** | **string**| Folder in storage where account file(s) located | [optional] 
+ **updateFolderCache** | **bool?**| This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account              | [optional] [default to true]
+ **messagesCacheLimit** | **int?**| Limit messages cache size if CacheFile is used. Ignored in accounts without limits support              | [optional] [default to 200]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="moveemailmessage"></a>
+# **MoveEmailMessage**
+
+```csharp
+void MoveEmailMessage(MoveEmailMessageRequest request)
+```
+
+Move message to another folder             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new MoveEmailMessageRequest(
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request** | [**MoveEmailMessageRq**](MoveEmailMessageRq.md)| Email account, folder and message specifier | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="moveemailmessage"></a>
+# **MoveEmailMessageAsync**
+
+```csharp
+async Task MoveEmailMessageAsync(MoveEmailMessageRequest request)
+```
+
+Move message to another folder             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new MoveEmailMessageRequest(
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request** | [**MoveEmailMessageRq**](MoveEmailMessageRq.md)| Email account, folder and message specifier | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="moveemailthread"></a>
+# **MoveEmailThread**
+
+```csharp
+void MoveEmailThread(MoveEmailThreadRequest request)
+```
+
+Move thread to another folder             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new MoveEmailThreadRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread identifier | 
+ **request** | [**MoveEmailThreadRq**](MoveEmailThreadRq.md)| Move thread request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="moveemailthread"></a>
+# **MoveEmailThreadAsync**
+
+```csharp
+async Task MoveEmailThreadAsync(MoveEmailThreadRequest request)
+```
+
+Move thread to another folder             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new MoveEmailThreadRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread identifier | 
+ **request** | [**MoveEmailThreadRq**](MoveEmailThreadRq.md)| Move thread request | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4751,7 +5647,7 @@ Name | Type | Description  | Notes
 void MoveFile(MoveFileRequest request)
 ```
 
-Move file
+
 
 ### Return type
 
@@ -4769,11 +5665,11 @@ new MoveFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Source file path e.g. &#39;/src.ext&#39; | 
- **destPath** | **string**| Destination file path e.g. &#39;/dest.ext&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
- **versionId** | **string**| File version ID to move | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4784,7 +5680,7 @@ Name | Type | Description  | Notes
 async Task MoveFileAsync(MoveFileRequest request)
 ```
 
-Move file
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -4804,11 +5700,11 @@ new MoveFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Source file path e.g. &#39;/src.ext&#39; | 
- **destPath** | **string**| Destination file path e.g. &#39;/dest.ext&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
- **versionId** | **string**| File version ID to move | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4819,7 +5715,7 @@ Name | Type | Description  | Notes
 void MoveFolder(MoveFolderRequest request)
 ```
 
-Move folder
+
 
 ### Return type
 
@@ -4836,10 +5732,10 @@ new MoveFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Folder path to move e.g. &#39;/folder&#39; | 
- **destPath** | **string**| Destination folder path to move to e.g &#39;/dst&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4850,7 +5746,7 @@ Name | Type | Description  | Notes
 async Task MoveFolderAsync(MoveFolderRequest request)
 ```
 
-Move folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -4869,10 +5765,10 @@ new MoveFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Folder path to move e.g. &#39;/folder&#39; | 
- **destPath** | **string**| Destination folder path to move to e.g &#39;/dst&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4883,7 +5779,7 @@ Name | Type | Description  | Notes
 ObjectExist ObjectExists(ObjectExistsRequest request)
 ```
 
-Check if file or folder exists
+
 
 ### Return type
 
@@ -4899,9 +5795,9 @@ new ObjectExistsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| File or folder path e.g. &#39;/file.ext&#39; or &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **versionId** | **string**| File version ID | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4912,7 +5808,7 @@ Name | Type | Description  | Notes
 async Task<ObjectExist> ObjectExistsAsync(ObjectExistsRequest request)
 ```
 
-Check if file or folder exists
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -4930,9 +5826,9 @@ new ObjectExistsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| File or folder path e.g. &#39;/file.ext&#39; or &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **versionId** | **string**| File version ID | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **versionId** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5180,7 +6076,7 @@ new SaveEmailModelRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
- **name** | **string**| iCalendar file name in storage. | 
+ **name** | **string**| Email document file name in storage. | 
  **rq** | [**StorageModelRqOfEmailDto**](StorageModelRqOfEmailDto.md)| Calendar properties update request. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
@@ -5211,7 +6107,7 @@ new SaveEmailModelRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
- **name** | **string**| iCalendar file name in storage. | 
+ **name** | **string**| Email document file name in storage. | 
  **rq** | [**StorageModelRqOfEmailDto**](StorageModelRqOfEmailDto.md)| Calendar properties update request. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
@@ -5588,6 +6484,62 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="setemailthreadreadflag"></a>
+# **SetEmailThreadReadFlag**
+
+```csharp
+void SetEmailThreadReadFlag(SetEmailThreadReadFlagRequest request)
+```
+
+Mark all messages in thread as read or unread             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SetEmailThreadReadFlagRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread id | 
+ **request** | [**EmailThreadReadFlagRq**](EmailThreadReadFlagRq.md)| Email account specifier and IsRead flag | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="setemailthreadreadflag"></a>
+# **SetEmailThreadReadFlagAsync**
+
+```csharp
+async Task SetEmailThreadReadFlagAsync(SetEmailThreadReadFlagRequest request)
+```
+
+Mark all messages in thread as read or unread             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SetEmailThreadReadFlagRequest(
+    threadId,
+    request)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **threadId** | **string**| Thread id | 
+ **request** | [**EmailThreadReadFlagRq**](EmailThreadReadFlagRq.md)| Email account specifier and IsRead flag | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="storageexists"></a>
 # **StorageExists**
 
@@ -5595,7 +6547,7 @@ Name | Type | Description  | Notes
 StorageExist StorageExists(StorageExistsRequest request)
 ```
 
-Check if storage exists
+
 
 ### Return type
 
@@ -5609,7 +6561,7 @@ new StorageExistsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storageName** | **string**| Storage name | 
+ **storageName** | **string**|  | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5620,7 +6572,7 @@ Name | Type | Description  | Notes
 async Task<StorageExist> StorageExistsAsync(StorageExistsRequest request)
 ```
 
-Check if storage exists
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -5636,7 +6588,7 @@ new StorageExistsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storageName** | **string**| Storage name | 
+ **storageName** | **string**|  | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5819,7 +6771,7 @@ Name | Type | Description  | Notes
 FilesUploadResult UploadFile(UploadFileRequest request)
 ```
 
-Upload file
+
 
 ### Return type
 
@@ -5835,9 +6787,9 @@ new UploadFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Path where to upload including filename and extension e.g. /file.ext or /Folder 1/file.ext             If the content is multipart and path does not contains the file name it tries to get them from filename parameter             from Content-Disposition header.              | 
+ **path** | **string**|  | 
  **file** | **System.IO.Stream**| File to upload | 
- **storageName** | **string**| Storage name | [optional] 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5848,7 +6800,7 @@ Name | Type | Description  | Notes
 async Task<FilesUploadResult> UploadFileAsync(UploadFileRequest request)
 ```
 
-Upload file
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -5866,9 +6818,9 @@ new UploadFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Path where to upload including filename and extension e.g. /file.ext or /Folder 1/file.ext             If the content is multipart and path does not contains the file name it tries to get them from filename parameter             from Content-Disposition header.              | 
+ **path** | **string**|  | 
  **file** | **System.IO.Stream**| File to upload | 
- **storageName** | **string**| Storage name | [optional] 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

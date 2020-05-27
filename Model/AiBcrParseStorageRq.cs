@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="AiBcrParseStorageRq.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,7 +40,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Parse output folder location on storage             
         /// </summary>  
-        public StorageFolderLocation OutFolder { get; set; }
+        public Object OutFolder { get; set; }
 
         /// <summary>AiBcrParseStorageRq constructor</summary>
         public AiBcrParseStorageRq() {}
@@ -49,7 +49,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="options">Recognition options             </param>
         /// <param name="images">List of images with business cards             </param>
         /// <param name="outFolder">Parse output folder location on storage             </param>
-        public AiBcrParseStorageRq(AiBcrOptions options, List<AiBcrImageStorageFile> images, StorageFolderLocation outFolder)
+        public AiBcrParseStorageRq(AiBcrOptions options, List<AiBcrImageStorageFile> images, Object outFolder)
         {
             Options = options;
             Images = images;

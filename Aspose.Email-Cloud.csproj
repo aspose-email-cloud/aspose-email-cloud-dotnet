@@ -4,7 +4,7 @@
     <Title>Aspose.Email Cloud SDK for .NET</Title>
     <TargetFrameworks>net452;netstandard2.0;net20;Xamarin.iOS10;Xamarin.Mac20;MonoAndroid60</TargetFrameworks>
     <Description>Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats. It lets developers manipulate message formats such as Outlook MSG, EML and MHT files.</Description>
-    <Copyright>Copyright (c) 2002-2018 Aspose Pty Ltd</Copyright>
+    <Copyright>Copyright (c) 2002-2020 Aspose Pty Ltd</Copyright>
     <PackageProjectUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</PackageProjectUrl>
     <License>MIT</License>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -12,7 +12,7 @@
     <RepositoryUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</RepositoryUrl>
     <PackageTags>ASPOSE EMAIL CLOUD SDK Outlook MSG EML MHT</PackageTags>
     <RootNamespace>Aspose.Email.Cloud.Sdk</RootNamespace>
-    <Version>20.3.0</Version>
+    <Version>20.5.0.93</Version>
     <AndroidUseIntermediateDesignerFile>False</AndroidUseIntermediateDesignerFile>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' OR '$(TargetFramework)' == 'Xamarin.Mac20' OR '$(TargetFramework)' == 'MonoAndroid60'">

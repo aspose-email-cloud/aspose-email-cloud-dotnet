@@ -55,7 +55,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             if (folderExist.Exists == true && folderExist.IsFolder == true)
             {
                 var deleteRequest = new DeleteFolderRequest(folder, StorageName, true);
-                emailApi.DeleteFolder(deleteRequest);
+                await emailApi.DeleteFolderAsync(deleteRequest);
             }
         }
 
@@ -68,6 +68,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         {
             var calendarFile = await CreateCalendar();
             var request = new GetCalendarRequest(calendarFile, folder, StorageName);
+            // ReSharper disable once MethodHasAsyncOverload
             var calendar = emailApi.GetCalendar(request);
             Assert.AreEqual("CALENDAR", calendar.Name);
         }
@@ -285,7 +286,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 $"{contactFile.FolderPath}/{contactFile.FileName}", contactFile.Storage)))
             using (var memoryStream = new MemoryStream())
             {
-                contactFileStream.CopyTo(memoryStream);
+                await contactFileStream.CopyToAsync(memoryStream);
                 var contactFileContent = Encoding.UTF8.GetString(memoryStream.ToArray());
                 Assert.True(contactFileContent.Contains("Thomas"));
             }
@@ -326,11 +327,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             {
                 Attendees = new List<MailAddress>
                 {
-                    new MailAddress("Attendee Name", "attendee@am.ru", "Accepted")
+                    new MailAddress("Attendee Name", "attendee@am.ru", "Accepted", null)
                 },
                 Description = "Some description",
                 Summary = "Some summary",
-                Organizer = new MailAddress("Organizer Name", "cloud.em@yandex.ru", null),
+                Organizer = new MailAddress("Organizer Name", "cloud.em@yandex.ru", null, null),
                 StartDate = DateTime.UtcNow.AddDays(1).AddHours(12),
                 EndDate = DateTime.UtcNow.AddDays(1).AddHours(13),
                 Location = "Some location"
@@ -350,9 +351,9 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var email = new EmailDto
             {
                 AlternateViews = new List<AlternateView> {alternate},
-                From = new MailAddress("From address", "cloud.em@yandex.ru", "Accepted"),
+                From = new MailAddress("From address", "cloud.em@yandex.ru", "Accepted", null),
                 To = new List<MailAddress>
-                    {new MailAddress("To address", "cloud.em@yandex.ru", null)},
+                    {new MailAddress("To address", "cloud.em@yandex.ru", null, null)},
                 Subject = "Some subject",
                 Body = "Some body"
             };
@@ -542,6 +543,132 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             Assert.AreEqual(2, multiAccountFromStorage.ReceiveAccounts.Count);
             Assert.AreEqual(multiAccount.SendAccount.Credentials.Discriminator,
                 multiAccountFromStorage.SendAccount.Credentials.Discriminator);
+        }
+
+        [Test]
+        [Pipeline]
+        public async Task ConvertCalendarTest()
+        {
+            const string location = "Some location";
+            //Create DTO with specified location:
+            var calendarDto = new CalendarDto
+            {
+                Location = location,
+                Summary = "Some summary",
+                Description = "Some description",
+                StartDate = DateTime.Today,
+                EndDate = DateTime.Today.AddHours(1),
+                Organizer = new MailAddress {Address = "organizer@aspose.com"},
+                Attendees = new List<MailAddress>
+                    {new MailAddress {Address = "attendee@aspose.com"}}
+            };
+            //We can convert this DTO to a MAPI or ICS file stream:
+            var mapiStream = await emailApi.ConvertCalendarModelToFileAsync(
+                new ConvertCalendarModelToFileRequest(
+                    "Msg", calendarDto));
+            /*
+            //mapiStream can be saved as a calendar.msg file:
+            using (var file = File.OpenWrite("calendar.msg"))
+            {
+                await mapiStream.CopyToAsync(file);
+            }
+            mapiStream.Seek(0, SeekOrigin.Begin);
+            */
+
+            //Let's convert this stream to an ICS file:
+            var icsStream = await emailApi.ConvertCalendarAsync(new ConvertCalendarRequest(
+                "Ics", mapiStream));
+            /*
+            //icsStream can be saved as a calendar.ics file:
+            using (var file = File.OpenWrite("calendar.ics"))
+            {
+                await icsStream.CopyToAsync(file);
+            }
+            icsStream.Seek(0, SeekOrigin.Begin);
+            */
+
+            //ICS is a text format. We can convert the stream to a string and check that it
+            //contains specified location as a substring:
+            using (var memoryStream = new MemoryStream())
+            {
+                await icsStream.CopyToAsync(memoryStream);
+                var icsString = Encoding.UTF8.GetString(memoryStream.ToArray());
+                Assert.IsTrue(icsString.Contains(location));
+            }
+
+            icsStream.Seek(0, SeekOrigin.Begin);
+            //We can also convert a file stream back to a CalendarDto
+            var dto = await emailApi.GetCalendarFileAsModelAsync(
+                new GetCalendarFileAsModelRequest(icsStream));
+            Assert.AreEqual(location, dto.Location);
+        }
+
+        [Test]
+        [Pipeline]
+        public async Task ConvertContactTest()
+        {
+            const string surname = "Cane";
+            var contactDto = new ContactDto
+            {
+                Gender = "Male",
+                Surname = surname,
+                GivenName = "John",
+                EmailAddresses = new List<EmailAddress>
+                {
+                    new EmailAddress {Address = "address@aspose.com"}
+                },
+                PhoneNumbers = new List<PhoneNumber>
+                {
+                    new PhoneNumber {Number = "+47235345346"}
+                }
+            };
+            var mapiStream = await emailApi.ConvertContactModelToFileAsync(
+                new ConvertContactModelToFileRequest(
+                    "Msg", contactDto));
+            var vcardStream = await emailApi.ConvertContactAsync(new ConvertContactRequest(
+                "VCard", "Msg", mapiStream));
+            using (var memoryStream = new MemoryStream())
+            {
+                await vcardStream.CopyToAsync(memoryStream);
+                var vcardString = Encoding.UTF8.GetString(memoryStream.ToArray());
+                Assert.IsTrue(vcardString.Contains(surname));
+            }
+
+            vcardStream.Seek(0, SeekOrigin.Begin);
+            var dto = await emailApi.GetContactFileAsModelAsync(
+                new GetContactFileAsModelRequest("VCard", vcardStream));
+            Assert.AreEqual(surname, dto.Surname);
+        }
+        
+        [Test]
+        [Pipeline]
+        public async Task ConvertEmailTest()
+        {
+            const string from = "from@aspose.com";
+            var emailDto = new EmailDto
+            {
+                From = new MailAddress{Address = from},
+                To = new List<MailAddress>{new MailAddress{Address = "to@aspose.com"}},
+                Subject = "Some subject",
+                Body = "Some body",
+                Date = DateTime.MinValue.AddDays(1)
+            };
+            var mapiStream = await emailApi.ConvertEmailModelToFileAsync(
+                new ConvertEmailModelToFileRequest(
+                    "Msg", emailDto));
+            var emlStream = await emailApi.ConvertEmailAsync(new ConvertEmailRequest(
+                "Eml", mapiStream));
+            using (var memoryStream = new MemoryStream())
+            {
+                await emlStream.CopyToAsync(memoryStream);
+                var emlString = Encoding.UTF8.GetString(memoryStream.ToArray());
+                Assert.IsTrue(emlString.Contains(from));
+            }
+
+            emlStream.Seek(0, SeekOrigin.Begin);
+            var dto = await emailApi.GetEmailFileAsModelAsync(
+                new GetEmailFileAsModelRequest(emlStream));
+            Assert.AreEqual(from, dto.From.Address);
         }
 
         private static string FileToBase64(string filePath)

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="SaveEmailModelRequest.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Initializes a new instance of the <see cref="SaveEmailModelRequest"/> class.
         /// </summary>
         /// <param name="format">File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
-        /// <param name="name">iCalendar file name in storage.</param>
+        /// <param name="name">Email document file name in storage.</param>
         /// <param name="rq">Calendar properties update request.</param>
         public SaveEmailModelRequest(string format, string name, StorageModelRqOfEmailDto rq)
         {
@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string format { get; set; }
 
         /// <summary>
-        /// iCalendar file name in storage.
+        /// Email document file name in storage.
         /// </summary>
         public string name { get; set; }
 

@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="EmailDtoList.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,7 +33,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// List of email documents             
+    /// List of email documents from storage             
     /// </summary>
     public class EmailDtoList : ListResponseOfStorageModelOfEmailDto 
     {

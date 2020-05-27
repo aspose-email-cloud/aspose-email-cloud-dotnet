@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="StorageExist.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,12 +33,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     /// <summary>
-    /// Storage exists
+    /// 
     /// </summary>
     public class StorageExist 
     {
         /// <summary>
-        /// Shows that the storage exists.             
+        /// Gets or sets Exists
         /// </summary>  
         public bool? Exists { get; set; }
 
@@ -46,7 +46,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public StorageExist() {}
 
         /// <summary>StorageExist constructor</summary>
-        /// <param name="exists">Shows that the storage exists.             </param>
+        /// <param name="exists"></param>
         public StorageExist(bool? exists)
         {
             Exists = exists;

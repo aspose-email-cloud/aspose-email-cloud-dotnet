@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DeleteMessageBaseRequest.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -43,6 +43,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string MessageId { get; set; }
 
         /// <summary>
+        /// Account folder where message located. Should be specified for some accounts             
+        /// </summary>  
+        public string Folder { get; set; }
+
+        /// <summary>
         /// Specifies that message should be deleted permanently             
         /// </summary>  
         public bool? DeletePermanently { get; set; }
@@ -51,17 +56,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DeleteMessageBaseRequest() {}
 
         /// <summary>DeleteMessageBaseRequest constructor</summary>
-        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
-        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="firstAccount">First account storage file name             </param>
+        /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="messageId">Message identifier             </param>
+        /// <param name="folder">Account folder where message located. Should be specified for some accounts             </param>
         /// <param name="deletePermanently">Specifies that message should be deleted permanently             </param>
-        public DeleteMessageBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string messageId, bool? deletePermanently)
+        public DeleteMessageBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string messageId, string folder, bool? deletePermanently)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;
             StorageFolder = storageFolder;
             MessageId = messageId;
+            Folder = folder;
             DeletePermanently = deletePermanently;
         }
         /// <summary>
@@ -76,6 +83,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  SecondAccount: ").Append(this.SecondAccount).Append("\n");
           sb.Append("  StorageFolder: ").Append(this.StorageFolder).Append("\n");
           sb.Append("  MessageId: ").Append(this.MessageId).Append("\n");
+          sb.Append("  Folder: ").Append(this.Folder).Append("\n");
           sb.Append("  DeletePermanently: ").Append(this.DeletePermanently).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

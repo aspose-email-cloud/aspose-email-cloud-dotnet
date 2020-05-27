@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="DeleteFileRequest.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -41,9 +41,9 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteFileRequest"/> class.
         /// </summary>
-        /// <param name="path">File path e.g. &#39;/folder/file.ext&#39;</param>
-        /// <param name="storageName">Storage name</param>
-        /// <param name="versionId">File version ID to delete</param>
+        /// <param name="path"></param>
+        /// <param name="storageName"></param>
+        /// <param name="versionId"></param>
         public DeleteFileRequest(string path, string storageName = null, string versionId = null)
         {
             this.path = path;
@@ -52,17 +52,17 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// File path e.g. '/folder/file.ext'
+        /// Gets or sets path
         /// </summary>
         public string path { get; set; }
 
         /// <summary>
-        /// Storage name
+        /// Gets or sets storageName
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// File version ID to delete
+        /// Gets or sets versionId
         /// </summary>
         public string versionId { get; set; }
   }

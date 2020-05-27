@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="SendEmailMimeBaseRequest.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -46,8 +46,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public SendEmailMimeBaseRequest() {}
 
         /// <summary>SendEmailMimeBaseRequest constructor</summary>
-        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
-        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="firstAccount">First account storage file name             </param>
+        /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="base64MimeMessage">Email document serialized as MIME             </param>
         public SendEmailMimeBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string base64MimeMessage)

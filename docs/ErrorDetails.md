@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**RequestId** | **string** | The request id | [optional] 
-**Date** | **DateTime?** | Date | 
+**RequestId** | **string** |  | [optional] 
+**Date** | **DateTime?** |  | 
 
 
 

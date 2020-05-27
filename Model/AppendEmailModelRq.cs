@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="AppendEmailModelRq.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,19 +40,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Email document             
         /// </summary>  
-        public EmailDto Message { get; set; }
+        public Object Message { get; set; }
 
         /// <summary>AppendEmailModelRq constructor</summary>
         public AppendEmailModelRq() {}
 
         /// <summary>AppendEmailModelRq constructor</summary>
-        /// <param name="firstAccount">First account storage file name for receiving emails (or universal one)             </param>
-        /// <param name="secondAccount">Second account storage file name for sending emails (ignored if first is universal)             </param>
+        /// <param name="firstAccount">First account storage file name             </param>
+        /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="folder">Email account folder to store a message             </param>
         /// <param name="markAsSent">Mark message as sent             </param>
         /// <param name="message">Email document             </param>
-        public AppendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, EmailDto message)
+        public AppendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, Object message)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;

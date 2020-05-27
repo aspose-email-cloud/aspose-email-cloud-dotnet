@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="ConvertEmailRequest.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Initializes a new instance of the <see cref="ConvertEmailRequest"/> class.
         /// </summary>
         /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
-        /// <param name="file">File to upload</param>
+        /// <param name="file">File to convert</param>
         public ConvertEmailRequest(string format, System.IO.Stream file)
         {
             this.format = format;
@@ -55,7 +55,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string format { get; set; }
 
         /// <summary>
-        /// File to upload
+        /// File to convert
         /// </summary>
         public System.IO.Stream File { get; set; }
   }

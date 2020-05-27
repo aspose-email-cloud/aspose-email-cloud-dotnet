@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="EmailClientAccount.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -62,6 +62,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public EmailClientAccountCredentials Credentials { get; set; }
 
+        /// <summary>
+        /// File with messages cache. Used to provide extra functions, which are not supported by account             
+        /// </summary>  
+        public StorageFileLocation CacheFile { get; set; }
+
         /// <summary>EmailClientAccount constructor</summary>
         public EmailClientAccount() {}
 
@@ -71,13 +76,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="securityOptions">Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
         /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
         /// <param name="credentials">Email client account credentials             </param>
-        public EmailClientAccount(string host, int? port, string securityOptions, string protocolType, EmailClientAccountCredentials credentials)
+        /// <param name="cacheFile">File with messages cache. Used to provide extra functions, which are not supported by account             </param>
+        public EmailClientAccount(string host, int? port, string securityOptions, string protocolType, EmailClientAccountCredentials credentials, StorageFileLocation cacheFile)
         {
             Host = host;
             Port = port;
             SecurityOptions = securityOptions;
             ProtocolType = protocolType;
             Credentials = credentials;
+            CacheFile = cacheFile;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -92,6 +99,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  SecurityOptions: ").Append(this.SecurityOptions).Append("\n");
           sb.Append("  ProtocolType: ").Append(this.ProtocolType).Append("\n");
           sb.Append("  Credentials: ").Append(this.Credentials).Append("\n");
+          sb.Append("  CacheFile: ").Append(this.CacheFile).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

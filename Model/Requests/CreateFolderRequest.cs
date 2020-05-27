@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CreateFolderRequest.cs">
-//   Copyright (c) 2018 Aspose.Email for Cloud
+//   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -41,8 +41,8 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateFolderRequest"/> class.
         /// </summary>
-        /// <param name="path">Folder path to create e.g. &#39;folder_1/folder_2/&#39;</param>
-        /// <param name="storageName">Storage name</param>
+        /// <param name="path"></param>
+        /// <param name="storageName"></param>
         public CreateFolderRequest(string path, string storageName = null)
         {
             this.path = path;
@@ -50,12 +50,12 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// Folder path to create e.g. 'folder_1/folder_2/'
+        /// Gets or sets path
         /// </summary>
         public string path { get; set; }
 
         /// <summary>
-        /// Storage name
+        /// Gets or sets storageName
         /// </summary>
         public string storageName { get; set; }
   }

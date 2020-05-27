@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="MailAddress.cs">
-//   Copyright (c) 2016 Aspose.Email for Cloud
+//   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -52,6 +52,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string ParticipationStatus { get; set; }
 
+        /// <summary>
+        /// The original e-mail address string             
+        /// </summary>  
+        public string OriginalAddressString { get; set; }
+
         /// <summary>MailAddress constructor</summary>
         public MailAddress() {}
 
@@ -59,11 +64,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="displayName">Display name             </param>
         /// <param name="address">Address             </param>
         /// <param name="participationStatus">Identifies the participation status for the calendar user. Enum, available values: NeedsAction, Accepted, Declined, Tentative, Delegated</param>
-        public MailAddress(string displayName, string address, string participationStatus)
+        /// <param name="originalAddressString">The original e-mail address string             </param>
+        public MailAddress(string displayName, string address, string participationStatus, string originalAddressString)
         {
             DisplayName = displayName;
             Address = address;
             ParticipationStatus = participationStatus;
+            OriginalAddressString = originalAddressString;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -76,6 +83,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  DisplayName: ").Append(this.DisplayName).Append("\n");
           sb.Append("  Address: ").Append(this.Address).Append("\n");
           sb.Append("  ParticipationStatus: ").Append(this.ParticipationStatus).Append("\n");
+          sb.Append("  OriginalAddressString: ").Append(this.OriginalAddressString).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
