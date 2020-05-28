@@ -21,7 +21,7 @@ Aspose.Email Cloud is a REST API for creating email applications that work with 
 
 ## New features in version 20.5
 - [Manipulating message threads using Aspose.Email Cloud build-in client](https://docs.aspose.cloud/display/emailcloud/Email+Client+Threads)
-- File converters:
+- [File converters](https://docs.aspose.cloud/display/emailcloud/Convert+Email%2C+Calendar+and+Contact+Files):
     - EmailDto<->EML<->MSG<->MHTML
     - ContactDto<->VCard VCF<->MapiContact MSG
     - CalendarDto<->iCalendar ICS<->MapiCalendar MSG
@@ -41,6 +41,7 @@ Use [SDK tutorials](https://docs.aspose.cloud/display/emailcloud/SDK+Tutorials):
 - [Quick Start With VCard API](https://docs.aspose.cloud/display/emailcloud/Quick+Start+With+VCard+API) - Create and edit VCard files, business card recognition
 - [Quick Start With Email Client](https://docs.aspose.cloud/display/emailcloud/Quick+Start+With+Email+Client) - Setup builtin email client, search/fetch/send/move/delete messages
 - [Email Client Threads](https://docs.aspose.cloud/display/emailcloud/Email+Client+Threads) - Fetch/Move/Delete email message threads using builtin email client
+- [File converters](https://docs.aspose.cloud/display/emailcloud/Convert+Email%2C+Calendar+and+Contact+Files)
 
 SDK reference documentation is available in [this README](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/README.md)
 
