@@ -107,6 +107,8 @@ namespace Aspose.Email.Cloud.Sdk
                 object existingValue,
                 JsonSerializer serializer)
             {
+                if (reader.TokenType == JsonToken.Null)
+                    return null;
                 var jsonObject = JObject.Load(reader);
                 var target = Create(jsonObject, objectType);
                 serializer.Populate(jsonObject.CreateReader(), target);
