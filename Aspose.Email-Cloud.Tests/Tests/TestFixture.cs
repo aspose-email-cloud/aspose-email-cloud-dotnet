@@ -253,7 +253,6 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         /// Test business card recognition with storage.
         /// </summary>
         [Test]
-        [Pipeline]
         public async Task AiBcrParseStorageTest()
         {
             var fileName = $"{Guid.NewGuid().ToString()}.png";
@@ -303,7 +302,6 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         ///     Send image as Base64 string and get VCard properties without producing any files in storage.
         /// </summary>
         [Test]
-        [Pipeline]
         public async Task AiBcrParseTest()
         {
             var result = await emailApi.AiBcrParseAsync(new AiBcrParseRequest(new AiBcrBase64Rq(
@@ -411,7 +409,6 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         }
 
         [Test]
-        [Pipeline]
         public async Task AiBcrParseModelTest()
         {
             var result = await emailApi.AiBcrParseModelAsync(
