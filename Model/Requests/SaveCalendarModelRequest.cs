@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Initializes a new instance of the <see cref="SaveCalendarModelRequest"/> class.
         /// </summary>
         /// <param name="name">iCalendar file name in storage</param>
-        /// <param name="rq">Calendar properties update request</param>
+        /// <param name="rq">Calendar update request</param>
         public SaveCalendarModelRequest(string name, StorageModelRqOfCalendarDto rq)
         {
             this.name = name;
@@ -55,7 +55,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string name { get; set; }
 
         /// <summary>
-        /// Calendar properties update request
+        /// Calendar update request
         /// </summary>
         public StorageModelRqOfCalendarDto rq { get; set; }
   }

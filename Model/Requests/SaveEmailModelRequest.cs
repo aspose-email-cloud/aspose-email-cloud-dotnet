@@ -43,7 +43,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// </summary>
         /// <param name="format">File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
         /// <param name="name">Email document file name in storage.</param>
-        /// <param name="rq">Calendar properties update request.</param>
+        /// <param name="rq">Email document create/update request.</param>
         public SaveEmailModelRequest(string format, string name, StorageModelRqOfEmailDto rq)
         {
             this.format = format;
@@ -62,7 +62,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string name { get; set; }
 
         /// <summary>
-        /// Calendar properties update request.
+        /// Email document create/update request.
         /// </summary>
         public StorageModelRqOfEmailDto rq { get; set; }
   }
