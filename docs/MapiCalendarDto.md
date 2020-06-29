@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **StartDate** | **DateTime?** | Start date and time of the event. If the date is not set, default value for DateTime is returned.              | 
 **StartDateTimeZone** | **Object** | Time zone information that indicates the time zone of the StartDate property.              | [optional] 
 **Uid** | **string** | Unique identifier.              | [optional] 
+**Organizer** | **Object** | Organizer              | [optional] 
 
  Parent class: [MapiMessageItemBaseDto](MapiMessageItemBaseDto.md)
 

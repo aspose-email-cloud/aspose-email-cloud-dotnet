@@ -15,7 +15,8 @@ Name | Type | Description | Notes
 **MicrosoftIntendedStatus** | **string** | Specifies the INTENDED status. Enum, available values: NotDefined, Free, Tentative, Busy, Oof | 
 **OptionalAttendees** | [**List&lt;MailAddress&gt;**](MailAddress.md) | Optional attendees.              | [optional] 
 **Organizer** | [**MailAddress**](MailAddress.md) | Event organizer.              | 
-**RecurrenceString** | **string** | String representation of recurrence pattern (See iCalendar RFC, \&quot;Recurrence rule\&quot; section). For example:               For daily recurrence:         \&quot;FREQ&#x3D;DAILY;COUNT&#x3D;10;WKST&#x3D;MO\&quot;                   For monthly recurrence:         \&quot;BYSETPOS&#x3D;1;BYDAY&#x3D;MO,TU,WE,TH,FR;FREQ&#x3D;MONTHLY;INTERVAL&#x3D;10;WKST&#x3D;MO\&quot;                   For yearly recurrence:         \&quot;BYMONTHDAY&#x3D;30;BYMONTH&#x3D;1;FREQ&#x3D;YEARLY;WKST&#x3D;MO\&quot;                    | [optional] 
+**RecurrenceString** | **string** | Deprecated, use &#39;Recurrence&#39; property. String representation of recurrence pattern (See iCalendar RFC, \&quot;Recurrence rule\&quot; section). For example:               For daily recurrence:         \&quot;FREQ&#x3D;DAILY;COUNT&#x3D;10;WKST&#x3D;MO\&quot;                   For monthly recurrence:         \&quot;BYSETPOS&#x3D;1;BYDAY&#x3D;MO,TU,WE,TH,FR;FREQ&#x3D;MONTHLY;INTERVAL&#x3D;10;WKST&#x3D;MO\&quot;                   For yearly recurrence:         \&quot;BYMONTHDAY&#x3D;30;BYMONTH&#x3D;1;FREQ&#x3D;YEARLY;WKST&#x3D;MO\&quot;                    | [optional] 
+**Recurrence** | [**RecurrencePatternDto**](RecurrencePatternDto.md) | Recurrence pattern              | [optional] 
 **Reminders** | [**List&lt;CalendarReminder&gt;**](CalendarReminder.md) | Reminders. | [optional] 
 **SequenceId** | **string** | The sequence id. Read only. | [optional] 
 **StartDate** | **DateTime?** | Start date. | 

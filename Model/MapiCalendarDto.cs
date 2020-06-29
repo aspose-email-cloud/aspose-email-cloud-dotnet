@@ -122,6 +122,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Uid { get; set; }
 
+        /// <summary>
+        /// Organizer             
+        /// </summary>  
+        public Object Organizer { get; set; }
+
         /// <summary>MapiCalendarDto constructor</summary>
         public MapiCalendarDto() {}
 
@@ -160,7 +165,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="startDate">Start date and time of the event. If the date is not set, default value for DateTime is returned.             </param>
         /// <param name="startDateTimeZone">Time zone information that indicates the time zone of the StartDate property.             </param>
         /// <param name="uid">Unique identifier.             </param>
-        public MapiCalendarDto(List<MapiAttachmentDto> attachments, string billing, string body, string bodyHtml, string bodyRtf, string bodyType, List<string> categories, List<string> companies, string itemId, string messageClass, string mileage, List<MapiRecipientDto> recipients, string sensitivity, string subject, string subjectPrefix, List<MapiPropertyDto> properties, string discriminator, bool? appointmentCounterProposal, Object attendees, string busyStatus, List<string> clientIntent, DateTime? endDate, Object endDateTimeZone, bool? isAllDay, string keyWords, string location, Object recurrence, int? reminderDelta, string reminderFileParameter, bool? reminderSet, int? sequence, DateTime? startDate, Object startDateTimeZone, string uid)
+        /// <param name="organizer">Organizer             </param>
+        public MapiCalendarDto(List<MapiAttachmentDto> attachments, string billing, string body, string bodyHtml, string bodyRtf, string bodyType, List<string> categories, List<string> companies, string itemId, string messageClass, string mileage, List<MapiRecipientDto> recipients, string sensitivity, string subject, string subjectPrefix, List<MapiPropertyDto> properties, string discriminator, bool? appointmentCounterProposal, Object attendees, string busyStatus, List<string> clientIntent, DateTime? endDate, Object endDateTimeZone, bool? isAllDay, string keyWords, string location, Object recurrence, int? reminderDelta, string reminderFileParameter, bool? reminderSet, int? sequence, DateTime? startDate, Object startDateTimeZone, string uid, Object organizer)
         {
             Attachments = attachments;
             Billing = billing;
@@ -196,6 +202,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
             StartDate = startDate;
             StartDateTimeZone = startDateTimeZone;
             Uid = uid;
+            Organizer = organizer;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -239,6 +246,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  StartDate: ").Append(this.StartDate).Append("\n");
           sb.Append("  StartDateTimeZone: ").Append(this.StartDateTimeZone).Append("\n");
           sb.Append("  Uid: ").Append(this.Uid).Append("\n");
+          sb.Append("  Organizer: ").Append(this.Organizer).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
