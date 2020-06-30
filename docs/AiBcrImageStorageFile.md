@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**File** | **Object** | Image location              | [optional] 
+**File** | [**StorageFileLocation**](StorageFileLocation.md) | Image location              | [optional] 
 
  Parent class: [AiBcrImage](AiBcrImage.md)
 

@@ -68,7 +68,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="period">Interval at which the meeting pattern repeats.             </param>
         /// <param name="slidingFlag">Defines whether pattern is sliding or not.             </param>
         /// <param name="startDate">Start date of an item recurrence pattern.             </param>
-        /// <param name="weekStartDay">Day of week Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
+        /// <param name="weekStartDay">Day of week. Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
         /// <param name="discriminator"></param>
         /// <param name="day">Day of the month on which the recurrence falls.             </param>
         /// <param name="dayOfWeek">Days of week at which the event occurs.             </param>

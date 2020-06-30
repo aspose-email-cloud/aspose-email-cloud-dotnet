@@ -58,7 +58,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="period">Interval at which the meeting pattern repeats.             </param>
         /// <param name="slidingFlag">Defines whether pattern is sliding or not.             </param>
         /// <param name="startDate">Start date of an item recurrence pattern.             </param>
-        /// <param name="weekStartDay">Day of week Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
+        /// <param name="weekStartDay">Day of week. Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
         /// <param name="discriminator"></param>
         /// <param name="dayOfWeek">Days of week at which the event occurs.             </param>
         public MapiCalendarWeeklyRecurrencePatternDto(string calendarType, List<DateTime?> deletedInstanceDates, DateTime? endDate, string endType, List<MapiCalendarExceptionInfoDto> exceptions, string frequency, List<DateTime?> modifiedInstanceDates, long? occurrenceCount, string patternType, long? period, bool? slidingFlag, DateTime? startDate, string weekStartDay, string discriminator, List<string> dayOfWeek)

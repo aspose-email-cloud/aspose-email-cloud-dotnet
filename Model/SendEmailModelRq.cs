@@ -40,7 +40,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Message to send             
         /// </summary>  
-        public Object Message { get; set; }
+        public EmailDto Message { get; set; }
 
         /// <summary>SendEmailModelRq constructor</summary>
         public SendEmailModelRq() {}
@@ -50,7 +50,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="message">Message to send             </param>
-        public SendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, Object message)
+        public SendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, EmailDto message)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;

@@ -45,7 +45,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Attendees             
         /// </summary>  
-        public Object Attendees { get; set; }
+        public MapiCalendarAttendeesDto Attendees { get; set; }
 
         /// <summary>
         /// Enumerates the mapi calendar possible busy status Enum, available values: Free, Tentative, Busy, OutOfOffice
@@ -65,7 +65,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Time zone information that indicates the time zone of the EndDate property.             
         /// </summary>  
-        public Object EndDateTimeZone { get; set; }
+        public MapiCalendarTimeZoneDto EndDateTimeZone { get; set; }
 
         /// <summary>
         /// Value indicating whether the event is an all-day event.             
@@ -85,7 +85,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Recurrence properties.             
         /// </summary>  
-        public Object Recurrence { get; set; }
+        public MapiCalendarEventRecurrenceDto Recurrence { get; set; }
 
         /// <summary>
         /// Interval, in minutes, between the time at which the reminder first becomes overdue and the start time of the Calendar object.             
@@ -115,7 +115,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Time zone information that indicates the time zone of the StartDate property.             
         /// </summary>  
-        public Object StartDateTimeZone { get; set; }
+        public MapiCalendarTimeZoneDto StartDateTimeZone { get; set; }
 
         /// <summary>
         /// Unique identifier.             
@@ -125,7 +125,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Organizer             
         /// </summary>  
-        public Object Organizer { get; set; }
+        public MapiElectronicAddressDto Organizer { get; set; }
 
         /// <summary>MapiCalendarDto constructor</summary>
         public MapiCalendarDto() {}
@@ -166,7 +166,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="startDateTimeZone">Time zone information that indicates the time zone of the StartDate property.             </param>
         /// <param name="uid">Unique identifier.             </param>
         /// <param name="organizer">Organizer             </param>
-        public MapiCalendarDto(List<MapiAttachmentDto> attachments, string billing, string body, string bodyHtml, string bodyRtf, string bodyType, List<string> categories, List<string> companies, string itemId, string messageClass, string mileage, List<MapiRecipientDto> recipients, string sensitivity, string subject, string subjectPrefix, List<MapiPropertyDto> properties, string discriminator, bool? appointmentCounterProposal, Object attendees, string busyStatus, List<string> clientIntent, DateTime? endDate, Object endDateTimeZone, bool? isAllDay, string keyWords, string location, Object recurrence, int? reminderDelta, string reminderFileParameter, bool? reminderSet, int? sequence, DateTime? startDate, Object startDateTimeZone, string uid, Object organizer)
+        public MapiCalendarDto(List<MapiAttachmentDto> attachments, string billing, string body, string bodyHtml, string bodyRtf, string bodyType, List<string> categories, List<string> companies, string itemId, string messageClass, string mileage, List<MapiRecipientDto> recipients, string sensitivity, string subject, string subjectPrefix, List<MapiPropertyDto> properties, string discriminator, bool? appointmentCounterProposal, MapiCalendarAttendeesDto attendees, string busyStatus, List<string> clientIntent, DateTime? endDate, MapiCalendarTimeZoneDto endDateTimeZone, bool? isAllDay, string keyWords, string location, MapiCalendarEventRecurrenceDto recurrence, int? reminderDelta, string reminderFileParameter, bool? reminderSet, int? sequence, DateTime? startDate, MapiCalendarTimeZoneDto startDateTimeZone, string uid, MapiElectronicAddressDto organizer)
         {
             Attachments = attachments;
             Billing = billing;

@@ -43,7 +43,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DateTime? Date { get; set; }
 
         /// <summary>
-        /// Day of week Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+        /// Day of week. Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
         /// </summary>  
         public string DayOfWeek { get; set; }
 
@@ -87,7 +87,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>MapiCalendarTimeZoneRuleDto constructor</summary>
         /// <param name="date">Date and time that indicate when to begin using the Standard/Daylight time.             </param>
-        /// <param name="dayOfWeek">Day of week Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
+        /// <param name="dayOfWeek">Day of week. Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
         /// <param name="hour">Hour.             </param>
         /// <param name="milliseconds">Milliseconds.             </param>
         /// <param name="minute">Minute.             </param>
