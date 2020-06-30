@@ -43,9 +43,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DateTime? Date { get; set; }
 
         /// <summary>
-        /// Day of week.             
+        /// Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
         /// </summary>  
-        public Object DayOfWeek { get; set; }
+        public string DayOfWeek { get; set; }
 
         /// <summary>
         /// Hour.             
@@ -87,7 +87,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>MapiCalendarTimeZoneRuleDto constructor</summary>
         /// <param name="date">Date and time that indicate when to begin using the Standard/Daylight time.             </param>
-        /// <param name="dayOfWeek">Day of week.             </param>
+        /// <param name="dayOfWeek">Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
         /// <param name="hour">Hour.             </param>
         /// <param name="milliseconds">Milliseconds.             </param>
         /// <param name="minute">Minute.             </param>
@@ -95,7 +95,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="position">Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last</param>
         /// <param name="seconds">Seconds.             </param>
         /// <param name="year">Year.             </param>
-        public MapiCalendarTimeZoneRuleDto(DateTime? date, Object dayOfWeek, int? hour, int? milliseconds, int? minute, int? month, string position, int? seconds, int? year)
+        public MapiCalendarTimeZoneRuleDto(DateTime? date, string dayOfWeek, int? hour, int? milliseconds, int? minute, int? month, string position, int? seconds, int? year)
         {
             Date = date;
             DayOfWeek = dayOfWeek;

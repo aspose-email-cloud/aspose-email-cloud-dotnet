@@ -98,9 +98,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DateTime? StartDate { get; set; }
 
         /// <summary>
-        /// First day of the calendar week.             
+        /// Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
         /// </summary>  
-        public Object WeekStartDay { get; set; }
+        public string WeekStartDay { get; set; }
 
         /// <summary>
         /// Gets or sets Discriminator
@@ -128,9 +128,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="period">Interval at which the meeting pattern repeats.             </param>
         /// <param name="slidingFlag">Defines whether pattern is sliding or not.             </param>
         /// <param name="startDate">Start date of an item recurrence pattern.             </param>
-        /// <param name="weekStartDay">First day of the calendar week.             </param>
+        /// <param name="weekStartDay">Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
         /// <param name="discriminator"></param>
-        public MapiCalendarRecurrencePatternDto(string calendarType, List<DateTime?> deletedInstanceDates, DateTime? endDate, string endType, List<MapiCalendarExceptionInfoDto> exceptions, string frequency, List<DateTime?> modifiedInstanceDates, long? occurrenceCount, string patternType, long? period, bool? slidingFlag, DateTime? startDate, Object weekStartDay, string discriminator)
+        public MapiCalendarRecurrencePatternDto(string calendarType, List<DateTime?> deletedInstanceDates, DateTime? endDate, string endType, List<MapiCalendarExceptionInfoDto> exceptions, string frequency, List<DateTime?> modifiedInstanceDates, long? occurrenceCount, string patternType, long? period, bool? slidingFlag, DateTime? startDate, string weekStartDay, string discriminator)
         {
             CalendarType = calendarType;
             DeletedInstanceDates = deletedInstanceDates;
