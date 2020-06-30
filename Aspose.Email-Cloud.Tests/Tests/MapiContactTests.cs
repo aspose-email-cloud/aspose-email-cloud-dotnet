@@ -29,7 +29,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         };
 
         [Test]
-        public async Task ModelToCalendarDtoTest()
+        public async Task ModelToContactDtoTest()
         {
             var contactDto =
                 await EmailApi.ConvertMapiContactModelToContactModelAsync(
