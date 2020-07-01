@@ -57,16 +57,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Name { get; set; }
 
-        /// <summary>
-        /// Gets or sets Discriminator
-        /// </summary>  
-        
-        public string Discriminator
-        {
-            get { return GetType().Name; }
-            set { /*do nothing*/}
-        }
-
         /// <summary>MapiPidPropertyDescriptor constructor</summary>
         public MapiPidPropertyDescriptor() {}
 

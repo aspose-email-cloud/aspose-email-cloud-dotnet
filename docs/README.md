@@ -445,6 +445,7 @@ Class | Method | HTTP request | Description
  - [Model.MapiLegacyFreeBusyPropertyDto](MapiLegacyFreeBusyPropertyDto.md)
  - [Model.MapiMessageDto](MapiMessageDto.md)
  - [Model.MapiMultiIntPropertyDto](MapiMultiIntPropertyDto.md)
+ - [Model.MapiMultiStringPropertyDto](MapiMultiStringPropertyDto.md)
  - [Model.MapiPhysicalAddressIndexPropertyDto](MapiPhysicalAddressIndexPropertyDto.md)
  - [Model.MapiPidPropertyDescriptor](MapiPidPropertyDescriptor.md)
  - [Model.MapiResponseTypePropertyDto](MapiResponseTypePropertyDto.md)
