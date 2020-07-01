@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.Email.Cloud.Sdk.Model;
@@ -68,6 +69,14 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var mapiMessageConverted = await EmailApi.GetEmailFileAsMapiModelAsync(
                 new GetEmailFileAsMapiModelRequest("Eml", emlStream));
             Assert.AreEqual(MapiMessage.Subject, mapiMessageConverted.Subject);
+            //Subject is also available as MapiPropertyDto:
+            var subjectProperty = mapiMessageConverted.Properties.First(p =>
+                    //There are different Property descriptors supported.
+                    //Some properties are known to the service, so we can find them by name:
+                    (p.Descriptor as MapiKnownPropertyDescriptor)?.Name == "TagSubject")
+                //Subject is a string, so it is stored in MapiStringPropertyDto:
+                as MapiStringPropertyDto;
+            Assert.AreEqual(MapiMessage.Subject, subjectProperty?.Value);
         }
 
         [Test]

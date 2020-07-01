@@ -2083,78 +2083,6 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Convert CalendarDto to MapiCalendarDto              
-        /// </summary>
-        /// <param name="request">Request. <see cref="ConvertCalendarDtoToMapiModelRequest" /></param>
-        /// <returns><see cref="MapiCalendarDto"/></returns>
-        public MapiCalendarDto ConvertCalendarDtoToMapiModel(Model.Requests.ConvertCalendarDtoToMapiModelRequest request)
-        {
-            // verify the required parameter 'calendarDto' is set
-            if (request.calendarDto == null)
-            {
-                throw new ApiException(400,
-                    "Missing required parameter 'calendarDto' when calling ConvertCalendarDtoToMapiModel");
-            }
-
-            // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/model-as-mapi-model";
-            resourcePath = Regex
-                .Replace(resourcePath, "\\*", string.Empty)
-                .Replace("&amp;", "&")
-                .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.calendarDto); // http body (model) parameter
-            var response = apiInvoker.InvokeApi(
-                resourcePath,
-                "PUT",
-                postBody,
-                null,
-                null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
-            }
-
-            return null;
-        }
-
-        #if (NET452 || NETSTANDARD2_0)
-        /// <summary>
-        /// Convert CalendarDto to MapiCalendarDto              
-        /// </summary>
-        /// <param name="request">Request. <see cref="ConvertCalendarDtoToMapiModelRequest" /></param>
-        /// <returns><see cref="MapiCalendarDto"/></returns>
-        public async Task<MapiCalendarDto> ConvertCalendarDtoToMapiModelAsync(Model.Requests.ConvertCalendarDtoToMapiModelRequest request)
-        {
-            // verify the required parameter 'calendarDto' is set
-            if (request.calendarDto == null)
-            {
-                throw new ApiException(400,
-                    "Missing required parameter 'calendarDto' when calling ConvertCalendarDtoToMapiModel");
-            }
-
-            // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/model-as-mapi-model";
-            resourcePath = Regex
-                .Replace(resourcePath, "\\*", string.Empty)
-                .Replace("&amp;", "&")
-                .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(request.calendarDto); // http body (model) parameter
-            var response = await apiInvoker.InvokeApiAsync(
-                resourcePath,
-                "PUT",
-                postBody,
-                null,
-                null);
-            if (response != null)
-            {
-                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
-            }
-
-            return null;
-        }
-        #endif
-
-        /// <summary>
         /// Convert iCalendar to AlternateView              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertCalendarModelToAlternateRequest" /></param>
@@ -2301,6 +2229,78 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 null,
                 null);
             
+        }
+        #endif
+
+        /// <summary>
+        /// Convert CalendarDto to MapiCalendarDto              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarModelToMapiModelRequest" /></param>
+        /// <returns><see cref="MapiCalendarDto"/></returns>
+        public MapiCalendarDto ConvertCalendarModelToMapiModel(Model.Requests.ConvertCalendarModelToMapiModelRequest request)
+        {
+            // verify the required parameter 'calendarDto' is set
+            if (request.calendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'calendarDto' when calling ConvertCalendarModelToMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/model-as-mapi-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.calendarDto); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Convert CalendarDto to MapiCalendarDto              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarModelToMapiModelRequest" /></param>
+        /// <returns><see cref="MapiCalendarDto"/></returns>
+        public async Task<MapiCalendarDto> ConvertCalendarModelToMapiModelAsync(Model.Requests.ConvertCalendarModelToMapiModelRequest request)
+        {
+            // verify the required parameter 'calendarDto' is set
+            if (request.calendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'calendarDto' when calling ConvertCalendarModelToMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/model-as-mapi-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.calendarDto); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            }
+
+            return null;
         }
         #endif
 

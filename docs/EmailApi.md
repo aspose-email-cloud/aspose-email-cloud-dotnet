@@ -1488,58 +1488,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="convertcalendardtotomapimodel"></a>
-# **ConvertCalendarDtoToMapiModel**
-
-```csharp
-MapiCalendarDto ConvertCalendarDtoToMapiModel(ConvertCalendarDtoToMapiModelRequest request)
-```
-
-Convert CalendarDto to MapiCalendarDto             
-
-### Return type
-
-[**MapiCalendarDto**](MapiCalendarDto.md)
-
-### Request Parameters
-```csharp
-new ConvertCalendarDtoToMapiModelRequest(
-    calendarDto)
-```
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **calendarDto** | [**CalendarDto**](CalendarDto.md)| iCalendar model calendar representation | 
-
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="convertcalendardtotomapimodel"></a>
-# **ConvertCalendarDtoToMapiModelAsync**
-
-```csharp
-async Task<MapiCalendarDto> ConvertCalendarDtoToMapiModelAsync(ConvertCalendarDtoToMapiModelRequest request)
-```
-
-Convert CalendarDto to MapiCalendarDto             
-
-Performs operation asynchronously. Not available on .NETFramework v2.0
-
-### Return type
-
-Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
-
-### Request Parameters
-```csharp
-new ConvertCalendarDtoToMapiModelRequest(
-    calendarDto)
-```
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **calendarDto** | [**CalendarDto**](CalendarDto.md)| iCalendar model calendar representation | 
-
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
 <a name="convertcalendarmodeltoalternate"></a>
 # **ConvertCalendarModelToAlternate**
 
@@ -1645,6 +1593,58 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| File format Enum, available values: Ics, Msg | 
  **calendarDto** | [**CalendarDto**](CalendarDto.md)| Calendar model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcalendarmodeltomapimodel"></a>
+# **ConvertCalendarModelToMapiModel**
+
+```csharp
+MapiCalendarDto ConvertCalendarModelToMapiModel(ConvertCalendarModelToMapiModelRequest request)
+```
+
+Convert CalendarDto to MapiCalendarDto             
+
+### Return type
+
+[**MapiCalendarDto**](MapiCalendarDto.md)
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToMapiModelRequest(
+    calendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **calendarDto** | [**CalendarDto**](CalendarDto.md)| iCalendar model calendar representation | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcalendarmodeltomapimodel"></a>
+# **ConvertCalendarModelToMapiModelAsync**
+
+```csharp
+async Task<MapiCalendarDto> ConvertCalendarModelToMapiModelAsync(ConvertCalendarModelToMapiModelRequest request)
+```
+
+Convert CalendarDto to MapiCalendarDto             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToMapiModelRequest(
+    calendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **calendarDto** | [**CalendarDto**](CalendarDto.md)| iCalendar model calendar representation | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

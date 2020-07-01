@@ -129,35 +129,5 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             Assert.AreEqual(multiAccount.SendAccount.Credentials.Discriminator,
                 multiAccountFromStorage.SendAccount.Credentials.Discriminator);
         }
-
-        [Test]
-        public async Task ConvertEmailTest()
-        {
-            const string from = "from@aspose.com";
-            var emailDto = new EmailDto
-            {
-                From = new MailAddress {Address = from},
-                To = new List<MailAddress> {new MailAddress {Address = "to@aspose.com"}},
-                Subject = "Some subject",
-                Body = "Some body",
-                Date = DateTime.MinValue.AddDays(1)
-            };
-            var mapiStream = await EmailApi.ConvertEmailModelToFileAsync(
-                new ConvertEmailModelToFileRequest(
-                    "Msg", emailDto));
-            var emlStream = await EmailApi.ConvertEmailAsync(new ConvertEmailRequest(
-                "Eml", mapiStream));
-            using (var memoryStream = new MemoryStream())
-            {
-                await emlStream.CopyToAsync(memoryStream);
-                var emlString = Encoding.UTF8.GetString(memoryStream.ToArray());
-                Assert.IsTrue(emlString.Contains(from));
-            }
-
-            emlStream.Seek(0, SeekOrigin.Begin);
-            var dto = await EmailApi.GetEmailFileAsModelAsync(
-                new GetEmailFileAsModelRequest(emlStream));
-            Assert.AreEqual(from, dto.From.Address);
-        }
     }
 }

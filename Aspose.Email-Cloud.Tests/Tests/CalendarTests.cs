@@ -14,6 +14,20 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
     [Pipeline]
     public class CalendarTests : TestFixtureBase
     {
+        private const string Location = "Some location";
+
+        private static CalendarDto Calendar => new CalendarDto
+        {
+            Location = Location, Description = "Some description", Summary = "Some summary",
+            StartDate = DateTime.UtcNow.AddDays(1).AddHours(12),
+            EndDate = DateTime.UtcNow.AddDays(1).AddHours(13),
+            Attendees = new List<MailAddress>
+            {
+                new MailAddress("Attendee Name", "attendee@am.ru", "Accepted", null)
+            },
+            Organizer = new MailAddress("Organizer Name", "cloud.em@yandex.ru", null, null),
+        };
+
         /// <summary>
         /// Synchronous API call test
         /// </summary>
@@ -95,31 +109,18 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         [Test]
         public async Task CreateCalendarEmailTest()
         {
-            var calendar = new CalendarDto
-            {
-                Attendees = new List<MailAddress>
-                {
-                    new MailAddress("Attendee Name", "attendee@am.ru", "Accepted", null)
-                },
-                Description = "Some description",
-                Summary = "Some summary",
-                Organizer = new MailAddress("Organizer Name", "cloud.em@yandex.ru", null, null),
-                StartDate = DateTime.UtcNow.AddDays(1).AddHours(12),
-                EndDate = DateTime.UtcNow.AddDays(1).AddHours(13),
-                Location = "Some location"
-            };
             var folderLocation = new StorageFolderLocation(StorageName, Folder);
             var calendarFile = $"{Guid.NewGuid()}.ics";
             await EmailApi.SaveCalendarModelAsync(
                 new SaveCalendarModelRequest(calendarFile, new StorageModelRqOfCalendarDto(
-                    calendar, folderLocation)));
+                    Calendar, folderLocation)));
 
             var exists = await IsFileExist(calendarFile);
             Assert.True(exists);
 
             var alternate = await EmailApi.ConvertCalendarModelToAlternateAsync(
                 new ConvertCalendarModelToAlternateRequest(
-                    new CalendarDtoAlternateRq(calendar, "Create", null)));
+                    new CalendarDtoAlternateRq(Calendar, "Create", null)));
             var email = new EmailDto
             {
                 AlternateViews = new List<AlternateView> {alternate},
@@ -145,23 +146,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         [Test]
         public async Task ConvertCalendarTest()
         {
-            const string location = "Some location";
             //Create DTO with specified location:
-            var calendarDto = new CalendarDto
-            {
-                Location = location,
-                Summary = "Some summary",
-                Description = "Some description",
-                StartDate = DateTime.Today,
-                EndDate = DateTime.Today.AddHours(1),
-                Organizer = new MailAddress {Address = "organizer@aspose.com"},
-                Attendees = new List<MailAddress>
-                    {new MailAddress {Address = "attendee@aspose.com"}}
-            };
             //We can convert this DTO to a MAPI or ICS file stream:
             var mapiStream = await EmailApi.ConvertCalendarModelToFileAsync(
                 new ConvertCalendarModelToFileRequest(
-                    "Msg", calendarDto));
+                    "Msg", Calendar));
             /*
             //mapiStream can be saved as a calendar.msg file:
             using (var file = File.OpenWrite("calendar.msg"))
@@ -189,14 +178,22 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             {
                 await icsStream.CopyToAsync(memoryStream);
                 var icsString = Encoding.UTF8.GetString(memoryStream.ToArray());
-                Assert.IsTrue(icsString.Contains(location));
+                Assert.IsTrue(icsString.Contains(Location));
             }
 
             icsStream.Seek(0, SeekOrigin.Begin);
             //We can also convert a file stream back to a CalendarDto
             var dto = await EmailApi.GetCalendarFileAsModelAsync(
                 new GetCalendarFileAsModelRequest(icsStream));
-            Assert.AreEqual(location, dto.Location);
+            Assert.AreEqual(Location, dto.Location);
+        }
+
+        [Test]
+        public async Task ConvertModelToMapiModelTest()
+        {
+            var mapiCalendar = await EmailApi.ConvertCalendarModelToMapiModelAsync(
+                new ConvertCalendarModelToMapiModelRequest(Calendar));
+            Assert.AreEqual(Calendar.Location, mapiCalendar.Location);
         }
 
         private async Task<string> CreateCalendar(DateTime? startDate = null)

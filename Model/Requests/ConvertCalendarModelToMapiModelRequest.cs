@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="ConvertCalendarDtoToMapiModelRequest.cs">
+// <copyright company="Aspose" file="ConvertCalendarModelToMapiModelRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -27,22 +27,22 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
   using Model;
 
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertCalendarDtoToMapiModel" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.ConvertCalendarModelToMapiModel" /> operation.
   /// </summary>
-  public class ConvertCalendarDtoToMapiModelRequest  
+  public class ConvertCalendarModelToMapiModelRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertCalendarDtoToMapiModelRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertCalendarModelToMapiModelRequest"/> class.
         /// </summary>
-        public ConvertCalendarDtoToMapiModelRequest()
+        public ConvertCalendarModelToMapiModelRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConvertCalendarDtoToMapiModelRequest"/> class.
+        /// Initializes a new instance of the <see cref="ConvertCalendarModelToMapiModelRequest"/> class.
         /// </summary>
         /// <param name="calendarDto">iCalendar model calendar representation</param>
-        public ConvertCalendarDtoToMapiModelRequest(CalendarDto calendarDto)
+        public ConvertCalendarModelToMapiModelRequest(CalendarDto calendarDto)
         {
             this.calendarDto = calendarDto;
         }
