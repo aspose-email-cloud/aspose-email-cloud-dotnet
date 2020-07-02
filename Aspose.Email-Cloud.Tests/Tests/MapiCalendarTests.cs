@@ -38,7 +38,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             Recurrence = new MapiCalendarEventRecurrenceDto
             {
                 RecurrencePattern = new MapiCalendarDailyRecurrencePatternDto
-                    {OccurrenceCount = 10, WeekStartDay = "Monday", Frequency = "Daily"}
+                    {OccurrenceCount = 10, WeekStartDay = "Monday"}
             },
             Organizer = new MapiElectronicAddressDto {EmailAddress = "organizer@aspose.com"},
         };
