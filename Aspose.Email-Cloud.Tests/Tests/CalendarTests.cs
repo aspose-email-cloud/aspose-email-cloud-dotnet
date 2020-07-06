@@ -26,6 +26,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 new MailAddress("Attendee Name", "attendee@am.ru", "Accepted", null)
             },
             Organizer = new MailAddress("Organizer Name", "cloud.em@yandex.ru", null, null),
+            Recurrence = new DailyRecurrencePatternDto
+            {
+                Occurs = 10,
+                WeekStart = "Monday"
+            }
         };
 
         /// <summary>
@@ -194,6 +199,8 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var mapiCalendar = await EmailApi.ConvertCalendarModelToMapiModelAsync(
                 new ConvertCalendarModelToMapiModelRequest(Calendar));
             Assert.AreEqual(Calendar.Location, mapiCalendar.Location);
+            Assert.AreEqual(nameof(MapiCalendarDailyRecurrencePatternDto),
+                mapiCalendar.Recurrence.RecurrencePattern.Discriminator);
         }
 
         private async Task<string> CreateCalendar(DateTime? startDate = null)
