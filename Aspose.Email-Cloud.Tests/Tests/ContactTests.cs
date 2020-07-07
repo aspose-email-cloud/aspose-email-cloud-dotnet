@@ -98,9 +98,9 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         [Test]
         public async Task ConvertModelToMapiModelTest()
         {
-            var mapiCalendar = await EmailApi.ConvertContactModelToMapiModelAsync(
+            var mapiContact = await EmailApi.ConvertContactModelToMapiModelAsync(
                 new ConvertContactModelToMapiModelRequest(Contact));
-            Assert.AreEqual(Contact.Surname, mapiCalendar.NameInfo.Surname);
+            Assert.AreEqual(Contact.Surname, mapiContact.NameInfo.Surname);
         }
     }
 }
