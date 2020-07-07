@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// Initializes a new instance of the <see cref="GetEmailAsFileRequest"/> class.
         /// </summary>
         /// <param name="fileName">Email document file name</param>
-        /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
+        /// <param name="format">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
         /// <param name="storage">Storage name</param>
         /// <param name="folder">Path to folder in storage</param>
         public GetEmailAsFileRequest(string fileName, string format, string storage = null, string folder = null)
@@ -59,7 +59,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string fileName { get; set; }
 
         /// <summary>
-        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
         /// </summary>
         public string format { get; set; }
 

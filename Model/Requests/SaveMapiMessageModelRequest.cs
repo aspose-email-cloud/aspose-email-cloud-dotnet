@@ -41,7 +41,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="SaveMapiMessageModelRequest"/> class.
         /// </summary>
-        /// <param name="format">File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
+        /// <param name="format">File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
         /// <param name="name">Message file name in storage.</param>
         /// <param name="rq">Message create/update request.</param>
         public SaveMapiMessageModelRequest(string format, string name, StorageModelRqOfMapiMessageDto rq)
@@ -52,7 +52,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
         /// </summary>
         public string format { get; set; }
 

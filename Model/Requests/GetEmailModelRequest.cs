@@ -41,7 +41,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="GetEmailModelRequest"/> class.
         /// </summary>
-        /// <param name="format">Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
+        /// <param name="format">Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
         /// <param name="name">Email document file name.</param>
         /// <param name="folder">Path to folder in storage.</param>
         /// <param name="storage">Storage name.</param>
@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
         /// </summary>
         public string format { get; set; }
 

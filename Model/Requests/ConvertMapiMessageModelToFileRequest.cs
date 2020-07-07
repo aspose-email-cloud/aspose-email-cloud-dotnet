@@ -41,7 +41,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="ConvertMapiMessageModelToFileRequest"/> class.
         /// </summary>
-        /// <param name="destinationFormat">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
+        /// <param name="destinationFormat">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
         /// <param name="mapiMessage">MAPI message model to convert</param>
         public ConvertMapiMessageModelToFileRequest(string destinationFormat, MapiMessageDto mapiMessage)
         {
@@ -50,7 +50,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
         /// </summary>
         public string destinationFormat { get; set; }
 
