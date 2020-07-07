@@ -41,7 +41,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="ConvertEmailModelToFileRequest"/> class.
         /// </summary>
-        /// <param name="destinationFormat">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html</param>
+        /// <param name="destinationFormat">File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
         /// <param name="emailDto">Email model to convert</param>
         public ConvertEmailModelToFileRequest(string destinationFormat, EmailDto emailDto)
         {
@@ -50,7 +50,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         }
 
         /// <summary>
-        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html
+        /// File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
         /// </summary>
         public string destinationFormat { get; set; }
 
