@@ -56,7 +56,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         }
                     ﻿
         /// <summary>
-        ///  
+        /// Copy file 
         /// </summary>
         /// <param name="request">Request. <see cref="CopyFileRequest" /></param>
         public void CopyFile(CopyFileRequest request)
@@ -93,7 +93,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        ///  
+        /// Copy file 
         /// </summary>
         /// <param name="request">Request. <see cref="CopyFileRequest" /></param>
         public async Task CopyFileAsync(CopyFileRequest request) =>
@@ -102,7 +102,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        ///  
+        /// Delete file 
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteFileRequest" /></param>
         public void DeleteFile(DeleteFileRequest request)
@@ -130,7 +130,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        ///  
+        /// Delete file 
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteFileRequest" /></param>
         public async Task DeleteFileAsync(DeleteFileRequest request) =>
@@ -139,7 +139,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        ///  
+        /// Download file 
         /// </summary>
         /// <param name="request">Request. <see cref="DownloadFileRequest" /></param>
         /// <returns><see cref="System.IO.Stream"/></returns>
@@ -171,7 +171,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        ///  
+        /// Download file 
         /// </summary>
         /// <param name="request">Request. <see cref="DownloadFileRequest" /></param>
         /// <returns><see cref="System.IO.Stream"/></returns>
@@ -181,7 +181,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        ///  
+        /// Move file 
         /// </summary>
         /// <param name="request">Request. <see cref="MoveFileRequest" /></param>
         public void MoveFile(MoveFileRequest request)
@@ -218,7 +218,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        ///  
+        /// Move file 
         /// </summary>
         /// <param name="request">Request. <see cref="MoveFileRequest" /></param>
         public async Task MoveFileAsync(MoveFileRequest request) =>
@@ -227,7 +227,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        ///  
+        /// Upload file 
         /// </summary>
         /// <param name="request">Request. <see cref="UploadFileRequest" /></param>
         /// <returns><see cref="FilesUploadResult"/></returns>
@@ -271,7 +271,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        ///  
+        /// Upload file 
         /// </summary>
         /// <param name="request">Request. <see cref="UploadFileRequest" /></param>
         /// <returns><see cref="FilesUploadResult"/></returns>

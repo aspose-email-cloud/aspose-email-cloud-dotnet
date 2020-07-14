@@ -37,12 +37,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// 
+    /// File versions FileVersion.
     /// </summary>
     public class FileVersions 
     {
         /// <summary>
-        /// Gets or sets Value
+        /// File versions FileVersion.
         /// </summary>  
         public List<FileVersion> Value { get; set; }
 
@@ -50,7 +50,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public FileVersions() {}
 
         /// <summary>FileVersions constructor</summary>
-        /// <param name="value"></param>
+        /// <param name="value">File versions FileVersion.</param>
         public FileVersions(List<FileVersion> value)
         {
             Value = value;

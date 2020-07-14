@@ -56,7 +56,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         }
                     ﻿
         /// <summary>
-        ///  
+        /// Get disc usage 
         /// </summary>
         /// <param name="request">Request. <see cref="GetDiscUsageRequest" /></param>
         /// <returns><see cref="DiscUsage"/></returns>
@@ -77,7 +77,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        ///  
+        /// Get disc usage 
         /// </summary>
         /// <param name="request">Request. <see cref="GetDiscUsageRequest" /></param>
         /// <returns><see cref="DiscUsage"/></returns>
@@ -87,7 +87,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        ///  
+        /// Get file versions 
         /// </summary>
         /// <param name="request">Request. <see cref="GetFileVersionsRequest" /></param>
         /// <returns><see cref="FileVersions"/></returns>
@@ -116,7 +116,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        ///  
+        /// Get file versions 
         /// </summary>
         /// <param name="request">Request. <see cref="GetFileVersionsRequest" /></param>
         /// <returns><see cref="FileVersions"/></returns>
@@ -126,7 +126,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        ///  
+        /// Check if file or folder exists 
         /// </summary>
         /// <param name="request">Request. <see cref="ObjectExistsRequest" /></param>
         /// <returns><see cref="ObjectExist"/></returns>
@@ -156,7 +156,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        ///  
+        /// Check if file or folder exists 
         /// </summary>
         /// <param name="request">Request. <see cref="ObjectExistsRequest" /></param>
         /// <returns><see cref="ObjectExist"/></returns>
@@ -166,7 +166,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        ///  
+        /// Check if storage exists 
         /// </summary>
         /// <param name="request">Request. <see cref="StorageExistsRequest" /></param>
         /// <returns><see cref="StorageExist"/></returns>
@@ -194,7 +194,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        ///  
+        /// Check if storage exists 
         /// </summary>
         /// <param name="request">Request. <see cref="StorageExistsRequest" /></param>
         /// <returns><see cref="StorageExist"/></returns>

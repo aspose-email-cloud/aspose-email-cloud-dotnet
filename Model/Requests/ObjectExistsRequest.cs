@@ -47,9 +47,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ObjectExistsRequest"/> class.
         /// </summary>
-        /// <param name="path"></param>
-        /// <param name="storageName"></param>
-        /// <param name="versionId"></param>
+        /// <param name="path">File or folder path e.g. &#39;/file.ext&#39; or &#39;/folder&#39;</param>
+        /// <param name="storageName">Storage name</param>
+        /// <param name="versionId">File version ID</param>
         public ObjectExistsRequest(string path, string storageName = null, string versionId = null)
         {
             this.path = path;
@@ -58,17 +58,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// Gets or sets path
+        /// File or folder path e.g. '/file.ext' or '/folder'
         /// </summary>
         public string path { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName
+        /// Storage name
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets versionId
+        /// File version ID
         /// </summary>
         public string versionId { get; set; }
   }

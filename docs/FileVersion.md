@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**VersionId** | **string** |  | [optional] 
-**IsLatest** | **bool?** |  | 
+**VersionId** | **string** | File Version ID. | [optional] 
+**IsLatest** | **bool?** | Specifies whether the file is (true) or is not (false) the latest version of an file. | 
 
  Parent class: [StorageFile](StorageFile.md)
 

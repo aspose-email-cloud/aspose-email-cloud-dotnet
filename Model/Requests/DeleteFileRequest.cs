@@ -47,9 +47,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteFileRequest"/> class.
         /// </summary>
-        /// <param name="path"></param>
-        /// <param name="storageName"></param>
-        /// <param name="versionId"></param>
+        /// <param name="path">File path e.g. &#39;/folder/file.ext&#39;</param>
+        /// <param name="storageName">Storage name</param>
+        /// <param name="versionId">File version ID to delete</param>
         public DeleteFileRequest(string path, string storageName = null, string versionId = null)
         {
             this.path = path;
@@ -58,17 +58,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// Gets or sets path
+        /// File path e.g. '/folder/file.ext'
         /// </summary>
         public string path { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName
+        /// Storage name
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets versionId
+        /// File version ID to delete
         /// </summary>
         public string versionId { get; set; }
   }

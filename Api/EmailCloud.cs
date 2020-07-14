@@ -13,23 +13,26 @@ namespace Aspose.Email.Cloud.Sdk.Api
     {
         private readonly ApiInvoker apiInvoker;
         private readonly Configuration configuration;
-
+    
         public CalendarApi Calendar {get;}
+    
         public ContactApi Contact {get;}
+    
         public EmailApi Email {get;}
+    
         public FileApi File {get;}
+    
         public FolderApi Folder {get;}
+    
         public StorageApi Storage {get;}
+    
+    
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailCloud"/> class.
         /// </summary>
-        /// <param name="apiKey">
-        /// The api Key.
-        /// </param>
-        /// <param name="appSid">
-        /// The app Sid.
-        /// </param>
+        /// <param name="apiKey">The api Key.</param>
+        /// <param name="appSid">The app Sid.</param>
         public EmailCloud(string apiKey, string appSid)
             : this(new Configuration { AppKey = apiKey, AppSid = appSid })
         {
@@ -50,12 +53,21 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 new ApiExceptionRequestHandler()
             };
             apiInvoker = new ApiInvoker(requestHandlers);
+
+        
             Calendar = new CalendarApi(apiInvoker, this.configuration);
+        
             Contact = new ContactApi(apiInvoker, this.configuration);
+        
             Email = new EmailApi(apiInvoker, this.configuration);
+        
             File = new FileApi(apiInvoker, this.configuration);
+        
             Folder = new FolderApi(apiInvoker, this.configuration);
+        
             Storage = new StorageApi(apiInvoker, this.configuration);
+        
+        
         }
     }
 }

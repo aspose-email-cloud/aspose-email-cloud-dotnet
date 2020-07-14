@@ -47,9 +47,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteFolderRequest"/> class.
         /// </summary>
-        /// <param name="path"></param>
-        /// <param name="storageName"></param>
-        /// <param name="recursive"></param>
+        /// <param name="path">Folder path e.g. &#39;/folder&#39;</param>
+        /// <param name="storageName">Storage name</param>
+        /// <param name="recursive">Enable to delete folders, subfolders and files</param>
         public DeleteFolderRequest(string path, string storageName = null, bool? recursive = null)
         {
             this.path = path;
@@ -58,17 +58,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// Gets or sets path
+        /// Folder path e.g. '/folder'
         /// </summary>
         public string path { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName
+        /// Storage name
         /// </summary>
         public string storageName { get; set; }
 
         /// <summary>
-        /// Gets or sets recursive
+        /// Enable to delete folders, subfolders and files
         /// </summary>
         public bool? recursive { get; set; }
   }

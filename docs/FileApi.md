@@ -7,7 +7,7 @@
 void CopyFile(CopyFileRequest request)
 ```
 
-
+Copy file
 
 ### Return type
 
@@ -25,11 +25,11 @@ new CopyFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**|  | 
- **destPath** | **string**|  | 
- **srcStorageName** | **string**|  | [optional] 
- **destStorageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **srcPath** | **string**| Source file path e.g. &#39;/folder/file.ext&#39; | 
+ **destPath** | **string**| Destination file path | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
+ **versionId** | **string**| File version ID to copy | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -40,7 +40,7 @@ Name | Type | Description  | Notes
 async Task CopyFileAsync(CopyFileRequest request)
 ```
 
-
+Copy file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -60,11 +60,11 @@ new CopyFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**|  | 
- **destPath** | **string**|  | 
- **srcStorageName** | **string**|  | [optional] 
- **destStorageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **srcPath** | **string**| Source file path e.g. &#39;/folder/file.ext&#39; | 
+ **destPath** | **string**| Destination file path | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
+ **versionId** | **string**| File version ID to copy | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 void DeleteFile(DeleteFileRequest request)
 ```
 
-
+Delete file
 
 ### Return type
 
@@ -91,9 +91,9 @@ new DeleteFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
- **storageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID to delete | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 async Task DeleteFileAsync(DeleteFileRequest request)
 ```
 
-
+Delete file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -122,9 +122,9 @@ new DeleteFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
- **storageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID to delete | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -135,7 +135,7 @@ Name | Type | Description  | Notes
 Stream DownloadFile(DownloadFileRequest request)
 ```
 
-
+Download file
 
 ### Return type
 
@@ -151,9 +151,9 @@ new DownloadFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
- **storageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID to download | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 async Task<Stream> DownloadFileAsync(DownloadFileRequest request)
 ```
 
-
+Download file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -182,9 +182,9 @@ new DownloadFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
- **storageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID to download | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 void MoveFile(MoveFileRequest request)
 ```
 
-
+Move file
 
 ### Return type
 
@@ -213,11 +213,11 @@ new MoveFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**|  | 
- **destPath** | **string**|  | 
- **srcStorageName** | **string**|  | [optional] 
- **destStorageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **srcPath** | **string**| Source file path e.g. &#39;/src.ext&#39; | 
+ **destPath** | **string**| Destination file path e.g. &#39;/dest.ext&#39; | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
+ **versionId** | **string**| File version ID to move | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 async Task MoveFileAsync(MoveFileRequest request)
 ```
 
-
+Move file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -248,11 +248,11 @@ new MoveFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**|  | 
- **destPath** | **string**|  | 
- **srcStorageName** | **string**|  | [optional] 
- **destStorageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **srcPath** | **string**| Source file path e.g. &#39;/src.ext&#39; | 
+ **destPath** | **string**| Destination file path e.g. &#39;/dest.ext&#39; | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
+ **versionId** | **string**| File version ID to move | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 FilesUploadResult UploadFile(UploadFileRequest request)
 ```
 
-
+Upload file
 
 ### Return type
 
@@ -279,9 +279,9 @@ new UploadFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
+ **path** | **string**| Path where to upload including filename and extension e.g. /file.ext or /Folder 1/file.ext             If the content is multipart and path does not contains the file name it tries to get them from filename parameter             from Content-Disposition header.              | 
  **file** | **System.IO.Stream**| File to upload | 
- **storageName** | **string**|  | [optional] 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 async Task<FilesUploadResult> UploadFileAsync(UploadFileRequest request)
 ```
 
-
+Upload file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -310,9 +310,9 @@ new UploadFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
+ **path** | **string**| Path where to upload including filename and extension e.g. /file.ext or /Folder 1/file.ext             If the content is multipart and path does not contains the file name it tries to get them from filename parameter             from Content-Disposition header.              | 
  **file** | **System.IO.Stream**| File to upload | 
- **storageName** | **string**|  | [optional] 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

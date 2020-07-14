@@ -37,12 +37,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// 
+    /// Files list
     /// </summary>
     public class FilesList 
     {
         /// <summary>
-        /// Gets or sets Value
+        /// Files and folders contained by folder StorageFile.
         /// </summary>  
         public List<StorageFile> Value { get; set; }
 
@@ -50,7 +50,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public FilesList() {}
 
         /// <summary>FilesList constructor</summary>
-        /// <param name="value"></param>
+        /// <param name="value">Files and folders contained by folder StorageFile.</param>
         public FilesList(List<StorageFile> value)
         {
             Value = value;

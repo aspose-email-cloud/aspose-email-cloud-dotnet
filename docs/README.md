@@ -56,34 +56,34 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**EmailGetListAsync**](EmailApi.md#emailgetlistasync) | **GET** /email/list | Get email list from storage folder.             . Not available on .NETFramework v2.0
 *EmailApi* | [**EmailSave**](EmailApi.md#emailsave) | **PUT** /email | Save email document to storage.             
 *EmailApi* | [**EmailSaveAsync**](EmailApi.md#emailsaveasync) | **PUT** /email | Save email document to storage.             . Not available on .NETFramework v2.0
-*FileApi* | [**CopyFile**](FileApi.md#copyfile) | **PUT** /email/storage/file/copy/{srcPath} | 
-*FileApi* | [**CopyFileAsync**](FileApi.md#copyfileasync) | **PUT** /email/storage/file/copy/{srcPath} | 
-*FileApi* | [**DeleteFile**](FileApi.md#deletefile) | **DELETE** /email/storage/file/{path} | 
-*FileApi* | [**DeleteFileAsync**](FileApi.md#deletefileasync) | **DELETE** /email/storage/file/{path} | 
-*FileApi* | [**DownloadFile**](FileApi.md#downloadfile) | **GET** /email/storage/file/{path} | 
-*FileApi* | [**DownloadFileAsync**](FileApi.md#downloadfileasync) | **GET** /email/storage/file/{path} | 
-*FileApi* | [**MoveFile**](FileApi.md#movefile) | **PUT** /email/storage/file/move/{srcPath} | 
-*FileApi* | [**MoveFileAsync**](FileApi.md#movefileasync) | **PUT** /email/storage/file/move/{srcPath} | 
-*FileApi* | [**UploadFile**](FileApi.md#uploadfile) | **PUT** /email/storage/file/{path} | 
-*FileApi* | [**UploadFileAsync**](FileApi.md#uploadfileasync) | **PUT** /email/storage/file/{path} | 
-*FolderApi* | [**CopyFolder**](FolderApi.md#copyfolder) | **PUT** /email/storage/folder/copy/{srcPath} | 
-*FolderApi* | [**CopyFolderAsync**](FolderApi.md#copyfolderasync) | **PUT** /email/storage/folder/copy/{srcPath} | 
-*FolderApi* | [**CreateFolder**](FolderApi.md#createfolder) | **PUT** /email/storage/folder/{path} | 
-*FolderApi* | [**CreateFolderAsync**](FolderApi.md#createfolderasync) | **PUT** /email/storage/folder/{path} | 
-*FolderApi* | [**DeleteFolder**](FolderApi.md#deletefolder) | **DELETE** /email/storage/folder/{path} | 
-*FolderApi* | [**DeleteFolderAsync**](FolderApi.md#deletefolderasync) | **DELETE** /email/storage/folder/{path} | 
-*FolderApi* | [**GetFilesList**](FolderApi.md#getfileslist) | **GET** /email/storage/folder/{path} | 
-*FolderApi* | [**GetFilesListAsync**](FolderApi.md#getfileslistasync) | **GET** /email/storage/folder/{path} | 
-*FolderApi* | [**MoveFolder**](FolderApi.md#movefolder) | **PUT** /email/storage/folder/move/{srcPath} | 
-*FolderApi* | [**MoveFolderAsync**](FolderApi.md#movefolderasync) | **PUT** /email/storage/folder/move/{srcPath} | 
-*StorageApi* | [**GetDiscUsage**](StorageApi.md#getdiscusage) | **GET** /email/storage/disc | 
-*StorageApi* | [**GetDiscUsageAsync**](StorageApi.md#getdiscusageasync) | **GET** /email/storage/disc | 
-*StorageApi* | [**GetFileVersions**](StorageApi.md#getfileversions) | **GET** /email/storage/version/{path} | 
-*StorageApi* | [**GetFileVersionsAsync**](StorageApi.md#getfileversionsasync) | **GET** /email/storage/version/{path} | 
-*StorageApi* | [**ObjectExists**](StorageApi.md#objectexists) | **GET** /email/storage/exist/{path} | 
-*StorageApi* | [**ObjectExistsAsync**](StorageApi.md#objectexistsasync) | **GET** /email/storage/exist/{path} | 
-*StorageApi* | [**StorageExists**](StorageApi.md#storageexists) | **GET** /email/storage/{storageName}/exist | 
-*StorageApi* | [**StorageExistsAsync**](StorageApi.md#storageexistsasync) | **GET** /email/storage/{storageName}/exist | 
+*FileApi* | [**CopyFile**](FileApi.md#copyfile) | **PUT** /email/storage/file/copy/{srcPath} | Copy file
+*FileApi* | [**CopyFileAsync**](FileApi.md#copyfileasync) | **PUT** /email/storage/file/copy/{srcPath} | Copy file. Not available on .NETFramework v2.0
+*FileApi* | [**DeleteFile**](FileApi.md#deletefile) | **DELETE** /email/storage/file/{path} | Delete file
+*FileApi* | [**DeleteFileAsync**](FileApi.md#deletefileasync) | **DELETE** /email/storage/file/{path} | Delete file. Not available on .NETFramework v2.0
+*FileApi* | [**DownloadFile**](FileApi.md#downloadfile) | **GET** /email/storage/file/{path} | Download file
+*FileApi* | [**DownloadFileAsync**](FileApi.md#downloadfileasync) | **GET** /email/storage/file/{path} | Download file. Not available on .NETFramework v2.0
+*FileApi* | [**MoveFile**](FileApi.md#movefile) | **PUT** /email/storage/file/move/{srcPath} | Move file
+*FileApi* | [**MoveFileAsync**](FileApi.md#movefileasync) | **PUT** /email/storage/file/move/{srcPath} | Move file. Not available on .NETFramework v2.0
+*FileApi* | [**UploadFile**](FileApi.md#uploadfile) | **PUT** /email/storage/file/{path} | Upload file
+*FileApi* | [**UploadFileAsync**](FileApi.md#uploadfileasync) | **PUT** /email/storage/file/{path} | Upload file. Not available on .NETFramework v2.0
+*FolderApi* | [**CopyFolder**](FolderApi.md#copyfolder) | **PUT** /email/storage/folder/copy/{srcPath} | Copy folder
+*FolderApi* | [**CopyFolderAsync**](FolderApi.md#copyfolderasync) | **PUT** /email/storage/folder/copy/{srcPath} | Copy folder. Not available on .NETFramework v2.0
+*FolderApi* | [**CreateFolder**](FolderApi.md#createfolder) | **PUT** /email/storage/folder/{path} | Create the folder
+*FolderApi* | [**CreateFolderAsync**](FolderApi.md#createfolderasync) | **PUT** /email/storage/folder/{path} | Create the folder. Not available on .NETFramework v2.0
+*FolderApi* | [**DeleteFolder**](FolderApi.md#deletefolder) | **DELETE** /email/storage/folder/{path} | Delete folder
+*FolderApi* | [**DeleteFolderAsync**](FolderApi.md#deletefolderasync) | **DELETE** /email/storage/folder/{path} | Delete folder. Not available on .NETFramework v2.0
+*FolderApi* | [**GetFilesList**](FolderApi.md#getfileslist) | **GET** /email/storage/folder/{path} | Get all files and folders within a folder
+*FolderApi* | [**GetFilesListAsync**](FolderApi.md#getfileslistasync) | **GET** /email/storage/folder/{path} | Get all files and folders within a folder. Not available on .NETFramework v2.0
+*FolderApi* | [**MoveFolder**](FolderApi.md#movefolder) | **PUT** /email/storage/folder/move/{srcPath} | Move folder
+*FolderApi* | [**MoveFolderAsync**](FolderApi.md#movefolderasync) | **PUT** /email/storage/folder/move/{srcPath} | Move folder. Not available on .NETFramework v2.0
+*StorageApi* | [**GetDiscUsage**](StorageApi.md#getdiscusage) | **GET** /email/storage/disc | Get disc usage
+*StorageApi* | [**GetDiscUsageAsync**](StorageApi.md#getdiscusageasync) | **GET** /email/storage/disc | Get disc usage. Not available on .NETFramework v2.0
+*StorageApi* | [**GetFileVersions**](StorageApi.md#getfileversions) | **GET** /email/storage/version/{path} | Get file versions
+*StorageApi* | [**GetFileVersionsAsync**](StorageApi.md#getfileversionsasync) | **GET** /email/storage/version/{path} | Get file versions. Not available on .NETFramework v2.0
+*StorageApi* | [**ObjectExists**](StorageApi.md#objectexists) | **GET** /email/storage/exist/{path} | Check if file or folder exists
+*StorageApi* | [**ObjectExistsAsync**](StorageApi.md#objectexistsasync) | **GET** /email/storage/exist/{path} | Check if file or folder exists. Not available on .NETFramework v2.0
+*StorageApi* | [**StorageExists**](StorageApi.md#storageexists) | **GET** /email/storage/{storageName}/exist | Check if storage exists
+*StorageApi* | [**StorageExistsAsync**](StorageApi.md#storageexistsasync) | **GET** /email/storage/{storageName}/exist | Check if storage exists. Not available on .NETFramework v2.0
 
 
 ## Documentation for Models
