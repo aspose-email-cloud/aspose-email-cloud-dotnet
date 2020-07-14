@@ -40,66 +40,45 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             }
         };
 
-        // /// <summary>
-        // /// Contact format specified as Enum, but SDK represents it as a string.
-        // /// Test checks that value parsing works properly
-        // /// </summary>
-        // [Test]
-        // public async Task ContactFormatTest()
-        // {
-        //     foreach (var format in new[] {"vcard", "msg"})
-        //     {
-        //         var extension = format == "vcard" ? ".vcf" : ".msg";
-        //         var name = $"{Guid.NewGuid().ToString()}{extension}";
-        //         await Api.CreateContactAsync(new CreateContactRequest(format, name,
-        //             new HierarchicalObjectRequest(
-        //                 new HierarchicalObject("CONTACT", null, new List<BaseObject>()),
-        //                 new StorageFolderLocation(StorageName, Folder))));
-        //         var contactExist = await IsFileExist(name);
-        //         Assert.IsTrue(contactExist);
-        //     }
-        // }
-        //
-        // [Test]
-        // public async Task ContactModelTest()
-        // {
-        //     var contactFile = $"{Guid.NewGuid().ToString()}.vcf";
-        //     await Api.SaveContactModelAsync(
-        //         new SaveContactModelRequest(
-        //             "VCard", contactFile,
-        //             new StorageModelRqOfContactDto(Contact,
-        //                 new StorageFolderLocation(StorageName, Folder))));
-        //     var exists = await IsFileExist(contactFile);
-        //     Assert.True(exists);
-        // }
-        //
-        // [Test]
-        // public async Task ConvertContactTest()
-        // {
-        //     var mapiStream = await Api.ConvertContactModelToFileAsync(
-        //         new ConvertContactModelToFileRequest(
-        //             "Msg", Contact));
-        //     var vcardStream = await Api.ConvertContactAsync(new ConvertContactRequest(
-        //         "VCard", "Msg", mapiStream));
-        //     using (var memoryStream = new MemoryStream())
-        //     {
-        //         await vcardStream.CopyToAsync(memoryStream);
-        //         var vcardString = Encoding.UTF8.GetString(memoryStream.ToArray());
-        //         Assert.IsTrue(vcardString.Contains(Surname));
-        //     }
-        //
-        //     vcardStream.Seek(0, SeekOrigin.Begin);
-        //     var dto = await Api.GetContactFileAsModelAsync(
-        //         new GetContactFileAsModelRequest("VCard", vcardStream));
-        //     Assert.AreEqual(Surname, dto.Surname);
-        // }
-        //
-        // [Test]
-        // public async Task ConvertModelToMapiModelTest()
-        // {
-        //     var mapiContact = await Api.ConvertContactModelToMapiModelAsync(
-        //         new ConvertContactModelToMapiModelRequest(Contact));
-        //     Assert.AreEqual(Contact.Surname, mapiContact.NameInfo.Surname);
-        // }
+
+        [Test]
+        public async Task ContactModelTest()
+        {
+            var contactFile = $"{Guid.NewGuid().ToString()}.vcf";
+            await Api.Contact.SaveAsync(
+                new ContactSaveRequest(
+                    new StorageFileLocation(StorageName, Folder, contactFile),
+                    Contact, "VCard"));
+            var exists = await IsFileExist(contactFile);
+            Assert.True(exists);
+        }
+
+        [Test]
+        public async Task ConvertContactTest()
+        {
+            var mapiStream = await Api.Contact.AsFileAsync(
+                new ContactAsFileRequest("Msg", Contact));
+            var vcardStream = await Api.Contact.ConvertAsync(
+                new ContactConvertRequest("VCard", "Msg", mapiStream));
+            using (var memoryStream = new MemoryStream())
+            {
+                await vcardStream.CopyToAsync(memoryStream);
+                var vcardString = Encoding.UTF8.GetString(memoryStream.ToArray());
+                Assert.IsTrue(vcardString.Contains(Surname));
+            }
+
+            vcardStream.Seek(0, SeekOrigin.Begin);
+            var dto = await Api.Contact.FromFileAsync(
+                new ContactFromFileRequest("VCard", vcardStream));
+            Assert.AreEqual(Surname, dto.Surname);
+        }
+
+        [Test]
+        public async Task ConvertModelToMapiModelTest()
+        {
+            var mapiContact = await Api.Contact.AsMapiAsync(
+                Contact);
+            Assert.AreEqual(Contact.Surname, mapiContact.NameInfo.Surname);
+        }
     }
 }
