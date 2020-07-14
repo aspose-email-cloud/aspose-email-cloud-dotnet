@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using Aspose.Email.Cloud.Sdk.Api;
 using Aspose.Email.Cloud.Sdk.Client;
-using Aspose.Email.Cloud.Sdk.Model.Requests;
+using Aspose.Email.Cloud.Sdk.Model;
 using Microsoft.Extensions.Configuration;
 using NUnit.Framework;
 
@@ -13,7 +13,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Utils
     public abstract class TestFixtureBase
     {
         protected const string StorageName = "First Storage";
-        protected EmailApi EmailApi;
+        protected EmailCloud Api;
         protected string Folder;
         /// <summary>
         /// EmailApi setup.
@@ -30,25 +30,25 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Utils
             var configurationHelper = ConfigurationHelper.Get(TestContext.Parameters);
             var apiConfiguration = new Configuration
             {
-                ApiVersion = "v3.0",
+                ApiVersion = "v4.0",
                 ApiBaseUrl =
                     configurationHelper.GetValue("apiBaseUrl", "https://api-qa.aspose.cloud"),
                 AppKey = configurationHelper.GetValue("appKey", string.Empty),
                 AppSid = configurationHelper.GetValue("appSid", string.Empty),
                 AuthUrl = configurationHelper.GetValue<string>("authUrl", null)
             };
-            EmailApi = new EmailApi(apiConfiguration);
+            Api = new EmailCloud(apiConfiguration);
         }
         
         [OneTimeTearDown]
         public async Task OneTimeTearDown()
         {
             var existRequest = new ObjectExistsRequest(Folder, StorageName);
-            var folderExist = await EmailApi.ObjectExistsAsync(existRequest);
+            var folderExist = await Api.Storage.ObjectExistsAsync(existRequest);
             if (folderExist.Exists == true && folderExist.IsFolder == true)
             {
                 var deleteRequest = new DeleteFolderRequest(Folder, StorageName, true);
-                await EmailApi.DeleteFolderAsync(deleteRequest);
+                await Api.Folder.DeleteFolderAsync(deleteRequest);
             }
         }
         protected static string FileToBase64(string filePath)
@@ -61,7 +61,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Utils
         {
             var path = $"{folderPath ?? Folder}/{fileName}";
             var request = new ObjectExistsRequest(path, StorageName);
-            var result = await EmailApi.ObjectExistsAsync(request);
+            var result = await Api.Storage.ObjectExistsAsync(request);
             return result.IsFolder != true && result.Exists == true;
         }
     }

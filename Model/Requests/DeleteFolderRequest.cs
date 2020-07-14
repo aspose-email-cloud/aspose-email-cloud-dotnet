@@ -22,12 +22,18 @@
 //  SOFTWARE.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Aspose.Email.Cloud.Sdk.Model.Requests
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable InconsistentNaming
+// ReSharper disable UnusedAutoPropertyAccessor.Global
+// ReSharper disable UnusedType.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+namespace Aspose.Email.Cloud.Sdk.Model
 {
-  using Model;
-
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.EmailApi.DeleteFolder" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.FolderApi.NORPrefix_DeleteFolder_NOR_Suffix_p_FolderApi_e" /> operation.
   /// </summary>
   public class DeleteFolderRequest  
   {
