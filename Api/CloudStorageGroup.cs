@@ -12,11 +12,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
     public class CloudStorageGroup
     {
     
-        public FileApi File { get; internal set; }
+        public FileApi File { get; }
     
-        public FolderApi Folder { get; internal set; }
+        public FolderApi Folder { get; }
     
-        public StorageApi Storage { get; internal set; }
+        public StorageApi Storage { get; }
     
         internal CloudStorageGroup(ApiInvoker apiInvoker, Configuration configuration)
         {

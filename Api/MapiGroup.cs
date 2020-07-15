@@ -12,9 +12,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
     public class MapiGroup
     {
     
-        public MapiCalendarApi Calendar { get; internal set; }
+        public MapiCalendarApi Calendar { get; }
     
-        public MapiContactApi Contact { get; internal set; }
+        public MapiContactApi Contact { get; }
+    
+        public MapiMessageApi Message { get; }
     
         internal MapiGroup(ApiInvoker apiInvoker, Configuration configuration)
         {
@@ -22,6 +24,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
             Calendar = new MapiCalendarApi(apiInvoker, configuration);
         
             Contact = new MapiContactApi(apiInvoker, configuration);
+        
+            Message = new MapiMessageApi(apiInvoker, configuration);
         
         }
     }

@@ -122,6 +122,16 @@ Class | Method | HTTP request | Description
 *MapiContactApi* | [**MapiContactGetAsync**](MapiContactApi.md#mapicontactgetasync) | **GET** /email/MapiContact | Get MAPI contact document.             . Not available on .NETFramework v2.0
 *MapiContactApi* | [**MapiContactSave**](MapiContactApi.md#mapicontactsave) | **PUT** /email/MapiContact | Save MAPI Contact to storage.             
 *MapiContactApi* | [**MapiContactSaveAsync**](MapiContactApi.md#mapicontactsaveasync) | **PUT** /email/MapiContact | Save MAPI Contact to storage.             . Not available on .NETFramework v2.0
+*MapiMessageApi* | [**MapiMessageAsEmailDto**](MapiMessageApi.md#mapimessageasemaildto) | **PUT** /email/MapiMessage/as-email-dto | Converts MAPI message model to EmailDto model             
+*MapiMessageApi* | [**MapiMessageAsEmailDtoAsync**](MapiMessageApi.md#mapimessageasemaildtoasync) | **PUT** /email/MapiMessage/as-email-dto | Converts MAPI message model to EmailDto model             . Not available on .NETFramework v2.0
+*MapiMessageApi* | [**MapiMessageAsFile**](MapiMessageApi.md#mapimessageasfile) | **PUT** /email/MapiMessage/as-file | Converts MAPI message model to specified format and returns as file.             
+*MapiMessageApi* | [**MapiMessageAsFileAsync**](MapiMessageApi.md#mapimessageasfileasync) | **PUT** /email/MapiMessage/as-file | Converts MAPI message model to specified format and returns as file.             . Not available on .NETFramework v2.0
+*MapiMessageApi* | [**MapiMessageFromFile**](MapiMessageApi.md#mapimessagefromfile) | **PUT** /email/MapiMessage/from-file | Converts email file to a MAPI model representation             
+*MapiMessageApi* | [**MapiMessageFromFileAsync**](MapiMessageApi.md#mapimessagefromfileasync) | **PUT** /email/MapiMessage/from-file | Converts email file to a MAPI model representation             . Not available on .NETFramework v2.0
+*MapiMessageApi* | [**MapiMessageGet**](MapiMessageApi.md#mapimessageget) | **GET** /email/MapiMessage | Get MAPI message document.             
+*MapiMessageApi* | [**MapiMessageGetAsync**](MapiMessageApi.md#mapimessagegetasync) | **GET** /email/MapiMessage | Get MAPI message document.             . Not available on .NETFramework v2.0
+*MapiMessageApi* | [**MapiMessageSave**](MapiMessageApi.md#mapimessagesave) | **PUT** /email/MapiMessage | Save MAPI message to storage.             
+*MapiMessageApi* | [**MapiMessageSaveAsync**](MapiMessageApi.md#mapimessagesaveasync) | **PUT** /email/MapiMessage | Save MAPI message to storage.             . Not available on .NETFramework v2.0
 *StorageApi* | [**GetDiscUsage**](StorageApi.md#getdiscusage) | **GET** /email/storage/disc | Get disc usage
 *StorageApi* | [**GetDiscUsageAsync**](StorageApi.md#getdiscusageasync) | **GET** /email/storage/disc | Get disc usage. Not available on .NETFramework v2.0
 *StorageApi* | [**GetFileVersions**](StorageApi.md#getfileversions) | **GET** /email/storage/version/{path} | Get file versions
@@ -207,6 +217,7 @@ Class | Method | HTTP request | Description
  - [Model.MapiContactProfessionalPropertySetDto](MapiContactProfessionalPropertySetDto.md)
  - [Model.MapiContactTelephonePropertySetDto](MapiContactTelephonePropertySetDto.md)
  - [Model.MapiElectronicAddressDto](MapiElectronicAddressDto.md)
+ - [Model.MapiMessageAsFileRequest](MapiMessageAsFileRequest.md)
  - [Model.MapiMessageItemBaseDto](MapiMessageItemBaseDto.md)
  - [Model.MapiPropertyDescriptor](MapiPropertyDescriptor.md)
  - [Model.MapiPropertyDto](MapiPropertyDto.md)
@@ -225,6 +236,7 @@ Class | Method | HTTP request | Description
  - [Model.StorageModelOfEmailDto](StorageModelOfEmailDto.md)
  - [Model.StorageModelOfMapiCalendarDto](StorageModelOfMapiCalendarDto.md)
  - [Model.StorageModelOfMapiContactDto](StorageModelOfMapiContactDto.md)
+ - [Model.StorageModelOfMapiMessageDto](StorageModelOfMapiMessageDto.md)
  - [Model.Url](Url.md)
  - [Model.AiBcrImageStorageFile](AiBcrImageStorageFile.md)
  - [Model.AiNameComponentList](AiNameComponentList.md)
@@ -260,6 +272,7 @@ Class | Method | HTTP request | Description
  - [Model.MapiKnownPropertyDescriptor](MapiKnownPropertyDescriptor.md)
  - [Model.MapiLegacyFreeBusyPropertyDto](MapiLegacyFreeBusyPropertyDto.md)
  - [Model.MapiMessageDto](MapiMessageDto.md)
+ - [Model.MapiMessageSaveRequest](MapiMessageSaveRequest.md)
  - [Model.MapiMultiIntPropertyDto](MapiMultiIntPropertyDto.md)
  - [Model.MapiMultiStringPropertyDto](MapiMultiStringPropertyDto.md)
  - [Model.MapiPhysicalAddressIndexPropertyDto](MapiPhysicalAddressIndexPropertyDto.md)

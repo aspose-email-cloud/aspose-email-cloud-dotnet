@@ -12,9 +12,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
     public class AiGroup
     {
     
-        public AiBcrApi Bcr { get; internal set; }
+        public AiBcrApi Bcr { get; }
     
-        public AiNameApi Name { get; internal set; }
+        public AiNameApi Name { get; }
     
         internal AiGroup(ApiInvoker apiInvoker, Configuration configuration)
         {
