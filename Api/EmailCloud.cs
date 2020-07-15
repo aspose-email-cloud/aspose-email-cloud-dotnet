@@ -27,6 +27,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public StorageApi Storage {get;}
     
     
+        public AiGroup Ai {get;}
+    
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailCloud"/> class.
@@ -67,6 +69,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         
             Storage = new StorageApi(apiInvoker, this.configuration);
         
+        
+            Ai = new AiGroup(apiInvoker, this.configuration);
         
         }
     }

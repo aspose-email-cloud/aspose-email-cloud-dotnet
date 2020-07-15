@@ -14,92 +14,92 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
     {
         private const string BcrAiTestFilePath = "TestData/test_single_0001.png";
 
-        // /// <summary>
-        // /// Test name gender detection
-        // /// </summary>
-        // [Test]
-        // [Pipeline]
-        // public async Task AiNameGenderizeTest()
-        // {
-        //     var result =
-        //         await EmailApi.AiNameGenderizeAsync(new AiNameGenderizeRequest("John Cane"));
-        //     Assert.GreaterOrEqual(result.Value.Count, 1);
-        //     Assert.True(result.Value.Any(item => item.Gender == "Male"));
-        // }
-        //
-        // /// <summary>
-        // /// Test name formatting
-        // /// </summary>
-        // [Test]
-        // [Pipeline]
-        // public async Task AiNameFormatTest()
-        // {
-        //     var result = await EmailApi.AiNameFormatAsync(
-        //         new AiNameFormatRequest("Mr. John Michael Cane", format: "%t%L%f%m"));
-        //     Assert.AreEqual("Mr. Cane J. M.", result.Name);
-        // }
-        //
-        // /// <summary>
-        // /// Name match test.
-        // /// </summary>
-        // [Test]
-        // [Pipeline]
-        // public async Task AiNameMatchTest()
-        // {
-        //     const string first = "John Michael Cane";
-        //     const string second = "Cane J.";
-        //     var result = await EmailApi.AiNameMatchAsync(
-        //         new AiNameMatchRequest(first, second));
-        //     Assert.True(result.Similarity > 0.5);
-        // }
-        //
-        // [Test]
-        // [Pipeline]
-        // public async Task AiNameExpandTest()
-        // {
-        //     const string name = "Smith Bobby";
-        //     var result = await EmailApi.AiNameExpandAsync(
-        //         new AiNameExpandRequest(name));
-        //     var expandedNames = result.Names
-        //         .Select(weightedName => weightedName.Name)
-        //         .ToList();
-        //     Assert.Contains("Mr. Smith", expandedNames);
-        //     Assert.Contains("B. Smith", expandedNames);
-        // }
-        //
-        // /// <summary>
-        // /// Name complete test
-        // /// </summary>
-        // [Test]
-        // [Pipeline]
-        // public async Task AiNameCompleteTest()
-        // {
-        //     const string prefix = "Dav";
-        //     var result = await EmailApi.AiNameCompleteAsync(
-        //         new AiNameCompleteRequest(prefix));
-        //     var names = result.Names
-        //         .Select(weightedName => $"{prefix}{weightedName.Name}")
-        //         .ToList();
-        //     Assert.Contains("David", names);
-        //     Assert.Contains("Dave", names);
-        //     Assert.Contains("Davis", names);
-        // }
-        //
-        // [Test]
-        // [Pipeline]
-        // public async Task AiNameParseEmailAddressTest()
-        // {
-        //     const string address = "john-cane@gmail.com";
-        //     var result = await EmailApi.AiNameParseEmailAddressAsync(
-        //         new AiNameParseEmailAddressRequest(address));
-        //     var extractedValues = result.Value
-        //         .SelectMany(value => value.Name)
-        //         .ToList();
-        //     var givenName = extractedValues.First(value => value.Category == "GivenName");
-        //     var surName = extractedValues.First(value => value.Category == "Surname");
-        //     Assert.AreEqual("John", givenName.Value);
-        //     Assert.AreEqual("Cane", surName.Value);
-        // }
+        /// <summary>
+        /// Test name gender detection
+        /// </summary>
+        [Test]
+        [Pipeline]
+        public async Task AiNameGenderizeTest()
+        {
+            var result =
+                await Api.Ai.Name.GenderizeAsync(new AiNameGenderizeRequest("John Cane"));
+            Assert.GreaterOrEqual(result.Value.Count, 1);
+            Assert.True(result.Value.Any(item => item.Gender == "Male"));
+        }
+        
+        /// <summary>
+        /// Test name formatting
+        /// </summary>
+        [Test]
+        [Pipeline]
+        public async Task AiNameFormatTest()
+        {
+            var result = await Api.Ai.Name.FormatAsync(
+                new AiNameFormatRequest("Mr. John Michael Cane", format: "%t%L%f%m"));
+            Assert.AreEqual("Mr. Cane J. M.", result.Name);
+        }
+        
+        /// <summary>
+        /// Name match test.
+        /// </summary>
+        [Test]
+        [Pipeline]
+        public async Task AiNameMatchTest()
+        {
+            const string first = "John Michael Cane";
+            const string second = "Cane J.";
+            var result = await Api.Ai.Name.MatchAsync(
+                new AiNameMatchRequest(first, second));
+            Assert.True(result.Similarity > 0.5);
+        }
+        
+        [Test]
+        [Pipeline]
+        public async Task AiNameExpandTest()
+        {
+            const string name = "Smith Bobby";
+            var result = await Api.Ai.Name.ExpandAsync(
+                new AiNameExpandRequest(name));
+            var expandedNames = result.Names
+                .Select(weightedName => weightedName.Name)
+                .ToList();
+            Assert.Contains("Mr. Smith", expandedNames);
+            Assert.Contains("B. Smith", expandedNames);
+        }
+        
+        /// <summary>
+        /// Name complete test
+        /// </summary>
+        [Test]
+        [Pipeline]
+        public async Task AiNameCompleteTest()
+        {
+            const string prefix = "Dav";
+            var result = await Api.Ai.Name.CompleteAsync(
+                new AiNameCompleteRequest(prefix));
+            var names = result.Names
+                .Select(weightedName => $"{prefix}{weightedName.Name}")
+                .ToList();
+            Assert.Contains("David", names);
+            Assert.Contains("Dave", names);
+            Assert.Contains("Davis", names);
+        }
+        
+        [Test]
+        [Pipeline]
+        public async Task AiNameParseEmailAddressTest()
+        {
+            const string address = "john-cane@gmail.com";
+            var result = await Api.Ai.Name.ParseEmailAddressAsync(
+                new AiNameParseEmailAddressRequest(address));
+            var extractedValues = result.Value
+                .SelectMany(value => value.Name)
+                .ToList();
+            var givenName = extractedValues.First(value => value.Category == "GivenName");
+            var surName = extractedValues.First(value => value.Category == "Surname");
+            Assert.AreEqual("John", givenName.Value);
+            Assert.AreEqual("Cane", surName.Value);
+        }
         //
         // /// <summary>
         // /// Test business card recognition with storage.

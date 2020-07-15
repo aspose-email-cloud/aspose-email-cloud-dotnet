@@ -4,6 +4,32 @@ All URIs are relative to *https://api.aspose.cloud/v3.0*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*AiBcrApi* | [**AiBcrParse**](AiBcrApi.md#aibcrparse) | **POST** /email/AiBcr/parse | Parse images to vCard document models             
+*AiBcrApi* | [**AiBcrParseAsync**](AiBcrApi.md#aibcrparseasync) | **POST** /email/AiBcr/parse | Parse images to vCard document models             . Not available on .NETFramework v2.0
+*AiBcrApi* | [**AiBcrParseStorage**](AiBcrApi.md#aibcrparsestorage) | **POST** /email/AiBcr/parse-storage | Parse images from storage to vCard files             
+*AiBcrApi* | [**AiBcrParseStorageAsync**](AiBcrApi.md#aibcrparsestorageasync) | **POST** /email/AiBcr/parse-storage | Parse images from storage to vCard files             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameComplete**](AiNameApi.md#ainamecomplete) | **GET** /email/AiName/complete | The call proposes k most probable names for given starting characters             
+*AiNameApi* | [**AiNameCompleteAsync**](AiNameApi.md#ainamecompleteasync) | **GET** /email/AiName/complete | The call proposes k most probable names for given starting characters             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameExpand**](AiNameApi.md#ainameexpand) | **GET** /email/AiName/expand | Expands a person&#39;s name into a list of possible alternatives using options for expanding instructions             
+*AiNameApi* | [**AiNameExpandAsync**](AiNameApi.md#ainameexpandasync) | **GET** /email/AiName/expand | Expands a person&#39;s name into a list of possible alternatives using options for expanding instructions             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameExpandParsed**](AiNameApi.md#ainameexpandparsed) | **POST** /email/AiName/expand-parsed | Expands a person&#39;s parsed name into a list of possible alternatives using options for expanding instructions             
+*AiNameApi* | [**AiNameExpandParsedAsync**](AiNameApi.md#ainameexpandparsedasync) | **POST** /email/AiName/expand-parsed | Expands a person&#39;s parsed name into a list of possible alternatives using options for expanding instructions             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameFormat**](AiNameApi.md#ainameformat) | **GET** /email/AiName/format | Formats a person&#39;s name in correct case and name order using options for formatting instructions             
+*AiNameApi* | [**AiNameFormatAsync**](AiNameApi.md#ainameformatasync) | **GET** /email/AiName/format | Formats a person&#39;s name in correct case and name order using options for formatting instructions             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameFormatParsed**](AiNameApi.md#ainameformatparsed) | **POST** /email/AiName/format-parsed | Formats a person&#39;s parsed name in correct case and name order using options for formatting instructions             
+*AiNameApi* | [**AiNameFormatParsedAsync**](AiNameApi.md#ainameformatparsedasync) | **POST** /email/AiName/format-parsed | Formats a person&#39;s parsed name in correct case and name order using options for formatting instructions             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameGenderize**](AiNameApi.md#ainamegenderize) | **GET** /email/AiName/genderize | Detect person&#39;s gender from name string             
+*AiNameApi* | [**AiNameGenderizeAsync**](AiNameApi.md#ainamegenderizeasync) | **GET** /email/AiName/genderize | Detect person&#39;s gender from name string             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameGenderizeParsed**](AiNameApi.md#ainamegenderizeparsed) | **POST** /email/AiName/genderize-parsed | Detect person&#39;s gender from parsed name             
+*AiNameApi* | [**AiNameGenderizeParsedAsync**](AiNameApi.md#ainamegenderizeparsedasync) | **POST** /email/AiName/genderize-parsed | Detect person&#39;s gender from parsed name             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameMatch**](AiNameApi.md#ainamematch) | **GET** /email/AiName/match | Compare people&#39;s names. Uses options for comparing instructions             
+*AiNameApi* | [**AiNameMatchAsync**](AiNameApi.md#ainamematchasync) | **GET** /email/AiName/match | Compare people&#39;s names. Uses options for comparing instructions             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameMatchParsed**](AiNameApi.md#ainamematchparsed) | **POST** /email/AiName/match-parsed | Compare people&#39;s parsed names and attributes. Uses options for comparing instructions             
+*AiNameApi* | [**AiNameMatchParsedAsync**](AiNameApi.md#ainamematchparsedasync) | **POST** /email/AiName/match-parsed | Compare people&#39;s parsed names and attributes. Uses options for comparing instructions             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameParse**](AiNameApi.md#ainameparse) | **GET** /email/AiName/parse | Parse name to components             
+*AiNameApi* | [**AiNameParseAsync**](AiNameApi.md#ainameparseasync) | **GET** /email/AiName/parse | Parse name to components             . Not available on .NETFramework v2.0
+*AiNameApi* | [**AiNameParseEmailAddress**](AiNameApi.md#ainameparseemailaddress) | **GET** /email/AiName/parse-email-address | Parse person&#39;s name out of an email address             
+*AiNameApi* | [**AiNameParseEmailAddressAsync**](AiNameApi.md#ainameparseemailaddressasync) | **GET** /email/AiName/parse-email-address | Parse person&#39;s name out of an email address             . Not available on .NETFramework v2.0
 *CalendarApi* | [**CalendarAsAlternate**](CalendarApi.md#calendarasalternate) | **PUT** /email/Calendar/as-alternate | Convert iCalendar to AlternateView             
 *CalendarApi* | [**CalendarAsAlternateAsync**](CalendarApi.md#calendarasalternateasync) | **PUT** /email/Calendar/as-alternate | Convert iCalendar to AlternateView             . Not available on .NETFramework v2.0
 *CalendarApi* | [**CalendarAsFile**](CalendarApi.md#calendarasfile) | **PUT** /email/Calendar/as-file | Converts calendar model to specified format and returns as file.             
@@ -88,6 +114,20 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [Model.AiBcrImage](AiBcrImage.md)
+ - [Model.AiBcrOptions](AiBcrOptions.md)
+ - [Model.AiBcrRq](AiBcrRq.md)
+ - [Model.AiNameComponent](AiNameComponent.md)
+ - [Model.AiNameCulturalContext](AiNameCulturalContext.md)
+ - [Model.AiNameExtracted](AiNameExtracted.md)
+ - [Model.AiNameExtractedComponent](AiNameExtractedComponent.md)
+ - [Model.AiNameFormatted](AiNameFormatted.md)
+ - [Model.AiNameGenderHypothesis](AiNameGenderHypothesis.md)
+ - [Model.AiNameMatchResult](AiNameMatchResult.md)
+ - [Model.AiNameMismatch](AiNameMismatch.md)
+ - [Model.AiNameParsedRq](AiNameParsedRq.md)
+ - [Model.AiNameWeighted](AiNameWeighted.md)
+ - [Model.AiNameWeightedVariants](AiNameWeightedVariants.md)
  - [Model.AssociatedPerson](AssociatedPerson.md)
  - [Model.AttachmentBase](AttachmentBase.md)
  - [Model.CalendarAsAlternateRequest](CalendarAsAlternateRequest.md)
@@ -117,6 +157,11 @@ Class | Method | HTTP request | Description
  - [Model.FilesList](FilesList.md)
  - [Model.FilesUploadResult](FilesUploadResult.md)
  - [Model.InstantMessengerAddress](InstantMessengerAddress.md)
+ - [Model.ListResponseOfAiNameComponent](ListResponseOfAiNameComponent.md)
+ - [Model.ListResponseOfAiNameExtracted](ListResponseOfAiNameExtracted.md)
+ - [Model.ListResponseOfAiNameGenderHypothesis](ListResponseOfAiNameGenderHypothesis.md)
+ - [Model.ListResponseOfContactDto](ListResponseOfContactDto.md)
+ - [Model.ListResponseOfStorageFileLocation](ListResponseOfStorageFileLocation.md)
  - [Model.ListResponseOfStorageModelOfCalendarDto](ListResponseOfStorageModelOfCalendarDto.md)
  - [Model.ListResponseOfStorageModelOfContactDto](ListResponseOfStorageModelOfContactDto.md)
  - [Model.ListResponseOfStorageModelOfEmailDto](ListResponseOfStorageModelOfEmailDto.md)
@@ -157,6 +202,11 @@ Class | Method | HTTP request | Description
  - [Model.StorageModelOfContactDto](StorageModelOfContactDto.md)
  - [Model.StorageModelOfEmailDto](StorageModelOfEmailDto.md)
  - [Model.Url](Url.md)
+ - [Model.AiBcrBase64Image](AiBcrBase64Image.md)
+ - [Model.AiBcrBase64Rq](AiBcrBase64Rq.md)
+ - [Model.AiBcrImageStorageFile](AiBcrImageStorageFile.md)
+ - [Model.AiBcrStorageImageRq](AiBcrStorageImageRq.md)
+ - [Model.AiNameParsedMatchRq](AiNameParsedMatchRq.md)
  - [Model.AlternateView](AlternateView.md)
  - [Model.Attachment](Attachment.md)
  - [Model.CalendarSaveRequest](CalendarSaveRequest.md)
@@ -194,6 +244,7 @@ Class | Method | HTTP request | Description
  - [Model.TaskRegeneratingPatternDto](TaskRegeneratingPatternDto.md)
  - [Model.WeeklyRecurrencePatternDto](WeeklyRecurrencePatternDto.md)
  - [Model.YearlyRecurrencePatternDto](YearlyRecurrencePatternDto.md)
+ - [Model.AiBcrParseStorageRq](AiBcrParseStorageRq.md)
  - [Model.MapiPidLidPropertyDescriptor](MapiPidLidPropertyDescriptor.md)
  - [Model.MapiPidNamePropertyDescriptor](MapiPidNamePropertyDescriptor.md)
  - [Model.MapiPidTagPropertyDescriptor](MapiPidTagPropertyDescriptor.md)
