@@ -14,10 +14,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
     
         public MapiCalendarApi Calendar { get; internal set; }
     
+        public MapiContactApi Contact { get; internal set; }
+    
         internal MapiGroup(ApiInvoker apiInvoker, Configuration configuration)
         {
         
             Calendar = new MapiCalendarApi(apiInvoker, configuration);
+        
+            Contact = new MapiContactApi(apiInvoker, configuration);
         
         }
     }

@@ -27,48 +27,45 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                 {PrimaryTelephoneNumber = "+49 211 4247 21"}
         };
 
-        // [Test]
-        // public async Task ModelToContactDtoTest()
-        // {
-        //     var contactDto =
-        //         await Api.ConvertMapiContactModelToContactModelAsync(
-        //             new ConvertMapiContactModelToContactModelRequest(
-        //                 MapiContact));
-        //     Assert.AreEqual(MapiContact.NameInfo.GivenName, contactDto.GivenName);
-        //     Assert.AreEqual(MapiContact.NameInfo.Surname, contactDto.Surname);
-        // }
-        //
-        // [Test]
-        // public async Task ModelToFileTest()
-        // {
-        //     var vcardStream = await Api.ConvertMapiContactModelToFileAsync(
-        //         new ConvertMapiContactModelToFileRequest(
-        //             "VCard", MapiContact));
-        //     using (var memoryStream = new MemoryStream())
-        //     {
-        //         await vcardStream.CopyToAsync(memoryStream);
-        //         var vcardString = Encoding.UTF8.GetString(memoryStream.ToArray());
-        //         Assert.IsTrue(vcardString.Contains(MapiContact.NameInfo.GivenName));
-        //     }
-        //
-        //     vcardStream.Seek(0, SeekOrigin.Begin);
-        //     var mapiContactConverted = await Api.GetContactFileAsMapiModelAsync(
-        //         new GetContactFileAsMapiModelRequest("VCard", vcardStream));
-        //     Assert.AreEqual(MapiContact.NameInfo.Surname, mapiContactConverted.NameInfo.Surname);
-        // }
-        //
-        // [Test]
-        // public async Task StorageTest()
-        // {
-        //     var fileName = $"{Guid.NewGuid()}.msg";
-        //     await Api.SaveMapiContactModelAsync(
-        //         new SaveMapiContactModelRequest(
-        //             "Msg", fileName, new StorageModelRqOfMapiContactDto(
-        //                 MapiContact, new StorageFolderLocation(StorageName, Folder))));
-        //     var mapiContactFromStorage = await Api.GetMapiContactModelAsync(
-        //         new GetMapiContactModelRequest(
-        //             "Msg", fileName, Folder, StorageName));
-        //     Assert.AreEqual(MapiContact.NameInfo.Surname, mapiContactFromStorage.NameInfo.Surname);
-        // }
+        [Test]
+        public async Task ModelToContactDtoTest()
+        {
+            var contactDto =
+                await Api.Mapi.Contact.AsContactDtoAsync(MapiContact);
+            Assert.AreEqual(MapiContact.NameInfo.GivenName, contactDto.GivenName);
+            Assert.AreEqual(MapiContact.NameInfo.Surname, contactDto.Surname);
+        }
+
+        [Test]
+        public async Task ModelToFileTest()
+        {
+            var vcardStream =
+                await Api.Mapi.Contact.AsFileAsync(
+                    new MapiContactAsFileRequest("VCard", MapiContact));
+            using (var memoryStream = new MemoryStream())
+            {
+                await vcardStream.CopyToAsync(memoryStream);
+                var vcardString = Encoding.UTF8.GetString(memoryStream.ToArray());
+                Assert.IsTrue(vcardString.Contains(MapiContact.NameInfo.GivenName));
+            }
+
+            vcardStream.Seek(0, SeekOrigin.Begin);
+            var mapiContactConverted =
+                await Api.Mapi.Contact.FromFileAsync(
+                    new MapiContactFromFileRequest("VCard", vcardStream));
+            Assert.AreEqual(MapiContact.NameInfo.Surname, mapiContactConverted.NameInfo.Surname);
+        }
+
+        [Test]
+        public async Task StorageTest()
+        {
+            var fileName = $"{Guid.NewGuid()}.msg";
+            await Api.Mapi.Contact.SaveAsync(new MapiContactSaveRequest(
+                new StorageFileLocation(StorageName, Folder, fileName), MapiContact, "Msg"));
+            var mapiContactFromStorage =
+                await Api.Mapi.Contact.GetAsync(
+                    new MapiContactGetRequest("Msg", fileName, Folder, StorageName));
+            Assert.AreEqual(MapiContact.NameInfo.Surname, mapiContactFromStorage.NameInfo.Surname);
+        }
     }
 }

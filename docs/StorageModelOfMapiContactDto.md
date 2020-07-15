@@ -1,9 +1,9 @@
-# Model.MapiCalendarAsFileRequest
+# Model.StorageModelOfMapiContactDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Format** | **string** | Calendar file format Enum, available values: Ics, Msg | 
-**Value** | [**MapiCalendarDto**](MapiCalendarDto.md) | MAPI calendar model.              | [optional] 
+**StorageFile** | [**StorageFileLocation**](StorageFileLocation.md) |  | [optional] 
+**Value** | [**MapiContactDto**](MapiContactDto.md) |  | [optional] 
 
 
 

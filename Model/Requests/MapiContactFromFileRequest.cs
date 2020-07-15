@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="MapiCalendarGetRequest.cs">
+// <copyright company="Aspose" file="MapiContactFromFileRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,43 +33,36 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.MapiCalendarApi.NORPrefix_MapiCalendar_Get_NOR_Suffix_p_MapiCalendarApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.MapiContactApi.NORPrefix_MapiContact_FromFile_NOR_Suffix_p_MapiContactApi_e" /> operation.
   /// </summary>
-  public class MapiCalendarGetRequest  
+  public class MapiContactFromFileRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="MapiCalendarGetRequest"/> class.
+        /// Initializes a new instance of the <see cref="MapiContactFromFileRequest"/> class.
         /// </summary>
-        public MapiCalendarGetRequest()
+        public MapiContactFromFileRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MapiCalendarGetRequest"/> class.
+        /// Initializes a new instance of the <see cref="MapiContactFromFileRequest"/> class.
         /// </summary>
-        /// <param name="name">Calendar file name in storage.</param>
-        /// <param name="folder">Path to folder in storage.</param>
-        /// <param name="storage">Storage name.</param>
-        public MapiCalendarGetRequest(string name, string folder = null, string storage = null)
+        /// <param name="fileFormat">File format Enum, available values: VCard, WebDav, Msg</param>
+        /// <param name="file">File to convert</param>
+        public MapiContactFromFileRequest(string fileFormat, System.IO.Stream file)
         {
-            this.name = name;
-            this.folder = folder;
-            this.storage = storage;
+            this.fileFormat = fileFormat;
+            this.File = file;
         }
 
         /// <summary>
-        /// Calendar file name in storage.
+        /// File format Enum, available values: VCard, WebDav, Msg
         /// </summary>
-        public string name { get; set; }
+        public string fileFormat { get; set; }
 
         /// <summary>
-        /// Path to folder in storage.
+        /// File to convert
         /// </summary>
-        public string folder { get; set; }
-
-        /// <summary>
-        /// Storage name.
-        /// </summary>
-        public string storage { get; set; }
+        public System.IO.Stream File { get; set; }
   }
 }

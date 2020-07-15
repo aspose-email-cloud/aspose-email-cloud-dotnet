@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="MapiCalendarApi.cs">
+// <copyright company="Aspose" file="MapiContactApi.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -39,75 +39,75 @@ namespace Aspose.Email.Cloud.Sdk.Api
     /// <summary>
     /// Aspose.Email for Cloud API.  operations.
     /// </summary>
-    public class MapiCalendarApi
+    public class MapiContactApi
     {
         private readonly ApiInvoker apiInvoker;
         private readonly Configuration configuration;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MapiCalendarApi"/> class.
+        /// Initializes a new instance of the <see cref="MapiContactApi"/> class.
         /// </summary>
         /// <param name="apiInvoker">API client</param>
         /// <param name="configuration">Configuration settings</param>
-        internal MapiCalendarApi(ApiInvoker apiInvoker, Configuration configuration)
+        internal MapiContactApi(ApiInvoker apiInvoker, Configuration configuration)
         {
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
                     ﻿
         /// <summary>
-        /// Converts MAPI calendar model to CalendarDto model.              
+        /// Converts MAPI contact model to ContactDto model.              
         /// </summary>
-        /// <param name="mapiCalendarDto">MAPI calendar model to convert.</param>
-        /// <returns><see cref="CalendarDto"/></returns>
-        public CalendarDto AsCalendarDto(
-            MapiCalendarDto mapiCalendarDto)
+        /// <param name="mapiContactDto">MAPI contact model to convert.</param>
+        /// <returns><see cref="ContactDto"/></returns>
+        public ContactDto AsContactDto(
+            MapiContactDto mapiContactDto)
         {
-            // verify the required parameter 'mapiCalendarDto' is set
-            if (mapiCalendarDto == null)
+            // verify the required parameter 'mapiContactDto' is set
+            if (mapiContactDto == null)
                 throw new ApiException(400,
-                    "Missing required parameter 'mapiCalendarDto' when calling AsCalendarDto");
+                    "Missing required parameter 'mapiContactDto' when calling AsContactDto");
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/as-calendar-dto";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/as-contact-dto";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(mapiCalendarDto); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(mapiContactDto); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "PUT",
                 postBody);
-            return response == null ? null : SerializationHelper.Deserialize<CalendarDto>(response);
+            return response == null ? null : SerializationHelper.Deserialize<ContactDto>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Converts MAPI calendar model to CalendarDto model.              
+        /// Converts MAPI contact model to ContactDto model.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarAsCalendarDtoRequest" /></param>
-        /// <returns><see cref="CalendarDto"/></returns>
-        public async Task<CalendarDto> AsCalendarDtoAsync(
-            MapiCalendarDto mapiCalendarDto) =>
-            await Task.Run(() => AsCalendarDto(mapiCalendarDto
+        /// <param name="request">Request. <see cref="MapiContactAsContactDtoRequest" /></param>
+        /// <returns><see cref="ContactDto"/></returns>
+        public async Task<ContactDto> AsContactDtoAsync(
+            MapiContactDto mapiContactDto) =>
+            await Task.Run(() => AsContactDto(mapiContactDto
         ));
         #endif
 
                     ﻿
         /// <summary>
-        /// Converts MAPI calendar model to specified format and returns as file.              
+        /// Converts MAPI contact model to specified format and returns as file.              
         /// </summary>
-        /// <param name="request">MAPI calendar model to convert.</param>
+        /// <param name="request">MAPI contact model to convert.</param>
         /// <returns><see cref="System.IO.Stream"/></returns>
         public System.IO.Stream AsFile(
-            MapiCalendarAsFileRequest request)
+            MapiContactAsFileRequest request)
         {
             // verify the required parameter 'request' is set
             if (request == null)
                 throw new ApiException(400,
                     "Missing required parameter 'request' when calling AsFile");
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/as-file";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/as-file";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
@@ -123,24 +123,31 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Converts MAPI calendar model to specified format and returns as file.              
+        /// Converts MAPI contact model to specified format and returns as file.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarAsFileRequest" /></param>
+        /// <param name="request">Request. <see cref="MapiContactAsFileRequest" /></param>
         /// <returns><see cref="System.IO.Stream"/></returns>
         public async Task<System.IO.Stream> AsFileAsync(
-            MapiCalendarAsFileRequest request) =>
+            MapiContactAsFileRequest request) =>
             await Task.Run(() => AsFile(request
         ));
         #endif
 
                     ﻿
         /// <summary>
-        /// Converts calendar file to a MAPI model representation.              
+        /// Converts contact file to a MAPI model representation.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarFromFileRequest" /></param>
-        /// <returns><see cref="MapiCalendarDto"/></returns>
-        public MapiCalendarDto FromFile(MapiCalendarFromFileRequest request)
+        /// <param name="request">Request. <see cref="MapiContactFromFileRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public MapiContactDto FromFile(MapiContactFromFileRequest request)
         {
+            // verify the required parameter 'fileFormat' is set
+            if (request.fileFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileFormat' when calling FromFile");
+            }
+
             // verify the required parameter 'file' is set
             if (request.File == null)
             {
@@ -149,12 +156,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/from-file";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/from-file";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileFormat", request.fileFormat);
             if (request.File != null)
             {
                 formParams.Add("file",
@@ -165,27 +173,34 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 resourcePath,
                 "PUT",
                 formParams: formParams);
-            return response == null ? null : SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            return response == null ? null : SerializationHelper.Deserialize<MapiContactDto>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Converts calendar file to a MAPI model representation.              
+        /// Converts contact file to a MAPI model representation.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarFromFileRequest" /></param>
-        /// <returns><see cref="MapiCalendarDto"/></returns>
-        public async Task<MapiCalendarDto> FromFileAsync(MapiCalendarFromFileRequest request) =>
+        /// <param name="request">Request. <see cref="MapiContactFromFileRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public async Task<MapiContactDto> FromFileAsync(MapiContactFromFileRequest request) =>
             await Task.Run(() => FromFile(request));
         #endif
 
                     ﻿
         /// <summary>
-        /// Get MAPI calendar document.              
+        /// Get MAPI contact document.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarGetRequest" /></param>
-        /// <returns><see cref="MapiCalendarDto"/></returns>
-        public MapiCalendarDto Get(MapiCalendarGetRequest request)
+        /// <param name="request">Request. <see cref="MapiContactGetRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public MapiContactDto Get(MapiContactGetRequest request)
         {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling Get");
+            }
+
             // verify the required parameter 'name' is set
             if (request.name == null)
             {
@@ -194,44 +209,45 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
-            return response == null ? null : SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            return response == null ? null : SerializationHelper.Deserialize<MapiContactDto>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Get MAPI calendar document.              
+        /// Get MAPI contact document.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarGetRequest" /></param>
-        /// <returns><see cref="MapiCalendarDto"/></returns>
-        public async Task<MapiCalendarDto> GetAsync(MapiCalendarGetRequest request) =>
+        /// <param name="request">Request. <see cref="MapiContactGetRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public async Task<MapiContactDto> GetAsync(MapiContactGetRequest request) =>
             await Task.Run(() => Get(request));
         #endif
 
                     ﻿
         /// <summary>
-        /// Save MAPI Calendar to storage.              
+        /// Save MAPI Contact to storage.              
         /// </summary>
-        /// <param name="request">Calendar create/update request.</param>
+        /// <param name="request">Create/Update contact request.</param>
         public void Save(
-            MapiCalendarSaveRequest request)
+            MapiContactSaveRequest request)
         {
             // verify the required parameter 'request' is set
             if (request == null)
                 throw new ApiException(400,
                     "Missing required parameter 'request' when calling Save");
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
@@ -245,11 +261,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Save MAPI Calendar to storage.              
+        /// Save MAPI Contact to storage.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarSaveRequest" /></param>
+        /// <param name="request">Request. <see cref="MapiContactSaveRequest" /></param>
         public async Task SaveAsync(
-            MapiCalendarSaveRequest request) =>
+            MapiContactSaveRequest request) =>
             await Task.Run(() => Save(request
         ));
         #endif

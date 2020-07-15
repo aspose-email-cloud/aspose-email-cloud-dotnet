@@ -1,65 +1,65 @@
-# Aspose.Email.Cloud.Sdk.MapiCalendarApi
+# Aspose.Email.Cloud.Sdk.MapiContactApi
 
-<a name="mapicalendarascalendardto"></a>
-# **MapiCalendarAsCalendarDto**
+<a name="mapicontactascontactdto"></a>
+# **MapiContactAsContactDto**
 
 ```csharp
-CalendarDto MapiCalendarAsCalendarDto(MapiCalendarAsCalendarDtoRequest request)
+ContactDto MapiContactAsContactDto(MapiContactAsContactDtoRequest request)
 ```
 
-Converts MAPI calendar model to CalendarDto model.             
+Converts MAPI contact model to ContactDto model.             
 
 ### Return type
 
-[**CalendarDto**](CalendarDto.md)
+[**ContactDto**](ContactDto.md)
 
 ### Request Parameters
 ```csharp
-new MapiCalendarAsCalendarDtoRequest(
-    mapiCalendarDto)
+new MapiContactAsContactDtoRequest(
+    mapiContactDto)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mapiCalendarDto** | [**MapiCalendarDto**](MapiCalendarDto.md)| MAPI calendar model to convert. | 
+ **mapiContactDto** | [**MapiContactDto**](MapiContactDto.md)| MAPI contact model to convert. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicalendarascalendardto"></a>
-# **MapiCalendarAsCalendarDtoAsync**
+<a name="mapicontactascontactdto"></a>
+# **MapiContactAsContactDtoAsync**
 
 ```csharp
-async Task<CalendarDto> MapiCalendarAsCalendarDtoAsync(MapiCalendarAsCalendarDtoRequest request)
+async Task<ContactDto> MapiContactAsContactDtoAsync(MapiContactAsContactDtoRequest request)
 ```
 
-Converts MAPI calendar model to CalendarDto model.             
+Converts MAPI contact model to ContactDto model.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task<[**CalendarDto**](CalendarDto.md)>
+Task<[**ContactDto**](ContactDto.md)>
 
 ### Request Parameters
 ```csharp
-new MapiCalendarAsCalendarDtoRequest(
-    mapiCalendarDto)
+new MapiContactAsContactDtoRequest(
+    mapiContactDto)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **mapiCalendarDto** | [**MapiCalendarDto**](MapiCalendarDto.md)| MAPI calendar model to convert. | 
+ **mapiContactDto** | [**MapiContactDto**](MapiContactDto.md)| MAPI contact model to convert. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicalendarasfile"></a>
-# **MapiCalendarAsFile**
+<a name="mapicontactasfile"></a>
+# **MapiContactAsFile**
 
 ```csharp
-Stream MapiCalendarAsFile(MapiCalendarAsFileRequest request)
+Stream MapiContactAsFile(MapiContactAsFileRequest request)
 ```
 
-Converts MAPI calendar model to specified format and returns as file.             
+Converts MAPI contact model to specified format and returns as file.             
 
 ### Return type
 
@@ -67,24 +67,24 @@ Converts MAPI calendar model to specified format and returns as file.
 
 ### Request Parameters
 ```csharp
-new MapiCalendarAsFileRequest(
+new MapiContactAsFileRequest(
     request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**MapiCalendarAsFileRequest**](MapiCalendarAsFileRequest.md)| MAPI calendar model to convert. | 
+ **request** | [**MapiContactAsFileRequest**](MapiContactAsFileRequest.md)| MAPI contact model to convert. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicalendarasfile"></a>
-# **MapiCalendarAsFileAsync**
+<a name="mapicontactasfile"></a>
+# **MapiContactAsFileAsync**
 
 ```csharp
-async Task<Stream> MapiCalendarAsFileAsync(MapiCalendarAsFileRequest request)
+async Task<Stream> MapiContactAsFileAsync(MapiContactAsFileRequest request)
 ```
 
-Converts MAPI calendar model to specified format and returns as file.             
+Converts MAPI contact model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -94,84 +94,89 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Request Parameters
 ```csharp
-new MapiCalendarAsFileRequest(
+new MapiContactAsFileRequest(
     request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**MapiCalendarAsFileRequest**](MapiCalendarAsFileRequest.md)| MAPI calendar model to convert. | 
+ **request** | [**MapiContactAsFileRequest**](MapiContactAsFileRequest.md)| MAPI contact model to convert. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicalendarfromfile"></a>
-# **MapiCalendarFromFile**
+<a name="mapicontactfromfile"></a>
+# **MapiContactFromFile**
 
 ```csharp
-MapiCalendarDto MapiCalendarFromFile(MapiCalendarFromFileRequest request)
+MapiContactDto MapiContactFromFile(MapiContactFromFileRequest request)
 ```
 
-Converts calendar file to a MAPI model representation.             
+Converts contact file to a MAPI model representation.             
 
 ### Return type
 
-[**MapiCalendarDto**](MapiCalendarDto.md)
+[**MapiContactDto**](MapiContactDto.md)
 
 ### Request Parameters
 ```csharp
-new MapiCalendarFromFileRequest(
+new MapiContactFromFileRequest(
+    fileFormat,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **fileFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicalendarfromfile"></a>
-# **MapiCalendarFromFileAsync**
+<a name="mapicontactfromfile"></a>
+# **MapiContactFromFileAsync**
 
 ```csharp
-async Task<MapiCalendarDto> MapiCalendarFromFileAsync(MapiCalendarFromFileRequest request)
+async Task<MapiContactDto> MapiContactFromFileAsync(MapiContactFromFileRequest request)
 ```
 
-Converts calendar file to a MAPI model representation.             
+Converts contact file to a MAPI model representation.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
+Task<[**MapiContactDto**](MapiContactDto.md)>
 
 ### Request Parameters
 ```csharp
-new MapiCalendarFromFileRequest(
+new MapiContactFromFileRequest(
+    fileFormat,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **fileFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicalendarget"></a>
-# **MapiCalendarGet**
+<a name="mapicontactget"></a>
+# **MapiContactGet**
 
 ```csharp
-MapiCalendarDto MapiCalendarGet(MapiCalendarGetRequest request)
+MapiContactDto MapiContactGet(MapiContactGetRequest request)
 ```
 
-Get MAPI calendar document.             
+Get MAPI contact document.             
 
 ### Return type
 
-[**MapiCalendarDto**](MapiCalendarDto.md)
+[**MapiContactDto**](MapiContactDto.md)
 
 ### Request Parameters
 ```csharp
-new MapiCalendarGetRequest(
+new MapiContactGetRequest(
+    format,
     name,
     folder=folder,
     storage=storage)
@@ -179,30 +184,32 @@ new MapiCalendarGetRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| Calendar file name in storage. | 
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicalendarget"></a>
-# **MapiCalendarGetAsync**
+<a name="mapicontactget"></a>
+# **MapiContactGetAsync**
 
 ```csharp
-async Task<MapiCalendarDto> MapiCalendarGetAsync(MapiCalendarGetRequest request)
+async Task<MapiContactDto> MapiContactGetAsync(MapiContactGetRequest request)
 ```
 
-Get MAPI calendar document.             
+Get MAPI contact document.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
+Task<[**MapiContactDto**](MapiContactDto.md)>
 
 ### Request Parameters
 ```csharp
-new MapiCalendarGetRequest(
+new MapiContactGetRequest(
+    format,
     name,
     folder=folder,
     storage=storage)
@@ -210,20 +217,21 @@ new MapiCalendarGetRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| Calendar file name in storage. | 
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicalendarsave"></a>
-# **MapiCalendarSave**
+<a name="mapicontactsave"></a>
+# **MapiContactSave**
 
 ```csharp
-void MapiCalendarSave(MapiCalendarSaveRequest request)
+void MapiContactSave(MapiContactSaveRequest request)
 ```
 
-Save MAPI Calendar to storage.             
+Save MAPI Contact to storage.             
 
 ### Return type
 
@@ -231,24 +239,24 @@ void (empty response body)
 
 ### Request Parameters
 ```csharp
-new MapiCalendarSaveRequest(
+new MapiContactSaveRequest(
     request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**MapiCalendarSaveRequest**](MapiCalendarSaveRequest.md)| Calendar create/update request. | 
+ **request** | [**MapiContactSaveRequest**](MapiContactSaveRequest.md)| Create/Update contact request. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicalendarsave"></a>
-# **MapiCalendarSaveAsync**
+<a name="mapicontactsave"></a>
+# **MapiContactSaveAsync**
 
 ```csharp
-async Task MapiCalendarSaveAsync(MapiCalendarSaveRequest request)
+async Task MapiContactSaveAsync(MapiContactSaveRequest request)
 ```
 
-Save MAPI Calendar to storage.             
+Save MAPI Contact to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -258,13 +266,13 @@ Task (empty response body)
 
 ### Request Parameters
 ```csharp
-new MapiCalendarSaveRequest(
+new MapiContactSaveRequest(
     request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**MapiCalendarSaveRequest**](MapiCalendarSaveRequest.md)| Calendar create/update request. | 
+ **request** | [**MapiContactSaveRequest**](MapiContactSaveRequest.md)| Create/Update contact request. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

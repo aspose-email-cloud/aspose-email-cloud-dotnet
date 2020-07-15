@@ -1,9 +1,9 @@
-# Model.MapiCalendarAsFileRequest
+# Model.MapiContactAsFileRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Format** | **string** | Calendar file format Enum, available values: Ics, Msg | 
-**Value** | [**MapiCalendarDto**](MapiCalendarDto.md) | MAPI calendar model.              | [optional] 
+**Format** | **string** | Enumerates contact formats. Enum, available values: VCard, WebDav, Msg | 
+**Value** | [**MapiContactDto**](MapiContactDto.md) | MAPI contact model.              | [optional] 
 
 
 

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="MapiCalendarAsFileRequest.cs">
+// <copyright company="Aspose" file="StorageModelOfMapiContactDto.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -37,29 +37,29 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Convert MapiCalendar to file request.             
+    /// 
     /// </summary>
-    public class MapiCalendarAsFileRequest 
+    public class StorageModelOfMapiContactDto 
     {
         /// <summary>
-        /// Calendar file format Enum, available values: Ics, Msg
+        /// Gets or sets StorageFile
         /// </summary>  
-        public string Format { get; set; }
+        public StorageFileLocation StorageFile { get; set; }
 
         /// <summary>
-        /// MAPI calendar model.             
+        /// Gets or sets Value
         /// </summary>  
-        public MapiCalendarDto Value { get; set; }
+        public MapiContactDto Value { get; set; }
 
-        /// <summary>MapiCalendarAsFileRequest constructor</summary>
-        public MapiCalendarAsFileRequest() {}
+        /// <summary>StorageModelOfMapiContactDto constructor</summary>
+        public StorageModelOfMapiContactDto() {}
 
-        /// <summary>MapiCalendarAsFileRequest constructor</summary>
-        /// <param name="format">Calendar file format Enum, available values: Ics, Msg</param>
-        /// <param name="value">MAPI calendar model.             </param>
-        public MapiCalendarAsFileRequest(string format, MapiCalendarDto value)
+        /// <summary>StorageModelOfMapiContactDto constructor</summary>
+        /// <param name="storageFile"></param>
+        /// <param name="value"></param>
+        public StorageModelOfMapiContactDto(StorageFileLocation storageFile, MapiContactDto value)
         {
-            Format = format;
+            StorageFile = storageFile;
             Value = value;
         }
         /// <summary>
@@ -69,8 +69,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class MapiCalendarAsFileRequest {\n");
-          sb.Append("  Format: ").Append(this.Format).Append("\n");
+          sb.Append("class StorageModelOfMapiContactDto {\n");
+          sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();

@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="MapiCalendarGetRequest.cs">
+// <copyright company="Aspose" file="MapiContactGetRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,32 +33,39 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.MapiCalendarApi.NORPrefix_MapiCalendar_Get_NOR_Suffix_p_MapiCalendarApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.MapiContactApi.NORPrefix_MapiContact_Get_NOR_Suffix_p_MapiContactApi_e" /> operation.
   /// </summary>
-  public class MapiCalendarGetRequest  
+  public class MapiContactGetRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="MapiCalendarGetRequest"/> class.
+        /// Initializes a new instance of the <see cref="MapiContactGetRequest"/> class.
         /// </summary>
-        public MapiCalendarGetRequest()
+        public MapiContactGetRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MapiCalendarGetRequest"/> class.
+        /// Initializes a new instance of the <see cref="MapiContactGetRequest"/> class.
         /// </summary>
-        /// <param name="name">Calendar file name in storage.</param>
+        /// <param name="format">Contact document format. Enum, available values: VCard, WebDav, Msg</param>
+        /// <param name="name">Contact document file name.</param>
         /// <param name="folder">Path to folder in storage.</param>
         /// <param name="storage">Storage name.</param>
-        public MapiCalendarGetRequest(string name, string folder = null, string storage = null)
+        public MapiContactGetRequest(string format, string name, string folder = null, string storage = null)
         {
+            this.format = format;
             this.name = name;
             this.folder = folder;
             this.storage = storage;
         }
 
         /// <summary>
-        /// Calendar file name in storage.
+        /// Contact document format. Enum, available values: VCard, WebDav, Msg
+        /// </summary>
+        public string format { get; set; }
+
+        /// <summary>
+        /// Contact document file name.
         /// </summary>
         public string name { get; set; }
 
