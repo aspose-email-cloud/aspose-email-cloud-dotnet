@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrBase64Image.cs">
+// <copyright company="Aspose" file="ContactList.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -37,25 +37,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Image to recognize             
+    /// List of VCard documents             
     /// </summary>
-    public class AiBcrBase64Image : AiBcrImage 
+    public class ContactList : ListResponseOfContactDto 
     {
-        /// <summary>
-        /// Image data in base64             
-        /// </summary>  
-        public string Base64Data { get; set; }
+        /// <summary>ContactList constructor</summary>
+        public ContactList() {}
 
-        /// <summary>AiBcrBase64Image constructor</summary>
-        public AiBcrBase64Image() {}
-
-        /// <summary>AiBcrBase64Image constructor</summary>
-        /// <param name="isSingle">Determines that image contains single VCard or more. Ignored in current version. Multiple cards on image support will be added soon             </param>
-        /// <param name="base64Data">Image data in base64             </param>
-        public AiBcrBase64Image(bool? isSingle, string base64Data)
+        /// <summary>ContactList constructor</summary>
+        /// <param name="value"></param>
+        public ContactList(List<ContactDto> value)
         {
-            IsSingle = isSingle;
-            Base64Data = base64Data;
+            Value = value;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -64,9 +57,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrBase64Image {\n");
-          sb.Append("  IsSingle: ").Append(this.IsSingle).Append("\n");
-          sb.Append("  Base64Data: ").Append(this.Base64Data).Append("\n");
+          sb.Append("class ContactList {\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

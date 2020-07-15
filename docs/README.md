@@ -6,8 +6,8 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AiBcrApi* | [**AiBcrParse**](AiBcrApi.md#aibcrparse) | **POST** /email/AiBcr/parse | Parse images to vCard document models             
 *AiBcrApi* | [**AiBcrParseAsync**](AiBcrApi.md#aibcrparseasync) | **POST** /email/AiBcr/parse | Parse images to vCard document models             . Not available on .NETFramework v2.0
-*AiBcrApi* | [**AiBcrParseStorage**](AiBcrApi.md#aibcrparsestorage) | **POST** /email/AiBcr/parse-storage | Parse images from storage to vCard files             
-*AiBcrApi* | [**AiBcrParseStorageAsync**](AiBcrApi.md#aibcrparsestorageasync) | **POST** /email/AiBcr/parse-storage | Parse images from storage to vCard files             . Not available on .NETFramework v2.0
+*AiBcrApi* | [**AiBcrParseStorage**](AiBcrApi.md#aibcrparsestorage) | **PUT** /email/AiBcr/parse-storage | Parse images from storage to vCard files             
+*AiBcrApi* | [**AiBcrParseStorageAsync**](AiBcrApi.md#aibcrparsestorageasync) | **PUT** /email/AiBcr/parse-storage | Parse images from storage to vCard files             . Not available on .NETFramework v2.0
 *AiNameApi* | [**AiNameComplete**](AiNameApi.md#ainamecomplete) | **GET** /email/AiName/complete | The call proposes k most probable names for given starting characters             
 *AiNameApi* | [**AiNameCompleteAsync**](AiNameApi.md#ainamecompleteasync) | **GET** /email/AiName/complete | The call proposes k most probable names for given starting characters             . Not available on .NETFramework v2.0
 *AiNameApi* | [**AiNameExpand**](AiNameApi.md#ainameexpand) | **GET** /email/AiName/expand | Expands a person&#39;s name into a list of possible alternatives using options for expanding instructions             
@@ -116,7 +116,7 @@ Class | Method | HTTP request | Description
 
  - [Model.AiBcrImage](AiBcrImage.md)
  - [Model.AiBcrOptions](AiBcrOptions.md)
- - [Model.AiBcrRq](AiBcrRq.md)
+ - [Model.AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
  - [Model.AiNameComponent](AiNameComponent.md)
  - [Model.AiNameCulturalContext](AiNameCulturalContext.md)
  - [Model.AiNameExtracted](AiNameExtracted.md)
@@ -125,7 +125,7 @@ Class | Method | HTTP request | Description
  - [Model.AiNameGenderHypothesis](AiNameGenderHypothesis.md)
  - [Model.AiNameMatchResult](AiNameMatchResult.md)
  - [Model.AiNameMismatch](AiNameMismatch.md)
- - [Model.AiNameParsedRq](AiNameParsedRq.md)
+ - [Model.AiNameParsedRequest](AiNameParsedRequest.md)
  - [Model.AiNameWeighted](AiNameWeighted.md)
  - [Model.AiNameWeightedVariants](AiNameWeightedVariants.md)
  - [Model.AssociatedPerson](AssociatedPerson.md)
@@ -202,15 +202,16 @@ Class | Method | HTTP request | Description
  - [Model.StorageModelOfContactDto](StorageModelOfContactDto.md)
  - [Model.StorageModelOfEmailDto](StorageModelOfEmailDto.md)
  - [Model.Url](Url.md)
- - [Model.AiBcrBase64Image](AiBcrBase64Image.md)
- - [Model.AiBcrBase64Rq](AiBcrBase64Rq.md)
  - [Model.AiBcrImageStorageFile](AiBcrImageStorageFile.md)
- - [Model.AiBcrStorageImageRq](AiBcrStorageImageRq.md)
- - [Model.AiNameParsedMatchRq](AiNameParsedMatchRq.md)
+ - [Model.AiNameComponentList](AiNameComponentList.md)
+ - [Model.AiNameExtractedList](AiNameExtractedList.md)
+ - [Model.AiNameGenderHypothesisList](AiNameGenderHypothesisList.md)
+ - [Model.AiNameParsedMatchRequest](AiNameParsedMatchRequest.md)
  - [Model.AlternateView](AlternateView.md)
  - [Model.Attachment](Attachment.md)
  - [Model.CalendarSaveRequest](CalendarSaveRequest.md)
  - [Model.CalendarStorageList](CalendarStorageList.md)
+ - [Model.ContactList](ContactList.md)
  - [Model.ContactSaveRequest](ContactSaveRequest.md)
  - [Model.ContactStorageList](ContactStorageList.md)
  - [Model.DailyRecurrencePatternDto](DailyRecurrencePatternDto.md)
@@ -241,10 +242,10 @@ Class | Method | HTTP request | Description
  - [Model.MapiStringPropertyDto](MapiStringPropertyDto.md)
  - [Model.MonthlyRecurrencePatternDto](MonthlyRecurrencePatternDto.md)
  - [Model.StorageFileLocation](StorageFileLocation.md)
+ - [Model.StorageFileLocationList](StorageFileLocationList.md)
  - [Model.TaskRegeneratingPatternDto](TaskRegeneratingPatternDto.md)
  - [Model.WeeklyRecurrencePatternDto](WeeklyRecurrencePatternDto.md)
  - [Model.YearlyRecurrencePatternDto](YearlyRecurrencePatternDto.md)
- - [Model.AiBcrParseStorageRq](AiBcrParseStorageRq.md)
  - [Model.MapiPidLidPropertyDescriptor](MapiPidLidPropertyDescriptor.md)
  - [Model.MapiPidNamePropertyDescriptor](MapiPidNamePropertyDescriptor.md)
  - [Model.MapiPidTagPropertyDescriptor](MapiPidTagPropertyDescriptor.md)

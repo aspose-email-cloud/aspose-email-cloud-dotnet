@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrStorageImageRq.cs">
+// <copyright company="Aspose" file="AiBcrParseStorageRequest.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -37,25 +37,37 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Business card images from storage for recognition             
+    /// Parse business card images from Storage request             
     /// </summary>
-    public class AiBcrStorageImageRq : AiBcrRq 
+    public class AiBcrParseStorageRequest 
     {
         /// <summary>
-        /// List of images with business cards             
+        /// Parse output folder location on storage             
+        /// </summary>  
+        public StorageFolderLocation OutFolder { get; set; }
+
+        /// <summary>
+        /// Images to parse.             
         /// </summary>  
         public List<AiBcrImageStorageFile> Images { get; set; }
 
-        /// <summary>AiBcrStorageImageRq constructor</summary>
-        public AiBcrStorageImageRq() {}
+        /// <summary>
+        /// Recognition options.             
+        /// </summary>  
+        public AiBcrOptions Options { get; set; }
 
-        /// <summary>AiBcrStorageImageRq constructor</summary>
-        /// <param name="options">Recognition options             </param>
-        /// <param name="images">List of images with business cards             </param>
-        public AiBcrStorageImageRq(AiBcrOptions options, List<AiBcrImageStorageFile> images)
+        /// <summary>AiBcrParseStorageRequest constructor</summary>
+        public AiBcrParseStorageRequest() {}
+
+        /// <summary>AiBcrParseStorageRequest constructor</summary>
+        /// <param name="outFolder">Parse output folder location on storage             </param>
+        /// <param name="images">Images to parse.             </param>
+        /// <param name="options">Recognition options.             </param>
+        public AiBcrParseStorageRequest(StorageFolderLocation outFolder, List<AiBcrImageStorageFile> images, AiBcrOptions options)
         {
-            Options = options;
+            OutFolder = outFolder;
             Images = images;
+            Options = options;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -64,9 +76,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrStorageImageRq {\n");
-          sb.Append("  Options: ").Append(this.Options).Append("\n");
+          sb.Append("class AiBcrParseStorageRequest {\n");
+          sb.Append("  OutFolder: ").Append(this.OutFolder).Append("\n");
           sb.Append("  Images: ").Append(this.Images).Append("\n");
+          sb.Append("  Options: ").Append(this.Options).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

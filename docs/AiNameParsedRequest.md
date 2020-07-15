@@ -1,4 +1,4 @@
-# Model.AiNameParsedRq
+# Model.AiNameParsedRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

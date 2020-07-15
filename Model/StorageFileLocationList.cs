@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrBase64Rq.cs">
+// <copyright company="Aspose" file="StorageFileLocationList.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -37,25 +37,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Parse business card image request             
+    /// List of files located on storage.             
     /// </summary>
-    public class AiBcrBase64Rq : AiBcrRq 
+    public class StorageFileLocationList : ListResponseOfStorageFileLocation 
     {
-        /// <summary>
-        /// Images to recognize             
-        /// </summary>  
-        public List<AiBcrBase64Image> Images { get; set; }
+        /// <summary>StorageFileLocationList constructor</summary>
+        public StorageFileLocationList() {}
 
-        /// <summary>AiBcrBase64Rq constructor</summary>
-        public AiBcrBase64Rq() {}
-
-        /// <summary>AiBcrBase64Rq constructor</summary>
-        /// <param name="options">Recognition options             </param>
-        /// <param name="images">Images to recognize             </param>
-        public AiBcrBase64Rq(AiBcrOptions options, List<AiBcrBase64Image> images)
+        /// <summary>StorageFileLocationList constructor</summary>
+        /// <param name="value"></param>
+        public StorageFileLocationList(List<StorageFileLocation> value)
         {
-            Options = options;
-            Images = images;
+            Value = value;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -64,9 +57,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrBase64Rq {\n");
-          sb.Append("  Options: ").Append(this.Options).Append("\n");
-          sb.Append("  Images: ").Append(this.Images).Append("\n");
+          sb.Append("class StorageFileLocationList {\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

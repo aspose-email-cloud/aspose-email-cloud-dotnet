@@ -58,27 +58,38 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Parse images to vCard document models              
         /// </summary>
-        /// <param name="rq">Request with base64 images data</param>
-        /// <returns><see cref="ListResponseOfContactDto"/></returns>
-        public ListResponseOfContactDto Parse(
-            AiBcrBase64Rq rq)
+        /// <param name="request">Request. <see cref="AiBcrParseRequest" /></param>
+        /// <returns><see cref="ContactList"/></returns>
+        public ContactList Parse(AiBcrParseRequest request)
         {
-            // verify the required parameter 'rq' is set
-            if (rq == null)
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
                 throw new ApiException(400,
-                    "Missing required parameter 'rq' when calling Parse");
+                    "Missing required parameter 'file' when calling Parse");
+            }
+
             // create path and map variables
             var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiBcr/parse";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(rq); // http body (model) parameter
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "countries", request.countries);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "languages", request.languages);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "isSingle", request.isSingle);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
-                postBody);
-            return response == null ? null : SerializationHelper.Deserialize<ListResponseOfContactDto>(response);
+                formParams: formParams);
+            return response == null ? null : SerializationHelper.Deserialize<ContactList>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -86,38 +97,36 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Parse images to vCard document models              
         /// </summary>
         /// <param name="request">Request. <see cref="AiBcrParseRequest" /></param>
-        /// <returns><see cref="ListResponseOfContactDto"/></returns>
-        public async Task<ListResponseOfContactDto> ParseAsync(
-            AiBcrBase64Rq rq) =>
-            await Task.Run(() => Parse(rq
-        ));
+        /// <returns><see cref="ContactList"/></returns>
+        public async Task<ContactList> ParseAsync(AiBcrParseRequest request) =>
+            await Task.Run(() => Parse(request));
         #endif
 
                     ﻿
         /// <summary>
         /// Parse images from storage to vCard files              
         /// </summary>
-        /// <param name="rq">Request with images located on storage</param>
-        /// <returns><see cref="ListResponseOfStorageFileLocation"/></returns>
-        public ListResponseOfStorageFileLocation ParseStorage(
-            AiBcrParseStorageRq rq)
+        /// <param name="request">Request with images located on storage</param>
+        /// <returns><see cref="StorageFileLocationList"/></returns>
+        public StorageFileLocationList ParseStorage(
+            AiBcrParseStorageRequest request)
         {
-            // verify the required parameter 'rq' is set
-            if (rq == null)
+            // verify the required parameter 'request' is set
+            if (request == null)
                 throw new ApiException(400,
-                    "Missing required parameter 'rq' when calling ParseStorage");
+                    "Missing required parameter 'request' when calling ParseStorage");
             // create path and map variables
             var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiBcr/parse-storage";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(rq); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
-                "POST",
+                "PUT",
                 postBody);
-            return response == null ? null : SerializationHelper.Deserialize<ListResponseOfStorageFileLocation>(response);
+            return response == null ? null : SerializationHelper.Deserialize<StorageFileLocationList>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -125,10 +134,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Parse images from storage to vCard files              
         /// </summary>
         /// <param name="request">Request. <see cref="AiBcrParseStorageRequest" /></param>
-        /// <returns><see cref="ListResponseOfStorageFileLocation"/></returns>
-        public async Task<ListResponseOfStorageFileLocation> ParseStorageAsync(
-            AiBcrParseStorageRq rq) =>
-            await Task.Run(() => ParseStorage(rq
+        /// <returns><see cref="StorageFileLocationList"/></returns>
+        public async Task<StorageFileLocationList> ParseStorageAsync(
+            AiBcrParseStorageRequest request) =>
+            await Task.Run(() => ParseStorage(request
         ));
         #endif
 

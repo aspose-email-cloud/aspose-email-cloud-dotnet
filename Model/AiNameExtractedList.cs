@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrOptions.cs">
+// <copyright company="Aspose" file="AiNameExtractedList.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -37,30 +37,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Recognition options.             
+    /// Extracted name list.             
     /// </summary>
-    public class AiBcrOptions 
+    public class AiNameExtractedList : ListResponseOfAiNameExtracted 
     {
-        /// <summary>
-        /// Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \"it\" or \"ita\" for Italian); it's \"\" by default.             
-        /// </summary>  
-        public string Languages { get; set; }
+        /// <summary>AiNameExtractedList constructor</summary>
+        public AiNameExtractedList() {}
 
-        /// <summary>
-        /// Comma-separated codes of countries.             
-        /// </summary>  
-        public string Countries { get; set; }
-
-        /// <summary>AiBcrOptions constructor</summary>
-        public AiBcrOptions() {}
-
-        /// <summary>AiBcrOptions constructor</summary>
-        /// <param name="languages">Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \"it\" or \"ita\" for Italian); it's \"\" by default.             </param>
-        /// <param name="countries">Comma-separated codes of countries.             </param>
-        public AiBcrOptions(string languages, string countries)
+        /// <summary>AiNameExtractedList constructor</summary>
+        /// <param name="value"></param>
+        public AiNameExtractedList(List<AiNameExtracted> value)
         {
-            Languages = languages;
-            Countries = countries;
+            Value = value;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -69,9 +57,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrOptions {\n");
-          sb.Append("  Languages: ").Append(this.Languages).Append("\n");
-          sb.Append("  Countries: ").Append(this.Countries).Append("\n");
+          sb.Append("class AiNameExtractedList {\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

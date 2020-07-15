@@ -4,24 +4,30 @@
 # **AiBcrParse**
 
 ```csharp
-ListResponseOfContactDto AiBcrParse(AiBcrParseRequest request)
+ContactList AiBcrParse(AiBcrParseRequest request)
 ```
 
 Parse images to vCard document models             
 
 ### Return type
 
-[**ListResponseOfContactDto**](ListResponseOfContactDto.md)
+[**ContactList**](ContactList.md)
 
 ### Request Parameters
 ```csharp
 new AiBcrParseRequest(
-    rq)
+    file,
+    countries=countries,
+    languages=languages,
+    isSingle=isSingle)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiBcrBase64Rq**](AiBcrBase64Rq.md)| Request with base64 images data | 
+ **file** | **System.IO.Stream**| File to convert | 
+ **countries** | **string**| Comma-separated codes of countries. | [optional] 
+ **languages** | **string**| Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default. | [optional] 
+ **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -29,7 +35,7 @@ Name | Type | Description  | Notes
 # **AiBcrParseAsync**
 
 ```csharp
-async Task<ListResponseOfContactDto> AiBcrParseAsync(AiBcrParseRequest request)
+async Task<ContactList> AiBcrParseAsync(AiBcrParseRequest request)
 ```
 
 Parse images to vCard document models             
@@ -38,17 +44,23 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task<[**ListResponseOfContactDto**](ListResponseOfContactDto.md)>
+Task<[**ContactList**](ContactList.md)>
 
 ### Request Parameters
 ```csharp
 new AiBcrParseRequest(
-    rq)
+    file,
+    countries=countries,
+    languages=languages,
+    isSingle=isSingle)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiBcrBase64Rq**](AiBcrBase64Rq.md)| Request with base64 images data | 
+ **file** | **System.IO.Stream**| File to convert | 
+ **countries** | **string**| Comma-separated codes of countries. | [optional] 
+ **languages** | **string**| Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default. | [optional] 
+ **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -56,24 +68,24 @@ Name | Type | Description  | Notes
 # **AiBcrParseStorage**
 
 ```csharp
-ListResponseOfStorageFileLocation AiBcrParseStorage(AiBcrParseStorageRequest request)
+StorageFileLocationList AiBcrParseStorage(AiBcrParseStorageRequest request)
 ```
 
 Parse images from storage to vCard files             
 
 ### Return type
 
-[**ListResponseOfStorageFileLocation**](ListResponseOfStorageFileLocation.md)
+[**StorageFileLocationList**](StorageFileLocationList.md)
 
 ### Request Parameters
 ```csharp
 new AiBcrParseStorageRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiBcrParseStorageRq**](AiBcrParseStorageRq.md)| Request with images located on storage | 
+ **request** | [**AiBcrParseStorageRequest**](AiBcrParseStorageRequest.md)| Request with images located on storage | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -81,7 +93,7 @@ Name | Type | Description  | Notes
 # **AiBcrParseStorageAsync**
 
 ```csharp
-async Task<ListResponseOfStorageFileLocation> AiBcrParseStorageAsync(AiBcrParseStorageRequest request)
+async Task<StorageFileLocationList> AiBcrParseStorageAsync(AiBcrParseStorageRequest request)
 ```
 
 Parse images from storage to vCard files             
@@ -90,17 +102,17 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task<[**ListResponseOfStorageFileLocation**](ListResponseOfStorageFileLocation.md)>
+Task<[**StorageFileLocationList**](StorageFileLocationList.md)>
 
 ### Request Parameters
 ```csharp
 new AiBcrParseStorageRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiBcrParseStorageRq**](AiBcrParseStorageRq.md)| Request with images located on storage | 
+ **request** | [**AiBcrParseStorageRequest**](AiBcrParseStorageRequest.md)| Request with images located on storage | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

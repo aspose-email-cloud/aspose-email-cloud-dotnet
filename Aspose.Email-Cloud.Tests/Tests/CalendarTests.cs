@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.Email.Cloud.Sdk.Model;
@@ -55,14 +54,14 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var calendarFile = await CreateCalendar();
             var newFileName = $"{Guid.NewGuid().ToString()}.ics";
             var newPath = $"{Folder}/{newFileName}";
-            using (var stream = await Api.File.DownloadFileAsync(
+            using (var stream = await Api.CloudStorage.File.DownloadFileAsync(
                 new DownloadFileRequest($"{Folder}/{calendarFile}", StorageName)))
             {
                 var uploadRequest = new UploadFileRequest(newPath, stream, StorageName);
-                await Api.File.UploadFileAsync(uploadRequest);
+                await Api.CloudStorage.File.UploadFileAsync(uploadRequest);
             }
 
-            var newFileExist = await Api.Storage.ObjectExistsAsync(
+            var newFileExist = await Api.CloudStorage.Storage.ObjectExistsAsync(
                 new ObjectExistsRequest(newPath, StorageName));
             Assert.IsTrue(newFileExist.Exists);
             Assert.IsFalse(newFileExist.IsFolder);
@@ -94,7 +93,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var emailFile = $"{Guid.NewGuid().ToString()}.eml";
             await Api.Email.SaveAsync(new EmailSaveRequest(
                 new StorageFileLocation(StorageName, Folder, emailFile), email, "Eml"));
-            var emlFile = await Api.File.DownloadFileAsync(
+            var emlFile = await Api.CloudStorage.File.DownloadFileAsync(
                 new DownloadFileRequest($"{Folder}/{emailFile}", StorageName));
             emlFile.Seek(0, SeekOrigin.Begin);
             var fileReader = new StreamReader(emlFile);

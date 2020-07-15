@@ -20,14 +20,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
     
         public EmailApi Email {get;}
     
-        public FileApi File {get;}
-    
-        public FolderApi Folder {get;}
-    
-        public StorageApi Storage {get;}
-    
     
         public AiGroup Ai {get;}
+    
+        public CloudStorageGroup CloudStorage {get;}
     
 
         /// <summary>
@@ -63,14 +59,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
         
             Email = new EmailApi(apiInvoker, this.configuration);
         
-            File = new FileApi(apiInvoker, this.configuration);
-        
-            Folder = new FolderApi(apiInvoker, this.configuration);
-        
-            Storage = new StorageApi(apiInvoker, this.configuration);
-        
         
             Ai = new AiGroup(apiInvoker, this.configuration);
+        
+            CloudStorage = new CloudStorageGroup(apiInvoker, this.configuration);
         
         }
     }

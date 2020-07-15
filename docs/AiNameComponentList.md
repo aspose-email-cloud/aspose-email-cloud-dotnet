@@ -1,10 +1,9 @@
-# Model.AiBcrParseStorageRq
+# Model.AiNameComponentList
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**OutFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Parse output folder location on storage              | 
 
- Parent class: [AiBcrStorageImageRq](AiBcrStorageImageRq.md)
+ Parent class: [ListResponseOfAiNameComponent](ListResponseOfAiNameComponent.md)
 
 [[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 

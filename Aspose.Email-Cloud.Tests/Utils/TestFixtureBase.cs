@@ -44,11 +44,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Utils
         public async Task OneTimeTearDown()
         {
             var existRequest = new ObjectExistsRequest(Folder, StorageName);
-            var folderExist = await Api.Storage.ObjectExistsAsync(existRequest);
+            var folderExist = await Api.CloudStorage.Storage.ObjectExistsAsync(existRequest);
             if (folderExist.Exists == true && folderExist.IsFolder == true)
             {
                 var deleteRequest = new DeleteFolderRequest(Folder, StorageName, true);
-                await Api.Folder.DeleteFolderAsync(deleteRequest);
+                await Api.CloudStorage.Folder.DeleteFolderAsync(deleteRequest);
             }
         }
         protected static string FileToBase64(string filePath)
@@ -61,7 +61,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Utils
         {
             var path = $"{folderPath ?? Folder}/{fileName}";
             var request = new ObjectExistsRequest(path, StorageName);
-            var result = await Api.Storage.ObjectExistsAsync(request);
+            var result = await Api.CloudStorage.Storage.ObjectExistsAsync(request);
             return result.IsFolder != true && result.Exists == true;
         }
     }

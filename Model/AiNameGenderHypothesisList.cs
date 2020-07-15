@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrRq.cs">
+// <copyright company="Aspose" file="AiNameGenderHypothesisList.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -37,23 +37,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Business card recognition request             
+    /// Hypotheses about person&#39;s gender             
     /// </summary>
-    public class AiBcrRq 
+    public class AiNameGenderHypothesisList : ListResponseOfAiNameGenderHypothesis 
     {
-        /// <summary>
-        /// Recognition options             
-        /// </summary>  
-        public AiBcrOptions Options { get; set; }
+        /// <summary>AiNameGenderHypothesisList constructor</summary>
+        public AiNameGenderHypothesisList() {}
 
-        /// <summary>AiBcrRq constructor</summary>
-        public AiBcrRq() {}
-
-        /// <summary>AiBcrRq constructor</summary>
-        /// <param name="options">Recognition options             </param>
-        public AiBcrRq(AiBcrOptions options)
+        /// <summary>AiNameGenderHypothesisList constructor</summary>
+        /// <param name="value"></param>
+        public AiNameGenderHypothesisList(List<AiNameGenderHypothesis> value)
         {
-            Options = options;
+            Value = value;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -62,8 +57,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrRq {\n");
-          sb.Append("  Options: ").Append(this.Options).Append("\n");
+          sb.Append("class AiNameGenderHypothesisList {\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

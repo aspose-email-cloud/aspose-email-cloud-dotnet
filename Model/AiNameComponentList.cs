@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrParseStorageRq.cs">
+// <copyright company="Aspose" file="AiNameComponentList.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -37,27 +37,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Parse business card images from Storage request             
+    /// List of name components             
     /// </summary>
-    public class AiBcrParseStorageRq : AiBcrStorageImageRq 
+    public class AiNameComponentList : ListResponseOfAiNameComponent 
     {
-        /// <summary>
-        /// Parse output folder location on storage             
-        /// </summary>  
-        public StorageFolderLocation OutFolder { get; set; }
+        /// <summary>AiNameComponentList constructor</summary>
+        public AiNameComponentList() {}
 
-        /// <summary>AiBcrParseStorageRq constructor</summary>
-        public AiBcrParseStorageRq() {}
-
-        /// <summary>AiBcrParseStorageRq constructor</summary>
-        /// <param name="options">Recognition options             </param>
-        /// <param name="images">List of images with business cards             </param>
-        /// <param name="outFolder">Parse output folder location on storage             </param>
-        public AiBcrParseStorageRq(AiBcrOptions options, List<AiBcrImageStorageFile> images, StorageFolderLocation outFolder)
+        /// <summary>AiNameComponentList constructor</summary>
+        /// <param name="value"></param>
+        public AiNameComponentList(List<AiNameComponent> value)
         {
-            Options = options;
-            Images = images;
-            OutFolder = outFolder;
+            Value = value;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -66,10 +57,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class AiBcrParseStorageRq {\n");
-          sb.Append("  Options: ").Append(this.Options).Append("\n");
-          sb.Append("  Images: ").Append(this.Images).Append("\n");
-          sb.Append("  OutFolder: ").Append(this.OutFolder).Append("\n");
+          sb.Append("class AiNameComponentList {\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

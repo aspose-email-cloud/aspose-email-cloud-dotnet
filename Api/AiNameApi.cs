@@ -144,22 +144,22 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Expands a person&#39;s parsed name into a list of possible alternatives using options for expanding instructions              
         /// </summary>
-        /// <param name="rq">Parsed name with options</param>
+        /// <param name="request">Parsed name with options</param>
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
         public AiNameWeightedVariants ExpandParsed(
-            AiNameParsedRq rq)
+            AiNameParsedRequest request)
         {
-            // verify the required parameter 'rq' is set
-            if (rq == null)
+            // verify the required parameter 'request' is set
+            if (request == null)
                 throw new ApiException(400,
-                    "Missing required parameter 'rq' when calling ExpandParsed");
+                    "Missing required parameter 'request' when calling ExpandParsed");
             // create path and map variables
             var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiName/expand-parsed";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(rq); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -174,8 +174,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Request. <see cref="AiNameExpandParsedRequest" /></param>
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
         public async Task<AiNameWeightedVariants> ExpandParsedAsync(
-            AiNameParsedRq rq) =>
-            await Task.Run(() => ExpandParsed(rq
+            AiNameParsedRequest request) =>
+            await Task.Run(() => ExpandParsed(request
         ));
         #endif
 
@@ -227,22 +227,22 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Formats a person&#39;s parsed name in correct case and name order using options for formatting instructions              
         /// </summary>
-        /// <param name="rq">Parsed name with options</param>
+        /// <param name="request">Parsed name with options</param>
         /// <returns><see cref="AiNameFormatted"/></returns>
         public AiNameFormatted FormatParsed(
-            AiNameParsedRq rq)
+            AiNameParsedRequest request)
         {
-            // verify the required parameter 'rq' is set
-            if (rq == null)
+            // verify the required parameter 'request' is set
+            if (request == null)
                 throw new ApiException(400,
-                    "Missing required parameter 'rq' when calling FormatParsed");
+                    "Missing required parameter 'request' when calling FormatParsed");
             // create path and map variables
             var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiName/format-parsed";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(rq); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -257,8 +257,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Request. <see cref="AiNameFormatParsedRequest" /></param>
         /// <returns><see cref="AiNameFormatted"/></returns>
         public async Task<AiNameFormatted> FormatParsedAsync(
-            AiNameParsedRq rq) =>
-            await Task.Run(() => FormatParsed(rq
+            AiNameParsedRequest request) =>
+            await Task.Run(() => FormatParsed(request
         ));
         #endif
 
@@ -267,8 +267,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Detect person&#39;s gender from name string              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameGenderizeRequest" /></param>
-        /// <returns><see cref="ListResponseOfAiNameGenderHypothesis"/></returns>
-        public ListResponseOfAiNameGenderHypothesis Genderize(AiNameGenderizeRequest request)
+        /// <returns><see cref="AiNameGenderHypothesisList"/></returns>
+        public AiNameGenderHypothesisList Genderize(AiNameGenderizeRequest request)
         {
             // verify the required parameter 'name' is set
             if (request.name == null)
@@ -292,7 +292,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
-            return response == null ? null : SerializationHelper.Deserialize<ListResponseOfAiNameGenderHypothesis>(response);
+            return response == null ? null : SerializationHelper.Deserialize<AiNameGenderHypothesisList>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -300,8 +300,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Detect person&#39;s gender from name string              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameGenderizeRequest" /></param>
-        /// <returns><see cref="ListResponseOfAiNameGenderHypothesis"/></returns>
-        public async Task<ListResponseOfAiNameGenderHypothesis> GenderizeAsync(AiNameGenderizeRequest request) =>
+        /// <returns><see cref="AiNameGenderHypothesisList"/></returns>
+        public async Task<AiNameGenderHypothesisList> GenderizeAsync(AiNameGenderizeRequest request) =>
             await Task.Run(() => Genderize(request));
         #endif
 
@@ -309,27 +309,27 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Detect person&#39;s gender from parsed name              
         /// </summary>
-        /// <param name="rq">Gender detection request data</param>
-        /// <returns><see cref="ListResponseOfAiNameGenderHypothesis"/></returns>
-        public ListResponseOfAiNameGenderHypothesis GenderizeParsed(
-            AiNameParsedRq rq)
+        /// <param name="request">Gender detection request data</param>
+        /// <returns><see cref="AiNameGenderHypothesisList"/></returns>
+        public AiNameGenderHypothesisList GenderizeParsed(
+            AiNameParsedRequest request)
         {
-            // verify the required parameter 'rq' is set
-            if (rq == null)
+            // verify the required parameter 'request' is set
+            if (request == null)
                 throw new ApiException(400,
-                    "Missing required parameter 'rq' when calling GenderizeParsed");
+                    "Missing required parameter 'request' when calling GenderizeParsed");
             // create path and map variables
             var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiName/genderize-parsed";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(rq); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
                 postBody);
-            return response == null ? null : SerializationHelper.Deserialize<ListResponseOfAiNameGenderHypothesis>(response);
+            return response == null ? null : SerializationHelper.Deserialize<AiNameGenderHypothesisList>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -337,10 +337,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Detect person&#39;s gender from parsed name              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameGenderizeParsedRequest" /></param>
-        /// <returns><see cref="ListResponseOfAiNameGenderHypothesis"/></returns>
-        public async Task<ListResponseOfAiNameGenderHypothesis> GenderizeParsedAsync(
-            AiNameParsedRq rq) =>
-            await Task.Run(() => GenderizeParsed(rq
+        /// <returns><see cref="AiNameGenderHypothesisList"/></returns>
+        public async Task<AiNameGenderHypothesisList> GenderizeParsedAsync(
+            AiNameParsedRequest request) =>
+            await Task.Run(() => GenderizeParsed(request
         ));
         #endif
 
@@ -399,22 +399,22 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Compare people&#39;s parsed names and attributes. Uses options for comparing instructions              
         /// </summary>
-        /// <param name="rq">Parsed names to match</param>
+        /// <param name="request">Parsed names to match</param>
         /// <returns><see cref="AiNameMatchResult"/></returns>
         public AiNameMatchResult MatchParsed(
-            AiNameParsedMatchRq rq)
+            AiNameParsedMatchRequest request)
         {
-            // verify the required parameter 'rq' is set
-            if (rq == null)
+            // verify the required parameter 'request' is set
+            if (request == null)
                 throw new ApiException(400,
-                    "Missing required parameter 'rq' when calling MatchParsed");
+                    "Missing required parameter 'request' when calling MatchParsed");
             // create path and map variables
             var resourcePath = this.configuration.GetApiRootUrl() + "/email/AiName/match-parsed";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            var postBody = SerializationHelper.Serialize(rq); // http body (model) parameter
+            var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "POST",
@@ -429,8 +429,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Request. <see cref="AiNameMatchParsedRequest" /></param>
         /// <returns><see cref="AiNameMatchResult"/></returns>
         public async Task<AiNameMatchResult> MatchParsedAsync(
-            AiNameParsedMatchRq rq) =>
-            await Task.Run(() => MatchParsed(rq
+            AiNameParsedMatchRequest request) =>
+            await Task.Run(() => MatchParsed(request
         ));
         #endif
 
@@ -439,8 +439,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Parse name to components              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameParseRequest" /></param>
-        /// <returns><see cref="ListResponseOfAiNameComponent"/></returns>
-        public ListResponseOfAiNameComponent Parse(AiNameParseRequest request)
+        /// <returns><see cref="AiNameComponentList"/></returns>
+        public AiNameComponentList Parse(AiNameParseRequest request)
         {
             // verify the required parameter 'name' is set
             if (request.name == null)
@@ -464,7 +464,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
-            return response == null ? null : SerializationHelper.Deserialize<ListResponseOfAiNameComponent>(response);
+            return response == null ? null : SerializationHelper.Deserialize<AiNameComponentList>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -472,8 +472,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Parse name to components              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameParseRequest" /></param>
-        /// <returns><see cref="ListResponseOfAiNameComponent"/></returns>
-        public async Task<ListResponseOfAiNameComponent> ParseAsync(AiNameParseRequest request) =>
+        /// <returns><see cref="AiNameComponentList"/></returns>
+        public async Task<AiNameComponentList> ParseAsync(AiNameParseRequest request) =>
             await Task.Run(() => Parse(request));
         #endif
 
@@ -482,8 +482,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Parse person&#39;s name out of an email address              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameParseEmailAddressRequest" /></param>
-        /// <returns><see cref="ListResponseOfAiNameExtracted"/></returns>
-        public ListResponseOfAiNameExtracted ParseEmailAddress(AiNameParseEmailAddressRequest request)
+        /// <returns><see cref="AiNameExtractedList"/></returns>
+        public AiNameExtractedList ParseEmailAddress(AiNameParseEmailAddressRequest request)
         {
             // verify the required parameter 'emailAddress' is set
             if (request.emailAddress == null)
@@ -507,7 +507,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
-            return response == null ? null : SerializationHelper.Deserialize<ListResponseOfAiNameExtracted>(response);
+            return response == null ? null : SerializationHelper.Deserialize<AiNameExtractedList>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
@@ -515,8 +515,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// Parse person&#39;s name out of an email address              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameParseEmailAddressRequest" /></param>
-        /// <returns><see cref="ListResponseOfAiNameExtracted"/></returns>
-        public async Task<ListResponseOfAiNameExtracted> ParseEmailAddressAsync(AiNameParseEmailAddressRequest request) =>
+        /// <returns><see cref="AiNameExtractedList"/></returns>
+        public async Task<AiNameExtractedList> ParseEmailAddressAsync(AiNameParseEmailAddressRequest request) =>
             await Task.Run(() => ParseEmailAddress(request));
         #endif
 

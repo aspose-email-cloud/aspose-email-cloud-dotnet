@@ -160,12 +160,12 @@ Expands a person's parsed name into a list of possible alternatives using option
 ### Request Parameters
 ```csharp
 new AiNameExpandParsedRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Parsed name with options | 
+ **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Parsed name with options | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -187,12 +187,12 @@ Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
 ### Request Parameters
 ```csharp
 new AiNameExpandParsedRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Parsed name with options | 
+ **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Parsed name with options | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -288,12 +288,12 @@ Formats a person's parsed name in correct case and name order using options for 
 ### Request Parameters
 ```csharp
 new AiNameFormatParsedRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Parsed name with options | 
+ **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Parsed name with options | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -315,12 +315,12 @@ Task<[**AiNameFormatted**](AiNameFormatted.md)>
 ### Request Parameters
 ```csharp
 new AiNameFormatParsedRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Parsed name with options | 
+ **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Parsed name with options | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -328,14 +328,14 @@ Name | Type | Description  | Notes
 # **AiNameGenderize**
 
 ```csharp
-ListResponseOfAiNameGenderHypothesis AiNameGenderize(AiNameGenderizeRequest request)
+AiNameGenderHypothesisList AiNameGenderize(AiNameGenderizeRequest request)
 ```
 
 Detect person's gender from name string             
 
 ### Return type
 
-[**ListResponseOfAiNameGenderHypothesis**](ListResponseOfAiNameGenderHypothesis.md)
+[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
 ### Request Parameters
 ```csharp
@@ -363,7 +363,7 @@ Name | Type | Description  | Notes
 # **AiNameGenderizeAsync**
 
 ```csharp
-async Task<ListResponseOfAiNameGenderHypothesis> AiNameGenderizeAsync(AiNameGenderizeRequest request)
+async Task<AiNameGenderHypothesisList> AiNameGenderizeAsync(AiNameGenderizeRequest request)
 ```
 
 Detect person's gender from name string             
@@ -372,7 +372,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task<[**ListResponseOfAiNameGenderHypothesis**](ListResponseOfAiNameGenderHypothesis.md)>
+Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
 
 ### Request Parameters
 ```csharp
@@ -400,24 +400,24 @@ Name | Type | Description  | Notes
 # **AiNameGenderizeParsed**
 
 ```csharp
-ListResponseOfAiNameGenderHypothesis AiNameGenderizeParsed(AiNameGenderizeParsedRequest request)
+AiNameGenderHypothesisList AiNameGenderizeParsed(AiNameGenderizeParsedRequest request)
 ```
 
 Detect person's gender from parsed name             
 
 ### Return type
 
-[**ListResponseOfAiNameGenderHypothesis**](ListResponseOfAiNameGenderHypothesis.md)
+[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
 ### Request Parameters
 ```csharp
 new AiNameGenderizeParsedRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Gender detection request data | 
+ **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Gender detection request data | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -425,7 +425,7 @@ Name | Type | Description  | Notes
 # **AiNameGenderizeParsedAsync**
 
 ```csharp
-async Task<ListResponseOfAiNameGenderHypothesis> AiNameGenderizeParsedAsync(AiNameGenderizeParsedRequest request)
+async Task<AiNameGenderHypothesisList> AiNameGenderizeParsedAsync(AiNameGenderizeParsedRequest request)
 ```
 
 Detect person's gender from parsed name             
@@ -434,17 +434,17 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task<[**ListResponseOfAiNameGenderHypothesis**](ListResponseOfAiNameGenderHypothesis.md)>
+Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
 
 ### Request Parameters
 ```csharp
 new AiNameGenderizeParsedRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiNameParsedRq**](AiNameParsedRq.md)| Gender detection request data | 
+ **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Gender detection request data | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -540,12 +540,12 @@ Compare people's parsed names and attributes. Uses options for comparing instruc
 ### Request Parameters
 ```csharp
 new AiNameMatchParsedRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiNameParsedMatchRq**](AiNameParsedMatchRq.md)| Parsed names to match | 
+ **request** | [**AiNameParsedMatchRequest**](AiNameParsedMatchRequest.md)| Parsed names to match | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -567,12 +567,12 @@ Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
 ### Request Parameters
 ```csharp
 new AiNameMatchParsedRequest(
-    rq)
+    request)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **rq** | [**AiNameParsedMatchRq**](AiNameParsedMatchRq.md)| Parsed names to match | 
+ **request** | [**AiNameParsedMatchRequest**](AiNameParsedMatchRequest.md)| Parsed names to match | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -580,14 +580,14 @@ Name | Type | Description  | Notes
 # **AiNameParse**
 
 ```csharp
-ListResponseOfAiNameComponent AiNameParse(AiNameParseRequest request)
+AiNameComponentList AiNameParse(AiNameParseRequest request)
 ```
 
 Parse name to components             
 
 ### Return type
 
-[**ListResponseOfAiNameComponent**](ListResponseOfAiNameComponent.md)
+[**AiNameComponentList**](AiNameComponentList.md)
 
 ### Request Parameters
 ```csharp
@@ -615,7 +615,7 @@ Name | Type | Description  | Notes
 # **AiNameParseAsync**
 
 ```csharp
-async Task<ListResponseOfAiNameComponent> AiNameParseAsync(AiNameParseRequest request)
+async Task<AiNameComponentList> AiNameParseAsync(AiNameParseRequest request)
 ```
 
 Parse name to components             
@@ -624,7 +624,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task<[**ListResponseOfAiNameComponent**](ListResponseOfAiNameComponent.md)>
+Task<[**AiNameComponentList**](AiNameComponentList.md)>
 
 ### Request Parameters
 ```csharp
@@ -652,14 +652,14 @@ Name | Type | Description  | Notes
 # **AiNameParseEmailAddress**
 
 ```csharp
-ListResponseOfAiNameExtracted AiNameParseEmailAddress(AiNameParseEmailAddressRequest request)
+AiNameExtractedList AiNameParseEmailAddress(AiNameParseEmailAddressRequest request)
 ```
 
 Parse person's name out of an email address             
 
 ### Return type
 
-[**ListResponseOfAiNameExtracted**](ListResponseOfAiNameExtracted.md)
+[**AiNameExtractedList**](AiNameExtractedList.md)
 
 ### Request Parameters
 ```csharp
@@ -687,7 +687,7 @@ Name | Type | Description  | Notes
 # **AiNameParseEmailAddressAsync**
 
 ```csharp
-async Task<ListResponseOfAiNameExtracted> AiNameParseEmailAddressAsync(AiNameParseEmailAddressRequest request)
+async Task<AiNameExtractedList> AiNameParseEmailAddressAsync(AiNameParseEmailAddressRequest request)
 ```
 
 Parse person's name out of an email address             
@@ -696,7 +696,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 ### Return type
 
-Task<[**ListResponseOfAiNameExtracted**](ListResponseOfAiNameExtracted.md)>
+Task<[**AiNameExtractedList**](AiNameExtractedList.md)>
 
 ### Request Parameters
 ```csharp
