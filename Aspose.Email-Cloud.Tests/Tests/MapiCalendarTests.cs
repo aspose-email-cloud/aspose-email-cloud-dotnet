@@ -42,48 +42,43 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             Organizer = new MapiElectronicAddressDto {EmailAddress = "organizer@aspose.com"},
         };
 
-        // [Test]
-        // public async Task ModelToCalendarDtoTest()
-        // {
-        //     var calendarDto =
-        //         await Api.ConvertMapiCalendarModelToCalendarModelAsync(
-        //             new ConvertMapiCalendarModelToCalendarModelRequest(
-        //                 MapiCalendar));
-        //     Assert.AreEqual(MapiCalendar.Subject, calendarDto.Summary);
-        //     Assert.AreEqual(MapiCalendar.Location, calendarDto.Location);
-        // }
-        //
-        // [Test]
-        // public async Task ModelToFileTest()
-        // {
-        //     var icsStream = await Api.ConvertMapiCalendarModelToFileAsync(
-        //         new ConvertMapiCalendarModelToFileRequest(
-        //             "Ics", MapiCalendar));
-        //     using (var memoryStream = new MemoryStream())
-        //     {
-        //         await icsStream.CopyToAsync(memoryStream);
-        //         var icsString = Encoding.UTF8.GetString(memoryStream.ToArray());
-        //         Assert.IsTrue(icsString.Contains(MapiCalendar.Location));
-        //     }
-        //
-        //     icsStream.Seek(0, SeekOrigin.Begin);
-        //     var mapiCalendarConverted = await Api.GetCalendarFileAsMapiModelAsync(
-        //         new GetCalendarFileAsMapiModelRequest(icsStream));
-        //     Assert.AreEqual(MapiCalendar.Location, mapiCalendarConverted.Location);
-        // }
-        //
-        // [Test]
-        // public async Task StorageTest()
-        // {
-        //     var fileName = $"{Guid.NewGuid()}.msg";
-        //     await Api.SaveMapiCalendarModelAsync(
-        //         new SaveMapiCalendarModelRequest(
-        //             fileName, "Msg", new StorageModelRqOfMapiCalendarDto(
-        //                 MapiCalendar, new StorageFolderLocation(StorageName, Folder))));
-        //     var mapiCalendarFromStorage = await Api.GetMapiCalendarModelAsync(
-        //         new GetMapiCalendarModelRequest(
-        //             fileName, Folder, StorageName));
-        //     Assert.AreEqual(MapiCalendar.Location, mapiCalendarFromStorage.Location);
-        // }
+        [Test]
+        public async Task ModelToCalendarDtoTest()
+        {
+            var calendarDto = await Api.Mapi.Calendar.AsCalendarDtoAsync(MapiCalendar);
+            Assert.AreEqual(MapiCalendar.Subject, calendarDto.Summary);
+            Assert.AreEqual(MapiCalendar.Location, calendarDto.Location);
+        }
+
+        [Test]
+        public async Task ModelToFileTest()
+        {
+            var icsStream =
+                await Api.Mapi.Calendar.AsFileAsync(
+                    new MapiCalendarAsFileRequest("Ics", MapiCalendar));
+            using (var memoryStream = new MemoryStream())
+            {
+                await icsStream.CopyToAsync(memoryStream);
+                var icsString = Encoding.UTF8.GetString(memoryStream.ToArray());
+                Assert.IsTrue(icsString.Contains(MapiCalendar.Location));
+            }
+
+            icsStream.Seek(0, SeekOrigin.Begin);
+            var mapiCalendarConverted =
+                await Api.Mapi.Calendar.FromFileAsync(new MapiCalendarFromFileRequest(icsStream));
+            Assert.AreEqual(MapiCalendar.Location, mapiCalendarConverted.Location);
+        }
+
+        [Test]
+        public async Task StorageTest()
+        {
+            var fileName = $"{Guid.NewGuid()}.msg";
+            await Api.Mapi.Calendar.SaveAsync(new MapiCalendarSaveRequest(
+                new StorageFileLocation(StorageName, Folder, fileName), MapiCalendar, "Msg"));
+            var mapiCalendarFromStorage =
+                await Api.Mapi.Calendar.GetAsync(
+                    new MapiCalendarGetRequest(fileName, Folder, StorageName));
+            Assert.AreEqual(MapiCalendar.Location, mapiCalendarFromStorage.Location);
+        }
     }
 }

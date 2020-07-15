@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="AiBcrParseRequest.cs">
+// <copyright company="Aspose" file="MapiCalendarGetRequest.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -33,50 +33,43 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.AiBcrApi.NORPrefix_AiBcr_Parse_NOR_Suffix_p_AiBcrApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.MapiCalendarApi.NORPrefix_MapiCalendar_Get_NOR_Suffix_p_MapiCalendarApi_e" /> operation.
   /// </summary>
-  public class AiBcrParseRequest  
+  public class MapiCalendarGetRequest  
   {
         /// <summary>
-        /// Initializes a new instance of the <see cref="AiBcrParseRequest"/> class.
+        /// Initializes a new instance of the <see cref="MapiCalendarGetRequest"/> class.
         /// </summary>
-        public AiBcrParseRequest()
+        public MapiCalendarGetRequest()
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AiBcrParseRequest"/> class.
+        /// Initializes a new instance of the <see cref="MapiCalendarGetRequest"/> class.
         /// </summary>
-        /// <param name="file">File to convert</param>
-        /// <param name="countries">Comma-separated codes of countries.</param>
-        /// <param name="languages">Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default.             </param>
-        /// <param name="isSingle">Determines that image contains single VCard or more.</param>
-        public AiBcrParseRequest(System.IO.Stream file, string countries = null, string languages = null, bool? isSingle = null)
+        /// <param name="name">Calendar file name in storage</param>
+        /// <param name="folder">Path to folder in storage</param>
+        /// <param name="storage">Storage name</param>
+        public MapiCalendarGetRequest(string name, string folder = null, string storage = null)
         {
-            this.File = file;
-            this.countries = countries;
-            this.languages = languages;
-            this.isSingle = isSingle;
+            this.name = name;
+            this.folder = folder;
+            this.storage = storage;
         }
 
         /// <summary>
-        /// File to convert
+        /// Calendar file name in storage
         /// </summary>
-        public System.IO.Stream File { get; set; }
+        public string name { get; set; }
 
         /// <summary>
-        /// Comma-separated codes of countries.
+        /// Path to folder in storage
         /// </summary>
-        public string countries { get; set; }
+        public string folder { get; set; }
 
         /// <summary>
-        /// Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \"it\" or \"ita\" for Italian); it's \"\" by default.             
+        /// Storage name
         /// </summary>
-        public string languages { get; set; }
-
-        /// <summary>
-        /// Determines that image contains single VCard or more.
-        /// </summary>
-        public bool? isSingle { get; set; }
+        public string storage { get; set; }
   }
 }

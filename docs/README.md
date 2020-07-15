@@ -102,6 +102,16 @@ Class | Method | HTTP request | Description
 *FolderApi* | [**GetFilesListAsync**](FolderApi.md#getfileslistasync) | **GET** /email/storage/folder/{path} | Get all files and folders within a folder. Not available on .NETFramework v2.0
 *FolderApi* | [**MoveFolder**](FolderApi.md#movefolder) | **PUT** /email/storage/folder/move/{srcPath} | Move folder
 *FolderApi* | [**MoveFolderAsync**](FolderApi.md#movefolderasync) | **PUT** /email/storage/folder/move/{srcPath} | Move folder. Not available on .NETFramework v2.0
+*MapiCalendarApi* | [**MapiCalendarAsCalendarDto**](MapiCalendarApi.md#mapicalendarascalendardto) | **PUT** /email/MapiCalendar/as-calendar-dto | Converts MAPI calendar model to CalendarDto model             
+*MapiCalendarApi* | [**MapiCalendarAsCalendarDtoAsync**](MapiCalendarApi.md#mapicalendarascalendardtoasync) | **PUT** /email/MapiCalendar/as-calendar-dto | Converts MAPI calendar model to CalendarDto model             . Not available on .NETFramework v2.0
+*MapiCalendarApi* | [**MapiCalendarAsFile**](MapiCalendarApi.md#mapicalendarasfile) | **PUT** /email/MapiCalendar/as-file | Converts MAPI calendar model to specified format and returns as file             
+*MapiCalendarApi* | [**MapiCalendarAsFileAsync**](MapiCalendarApi.md#mapicalendarasfileasync) | **PUT** /email/MapiCalendar/as-file | Converts MAPI calendar model to specified format and returns as file             . Not available on .NETFramework v2.0
+*MapiCalendarApi* | [**MapiCalendarFromFile**](MapiCalendarApi.md#mapicalendarfromfile) | **PUT** /email/MapiCalendar/from-file | Converts calendar file to a MAPI model representation             
+*MapiCalendarApi* | [**MapiCalendarFromFileAsync**](MapiCalendarApi.md#mapicalendarfromfileasync) | **PUT** /email/MapiCalendar/from-file | Converts calendar file to a MAPI model representation             . Not available on .NETFramework v2.0
+*MapiCalendarApi* | [**MapiCalendarGet**](MapiCalendarApi.md#mapicalendarget) | **GET** /email/MapiCalendar | Get MAPI calendar document.             
+*MapiCalendarApi* | [**MapiCalendarGetAsync**](MapiCalendarApi.md#mapicalendargetasync) | **GET** /email/MapiCalendar | Get MAPI calendar document.             . Not available on .NETFramework v2.0
+*MapiCalendarApi* | [**MapiCalendarSave**](MapiCalendarApi.md#mapicalendarsave) | **PUT** /email/MapiCalendar | Save MAPI Calendar to storage.             
+*MapiCalendarApi* | [**MapiCalendarSaveAsync**](MapiCalendarApi.md#mapicalendarsaveasync) | **PUT** /email/MapiCalendar | Save MAPI Calendar to storage.             . Not available on .NETFramework v2.0
 *StorageApi* | [**GetDiscUsage**](StorageApi.md#getdiscusage) | **GET** /email/storage/disc | Get disc usage
 *StorageApi* | [**GetDiscUsageAsync**](StorageApi.md#getdiscusageasync) | **GET** /email/storage/disc | Get disc usage. Not available on .NETFramework v2.0
 *StorageApi* | [**GetFileVersions**](StorageApi.md#getfileversions) | **GET** /email/storage/version/{path} | Get file versions
@@ -167,6 +177,7 @@ Class | Method | HTTP request | Description
  - [Model.ListResponseOfStorageModelOfEmailDto](ListResponseOfStorageModelOfEmailDto.md)
  - [Model.MailAddress](MailAddress.md)
  - [Model.MapiAttachmentDto](MapiAttachmentDto.md)
+ - [Model.MapiCalendarAsFileRequest](MapiCalendarAsFileRequest.md)
  - [Model.MapiCalendarAttendeesDto](MapiCalendarAttendeesDto.md)
  - [Model.MapiCalendarEventRecurrenceDto](MapiCalendarEventRecurrenceDto.md)
  - [Model.MapiCalendarExceptionInfoDto](MapiCalendarExceptionInfoDto.md)
@@ -201,6 +212,7 @@ Class | Method | HTTP request | Description
  - [Model.StorageModelOfCalendarDto](StorageModelOfCalendarDto.md)
  - [Model.StorageModelOfContactDto](StorageModelOfContactDto.md)
  - [Model.StorageModelOfEmailDto](StorageModelOfEmailDto.md)
+ - [Model.StorageModelOfMapiCalendarDto](StorageModelOfMapiCalendarDto.md)
  - [Model.Url](Url.md)
  - [Model.AiBcrImageStorageFile](AiBcrImageStorageFile.md)
  - [Model.AiNameComponentList](AiNameComponentList.md)
@@ -223,6 +235,7 @@ Class | Method | HTTP request | Description
  - [Model.MapiBooleanPropertyDto](MapiBooleanPropertyDto.md)
  - [Model.MapiCalendarDailyRecurrencePatternDto](MapiCalendarDailyRecurrencePatternDto.md)
  - [Model.MapiCalendarDto](MapiCalendarDto.md)
+ - [Model.MapiCalendarSaveRequest](MapiCalendarSaveRequest.md)
  - [Model.MapiCalendarWeeklyRecurrencePatternDto](MapiCalendarWeeklyRecurrencePatternDto.md)
  - [Model.MapiCalendarYearlyAndMonthlyRecurrencePatternDto](MapiCalendarYearlyAndMonthlyRecurrencePatternDto.md)
  - [Model.MapiContactDto](MapiContactDto.md)

@@ -21,6 +21,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public EmailApi Email {get;}
     
     
+        public MapiGroup Mapi {get;}
+    
         public AiGroup Ai {get;}
     
         public CloudStorageGroup CloudStorage {get;}
@@ -59,6 +61,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         
             Email = new EmailApi(apiInvoker, this.configuration);
         
+        
+            Mapi = new MapiGroup(apiInvoker, this.configuration);
         
             Ai = new AiGroup(apiInvoker, this.configuration);
         
