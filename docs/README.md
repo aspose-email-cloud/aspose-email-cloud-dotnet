@@ -187,7 +187,7 @@ Class | Method | HTTP request | Description
  - [Model.ContentTypeParameter](ContentTypeParameter.md)
  - [Model.CustomerEvent](CustomerEvent.md)
  - [Model.DiscUsage](DiscUsage.md)
- - [Model.DiscoverEmailConfigRq](DiscoverEmailConfigRq.md)
+ - [Model.DiscoverEmailConfigRequest](DiscoverEmailConfigRequest.md)
  - [Model.EmailAccountConfig](EmailAccountConfig.md)
  - [Model.EmailAddress](EmailAddress.md)
  - [Model.EmailAsFileRequest](EmailAsFileRequest.md)

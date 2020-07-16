@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DiscoverEmailConfigRq.cs">
+// <copyright company="Aspose" file="DiscoverEmailConfigRequest.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -39,7 +39,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// <summary>
     /// Discover email configuration request.             
     /// </summary>
-    public class DiscoverEmailConfigRq 
+    public class DiscoverEmailConfigRequest 
     {
         /// <summary>
         /// Email address to discover.             
@@ -56,14 +56,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Login { get; set; }
 
-        /// <summary>DiscoverEmailConfigRq constructor</summary>
-        public DiscoverEmailConfigRq() {}
+        /// <summary>DiscoverEmailConfigRequest constructor</summary>
+        public DiscoverEmailConfigRequest() {}
 
-        /// <summary>DiscoverEmailConfigRq constructor</summary>
+        /// <summary>DiscoverEmailConfigRequest constructor</summary>
         /// <param name="address">Email address to discover.             </param>
         /// <param name="fastProcessing">Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.             </param>
         /// <param name="login">Email account login. If not specified, address used as a login.             </param>
-        public DiscoverEmailConfigRq(string address, bool? fastProcessing, string login)
+        public DiscoverEmailConfigRequest(string address, bool? fastProcessing, string login)
         {
             Address = address;
             FastProcessing = fastProcessing;
@@ -76,7 +76,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class DiscoverEmailConfigRq {\n");
+          sb.Append("class DiscoverEmailConfigRequest {\n");
           sb.Append("  Address: ").Append(this.Address).Append("\n");
           sb.Append("  FastProcessing: ").Append(this.FastProcessing).Append("\n");
           sb.Append("  Login: ").Append(this.Login).Append("\n");
