@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.AiBcrApi.NORPrefix_AiBcr_Parse_NOR_Suffix_p_AiBcrApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.AiBcrApi.Parse" /> operation.
   /// </summary>
   public class AiBcrParseRequest  
   {
@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="AiBcrParseRequest"/> class.
         /// </summary>
-        /// <param name="file">File to convert</param>
+        /// <param name="file">File to parse</param>
         /// <param name="countries">Comma-separated codes of countries.</param>
         /// <param name="languages">Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default.             </param>
         /// <param name="isSingle">Determines that image contains single VCard or more.</param>
@@ -60,7 +60,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// File to convert
+        /// File to parse
         /// </summary>
         public System.IO.Stream File { get; set; }
 

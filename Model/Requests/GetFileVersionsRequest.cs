@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.StorageApi.NORPrefix_GetFileVersions_NOR_Suffix_p_StorageApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.StorageApi.GetFileVersions" /> operation.
   /// </summary>
   public class GetFileVersionsRequest  
   {

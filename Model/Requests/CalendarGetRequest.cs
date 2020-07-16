@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.CalendarApi.NORPrefix_Calendar_Get_NOR_Suffix_p_CalendarApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.CalendarApi.Get" /> operation.
   /// </summary>
   public class CalendarGetRequest  
   {

@@ -50,14 +50,50 @@ Class | Method | HTTP request | Description
 *CalendarApi* | [**CalendarGetListAsync**](CalendarApi.md#calendargetlistasync) | **GET** /email/Calendar/list | Get iCalendar list from storage folder.             . Not available on .NETFramework v2.0
 *CalendarApi* | [**CalendarSave**](CalendarApi.md#calendarsave) | **PUT** /email/Calendar | Save iCalendar             
 *CalendarApi* | [**CalendarSaveAsync**](CalendarApi.md#calendarsaveasync) | **PUT** /email/Calendar | Save iCalendar             . Not available on .NETFramework v2.0
-*ClientAccountApi* | [**ClientAccountGet**](ClientAccountApi.md#clientaccountget) | **GET** /email/ClientAccount | Get email client account from storage.             
-*ClientAccountApi* | [**ClientAccountGetAsync**](ClientAccountApi.md#clientaccountgetasync) | **GET** /email/ClientAccount | Get email client account from storage.             . Not available on .NETFramework v2.0
-*ClientAccountApi* | [**ClientAccountGetMulti**](ClientAccountApi.md#clientaccountgetmulti) | **GET** /email/ClientAccount/multi | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
-*ClientAccountApi* | [**ClientAccountGetMultiAsync**](ClientAccountApi.md#clientaccountgetmultiasync) | **GET** /email/ClientAccount/multi | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
-*ClientAccountApi* | [**ClientAccountSave**](ClientAccountApi.md#clientaccountsave) | **PUT** /email/ClientAccount | Create/update email client account file (*.account) with credentials             
-*ClientAccountApi* | [**ClientAccountSaveAsync**](ClientAccountApi.md#clientaccountsaveasync) | **PUT** /email/ClientAccount | Create/update email client account file (*.account) with credentials             . Not available on .NETFramework v2.0
-*ClientAccountApi* | [**ClientAccountSaveMulti**](ClientAccountApi.md#clientaccountsavemulti) | **PUT** /email/ClientAccount/multi | Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
-*ClientAccountApi* | [**ClientAccountSaveMultiAsync**](ClientAccountApi.md#clientaccountsavemultiasync) | **PUT** /email/ClientAccount/multi | Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
+*ClientAccountApi* | [**ClientAccountGet**](ClientAccountApi.md#clientaccountget) | **GET** /email/client/account | Get email client account from storage.             
+*ClientAccountApi* | [**ClientAccountGetAsync**](ClientAccountApi.md#clientaccountgetasync) | **GET** /email/client/account | Get email client account from storage.             . Not available on .NETFramework v2.0
+*ClientAccountApi* | [**ClientAccountGetMulti**](ClientAccountApi.md#clientaccountgetmulti) | **GET** /email/client/account/multi | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
+*ClientAccountApi* | [**ClientAccountGetMultiAsync**](ClientAccountApi.md#clientaccountgetmultiasync) | **GET** /email/client/account/multi | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
+*ClientAccountApi* | [**ClientAccountSave**](ClientAccountApi.md#clientaccountsave) | **PUT** /email/client/account | Create/update email client account file (*.account) with credentials             
+*ClientAccountApi* | [**ClientAccountSaveAsync**](ClientAccountApi.md#clientaccountsaveasync) | **PUT** /email/client/account | Create/update email client account file (*.account) with credentials             . Not available on .NETFramework v2.0
+*ClientAccountApi* | [**ClientAccountSaveMulti**](ClientAccountApi.md#clientaccountsavemulti) | **PUT** /email/client/account/multi | Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
+*ClientAccountApi* | [**ClientAccountSaveMultiAsync**](ClientAccountApi.md#clientaccountsavemultiasync) | **PUT** /email/client/account/multi | Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
+*ClientFolderApi* | [**ClientFolderCreate**](ClientFolderApi.md#clientfoldercreate) | **PUT** /email/client/folder | Create new folder in email account             
+*ClientFolderApi* | [**ClientFolderCreateAsync**](ClientFolderApi.md#clientfoldercreateasync) | **PUT** /email/client/folder | Create new folder in email account             . Not available on .NETFramework v2.0
+*ClientFolderApi* | [**ClientFolderDelete**](ClientFolderApi.md#clientfolderdelete) | **DELETE** /email/client/folder | Delete a folder in email account             
+*ClientFolderApi* | [**ClientFolderDeleteAsync**](ClientFolderApi.md#clientfolderdeleteasync) | **DELETE** /email/client/folder | Delete a folder in email account             . Not available on .NETFramework v2.0
+*ClientFolderApi* | [**ClientFolderGetList**](ClientFolderApi.md#clientfoldergetlist) | **GET** /email/client/folder/list | Get folders list in email account             
+*ClientFolderApi* | [**ClientFolderGetListAsync**](ClientFolderApi.md#clientfoldergetlistasync) | **GET** /email/client/folder/list | Get folders list in email account             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageAppend**](ClientMessageApi.md#clientmessageappend) | **POST** /email/client/message/append | Add email message to specified folder in email account.             
+*ClientMessageApi* | [**ClientMessageAppendAsync**](ClientMessageApi.md#clientmessageappendasync) | **POST** /email/client/message/append | Add email message to specified folder in email account.             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageAppendFile**](ClientMessageApi.md#clientmessageappendfile) | **POST** /email/client/message/file/append | Add email message from file to specified folder in email account.             
+*ClientMessageApi* | [**ClientMessageAppendFileAsync**](ClientMessageApi.md#clientmessageappendfileasync) | **POST** /email/client/message/file/append | Add email message from file to specified folder in email account.             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageDelete**](ClientMessageApi.md#clientmessagedelete) | **DELETE** /email/client/message | Delete message.             
+*ClientMessageApi* | [**ClientMessageDeleteAsync**](ClientMessageApi.md#clientmessagedeleteasync) | **DELETE** /email/client/message | Delete message.             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageFetch**](ClientMessageApi.md#clientmessagefetch) | **GET** /email/client/message | Fetch message from email account             
+*ClientMessageApi* | [**ClientMessageFetchAsync**](ClientMessageApi.md#clientmessagefetchasync) | **GET** /email/client/message | Fetch message from email account             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageFetchFile**](ClientMessageApi.md#clientmessagefetchfile) | **GET** /email/client/message/file | Fetch message as file from email account             
+*ClientMessageApi* | [**ClientMessageFetchFileAsync**](ClientMessageApi.md#clientmessagefetchfileasync) | **GET** /email/client/message/file | Fetch message as file from email account             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageList**](ClientMessageApi.md#clientmessagelist) | **GET** /email/client/message/list | Get messages from folder, filtered by query             
+*ClientMessageApi* | [**ClientMessageListAsync**](ClientMessageApi.md#clientmessagelistasync) | **GET** /email/client/message/list | Get messages from folder, filtered by query             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageMove**](ClientMessageApi.md#clientmessagemove) | **PUT** /email/client/message/move | Move message to another folder.             
+*ClientMessageApi* | [**ClientMessageMoveAsync**](ClientMessageApi.md#clientmessagemoveasync) | **PUT** /email/client/message/move | Move message to another folder.             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageSend**](ClientMessageApi.md#clientmessagesend) | **POST** /email/client/message | Send an email specified by model in request.             
+*ClientMessageApi* | [**ClientMessageSendAsync**](ClientMessageApi.md#clientmessagesendasync) | **POST** /email/client/message | Send an email specified by model in request.             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageSendFile**](ClientMessageApi.md#clientmessagesendfile) | **POST** /email/client/message/file | Send an email file.             
+*ClientMessageApi* | [**ClientMessageSendFileAsync**](ClientMessageApi.md#clientmessagesendfileasync) | **POST** /email/client/message/file | Send an email file.             . Not available on .NETFramework v2.0
+*ClientMessageApi* | [**ClientMessageSetIsRead**](ClientMessageApi.md#clientmessagesetisread) | **PUT** /email/client/message/set-is-read | Mark message as read or unread.             
+*ClientMessageApi* | [**ClientMessageSetIsReadAsync**](ClientMessageApi.md#clientmessagesetisreadasync) | **PUT** /email/client/message/set-is-read | Mark message as read or unread.             . Not available on .NETFramework v2.0
+*ClientThreadApi* | [**ClientThreadDelete**](ClientThreadApi.md#clientthreaddelete) | **DELETE** /email/client/thread | Delete thread by id. All messages from thread will also be deleted.             
+*ClientThreadApi* | [**ClientThreadDeleteAsync**](ClientThreadApi.md#clientthreaddeleteasync) | **DELETE** /email/client/thread | Delete thread by id. All messages from thread will also be deleted.             . Not available on .NETFramework v2.0
+*ClientThreadApi* | [**ClientThreadGetList**](ClientThreadApi.md#clientthreadgetlist) | **GET** /email/client/thread/list | Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
+*ClientThreadApi* | [**ClientThreadGetListAsync**](ClientThreadApi.md#clientthreadgetlistasync) | **GET** /email/client/thread/list | Get message threads from folder. All messages are partly fetched (without email body and some other fields).             . Not available on .NETFramework v2.0
+*ClientThreadApi* | [**ClientThreadGetMessages**](ClientThreadApi.md#clientthreadgetmessages) | **GET** /email/client/thread/messages | Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+*ClientThreadApi* | [**ClientThreadGetMessagesAsync**](ClientThreadApi.md#clientthreadgetmessagesasync) | **GET** /email/client/thread/messages | Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             . Not available on .NETFramework v2.0
+*ClientThreadApi* | [**ClientThreadMove**](ClientThreadApi.md#clientthreadmove) | **PUT** /email/client/thread/move | Move thread to another folder.             
+*ClientThreadApi* | [**ClientThreadMoveAsync**](ClientThreadApi.md#clientthreadmoveasync) | **PUT** /email/client/thread/move | Move thread to another folder.             . Not available on .NETFramework v2.0
+*ClientThreadApi* | [**ClientThreadSetIsRead**](ClientThreadApi.md#clientthreadsetisread) | **PUT** /email/client/thread/set-is-read | Mark all messages in thread as read or unread.             
+*ClientThreadApi* | [**ClientThreadSetIsReadAsync**](ClientThreadApi.md#clientthreadsetisreadasync) | **PUT** /email/client/thread/set-is-read | Mark all messages in thread as read or unread.             . Not available on .NETFramework v2.0
 *ContactApi* | [**ContactAsFile**](ContactApi.md#contactasfile) | **PUT** /email/Contact/as-file | Converts contact model to specified format and returns as file             
 *ContactApi* | [**ContactAsFileAsync**](ContactApi.md#contactasfileasync) | **PUT** /email/Contact/as-file | Converts contact model to specified format and returns as file             . Not available on .NETFramework v2.0
 *ContactApi* | [**ContactAsMapi**](ContactApi.md#contactasmapi) | **PUT** /email/Contact/as-mapi | Converts ContactDto to MapiContactDto.             
@@ -180,6 +216,7 @@ Class | Method | HTTP request | Description
  - [Model.CalendarAsFileRequest](CalendarAsFileRequest.md)
  - [Model.CalendarDto](CalendarDto.md)
  - [Model.CalendarReminder](CalendarReminder.md)
+ - [Model.ClientAccountBaseRequest](ClientAccountBaseRequest.md)
  - [Model.ContactAsFileRequest](ContactAsFileRequest.md)
  - [Model.ContactDto](ContactDto.md)
  - [Model.ContactPhoto](ContactPhoto.md)
@@ -195,6 +232,7 @@ Class | Method | HTTP request | Description
  - [Model.EmailClientAccountCredentials](EmailClientAccountCredentials.md)
  - [Model.EmailClientMultiAccount](EmailClientMultiAccount.md)
  - [Model.EmailDto](EmailDto.md)
+ - [Model.EmailThread](EmailThread.md)
  - [Model.EnumWithCustomOfAssociatedPersonCategory](EnumWithCustomOfAssociatedPersonCategory.md)
  - [Model.EnumWithCustomOfEmailAddressCategory](EnumWithCustomOfEmailAddressCategory.md)
  - [Model.EnumWithCustomOfEventCategory](EnumWithCustomOfEventCategory.md)
@@ -213,11 +251,17 @@ Class | Method | HTTP request | Description
  - [Model.ListResponseOfAiNameGenderHypothesis](ListResponseOfAiNameGenderHypothesis.md)
  - [Model.ListResponseOfContactDto](ListResponseOfContactDto.md)
  - [Model.ListResponseOfEmailAccountConfig](ListResponseOfEmailAccountConfig.md)
+ - [Model.ListResponseOfEmailDto](ListResponseOfEmailDto.md)
+ - [Model.ListResponseOfEmailThread](ListResponseOfEmailThread.md)
+ - [Model.ListResponseOfMailMessageBase](ListResponseOfMailMessageBase.md)
+ - [Model.ListResponseOfMailServerFolder](ListResponseOfMailServerFolder.md)
  - [Model.ListResponseOfStorageFileLocation](ListResponseOfStorageFileLocation.md)
  - [Model.ListResponseOfStorageModelOfCalendarDto](ListResponseOfStorageModelOfCalendarDto.md)
  - [Model.ListResponseOfStorageModelOfContactDto](ListResponseOfStorageModelOfContactDto.md)
  - [Model.ListResponseOfStorageModelOfEmailDto](ListResponseOfStorageModelOfEmailDto.md)
  - [Model.MailAddress](MailAddress.md)
+ - [Model.MailMessageBase](MailMessageBase.md)
+ - [Model.MailServerFolder](MailServerFolder.md)
  - [Model.MapiAttachmentDto](MapiAttachmentDto.md)
  - [Model.MapiCalendarAsFileRequest](MapiCalendarAsFileRequest.md)
  - [Model.MapiCalendarAttendeesDto](MapiCalendarAttendeesDto.md)
@@ -264,6 +308,7 @@ Class | Method | HTTP request | Description
  - [Model.StorageModelOfMapiMessageDto](StorageModelOfMapiMessageDto.md)
  - [Model.Url](Url.md)
  - [Model.ValueTOfBoolean](ValueTOfBoolean.md)
+ - [Model.ValueTOfString](ValueTOfString.md)
  - [Model.AiBcrImageStorageFile](AiBcrImageStorageFile.md)
  - [Model.AiNameComponentList](AiNameComponentList.md)
  - [Model.AiNameExtractedList](AiNameExtractedList.md)
@@ -273,6 +318,12 @@ Class | Method | HTTP request | Description
  - [Model.Attachment](Attachment.md)
  - [Model.CalendarSaveRequest](CalendarSaveRequest.md)
  - [Model.CalendarStorageList](CalendarStorageList.md)
+ - [Model.ClientFolderCreateRequest](ClientFolderCreateRequest.md)
+ - [Model.ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
+ - [Model.ClientMessageAppendRequest](ClientMessageAppendRequest.md)
+ - [Model.ClientMessageBaseRequest](ClientMessageBaseRequest.md)
+ - [Model.ClientMessageSendRequest](ClientMessageSendRequest.md)
+ - [Model.ClientThreadBaseRequest](ClientThreadBaseRequest.md)
  - [Model.ContactList](ContactList.md)
  - [Model.ContactSaveRequest](ContactSaveRequest.md)
  - [Model.ContactStorageList](ContactStorageList.md)
@@ -284,10 +335,17 @@ Class | Method | HTTP request | Description
  - [Model.EmailClientAccountPasswordCredentials](EmailClientAccountPasswordCredentials.md)
  - [Model.EmailClientAccountSaveRequest](EmailClientAccountSaveRequest.md)
  - [Model.EmailClientMultiAccountSaveRequest](EmailClientMultiAccountSaveRequest.md)
+ - [Model.EmailList](EmailList.md)
  - [Model.EmailSaveRequest](EmailSaveRequest.md)
  - [Model.EmailStorageList](EmailStorageList.md)
+ - [Model.EmailThreadList](EmailThreadList.md)
  - [Model.FileVersion](FileVersion.md)
  - [Model.LinkedResource](LinkedResource.md)
+ - [Model.MailMessageBase64](MailMessageBase64.md)
+ - [Model.MailMessageBaseList](MailMessageBaseList.md)
+ - [Model.MailMessageDto](MailMessageDto.md)
+ - [Model.MailMessageMapi](MailMessageMapi.md)
+ - [Model.MailServerFolderList](MailServerFolderList.md)
  - [Model.MapiBinaryPropertyDto](MapiBinaryPropertyDto.md)
  - [Model.MapiBooleanPropertyDto](MapiBooleanPropertyDto.md)
  - [Model.MapiCalendarDailyRecurrencePatternDto](MapiCalendarDailyRecurrencePatternDto.md)
@@ -318,6 +376,12 @@ Class | Method | HTTP request | Description
  - [Model.TaskRegeneratingPatternDto](TaskRegeneratingPatternDto.md)
  - [Model.WeeklyRecurrencePatternDto](WeeklyRecurrencePatternDto.md)
  - [Model.YearlyRecurrencePatternDto](YearlyRecurrencePatternDto.md)
+ - [Model.ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
+ - [Model.ClientMessageMoveRequest](ClientMessageMoveRequest.md)
+ - [Model.ClientMessageSetIsReadRequest](ClientMessageSetIsReadRequest.md)
+ - [Model.ClientThreadDeleteRequest](ClientThreadDeleteRequest.md)
+ - [Model.ClientThreadMoveRequest](ClientThreadMoveRequest.md)
+ - [Model.ClientThreadSetIsReadRequest](ClientThreadSetIsReadRequest.md)
  - [Model.MapiPidLidPropertyDescriptor](MapiPidLidPropertyDescriptor.md)
  - [Model.MapiPidNamePropertyDescriptor](MapiPidNamePropertyDescriptor.md)
  - [Model.MapiPidTagPropertyDescriptor](MapiPidTagPropertyDescriptor.md)

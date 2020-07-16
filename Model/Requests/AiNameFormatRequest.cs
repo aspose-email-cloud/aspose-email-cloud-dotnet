@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.AiNameApi.NORPrefix_AiName_Format_NOR_Suffix_p_AiNameApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.AiNameApi.Format" /> operation.
   /// </summary>
   public class AiNameFormatRequest  
   {

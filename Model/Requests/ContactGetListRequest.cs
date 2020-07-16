@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.ContactApi.NORPrefix_Contact_GetList_NOR_Suffix_p_ContactApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.ContactApi.GetList" /> operation.
   /// </summary>
   public class ContactGetListRequest  
   {

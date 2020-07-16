@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.MapiMessageApi.NORPrefix_MapiMessage_FromFile_NOR_Suffix_p_MapiMessageApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.MapiMessageApi.FromFile" /> operation.
   /// </summary>
   public class MapiMessageFromFileRequest  
   {

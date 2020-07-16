@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.ClientAccountApi.NORPrefix_ClientAccount_GetMulti_NOR_Suffix_p_ClientAccountApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.ClientAccountApi.GetMulti" /> operation.
   /// </summary>
   public class ClientAccountGetMultiRequest  
   {

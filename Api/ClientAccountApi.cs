@@ -70,7 +70,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ClientAccount";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/account";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
@@ -110,7 +110,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
 
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ClientAccount/multi";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/account/multi";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
@@ -147,7 +147,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 throw new ApiException(400,
                     "Missing required parameter 'request' when calling Save");
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ClientAccount";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/account";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
@@ -183,7 +183,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 throw new ApiException(400,
                     "Missing required parameter 'request' when calling SaveMulti");
             // create path and map variables
-            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ClientAccount/multi";
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/client/account/multi";
             resourcePath = Regex
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")

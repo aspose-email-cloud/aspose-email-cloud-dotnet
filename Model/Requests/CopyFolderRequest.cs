@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.FolderApi.NORPrefix_CopyFolder_NOR_Suffix_p_FolderApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.FolderApi.CopyFolder" /> operation.
   /// </summary>
   public class CopyFolderRequest  
   {

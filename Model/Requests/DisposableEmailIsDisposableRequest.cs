@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.DisposableEmailApi.NORPrefix_DisposableEmail_IsDisposable_NOR_Suffix_p_DisposableEmailApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.DisposableEmailApi.IsDisposable" /> operation.
   /// </summary>
   public class DisposableEmailIsDisposableRequest  
   {

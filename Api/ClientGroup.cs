@@ -14,10 +14,22 @@ namespace Aspose.Email.Cloud.Sdk.Api
     
         public ClientAccountApi Account { get; }
     
+        public ClientFolderApi Folder { get; }
+    
+        public ClientMessageApi Message { get; }
+    
+        public ClientThreadApi Thread { get; }
+    
         internal ClientGroup(ApiInvoker apiInvoker, Configuration configuration)
         {
         
             Account = new ClientAccountApi(apiInvoker, configuration);
+        
+            Folder = new ClientFolderApi(apiInvoker, configuration);
+        
+            Message = new ClientMessageApi(apiInvoker, configuration);
+        
+            Thread = new ClientThreadApi(apiInvoker, configuration);
         
         }
     }

@@ -170,13 +170,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// </summary>
         /// <param name="request">Request. <see cref="StorageExistsRequest" /></param>
         /// <returns><see cref="StorageExist"/></returns>
-        public StorageExist StorageExists(StorageExistsRequest request)
+        public StorageExist Exists(StorageExistsRequest request)
         {
             // verify the required parameter 'storageName' is set
             if (request.storageName == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'storageName' when calling StorageExists");
+                    "Missing required parameter 'storageName' when calling Exists");
             }
 
             // create path and map variables
@@ -198,8 +198,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// </summary>
         /// <param name="request">Request. <see cref="StorageExistsRequest" /></param>
         /// <returns><see cref="StorageExist"/></returns>
-        public async Task<StorageExist> StorageExistsAsync(StorageExistsRequest request) =>
-            await Task.Run(() => StorageExists(request));
+        public async Task<StorageExist> ExistsAsync(StorageExistsRequest request) =>
+            await Task.Run(() => Exists(request));
         #endif
 
     }

@@ -33,7 +33,7 @@
 namespace Aspose.Email.Cloud.Sdk.Model
 {
   /// <summary>
-  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.EmailConfigApi.NORPrefix_EmailConfig_Discover_NOR_Suffix_p_EmailConfigApi_e" /> operation.
+  /// Request model for <see cref="Aspose.Email.Cloud.Sdk.Api.EmailConfigApi.Discover" /> operation.
   /// </summary>
   public class EmailConfigDiscoverRequest  
   {
