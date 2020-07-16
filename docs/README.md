@@ -50,6 +50,14 @@ Class | Method | HTTP request | Description
 *CalendarApi* | [**CalendarGetListAsync**](CalendarApi.md#calendargetlistasync) | **GET** /email/Calendar/list | Get iCalendar list from storage folder.             . Not available on .NETFramework v2.0
 *CalendarApi* | [**CalendarSave**](CalendarApi.md#calendarsave) | **PUT** /email/Calendar | Save iCalendar             
 *CalendarApi* | [**CalendarSaveAsync**](CalendarApi.md#calendarsaveasync) | **PUT** /email/Calendar | Save iCalendar             . Not available on .NETFramework v2.0
+*ClientAccountApi* | [**ClientAccountGet**](ClientAccountApi.md#clientaccountget) | **GET** /email/ClientAccount | Get email client account from storage.             
+*ClientAccountApi* | [**ClientAccountGetAsync**](ClientAccountApi.md#clientaccountgetasync) | **GET** /email/ClientAccount | Get email client account from storage.             . Not available on .NETFramework v2.0
+*ClientAccountApi* | [**ClientAccountGetMulti**](ClientAccountApi.md#clientaccountgetmulti) | **GET** /email/ClientAccount/multi | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
+*ClientAccountApi* | [**ClientAccountGetMultiAsync**](ClientAccountApi.md#clientaccountgetmultiasync) | **GET** /email/ClientAccount/multi | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
+*ClientAccountApi* | [**ClientAccountSave**](ClientAccountApi.md#clientaccountsave) | **PUT** /email/ClientAccount | Create/update email client account file (*.account) with credentials             
+*ClientAccountApi* | [**ClientAccountSaveAsync**](ClientAccountApi.md#clientaccountsaveasync) | **PUT** /email/ClientAccount | Create/update email client account file (*.account) with credentials             . Not available on .NETFramework v2.0
+*ClientAccountApi* | [**ClientAccountSaveMulti**](ClientAccountApi.md#clientaccountsavemulti) | **PUT** /email/ClientAccount/multi | Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
+*ClientAccountApi* | [**ClientAccountSaveMultiAsync**](ClientAccountApi.md#clientaccountsavemultiasync) | **PUT** /email/ClientAccount/multi | Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
 *ContactApi* | [**ContactAsFile**](ContactApi.md#contactasfile) | **PUT** /email/Contact/as-file | Converts contact model to specified format and returns as file             
 *ContactApi* | [**ContactAsFileAsync**](ContactApi.md#contactasfileasync) | **PUT** /email/Contact/as-file | Converts contact model to specified format and returns as file             . Not available on .NETFramework v2.0
 *ContactApi* | [**ContactAsMapi**](ContactApi.md#contactasmapi) | **PUT** /email/Contact/as-mapi | Converts ContactDto to MapiContactDto.             
@@ -66,6 +74,8 @@ Class | Method | HTTP request | Description
 *ContactApi* | [**ContactGetListAsync**](ContactApi.md#contactgetlistasync) | **GET** /email/Contact/list | Get contact list from storage folder.             . Not available on .NETFramework v2.0
 *ContactApi* | [**ContactSave**](ContactApi.md#contactsave) | **PUT** /email/Contact | Save contact to storage.             
 *ContactApi* | [**ContactSaveAsync**](ContactApi.md#contactsaveasync) | **PUT** /email/Contact | Save contact to storage.             . Not available on .NETFramework v2.0
+*DisposableEmailApi* | [**DisposableEmailIsDisposable**](DisposableEmailApi.md#disposableemailisdisposable) | **GET** /email/disposable/is-disposable | Check email address is disposable             
+*DisposableEmailApi* | [**DisposableEmailIsDisposableAsync**](DisposableEmailApi.md#disposableemailisdisposableasync) | **GET** /email/disposable/is-disposable | Check email address is disposable             . Not available on .NETFramework v2.0
 *EmailApi* | [**EmailAsFile**](EmailApi.md#emailasfile) | **PUT** /email/as-file | Converts Email model to specified format and returns as file.             
 *EmailApi* | [**EmailAsFileAsync**](EmailApi.md#emailasfileasync) | **PUT** /email/as-file | Converts Email model to specified format and returns as file.             . Not available on .NETFramework v2.0
 *EmailApi* | [**EmailAsMapi**](EmailApi.md#emailasmapi) | **PUT** /email/as-mapi | Converts EmailDto to MapiMessageDto.             
@@ -82,6 +92,12 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**EmailGetListAsync**](EmailApi.md#emailgetlistasync) | **GET** /email/list | Get email list from storage folder.             . Not available on .NETFramework v2.0
 *EmailApi* | [**EmailSave**](EmailApi.md#emailsave) | **PUT** /email | Save email document to storage.             
 *EmailApi* | [**EmailSaveAsync**](EmailApi.md#emailsaveasync) | **PUT** /email | Save email document to storage.             . Not available on .NETFramework v2.0
+*EmailConfigApi* | [**EmailConfigDiscover**](EmailConfigApi.md#emailconfigdiscover) | **GET** /email/config/discover | Discover email accounts by email address. Does not validate discovered accounts.             
+*EmailConfigApi* | [**EmailConfigDiscoverAsync**](EmailConfigApi.md#emailconfigdiscoverasync) | **GET** /email/config/discover | Discover email accounts by email address. Does not validate discovered accounts.             . Not available on .NETFramework v2.0
+*EmailConfigApi* | [**EmailConfigDiscoverOauth**](EmailConfigApi.md#emailconfigdiscoveroauth) | **POST** /email/config/discover/oauth | Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
+*EmailConfigApi* | [**EmailConfigDiscoverOauthAsync**](EmailConfigApi.md#emailconfigdiscoveroauthasync) | **POST** /email/config/discover/oauth | Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             . Not available on .NETFramework v2.0
+*EmailConfigApi* | [**EmailConfigDiscoverPassword**](EmailConfigApi.md#emailconfigdiscoverpassword) | **POST** /email/config/discover/password | Discover email accounts by email address. Validates discovered accounts using login and password.             
+*EmailConfigApi* | [**EmailConfigDiscoverPasswordAsync**](EmailConfigApi.md#emailconfigdiscoverpasswordasync) | **POST** /email/config/discover/password | Discover email accounts by email address. Validates discovered accounts using login and password.             . Not available on .NETFramework v2.0
 *FileApi* | [**CopyFile**](FileApi.md#copyfile) | **PUT** /email/storage/file/copy/{srcPath} | Copy file
 *FileApi* | [**CopyFileAsync**](FileApi.md#copyfileasync) | **PUT** /email/storage/file/copy/{srcPath} | Copy file. Not available on .NETFramework v2.0
 *FileApi* | [**DeleteFile**](FileApi.md#deletefile) | **DELETE** /email/storage/file/{path} | Delete file
@@ -171,8 +187,13 @@ Class | Method | HTTP request | Description
  - [Model.ContentTypeParameter](ContentTypeParameter.md)
  - [Model.CustomerEvent](CustomerEvent.md)
  - [Model.DiscUsage](DiscUsage.md)
+ - [Model.DiscoverEmailConfigRq](DiscoverEmailConfigRq.md)
+ - [Model.EmailAccountConfig](EmailAccountConfig.md)
  - [Model.EmailAddress](EmailAddress.md)
  - [Model.EmailAsFileRequest](EmailAsFileRequest.md)
+ - [Model.EmailClientAccount](EmailClientAccount.md)
+ - [Model.EmailClientAccountCredentials](EmailClientAccountCredentials.md)
+ - [Model.EmailClientMultiAccount](EmailClientMultiAccount.md)
  - [Model.EmailDto](EmailDto.md)
  - [Model.EnumWithCustomOfAssociatedPersonCategory](EnumWithCustomOfAssociatedPersonCategory.md)
  - [Model.EnumWithCustomOfEmailAddressCategory](EnumWithCustomOfEmailAddressCategory.md)
@@ -191,6 +212,7 @@ Class | Method | HTTP request | Description
  - [Model.ListResponseOfAiNameExtracted](ListResponseOfAiNameExtracted.md)
  - [Model.ListResponseOfAiNameGenderHypothesis](ListResponseOfAiNameGenderHypothesis.md)
  - [Model.ListResponseOfContactDto](ListResponseOfContactDto.md)
+ - [Model.ListResponseOfEmailAccountConfig](ListResponseOfEmailAccountConfig.md)
  - [Model.ListResponseOfStorageFileLocation](ListResponseOfStorageFileLocation.md)
  - [Model.ListResponseOfStorageModelOfCalendarDto](ListResponseOfStorageModelOfCalendarDto.md)
  - [Model.ListResponseOfStorageModelOfContactDto](ListResponseOfStorageModelOfContactDto.md)
@@ -222,6 +244,7 @@ Class | Method | HTTP request | Description
  - [Model.MapiPropertyDescriptor](MapiPropertyDescriptor.md)
  - [Model.MapiPropertyDto](MapiPropertyDto.md)
  - [Model.MapiRecipientDto](MapiRecipientDto.md)
+ - [Model.NameValuePair](NameValuePair.md)
  - [Model.ObjectExist](ObjectExist.md)
  - [Model.PhoneNumber](PhoneNumber.md)
  - [Model.PostalAddress](PostalAddress.md)
@@ -233,11 +256,14 @@ Class | Method | HTTP request | Description
  - [Model.StorageFolderLocation](StorageFolderLocation.md)
  - [Model.StorageModelOfCalendarDto](StorageModelOfCalendarDto.md)
  - [Model.StorageModelOfContactDto](StorageModelOfContactDto.md)
+ - [Model.StorageModelOfEmailClientAccount](StorageModelOfEmailClientAccount.md)
+ - [Model.StorageModelOfEmailClientMultiAccount](StorageModelOfEmailClientMultiAccount.md)
  - [Model.StorageModelOfEmailDto](StorageModelOfEmailDto.md)
  - [Model.StorageModelOfMapiCalendarDto](StorageModelOfMapiCalendarDto.md)
  - [Model.StorageModelOfMapiContactDto](StorageModelOfMapiContactDto.md)
  - [Model.StorageModelOfMapiMessageDto](StorageModelOfMapiMessageDto.md)
  - [Model.Url](Url.md)
+ - [Model.ValueTOfBoolean](ValueTOfBoolean.md)
  - [Model.AiBcrImageStorageFile](AiBcrImageStorageFile.md)
  - [Model.AiNameComponentList](AiNameComponentList.md)
  - [Model.AiNameExtractedList](AiNameExtractedList.md)
@@ -251,6 +277,13 @@ Class | Method | HTTP request | Description
  - [Model.ContactSaveRequest](ContactSaveRequest.md)
  - [Model.ContactStorageList](ContactStorageList.md)
  - [Model.DailyRecurrencePatternDto](DailyRecurrencePatternDto.md)
+ - [Model.DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
+ - [Model.DiscoverEmailConfigPassword](DiscoverEmailConfigPassword.md)
+ - [Model.EmailAccountConfigList](EmailAccountConfigList.md)
+ - [Model.EmailClientAccountOauthCredentials](EmailClientAccountOauthCredentials.md)
+ - [Model.EmailClientAccountPasswordCredentials](EmailClientAccountPasswordCredentials.md)
+ - [Model.EmailClientAccountSaveRequest](EmailClientAccountSaveRequest.md)
+ - [Model.EmailClientMultiAccountSaveRequest](EmailClientMultiAccountSaveRequest.md)
  - [Model.EmailSaveRequest](EmailSaveRequest.md)
  - [Model.EmailStorageList](EmailStorageList.md)
  - [Model.FileVersion](FileVersion.md)

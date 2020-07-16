@@ -18,10 +18,16 @@ namespace Aspose.Email.Cloud.Sdk.Api
     
         public ContactApi Contact {get;}
     
+        public DisposableEmailApi DisposableEmail {get;}
+    
         public EmailApi Email {get;}
+    
+        public EmailConfigApi EmailConfig {get;}
     
     
         public MapiGroup Mapi {get;}
+    
+        public ClientGroup Client {get;}
     
         public AiGroup Ai {get;}
     
@@ -59,10 +65,16 @@ namespace Aspose.Email.Cloud.Sdk.Api
         
             Contact = new ContactApi(apiInvoker, this.configuration);
         
+            DisposableEmail = new DisposableEmailApi(apiInvoker, this.configuration);
+        
             Email = new EmailApi(apiInvoker, this.configuration);
+        
+            EmailConfig = new EmailConfigApi(apiInvoker, this.configuration);
         
         
             Mapi = new MapiGroup(apiInvoker, this.configuration);
+        
+            Client = new ClientGroup(apiInvoker, this.configuration);
         
             Ai = new AiGroup(apiInvoker, this.configuration);
         
