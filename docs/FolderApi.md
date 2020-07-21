@@ -1,7 +1,7 @@
 # Aspose.Email.Cloud.Sdk.FolderApi
 
-<a name="copyfolder"></a>
-# **CopyFolder**
+        ﻿<a name="CopyFolder"></a>
+# CopyFolder
 
 ```csharp
 void CopyFolder(CopyFolderRequest request)
@@ -13,7 +13,7 @@ Copy folder
 
 void (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CopyFolderRequest(
     srcPath,
@@ -31,8 +31,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="copyfolder"></a>
-# **CopyFolderAsync**
+<a name="CopyFolderAsync"></a>
+# CopyFolderAsync
 
 ```csharp
 async Task CopyFolderAsync(CopyFolderRequest request)
@@ -46,7 +46,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CopyFolderRequest(
     srcPath,
@@ -63,9 +63,8 @@ Name | Type | Description  | Notes
  **destStorageName** | **string**| Destination storage name | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="createfolder"></a>
-# **CreateFolder**
+        ﻿<a name="CreateFolder"></a>
+# CreateFolder
 
 ```csharp
 void CreateFolder(CreateFolderRequest request)
@@ -77,7 +76,7 @@ Create the folder
 
 void (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CreateFolderRequest(
     path,
@@ -91,8 +90,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="createfolder"></a>
-# **CreateFolderAsync**
+<a name="CreateFolderAsync"></a>
+# CreateFolderAsync
 
 ```csharp
 async Task CreateFolderAsync(CreateFolderRequest request)
@@ -106,7 +105,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CreateFolderRequest(
     path,
@@ -119,9 +118,8 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="deletefolder"></a>
-# **DeleteFolder**
+        ﻿<a name="DeleteFolder"></a>
+# DeleteFolder
 
 ```csharp
 void DeleteFolder(DeleteFolderRequest request)
@@ -133,7 +131,7 @@ Delete folder
 
 void (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new DeleteFolderRequest(
     path,
@@ -149,8 +147,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="deletefolder"></a>
-# **DeleteFolderAsync**
+<a name="DeleteFolderAsync"></a>
+# DeleteFolderAsync
 
 ```csharp
 async Task DeleteFolderAsync(DeleteFolderRequest request)
@@ -164,7 +162,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new DeleteFolderRequest(
     path,
@@ -179,9 +177,8 @@ Name | Type | Description  | Notes
  **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="getfileslist"></a>
-# **GetFilesList**
+        ﻿<a name="GetFilesList"></a>
+# GetFilesList
 
 ```csharp
 FilesList GetFilesList(GetFilesListRequest request)
@@ -193,7 +190,7 @@ Get all files and folders within a folder
 
 [**FilesList**](FilesList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new GetFilesListRequest(
     path,
@@ -207,8 +204,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="getfileslist"></a>
-# **GetFilesListAsync**
+<a name="GetFilesListAsync"></a>
+# GetFilesListAsync
 
 ```csharp
 async Task<FilesList> GetFilesListAsync(GetFilesListRequest request)
@@ -222,7 +219,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**FilesList**](FilesList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new GetFilesListRequest(
     path,
@@ -235,9 +232,8 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="movefolder"></a>
-# **MoveFolder**
+        ﻿<a name="MoveFolder"></a>
+# MoveFolder
 
 ```csharp
 void MoveFolder(MoveFolderRequest request)
@@ -249,7 +245,7 @@ Move folder
 
 void (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MoveFolderRequest(
     srcPath,
@@ -267,8 +263,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="movefolder"></a>
-# **MoveFolderAsync**
+<a name="MoveFolderAsync"></a>
+# MoveFolderAsync
 
 ```csharp
 async Task MoveFolderAsync(MoveFolderRequest request)
@@ -282,7 +278,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MoveFolderRequest(
     srcPath,
@@ -299,4 +295,3 @@ Name | Type | Description  | Notes
  **destStorageName** | **string**| Destination storage name | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

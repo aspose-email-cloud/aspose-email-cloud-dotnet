@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.CalendarApi
 
-<a name="calendarasalternate"></a>
-# **CalendarAsAlternate**
+        ﻿<a name="AsAlternate"></a>
+# AsAlternate
 
 ```csharp
-AlternateView CalendarAsAlternate(CalendarAsAlternateRequest request)
+AlternateView AsAlternate(CalendarAsAlternateRequest request)
 ```
 
 Convert iCalendar to AlternateView             
@@ -13,23 +13,17 @@ Convert iCalendar to AlternateView
 
 [**AlternateView**](AlternateView.md)
 
-### Request Parameters
-```csharp
-new CalendarAsAlternateRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**CalendarAsAlternateRequest**](CalendarAsAlternateRequest.md)| iCalendar to AlternateView request | 
+See parameter model documentation at [CalendarAsAlternateRequest](CalendarAsAlternateRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendarasalternate"></a>
-# **CalendarAsAlternateAsync**
+<a name="AsAlternateAsync"></a>
+# AsAlternateAsync
 
 ```csharp
-async Task<AlternateView> CalendarAsAlternateAsync(CalendarAsAlternateRequest request)
+async Task<AlternateView> AsAlternateAsync(CalendarAsAlternateRequest request)
 ```
 
 Convert iCalendar to AlternateView             
@@ -40,23 +34,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AlternateView**](AlternateView.md)>
 
-### Request Parameters
-```csharp
-new CalendarAsAlternateRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**CalendarAsAlternateRequest**](CalendarAsAlternateRequest.md)| iCalendar to AlternateView request | 
+See parameter model documentation at [CalendarAsAlternateRequest](CalendarAsAlternateRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="calendarasfile"></a>
-# **CalendarAsFile**
+        ﻿<a name="AsFile"></a>
+# AsFile
 
 ```csharp
-Stream CalendarAsFile(CalendarAsFileRequest request)
+Stream AsFile(CalendarAsFileRequest request)
 ```
 
 Converts calendar model to specified format and returns as file.             
@@ -65,23 +52,17 @@ Converts calendar model to specified format and returns as file.
 
 **Stream**
 
-### Request Parameters
-```csharp
-new CalendarAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**CalendarAsFileRequest**](CalendarAsFileRequest.md)| Calendar model and format to convert. | 
+See parameter model documentation at [CalendarAsFileRequest](CalendarAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendarasfile"></a>
-# **CalendarAsFileAsync**
+<a name="AsFileAsync"></a>
+# AsFileAsync
 
 ```csharp
-async Task<Stream> CalendarAsFileAsync(CalendarAsFileRequest request)
+async Task<Stream> AsFileAsync(CalendarAsFileRequest request)
 ```
 
 Converts calendar model to specified format and returns as file.             
@@ -92,23 +73,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
-```csharp
-new CalendarAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**CalendarAsFileRequest**](CalendarAsFileRequest.md)| Calendar model and format to convert. | 
+See parameter model documentation at [CalendarAsFileRequest](CalendarAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="calendarasmapi"></a>
-# **CalendarAsMapi**
+        ﻿<a name="AsMapi"></a>
+# AsMapi
 
 ```csharp
-MapiCalendarDto CalendarAsMapi(CalendarAsMapiRequest request)
+MapiCalendarDto AsMapi(CalendarDto calendarDto)
 ```
 
 Converts CalendarDto to MapiCalendarDto.             
@@ -117,23 +91,17 @@ Converts CalendarDto to MapiCalendarDto.
 
 [**MapiCalendarDto**](MapiCalendarDto.md)
 
-### Request Parameters
-```csharp
-new CalendarAsMapiRequest(
-    calendarDto)
-```
+### calendarDto Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **calendarDto** | [**CalendarDto**](CalendarDto.md)| iCalendar model calendar representation. | 
+See parameter model documentation at [CalendarDto](CalendarDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendarasmapi"></a>
-# **CalendarAsMapiAsync**
+<a name="AsMapiAsync"></a>
+# AsMapiAsync
 
 ```csharp
-async Task<MapiCalendarDto> CalendarAsMapiAsync(CalendarAsMapiRequest request)
+async Task<MapiCalendarDto> AsMapiAsync(CalendarDto calendarDto)
 ```
 
 Converts CalendarDto to MapiCalendarDto.             
@@ -144,23 +112,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
 
-### Request Parameters
-```csharp
-new CalendarAsMapiRequest(
-    calendarDto)
-```
+### calendarDto Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **calendarDto** | [**CalendarDto**](CalendarDto.md)| iCalendar model calendar representation. | 
+See parameter model documentation at [CalendarDto](CalendarDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="calendarconvert"></a>
-# **CalendarConvert**
+        ﻿<a name="Convert"></a>
+# Convert
 
 ```csharp
-Stream CalendarConvert(CalendarConvertRequest request)
+Stream Convert(CalendarConvertRequest request)
 ```
 
 Converts calendar document to specified format and returns as file.             
@@ -169,7 +130,7 @@ Converts calendar document to specified format and returns as file.
 
 **Stream**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarConvertRequest(
     format,
@@ -183,11 +144,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendarconvert"></a>
-# **CalendarConvertAsync**
+<a name="ConvertAsync"></a>
+# ConvertAsync
 
 ```csharp
-async Task<Stream> CalendarConvertAsync(CalendarConvertRequest request)
+async Task<Stream> ConvertAsync(CalendarConvertRequest request)
 ```
 
 Converts calendar document to specified format and returns as file.             
@@ -198,7 +159,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarConvertRequest(
     format,
@@ -211,12 +172,11 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="calendarfromfile"></a>
-# **CalendarFromFile**
+        ﻿<a name="FromFile"></a>
+# FromFile
 
 ```csharp
-CalendarDto CalendarFromFile(CalendarFromFileRequest request)
+CalendarDto FromFile(CalendarFromFileRequest request)
 ```
 
 Converts calendar document to a model representation.             
@@ -225,7 +185,7 @@ Converts calendar document to a model representation.
 
 [**CalendarDto**](CalendarDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarFromFileRequest(
     file)
@@ -237,11 +197,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendarfromfile"></a>
-# **CalendarFromFileAsync**
+<a name="FromFileAsync"></a>
+# FromFileAsync
 
 ```csharp
-async Task<CalendarDto> CalendarFromFileAsync(CalendarFromFileRequest request)
+async Task<CalendarDto> FromFileAsync(CalendarFromFileRequest request)
 ```
 
 Converts calendar document to a model representation.             
@@ -252,7 +212,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**CalendarDto**](CalendarDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarFromFileRequest(
     file)
@@ -263,12 +223,11 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="calendarget"></a>
-# **CalendarGet**
+        ﻿<a name="Get"></a>
+# Get
 
 ```csharp
-CalendarDto CalendarGet(CalendarGetRequest request)
+CalendarDto Get(CalendarGetRequest request)
 ```
 
 Get calendar file from storage.             
@@ -277,7 +236,7 @@ Get calendar file from storage.
 
 [**CalendarDto**](CalendarDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarGetRequest(
     name,
@@ -293,11 +252,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendarget"></a>
-# **CalendarGetAsync**
+<a name="GetAsync"></a>
+# GetAsync
 
 ```csharp
-async Task<CalendarDto> CalendarGetAsync(CalendarGetRequest request)
+async Task<CalendarDto> GetAsync(CalendarGetRequest request)
 ```
 
 Get calendar file from storage.             
@@ -308,7 +267,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**CalendarDto**](CalendarDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarGetRequest(
     name,
@@ -323,12 +282,11 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="calendargetasalternate"></a>
-# **CalendarGetAsAlternate**
+        ﻿<a name="GetAsAlternate"></a>
+# GetAsAlternate
 
 ```csharp
-AlternateView CalendarGetAsAlternate(CalendarGetAsAlternateRequest request)
+AlternateView GetAsAlternate(CalendarGetAsAlternateRequest request)
 ```
 
 Get iCalendar from storage as AlternateView             
@@ -337,7 +295,7 @@ Get iCalendar from storage as AlternateView
 
 [**AlternateView**](AlternateView.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarGetAsAlternateRequest(
     name,
@@ -357,11 +315,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendargetasalternate"></a>
-# **CalendarGetAsAlternateAsync**
+<a name="GetAsAlternateAsync"></a>
+# GetAsAlternateAsync
 
 ```csharp
-async Task<AlternateView> CalendarGetAsAlternateAsync(CalendarGetAsAlternateRequest request)
+async Task<AlternateView> GetAsAlternateAsync(CalendarGetAsAlternateRequest request)
 ```
 
 Get iCalendar from storage as AlternateView             
@@ -372,7 +330,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AlternateView**](AlternateView.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarGetAsAlternateRequest(
     name,
@@ -391,12 +349,11 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="calendargetasfile"></a>
-# **CalendarGetAsFile**
+        ﻿<a name="GetAsFile"></a>
+# GetAsFile
 
 ```csharp
-Stream CalendarGetAsFile(CalendarGetAsFileRequest request)
+Stream GetAsFile(CalendarGetAsFileRequest request)
 ```
 
 Converts calendar document from storage to specified format and returns as file.             
@@ -405,7 +362,7 @@ Converts calendar document from storage to specified format and returns as file.
 
 **Stream**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarGetAsFileRequest(
     fileName,
@@ -423,11 +380,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendargetasfile"></a>
-# **CalendarGetAsFileAsync**
+<a name="GetAsFileAsync"></a>
+# GetAsFileAsync
 
 ```csharp
-async Task<Stream> CalendarGetAsFileAsync(CalendarGetAsFileRequest request)
+async Task<Stream> GetAsFileAsync(CalendarGetAsFileRequest request)
 ```
 
 Converts calendar document from storage to specified format and returns as file.             
@@ -438,7 +395,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarGetAsFileRequest(
     fileName,
@@ -455,12 +412,11 @@ Name | Type | Description  | Notes
  **folder** | **string**| Path to folder in storage. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="calendargetlist"></a>
-# **CalendarGetList**
+        ﻿<a name="GetList"></a>
+# GetList
 
 ```csharp
-CalendarStorageList CalendarGetList(CalendarGetListRequest request)
+CalendarStorageList GetList(CalendarGetListRequest request)
 ```
 
 Get iCalendar list from storage folder.             
@@ -469,7 +425,7 @@ Get iCalendar list from storage folder.
 
 [**CalendarStorageList**](CalendarStorageList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarGetListRequest(
     folder,
@@ -487,11 +443,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendargetlist"></a>
-# **CalendarGetListAsync**
+<a name="GetListAsync"></a>
+# GetListAsync
 
 ```csharp
-async Task<CalendarStorageList> CalendarGetListAsync(CalendarGetListRequest request)
+async Task<CalendarStorageList> GetListAsync(CalendarGetListRequest request)
 ```
 
 Get iCalendar list from storage folder.             
@@ -502,7 +458,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**CalendarStorageList**](CalendarStorageList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CalendarGetListRequest(
     folder,
@@ -519,12 +475,11 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="calendarsave"></a>
-# **CalendarSave**
+        ﻿<a name="Save"></a>
+# Save
 
 ```csharp
-void CalendarSave(CalendarSaveRequest request)
+void Save(CalendarSaveRequest request)
 ```
 
 Save iCalendar             
@@ -533,23 +488,17 @@ Save iCalendar
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new CalendarSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**CalendarSaveRequest**](CalendarSaveRequest.md)| iCalendar create/update request | 
+See parameter model documentation at [CalendarSaveRequest](CalendarSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="calendarsave"></a>
-# **CalendarSaveAsync**
+<a name="SaveAsync"></a>
+# SaveAsync
 
 ```csharp
-async Task CalendarSaveAsync(CalendarSaveRequest request)
+async Task SaveAsync(CalendarSaveRequest request)
 ```
 
 Save iCalendar             
@@ -560,15 +509,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new CalendarSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**CalendarSaveRequest**](CalendarSaveRequest.md)| iCalendar create/update request | 
+See parameter model documentation at [CalendarSaveRequest](CalendarSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

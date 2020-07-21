@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.EmailApi
 
-<a name="emailasfile"></a>
-# **EmailAsFile**
+        ﻿<a name="AsFile"></a>
+# AsFile
 
 ```csharp
-Stream EmailAsFile(EmailAsFileRequest request)
+Stream AsFile(EmailAsFileRequest request)
 ```
 
 Converts Email model to specified format and returns as file.             
@@ -13,23 +13,17 @@ Converts Email model to specified format and returns as file.
 
 **Stream**
 
-### Request Parameters
-```csharp
-new EmailAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**EmailAsFileRequest**](EmailAsFileRequest.md)| Email model and format to convert. | 
+See parameter model documentation at [EmailAsFileRequest](EmailAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailasfile"></a>
-# **EmailAsFileAsync**
+<a name="AsFileAsync"></a>
+# AsFileAsync
 
 ```csharp
-async Task<Stream> EmailAsFileAsync(EmailAsFileRequest request)
+async Task<Stream> AsFileAsync(EmailAsFileRequest request)
 ```
 
 Converts Email model to specified format and returns as file.             
@@ -40,23 +34,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
-```csharp
-new EmailAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**EmailAsFileRequest**](EmailAsFileRequest.md)| Email model and format to convert. | 
+See parameter model documentation at [EmailAsFileRequest](EmailAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="emailasmapi"></a>
-# **EmailAsMapi**
+        ﻿<a name="AsMapi"></a>
+# AsMapi
 
 ```csharp
-MapiMessageDto EmailAsMapi(EmailAsMapiRequest request)
+MapiMessageDto AsMapi(EmailDto emailDto)
 ```
 
 Converts EmailDto to MapiMessageDto.             
@@ -65,23 +52,17 @@ Converts EmailDto to MapiMessageDto.
 
 [**MapiMessageDto**](MapiMessageDto.md)
 
-### Request Parameters
-```csharp
-new EmailAsMapiRequest(
-    emailDto)
-```
+### emailDto Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
+See parameter model documentation at [EmailDto](EmailDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailasmapi"></a>
-# **EmailAsMapiAsync**
+<a name="AsMapiAsync"></a>
+# AsMapiAsync
 
 ```csharp
-async Task<MapiMessageDto> EmailAsMapiAsync(EmailAsMapiRequest request)
+async Task<MapiMessageDto> AsMapiAsync(EmailDto emailDto)
 ```
 
 Converts EmailDto to MapiMessageDto.             
@@ -92,23 +73,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**MapiMessageDto**](MapiMessageDto.md)>
 
-### Request Parameters
-```csharp
-new EmailAsMapiRequest(
-    emailDto)
-```
+### emailDto Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
+See parameter model documentation at [EmailDto](EmailDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="emailconvert"></a>
-# **EmailConvert**
+        ﻿<a name="Convert"></a>
+# Convert
 
 ```csharp
-Stream EmailConvert(EmailConvertRequest request)
+Stream Convert(EmailConvertRequest request)
 ```
 
 Converts email document to specified format and returns as file             
@@ -117,7 +91,7 @@ Converts email document to specified format and returns as file
 
 **Stream**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailConvertRequest(
     format,
@@ -131,11 +105,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailconvert"></a>
-# **EmailConvertAsync**
+<a name="ConvertAsync"></a>
+# ConvertAsync
 
 ```csharp
-async Task<Stream> EmailConvertAsync(EmailConvertRequest request)
+async Task<Stream> ConvertAsync(EmailConvertRequest request)
 ```
 
 Converts email document to specified format and returns as file             
@@ -146,7 +120,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailConvertRequest(
     format,
@@ -159,12 +133,11 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="emailfromfile"></a>
-# **EmailFromFile**
+        ﻿<a name="FromFile"></a>
+# FromFile
 
 ```csharp
-EmailDto EmailFromFile(EmailFromFileRequest request)
+EmailDto FromFile(EmailFromFileRequest request)
 ```
 
 Converts email document to a model representation             
@@ -173,7 +146,7 @@ Converts email document to a model representation
 
 [**EmailDto**](EmailDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailFromFileRequest(
     file)
@@ -185,11 +158,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailfromfile"></a>
-# **EmailFromFileAsync**
+<a name="FromFileAsync"></a>
+# FromFileAsync
 
 ```csharp
-async Task<EmailDto> EmailFromFileAsync(EmailFromFileRequest request)
+async Task<EmailDto> FromFileAsync(EmailFromFileRequest request)
 ```
 
 Converts email document to a model representation             
@@ -200,7 +173,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailDto**](EmailDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailFromFileRequest(
     file)
@@ -211,12 +184,11 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="emailget"></a>
-# **EmailGet**
+        ﻿<a name="Get"></a>
+# Get
 
 ```csharp
-EmailDto EmailGet(EmailGetRequest request)
+EmailDto Get(EmailGetRequest request)
 ```
 
 Get email document from storage.             
@@ -225,7 +197,7 @@ Get email document from storage.
 
 [**EmailDto**](EmailDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailGetRequest(
     format,
@@ -243,11 +215,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailget"></a>
-# **EmailGetAsync**
+<a name="GetAsync"></a>
+# GetAsync
 
 ```csharp
-async Task<EmailDto> EmailGetAsync(EmailGetRequest request)
+async Task<EmailDto> GetAsync(EmailGetRequest request)
 ```
 
 Get email document from storage.             
@@ -258,7 +230,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailDto**](EmailDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailGetRequest(
     format,
@@ -275,12 +247,11 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="emailgetasfile"></a>
-# **EmailGetAsFile**
+        ﻿<a name="GetAsFile"></a>
+# GetAsFile
 
 ```csharp
-Stream EmailGetAsFile(EmailGetAsFileRequest request)
+Stream GetAsFile(EmailGetAsFileRequest request)
 ```
 
 Converts email document from storage to specified format and returns as file             
@@ -289,7 +260,7 @@ Converts email document from storage to specified format and returns as file
 
 **Stream**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailGetAsFileRequest(
     fileName,
@@ -307,11 +278,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailgetasfile"></a>
-# **EmailGetAsFileAsync**
+<a name="GetAsFileAsync"></a>
+# GetAsFileAsync
 
 ```csharp
-async Task<Stream> EmailGetAsFileAsync(EmailGetAsFileRequest request)
+async Task<Stream> GetAsFileAsync(EmailGetAsFileRequest request)
 ```
 
 Converts email document from storage to specified format and returns as file             
@@ -322,7 +293,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailGetAsFileRequest(
     fileName,
@@ -339,12 +310,11 @@ Name | Type | Description  | Notes
  **folder** | **string**| Path to folder in storage | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="emailgetlist"></a>
-# **EmailGetList**
+        ﻿<a name="GetList"></a>
+# GetList
 
 ```csharp
-EmailStorageList EmailGetList(EmailGetListRequest request)
+EmailStorageList GetList(EmailGetListRequest request)
 ```
 
 Get email list from storage folder.             
@@ -353,7 +323,7 @@ Get email list from storage folder.
 
 [**EmailStorageList**](EmailStorageList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailGetListRequest(
     format,
@@ -373,11 +343,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailgetlist"></a>
-# **EmailGetListAsync**
+<a name="GetListAsync"></a>
+# GetListAsync
 
 ```csharp
-async Task<EmailStorageList> EmailGetListAsync(EmailGetListRequest request)
+async Task<EmailStorageList> GetListAsync(EmailGetListRequest request)
 ```
 
 Get email list from storage folder.             
@@ -388,7 +358,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailStorageList**](EmailStorageList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailGetListRequest(
     format,
@@ -407,12 +377,11 @@ Name | Type | Description  | Notes
  **pageNumber** | **int?**| Page number. | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="emailsave"></a>
-# **EmailSave**
+        ﻿<a name="Save"></a>
+# Save
 
 ```csharp
-void EmailSave(EmailSaveRequest request)
+void Save(EmailSaveRequest request)
 ```
 
 Save email document to storage.             
@@ -421,23 +390,17 @@ Save email document to storage.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new EmailSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**EmailSaveRequest**](EmailSaveRequest.md)| Email document create/update request. | 
+See parameter model documentation at [EmailSaveRequest](EmailSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailsave"></a>
-# **EmailSaveAsync**
+<a name="SaveAsync"></a>
+# SaveAsync
 
 ```csharp
-async Task EmailSaveAsync(EmailSaveRequest request)
+async Task SaveAsync(EmailSaveRequest request)
 ```
 
 Save email document to storage.             
@@ -448,15 +411,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new EmailSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**EmailSaveRequest**](EmailSaveRequest.md)| Email document create/update request. | 
+See parameter model documentation at [EmailSaveRequest](EmailSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

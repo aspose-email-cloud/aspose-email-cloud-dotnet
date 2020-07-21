@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.MapiContactApi
 
-<a name="mapicontactascontactdto"></a>
-# **MapiContactAsContactDto**
+        ﻿<a name="AsContactDto"></a>
+# AsContactDto
 
 ```csharp
-ContactDto MapiContactAsContactDto(MapiContactAsContactDtoRequest request)
+ContactDto AsContactDto(MapiContactDto mapiContactDto)
 ```
 
 Converts MAPI contact model to ContactDto model.             
@@ -13,23 +13,17 @@ Converts MAPI contact model to ContactDto model.
 
 [**ContactDto**](ContactDto.md)
 
-### Request Parameters
-```csharp
-new MapiContactAsContactDtoRequest(
-    mapiContactDto)
-```
+### mapiContactDto Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **mapiContactDto** | [**MapiContactDto**](MapiContactDto.md)| MAPI contact model to convert. | 
+See parameter model documentation at [MapiContactDto](MapiContactDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicontactascontactdto"></a>
-# **MapiContactAsContactDtoAsync**
+<a name="AsContactDtoAsync"></a>
+# AsContactDtoAsync
 
 ```csharp
-async Task<ContactDto> MapiContactAsContactDtoAsync(MapiContactAsContactDtoRequest request)
+async Task<ContactDto> AsContactDtoAsync(MapiContactDto mapiContactDto)
 ```
 
 Converts MAPI contact model to ContactDto model.             
@@ -40,23 +34,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**ContactDto**](ContactDto.md)>
 
-### Request Parameters
-```csharp
-new MapiContactAsContactDtoRequest(
-    mapiContactDto)
-```
+### mapiContactDto Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **mapiContactDto** | [**MapiContactDto**](MapiContactDto.md)| MAPI contact model to convert. | 
+See parameter model documentation at [MapiContactDto](MapiContactDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="mapicontactasfile"></a>
-# **MapiContactAsFile**
+        ﻿<a name="AsFile"></a>
+# AsFile
 
 ```csharp
-Stream MapiContactAsFile(MapiContactAsFileRequest request)
+Stream AsFile(MapiContactAsFileRequest request)
 ```
 
 Converts MAPI contact model to specified format and returns as file.             
@@ -65,23 +52,17 @@ Converts MAPI contact model to specified format and returns as file.
 
 **Stream**
 
-### Request Parameters
-```csharp
-new MapiContactAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**MapiContactAsFileRequest**](MapiContactAsFileRequest.md)| MAPI contact model to convert. | 
+See parameter model documentation at [MapiContactAsFileRequest](MapiContactAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicontactasfile"></a>
-# **MapiContactAsFileAsync**
+<a name="AsFileAsync"></a>
+# AsFileAsync
 
 ```csharp
-async Task<Stream> MapiContactAsFileAsync(MapiContactAsFileRequest request)
+async Task<Stream> AsFileAsync(MapiContactAsFileRequest request)
 ```
 
 Converts MAPI contact model to specified format and returns as file.             
@@ -92,23 +73,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
-```csharp
-new MapiContactAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**MapiContactAsFileRequest**](MapiContactAsFileRequest.md)| MAPI contact model to convert. | 
+See parameter model documentation at [MapiContactAsFileRequest](MapiContactAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="mapicontactfromfile"></a>
-# **MapiContactFromFile**
+        ﻿<a name="FromFile"></a>
+# FromFile
 
 ```csharp
-MapiContactDto MapiContactFromFile(MapiContactFromFileRequest request)
+MapiContactDto FromFile(MapiContactFromFileRequest request)
 ```
 
 Converts contact file to a MAPI model representation.             
@@ -117,7 +91,7 @@ Converts contact file to a MAPI model representation.
 
 [**MapiContactDto**](MapiContactDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MapiContactFromFileRequest(
     fileFormat,
@@ -131,11 +105,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicontactfromfile"></a>
-# **MapiContactFromFileAsync**
+<a name="FromFileAsync"></a>
+# FromFileAsync
 
 ```csharp
-async Task<MapiContactDto> MapiContactFromFileAsync(MapiContactFromFileRequest request)
+async Task<MapiContactDto> FromFileAsync(MapiContactFromFileRequest request)
 ```
 
 Converts contact file to a MAPI model representation.             
@@ -146,7 +120,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**MapiContactDto**](MapiContactDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MapiContactFromFileRequest(
     fileFormat,
@@ -159,12 +133,11 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="mapicontactget"></a>
-# **MapiContactGet**
+        ﻿<a name="Get"></a>
+# Get
 
 ```csharp
-MapiContactDto MapiContactGet(MapiContactGetRequest request)
+MapiContactDto Get(MapiContactGetRequest request)
 ```
 
 Get MAPI contact document.             
@@ -173,7 +146,7 @@ Get MAPI contact document.
 
 [**MapiContactDto**](MapiContactDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MapiContactGetRequest(
     format,
@@ -191,11 +164,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicontactget"></a>
-# **MapiContactGetAsync**
+<a name="GetAsync"></a>
+# GetAsync
 
 ```csharp
-async Task<MapiContactDto> MapiContactGetAsync(MapiContactGetRequest request)
+async Task<MapiContactDto> GetAsync(MapiContactGetRequest request)
 ```
 
 Get MAPI contact document.             
@@ -206,7 +179,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**MapiContactDto**](MapiContactDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MapiContactGetRequest(
     format,
@@ -223,12 +196,11 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="mapicontactsave"></a>
-# **MapiContactSave**
+        ﻿<a name="Save"></a>
+# Save
 
 ```csharp
-void MapiContactSave(MapiContactSaveRequest request)
+void Save(MapiContactSaveRequest request)
 ```
 
 Save MAPI Contact to storage.             
@@ -237,23 +209,17 @@ Save MAPI Contact to storage.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new MapiContactSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**MapiContactSaveRequest**](MapiContactSaveRequest.md)| Create/Update contact request. | 
+See parameter model documentation at [MapiContactSaveRequest](MapiContactSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapicontactsave"></a>
-# **MapiContactSaveAsync**
+<a name="SaveAsync"></a>
+# SaveAsync
 
 ```csharp
-async Task MapiContactSaveAsync(MapiContactSaveRequest request)
+async Task SaveAsync(MapiContactSaveRequest request)
 ```
 
 Save MAPI Contact to storage.             
@@ -264,15 +230,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new MapiContactSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**MapiContactSaveRequest**](MapiContactSaveRequest.md)| Create/Update contact request. | 
+See parameter model documentation at [MapiContactSaveRequest](MapiContactSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

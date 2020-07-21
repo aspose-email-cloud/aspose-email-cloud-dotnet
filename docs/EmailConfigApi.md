@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.EmailConfigApi
 
-<a name="emailconfigdiscover"></a>
-# **EmailConfigDiscover**
+        ﻿<a name="Discover"></a>
+# Discover
 
 ```csharp
-EmailAccountConfigList EmailConfigDiscover(EmailConfigDiscoverRequest request)
+EmailAccountConfigList Discover(EmailConfigDiscoverRequest request)
 ```
 
 Discover email accounts by email address. Does not validate discovered accounts.             
@@ -13,7 +13,7 @@ Discover email accounts by email address. Does not validate discovered accounts.
 
 [**EmailAccountConfigList**](EmailAccountConfigList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailConfigDiscoverRequest(
     address,
@@ -27,11 +27,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailconfigdiscover"></a>
-# **EmailConfigDiscoverAsync**
+<a name="DiscoverAsync"></a>
+# DiscoverAsync
 
 ```csharp
-async Task<EmailAccountConfigList> EmailConfigDiscoverAsync(EmailConfigDiscoverRequest request)
+async Task<EmailAccountConfigList> DiscoverAsync(EmailConfigDiscoverRequest request)
 ```
 
 Discover email accounts by email address. Does not validate discovered accounts.             
@@ -42,7 +42,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new EmailConfigDiscoverRequest(
     address,
@@ -55,12 +55,11 @@ Name | Type | Description  | Notes
  **fastProcessing** | **bool?**| Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.              | [optional] [default to false]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="emailconfigdiscoveroauth"></a>
-# **EmailConfigDiscoverOauth**
+        ﻿<a name="DiscoverOauth"></a>
+# DiscoverOauth
 
 ```csharp
-EmailAccountConfigList EmailConfigDiscoverOauth(EmailConfigDiscoverOauthRequest request)
+EmailAccountConfigList DiscoverOauth(DiscoverEmailConfigOauth request)
 ```
 
 Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
@@ -69,23 +68,17 @@ Discover email accounts by email address. Validates discovered accounts using OA
 
 [**EmailAccountConfigList**](EmailAccountConfigList.md)
 
-### Request Parameters
-```csharp
-new EmailConfigDiscoverOauthRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**DiscoverEmailConfigOauth**](DiscoverEmailConfigOauth.md)| Discover email configuration request. | 
+See parameter model documentation at [DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailconfigdiscoveroauth"></a>
-# **EmailConfigDiscoverOauthAsync**
+<a name="DiscoverOauthAsync"></a>
+# DiscoverOauthAsync
 
 ```csharp
-async Task<EmailAccountConfigList> EmailConfigDiscoverOauthAsync(EmailConfigDiscoverOauthRequest request)
+async Task<EmailAccountConfigList> DiscoverOauthAsync(DiscoverEmailConfigOauth request)
 ```
 
 Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
@@ -96,23 +89,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 
-### Request Parameters
-```csharp
-new EmailConfigDiscoverOauthRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**DiscoverEmailConfigOauth**](DiscoverEmailConfigOauth.md)| Discover email configuration request. | 
+See parameter model documentation at [DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="emailconfigdiscoverpassword"></a>
-# **EmailConfigDiscoverPassword**
+        ﻿<a name="DiscoverPassword"></a>
+# DiscoverPassword
 
 ```csharp
-EmailAccountConfigList EmailConfigDiscoverPassword(EmailConfigDiscoverPasswordRequest request)
+EmailAccountConfigList DiscoverPassword(DiscoverEmailConfigPassword request)
 ```
 
 Discover email accounts by email address. Validates discovered accounts using login and password.             
@@ -121,23 +107,17 @@ Discover email accounts by email address. Validates discovered accounts using lo
 
 [**EmailAccountConfigList**](EmailAccountConfigList.md)
 
-### Request Parameters
-```csharp
-new EmailConfigDiscoverPasswordRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**DiscoverEmailConfigPassword**](DiscoverEmailConfigPassword.md)| Discover email configuration request. | 
+See parameter model documentation at [DiscoverEmailConfigPassword](DiscoverEmailConfigPassword.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="emailconfigdiscoverpassword"></a>
-# **EmailConfigDiscoverPasswordAsync**
+<a name="DiscoverPasswordAsync"></a>
+# DiscoverPasswordAsync
 
 ```csharp
-async Task<EmailAccountConfigList> EmailConfigDiscoverPasswordAsync(EmailConfigDiscoverPasswordRequest request)
+async Task<EmailAccountConfigList> DiscoverPasswordAsync(DiscoverEmailConfigPassword request)
 ```
 
 Discover email accounts by email address. Validates discovered accounts using login and password.             
@@ -148,15 +128,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 
-### Request Parameters
-```csharp
-new EmailConfigDiscoverPasswordRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**DiscoverEmailConfigPassword**](DiscoverEmailConfigPassword.md)| Discover email configuration request. | 
+See parameter model documentation at [DiscoverEmailConfigPassword](DiscoverEmailConfigPassword.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

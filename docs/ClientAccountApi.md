@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.ClientAccountApi
 
-<a name="clientaccountget"></a>
-# **ClientAccountGet**
+        ﻿<a name="Get"></a>
+# Get
 
 ```csharp
-EmailClientAccount ClientAccountGet(ClientAccountGetRequest request)
+EmailClientAccount Get(ClientAccountGetRequest request)
 ```
 
 Get email client account from storage.             
@@ -13,7 +13,7 @@ Get email client account from storage.
 
 [**EmailClientAccount**](EmailClientAccount.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientAccountGetRequest(
     name,
@@ -29,11 +29,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientaccountget"></a>
-# **ClientAccountGetAsync**
+<a name="GetAsync"></a>
+# GetAsync
 
 ```csharp
-async Task<EmailClientAccount> ClientAccountGetAsync(ClientAccountGetRequest request)
+async Task<EmailClientAccount> GetAsync(ClientAccountGetRequest request)
 ```
 
 Get email client account from storage.             
@@ -44,7 +44,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailClientAccount**](EmailClientAccount.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientAccountGetRequest(
     name,
@@ -59,12 +59,11 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientaccountgetmulti"></a>
-# **ClientAccountGetMulti**
+        ﻿<a name="GetMulti"></a>
+# GetMulti
 
 ```csharp
-EmailClientMultiAccount ClientAccountGetMulti(ClientAccountGetMultiRequest request)
+EmailClientMultiAccount GetMulti(ClientAccountGetMultiRequest request)
 ```
 
 Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
@@ -73,7 +72,7 @@ Get email client multi account file (*.multi.account). Will respond error if fil
 
 [**EmailClientMultiAccount**](EmailClientMultiAccount.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientAccountGetMultiRequest(
     name,
@@ -89,11 +88,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientaccountgetmulti"></a>
-# **ClientAccountGetMultiAsync**
+<a name="GetMultiAsync"></a>
+# GetMultiAsync
 
 ```csharp
-async Task<EmailClientMultiAccount> ClientAccountGetMultiAsync(ClientAccountGetMultiRequest request)
+async Task<EmailClientMultiAccount> GetMultiAsync(ClientAccountGetMultiRequest request)
 ```
 
 Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
@@ -104,7 +103,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailClientMultiAccount**](EmailClientMultiAccount.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientAccountGetMultiRequest(
     name,
@@ -119,12 +118,11 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientaccountsave"></a>
-# **ClientAccountSave**
+        ﻿<a name="Save"></a>
+# Save
 
 ```csharp
-void ClientAccountSave(ClientAccountSaveRequest request)
+void Save(EmailClientAccountSaveRequest request)
 ```
 
 Create/update email client account file (*.account) with credentials             
@@ -133,23 +131,17 @@ Create/update email client account file (*.account) with credentials
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientAccountSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**EmailClientAccountSaveRequest**](EmailClientAccountSaveRequest.md)| Email account information | 
+See parameter model documentation at [EmailClientAccountSaveRequest](EmailClientAccountSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientaccountsave"></a>
-# **ClientAccountSaveAsync**
+<a name="SaveAsync"></a>
+# SaveAsync
 
 ```csharp
-async Task ClientAccountSaveAsync(ClientAccountSaveRequest request)
+async Task SaveAsync(EmailClientAccountSaveRequest request)
 ```
 
 Create/update email client account file (*.account) with credentials             
@@ -160,23 +152,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientAccountSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**EmailClientAccountSaveRequest**](EmailClientAccountSaveRequest.md)| Email account information | 
+See parameter model documentation at [EmailClientAccountSaveRequest](EmailClientAccountSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientaccountsavemulti"></a>
-# **ClientAccountSaveMulti**
+        ﻿<a name="SaveMulti"></a>
+# SaveMulti
 
 ```csharp
-void ClientAccountSaveMulti(ClientAccountSaveMultiRequest request)
+void SaveMulti(EmailClientMultiAccountSaveRequest request)
 ```
 
 Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
@@ -185,23 +170,17 @@ Create email client multi account file (*.multi.account). Will respond error if 
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientAccountSaveMultiRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**EmailClientMultiAccountSaveRequest**](EmailClientMultiAccountSaveRequest.md)| Email accounts information. | 
+See parameter model documentation at [EmailClientMultiAccountSaveRequest](EmailClientMultiAccountSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientaccountsavemulti"></a>
-# **ClientAccountSaveMultiAsync**
+<a name="SaveMultiAsync"></a>
+# SaveMultiAsync
 
 ```csharp
-async Task ClientAccountSaveMultiAsync(ClientAccountSaveMultiRequest request)
+async Task SaveMultiAsync(EmailClientMultiAccountSaveRequest request)
 ```
 
 Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
@@ -212,15 +191,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientAccountSaveMultiRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**EmailClientMultiAccountSaveRequest**](EmailClientMultiAccountSaveRequest.md)| Email accounts information. | 
+See parameter model documentation at [EmailClientMultiAccountSaveRequest](EmailClientMultiAccountSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.ClientFolderApi
 
-<a name="clientfoldercreate"></a>
-# **ClientFolderCreate**
+        ﻿<a name="Create"></a>
+# Create
 
 ```csharp
-void ClientFolderCreate(ClientFolderCreateRequest request)
+void Create(ClientFolderCreateRequest request)
 ```
 
 Create new folder in email account             
@@ -13,23 +13,17 @@ Create new folder in email account
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientFolderCreateRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientFolderCreateRequest**](ClientFolderCreateRequest.md)| Create folder request | 
+See parameter model documentation at [ClientFolderCreateRequest](ClientFolderCreateRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientfoldercreate"></a>
-# **ClientFolderCreateAsync**
+<a name="CreateAsync"></a>
+# CreateAsync
 
 ```csharp
-async Task ClientFolderCreateAsync(ClientFolderCreateRequest request)
+async Task CreateAsync(ClientFolderCreateRequest request)
 ```
 
 Create new folder in email account             
@@ -40,23 +34,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientFolderCreateRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientFolderCreateRequest**](ClientFolderCreateRequest.md)| Create folder request | 
+See parameter model documentation at [ClientFolderCreateRequest](ClientFolderCreateRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientfolderdelete"></a>
-# **ClientFolderDelete**
+        ﻿<a name="Delete"></a>
+# Delete
 
 ```csharp
-void ClientFolderDelete(ClientFolderDeleteRequest request)
+void Delete(ClientFolderDeleteRequest request)
 ```
 
 Delete a folder in email account             
@@ -65,23 +52,17 @@ Delete a folder in email account
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientFolderDeleteRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientFolderDeleteRequest**](ClientFolderDeleteRequest.md)| Delete folder request | 
+See parameter model documentation at [ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientfolderdelete"></a>
-# **ClientFolderDeleteAsync**
+<a name="DeleteAsync"></a>
+# DeleteAsync
 
 ```csharp
-async Task ClientFolderDeleteAsync(ClientFolderDeleteRequest request)
+async Task DeleteAsync(ClientFolderDeleteRequest request)
 ```
 
 Delete a folder in email account             
@@ -92,23 +73,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientFolderDeleteRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientFolderDeleteRequest**](ClientFolderDeleteRequest.md)| Delete folder request | 
+See parameter model documentation at [ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientfoldergetlist"></a>
-# **ClientFolderGetList**
+        ﻿<a name="GetList"></a>
+# GetList
 
 ```csharp
-MailServerFolderList ClientFolderGetList(ClientFolderGetListRequest request)
+MailServerFolderList GetList(ClientFolderGetListRequest request)
 ```
 
 Get folders list in email account             
@@ -117,7 +91,7 @@ Get folders list in email account
 
 [**MailServerFolderList**](MailServerFolderList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientFolderGetListRequest(
     account,
@@ -135,11 +109,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientfoldergetlist"></a>
-# **ClientFolderGetListAsync**
+<a name="GetListAsync"></a>
+# GetListAsync
 
 ```csharp
-async Task<MailServerFolderList> ClientFolderGetListAsync(ClientFolderGetListRequest request)
+async Task<MailServerFolderList> GetListAsync(ClientFolderGetListRequest request)
 ```
 
 Get folders list in email account             
@@ -150,7 +124,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**MailServerFolderList**](MailServerFolderList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientFolderGetListRequest(
     account,
@@ -167,4 +141,3 @@ Name | Type | Description  | Notes
  **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

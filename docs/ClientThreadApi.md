@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.ClientThreadApi
 
-<a name="clientthreaddelete"></a>
-# **ClientThreadDelete**
+        ﻿<a name="Delete"></a>
+# Delete
 
 ```csharp
-void ClientThreadDelete(ClientThreadDeleteRequest request)
+void Delete(ClientThreadDeleteRequest request)
 ```
 
 Delete thread by id. All messages from thread will also be deleted.             
@@ -13,23 +13,17 @@ Delete thread by id. All messages from thread will also be deleted.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientThreadDeleteRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientThreadDeleteRequest**](ClientThreadDeleteRequest.md)| Delete email thread request. | 
+See parameter model documentation at [ClientThreadDeleteRequest](ClientThreadDeleteRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientthreaddelete"></a>
-# **ClientThreadDeleteAsync**
+<a name="DeleteAsync"></a>
+# DeleteAsync
 
 ```csharp
-async Task ClientThreadDeleteAsync(ClientThreadDeleteRequest request)
+async Task DeleteAsync(ClientThreadDeleteRequest request)
 ```
 
 Delete thread by id. All messages from thread will also be deleted.             
@@ -40,23 +34,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientThreadDeleteRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientThreadDeleteRequest**](ClientThreadDeleteRequest.md)| Delete email thread request. | 
+See parameter model documentation at [ClientThreadDeleteRequest](ClientThreadDeleteRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientthreadgetlist"></a>
-# **ClientThreadGetList**
+        ﻿<a name="GetList"></a>
+# GetList
 
 ```csharp
-EmailThreadList ClientThreadGetList(ClientThreadGetListRequest request)
+EmailThreadList GetList(ClientThreadGetListRequest request)
 ```
 
 Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
@@ -65,7 +52,7 @@ Get message threads from folder. All messages are partly fetched (without email 
 
 [**EmailThreadList**](EmailThreadList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientThreadGetListRequest(
     folder,
@@ -87,11 +74,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientthreadgetlist"></a>
-# **ClientThreadGetListAsync**
+<a name="GetListAsync"></a>
+# GetListAsync
 
 ```csharp
-async Task<EmailThreadList> ClientThreadGetListAsync(ClientThreadGetListRequest request)
+async Task<EmailThreadList> GetListAsync(ClientThreadGetListRequest request)
 ```
 
 Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
@@ -102,7 +89,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailThreadList**](EmailThreadList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientThreadGetListRequest(
     folder,
@@ -123,12 +110,11 @@ Name | Type | Description  | Notes
  **messagesCacheLimit** | **int?**| Limit messages cache size if CacheFile is used. Ignored in accounts without limits support              | [optional] [default to 200]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientthreadgetmessages"></a>
-# **ClientThreadGetMessages**
+        ﻿<a name="GetMessages"></a>
+# GetMessages
 
 ```csharp
-EmailList ClientThreadGetMessages(ClientThreadGetMessagesRequest request)
+EmailList GetMessages(ClientThreadGetMessagesRequest request)
 ```
 
 Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
@@ -137,7 +123,7 @@ Get messages from thread by id. All messages are fully fetched. For accounts wit
 
 [**EmailList**](EmailList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientThreadGetMessagesRequest(
     threadId,
@@ -157,11 +143,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientthreadgetmessages"></a>
-# **ClientThreadGetMessagesAsync**
+<a name="GetMessagesAsync"></a>
+# GetMessagesAsync
 
 ```csharp
-async Task<EmailList> ClientThreadGetMessagesAsync(ClientThreadGetMessagesRequest request)
+async Task<EmailList> GetMessagesAsync(ClientThreadGetMessagesRequest request)
 ```
 
 Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
@@ -172,7 +158,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailList**](EmailList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientThreadGetMessagesRequest(
     threadId,
@@ -191,12 +177,11 @@ Name | Type | Description  | Notes
  **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientthreadmove"></a>
-# **ClientThreadMove**
+        ﻿<a name="Move"></a>
+# Move
 
 ```csharp
-void ClientThreadMove(ClientThreadMoveRequest request)
+void Move(ClientThreadMoveRequest request)
 ```
 
 Move thread to another folder.             
@@ -205,23 +190,17 @@ Move thread to another folder.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientThreadMoveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientThreadMoveRequest**](ClientThreadMoveRequest.md)| Move thread request. | 
+See parameter model documentation at [ClientThreadMoveRequest](ClientThreadMoveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientthreadmove"></a>
-# **ClientThreadMoveAsync**
+<a name="MoveAsync"></a>
+# MoveAsync
 
 ```csharp
-async Task ClientThreadMoveAsync(ClientThreadMoveRequest request)
+async Task MoveAsync(ClientThreadMoveRequest request)
 ```
 
 Move thread to another folder.             
@@ -232,23 +211,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientThreadMoveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientThreadMoveRequest**](ClientThreadMoveRequest.md)| Move thread request. | 
+See parameter model documentation at [ClientThreadMoveRequest](ClientThreadMoveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientthreadsetisread"></a>
-# **ClientThreadSetIsRead**
+        ﻿<a name="SetIsRead"></a>
+# SetIsRead
 
 ```csharp
-void ClientThreadSetIsRead(ClientThreadSetIsReadRequest request)
+void SetIsRead(ClientThreadSetIsReadRequest request)
 ```
 
 Mark all messages in thread as read or unread.             
@@ -257,23 +229,17 @@ Mark all messages in thread as read or unread.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientThreadSetIsReadRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientThreadSetIsReadRequest**](ClientThreadSetIsReadRequest.md)| Email account specifier and IsRead flag. | 
+See parameter model documentation at [ClientThreadSetIsReadRequest](ClientThreadSetIsReadRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientthreadsetisread"></a>
-# **ClientThreadSetIsReadAsync**
+<a name="SetIsReadAsync"></a>
+# SetIsReadAsync
 
 ```csharp
-async Task ClientThreadSetIsReadAsync(ClientThreadSetIsReadRequest request)
+async Task SetIsReadAsync(ClientThreadSetIsReadRequest request)
 ```
 
 Mark all messages in thread as read or unread.             
@@ -284,15 +250,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientThreadSetIsReadRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientThreadSetIsReadRequest**](ClientThreadSetIsReadRequest.md)| Email account specifier and IsRead flag. | 
+See parameter model documentation at [ClientThreadSetIsReadRequest](ClientThreadSetIsReadRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

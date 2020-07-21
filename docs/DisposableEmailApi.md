@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.DisposableEmailApi
 
-<a name="disposableemailisdisposable"></a>
-# **DisposableEmailIsDisposable**
+        ﻿<a name="IsDisposable"></a>
+# IsDisposable
 
 ```csharp
-ValueTOfBoolean DisposableEmailIsDisposable(DisposableEmailIsDisposableRequest request)
+ValueTOfBoolean IsDisposable(DisposableEmailIsDisposableRequest request)
 ```
 
 Check email address is disposable             
@@ -13,7 +13,7 @@ Check email address is disposable
 
 [**ValueTOfBoolean**](ValueTOfBoolean.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new DisposableEmailIsDisposableRequest(
     address)
@@ -25,11 +25,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="disposableemailisdisposable"></a>
-# **DisposableEmailIsDisposableAsync**
+<a name="IsDisposableAsync"></a>
+# IsDisposableAsync
 
 ```csharp
-async Task<ValueTOfBoolean> DisposableEmailIsDisposableAsync(DisposableEmailIsDisposableRequest request)
+async Task<ValueTOfBoolean> IsDisposableAsync(DisposableEmailIsDisposableRequest request)
 ```
 
 Check email address is disposable             
@@ -40,7 +40,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**ValueTOfBoolean**](ValueTOfBoolean.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new DisposableEmailIsDisposableRequest(
     address)
@@ -51,4 +51,3 @@ Name | Type | Description  | Notes
  **address** | **string**| An email address to check | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.MapiMessageApi
 
-<a name="mapimessageasemaildto"></a>
-# **MapiMessageAsEmailDto**
+        ﻿<a name="AsEmailDto"></a>
+# AsEmailDto
 
 ```csharp
-EmailDto MapiMessageAsEmailDto(MapiMessageAsEmailDtoRequest request)
+EmailDto AsEmailDto(MapiMessageDto mapiMessage)
 ```
 
 Converts MAPI message model to EmailDto model             
@@ -13,23 +13,17 @@ Converts MAPI message model to EmailDto model
 
 [**EmailDto**](EmailDto.md)
 
-### Request Parameters
-```csharp
-new MapiMessageAsEmailDtoRequest(
-    mapiMessage)
-```
+### mapiMessage Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **mapiMessage** | [**MapiMessageDto**](MapiMessageDto.md)| MAPI message model to convert | 
+See parameter model documentation at [MapiMessageDto](MapiMessageDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapimessageasemaildto"></a>
-# **MapiMessageAsEmailDtoAsync**
+<a name="AsEmailDtoAsync"></a>
+# AsEmailDtoAsync
 
 ```csharp
-async Task<EmailDto> MapiMessageAsEmailDtoAsync(MapiMessageAsEmailDtoRequest request)
+async Task<EmailDto> AsEmailDtoAsync(MapiMessageDto mapiMessage)
 ```
 
 Converts MAPI message model to EmailDto model             
@@ -40,23 +34,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**EmailDto**](EmailDto.md)>
 
-### Request Parameters
-```csharp
-new MapiMessageAsEmailDtoRequest(
-    mapiMessage)
-```
+### mapiMessage Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **mapiMessage** | [**MapiMessageDto**](MapiMessageDto.md)| MAPI message model to convert | 
+See parameter model documentation at [MapiMessageDto](MapiMessageDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="mapimessageasfile"></a>
-# **MapiMessageAsFile**
+        ﻿<a name="AsFile"></a>
+# AsFile
 
 ```csharp
-Stream MapiMessageAsFile(MapiMessageAsFileRequest request)
+Stream AsFile(MapiMessageAsFileRequest request)
 ```
 
 Converts MAPI message model to specified format and returns as file.             
@@ -65,23 +52,17 @@ Converts MAPI message model to specified format and returns as file.
 
 **Stream**
 
-### Request Parameters
-```csharp
-new MapiMessageAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**MapiMessageAsFileRequest**](MapiMessageAsFileRequest.md)| MAPI message model to convert. | 
+See parameter model documentation at [MapiMessageAsFileRequest](MapiMessageAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapimessageasfile"></a>
-# **MapiMessageAsFileAsync**
+<a name="AsFileAsync"></a>
+# AsFileAsync
 
 ```csharp
-async Task<Stream> MapiMessageAsFileAsync(MapiMessageAsFileRequest request)
+async Task<Stream> AsFileAsync(MapiMessageAsFileRequest request)
 ```
 
 Converts MAPI message model to specified format and returns as file.             
@@ -92,23 +73,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
-```csharp
-new MapiMessageAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**MapiMessageAsFileRequest**](MapiMessageAsFileRequest.md)| MAPI message model to convert. | 
+See parameter model documentation at [MapiMessageAsFileRequest](MapiMessageAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="mapimessagefromfile"></a>
-# **MapiMessageFromFile**
+        ﻿<a name="FromFile"></a>
+# FromFile
 
 ```csharp
-MapiMessageDto MapiMessageFromFile(MapiMessageFromFileRequest request)
+MapiMessageDto FromFile(MapiMessageFromFileRequest request)
 ```
 
 Converts email file to a MAPI model representation             
@@ -117,7 +91,7 @@ Converts email file to a MAPI model representation
 
 [**MapiMessageDto**](MapiMessageDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MapiMessageFromFileRequest(
     fileFormat,
@@ -131,11 +105,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapimessagefromfile"></a>
-# **MapiMessageFromFileAsync**
+<a name="FromFileAsync"></a>
+# FromFileAsync
 
 ```csharp
-async Task<MapiMessageDto> MapiMessageFromFileAsync(MapiMessageFromFileRequest request)
+async Task<MapiMessageDto> FromFileAsync(MapiMessageFromFileRequest request)
 ```
 
 Converts email file to a MAPI model representation             
@@ -146,7 +120,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**MapiMessageDto**](MapiMessageDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MapiMessageFromFileRequest(
     fileFormat,
@@ -159,12 +133,11 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="mapimessageget"></a>
-# **MapiMessageGet**
+        ﻿<a name="Get"></a>
+# Get
 
 ```csharp
-MapiMessageDto MapiMessageGet(MapiMessageGetRequest request)
+MapiMessageDto Get(MapiMessageGetRequest request)
 ```
 
 Get MAPI message document.             
@@ -173,7 +146,7 @@ Get MAPI message document.
 
 [**MapiMessageDto**](MapiMessageDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MapiMessageGetRequest(
     format,
@@ -191,11 +164,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapimessageget"></a>
-# **MapiMessageGetAsync**
+<a name="GetAsync"></a>
+# GetAsync
 
 ```csharp
-async Task<MapiMessageDto> MapiMessageGetAsync(MapiMessageGetRequest request)
+async Task<MapiMessageDto> GetAsync(MapiMessageGetRequest request)
 ```
 
 Get MAPI message document.             
@@ -206,7 +179,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**MapiMessageDto**](MapiMessageDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MapiMessageGetRequest(
     format,
@@ -223,12 +196,11 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="mapimessagesave"></a>
-# **MapiMessageSave**
+        ﻿<a name="Save"></a>
+# Save
 
 ```csharp
-void MapiMessageSave(MapiMessageSaveRequest request)
+void Save(MapiMessageSaveRequest request)
 ```
 
 Save MAPI message to storage.             
@@ -237,23 +209,17 @@ Save MAPI message to storage.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new MapiMessageSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**MapiMessageSaveRequest**](MapiMessageSaveRequest.md)| Message create/update request. | 
+See parameter model documentation at [MapiMessageSaveRequest](MapiMessageSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="mapimessagesave"></a>
-# **MapiMessageSaveAsync**
+<a name="SaveAsync"></a>
+# SaveAsync
 
 ```csharp
-async Task MapiMessageSaveAsync(MapiMessageSaveRequest request)
+async Task SaveAsync(MapiMessageSaveRequest request)
 ```
 
 Save MAPI message to storage.             
@@ -264,15 +230,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new MapiMessageSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**MapiMessageSaveRequest**](MapiMessageSaveRequest.md)| Message create/update request. | 
+See parameter model documentation at [MapiMessageSaveRequest](MapiMessageSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

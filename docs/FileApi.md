@@ -1,7 +1,7 @@
 # Aspose.Email.Cloud.Sdk.FileApi
 
-<a name="copyfile"></a>
-# **CopyFile**
+        ﻿<a name="CopyFile"></a>
+# CopyFile
 
 ```csharp
 void CopyFile(CopyFileRequest request)
@@ -13,7 +13,7 @@ Copy file
 
 void (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CopyFileRequest(
     srcPath,
@@ -33,8 +33,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="copyfile"></a>
-# **CopyFileAsync**
+<a name="CopyFileAsync"></a>
+# CopyFileAsync
 
 ```csharp
 async Task CopyFileAsync(CopyFileRequest request)
@@ -48,7 +48,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new CopyFileRequest(
     srcPath,
@@ -67,9 +67,8 @@ Name | Type | Description  | Notes
  **versionId** | **string**| File version ID to copy | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="deletefile"></a>
-# **DeleteFile**
+        ﻿<a name="DeleteFile"></a>
+# DeleteFile
 
 ```csharp
 void DeleteFile(DeleteFileRequest request)
@@ -81,7 +80,7 @@ Delete file
 
 void (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new DeleteFileRequest(
     path,
@@ -97,8 +96,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="deletefile"></a>
-# **DeleteFileAsync**
+<a name="DeleteFileAsync"></a>
+# DeleteFileAsync
 
 ```csharp
 async Task DeleteFileAsync(DeleteFileRequest request)
@@ -112,7 +111,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new DeleteFileRequest(
     path,
@@ -127,9 +126,8 @@ Name | Type | Description  | Notes
  **versionId** | **string**| File version ID to delete | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="downloadfile"></a>
-# **DownloadFile**
+        ﻿<a name="DownloadFile"></a>
+# DownloadFile
 
 ```csharp
 Stream DownloadFile(DownloadFileRequest request)
@@ -141,7 +139,7 @@ Download file
 
 **Stream**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new DownloadFileRequest(
     path,
@@ -157,8 +155,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="downloadfile"></a>
-# **DownloadFileAsync**
+<a name="DownloadFileAsync"></a>
+# DownloadFileAsync
 
 ```csharp
 async Task<Stream> DownloadFileAsync(DownloadFileRequest request)
@@ -172,7 +170,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new DownloadFileRequest(
     path,
@@ -187,9 +185,8 @@ Name | Type | Description  | Notes
  **versionId** | **string**| File version ID to download | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="movefile"></a>
-# **MoveFile**
+        ﻿<a name="MoveFile"></a>
+# MoveFile
 
 ```csharp
 void MoveFile(MoveFileRequest request)
@@ -201,7 +198,7 @@ Move file
 
 void (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MoveFileRequest(
     srcPath,
@@ -221,8 +218,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="movefile"></a>
-# **MoveFileAsync**
+<a name="MoveFileAsync"></a>
+# MoveFileAsync
 
 ```csharp
 async Task MoveFileAsync(MoveFileRequest request)
@@ -236,7 +233,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new MoveFileRequest(
     srcPath,
@@ -255,9 +252,8 @@ Name | Type | Description  | Notes
  **versionId** | **string**| File version ID to move | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="uploadfile"></a>
-# **UploadFile**
+        ﻿<a name="UploadFile"></a>
+# UploadFile
 
 ```csharp
 FilesUploadResult UploadFile(UploadFileRequest request)
@@ -269,7 +265,7 @@ Upload file
 
 [**FilesUploadResult**](FilesUploadResult.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new UploadFileRequest(
     path,
@@ -285,8 +281,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="uploadfile"></a>
-# **UploadFileAsync**
+<a name="UploadFileAsync"></a>
+# UploadFileAsync
 
 ```csharp
 async Task<FilesUploadResult> UploadFileAsync(UploadFileRequest request)
@@ -300,7 +296,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**FilesUploadResult**](FilesUploadResult.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new UploadFileRequest(
     path,
@@ -315,4 +311,3 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

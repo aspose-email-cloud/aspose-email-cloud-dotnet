@@ -6,16 +6,17 @@ namespace Aspose.Email.Cloud.Sdk.Api
     using Model;
     using Client;
     
-    /// <summary>
-    /// Aspose.Email for Cloud API. CloudStorage operations. 
-    /// </summary>
+    /** <summary>Cloud file storage operations.             </summary>*/
     public class CloudStorageGroup
     {
     
+        /** <summary>File operations controller</summary>*/
         public FileApi File { get; }
     
+        /** <summary>Folder operations controller</summary>*/
         public FolderApi Folder { get; }
     
+        /** <summary>Storage operations controller</summary>*/
         public StorageApi Storage { get; }
     
         internal CloudStorageGroup(ApiInvoker apiInvoker, Configuration configuration)

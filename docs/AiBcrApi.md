@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.AiBcrApi
 
-<a name="aibcrparse"></a>
-# **AiBcrParse**
+        ﻿<a name="Parse"></a>
+# Parse
 
 ```csharp
-ContactList AiBcrParse(AiBcrParseRequest request)
+ContactList Parse(AiBcrParseRequest request)
 ```
 
 Parse images to vCard document models             
@@ -13,7 +13,7 @@ Parse images to vCard document models
 
 [**ContactList**](ContactList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiBcrParseRequest(
     file,
@@ -31,11 +31,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="aibcrparse"></a>
-# **AiBcrParseAsync**
+<a name="ParseAsync"></a>
+# ParseAsync
 
 ```csharp
-async Task<ContactList> AiBcrParseAsync(AiBcrParseRequest request)
+async Task<ContactList> ParseAsync(AiBcrParseRequest request)
 ```
 
 Parse images to vCard document models             
@@ -46,7 +46,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**ContactList**](ContactList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiBcrParseRequest(
     file,
@@ -63,12 +63,11 @@ Name | Type | Description  | Notes
  **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="aibcrparsestorage"></a>
-# **AiBcrParseStorage**
+        ﻿<a name="ParseStorage"></a>
+# ParseStorage
 
 ```csharp
-StorageFileLocationList AiBcrParseStorage(AiBcrParseStorageRequest request)
+StorageFileLocationList ParseStorage(AiBcrParseStorageRequest request)
 ```
 
 Parse images from storage to vCard files             
@@ -77,23 +76,17 @@ Parse images from storage to vCard files
 
 [**StorageFileLocationList**](StorageFileLocationList.md)
 
-### Request Parameters
-```csharp
-new AiBcrParseStorageRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiBcrParseStorageRequest**](AiBcrParseStorageRequest.md)| Request with images located on storage | 
+See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="aibcrparsestorage"></a>
-# **AiBcrParseStorageAsync**
+<a name="ParseStorageAsync"></a>
+# ParseStorageAsync
 
 ```csharp
-async Task<StorageFileLocationList> AiBcrParseStorageAsync(AiBcrParseStorageRequest request)
+async Task<StorageFileLocationList> ParseStorageAsync(AiBcrParseStorageRequest request)
 ```
 
 Parse images from storage to vCard files             
@@ -104,15 +97,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**StorageFileLocationList**](StorageFileLocationList.md)>
 
-### Request Parameters
-```csharp
-new AiBcrParseStorageRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiBcrParseStorageRequest**](AiBcrParseStorageRequest.md)| Request with images located on storage | 
+See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

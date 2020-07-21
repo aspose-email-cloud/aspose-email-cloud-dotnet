@@ -6,16 +6,17 @@ namespace Aspose.Email.Cloud.Sdk.Api
     using Model;
     using Client;
     
-    /// <summary>
-    /// Aspose.Email for Cloud API. Mapi operations. 
-    /// </summary>
+    /** <summary>MAPI operations.             </summary>*/
     public class MapiGroup
     {
     
+        /** <summary>MAPI calendar operations.             </summary>*/
         public MapiCalendarApi Calendar { get; }
     
+        /** <summary>MAPI contact operations             </summary>*/
         public MapiContactApi Contact { get; }
     
+        /** <summary>MAPI message operations             </summary>*/
         public MapiMessageApi Message { get; }
     
         internal MapiGroup(ApiInvoker apiInvoker, Configuration configuration)

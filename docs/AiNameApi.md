@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.AiNameApi
 
-<a name="ainamecomplete"></a>
-# **AiNameComplete**
+        ﻿<a name="Complete"></a>
+# Complete
 
 ```csharp
-AiNameWeightedVariants AiNameComplete(AiNameCompleteRequest request)
+AiNameWeightedVariants Complete(AiNameCompleteRequest request)
 ```
 
 The call proposes k most probable names for given starting characters             
@@ -13,7 +13,7 @@ The call proposes k most probable names for given starting characters
 
 [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameCompleteRequest(
     name,
@@ -35,11 +35,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainamecomplete"></a>
-# **AiNameCompleteAsync**
+<a name="CompleteAsync"></a>
+# CompleteAsync
 
 ```csharp
-async Task<AiNameWeightedVariants> AiNameCompleteAsync(AiNameCompleteRequest request)
+async Task<AiNameWeightedVariants> CompleteAsync(AiNameCompleteRequest request)
 ```
 
 The call proposes k most probable names for given starting characters             
@@ -50,7 +50,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameCompleteRequest(
     name,
@@ -71,12 +71,11 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainameexpand"></a>
-# **AiNameExpand**
+        ﻿<a name="Expand"></a>
+# Expand
 
 ```csharp
-AiNameWeightedVariants AiNameExpand(AiNameExpandRequest request)
+AiNameWeightedVariants Expand(AiNameExpandRequest request)
 ```
 
 Expands a person's name into a list of possible alternatives using options for expanding instructions             
@@ -85,7 +84,7 @@ Expands a person's name into a list of possible alternatives using options for e
 
 [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameExpandRequest(
     name,
@@ -107,11 +106,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainameexpand"></a>
-# **AiNameExpandAsync**
+<a name="ExpandAsync"></a>
+# ExpandAsync
 
 ```csharp
-async Task<AiNameWeightedVariants> AiNameExpandAsync(AiNameExpandRequest request)
+async Task<AiNameWeightedVariants> ExpandAsync(AiNameExpandRequest request)
 ```
 
 Expands a person's name into a list of possible alternatives using options for expanding instructions             
@@ -122,7 +121,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameExpandRequest(
     name,
@@ -143,12 +142,11 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainameexpandparsed"></a>
-# **AiNameExpandParsed**
+        ﻿<a name="ExpandParsed"></a>
+# ExpandParsed
 
 ```csharp
-AiNameWeightedVariants AiNameExpandParsed(AiNameExpandParsedRequest request)
+AiNameWeightedVariants ExpandParsed(AiNameParsedRequest request)
 ```
 
 Expands a person's parsed name into a list of possible alternatives using options for expanding instructions             
@@ -157,23 +155,17 @@ Expands a person's parsed name into a list of possible alternatives using option
 
 [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
-### Request Parameters
-```csharp
-new AiNameExpandParsedRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Parsed name with options | 
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainameexpandparsed"></a>
-# **AiNameExpandParsedAsync**
+<a name="ExpandParsedAsync"></a>
+# ExpandParsedAsync
 
 ```csharp
-async Task<AiNameWeightedVariants> AiNameExpandParsedAsync(AiNameExpandParsedRequest request)
+async Task<AiNameWeightedVariants> ExpandParsedAsync(AiNameParsedRequest request)
 ```
 
 Expands a person's parsed name into a list of possible alternatives using options for expanding instructions             
@@ -184,23 +176,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
 
-### Request Parameters
-```csharp
-new AiNameExpandParsedRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Parsed name with options | 
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainameformat"></a>
-# **AiNameFormat**
+        ﻿<a name="Format"></a>
+# Format
 
 ```csharp
-AiNameFormatted AiNameFormat(AiNameFormatRequest request)
+AiNameFormatted Format(AiNameFormatRequest request)
 ```
 
 Formats a person's name in correct case and name order using options for formatting instructions             
@@ -209,7 +194,7 @@ Formats a person's name in correct case and name order using options for formatt
 
 [**AiNameFormatted**](AiNameFormatted.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameFormatRequest(
     name,
@@ -233,11 +218,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainameformat"></a>
-# **AiNameFormatAsync**
+<a name="FormatAsync"></a>
+# FormatAsync
 
 ```csharp
-async Task<AiNameFormatted> AiNameFormatAsync(AiNameFormatRequest request)
+async Task<AiNameFormatted> FormatAsync(AiNameFormatRequest request)
 ```
 
 Formats a person's name in correct case and name order using options for formatting instructions             
@@ -248,7 +233,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameFormatted**](AiNameFormatted.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameFormatRequest(
     name,
@@ -271,12 +256,11 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainameformatparsed"></a>
-# **AiNameFormatParsed**
+        ﻿<a name="FormatParsed"></a>
+# FormatParsed
 
 ```csharp
-AiNameFormatted AiNameFormatParsed(AiNameFormatParsedRequest request)
+AiNameFormatted FormatParsed(AiNameParsedRequest request)
 ```
 
 Formats a person's parsed name in correct case and name order using options for formatting instructions             
@@ -285,23 +269,17 @@ Formats a person's parsed name in correct case and name order using options for 
 
 [**AiNameFormatted**](AiNameFormatted.md)
 
-### Request Parameters
-```csharp
-new AiNameFormatParsedRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Parsed name with options | 
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainameformatparsed"></a>
-# **AiNameFormatParsedAsync**
+<a name="FormatParsedAsync"></a>
+# FormatParsedAsync
 
 ```csharp
-async Task<AiNameFormatted> AiNameFormatParsedAsync(AiNameFormatParsedRequest request)
+async Task<AiNameFormatted> FormatParsedAsync(AiNameParsedRequest request)
 ```
 
 Formats a person's parsed name in correct case and name order using options for formatting instructions             
@@ -312,23 +290,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameFormatted**](AiNameFormatted.md)>
 
-### Request Parameters
-```csharp
-new AiNameFormatParsedRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Parsed name with options | 
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainamegenderize"></a>
-# **AiNameGenderize**
+        ﻿<a name="Genderize"></a>
+# Genderize
 
 ```csharp
-AiNameGenderHypothesisList AiNameGenderize(AiNameGenderizeRequest request)
+AiNameGenderHypothesisList Genderize(AiNameGenderizeRequest request)
 ```
 
 Detect person's gender from name string             
@@ -337,7 +308,7 @@ Detect person's gender from name string
 
 [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameGenderizeRequest(
     name,
@@ -359,11 +330,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainamegenderize"></a>
-# **AiNameGenderizeAsync**
+<a name="GenderizeAsync"></a>
+# GenderizeAsync
 
 ```csharp
-async Task<AiNameGenderHypothesisList> AiNameGenderizeAsync(AiNameGenderizeRequest request)
+async Task<AiNameGenderHypothesisList> GenderizeAsync(AiNameGenderizeRequest request)
 ```
 
 Detect person's gender from name string             
@@ -374,7 +345,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameGenderizeRequest(
     name,
@@ -395,12 +366,11 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainamegenderizeparsed"></a>
-# **AiNameGenderizeParsed**
+        ﻿<a name="GenderizeParsed"></a>
+# GenderizeParsed
 
 ```csharp
-AiNameGenderHypothesisList AiNameGenderizeParsed(AiNameGenderizeParsedRequest request)
+AiNameGenderHypothesisList GenderizeParsed(AiNameParsedRequest request)
 ```
 
 Detect person's gender from parsed name             
@@ -409,23 +379,17 @@ Detect person's gender from parsed name
 
 [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
-### Request Parameters
-```csharp
-new AiNameGenderizeParsedRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Gender detection request data | 
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainamegenderizeparsed"></a>
-# **AiNameGenderizeParsedAsync**
+<a name="GenderizeParsedAsync"></a>
+# GenderizeParsedAsync
 
 ```csharp
-async Task<AiNameGenderHypothesisList> AiNameGenderizeParsedAsync(AiNameGenderizeParsedRequest request)
+async Task<AiNameGenderHypothesisList> GenderizeParsedAsync(AiNameParsedRequest request)
 ```
 
 Detect person's gender from parsed name             
@@ -436,23 +400,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
 
-### Request Parameters
-```csharp
-new AiNameGenderizeParsedRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiNameParsedRequest**](AiNameParsedRequest.md)| Gender detection request data | 
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainamematch"></a>
-# **AiNameMatch**
+        ﻿<a name="Match"></a>
+# Match
 
 ```csharp
-AiNameMatchResult AiNameMatch(AiNameMatchRequest request)
+AiNameMatchResult Match(AiNameMatchRequest request)
 ```
 
 Compare people's names. Uses options for comparing instructions             
@@ -461,7 +418,7 @@ Compare people's names. Uses options for comparing instructions
 
 [**AiNameMatchResult**](AiNameMatchResult.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameMatchRequest(
     name,
@@ -485,11 +442,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainamematch"></a>
-# **AiNameMatchAsync**
+<a name="MatchAsync"></a>
+# MatchAsync
 
 ```csharp
-async Task<AiNameMatchResult> AiNameMatchAsync(AiNameMatchRequest request)
+async Task<AiNameMatchResult> MatchAsync(AiNameMatchRequest request)
 ```
 
 Compare people's names. Uses options for comparing instructions             
@@ -500,7 +457,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameMatchRequest(
     name,
@@ -523,12 +480,11 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainamematchparsed"></a>
-# **AiNameMatchParsed**
+        ﻿<a name="MatchParsed"></a>
+# MatchParsed
 
 ```csharp
-AiNameMatchResult AiNameMatchParsed(AiNameMatchParsedRequest request)
+AiNameMatchResult MatchParsed(AiNameParsedMatchRequest request)
 ```
 
 Compare people's parsed names and attributes. Uses options for comparing instructions             
@@ -537,23 +493,17 @@ Compare people's parsed names and attributes. Uses options for comparing instruc
 
 [**AiNameMatchResult**](AiNameMatchResult.md)
 
-### Request Parameters
-```csharp
-new AiNameMatchParsedRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiNameParsedMatchRequest**](AiNameParsedMatchRequest.md)| Parsed names to match | 
+See parameter model documentation at [AiNameParsedMatchRequest](AiNameParsedMatchRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainamematchparsed"></a>
-# **AiNameMatchParsedAsync**
+<a name="MatchParsedAsync"></a>
+# MatchParsedAsync
 
 ```csharp
-async Task<AiNameMatchResult> AiNameMatchParsedAsync(AiNameMatchParsedRequest request)
+async Task<AiNameMatchResult> MatchParsedAsync(AiNameParsedMatchRequest request)
 ```
 
 Compare people's parsed names and attributes. Uses options for comparing instructions             
@@ -564,23 +514,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
 
-### Request Parameters
-```csharp
-new AiNameMatchParsedRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**AiNameParsedMatchRequest**](AiNameParsedMatchRequest.md)| Parsed names to match | 
+See parameter model documentation at [AiNameParsedMatchRequest](AiNameParsedMatchRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainameparse"></a>
-# **AiNameParse**
+        ﻿<a name="Parse"></a>
+# Parse
 
 ```csharp
-AiNameComponentList AiNameParse(AiNameParseRequest request)
+AiNameComponentList Parse(AiNameParseRequest request)
 ```
 
 Parse name to components             
@@ -589,7 +532,7 @@ Parse name to components
 
 [**AiNameComponentList**](AiNameComponentList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameParseRequest(
     name,
@@ -611,11 +554,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainameparse"></a>
-# **AiNameParseAsync**
+<a name="ParseAsync"></a>
+# ParseAsync
 
 ```csharp
-async Task<AiNameComponentList> AiNameParseAsync(AiNameParseRequest request)
+async Task<AiNameComponentList> ParseAsync(AiNameParseRequest request)
 ```
 
 Parse name to components             
@@ -626,7 +569,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameComponentList**](AiNameComponentList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameParseRequest(
     name,
@@ -647,12 +590,11 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="ainameparseemailaddress"></a>
-# **AiNameParseEmailAddress**
+        ﻿<a name="ParseEmailAddress"></a>
+# ParseEmailAddress
 
 ```csharp
-AiNameExtractedList AiNameParseEmailAddress(AiNameParseEmailAddressRequest request)
+AiNameExtractedList ParseEmailAddress(AiNameParseEmailAddressRequest request)
 ```
 
 Parse person's name out of an email address             
@@ -661,7 +603,7 @@ Parse person's name out of an email address
 
 [**AiNameExtractedList**](AiNameExtractedList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameParseEmailAddressRequest(
     emailAddress,
@@ -683,11 +625,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="ainameparseemailaddress"></a>
-# **AiNameParseEmailAddressAsync**
+<a name="ParseEmailAddressAsync"></a>
+# ParseEmailAddressAsync
 
 ```csharp
-async Task<AiNameExtractedList> AiNameParseEmailAddressAsync(AiNameParseEmailAddressRequest request)
+async Task<AiNameExtractedList> ParseEmailAddressAsync(AiNameParseEmailAddressRequest request)
 ```
 
 Parse person's name out of an email address             
@@ -698,7 +640,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**AiNameExtractedList**](AiNameExtractedList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new AiNameParseEmailAddressRequest(
     emailAddress,
@@ -719,4 +661,3 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

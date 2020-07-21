@@ -14,23 +14,32 @@ namespace Aspose.Email.Cloud.Sdk.Api
         private readonly ApiInvoker apiInvoker;
         private readonly Configuration configuration;
     
+        /** <summary>iCalendar document operations.             </summary>*/
         public CalendarApi Calendar {get;}
     
+        /** <summary>Contact document operations. Supported formats: VCard, MSG, WebDav             </summary>*/
         public ContactApi Contact {get;}
     
-        public DisposableEmailApi DisposableEmail {get;}
-    
+        /** <summary>Email document (*.eml) operations.             </summary>*/
         public EmailApi Email {get;}
     
+        /** <summary>Check email address is disposable operations             </summary>*/
+        public DisposableEmailApi DisposableEmail {get;}
+    
+        /** <summary>Email server configuration discovery.             </summary>*/
         public EmailConfigApi EmailConfig {get;}
     
     
+        /** <summary>MAPI operations.             </summary>*/
         public MapiGroup Mapi {get;}
     
+        /** <summary>Builtin Email client operations.             </summary>*/
         public ClientGroup Client {get;}
     
+        /** <summary>AI powered operations.             </summary>*/
         public AiGroup Ai {get;}
     
+        /** <summary>Cloud file storage operations.             </summary>*/
         public CloudStorageGroup CloudStorage {get;}
     
 
@@ -65,9 +74,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
         
             Contact = new ContactApi(apiInvoker, this.configuration);
         
-            DisposableEmail = new DisposableEmailApi(apiInvoker, this.configuration);
-        
             Email = new EmailApi(apiInvoker, this.configuration);
+        
+            DisposableEmail = new DisposableEmailApi(apiInvoker, this.configuration);
         
             EmailConfig = new EmailConfigApi(apiInvoker, this.configuration);
         

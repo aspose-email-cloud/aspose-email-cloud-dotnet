@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.ClientMessageApi
 
-<a name="clientmessageappend"></a>
-# **ClientMessageAppend**
+        ﻿<a name="Append"></a>
+# Append
 
 ```csharp
-ValueTOfString ClientMessageAppend(ClientMessageAppendRequest request)
+ValueTOfString Append(ClientMessageAppendRequest request)
 ```
 
 Add email message to specified folder in email account.             
@@ -13,23 +13,17 @@ Add email message to specified folder in email account.
 
 [**ValueTOfString**](ValueTOfString.md)
 
-### Request Parameters
-```csharp
-new ClientMessageAppendRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageAppendRequest**](ClientMessageAppendRequest.md)| Append email request. | 
+See parameter model documentation at [ClientMessageAppendRequest](ClientMessageAppendRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessageappend"></a>
-# **ClientMessageAppendAsync**
+<a name="AppendAsync"></a>
+# AppendAsync
 
 ```csharp
-async Task<ValueTOfString> ClientMessageAppendAsync(ClientMessageAppendRequest request)
+async Task<ValueTOfString> AppendAsync(ClientMessageAppendRequest request)
 ```
 
 Add email message to specified folder in email account.             
@@ -40,23 +34,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**ValueTOfString**](ValueTOfString.md)>
 
-### Request Parameters
-```csharp
-new ClientMessageAppendRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageAppendRequest**](ClientMessageAppendRequest.md)| Append email request. | 
+See parameter model documentation at [ClientMessageAppendRequest](ClientMessageAppendRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientmessageappendfile"></a>
-# **ClientMessageAppendFile**
+        ﻿<a name="AppendFile"></a>
+# AppendFile
 
 ```csharp
-ValueTOfString ClientMessageAppendFile(ClientMessageAppendFileRequest request)
+ValueTOfString AppendFile(ClientMessageAppendFileRequest request)
 ```
 
 Add email message from file to specified folder in email account.             
@@ -65,7 +52,7 @@ Add email message from file to specified folder in email account.
 
 [**ValueTOfString**](ValueTOfString.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageAppendFileRequest(
     account,
@@ -89,11 +76,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessageappendfile"></a>
-# **ClientMessageAppendFileAsync**
+<a name="AppendFileAsync"></a>
+# AppendFileAsync
 
 ```csharp
-async Task<ValueTOfString> ClientMessageAppendFileAsync(ClientMessageAppendFileRequest request)
+async Task<ValueTOfString> AppendFileAsync(ClientMessageAppendFileRequest request)
 ```
 
 Add email message from file to specified folder in email account.             
@@ -104,7 +91,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**ValueTOfString**](ValueTOfString.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageAppendFileRequest(
     account,
@@ -127,12 +114,11 @@ Name | Type | Description  | Notes
  **markAsSent** | **bool?**| Determines that appended message should be market as sent or not. | [optional] [default to true]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientmessagedelete"></a>
-# **ClientMessageDelete**
+        ﻿<a name="Delete"></a>
+# Delete
 
 ```csharp
-void ClientMessageDelete(ClientMessageDeleteRequest request)
+void Delete(ClientMessageDeleteRequest request)
 ```
 
 Delete message.             
@@ -141,23 +127,17 @@ Delete message.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientMessageDeleteRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageDeleteRequest**](ClientMessageDeleteRequest.md)| Delete message request. | 
+See parameter model documentation at [ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessagedelete"></a>
-# **ClientMessageDeleteAsync**
+<a name="DeleteAsync"></a>
+# DeleteAsync
 
 ```csharp
-async Task ClientMessageDeleteAsync(ClientMessageDeleteRequest request)
+async Task DeleteAsync(ClientMessageDeleteRequest request)
 ```
 
 Delete message.             
@@ -168,23 +148,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientMessageDeleteRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageDeleteRequest**](ClientMessageDeleteRequest.md)| Delete message request. | 
+See parameter model documentation at [ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientmessagefetch"></a>
-# **ClientMessageFetch**
+        ﻿<a name="Fetch"></a>
+# Fetch
 
 ```csharp
-MailMessageBase ClientMessageFetch(ClientMessageFetchRequest request)
+MailMessageBase Fetch(ClientMessageFetchRequest request)
 ```
 
 Fetch message from email account             
@@ -193,7 +166,7 @@ Fetch message from email account
 
 [**MailMessageBase**](MailMessageBase.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageFetchRequest(
     messageId,
@@ -217,11 +190,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessagefetch"></a>
-# **ClientMessageFetchAsync**
+<a name="FetchAsync"></a>
+# FetchAsync
 
 ```csharp
-async Task<MailMessageBase> ClientMessageFetchAsync(ClientMessageFetchRequest request)
+async Task<MailMessageBase> FetchAsync(ClientMessageFetchRequest request)
 ```
 
 Fetch message from email account             
@@ -232,7 +205,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**MailMessageBase**](MailMessageBase.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageFetchRequest(
     messageId,
@@ -255,12 +228,11 @@ Name | Type | Description  | Notes
  **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientmessagefetchfile"></a>
-# **ClientMessageFetchFile**
+        ﻿<a name="FetchFile"></a>
+# FetchFile
 
 ```csharp
-Stream ClientMessageFetchFile(ClientMessageFetchFileRequest request)
+Stream FetchFile(ClientMessageFetchFileRequest request)
 ```
 
 Fetch message as file from email account             
@@ -269,7 +241,7 @@ Fetch message as file from email account
 
 **Stream**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageFetchFileRequest(
     messageId,
@@ -291,11 +263,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessagefetchfile"></a>
-# **ClientMessageFetchFileAsync**
+<a name="FetchFileAsync"></a>
+# FetchFileAsync
 
 ```csharp
-async Task<Stream> ClientMessageFetchFileAsync(ClientMessageFetchFileRequest request)
+async Task<Stream> FetchFileAsync(ClientMessageFetchFileRequest request)
 ```
 
 Fetch message as file from email account             
@@ -306,7 +278,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageFetchFileRequest(
     messageId,
@@ -327,12 +299,11 @@ Name | Type | Description  | Notes
  **format** | **string**| Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientmessagelist"></a>
-# **ClientMessageList**
+        ﻿<a name="List"></a>
+# List
 
 ```csharp
-MailMessageBaseList ClientMessageList(ClientMessageListRequest request)
+MailMessageBaseList List(ClientMessageListRequest request)
 ```
 
 Get messages from folder, filtered by query             
@@ -343,7 +314,7 @@ The query string should have the following view.      The example of a simple ex
 
 [**MailMessageBaseList**](MailMessageBaseList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageListRequest(
     folder,
@@ -369,11 +340,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessagelist"></a>
-# **ClientMessageListAsync**
+<a name="ListAsync"></a>
+# ListAsync
 
 ```csharp
-async Task<MailMessageBaseList> ClientMessageListAsync(ClientMessageListRequest request)
+async Task<MailMessageBaseList> ListAsync(ClientMessageListRequest request)
 ```
 
 Get messages from folder, filtered by query             
@@ -386,7 +357,7 @@ The query string should have the following view.      The example of a simple ex
 
 Task<[**MailMessageBaseList**](MailMessageBaseList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageListRequest(
     folder,
@@ -411,12 +382,11 @@ Name | Type | Description  | Notes
  **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientmessagemove"></a>
-# **ClientMessageMove**
+        ﻿<a name="Move"></a>
+# Move
 
 ```csharp
-void ClientMessageMove(ClientMessageMoveRequest request)
+void Move(ClientMessageMoveRequest request)
 ```
 
 Move message to another folder.             
@@ -425,23 +395,17 @@ Move message to another folder.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientMessageMoveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageMoveRequest**](ClientMessageMoveRequest.md)| Move message request. | 
+See parameter model documentation at [ClientMessageMoveRequest](ClientMessageMoveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessagemove"></a>
-# **ClientMessageMoveAsync**
+<a name="MoveAsync"></a>
+# MoveAsync
 
 ```csharp
-async Task ClientMessageMoveAsync(ClientMessageMoveRequest request)
+async Task MoveAsync(ClientMessageMoveRequest request)
 ```
 
 Move message to another folder.             
@@ -452,23 +416,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientMessageMoveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageMoveRequest**](ClientMessageMoveRequest.md)| Move message request. | 
+See parameter model documentation at [ClientMessageMoveRequest](ClientMessageMoveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientmessagesend"></a>
-# **ClientMessageSend**
+        ﻿<a name="Send"></a>
+# Send
 
 ```csharp
-void ClientMessageSend(ClientMessageSendRequest request)
+void Send(ClientMessageSendRequest request)
 ```
 
 Send an email specified by model in request.             
@@ -477,23 +434,17 @@ Send an email specified by model in request.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientMessageSendRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageSendRequest**](ClientMessageSendRequest.md)| Send email request. | 
+See parameter model documentation at [ClientMessageSendRequest](ClientMessageSendRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessagesend"></a>
-# **ClientMessageSendAsync**
+<a name="SendAsync"></a>
+# SendAsync
 
 ```csharp
-async Task ClientMessageSendAsync(ClientMessageSendRequest request)
+async Task SendAsync(ClientMessageSendRequest request)
 ```
 
 Send an email specified by model in request.             
@@ -504,23 +455,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientMessageSendRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageSendRequest**](ClientMessageSendRequest.md)| Send email request. | 
+See parameter model documentation at [ClientMessageSendRequest](ClientMessageSendRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientmessagesendfile"></a>
-# **ClientMessageSendFile**
+        ﻿<a name="SendFile"></a>
+# SendFile
 
 ```csharp
-void ClientMessageSendFile(ClientMessageSendFileRequest request)
+void SendFile(ClientMessageSendFileRequest request)
 ```
 
 Send an email file.             
@@ -529,7 +473,7 @@ Send an email file.
 
 void (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageSendFileRequest(
     account,
@@ -549,11 +493,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessagesendfile"></a>
-# **ClientMessageSendFileAsync**
+<a name="SendFileAsync"></a>
+# SendFileAsync
 
 ```csharp
-async Task ClientMessageSendFileAsync(ClientMessageSendFileRequest request)
+async Task SendFileAsync(ClientMessageSendFileRequest request)
 ```
 
 Send an email file.             
@@ -564,7 +508,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ClientMessageSendFileRequest(
     account,
@@ -583,12 +527,11 @@ Name | Type | Description  | Notes
  **format** | **string**| Email file format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="clientmessagesetisread"></a>
-# **ClientMessageSetIsRead**
+        ﻿<a name="SetIsRead"></a>
+# SetIsRead
 
 ```csharp
-void ClientMessageSetIsRead(ClientMessageSetIsReadRequest request)
+void SetIsRead(ClientMessageSetIsReadRequest request)
 ```
 
 Mark message as read or unread.             
@@ -597,23 +540,17 @@ Mark message as read or unread.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ClientMessageSetIsReadRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageSetIsReadRequest**](ClientMessageSetIsReadRequest.md)| Delete message request. | 
+See parameter model documentation at [ClientMessageSetIsReadRequest](ClientMessageSetIsReadRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="clientmessagesetisread"></a>
-# **ClientMessageSetIsReadAsync**
+<a name="SetIsReadAsync"></a>
+# SetIsReadAsync
 
 ```csharp
-async Task ClientMessageSetIsReadAsync(ClientMessageSetIsReadRequest request)
+async Task SetIsReadAsync(ClientMessageSetIsReadRequest request)
 ```
 
 Mark message as read or unread.             
@@ -624,15 +561,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ClientMessageSetIsReadRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ClientMessageSetIsReadRequest**](ClientMessageSetIsReadRequest.md)| Delete message request. | 
+See parameter model documentation at [ClientMessageSetIsReadRequest](ClientMessageSetIsReadRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-

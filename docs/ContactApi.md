@@ -1,10 +1,10 @@
 # Aspose.Email.Cloud.Sdk.ContactApi
 
-<a name="contactasfile"></a>
-# **ContactAsFile**
+        ﻿<a name="AsFile"></a>
+# AsFile
 
 ```csharp
-Stream ContactAsFile(ContactAsFileRequest request)
+Stream AsFile(ContactAsFileRequest request)
 ```
 
 Converts contact model to specified format and returns as file             
@@ -13,23 +13,17 @@ Converts contact model to specified format and returns as file
 
 **Stream**
 
-### Request Parameters
-```csharp
-new ContactAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ContactAsFileRequest**](ContactAsFileRequest.md)| Contact model and format to convert | 
+See parameter model documentation at [ContactAsFileRequest](ContactAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="contactasfile"></a>
-# **ContactAsFileAsync**
+<a name="AsFileAsync"></a>
+# AsFileAsync
 
 ```csharp
-async Task<Stream> ContactAsFileAsync(ContactAsFileRequest request)
+async Task<Stream> AsFileAsync(ContactAsFileRequest request)
 ```
 
 Converts contact model to specified format and returns as file             
@@ -40,23 +34,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
-```csharp
-new ContactAsFileRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ContactAsFileRequest**](ContactAsFileRequest.md)| Contact model and format to convert | 
+See parameter model documentation at [ContactAsFileRequest](ContactAsFileRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="contactasmapi"></a>
-# **ContactAsMapi**
+        ﻿<a name="AsMapi"></a>
+# AsMapi
 
 ```csharp
-MapiContactDto ContactAsMapi(ContactAsMapiRequest request)
+MapiContactDto AsMapi(ContactDto contactDto)
 ```
 
 Converts ContactDto to MapiContactDto.             
@@ -65,23 +52,17 @@ Converts ContactDto to MapiContactDto.
 
 [**MapiContactDto**](MapiContactDto.md)
 
-### Request Parameters
-```csharp
-new ContactAsMapiRequest(
-    contactDto)
-```
+### contactDto Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contactDto** | [**ContactDto**](ContactDto.md)| Contact model to convert | 
+See parameter model documentation at [ContactDto](ContactDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="contactasmapi"></a>
-# **ContactAsMapiAsync**
+<a name="AsMapiAsync"></a>
+# AsMapiAsync
 
 ```csharp
-async Task<MapiContactDto> ContactAsMapiAsync(ContactAsMapiRequest request)
+async Task<MapiContactDto> AsMapiAsync(ContactDto contactDto)
 ```
 
 Converts ContactDto to MapiContactDto.             
@@ -92,23 +73,16 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**MapiContactDto**](MapiContactDto.md)>
 
-### Request Parameters
-```csharp
-new ContactAsMapiRequest(
-    contactDto)
-```
+### contactDto Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contactDto** | [**ContactDto**](ContactDto.md)| Contact model to convert | 
+See parameter model documentation at [ContactDto](ContactDto.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="contactconvert"></a>
-# **ContactConvert**
+        ﻿<a name="Convert"></a>
+# Convert
 
 ```csharp
-Stream ContactConvert(ContactConvertRequest request)
+Stream Convert(ContactConvertRequest request)
 ```
 
 Converts contact document to specified format and returns as file             
@@ -117,7 +91,7 @@ Converts contact document to specified format and returns as file
 
 **Stream**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactConvertRequest(
     toFormat,
@@ -133,11 +107,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="contactconvert"></a>
-# **ContactConvertAsync**
+<a name="ConvertAsync"></a>
+# ConvertAsync
 
 ```csharp
-async Task<Stream> ContactConvertAsync(ContactConvertRequest request)
+async Task<Stream> ConvertAsync(ContactConvertRequest request)
 ```
 
 Converts contact document to specified format and returns as file             
@@ -148,7 +122,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactConvertRequest(
     toFormat,
@@ -163,12 +137,11 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="contactfromfile"></a>
-# **ContactFromFile**
+        ﻿<a name="FromFile"></a>
+# FromFile
 
 ```csharp
-ContactDto ContactFromFile(ContactFromFileRequest request)
+ContactDto FromFile(ContactFromFileRequest request)
 ```
 
 Converts contact document to a model representation             
@@ -177,7 +150,7 @@ Converts contact document to a model representation
 
 [**ContactDto**](ContactDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactFromFileRequest(
     format,
@@ -191,11 +164,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="contactfromfile"></a>
-# **ContactFromFileAsync**
+<a name="FromFileAsync"></a>
+# FromFileAsync
 
 ```csharp
-async Task<ContactDto> ContactFromFileAsync(ContactFromFileRequest request)
+async Task<ContactDto> FromFileAsync(ContactFromFileRequest request)
 ```
 
 Converts contact document to a model representation             
@@ -206,7 +179,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**ContactDto**](ContactDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactFromFileRequest(
     format,
@@ -219,12 +192,11 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="contactget"></a>
-# **ContactGet**
+        ﻿<a name="Get"></a>
+# Get
 
 ```csharp
-ContactDto ContactGet(ContactGetRequest request)
+ContactDto Get(ContactGetRequest request)
 ```
 
 Get contact document from storage.             
@@ -233,7 +205,7 @@ Get contact document from storage.
 
 [**ContactDto**](ContactDto.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactGetRequest(
     format,
@@ -251,11 +223,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="contactget"></a>
-# **ContactGetAsync**
+<a name="GetAsync"></a>
+# GetAsync
 
 ```csharp
-async Task<ContactDto> ContactGetAsync(ContactGetRequest request)
+async Task<ContactDto> GetAsync(ContactGetRequest request)
 ```
 
 Get contact document from storage.             
@@ -266,7 +238,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**ContactDto**](ContactDto.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactGetRequest(
     format,
@@ -283,12 +255,11 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="contactgetasfile"></a>
-# **ContactGetAsFile**
+        ﻿<a name="GetAsFile"></a>
+# GetAsFile
 
 ```csharp
-Stream ContactGetAsFile(ContactGetAsFileRequest request)
+Stream GetAsFile(ContactGetAsFileRequest request)
 ```
 
 Converts contact document from storage to specified format and returns as file             
@@ -297,7 +268,7 @@ Converts contact document from storage to specified format and returns as file
 
 **Stream**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactGetAsFileRequest(
     fileName,
@@ -317,11 +288,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="contactgetasfile"></a>
-# **ContactGetAsFileAsync**
+<a name="GetAsFileAsync"></a>
+# GetAsFileAsync
 
 ```csharp
-async Task<Stream> ContactGetAsFileAsync(ContactGetAsFileRequest request)
+async Task<Stream> GetAsFileAsync(ContactGetAsFileRequest request)
 ```
 
 Converts contact document from storage to specified format and returns as file             
@@ -332,7 +303,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 **Task<Stream>**
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactGetAsFileRequest(
     fileName,
@@ -351,12 +322,11 @@ Name | Type | Description  | Notes
  **folder** | **string**| Path to folder in storage | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="contactgetlist"></a>
-# **ContactGetList**
+        ﻿<a name="GetList"></a>
+# GetList
 
 ```csharp
-ContactStorageList ContactGetList(ContactGetListRequest request)
+ContactStorageList GetList(ContactGetListRequest request)
 ```
 
 Get contact list from storage folder.             
@@ -365,7 +335,7 @@ Get contact list from storage folder.
 
 [**ContactStorageList**](ContactStorageList.md)
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactGetListRequest(
     format,
@@ -385,11 +355,11 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="contactgetlist"></a>
-# **ContactGetListAsync**
+<a name="GetListAsync"></a>
+# GetListAsync
 
 ```csharp
-async Task<ContactStorageList> ContactGetListAsync(ContactGetListRequest request)
+async Task<ContactStorageList> GetListAsync(ContactGetListRequest request)
 ```
 
 Get contact list from storage folder.             
@@ -400,7 +370,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task<[**ContactStorageList**](ContactStorageList.md)>
 
-### Request Parameters
+### request Parameter
 ```csharp
 new ContactGetListRequest(
     format,
@@ -419,12 +389,11 @@ Name | Type | Description  | Notes
  **pageNumber** | **int?**| Page number. | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
-<a name="contactsave"></a>
-# **ContactSave**
+        ﻿<a name="Save"></a>
+# Save
 
 ```csharp
-void ContactSave(ContactSaveRequest request)
+void Save(ContactSaveRequest request)
 ```
 
 Save contact to storage.             
@@ -433,23 +402,17 @@ Save contact to storage.
 
 void (empty response body)
 
-### Request Parameters
-```csharp
-new ContactSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ContactSaveRequest**](ContactSaveRequest.md)| Create/Update contact request. | 
+See parameter model documentation at [ContactSaveRequest](ContactSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
-<a name="contactsave"></a>
-# **ContactSaveAsync**
+<a name="SaveAsync"></a>
+# SaveAsync
 
 ```csharp
-async Task ContactSaveAsync(ContactSaveRequest request)
+async Task SaveAsync(ContactSaveRequest request)
 ```
 
 Save contact to storage.             
@@ -460,15 +423,8 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 Task (empty response body)
 
-### Request Parameters
-```csharp
-new ContactSaveRequest(
-    request)
-```
+### request Parameter
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**ContactSaveRequest**](ContactSaveRequest.md)| Create/Update contact request. | 
+See parameter model documentation at [ContactSaveRequest](ContactSaveRequest.md)
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
-
