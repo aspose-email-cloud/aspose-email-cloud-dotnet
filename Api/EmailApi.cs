@@ -2233,7 +2233,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Convert CalendarDto to MapiCalendarDto              
+        /// Converts CalendarDto to MapiCalendarDto.              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertCalendarModelToMapiModelRequest" /></param>
         /// <returns><see cref="MapiCalendarDto"/></returns>
@@ -2269,7 +2269,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Convert CalendarDto to MapiCalendarDto              
+        /// Converts CalendarDto to MapiCalendarDto.              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertCalendarModelToMapiModelRequest" /></param>
         /// <returns><see cref="MapiCalendarDto"/></returns>
@@ -2489,7 +2489,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Convert contact model to MAPI model contact representation              
+        /// Converts ContactDto to MapiContactDto.              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertContactModelToMapiModelRequest" /></param>
         /// <returns><see cref="MapiContactDto"/></returns>
@@ -2525,7 +2525,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Convert contact model to MAPI model contact representation              
+        /// Converts ContactDto to MapiContactDto.              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertContactModelToMapiModelRequest" /></param>
         /// <returns><see cref="MapiContactDto"/></returns>
@@ -2729,7 +2729,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Converts Email model to MAPI model message representation              
+        /// Converts EmailDto to MapiMessageDto.              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertEmailModelToMapiModelRequest" /></param>
         /// <returns><see cref="MapiMessageDto"/></returns>
@@ -2765,7 +2765,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Converts Email model to MAPI model message representation              
+        /// Converts EmailDto to MapiMessageDto.              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertEmailModelToMapiModelRequest" /></param>
         /// <returns><see cref="MapiMessageDto"/></returns>
@@ -2951,7 +2951,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Converts MAPI contact model to Contact model              
+        /// Converts MAPI contact model to ContactDto model              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertMapiContactModelToContactModelRequest" /></param>
         /// <returns><see cref="ContactDto"/></returns>
@@ -2987,7 +2987,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Converts MAPI contact model to Contact model              
+        /// Converts MAPI contact model to ContactDto model              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertMapiContactModelToContactModelRequest" /></param>
         /// <returns><see cref="ContactDto"/></returns>
@@ -7893,7 +7893,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Get calendar file              
+        /// Get MAPI calendar document.              
         /// </summary>
         /// <param name="request">Request. <see cref="GetMapiCalendarModelRequest" /></param>
         /// <returns><see cref="MapiCalendarDto"/></returns>
@@ -7931,7 +7931,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Get calendar file              
+        /// Get MAPI calendar document.              
         /// </summary>
         /// <param name="request">Request. <see cref="GetMapiCalendarModelRequest" /></param>
         /// <returns><see cref="MapiCalendarDto"/></returns>
@@ -7969,7 +7969,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Get contact document.              
+        /// Get MAPI contact document.              
         /// </summary>
         /// <param name="request">Request. <see cref="GetMapiContactModelRequest" /></param>
         /// <returns><see cref="MapiContactDto"/></returns>
@@ -8015,7 +8015,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Get contact document.              
+        /// Get MAPI contact document.              
         /// </summary>
         /// <param name="request">Request. <see cref="GetMapiContactModelRequest" /></param>
         /// <returns><see cref="MapiContactDto"/></returns>
@@ -8125,7 +8125,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// MAPI message document.              
+        /// Get MAPI message document.              
         /// </summary>
         /// <param name="request">Request. <see cref="GetMapiMessageModelRequest" /></param>
         /// <returns><see cref="MapiMessageDto"/></returns>
@@ -8171,7 +8171,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// MAPI message document.              
+        /// Get MAPI message document.              
         /// </summary>
         /// <param name="request">Request. <see cref="GetMapiMessageModelRequest" /></param>
         /// <returns><see cref="MapiMessageDto"/></returns>
@@ -9695,7 +9695,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Save contact.              
+        /// Save MAPI Contact to storage.              
         /// </summary>
         /// <param name="request">Request. <see cref="SaveMapiContactModelRequest" /></param>
         public void SaveMapiContactModel(Model.Requests.SaveMapiContactModelRequest request)
@@ -9740,7 +9740,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Save contact.              
+        /// Save MAPI Contact to storage.              
         /// </summary>
         /// <param name="request">Request. <see cref="SaveMapiContactModelRequest" /></param>
         public async Task SaveMapiContactModelAsync(Model.Requests.SaveMapiContactModelRequest request)
@@ -9785,7 +9785,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
-        /// Save MAPI message.              
+        /// Save MAPI message to storage.              
         /// </summary>
         /// <param name="request">Request. <see cref="SaveMapiMessageModelRequest" /></param>
         public void SaveMapiMessageModel(Model.Requests.SaveMapiMessageModelRequest request)
@@ -9830,7 +9830,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Save MAPI message.              
+        /// Save MAPI message to storage.              
         /// </summary>
         /// <param name="request">Request. <see cref="SaveMapiMessageModelRequest" /></param>
         public async Task SaveMapiMessageModelAsync(Model.Requests.SaveMapiMessageModelRequest request)

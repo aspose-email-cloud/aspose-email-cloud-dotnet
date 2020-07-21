@@ -1603,7 +1603,7 @@ Name | Type | Description  | Notes
 MapiCalendarDto ConvertCalendarModelToMapiModel(ConvertCalendarModelToMapiModelRequest request)
 ```
 
-Convert CalendarDto to MapiCalendarDto             
+Converts CalendarDto to MapiCalendarDto.             
 
 ### Return type
 
@@ -1628,7 +1628,7 @@ Name | Type | Description  | Notes
 async Task<MapiCalendarDto> ConvertCalendarModelToMapiModelAsync(ConvertCalendarModelToMapiModelRequest request)
 ```
 
-Convert CalendarDto to MapiCalendarDto             
+Converts CalendarDto to MapiCalendarDto.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1771,7 +1771,7 @@ Name | Type | Description  | Notes
 MapiContactDto ConvertContactModelToMapiModel(ConvertContactModelToMapiModelRequest request)
 ```
 
-Convert contact model to MAPI model contact representation             
+Converts ContactDto to MapiContactDto.             
 
 ### Return type
 
@@ -1796,7 +1796,7 @@ Name | Type | Description  | Notes
 async Task<MapiContactDto> ConvertContactModelToMapiModelAsync(ConvertContactModelToMapiModelRequest request)
 ```
 
-Convert contact model to MAPI model contact representation             
+Converts ContactDto to MapiContactDto.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -1935,7 +1935,7 @@ Name | Type | Description  | Notes
 MapiMessageDto ConvertEmailModelToMapiModel(ConvertEmailModelToMapiModelRequest request)
 ```
 
-Converts Email model to MAPI model message representation             
+Converts EmailDto to MapiMessageDto.             
 
 ### Return type
 
@@ -1960,7 +1960,7 @@ Name | Type | Description  | Notes
 async Task<MapiMessageDto> ConvertEmailModelToMapiModelAsync(ConvertEmailModelToMapiModelRequest request)
 ```
 
-Converts Email model to MAPI model message representation             
+Converts EmailDto to MapiMessageDto.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -2095,7 +2095,7 @@ Name | Type | Description  | Notes
 ContactDto ConvertMapiContactModelToContactModel(ConvertMapiContactModelToContactModelRequest request)
 ```
 
-Converts MAPI contact model to Contact model             
+Converts MAPI contact model to ContactDto model             
 
 ### Return type
 
@@ -2120,7 +2120,7 @@ Name | Type | Description  | Notes
 async Task<ContactDto> ConvertMapiContactModelToContactModelAsync(ConvertMapiContactModelToContactModelRequest request)
 ```
 
-Converts MAPI contact model to Contact model             
+Converts MAPI contact model to ContactDto model             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -5703,7 +5703,7 @@ Name | Type | Description  | Notes
 MapiCalendarDto GetMapiCalendarModel(GetMapiCalendarModelRequest request)
 ```
 
-Get calendar file             
+Get MAPI calendar document.             
 
 ### Return type
 
@@ -5732,7 +5732,7 @@ Name | Type | Description  | Notes
 async Task<MapiCalendarDto> GetMapiCalendarModelAsync(GetMapiCalendarModelRequest request)
 ```
 
-Get calendar file             
+Get MAPI calendar document.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -5763,7 +5763,7 @@ Name | Type | Description  | Notes
 MapiContactDto GetMapiContactModel(GetMapiContactModelRequest request)
 ```
 
-Get contact document.             
+Get MAPI contact document.             
 
 ### Return type
 
@@ -5794,7 +5794,7 @@ Name | Type | Description  | Notes
 async Task<MapiContactDto> GetMapiContactModelAsync(GetMapiContactModelRequest request)
 ```
 
-Get contact document.             
+Get MAPI contact document.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -5891,7 +5891,7 @@ Name | Type | Description  | Notes
 MapiMessageDto GetMapiMessageModel(GetMapiMessageModelRequest request)
 ```
 
-MAPI message document.             
+Get MAPI message document.             
 
 ### Return type
 
@@ -5922,7 +5922,7 @@ Name | Type | Description  | Notes
 async Task<MapiMessageDto> GetMapiMessageModelAsync(GetMapiMessageModelRequest request)
 ```
 
-MAPI message document.             
+Get MAPI message document.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -7115,7 +7115,7 @@ Name | Type | Description  | Notes
 void SaveMapiContactModel(SaveMapiContactModelRequest request)
 ```
 
-Save contact.             
+Save MAPI Contact to storage.             
 
 ### Return type
 
@@ -7144,7 +7144,7 @@ Name | Type | Description  | Notes
 async Task SaveMapiContactModelAsync(SaveMapiContactModelRequest request)
 ```
 
-Save contact.             
+Save MAPI Contact to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -7175,7 +7175,7 @@ Name | Type | Description  | Notes
 void SaveMapiMessageModel(SaveMapiMessageModelRequest request)
 ```
 
-Save MAPI message.             
+Save MAPI message to storage.             
 
 ### Return type
 
@@ -7204,7 +7204,7 @@ Name | Type | Description  | Notes
 async Task SaveMapiMessageModelAsync(SaveMapiMessageModelRequest request)
 ```
 
-Save MAPI message.             
+Save MAPI message to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
