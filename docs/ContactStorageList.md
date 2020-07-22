@@ -1,10 +1,11 @@
 # Model.ContactStorageList
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Class has no properties
 
- Parent class: [ListResponseOfStorageModelOfContactDto](ListResponseOfStorageModelOfContactDto.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [ListResponseOfStorageModelOfContactDto](ListResponseOfStorageModelOfContactDto.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

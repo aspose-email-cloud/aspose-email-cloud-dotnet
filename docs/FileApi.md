@@ -31,7 +31,7 @@ Name | Type | Description  | Notes
  **destStorageName** | **string**| Destination storage name | [optional] 
  **versionId** | **string**| File version ID to copy | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CopyFileAsync"></a>
 # CopyFileAsync
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
  **destStorageName** | **string**| Destination storage name | [optional] 
  **versionId** | **string**| File version ID to copy | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="DeleteFile"></a>
 # DeleteFile
 
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **versionId** | **string**| File version ID to delete | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteFileAsync"></a>
 # DeleteFileAsync
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **versionId** | **string**| File version ID to delete | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="DownloadFile"></a>
 # DownloadFile
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **versionId** | **string**| File version ID to download | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DownloadFileAsync"></a>
 # DownloadFileAsync
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **versionId** | **string**| File version ID to download | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="MoveFile"></a>
 # MoveFile
 
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
  **destStorageName** | **string**| Destination storage name | [optional] 
  **versionId** | **string**| File version ID to move | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MoveFileAsync"></a>
 # MoveFileAsync
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
  **destStorageName** | **string**| Destination storage name | [optional] 
  **versionId** | **string**| File version ID to move | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="UploadFile"></a>
 # UploadFile
 
@@ -279,7 +279,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to upload | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="UploadFileAsync"></a>
 # UploadFileAsync
@@ -310,4 +310,4 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to upload | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

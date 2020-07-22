@@ -1,10 +1,11 @@
 # Model.EmailStorageList
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Class has no properties
 
- Parent class: [ListResponseOfStorageModelOfEmailDto](ListResponseOfStorageModelOfEmailDto.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [ListResponseOfStorageModelOfEmailDto](ListResponseOfStorageModelOfEmailDto.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

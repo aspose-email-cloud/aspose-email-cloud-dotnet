@@ -23,7 +23,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetDiscUsageAsync"></a>
 # GetDiscUsageAsync
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="GetFileVersions"></a>
 # GetFileVersions
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
  **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetFileVersionsAsync"></a>
 # GetFileVersionsAsync
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
  **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="ObjectExists"></a>
 # ObjectExists
 
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **versionId** | **string**| File version ID | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ObjectExistsAsync"></a>
 # ObjectExistsAsync
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **versionId** | **string**| File version ID | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Exists"></a>
 # Exists
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storageName** | **string**| Storage name | 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ExistsAsync"></a>
 # ExistsAsync
@@ -215,4 +215,4 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storageName** | **string**| Storage name | 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

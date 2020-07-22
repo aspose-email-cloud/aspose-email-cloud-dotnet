@@ -4,8 +4,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Message** | [**MailMessageBase**](MailMessageBase.md) | Message to send              | [optional] 
 
- Parent class: [ClientAccountBaseRequest](ClientAccountBaseRequest.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [ClientAccountBaseRequest](ClientAccountBaseRequest.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

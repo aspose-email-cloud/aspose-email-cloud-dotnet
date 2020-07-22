@@ -27,7 +27,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| Folder on storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsync"></a>
 # GetAsync
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| Folder on storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="GetMulti"></a>
 # GetMulti
 
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| Folder on storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetMultiAsync"></a>
 # GetMultiAsync
@@ -117,7 +117,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| Folder on storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Save"></a>
 # Save
 
@@ -135,7 +135,7 @@ void (empty response body)
 
 See parameter model documentation at [EmailClientAccountSaveRequest](EmailClientAccountSaveRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveAsync"></a>
 # SaveAsync
@@ -156,7 +156,7 @@ Task (empty response body)
 
 See parameter model documentation at [EmailClientAccountSaveRequest](EmailClientAccountSaveRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="SaveMulti"></a>
 # SaveMulti
 
@@ -174,7 +174,7 @@ void (empty response body)
 
 See parameter model documentation at [EmailClientMultiAccountSaveRequest](EmailClientMultiAccountSaveRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveMultiAsync"></a>
 # SaveMultiAsync
@@ -195,4 +195,4 @@ Task (empty response body)
 
 See parameter model documentation at [EmailClientMultiAccountSaveRequest](EmailClientMultiAccountSaveRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

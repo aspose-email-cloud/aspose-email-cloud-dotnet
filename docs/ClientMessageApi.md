@@ -17,7 +17,7 @@ Add email message to specified folder in email account.
 
 See parameter model documentation at [ClientMessageAppendRequest](ClientMessageAppendRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AppendAsync"></a>
 # AppendAsync
@@ -38,7 +38,7 @@ Task<[**ValueTOfString**](ValueTOfString.md)>
 
 See parameter model documentation at [ClientMessageAppendRequest](ClientMessageAppendRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="AppendFile"></a>
 # AppendFile
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| Path to folder on email server to append message to. | [optional] 
  **markAsSent** | **bool?**| Determines that appended message should be market as sent or not. | [optional] [default to true]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AppendFileAsync"></a>
 # AppendFileAsync
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| Path to folder on email server to append message to. | [optional] 
  **markAsSent** | **bool?**| Determines that appended message should be market as sent or not. | [optional] [default to true]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Delete"></a>
 # Delete
 
@@ -131,7 +131,7 @@ void (empty response body)
 
 See parameter model documentation at [ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteAsync"></a>
 # DeleteAsync
@@ -152,7 +152,7 @@ Task (empty response body)
 
 See parameter model documentation at [ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Fetch"></a>
 # Fetch
 
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
  **type** | **string**| MailMessageBase type. Using this property you can fetch message in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64 | [optional] [default to 0]
  **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FetchAsync"></a>
 # FetchAsync
@@ -227,7 +227,7 @@ Name | Type | Description  | Notes
  **type** | **string**| MailMessageBase type. Using this property you can fetch message in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64 | [optional] [default to 0]
  **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="FetchFile"></a>
 # FetchFile
 
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
  **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
  **format** | **string**| Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FetchFileAsync"></a>
 # FetchFileAsync
@@ -298,7 +298,7 @@ Name | Type | Description  | Notes
  **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
  **format** | **string**| Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="List"></a>
 # List
 
@@ -338,7 +338,7 @@ Name | Type | Description  | Notes
  **type** | **string**| MailMessageBase type. Using this property you can get messages in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64 | [optional] [default to 0]
  **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ListAsync"></a>
 # ListAsync
@@ -381,7 +381,7 @@ Name | Type | Description  | Notes
  **type** | **string**| MailMessageBase type. Using this property you can get messages in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64 | [optional] [default to 0]
  **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Move"></a>
 # Move
 
@@ -399,7 +399,7 @@ void (empty response body)
 
 See parameter model documentation at [ClientMessageMoveRequest](ClientMessageMoveRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MoveAsync"></a>
 # MoveAsync
@@ -420,7 +420,7 @@ Task (empty response body)
 
 See parameter model documentation at [ClientMessageMoveRequest](ClientMessageMoveRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Send"></a>
 # Send
 
@@ -438,7 +438,7 @@ void (empty response body)
 
 See parameter model documentation at [ClientMessageSendRequest](ClientMessageSendRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SendAsync"></a>
 # SendAsync
@@ -459,7 +459,7 @@ Task (empty response body)
 
 See parameter model documentation at [ClientMessageSendRequest](ClientMessageSendRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="SendFile"></a>
 # SendFile
 
@@ -491,7 +491,7 @@ Name | Type | Description  | Notes
  **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
  **format** | **string**| Email file format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SendFileAsync"></a>
 # SendFileAsync
@@ -526,7 +526,7 @@ Name | Type | Description  | Notes
  **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
  **format** | **string**| Email file format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="SetIsRead"></a>
 # SetIsRead
 
@@ -544,7 +544,7 @@ void (empty response body)
 
 See parameter model documentation at [ClientMessageSetIsReadRequest](ClientMessageSetIsReadRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SetIsReadAsync"></a>
 # SetIsReadAsync
@@ -565,4 +565,4 @@ Task (empty response body)
 
 See parameter model documentation at [ClientMessageSetIsReadRequest](ClientMessageSetIsReadRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

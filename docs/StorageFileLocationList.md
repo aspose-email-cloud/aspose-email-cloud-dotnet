@@ -1,10 +1,11 @@
 # Model.StorageFileLocationList
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Class has no properties
 
- Parent class: [ListResponseOfStorageFileLocation](ListResponseOfStorageFileLocation.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [ListResponseOfStorageFileLocation](ListResponseOfStorageFileLocation.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

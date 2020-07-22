@@ -17,7 +17,7 @@ Converts contact model to specified format and returns as file
 
 See parameter model documentation at [ContactAsFileRequest](ContactAsFileRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsFileAsync"></a>
 # AsFileAsync
@@ -38,7 +38,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 
 See parameter model documentation at [ContactAsFileRequest](ContactAsFileRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="AsMapi"></a>
 # AsMapi
 
@@ -56,7 +56,7 @@ Converts ContactDto to MapiContactDto.
 
 See parameter model documentation at [ContactDto](ContactDto.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsMapiAsync"></a>
 # AsMapiAsync
@@ -77,7 +77,7 @@ Task<[**MapiContactDto**](MapiContactDto.md)>
 
 See parameter model documentation at [ContactDto](ContactDto.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Convert"></a>
 # Convert
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
  **fromFormat** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
  **file** | **System.IO.Stream**| File to convert | 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ConvertAsync"></a>
 # ConvertAsync
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
  **fromFormat** | **string**| File format to convert from Enum, available values: VCard, WebDav, Msg | 
  **file** | **System.IO.Stream**| File to convert | 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="FromFile"></a>
 # FromFile
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
  **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
  **file** | **System.IO.Stream**| File to convert | 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FromFileAsync"></a>
 # FromFileAsync
@@ -191,7 +191,7 @@ Name | Type | Description  | Notes
  **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
  **file** | **System.IO.Stream**| File to convert | 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Get"></a>
 # Get
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsync"></a>
 # GetAsync
@@ -254,7 +254,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="GetAsFile"></a>
 # GetAsFile
 
@@ -286,7 +286,7 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name | [optional] 
  **folder** | **string**| Path to folder in storage | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsFileAsync"></a>
 # GetAsFileAsync
@@ -321,7 +321,7 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name | [optional] 
  **folder** | **string**| Path to folder in storage | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="GetList"></a>
 # GetList
 
@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
  **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
  **pageNumber** | **int?**| Page number. | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetListAsync"></a>
 # GetListAsync
@@ -388,7 +388,7 @@ Name | Type | Description  | Notes
  **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
  **pageNumber** | **int?**| Page number. | [optional] [default to 0]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Save"></a>
 # Save
 
@@ -406,7 +406,7 @@ void (empty response body)
 
 See parameter model documentation at [ContactSaveRequest](ContactSaveRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveAsync"></a>
 # SaveAsync
@@ -427,4 +427,4 @@ Task (empty response body)
 
 See parameter model documentation at [ContactSaveRequest](ContactSaveRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

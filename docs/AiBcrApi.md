@@ -29,7 +29,7 @@ Name | Type | Description  | Notes
  **languages** | **string**| Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default.              | [optional] 
  **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ParseAsync"></a>
 # ParseAsync
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
  **languages** | **string**| Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default.              | [optional] 
  **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="ParseStorage"></a>
 # ParseStorage
 
@@ -80,7 +80,7 @@ Parse images from storage to vCard files
 
 See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ParseStorageAsync"></a>
 # ParseStorageAsync
@@ -101,4 +101,4 @@ Task<[**StorageFileLocationList**](StorageFileLocationList.md)>
 
 See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

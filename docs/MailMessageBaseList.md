@@ -1,10 +1,11 @@
 # Model.MailMessageBaseList
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Class has no properties
 
- Parent class: [ListResponseOfMailMessageBase](ListResponseOfMailMessageBase.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [ListResponseOfMailMessageBase](ListResponseOfMailMessageBase.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

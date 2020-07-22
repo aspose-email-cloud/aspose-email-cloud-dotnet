@@ -23,7 +23,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **address** | **string**| An email address to check | 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="IsDisposableAsync"></a>
 # IsDisposableAsync
@@ -50,4 +50,4 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **address** | **string**| An email address to check | 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

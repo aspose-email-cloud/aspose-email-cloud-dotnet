@@ -4,8 +4,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Format** | **string** | Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
 
- Parent class: [StorageModelOfEmailDto](StorageModelOfEmailDto.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [StorageModelOfEmailDto](StorageModelOfEmailDto.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

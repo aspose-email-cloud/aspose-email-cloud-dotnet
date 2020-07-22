@@ -17,7 +17,7 @@ void (empty response body)
 
 See parameter model documentation at [ClientFolderCreateRequest](ClientFolderCreateRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CreateAsync"></a>
 # CreateAsync
@@ -38,7 +38,7 @@ Task (empty response body)
 
 See parameter model documentation at [ClientFolderCreateRequest](ClientFolderCreateRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="Delete"></a>
 # Delete
 
@@ -56,7 +56,7 @@ void (empty response body)
 
 See parameter model documentation at [ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteAsync"></a>
 # DeleteAsync
@@ -77,7 +77,7 @@ Task (empty response body)
 
 See parameter model documentation at [ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="GetList"></a>
 # GetList
 
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
  **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
  **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetListAsync"></a>
 # GetListAsync
@@ -140,4 +140,4 @@ Name | Type | Description  | Notes
  **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
  **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

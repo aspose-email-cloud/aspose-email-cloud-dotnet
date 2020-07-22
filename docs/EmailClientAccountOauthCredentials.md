@@ -7,8 +7,10 @@ Name | Type | Description | Notes
 **RefreshToken** | **string** | OAuth 2.0 refresh token              | 
 **RequestUrl** | **string** | The url to obtain access token. If not specified, will try to discover from email client account host.              | [optional] 
 
- Parent class: [EmailClientAccountCredentials](EmailClientAccountCredentials.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [EmailClientAccountCredentials](EmailClientAccountCredentials.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

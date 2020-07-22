@@ -1,10 +1,11 @@
 # Model.ContactList
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Class has no properties
 
- Parent class: [ListResponseOfContactDto](ListResponseOfContactDto.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [ListResponseOfContactDto](ListResponseOfContactDto.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

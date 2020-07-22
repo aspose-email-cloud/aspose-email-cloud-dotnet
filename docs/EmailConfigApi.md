@@ -25,7 +25,7 @@ Name | Type | Description  | Notes
  **address** | **string**| Email address. | 
  **fastProcessing** | **bool?**| Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.              | [optional] [default to false]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DiscoverAsync"></a>
 # DiscoverAsync
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
  **address** | **string**| Email address. | 
  **fastProcessing** | **bool?**| Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.              | [optional] [default to false]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="DiscoverOauth"></a>
 # DiscoverOauth
 
@@ -72,7 +72,7 @@ Discover email accounts by email address. Validates discovered accounts using OA
 
 See parameter model documentation at [DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DiscoverOauthAsync"></a>
 # DiscoverOauthAsync
@@ -93,7 +93,7 @@ Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 
 See parameter model documentation at [DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="DiscoverPassword"></a>
 # DiscoverPassword
 
@@ -111,7 +111,7 @@ Discover email accounts by email address. Validates discovered accounts using lo
 
 See parameter model documentation at [DiscoverEmailConfigPassword](DiscoverEmailConfigPassword.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DiscoverPasswordAsync"></a>
 # DiscoverPasswordAsync
@@ -132,4 +132,4 @@ Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 
 See parameter model documentation at [DiscoverEmailConfigPassword](DiscoverEmailConfigPassword.md)
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

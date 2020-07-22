@@ -1,10 +1,11 @@
 # Model.EmailList
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Class has no properties
 
- Parent class: [ListResponseOfEmailDto](ListResponseOfEmailDto.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [ListResponseOfEmailDto](ListResponseOfEmailDto.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

@@ -29,7 +29,7 @@ Name | Type | Description  | Notes
  **srcStorageName** | **string**| Source storage name | [optional] 
  **destStorageName** | **string**| Destination storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CopyFolderAsync"></a>
 # CopyFolderAsync
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
  **srcStorageName** | **string**| Source storage name | [optional] 
  **destStorageName** | **string**| Destination storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="CreateFolder"></a>
 # CreateFolder
 
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
  **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CreateFolderAsync"></a>
 # CreateFolderAsync
@@ -117,7 +117,7 @@ Name | Type | Description  | Notes
  **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="DeleteFolder"></a>
 # DeleteFolder
 
@@ -145,7 +145,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteFolderAsync"></a>
 # DeleteFolderAsync
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="GetFilesList"></a>
 # GetFilesList
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
  **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetFilesListAsync"></a>
 # GetFilesListAsync
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
  **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="MoveFolder"></a>
 # MoveFolder
 
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
  **srcStorageName** | **string**| Source storage name | [optional] 
  **destStorageName** | **string**| Destination storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MoveFolderAsync"></a>
 # MoveFolderAsync
@@ -294,4 +294,4 @@ Name | Type | Description  | Notes
  **srcStorageName** | **string**| Source storage name | [optional] 
  **destStorageName** | **string**| Destination storage name | [optional] 
 
-[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

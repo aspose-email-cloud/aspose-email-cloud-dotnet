@@ -5,8 +5,10 @@ Name | Type | Description | Notes
 **ParentFolder** | **string** | Path to parent folder.              | [optional] 
 **FolderName** | **string** | Folder name.              | [optional] 
 
- Parent class: [ClientAccountBaseRequest](ClientAccountBaseRequest.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [ClientAccountBaseRequest](ClientAccountBaseRequest.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 
