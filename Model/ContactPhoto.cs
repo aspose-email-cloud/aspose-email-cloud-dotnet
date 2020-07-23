@@ -47,16 +47,28 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>  
         public string Base64Data { get; set; }
 
+        /// <summary>
+        /// Gets or sets Discriminator
+        /// </summary>  
+        
+        public string Discriminator
+        {
+            get { return GetType().Name; }
+            set { /*do nothing*/}
+        }
+
         /// <summary>ContactPhoto constructor</summary>
         public ContactPhoto() {}
 
         /// <summary>ContactPhoto constructor</summary>
         /// <param name="photoImageFormat">MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff</param>
         /// <param name="base64Data">Photo serialized as base64 string.             </param>
-        public ContactPhoto(string photoImageFormat, string base64Data)
+        /// <param name="discriminator"></param>
+        public ContactPhoto(string photoImageFormat, string base64Data, string discriminator)
         {
             PhotoImageFormat = photoImageFormat;
             Base64Data = base64Data;
+            Discriminator = discriminator;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -68,6 +80,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("class ContactPhoto {\n");
           sb.Append("  PhotoImageFormat: ").Append(this.PhotoImageFormat).Append("\n");
           sb.Append("  Base64Data: ").Append(this.Base64Data).Append("\n");
+          sb.Append("  Discriminator: ").Append(this.Discriminator).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

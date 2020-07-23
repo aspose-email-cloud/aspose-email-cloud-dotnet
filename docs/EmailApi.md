@@ -1596,6 +1596,58 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="convertcalendarmodeltomapimodel"></a>
+# **ConvertCalendarModelToMapiModel**
+
+```csharp
+MapiCalendarDto ConvertCalendarModelToMapiModel(ConvertCalendarModelToMapiModelRequest request)
+```
+
+Converts CalendarDto to MapiCalendarDto.             
+
+### Return type
+
+[**MapiCalendarDto**](MapiCalendarDto.md)
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToMapiModelRequest(
+    calendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **calendarDto** | [**CalendarDto**](CalendarDto.md)| iCalendar model calendar representation | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcalendarmodeltomapimodel"></a>
+# **ConvertCalendarModelToMapiModelAsync**
+
+```csharp
+async Task<MapiCalendarDto> ConvertCalendarModelToMapiModelAsync(ConvertCalendarModelToMapiModelRequest request)
+```
+
+Converts CalendarDto to MapiCalendarDto.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
+
+### Request Parameters
+```csharp
+new ConvertCalendarModelToMapiModelRequest(
+    calendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **calendarDto** | [**CalendarDto**](CalendarDto.md)| iCalendar model calendar representation | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="convertcontact"></a>
 # **ConvertContact**
 
@@ -1712,6 +1764,58 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="convertcontactmodeltomapimodel"></a>
+# **ConvertContactModelToMapiModel**
+
+```csharp
+MapiContactDto ConvertContactModelToMapiModel(ConvertContactModelToMapiModelRequest request)
+```
+
+Converts ContactDto to MapiContactDto.             
+
+### Return type
+
+[**MapiContactDto**](MapiContactDto.md)
+
+### Request Parameters
+```csharp
+new ConvertContactModelToMapiModelRequest(
+    contactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contactDto** | [**ContactDto**](ContactDto.md)| Contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertcontactmodeltomapimodel"></a>
+# **ConvertContactModelToMapiModelAsync**
+
+```csharp
+async Task<MapiContactDto> ConvertContactModelToMapiModelAsync(ConvertContactModelToMapiModelRequest request)
+```
+
+Converts ContactDto to MapiContactDto.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiContactDto**](MapiContactDto.md)>
+
+### Request Parameters
+```csharp
+new ConvertContactModelToMapiModelRequest(
+    contactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contactDto** | [**ContactDto**](ContactDto.md)| Contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="convertemail"></a>
 # **ConvertEmail**
 
@@ -1734,7 +1838,7 @@ new ConvertEmailRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
@@ -1763,7 +1867,7 @@ new ConvertEmailRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
@@ -1790,7 +1894,7 @@ new ConvertEmailModelToFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
@@ -1819,8 +1923,384 @@ new ConvertEmailModelToFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertemailmodeltomapimodel"></a>
+# **ConvertEmailModelToMapiModel**
+
+```csharp
+MapiMessageDto ConvertEmailModelToMapiModel(ConvertEmailModelToMapiModelRequest request)
+```
+
+Converts EmailDto to MapiMessageDto.             
+
+### Return type
+
+[**MapiMessageDto**](MapiMessageDto.md)
+
+### Request Parameters
+```csharp
+new ConvertEmailModelToMapiModelRequest(
+    emailDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertemailmodeltomapimodel"></a>
+# **ConvertEmailModelToMapiModelAsync**
+
+```csharp
+async Task<MapiMessageDto> ConvertEmailModelToMapiModelAsync(ConvertEmailModelToMapiModelRequest request)
+```
+
+Converts EmailDto to MapiMessageDto.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiMessageDto**](MapiMessageDto.md)>
+
+### Request Parameters
+```csharp
+new ConvertEmailModelToMapiModelRequest(
+    emailDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailDto** | [**EmailDto**](EmailDto.md)| Email model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapicalendarmodeltocalendarmodel"></a>
+# **ConvertMapiCalendarModelToCalendarModel**
+
+```csharp
+CalendarDto ConvertMapiCalendarModelToCalendarModel(ConvertMapiCalendarModelToCalendarModelRequest request)
+```
+
+Converts MAPI calendar model to CalendarDto model             
+
+### Return type
+
+[**CalendarDto**](CalendarDto.md)
+
+### Request Parameters
+```csharp
+new ConvertMapiCalendarModelToCalendarModelRequest(
+    mapiCalendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **mapiCalendarDto** | [**MapiCalendarDto**](MapiCalendarDto.md)| MAPI calendar model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapicalendarmodeltocalendarmodel"></a>
+# **ConvertMapiCalendarModelToCalendarModelAsync**
+
+```csharp
+async Task<CalendarDto> ConvertMapiCalendarModelToCalendarModelAsync(ConvertMapiCalendarModelToCalendarModelRequest request)
+```
+
+Converts MAPI calendar model to CalendarDto model             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**CalendarDto**](CalendarDto.md)>
+
+### Request Parameters
+```csharp
+new ConvertMapiCalendarModelToCalendarModelRequest(
+    mapiCalendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **mapiCalendarDto** | [**MapiCalendarDto**](MapiCalendarDto.md)| MAPI calendar model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapicalendarmodeltofile"></a>
+# **ConvertMapiCalendarModelToFile**
+
+```csharp
+Stream ConvertMapiCalendarModelToFile(ConvertMapiCalendarModelToFileRequest request)
+```
+
+Converts MAPI calendar model to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertMapiCalendarModelToFileRequest(
+    destinationFormat,
+    mapiCalendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: Ics, Msg | 
+ **mapiCalendarDto** | [**MapiCalendarDto**](MapiCalendarDto.md)| MAPI calendar model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapicalendarmodeltofile"></a>
+# **ConvertMapiCalendarModelToFileAsync**
+
+```csharp
+async Task<Stream> ConvertMapiCalendarModelToFileAsync(ConvertMapiCalendarModelToFileRequest request)
+```
+
+Converts MAPI calendar model to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertMapiCalendarModelToFileRequest(
+    destinationFormat,
+    mapiCalendarDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: Ics, Msg | 
+ **mapiCalendarDto** | [**MapiCalendarDto**](MapiCalendarDto.md)| MAPI calendar model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapicontactmodeltocontactmodel"></a>
+# **ConvertMapiContactModelToContactModel**
+
+```csharp
+ContactDto ConvertMapiContactModelToContactModel(ConvertMapiContactModelToContactModelRequest request)
+```
+
+Converts MAPI contact model to ContactDto model             
+
+### Return type
+
+[**ContactDto**](ContactDto.md)
+
+### Request Parameters
+```csharp
+new ConvertMapiContactModelToContactModelRequest(
+    mapiContactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **mapiContactDto** | [**MapiContactDto**](MapiContactDto.md)| MAPI contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapicontactmodeltocontactmodel"></a>
+# **ConvertMapiContactModelToContactModelAsync**
+
+```csharp
+async Task<ContactDto> ConvertMapiContactModelToContactModelAsync(ConvertMapiContactModelToContactModelRequest request)
+```
+
+Converts MAPI contact model to ContactDto model             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**ContactDto**](ContactDto.md)>
+
+### Request Parameters
+```csharp
+new ConvertMapiContactModelToContactModelRequest(
+    mapiContactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **mapiContactDto** | [**MapiContactDto**](MapiContactDto.md)| MAPI contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapicontactmodeltofile"></a>
+# **ConvertMapiContactModelToFile**
+
+```csharp
+Stream ConvertMapiContactModelToFile(ConvertMapiContactModelToFileRequest request)
+```
+
+Converts MAPI contact model to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertMapiContactModelToFileRequest(
+    destinationFormat,
+    mapiContactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **mapiContactDto** | [**MapiContactDto**](MapiContactDto.md)| MAPI contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapicontactmodeltofile"></a>
+# **ConvertMapiContactModelToFileAsync**
+
+```csharp
+async Task<Stream> ConvertMapiContactModelToFileAsync(ConvertMapiContactModelToFileRequest request)
+```
+
+Converts MAPI contact model to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertMapiContactModelToFileRequest(
+    destinationFormat,
+    mapiContactDto)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **mapiContactDto** | [**MapiContactDto**](MapiContactDto.md)| MAPI contact model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapimessagemodeltoemailmodel"></a>
+# **ConvertMapiMessageModelToEmailModel**
+
+```csharp
+EmailDto ConvertMapiMessageModelToEmailModel(ConvertMapiMessageModelToEmailModelRequest request)
+```
+
+Converts MAPI message model to EmailDto model             
+
+### Return type
+
+[**EmailDto**](EmailDto.md)
+
+### Request Parameters
+```csharp
+new ConvertMapiMessageModelToEmailModelRequest(
+    mapiMessage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **mapiMessage** | [**MapiMessageDto**](MapiMessageDto.md)| MAPI message model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapimessagemodeltoemailmodel"></a>
+# **ConvertMapiMessageModelToEmailModelAsync**
+
+```csharp
+async Task<EmailDto> ConvertMapiMessageModelToEmailModelAsync(ConvertMapiMessageModelToEmailModelRequest request)
+```
+
+Converts MAPI message model to EmailDto model             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**EmailDto**](EmailDto.md)>
+
+### Request Parameters
+```csharp
+new ConvertMapiMessageModelToEmailModelRequest(
+    mapiMessage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **mapiMessage** | [**MapiMessageDto**](MapiMessageDto.md)| MAPI message model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapimessagemodeltofile"></a>
+# **ConvertMapiMessageModelToFile**
+
+```csharp
+Stream ConvertMapiMessageModelToFile(ConvertMapiMessageModelToFileRequest request)
+```
+
+Converts MAPI message model to specified format and returns as file             
+
+### Return type
+
+**Stream**
+
+### Request Parameters
+```csharp
+new ConvertMapiMessageModelToFileRequest(
+    destinationFormat,
+    mapiMessage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **mapiMessage** | [**MapiMessageDto**](MapiMessageDto.md)| MAPI message model to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="convertmapimessagemodeltofile"></a>
+# **ConvertMapiMessageModelToFileAsync**
+
+```csharp
+async Task<Stream> ConvertMapiMessageModelToFileAsync(ConvertMapiMessageModelToFileRequest request)
+```
+
+Converts MAPI message model to specified format and returns as file             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+**Task<Stream>**
+
+### Request Parameters
+```csharp
+new ConvertMapiMessageModelToFileRequest(
+    destinationFormat,
+    mapiMessage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **destinationFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **mapiMessage** | [**MapiMessageDto**](MapiMessageDto.md)| MAPI message model to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -3444,6 +3924,58 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getcalendarfileasmapimodel"></a>
+# **GetCalendarFileAsMapiModel**
+
+```csharp
+MapiCalendarDto GetCalendarFileAsMapiModel(GetCalendarFileAsMapiModelRequest request)
+```
+
+Converts calendar file to a MAPI model representation             
+
+### Return type
+
+[**MapiCalendarDto**](MapiCalendarDto.md)
+
+### Request Parameters
+```csharp
+new GetCalendarFileAsMapiModelRequest(
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcalendarfileasmapimodel"></a>
+# **GetCalendarFileAsMapiModelAsync**
+
+```csharp
+async Task<MapiCalendarDto> GetCalendarFileAsMapiModelAsync(GetCalendarFileAsMapiModelRequest request)
+```
+
+Converts calendar file to a MAPI model representation             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
+
+### Request Parameters
+```csharp
+new GetCalendarFileAsMapiModelRequest(
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getcalendarfileasmodel"></a>
 # **GetCalendarFileAsModel**
 
@@ -3885,6 +4417,62 @@ Name | Type | Description  | Notes
  **attachment** | **string**| Attachment name or index | 
  **folder** | **string**| Path to folder in storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactfileasmapimodel"></a>
+# **GetContactFileAsMapiModel**
+
+```csharp
+MapiContactDto GetContactFileAsMapiModel(GetContactFileAsMapiModelRequest request)
+```
+
+Converts contact file to a MAPI model representation             
+
+### Return type
+
+[**MapiContactDto**](MapiContactDto.md)
+
+### Request Parameters
+```csharp
+new GetContactFileAsMapiModelRequest(
+    fileFormat,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getcontactfileasmapimodel"></a>
+# **GetContactFileAsMapiModelAsync**
+
+```csharp
+async Task<MapiContactDto> GetContactFileAsMapiModelAsync(GetContactFileAsMapiModelRequest request)
+```
+
+Converts contact file to a MAPI model representation             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiContactDto**](MapiContactDto.md)>
+
+### Request Parameters
+```csharp
+new GetContactFileAsMapiModelRequest(
+    fileFormat,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -4345,7 +4933,7 @@ new GetEmailAsFileRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileName** | **string**| Email document file name | 
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **storage** | **string**| Storage name | [optional] 
  **folder** | **string**| Path to folder in storage | [optional] 
 
@@ -4378,7 +4966,7 @@ new GetEmailAsFileRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileName** | **string**| Email document file name | 
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **storage** | **string**| Storage name | [optional] 
  **folder** | **string**| Path to folder in storage | [optional] 
 
@@ -4568,6 +5156,62 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getemailfileasmapimodel"></a>
+# **GetEmailFileAsMapiModel**
+
+```csharp
+MapiMessageDto GetEmailFileAsMapiModel(GetEmailFileAsMapiModelRequest request)
+```
+
+Converts email file to a MAPI model representation             
+
+### Return type
+
+[**MapiMessageDto**](MapiMessageDto.md)
+
+### Request Parameters
+```csharp
+new GetEmailFileAsMapiModelRequest(
+    fileFormat,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getemailfileasmapimodel"></a>
+# **GetEmailFileAsMapiModelAsync**
+
+```csharp
+async Task<MapiMessageDto> GetEmailFileAsMapiModelAsync(GetEmailFileAsMapiModelRequest request)
+```
+
+Converts email file to a MAPI model representation             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiMessageDto**](MapiMessageDto.md)>
+
+### Request Parameters
+```csharp
+new GetEmailFileAsMapiModelRequest(
+    fileFormat,
+    file)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **file** | **System.IO.Stream**| File to convert | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getemailfileasmodel"></a>
 # **GetEmailFileAsModel**
 
@@ -4644,7 +5288,7 @@ new GetEmailModelRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **name** | **string**| Email document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
@@ -4677,7 +5321,7 @@ new GetEmailModelRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **name** | **string**| Email document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
@@ -4709,7 +5353,7 @@ new GetEmailModelListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
  **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
@@ -4744,7 +5388,7 @@ new GetEmailModelListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
  **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
@@ -5052,6 +5696,130 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
+<a name="getmapicalendarmodel"></a>
+# **GetMapiCalendarModel**
+
+```csharp
+MapiCalendarDto GetMapiCalendarModel(GetMapiCalendarModelRequest request)
+```
+
+Get MAPI calendar document.             
+
+### Return type
+
+[**MapiCalendarDto**](MapiCalendarDto.md)
+
+### Request Parameters
+```csharp
+new GetMapiCalendarModelRequest(
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| Calendar file name in storage | 
+ **folder** | **string**| Path to folder in storage | [optional] 
+ **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getmapicalendarmodel"></a>
+# **GetMapiCalendarModelAsync**
+
+```csharp
+async Task<MapiCalendarDto> GetMapiCalendarModelAsync(GetMapiCalendarModelRequest request)
+```
+
+Get MAPI calendar document.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
+
+### Request Parameters
+```csharp
+new GetMapiCalendarModelRequest(
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| Calendar file name in storage | 
+ **folder** | **string**| Path to folder in storage | [optional] 
+ **storage** | **string**| Storage name | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getmapicontactmodel"></a>
+# **GetMapiContactModel**
+
+```csharp
+MapiContactDto GetMapiContactModel(GetMapiContactModelRequest request)
+```
+
+Get MAPI contact document.             
+
+### Return type
+
+[**MapiContactDto**](MapiContactDto.md)
+
+### Request Parameters
+```csharp
+new GetMapiContactModelRequest(
+    format,
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getmapicontactmodel"></a>
+# **GetMapiContactModelAsync**
+
+```csharp
+async Task<MapiContactDto> GetMapiContactModelAsync(GetMapiContactModelRequest request)
+```
+
+Get MAPI contact document.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiContactDto**](MapiContactDto.md)>
+
+### Request Parameters
+```csharp
+new GetMapiContactModelRequest(
+    format,
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
 <a name="getmapilist"></a>
 # **GetMapiList**
 
@@ -5113,6 +5881,70 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name | [optional] 
  **itemsPerPage** | **int?**| Count of items on page | [optional] [default to 10]
  **pageNumber** | **int?**| Page number | [optional] [default to 0]
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getmapimessagemodel"></a>
+# **GetMapiMessageModel**
+
+```csharp
+MapiMessageDto GetMapiMessageModel(GetMapiMessageModelRequest request)
+```
+
+Get MAPI message document.             
+
+### Return type
+
+[**MapiMessageDto**](MapiMessageDto.md)
+
+### Request Parameters
+```csharp
+new GetMapiMessageModelRequest(
+    format,
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **name** | **string**| Email document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="getmapimessagemodel"></a>
+# **GetMapiMessageModelAsync**
+
+```csharp
+async Task<MapiMessageDto> GetMapiMessageModelAsync(GetMapiMessageModelRequest request)
+```
+
+Get MAPI message document.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task<[**MapiMessageDto**](MapiMessageDto.md)>
+
+### Request Parameters
+```csharp
+new GetMapiMessageModelRequest(
+    format,
+    name,
+    folder=folder,
+    storage=storage)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **name** | **string**| Email document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5855,7 +6687,7 @@ new SaveCalendarModelRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| iCalendar file name in storage | 
- **rq** | [**StorageModelRqOfCalendarDto**](StorageModelRqOfCalendarDto.md)| Calendar properties update request | 
+ **rq** | [**StorageModelRqOfCalendarDto**](StorageModelRqOfCalendarDto.md)| Calendar update request | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5884,7 +6716,7 @@ new SaveCalendarModelRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| iCalendar file name in storage | 
- **rq** | [**StorageModelRqOfCalendarDto**](StorageModelRqOfCalendarDto.md)| Calendar properties update request | 
+ **rq** | [**StorageModelRqOfCalendarDto**](StorageModelRqOfCalendarDto.md)| Calendar update request | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5913,7 +6745,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name. | 
- **rq** | [**StorageModelRqOfContactDto**](StorageModelRqOfContactDto.md)| Create contact request. | 
+ **rq** | [**StorageModelRqOfContactDto**](StorageModelRqOfContactDto.md)| Create/Update contact request. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -5944,7 +6776,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
  **name** | **string**| Contact document file name. | 
- **rq** | [**StorageModelRqOfContactDto**](StorageModelRqOfContactDto.md)| Create contact request. | 
+ **rq** | [**StorageModelRqOfContactDto**](StorageModelRqOfContactDto.md)| Create/Update contact request. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -6075,9 +6907,9 @@ new SaveEmailModelRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **name** | **string**| Email document file name in storage. | 
- **rq** | [**StorageModelRqOfEmailDto**](StorageModelRqOfEmailDto.md)| Calendar properties update request. | 
+ **rq** | [**StorageModelRqOfEmailDto**](StorageModelRqOfEmailDto.md)| Email document create/update request. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -6106,9 +6938,9 @@ new SaveEmailModelRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html | 
+ **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **name** | **string**| Email document file name in storage. | 
- **rq** | [**StorageModelRqOfEmailDto**](StorageModelRqOfEmailDto.md)| Calendar properties update request. | 
+ **rq** | [**StorageModelRqOfEmailDto**](StorageModelRqOfEmailDto.md)| Email document create/update request. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -6213,6 +7045,186 @@ new SaveMailOAuthAccountRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **request** | [**SaveOAuthEmailAccountRequest**](SaveOAuthEmailAccountRequest.md)| Email account information | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="savemapicalendarmodel"></a>
+# **SaveMapiCalendarModel**
+
+```csharp
+void SaveMapiCalendarModel(SaveMapiCalendarModelRequest request)
+```
+
+Save MAPI Calendar to storage.             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SaveMapiCalendarModelRequest(
+    name,
+    format,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| Calendar file name in storage | 
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **rq** | [**StorageModelRqOfMapiCalendarDto**](StorageModelRqOfMapiCalendarDto.md)| Calendar update request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="savemapicalendarmodel"></a>
+# **SaveMapiCalendarModelAsync**
+
+```csharp
+async Task SaveMapiCalendarModelAsync(SaveMapiCalendarModelRequest request)
+```
+
+Save MAPI Calendar to storage.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SaveMapiCalendarModelRequest(
+    name,
+    format,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| Calendar file name in storage | 
+ **format** | **string**| File format Enum, available values: Ics, Msg | 
+ **rq** | [**StorageModelRqOfMapiCalendarDto**](StorageModelRqOfMapiCalendarDto.md)| Calendar update request | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="savemapicontactmodel"></a>
+# **SaveMapiContactModel**
+
+```csharp
+void SaveMapiContactModel(SaveMapiContactModelRequest request)
+```
+
+Save MAPI Contact to storage.             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SaveMapiContactModelRequest(
+    format,
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
+ **rq** | [**StorageModelRqOfMapiContactDto**](StorageModelRqOfMapiContactDto.md)| Create/Update contact request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="savemapicontactmodel"></a>
+# **SaveMapiContactModelAsync**
+
+```csharp
+async Task SaveMapiContactModelAsync(SaveMapiContactModelRequest request)
+```
+
+Save MAPI Contact to storage.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SaveMapiContactModelRequest(
+    format,
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
+ **name** | **string**| Contact document file name. | 
+ **rq** | [**StorageModelRqOfMapiContactDto**](StorageModelRqOfMapiContactDto.md)| Create/Update contact request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="savemapimessagemodel"></a>
+# **SaveMapiMessageModel**
+
+```csharp
+void SaveMapiMessageModel(SaveMapiMessageModelRequest request)
+```
+
+Save MAPI message to storage.             
+
+### Return type
+
+void (empty response body)
+
+### Request Parameters
+```csharp
+new SaveMapiMessageModelRequest(
+    format,
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **name** | **string**| Message file name in storage. | 
+ **rq** | [**StorageModelRqOfMapiMessageDto**](StorageModelRqOfMapiMessageDto.md)| Message create/update request. | 
+
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
+
+<a name="savemapimessagemodel"></a>
+# **SaveMapiMessageModelAsync**
+
+```csharp
+async Task SaveMapiMessageModelAsync(SaveMapiMessageModelRequest request)
+```
+
+Save MAPI message to storage.             
+
+Performs operation asynchronously. Not available on .NETFramework v2.0
+
+### Return type
+
+Task (empty response body)
+
+### Request Parameters
+```csharp
+new SaveMapiMessageModelRequest(
+    format,
+    name,
+    rq)
+```
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **name** | **string**| Message file name in storage. | 
+ **rq** | [**StorageModelRqOfMapiMessageDto**](StorageModelRqOfMapiMessageDto.md)| Message create/update request. | 
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

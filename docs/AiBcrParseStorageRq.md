@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**OutFolder** | **Object** | Parse output folder location on storage              | 
+**OutFolder** | [**StorageFolderLocation**](StorageFolderLocation.md) | Parse output folder location on storage              | 
 
  Parent class: [AiBcrStorageImageRq](AiBcrStorageImageRq.md)
 

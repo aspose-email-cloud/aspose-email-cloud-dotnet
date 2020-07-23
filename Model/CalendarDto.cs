@@ -103,9 +103,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public MailAddress Organizer { get; set; }
 
         /// <summary>
-        /// String representation of recurrence pattern (See iCalendar RFC, \"Recurrence rule\" section). For example:               For daily recurrence:         \"FREQ=DAILY;COUNT=10;WKST=MO\"                   For monthly recurrence:         \"BYSETPOS=1;BYDAY=MO,TU,WE,TH,FR;FREQ=MONTHLY;INTERVAL=10;WKST=MO\"                   For yearly recurrence:         \"BYMONTHDAY=30;BYMONTH=1;FREQ=YEARLY;WKST=MO\"                   
+        /// Deprecated, use 'Recurrence' property. String representation of recurrence pattern (See iCalendar RFC, \"Recurrence rule\" section). For example:               For daily recurrence:         \"FREQ=DAILY;COUNT=10;WKST=MO\"                   For monthly recurrence:         \"BYSETPOS=1;BYDAY=MO,TU,WE,TH,FR;FREQ=MONTHLY;INTERVAL=10;WKST=MO\"                   For yearly recurrence:         \"BYMONTHDAY=30;BYMONTH=1;FREQ=YEARLY;WKST=MO\"                   
         /// </summary>  
         public string RecurrenceString { get; set; }
+
+        /// <summary>
+        /// Recurrence pattern             
+        /// </summary>  
+        public RecurrencePatternDto Recurrence { get; set; }
 
         /// <summary>
         /// Reminders.
@@ -159,7 +164,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="microsoftIntendedStatus">Specifies the INTENDED status. Enum, available values: NotDefined, Free, Tentative, Busy, Oof</param>
         /// <param name="optionalAttendees">Optional attendees.             </param>
         /// <param name="organizer">Event organizer.             </param>
-        /// <param name="recurrenceString">String representation of recurrence pattern (See iCalendar RFC, \"Recurrence rule\" section). For example:               For daily recurrence:         \"FREQ=DAILY;COUNT=10;WKST=MO\"                   For monthly recurrence:         \"BYSETPOS=1;BYDAY=MO,TU,WE,TH,FR;FREQ=MONTHLY;INTERVAL=10;WKST=MO\"                   For yearly recurrence:         \"BYMONTHDAY=30;BYMONTH=1;FREQ=YEARLY;WKST=MO\"                   </param>
+        /// <param name="recurrenceString">Deprecated, use 'Recurrence' property. String representation of recurrence pattern (See iCalendar RFC, \"Recurrence rule\" section). For example:               For daily recurrence:         \"FREQ=DAILY;COUNT=10;WKST=MO\"                   For monthly recurrence:         \"BYSETPOS=1;BYDAY=MO,TU,WE,TH,FR;FREQ=MONTHLY;INTERVAL=10;WKST=MO\"                   For yearly recurrence:         \"BYMONTHDAY=30;BYMONTH=1;FREQ=YEARLY;WKST=MO\"                   </param>
+        /// <param name="recurrence">Recurrence pattern             </param>
         /// <param name="reminders">Reminders.</param>
         /// <param name="sequenceId">The sequence id. Read only.</param>
         /// <param name="startDate">Start date.</param>
@@ -167,7 +173,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="status">Defines the overall status or confirmation for the calendar document. Enum, available values: NotDefined, Cancelled, Tentative, Confirmed</param>
         /// <param name="summary">Summary.</param>
         /// <param name="transparency">Specifies whether or not this appointment is intended to be visible in availability searches. Enum, available values: NotDefined, Transparent, Opaque</param>
-        public CalendarDto(List<Attachment> attachments, List<MailAddress> attendees, string description, DateTime? endDate, string endTimeZone, List<string> flags, bool? isDescriptionHtml, string location, string method, string microsoftBusyStatus, string microsoftIntendedStatus, List<MailAddress> optionalAttendees, MailAddress organizer, string recurrenceString, List<CalendarReminder> reminders, string sequenceId, DateTime? startDate, string startTimeZone, string status, string summary, string transparency)
+        public CalendarDto(List<Attachment> attachments, List<MailAddress> attendees, string description, DateTime? endDate, string endTimeZone, List<string> flags, bool? isDescriptionHtml, string location, string method, string microsoftBusyStatus, string microsoftIntendedStatus, List<MailAddress> optionalAttendees, MailAddress organizer, string recurrenceString, RecurrencePatternDto recurrence, List<CalendarReminder> reminders, string sequenceId, DateTime? startDate, string startTimeZone, string status, string summary, string transparency)
         {
             Attachments = attachments;
             Attendees = attendees;
@@ -183,6 +189,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
             OptionalAttendees = optionalAttendees;
             Organizer = organizer;
             RecurrenceString = recurrenceString;
+            Recurrence = recurrence;
             Reminders = reminders;
             SequenceId = sequenceId;
             StartDate = startDate;
@@ -213,6 +220,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  OptionalAttendees: ").Append(this.OptionalAttendees).Append("\n");
           sb.Append("  Organizer: ").Append(this.Organizer).Append("\n");
           sb.Append("  RecurrenceString: ").Append(this.RecurrenceString).Append("\n");
+          sb.Append("  Recurrence: ").Append(this.Recurrence).Append("\n");
           sb.Append("  Reminders: ").Append(this.Reminders).Append("\n");
           sb.Append("  SequenceId: ").Append(this.SequenceId).Append("\n");
           sb.Append("  StartDate: ").Append(this.StartDate).Append("\n");

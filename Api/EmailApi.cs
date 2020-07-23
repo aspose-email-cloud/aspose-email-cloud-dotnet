@@ -2233,6 +2233,78 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Converts CalendarDto to MapiCalendarDto.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarModelToMapiModelRequest" /></param>
+        /// <returns><see cref="MapiCalendarDto"/></returns>
+        public MapiCalendarDto ConvertCalendarModelToMapiModel(Model.Requests.ConvertCalendarModelToMapiModelRequest request)
+        {
+            // verify the required parameter 'calendarDto' is set
+            if (request.calendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'calendarDto' when calling ConvertCalendarModelToMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/model-as-mapi-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.calendarDto); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts CalendarDto to MapiCalendarDto.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertCalendarModelToMapiModelRequest" /></param>
+        /// <returns><see cref="MapiCalendarDto"/></returns>
+        public async Task<MapiCalendarDto> ConvertCalendarModelToMapiModelAsync(Model.Requests.ConvertCalendarModelToMapiModelRequest request)
+        {
+            // verify the required parameter 'calendarDto' is set
+            if (request.calendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'calendarDto' when calling ConvertCalendarModelToMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/CalendarModel/model-as-mapi-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.calendarDto); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Converts contact document to specified format and returns as file              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertContactRequest" /></param>
@@ -2417,6 +2489,78 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Converts ContactDto to MapiContactDto.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertContactModelToMapiModelRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public MapiContactDto ConvertContactModelToMapiModel(Model.Requests.ConvertContactModelToMapiModelRequest request)
+        {
+            // verify the required parameter 'contactDto' is set
+            if (request.contactDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'contactDto' when calling ConvertContactModelToMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/model-as-mapi-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.contactDto); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiContactDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts ContactDto to MapiContactDto.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertContactModelToMapiModelRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public async Task<MapiContactDto> ConvertContactModelToMapiModelAsync(Model.Requests.ConvertContactModelToMapiModelRequest request)
+        {
+            // verify the required parameter 'contactDto' is set
+            if (request.contactDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'contactDto' when calling ConvertContactModelToMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/ContactModel/model-as-mapi-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.contactDto); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiContactDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Converts email document to specified format and returns as file              
         /// </summary>
         /// <param name="request">Request. <see cref="ConvertEmailRequest" /></param>
@@ -2574,6 +2718,528 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace("/?", "?");
             resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
             var postBody = SerializationHelper.Serialize(request.emailDto); // http body (model) parameter
+            return await apiInvoker.InvokeBinaryApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+        #endif
+
+        /// <summary>
+        /// Converts EmailDto to MapiMessageDto.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertEmailModelToMapiModelRequest" /></param>
+        /// <returns><see cref="MapiMessageDto"/></returns>
+        public MapiMessageDto ConvertEmailModelToMapiModel(Model.Requests.ConvertEmailModelToMapiModelRequest request)
+        {
+            // verify the required parameter 'emailDto' is set
+            if (request.emailDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'emailDto' when calling ConvertEmailModelToMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/model-as-mapi-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.emailDto); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiMessageDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts EmailDto to MapiMessageDto.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertEmailModelToMapiModelRequest" /></param>
+        /// <returns><see cref="MapiMessageDto"/></returns>
+        public async Task<MapiMessageDto> ConvertEmailModelToMapiModelAsync(Model.Requests.ConvertEmailModelToMapiModelRequest request)
+        {
+            // verify the required parameter 'emailDto' is set
+            if (request.emailDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'emailDto' when calling ConvertEmailModelToMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/model/model-as-mapi-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.emailDto); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiMessageDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts MAPI calendar model to CalendarDto model              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiCalendarModelToCalendarModelRequest" /></param>
+        /// <returns><see cref="CalendarDto"/></returns>
+        public CalendarDto ConvertMapiCalendarModelToCalendarModel(Model.Requests.ConvertMapiCalendarModelToCalendarModelRequest request)
+        {
+            // verify the required parameter 'mapiCalendarDto' is set
+            if (request.mapiCalendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiCalendarDto' when calling ConvertMapiCalendarModelToCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/model-as-calendar-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.mapiCalendarDto); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<CalendarDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts MAPI calendar model to CalendarDto model              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiCalendarModelToCalendarModelRequest" /></param>
+        /// <returns><see cref="CalendarDto"/></returns>
+        public async Task<CalendarDto> ConvertMapiCalendarModelToCalendarModelAsync(Model.Requests.ConvertMapiCalendarModelToCalendarModelRequest request)
+        {
+            // verify the required parameter 'mapiCalendarDto' is set
+            if (request.mapiCalendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiCalendarDto' when calling ConvertMapiCalendarModelToCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/model-as-calendar-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.mapiCalendarDto); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<CalendarDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts MAPI calendar model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiCalendarModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream ConvertMapiCalendarModelToFile(Model.Requests.ConvertMapiCalendarModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertMapiCalendarModelToFile");
+            }
+
+            // verify the required parameter 'mapiCalendarDto' is set
+            if (request.mapiCalendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiCalendarDto' when calling ConvertMapiCalendarModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.mapiCalendarDto); // http body (model) parameter
+            return apiInvoker.InvokeBinaryApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts MAPI calendar model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiCalendarModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> ConvertMapiCalendarModelToFileAsync(Model.Requests.ConvertMapiCalendarModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertMapiCalendarModelToFile");
+            }
+
+            // verify the required parameter 'mapiCalendarDto' is set
+            if (request.mapiCalendarDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiCalendarDto' when calling ConvertMapiCalendarModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.mapiCalendarDto); // http body (model) parameter
+            return await apiInvoker.InvokeBinaryApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+        #endif
+
+        /// <summary>
+        /// Converts MAPI contact model to ContactDto model              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiContactModelToContactModelRequest" /></param>
+        /// <returns><see cref="ContactDto"/></returns>
+        public ContactDto ConvertMapiContactModelToContactModel(Model.Requests.ConvertMapiContactModelToContactModelRequest request)
+        {
+            // verify the required parameter 'mapiContactDto' is set
+            if (request.mapiContactDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiContactDto' when calling ConvertMapiContactModelToContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/model-as-contact-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.mapiContactDto); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ContactDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts MAPI contact model to ContactDto model              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiContactModelToContactModelRequest" /></param>
+        /// <returns><see cref="ContactDto"/></returns>
+        public async Task<ContactDto> ConvertMapiContactModelToContactModelAsync(Model.Requests.ConvertMapiContactModelToContactModelRequest request)
+        {
+            // verify the required parameter 'mapiContactDto' is set
+            if (request.mapiContactDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiContactDto' when calling ConvertMapiContactModelToContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/model-as-contact-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.mapiContactDto); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<ContactDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts MAPI contact model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiContactModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream ConvertMapiContactModelToFile(Model.Requests.ConvertMapiContactModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertMapiContactModelToFile");
+            }
+
+            // verify the required parameter 'mapiContactDto' is set
+            if (request.mapiContactDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiContactDto' when calling ConvertMapiContactModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.mapiContactDto); // http body (model) parameter
+            return apiInvoker.InvokeBinaryApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts MAPI contact model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiContactModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> ConvertMapiContactModelToFileAsync(Model.Requests.ConvertMapiContactModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertMapiContactModelToFile");
+            }
+
+            // verify the required parameter 'mapiContactDto' is set
+            if (request.mapiContactDto == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiContactDto' when calling ConvertMapiContactModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.mapiContactDto); // http body (model) parameter
+            return await apiInvoker.InvokeBinaryApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+        #endif
+
+        /// <summary>
+        /// Converts MAPI message model to EmailDto model              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiMessageModelToEmailModelRequest" /></param>
+        /// <returns><see cref="EmailDto"/></returns>
+        public EmailDto ConvertMapiMessageModelToEmailModel(Model.Requests.ConvertMapiMessageModelToEmailModelRequest request)
+        {
+            // verify the required parameter 'mapiMessage' is set
+            if (request.mapiMessage == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiMessage' when calling ConvertMapiMessageModelToEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/model-as-email-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.mapiMessage); // http body (model) parameter
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts MAPI message model to EmailDto model              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiMessageModelToEmailModelRequest" /></param>
+        /// <returns><see cref="EmailDto"/></returns>
+        public async Task<EmailDto> ConvertMapiMessageModelToEmailModelAsync(Model.Requests.ConvertMapiMessageModelToEmailModelRequest request)
+        {
+            // verify the required parameter 'mapiMessage' is set
+            if (request.mapiMessage == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiMessage' when calling ConvertMapiMessageModelToEmailModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/model-as-email-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var postBody = SerializationHelper.Serialize(request.mapiMessage); // http body (model) parameter
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<EmailDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Converts MAPI message model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiMessageModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public System.IO.Stream ConvertMapiMessageModelToFile(Model.Requests.ConvertMapiMessageModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertMapiMessageModelToFile");
+            }
+
+            // verify the required parameter 'mapiMessage' is set
+            if (request.mapiMessage == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiMessage' when calling ConvertMapiMessageModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.mapiMessage); // http body (model) parameter
+            return apiInvoker.InvokeBinaryApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+            
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts MAPI message model to specified format and returns as file              
+        /// </summary>
+        /// <param name="request">Request. <see cref="ConvertMapiMessageModelToFileRequest" /></param>
+        /// <returns><see cref="System.IO.Stream"/></returns>
+        public async Task<System.IO.Stream> ConvertMapiMessageModelToFileAsync(Model.Requests.ConvertMapiMessageModelToFileRequest request)
+        {
+            // verify the required parameter 'destinationFormat' is set
+            if (request.destinationFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'destinationFormat' when calling ConvertMapiMessageModelToFile");
+            }
+
+            // verify the required parameter 'mapiMessage' is set
+            if (request.mapiMessage == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'mapiMessage' when calling ConvertMapiMessageModelToFile");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/model-as-file/{destinationFormat}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "destinationFormat", request.destinationFormat);
+            var postBody = SerializationHelper.Serialize(request.mapiMessage); // http body (model) parameter
             return await apiInvoker.InvokeBinaryApiAsync(
                 resourcePath,
                 "PUT",
@@ -4705,6 +5371,90 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Converts calendar file to a MAPI model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarFileAsMapiModelRequest" /></param>
+        /// <returns><see cref="MapiCalendarDto"/></returns>
+        public MapiCalendarDto GetCalendarFileAsMapiModel(Model.Requests.GetCalendarFileAsMapiModelRequest request)
+        {
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetCalendarFileAsMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts calendar file to a MAPI model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetCalendarFileAsMapiModelRequest" /></param>
+        /// <returns><see cref="MapiCalendarDto"/></returns>
+        public async Task<MapiCalendarDto> GetCalendarFileAsMapiModelAsync(Model.Requests.GetCalendarFileAsMapiModelRequest request)
+        {
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetCalendarFileAsMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Converts calendar document to a model representation              
         /// </summary>
         /// <param name="request">Request. <see cref="GetCalendarFileAsModelRequest" /></param>
@@ -5335,6 +6085,106 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 null,
                 null);
             
+        }
+        #endif
+
+        /// <summary>
+        /// Converts contact file to a MAPI model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactFileAsMapiModelRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public MapiContactDto GetContactFileAsMapiModel(Model.Requests.GetContactFileAsMapiModelRequest request)
+        {
+            // verify the required parameter 'fileFormat' is set
+            if (request.fileFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileFormat' when calling GetContactFileAsMapiModel");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetContactFileAsMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/{fileFormat}/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileFormat", request.fileFormat);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiContactDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts contact file to a MAPI model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetContactFileAsMapiModelRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public async Task<MapiContactDto> GetContactFileAsMapiModelAsync(Model.Requests.GetContactFileAsMapiModelRequest request)
+        {
+            // verify the required parameter 'fileFormat' is set
+            if (request.fileFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileFormat' when calling GetContactFileAsMapiModel");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetContactFileAsMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/{fileFormat}/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileFormat", request.fileFormat);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiContactDto>(response);
+            }
+
+            return null;
         }
         #endif
 
@@ -6289,6 +7139,106 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Converts email file to a MAPI model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailFileAsMapiModelRequest" /></param>
+        /// <returns><see cref="MapiMessageDto"/></returns>
+        public MapiMessageDto GetEmailFileAsMapiModel(Model.Requests.GetEmailFileAsMapiModelRequest request)
+        {
+            // verify the required parameter 'fileFormat' is set
+            if (request.fileFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileFormat' when calling GetEmailFileAsMapiModel");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetEmailFileAsMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/{fileFormat}/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileFormat", request.fileFormat);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiMessageDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Converts email file to a MAPI model representation              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetEmailFileAsMapiModelRequest" /></param>
+        /// <returns><see cref="MapiMessageDto"/></returns>
+        public async Task<MapiMessageDto> GetEmailFileAsMapiModelAsync(Model.Requests.GetEmailFileAsMapiModelRequest request)
+        {
+            // verify the required parameter 'fileFormat' is set
+            if (request.fileFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'fileFormat' when calling GetEmailFileAsMapiModel");
+            }
+
+            // verify the required parameter 'file' is set
+            if (request.File == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'file' when calling GetEmailFileAsMapiModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/{fileFormat}/file-as-model";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            var formParams = new Dictionary<string, object>();
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "fileFormat", request.fileFormat);
+            if (request.File != null)
+            {
+                formParams.Add("file",
+                    apiInvoker.ToFileInfo(request.File, "File"));
+                
+            }
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                null,
+                null,
+                formParams);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiMessageDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Converts email document to a model representation              
         /// </summary>
         /// <param name="request">Request. <see cref="GetEmailFileAsModelRequest" /></param>
@@ -6943,6 +7893,174 @@ namespace Aspose.Email.Cloud.Sdk.Api
         #endif
 
         /// <summary>
+        /// Get MAPI calendar document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetMapiCalendarModelRequest" /></param>
+        /// <returns><see cref="MapiCalendarDto"/></returns>
+        public MapiCalendarDto GetMapiCalendarModel(Model.Requests.GetMapiCalendarModelRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetMapiCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get MAPI calendar document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetMapiCalendarModelRequest" /></param>
+        /// <returns><see cref="MapiCalendarDto"/></returns>
+        public async Task<MapiCalendarDto> GetMapiCalendarModelAsync(Model.Requests.GetMapiCalendarModelRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetMapiCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiCalendarDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get MAPI contact document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetMapiContactModelRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public MapiContactDto GetMapiContactModel(Model.Requests.GetMapiContactModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetMapiContactModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetMapiContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiContactDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get MAPI contact document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetMapiContactModelRequest" /></param>
+        /// <returns><see cref="MapiContactDto"/></returns>
+        public async Task<MapiContactDto> GetMapiContactModelAsync(Model.Requests.GetMapiContactModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetMapiContactModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetMapiContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiContactDto>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
         /// Get document list from storage folder              
         /// </summary>
         /// <param name="request">Request. <see cref="GetMapiListRequest" /></param>
@@ -7000,6 +8118,98 @@ namespace Aspose.Email.Cloud.Sdk.Api
             if (response != null)
             {
                 return SerializationHelper.Deserialize<ListResponseOfHierarchicalObjectResponse>(response);
+            }
+
+            return null;
+        }
+        #endif
+
+        /// <summary>
+        /// Get MAPI message document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetMapiMessageModelRequest" /></param>
+        /// <returns><see cref="MapiMessageDto"/></returns>
+        public MapiMessageDto GetMapiMessageModel(Model.Requests.GetMapiMessageModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetMapiMessageModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetMapiMessageModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = apiInvoker.InvokeApi(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiMessageDto>(response);
+            }
+
+            return null;
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Get MAPI message document.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="GetMapiMessageModelRequest" /></param>
+        /// <returns><see cref="MapiMessageDto"/></returns>
+        public async Task<MapiMessageDto> GetMapiMessageModelAsync(Model.Requests.GetMapiMessageModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling GetMapiMessageModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling GetMapiMessageModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            var response = await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "GET",
+                null,
+                null,
+                null);
+            if (response != null)
+            {
+                return SerializationHelper.Deserialize<MapiMessageDto>(response);
             }
 
             return null;
@@ -8388,6 +9598,276 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await apiInvoker.InvokeApiAsync(
                 resourcePath,
                 "POST",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
+        /// Save MAPI Calendar to storage.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveMapiCalendarModelRequest" /></param>
+        public void SaveMapiCalendarModel(Model.Requests.SaveMapiCalendarModelRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveMapiCalendarModel");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveMapiCalendarModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveMapiCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Save MAPI Calendar to storage.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveMapiCalendarModelRequest" /></param>
+        public async Task SaveMapiCalendarModelAsync(Model.Requests.SaveMapiCalendarModelRequest request)
+        {
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveMapiCalendarModel");
+            }
+
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveMapiCalendarModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveMapiCalendarModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiCalendar/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
+        /// Save MAPI Contact to storage.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveMapiContactModelRequest" /></param>
+        public void SaveMapiContactModel(Model.Requests.SaveMapiContactModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveMapiContactModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveMapiContactModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveMapiContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Save MAPI Contact to storage.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveMapiContactModelRequest" /></param>
+        public async Task SaveMapiContactModelAsync(Model.Requests.SaveMapiContactModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveMapiContactModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveMapiContactModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveMapiContactModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiContact/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+        #endif
+
+        /// <summary>
+        /// Save MAPI message to storage.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveMapiMessageModelRequest" /></param>
+        public void SaveMapiMessageModel(Model.Requests.SaveMapiMessageModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveMapiMessageModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveMapiMessageModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveMapiMessageModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            apiInvoker.InvokeApi(
+                resourcePath,
+                "PUT",
+                postBody,
+                null,
+                null);
+        }
+
+        #if (NET452 || NETSTANDARD2_0)
+        /// <summary>
+        /// Save MAPI message to storage.              
+        /// </summary>
+        /// <param name="request">Request. <see cref="SaveMapiMessageModelRequest" /></param>
+        public async Task SaveMapiMessageModelAsync(Model.Requests.SaveMapiMessageModelRequest request)
+        {
+            // verify the required parameter 'format' is set
+            if (request.format == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'format' when calling SaveMapiMessageModel");
+            }
+
+            // verify the required parameter 'name' is set
+            if (request.name == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'name' when calling SaveMapiMessageModel");
+            }
+
+            // verify the required parameter 'rq' is set
+            if (request.rq == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'rq' when calling SaveMapiMessageModel");
+            }
+
+            // create path and map variables
+            var resourcePath = this.configuration.GetApiRootUrl() + "/email/MapiMessage/{format}/{name}";
+            resourcePath = Regex
+                .Replace(resourcePath, "\\*", string.Empty)
+                .Replace("&amp;", "&")
+                .Replace("/?", "?");
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "name", request.name);
+            var postBody = SerializationHelper.Serialize(request.rq); // http body (model) parameter
+            await apiInvoker.InvokeApiAsync(
+                resourcePath,
+                "PUT",
                 postBody,
                 null,
                 null);

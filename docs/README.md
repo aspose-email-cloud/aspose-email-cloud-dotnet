@@ -58,14 +58,32 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**ConvertCalendarModelToAlternateAsync**](EmailApi.md#convertcalendarmodeltoalternateasync) | **PUT** /email/CalendarModel/as-alternate | Convert iCalendar to AlternateView             . Not available on .NETFramework v2.0
 *EmailApi* | [**ConvertCalendarModelToFile**](EmailApi.md#convertcalendarmodeltofile) | **PUT** /email/CalendarModel/model-as-file/{format} | Converts calendar model to specified format and returns as file             
 *EmailApi* | [**ConvertCalendarModelToFileAsync**](EmailApi.md#convertcalendarmodeltofileasync) | **PUT** /email/CalendarModel/model-as-file/{format} | Converts calendar model to specified format and returns as file             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertCalendarModelToMapiModel**](EmailApi.md#convertcalendarmodeltomapimodel) | **PUT** /email/CalendarModel/model-as-mapi-model | Converts CalendarDto to MapiCalendarDto.             
+*EmailApi* | [**ConvertCalendarModelToMapiModelAsync**](EmailApi.md#convertcalendarmodeltomapimodelasync) | **PUT** /email/CalendarModel/model-as-mapi-model | Converts CalendarDto to MapiCalendarDto.             . Not available on .NETFramework v2.0
 *EmailApi* | [**ConvertContact**](EmailApi.md#convertcontact) | **PUT** /email/ContactModel/{format}/convert/{destinationFormat} | Converts contact document to specified format and returns as file             
 *EmailApi* | [**ConvertContactAsync**](EmailApi.md#convertcontactasync) | **PUT** /email/ContactModel/{format}/convert/{destinationFormat} | Converts contact document to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**ConvertContactModelToFile**](EmailApi.md#convertcontactmodeltofile) | **PUT** /email/ContactModel/model-as-file/{destinationFormat} | Converts contact model to specified format and returns as file             
 *EmailApi* | [**ConvertContactModelToFileAsync**](EmailApi.md#convertcontactmodeltofileasync) | **PUT** /email/ContactModel/model-as-file/{destinationFormat} | Converts contact model to specified format and returns as file             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertContactModelToMapiModel**](EmailApi.md#convertcontactmodeltomapimodel) | **PUT** /email/ContactModel/model-as-mapi-model | Converts ContactDto to MapiContactDto.             
+*EmailApi* | [**ConvertContactModelToMapiModelAsync**](EmailApi.md#convertcontactmodeltomapimodelasync) | **PUT** /email/ContactModel/model-as-mapi-model | Converts ContactDto to MapiContactDto.             . Not available on .NETFramework v2.0
 *EmailApi* | [**ConvertEmail**](EmailApi.md#convertemail) | **PUT** /email/convert/{format} | Converts email document to specified format and returns as file             
 *EmailApi* | [**ConvertEmailAsync**](EmailApi.md#convertemailasync) | **PUT** /email/convert/{format} | Converts email document to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**ConvertEmailModelToFile**](EmailApi.md#convertemailmodeltofile) | **PUT** /email/model/model-as-file/{destinationFormat} | Converts Email model to specified format and returns as file             
 *EmailApi* | [**ConvertEmailModelToFileAsync**](EmailApi.md#convertemailmodeltofileasync) | **PUT** /email/model/model-as-file/{destinationFormat} | Converts Email model to specified format and returns as file             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertEmailModelToMapiModel**](EmailApi.md#convertemailmodeltomapimodel) | **PUT** /email/model/model-as-mapi-model | Converts EmailDto to MapiMessageDto.             
+*EmailApi* | [**ConvertEmailModelToMapiModelAsync**](EmailApi.md#convertemailmodeltomapimodelasync) | **PUT** /email/model/model-as-mapi-model | Converts EmailDto to MapiMessageDto.             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertMapiCalendarModelToCalendarModel**](EmailApi.md#convertmapicalendarmodeltocalendarmodel) | **PUT** /email/MapiCalendar/model-as-calendar-model | Converts MAPI calendar model to CalendarDto model             
+*EmailApi* | [**ConvertMapiCalendarModelToCalendarModelAsync**](EmailApi.md#convertmapicalendarmodeltocalendarmodelasync) | **PUT** /email/MapiCalendar/model-as-calendar-model | Converts MAPI calendar model to CalendarDto model             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertMapiCalendarModelToFile**](EmailApi.md#convertmapicalendarmodeltofile) | **PUT** /email/MapiCalendar/model-as-file/{destinationFormat} | Converts MAPI calendar model to specified format and returns as file             
+*EmailApi* | [**ConvertMapiCalendarModelToFileAsync**](EmailApi.md#convertmapicalendarmodeltofileasync) | **PUT** /email/MapiCalendar/model-as-file/{destinationFormat} | Converts MAPI calendar model to specified format and returns as file             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertMapiContactModelToContactModel**](EmailApi.md#convertmapicontactmodeltocontactmodel) | **PUT** /email/MapiContact/model-as-contact-model | Converts MAPI contact model to ContactDto model             
+*EmailApi* | [**ConvertMapiContactModelToContactModelAsync**](EmailApi.md#convertmapicontactmodeltocontactmodelasync) | **PUT** /email/MapiContact/model-as-contact-model | Converts MAPI contact model to ContactDto model             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertMapiContactModelToFile**](EmailApi.md#convertmapicontactmodeltofile) | **PUT** /email/MapiContact/model-as-file/{destinationFormat} | Converts MAPI contact model to specified format and returns as file             
+*EmailApi* | [**ConvertMapiContactModelToFileAsync**](EmailApi.md#convertmapicontactmodeltofileasync) | **PUT** /email/MapiContact/model-as-file/{destinationFormat} | Converts MAPI contact model to specified format and returns as file             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertMapiMessageModelToEmailModel**](EmailApi.md#convertmapimessagemodeltoemailmodel) | **PUT** /email/MapiMessage/model-as-email-model | Converts MAPI message model to EmailDto model             
+*EmailApi* | [**ConvertMapiMessageModelToEmailModelAsync**](EmailApi.md#convertmapimessagemodeltoemailmodelasync) | **PUT** /email/MapiMessage/model-as-email-model | Converts MAPI message model to EmailDto model             . Not available on .NETFramework v2.0
+*EmailApi* | [**ConvertMapiMessageModelToFile**](EmailApi.md#convertmapimessagemodeltofile) | **PUT** /email/MapiMessage/model-as-file/{destinationFormat} | Converts MAPI message model to specified format and returns as file             
+*EmailApi* | [**ConvertMapiMessageModelToFileAsync**](EmailApi.md#convertmapimessagemodeltofileasync) | **PUT** /email/MapiMessage/model-as-file/{destinationFormat} | Converts MAPI message model to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**CopyFile**](EmailApi.md#copyfile) | **PUT** /email/storage/file/copy/{srcPath} | 
 *EmailApi* | [**CopyFileAsync**](EmailApi.md#copyfileasync) | **PUT** /email/storage/file/copy/{srcPath} | 
 *EmailApi* | [**CopyFolder**](EmailApi.md#copyfolder) | **PUT** /email/storage/folder/copy/{srcPath} | 
@@ -120,6 +138,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetCalendarAsFileAsync**](EmailApi.md#getcalendarasfileasync) | **GET** /email/CalendarModel/{fileName}/as-file/{format} | Converts calendar document from storage to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendarAttachment**](EmailApi.md#getcalendarattachment) | **GET** /email/Calendar/{name}/attachments/{attachment} | Get iCalendar document attachment by name             
 *EmailApi* | [**GetCalendarAttachmentAsync**](EmailApi.md#getcalendarattachmentasync) | **GET** /email/Calendar/{name}/attachments/{attachment} | Get iCalendar document attachment by name             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetCalendarFileAsMapiModel**](EmailApi.md#getcalendarfileasmapimodel) | **PUT** /email/MapiCalendar/file-as-model | Converts calendar file to a MAPI model representation             
+*EmailApi* | [**GetCalendarFileAsMapiModelAsync**](EmailApi.md#getcalendarfileasmapimodelasync) | **PUT** /email/MapiCalendar/file-as-model | Converts calendar file to a MAPI model representation             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendarFileAsModel**](EmailApi.md#getcalendarfileasmodel) | **PUT** /email/CalendarModel/file-as-model | Converts calendar document to a model representation             
 *EmailApi* | [**GetCalendarFileAsModelAsync**](EmailApi.md#getcalendarfileasmodelasync) | **PUT** /email/CalendarModel/file-as-model | Converts calendar document to a model representation             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetCalendarList**](EmailApi.md#getcalendarlist) | **GET** /email/Calendar | Get iCalendar files list in folder on storage             
@@ -134,6 +154,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetContactAsFileAsync**](EmailApi.md#getcontactasfileasync) | **GET** /email/ContactModel/{format}/{fileName}/as-file/{destinationFormat} | Converts calendar document from storage to specified format and returns as file             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetContactAttachment**](EmailApi.md#getcontactattachment) | **GET** /email/Contact/{format}/{name}/attachments/{attachment} | Get attachment file by name             
 *EmailApi* | [**GetContactAttachmentAsync**](EmailApi.md#getcontactattachmentasync) | **GET** /email/Contact/{format}/{name}/attachments/{attachment} | Get attachment file by name             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetContactFileAsMapiModel**](EmailApi.md#getcontactfileasmapimodel) | **PUT** /email/MapiContact/{fileFormat}/file-as-model | Converts contact file to a MAPI model representation             
+*EmailApi* | [**GetContactFileAsMapiModelAsync**](EmailApi.md#getcontactfileasmapimodelasync) | **PUT** /email/MapiContact/{fileFormat}/file-as-model | Converts contact file to a MAPI model representation             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetContactFileAsModel**](EmailApi.md#getcontactfileasmodel) | **PUT** /email/ContactModel/{format}/file-as-model | Converts contact document to a model representation             
 *EmailApi* | [**GetContactFileAsModelAsync**](EmailApi.md#getcontactfileasmodelasync) | **PUT** /email/ContactModel/{format}/file-as-model | Converts contact document to a model representation             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetContactList**](EmailApi.md#getcontactlist) | **GET** /email/Contact/{format} | Get contact list from storage folder             
@@ -156,6 +178,8 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetEmailClientAccountAsync**](EmailApi.md#getemailclientaccountasync) | **GET** /email/client/email-client-account | Get email client account from storage             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailClientMultiAccount**](EmailApi.md#getemailclientmultiaccount) | **GET** /email/client/multi-account | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
 *EmailApi* | [**GetEmailClientMultiAccountAsync**](EmailApi.md#getemailclientmultiaccountasync) | **GET** /email/client/multi-account | Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetEmailFileAsMapiModel**](EmailApi.md#getemailfileasmapimodel) | **PUT** /email/MapiMessage/{fileFormat}/file-as-model | Converts email file to a MAPI model representation             
+*EmailApi* | [**GetEmailFileAsMapiModelAsync**](EmailApi.md#getemailfileasmapimodelasync) | **PUT** /email/MapiMessage/{fileFormat}/file-as-model | Converts email file to a MAPI model representation             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailFileAsModel**](EmailApi.md#getemailfileasmodel) | **PUT** /email/model/file-as-model | Converts email document to a model representation             
 *EmailApi* | [**GetEmailFileAsModelAsync**](EmailApi.md#getemailfileasmodelasync) | **PUT** /email/model/file-as-model | Converts email document to a model representation             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetEmailModel**](EmailApi.md#getemailmodel) | **GET** /email/model/{format}/{name} | Get email document.             
@@ -172,8 +196,14 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**GetMapiAttachmentAsync**](EmailApi.md#getmapiattachmentasync) | **GET** /email/Mapi/{name}/attachments/{attachment} | Get document attachment as file stream             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetMapiAttachments**](EmailApi.md#getmapiattachments) | **GET** /email/Mapi/{name}/attachments | Get document attachment list             
 *EmailApi* | [**GetMapiAttachmentsAsync**](EmailApi.md#getmapiattachmentsasync) | **GET** /email/Mapi/{name}/attachments | Get document attachment list             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetMapiCalendarModel**](EmailApi.md#getmapicalendarmodel) | **GET** /email/MapiCalendar/{name} | Get MAPI calendar document.             
+*EmailApi* | [**GetMapiCalendarModelAsync**](EmailApi.md#getmapicalendarmodelasync) | **GET** /email/MapiCalendar/{name} | Get MAPI calendar document.             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetMapiContactModel**](EmailApi.md#getmapicontactmodel) | **GET** /email/MapiContact/{format}/{name} | Get MAPI contact document.             
+*EmailApi* | [**GetMapiContactModelAsync**](EmailApi.md#getmapicontactmodelasync) | **GET** /email/MapiContact/{format}/{name} | Get MAPI contact document.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetMapiList**](EmailApi.md#getmapilist) | **GET** /email/Mapi | Get document list from storage folder             
 *EmailApi* | [**GetMapiListAsync**](EmailApi.md#getmapilistasync) | **GET** /email/Mapi | Get document list from storage folder             . Not available on .NETFramework v2.0
+*EmailApi* | [**GetMapiMessageModel**](EmailApi.md#getmapimessagemodel) | **GET** /email/MapiMessage/{format}/{name} | Get MAPI message document.             
+*EmailApi* | [**GetMapiMessageModelAsync**](EmailApi.md#getmapimessagemodelasync) | **GET** /email/MapiMessage/{format}/{name} | Get MAPI message document.             . Not available on .NETFramework v2.0
 *EmailApi* | [**GetMapiProperties**](EmailApi.md#getmapiproperties) | **GET** /email/Mapi/{name}/properties | Get document properties             
 *EmailApi* | [**GetMapiPropertiesAsync**](EmailApi.md#getmapipropertiesasync) | **GET** /email/Mapi/{name}/properties | Get document properties             . Not available on .NETFramework v2.0
 *EmailApi* | [**IsEmailAddressDisposable**](EmailApi.md#isemailaddressdisposable) | **GET** /email/disposable/isDisposable/{address} | Check email address is disposable             
@@ -210,6 +240,12 @@ Class | Method | HTTP request | Description
 *EmailApi* | [**SaveMailAccountAsync**](EmailApi.md#savemailaccountasync) | **POST** /email/client/SaveMailAccount | Create email account file (*.account) with login/password authentication             . Not available on .NETFramework v2.0
 *EmailApi* | [**SaveMailOAuthAccount**](EmailApi.md#savemailoauthaccount) | **POST** /email/client/SaveMailOAuthAccount | Create email account file (*.account) with OAuth             
 *EmailApi* | [**SaveMailOAuthAccountAsync**](EmailApi.md#savemailoauthaccountasync) | **POST** /email/client/SaveMailOAuthAccount | Create email account file (*.account) with OAuth             . Not available on .NETFramework v2.0
+*EmailApi* | [**SaveMapiCalendarModel**](EmailApi.md#savemapicalendarmodel) | **PUT** /email/MapiCalendar/{format}/{name} | Save MAPI Calendar to storage.             
+*EmailApi* | [**SaveMapiCalendarModelAsync**](EmailApi.md#savemapicalendarmodelasync) | **PUT** /email/MapiCalendar/{format}/{name} | Save MAPI Calendar to storage.             . Not available on .NETFramework v2.0
+*EmailApi* | [**SaveMapiContactModel**](EmailApi.md#savemapicontactmodel) | **PUT** /email/MapiContact/{format}/{name} | Save MAPI Contact to storage.             
+*EmailApi* | [**SaveMapiContactModelAsync**](EmailApi.md#savemapicontactmodelasync) | **PUT** /email/MapiContact/{format}/{name} | Save MAPI Contact to storage.             . Not available on .NETFramework v2.0
+*EmailApi* | [**SaveMapiMessageModel**](EmailApi.md#savemapimessagemodel) | **PUT** /email/MapiMessage/{format}/{name} | Save MAPI message to storage.             
+*EmailApi* | [**SaveMapiMessageModelAsync**](EmailApi.md#savemapimessagemodelasync) | **PUT** /email/MapiMessage/{format}/{name} | Save MAPI message to storage.             . Not available on .NETFramework v2.0
 *EmailApi* | [**SendEmail**](EmailApi.md#sendemail) | **POST** /email/client/Send | Send an email from *.eml file located on storage             
 *EmailApi* | [**SendEmailAsync**](EmailApi.md#sendemailasync) | **POST** /email/client/Send | Send an email from *.eml file located on storage             . Not available on .NETFramework v2.0
 *EmailApi* | [**SendEmailMime**](EmailApi.md#sendemailmime) | **POST** /email/client/SendMime | Send an email specified by MIME in request             
@@ -315,11 +351,35 @@ Class | Method | HTTP request | Description
  - [Model.ListResponseOfString](ListResponseOfString.md)
  - [Model.MailAddress](MailAddress.md)
  - [Model.MailServerFolder](MailServerFolder.md)
+ - [Model.MapiAttachmentDto](MapiAttachmentDto.md)
+ - [Model.MapiCalendarAttendeesDto](MapiCalendarAttendeesDto.md)
+ - [Model.MapiCalendarEventRecurrenceDto](MapiCalendarEventRecurrenceDto.md)
+ - [Model.MapiCalendarExceptionInfoDto](MapiCalendarExceptionInfoDto.md)
+ - [Model.MapiCalendarRecurrencePatternDto](MapiCalendarRecurrencePatternDto.md)
+ - [Model.MapiCalendarTimeZoneDto](MapiCalendarTimeZoneDto.md)
+ - [Model.MapiCalendarTimeZoneInfoDto](MapiCalendarTimeZoneInfoDto.md)
+ - [Model.MapiCalendarTimeZoneRuleDto](MapiCalendarTimeZoneRuleDto.md)
+ - [Model.MapiContactElectronicAddressDto](MapiContactElectronicAddressDto.md)
+ - [Model.MapiContactElectronicAddressPropertySetDto](MapiContactElectronicAddressPropertySetDto.md)
+ - [Model.MapiContactEventPropertySetDto](MapiContactEventPropertySetDto.md)
+ - [Model.MapiContactNamePropertySetDto](MapiContactNamePropertySetDto.md)
+ - [Model.MapiContactOtherPropertySetDto](MapiContactOtherPropertySetDto.md)
+ - [Model.MapiContactPersonalInfoPropertySetDto](MapiContactPersonalInfoPropertySetDto.md)
+ - [Model.MapiContactPhysicalAddressDto](MapiContactPhysicalAddressDto.md)
+ - [Model.MapiContactPhysicalAddressPropertySetDto](MapiContactPhysicalAddressPropertySetDto.md)
+ - [Model.MapiContactProfessionalPropertySetDto](MapiContactProfessionalPropertySetDto.md)
+ - [Model.MapiContactTelephonePropertySetDto](MapiContactTelephonePropertySetDto.md)
+ - [Model.MapiElectronicAddressDto](MapiElectronicAddressDto.md)
+ - [Model.MapiMessageItemBaseDto](MapiMessageItemBaseDto.md)
+ - [Model.MapiPropertyDescriptor](MapiPropertyDescriptor.md)
+ - [Model.MapiPropertyDto](MapiPropertyDto.md)
+ - [Model.MapiRecipientDto](MapiRecipientDto.md)
  - [Model.MimeResponse](MimeResponse.md)
  - [Model.NameValuePair](NameValuePair.md)
  - [Model.ObjectExist](ObjectExist.md)
  - [Model.PhoneNumber](PhoneNumber.md)
  - [Model.PostalAddress](PostalAddress.md)
+ - [Model.RecurrencePatternDto](RecurrencePatternDto.md)
  - [Model.ReminderAttendee](ReminderAttendee.md)
  - [Model.ReminderTrigger](ReminderTrigger.md)
  - [Model.SetEmailPropertyRequest](SetEmailPropertyRequest.md)
@@ -334,6 +394,9 @@ Class | Method | HTTP request | Description
  - [Model.StorageModelRqOfCalendarDto](StorageModelRqOfCalendarDto.md)
  - [Model.StorageModelRqOfContactDto](StorageModelRqOfContactDto.md)
  - [Model.StorageModelRqOfEmailDto](StorageModelRqOfEmailDto.md)
+ - [Model.StorageModelRqOfMapiCalendarDto](StorageModelRqOfMapiCalendarDto.md)
+ - [Model.StorageModelRqOfMapiContactDto](StorageModelRqOfMapiContactDto.md)
+ - [Model.StorageModelRqOfMapiMessageDto](StorageModelRqOfMapiMessageDto.md)
  - [Model.Url](Url.md)
  - [Model.ValueResponse](ValueResponse.md)
  - [Model.ValueTOfBoolean](ValueTOfBoolean.md)
@@ -349,6 +412,7 @@ Class | Method | HTTP request | Description
  - [Model.CalendarDtoList](CalendarDtoList.md)
  - [Model.ContactDtoList](ContactDtoList.md)
  - [Model.CreateFolderBaseRequest](CreateFolderBaseRequest.md)
+ - [Model.DailyRecurrencePatternDto](DailyRecurrencePatternDto.md)
  - [Model.DeleteEmailThreadAccountRq](DeleteEmailThreadAccountRq.md)
  - [Model.DeleteFolderBaseRequest](DeleteFolderBaseRequest.md)
  - [Model.DeleteMessageBaseRequest](DeleteMessageBaseRequest.md)
@@ -365,6 +429,28 @@ Class | Method | HTTP request | Description
  - [Model.IndexedHierarchicalObject](IndexedHierarchicalObject.md)
  - [Model.IndexedPrimitiveObject](IndexedPrimitiveObject.md)
  - [Model.LinkedResource](LinkedResource.md)
+ - [Model.MapiBinaryPropertyDto](MapiBinaryPropertyDto.md)
+ - [Model.MapiBooleanPropertyDto](MapiBooleanPropertyDto.md)
+ - [Model.MapiCalendarDailyRecurrencePatternDto](MapiCalendarDailyRecurrencePatternDto.md)
+ - [Model.MapiCalendarDto](MapiCalendarDto.md)
+ - [Model.MapiCalendarWeeklyRecurrencePatternDto](MapiCalendarWeeklyRecurrencePatternDto.md)
+ - [Model.MapiCalendarYearlyAndMonthlyRecurrencePatternDto](MapiCalendarYearlyAndMonthlyRecurrencePatternDto.md)
+ - [Model.MapiContactDto](MapiContactDto.md)
+ - [Model.MapiContactPhotoDto](MapiContactPhotoDto.md)
+ - [Model.MapiDateTimePropertyDto](MapiDateTimePropertyDto.md)
+ - [Model.MapiFileAsPropertyDto](MapiFileAsPropertyDto.md)
+ - [Model.MapiImportancePropertyDto](MapiImportancePropertyDto.md)
+ - [Model.MapiIntPropertyDto](MapiIntPropertyDto.md)
+ - [Model.MapiKnownPropertyDescriptor](MapiKnownPropertyDescriptor.md)
+ - [Model.MapiLegacyFreeBusyPropertyDto](MapiLegacyFreeBusyPropertyDto.md)
+ - [Model.MapiMessageDto](MapiMessageDto.md)
+ - [Model.MapiMultiIntPropertyDto](MapiMultiIntPropertyDto.md)
+ - [Model.MapiMultiStringPropertyDto](MapiMultiStringPropertyDto.md)
+ - [Model.MapiPhysicalAddressIndexPropertyDto](MapiPhysicalAddressIndexPropertyDto.md)
+ - [Model.MapiPidPropertyDescriptor](MapiPidPropertyDescriptor.md)
+ - [Model.MapiResponseTypePropertyDto](MapiResponseTypePropertyDto.md)
+ - [Model.MapiStringPropertyDto](MapiStringPropertyDto.md)
+ - [Model.MonthlyRecurrencePatternDto](MonthlyRecurrencePatternDto.md)
  - [Model.MoveEmailMessageRq](MoveEmailMessageRq.md)
  - [Model.MoveEmailThreadRq](MoveEmailThreadRq.md)
  - [Model.PrimitiveObject](PrimitiveObject.md)
@@ -375,8 +461,14 @@ Class | Method | HTTP request | Description
  - [Model.SendEmailModelRq](SendEmailModelRq.md)
  - [Model.SetMessageReadFlagAccountBaseRequest](SetMessageReadFlagAccountBaseRequest.md)
  - [Model.StorageFileLocation](StorageFileLocation.md)
+ - [Model.TaskRegeneratingPatternDto](TaskRegeneratingPatternDto.md)
+ - [Model.WeeklyRecurrencePatternDto](WeeklyRecurrencePatternDto.md)
+ - [Model.YearlyRecurrencePatternDto](YearlyRecurrencePatternDto.md)
  - [Model.AiBcrParseStorageRq](AiBcrParseStorageRq.md)
  - [Model.AppendEmailBaseRequest](AppendEmailBaseRequest.md)
  - [Model.AppendEmailMimeBaseRequest](AppendEmailMimeBaseRequest.md)
  - [Model.AppendEmailModelRq](AppendEmailModelRq.md)
+ - [Model.MapiPidLidPropertyDescriptor](MapiPidLidPropertyDescriptor.md)
+ - [Model.MapiPidNamePropertyDescriptor](MapiPidNamePropertyDescriptor.md)
+ - [Model.MapiPidTagPropertyDescriptor](MapiPidTagPropertyDescriptor.md)
 

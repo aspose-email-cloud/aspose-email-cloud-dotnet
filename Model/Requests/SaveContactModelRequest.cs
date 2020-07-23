@@ -43,7 +43,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         /// </summary>
         /// <param name="format">Contact document format. Enum, available values: VCard, WebDav, Msg</param>
         /// <param name="name">Contact document file name.</param>
-        /// <param name="rq">Create contact request.</param>
+        /// <param name="rq">Create/Update contact request.</param>
         public SaveContactModelRequest(string format, string name, StorageModelRqOfContactDto rq)
         {
             this.format = format;
@@ -62,7 +62,7 @@ namespace Aspose.Email.Cloud.Sdk.Model.Requests
         public string name { get; set; }
 
         /// <summary>
-        /// Create contact request.
+        /// Create/Update contact request.
         /// </summary>
         public StorageModelRqOfContactDto rq { get; set; }
   }

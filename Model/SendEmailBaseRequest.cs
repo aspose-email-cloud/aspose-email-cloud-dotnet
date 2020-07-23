@@ -40,7 +40,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Email document (*.eml) file location in storage             
         /// </summary>  
-        public Object EmailFile { get; set; }
+        public StorageFileLocation EmailFile { get; set; }
 
         /// <summary>SendEmailBaseRequest constructor</summary>
         public SendEmailBaseRequest() {}
@@ -50,7 +50,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="secondAccount">Additional email account (for example, FirstAccount could be IMAP, and second one could be SMTP)             </param>
         /// <param name="storageFolder">Storage folder location of account files             </param>
         /// <param name="emailFile">Email document (*.eml) file location in storage             </param>
-        public SendEmailBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, Object emailFile)
+        public SendEmailBaseRequest(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, StorageFileLocation emailFile)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;

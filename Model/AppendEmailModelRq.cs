@@ -40,7 +40,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Email document             
         /// </summary>  
-        public Object Message { get; set; }
+        public EmailDto Message { get; set; }
 
         /// <summary>AppendEmailModelRq constructor</summary>
         public AppendEmailModelRq() {}
@@ -52,7 +52,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="folder">Email account folder to store a message             </param>
         /// <param name="markAsSent">Mark message as sent             </param>
         /// <param name="message">Email document             </param>
-        public AppendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, Object message)
+        public AppendEmailModelRq(string firstAccount, string secondAccount, StorageFolderLocation storageFolder, string folder, bool? markAsSent, EmailDto message)
         {
             FirstAccount = firstAccount;
             SecondAccount = secondAccount;
