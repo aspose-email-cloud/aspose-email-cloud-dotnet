@@ -56,7 +56,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         }
                     ﻿
         /// <summary>
-        /// The call proposes k most probable names for given starting characters              
+        /// The call proposes k most probable names for given starting characters.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameCompleteRequest" /></param>
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
@@ -89,7 +89,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// The call proposes k most probable names for given starting characters              
+        /// The call proposes k most probable names for given starting characters.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameCompleteRequest" /></param>
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
@@ -99,7 +99,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Expands a person&#39;s name into a list of possible alternatives using options for expanding instructions              
+        /// Expands a person&#39;s name into a list of possible alternatives using options for expanding instructions.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameExpandRequest" /></param>
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
@@ -132,7 +132,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Expands a person&#39;s name into a list of possible alternatives using options for expanding instructions              
+        /// Expands a person&#39;s name into a list of possible alternatives using options for expanding instructions.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameExpandRequest" /></param>
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
@@ -142,9 +142,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Expands a person&#39;s parsed name into a list of possible alternatives using options for expanding instructions              
+        /// Expands a person&#39;s parsed name into a list of possible alternatives using options for expanding instructions.              
         /// </summary>
-        /// <param name="request">Parsed name with options</param>
+        /// <param name="request">Parsed name with options.</param>
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
         public AiNameWeightedVariants ExpandParsed(
             AiNameParsedRequest request)
@@ -162,14 +162,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
             var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
-                "POST",
+                "PUT",
                 postBody);
             return response == null ? null : SerializationHelper.Deserialize<AiNameWeightedVariants>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Expands a person&#39;s parsed name into a list of possible alternatives using options for expanding instructions              
+        /// Expands a person&#39;s parsed name into a list of possible alternatives using options for expanding instructions.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameExpandParsedRequest" /></param>
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
@@ -181,7 +181,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Formats a person&#39;s name in correct case and name order using options for formatting instructions              
+        /// Formats a person&#39;s name in correct case and name order using options for formatting instructions.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameFormatRequest" /></param>
         /// <returns><see cref="AiNameFormatted"/></returns>
@@ -215,7 +215,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Formats a person&#39;s name in correct case and name order using options for formatting instructions              
+        /// Formats a person&#39;s name in correct case and name order using options for formatting instructions.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameFormatRequest" /></param>
         /// <returns><see cref="AiNameFormatted"/></returns>
@@ -225,9 +225,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Formats a person&#39;s parsed name in correct case and name order using options for formatting instructions              
+        /// Formats a person&#39;s parsed name in correct case and name order using options for formatting instructions.              
         /// </summary>
-        /// <param name="request">Parsed name with options</param>
+        /// <param name="request">Parsed name with options.</param>
         /// <returns><see cref="AiNameFormatted"/></returns>
         public AiNameFormatted FormatParsed(
             AiNameParsedRequest request)
@@ -245,14 +245,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
             var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
-                "POST",
+                "PUT",
                 postBody);
             return response == null ? null : SerializationHelper.Deserialize<AiNameFormatted>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Formats a person&#39;s parsed name in correct case and name order using options for formatting instructions              
+        /// Formats a person&#39;s parsed name in correct case and name order using options for formatting instructions.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameFormatParsedRequest" /></param>
         /// <returns><see cref="AiNameFormatted"/></returns>
@@ -264,7 +264,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Detect person&#39;s gender from name string              
+        /// Detect person&#39;s gender from name string.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameGenderizeRequest" /></param>
         /// <returns><see cref="AiNameGenderHypothesisList"/></returns>
@@ -297,7 +297,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Detect person&#39;s gender from name string              
+        /// Detect person&#39;s gender from name string.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameGenderizeRequest" /></param>
         /// <returns><see cref="AiNameGenderHypothesisList"/></returns>
@@ -307,9 +307,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Detect person&#39;s gender from parsed name              
+        /// Detect person&#39;s gender from parsed name.              
         /// </summary>
-        /// <param name="request">Gender detection request data</param>
+        /// <param name="request">Gender detection request data.</param>
         /// <returns><see cref="AiNameGenderHypothesisList"/></returns>
         public AiNameGenderHypothesisList GenderizeParsed(
             AiNameParsedRequest request)
@@ -327,14 +327,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
             var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
-                "POST",
+                "PUT",
                 postBody);
             return response == null ? null : SerializationHelper.Deserialize<AiNameGenderHypothesisList>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Detect person&#39;s gender from parsed name              
+        /// Detect person&#39;s gender from parsed name.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameGenderizeParsedRequest" /></param>
         /// <returns><see cref="AiNameGenderHypothesisList"/></returns>
@@ -346,7 +346,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Compare people&#39;s names. Uses options for comparing instructions              
+        /// Compare people&#39;s names. Uses options for comparing instructions.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameMatchRequest" /></param>
         /// <returns><see cref="AiNameMatchResult"/></returns>
@@ -387,7 +387,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Compare people&#39;s names. Uses options for comparing instructions              
+        /// Compare people&#39;s names. Uses options for comparing instructions.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameMatchRequest" /></param>
         /// <returns><see cref="AiNameMatchResult"/></returns>
@@ -397,9 +397,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Compare people&#39;s parsed names and attributes. Uses options for comparing instructions              
+        /// Compare people&#39;s parsed names and attributes. Uses options for comparing instructions.              
         /// </summary>
-        /// <param name="request">Parsed names to match</param>
+        /// <param name="request">Parsed names to match.</param>
         /// <returns><see cref="AiNameMatchResult"/></returns>
         public AiNameMatchResult MatchParsed(
             AiNameParsedMatchRequest request)
@@ -417,14 +417,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
             var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
-                "POST",
+                "PUT",
                 postBody);
             return response == null ? null : SerializationHelper.Deserialize<AiNameMatchResult>(response);
         }
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Compare people&#39;s parsed names and attributes. Uses options for comparing instructions              
+        /// Compare people&#39;s parsed names and attributes. Uses options for comparing instructions.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameMatchParsedRequest" /></param>
         /// <returns><see cref="AiNameMatchResult"/></returns>
@@ -436,7 +436,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Parse name to components              
+        /// Parse name to components.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameParseRequest" /></param>
         /// <returns><see cref="AiNameComponentList"/></returns>
@@ -469,7 +469,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Parse name to components              
+        /// Parse name to components.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameParseRequest" /></param>
         /// <returns><see cref="AiNameComponentList"/></returns>
@@ -479,7 +479,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     ﻿
         /// <summary>
-        /// Parse person&#39;s name out of an email address              
+        /// Parse person&#39;s name out of an email address.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameParseEmailAddressRequest" /></param>
         /// <returns><see cref="AiNameExtractedList"/></returns>
@@ -512,7 +512,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Parse person&#39;s name out of an email address              
+        /// Parse person&#39;s name out of an email address.              
         /// </summary>
         /// <param name="request">Request. <see cref="AiNameParseEmailAddressRequest" /></param>
         /// <returns><see cref="AiNameExtractedList"/></returns>

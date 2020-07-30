@@ -48,13 +48,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// Initializes a new instance of the <see cref="ContactGetRequest"/> class.
         /// </summary>
         /// <param name="format">Contact document format. Enum, available values: VCard, WebDav, Msg</param>
-        /// <param name="name">Contact document file name.</param>
+        /// <param name="fileName">Contact document file name.</param>
         /// <param name="folder">Path to folder in storage.</param>
         /// <param name="storage">Storage name.</param>
-        public ContactGetRequest(string format, string name, string folder = null, string storage = null)
+        public ContactGetRequest(string format, string fileName, string folder = null, string storage = null)
         {
             this.format = format;
-            this.name = name;
+            this.fileName = fileName;
             this.folder = folder;
             this.storage = storage;
         }
@@ -67,7 +67,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Contact document file name.
         /// </summary>
-        public string name { get; set; }
+        public string fileName { get; set; }
 
         /// <summary>
         /// Path to folder in storage.

@@ -3,7 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Format** | **string** | Calendar file format Enum, available values: Ics, Msg | 
-**Value** | [**MapiCalendarDto**](MapiCalendarDto.md) | MAPI calendar model.              | [optional] 
+**Value** | [**MapiCalendarDto**](MapiCalendarDto.md) | MAPI calendar model.              | 
 
 
 

@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**MessageId** | **string** | Message identifier.              | [optional] 
+**MessageId** | **string** | Message identifier.              | 
 
 ## Parent class
 

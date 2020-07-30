@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**StorageFile** | [**StorageFileLocation**](StorageFileLocation.md) |  | [optional] 
-**Value** | [**MapiCalendarDto**](MapiCalendarDto.md) |  | [optional] 
+**StorageFile** | [**StorageFileLocation**](StorageFileLocation.md) |  | 
+**Value** | [**MapiCalendarDto**](MapiCalendarDto.md) |  | 
 
 
 

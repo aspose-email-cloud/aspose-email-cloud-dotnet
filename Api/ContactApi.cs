@@ -263,11 +263,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
                     "Missing required parameter 'format' when calling Get");
             }
 
-            // verify the required parameter 'name' is set
-            if (request.name == null)
+            // verify the required parameter 'fileName' is set
+            if (request.fileName == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'name' when calling Get");
+                    "Missing required parameter 'fileName' when calling Get");
             }
 
             // create path and map variables
@@ -277,7 +277,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.fileName);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
             resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
             var response = apiInvoker.InvokeApi(

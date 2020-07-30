@@ -47,14 +47,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CalendarGetAsAlternateRequest"/> class.
         /// </summary>
-        /// <param name="name">iCalendar file name in storage</param>
+        /// <param name="fileName">iCalendar file name in storage</param>
         /// <param name="calendarAction">iCalendar method type Enum, available values: Create, Update, Cancel</param>
         /// <param name="sequenceId">The sequence id</param>
         /// <param name="folder">Path to folder in storage</param>
         /// <param name="storage">Storage name</param>
-        public CalendarGetAsAlternateRequest(string name, string calendarAction, string sequenceId = null, string folder = null, string storage = null)
+        public CalendarGetAsAlternateRequest(string fileName, string calendarAction, string sequenceId = null, string folder = null, string storage = null)
         {
-            this.name = name;
+            this.fileName = fileName;
             this.calendarAction = calendarAction;
             this.sequenceId = sequenceId;
             this.folder = folder;
@@ -64,7 +64,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// iCalendar file name in storage
         /// </summary>
-        public string name { get; set; }
+        public string fileName { get; set; }
 
         /// <summary>
         /// iCalendar method type Enum, available values: Create, Update, Cancel

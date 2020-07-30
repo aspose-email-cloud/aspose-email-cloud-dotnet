@@ -209,7 +209,7 @@ Get contact document from storage.
 ```csharp
 new ContactGetRequest(
     format,
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
@@ -217,7 +217,7 @@ new ContactGetRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
- **name** | **string**| Contact document file name. | 
+ **fileName** | **string**| Contact document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
@@ -242,7 +242,7 @@ Task<[**ContactDto**](ContactDto.md)>
 ```csharp
 new ContactGetRequest(
     format,
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
@@ -250,7 +250,7 @@ new ContactGetRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
- **name** | **string**| Contact document file name. | 
+ **fileName** | **string**| Contact document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 

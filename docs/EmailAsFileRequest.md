@@ -3,7 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Format** | **string** | Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
-**Value** | [**EmailDto**](EmailDto.md) | Email model.              | [optional] 
+**Value** | [**EmailDto**](EmailDto.md) | Email model.              | 
 
 
 

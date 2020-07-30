@@ -47,12 +47,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CalendarGetRequest"/> class.
         /// </summary>
-        /// <param name="name">iCalendar file name in storage.</param>
+        /// <param name="fileName">iCalendar file name in storage.</param>
         /// <param name="folder">Path to folder in storage.</param>
         /// <param name="storage">Storage name.</param>
-        public CalendarGetRequest(string name, string folder = null, string storage = null)
+        public CalendarGetRequest(string fileName, string folder = null, string storage = null)
         {
-            this.name = name;
+            this.fileName = fileName;
             this.folder = folder;
             this.storage = storage;
         }
@@ -60,7 +60,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// iCalendar file name in storage.
         /// </summary>
-        public string name { get; set; }
+        public string fileName { get; set; }
 
         /// <summary>
         /// Path to folder in storage.

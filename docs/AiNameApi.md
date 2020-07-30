@@ -7,7 +7,7 @@
 AiNameWeightedVariants Complete(AiNameCompleteRequest request)
 ```
 
-The call proposes k most probable names for given starting characters             
+The call proposes k most probable names for given starting characters.             
 
 ### Return type
 
@@ -26,11 +26,11 @@ new AiNameCompleteRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to complete (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to complete. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 async Task<AiNameWeightedVariants> CompleteAsync(AiNameCompleteRequest request)
 ```
 
-The call proposes k most probable names for given starting characters             
+The call proposes k most probable names for given starting characters.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -63,11 +63,11 @@ new AiNameCompleteRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to complete (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to complete. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -78,7 +78,7 @@ Name | Type | Description  | Notes
 AiNameWeightedVariants Expand(AiNameExpandRequest request)
 ```
 
-Expands a person's name into a list of possible alternatives using options for expanding instructions             
+Expands a person's name into a list of possible alternatives using options for expanding instructions.             
 
 ### Return type
 
@@ -97,11 +97,11 @@ new AiNameExpandRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to format (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to expand. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 async Task<AiNameWeightedVariants> ExpandAsync(AiNameExpandRequest request)
 ```
 
-Expands a person's name into a list of possible alternatives using options for expanding instructions             
+Expands a person's name into a list of possible alternatives using options for expanding instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -134,11 +134,11 @@ new AiNameExpandRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to format (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to expand. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 AiNameWeightedVariants ExpandParsed(AiNameParsedRequest request)
 ```
 
-Expands a person's parsed name into a list of possible alternatives using options for expanding instructions             
+Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
 
 ### Return type
 
@@ -168,7 +168,7 @@ See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.m
 async Task<AiNameWeightedVariants> ExpandParsedAsync(AiNameParsedRequest request)
 ```
 
-Expands a person's parsed name into a list of possible alternatives using options for expanding instructions             
+Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -188,7 +188,7 @@ See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.m
 AiNameFormatted Format(AiNameFormatRequest request)
 ```
 
-Formats a person's name in correct case and name order using options for formatting instructions             
+Formats a person's name in correct case and name order using options for formatting instructions.             
 
 ### Return type
 
@@ -208,11 +208,11 @@ new AiNameFormatRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to format (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to format. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **format** | **string**| Format of the name. Predefined format can be used by ID, or custom format can be specified. Predefined formats:      /format/default/ (&#x3D; &#39;%t%F%m%N%L%p&#39;)     /format/FN+LN/ (&#x3D; &#39;%F%L&#39;)     /format/title+FN+LN/ (&#x3D; &#39;%t%F%L&#39;)     /format/FN+MN+LN/ (&#x3D; &#39;%F%M%N%L&#39;)     /format/title+FN+MN+LN/ (&#x3D; &#39;%t%F%M%N%L&#39;)     /format/FN+MI+LN/ (&#x3D; &#39;%F%m%N%L&#39;)     /format/title+FN+MI+LN/ (&#x3D; &#39;%t%F%m%N%L&#39;)     /format/LN/ (&#x3D; &#39;%L&#39;)     /format/title+LN/ (&#x3D; &#39;%t%L&#39;)     /format/LN+FN+MN/ (&#x3D; &#39;%L,%F%M%N&#39;)     /format/LN+title+FN+MN/ (&#x3D; &#39;%L,%t%F%M%N&#39;)     /format/LN+FN+MI/ (&#x3D; &#39;%L,%F%m%N&#39;)     /format/LN+title+FN+MI/ (&#x3D; &#39;%L,%t%F%m%N&#39;)  Custom format string - custom combination of characters and the next term placeholders:      &#39;%t&#39; - Title (prefix)     &#39;%F&#39; - First name     &#39;%f&#39; - First initial     &#39;%M&#39; - Middle name(s)     &#39;%m&#39; - Middle initial(s)     &#39;%N&#39; - Nickname     &#39;%L&#39; - Last name     &#39;%l&#39; - Last initial     &#39;%p&#39; - Postfix  If no value for format option was provided, its default value is &#39;%t%F%m%N%L%p&#39;              | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
@@ -225,7 +225,7 @@ Name | Type | Description  | Notes
 async Task<AiNameFormatted> FormatAsync(AiNameFormatRequest request)
 ```
 
-Formats a person's name in correct case and name order using options for formatting instructions             
+Formats a person's name in correct case and name order using options for formatting instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -247,11 +247,11 @@ new AiNameFormatRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to format (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to format. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **format** | **string**| Format of the name. Predefined format can be used by ID, or custom format can be specified. Predefined formats:      /format/default/ (&#x3D; &#39;%t%F%m%N%L%p&#39;)     /format/FN+LN/ (&#x3D; &#39;%F%L&#39;)     /format/title+FN+LN/ (&#x3D; &#39;%t%F%L&#39;)     /format/FN+MN+LN/ (&#x3D; &#39;%F%M%N%L&#39;)     /format/title+FN+MN+LN/ (&#x3D; &#39;%t%F%M%N%L&#39;)     /format/FN+MI+LN/ (&#x3D; &#39;%F%m%N%L&#39;)     /format/title+FN+MI+LN/ (&#x3D; &#39;%t%F%m%N%L&#39;)     /format/LN/ (&#x3D; &#39;%L&#39;)     /format/title+LN/ (&#x3D; &#39;%t%L&#39;)     /format/LN+FN+MN/ (&#x3D; &#39;%L,%F%M%N&#39;)     /format/LN+title+FN+MN/ (&#x3D; &#39;%L,%t%F%M%N&#39;)     /format/LN+FN+MI/ (&#x3D; &#39;%L,%F%m%N&#39;)     /format/LN+title+FN+MI/ (&#x3D; &#39;%L,%t%F%m%N&#39;)  Custom format string - custom combination of characters and the next term placeholders:      &#39;%t&#39; - Title (prefix)     &#39;%F&#39; - First name     &#39;%f&#39; - First initial     &#39;%M&#39; - Middle name(s)     &#39;%m&#39; - Middle initial(s)     &#39;%N&#39; - Nickname     &#39;%L&#39; - Last name     &#39;%l&#39; - Last initial     &#39;%p&#39; - Postfix  If no value for format option was provided, its default value is &#39;%t%F%m%N%L%p&#39;              | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 AiNameFormatted FormatParsed(AiNameParsedRequest request)
 ```
 
-Formats a person's parsed name in correct case and name order using options for formatting instructions             
+Formats a person's parsed name in correct case and name order using options for formatting instructions.             
 
 ### Return type
 
@@ -282,7 +282,7 @@ See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.m
 async Task<AiNameFormatted> FormatParsedAsync(AiNameParsedRequest request)
 ```
 
-Formats a person's parsed name in correct case and name order using options for formatting instructions             
+Formats a person's parsed name in correct case and name order using options for formatting instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -302,7 +302,7 @@ See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.m
 AiNameGenderHypothesisList Genderize(AiNameGenderizeRequest request)
 ```
 
-Detect person's gender from name string             
+Detect person's gender from name string.             
 
 ### Return type
 
@@ -321,11 +321,11 @@ new AiNameGenderizeRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to parse (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to genderize. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -337,7 +337,7 @@ Name | Type | Description  | Notes
 async Task<AiNameGenderHypothesisList> GenderizeAsync(AiNameGenderizeRequest request)
 ```
 
-Detect person's gender from name string             
+Detect person's gender from name string.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -358,11 +358,11 @@ new AiNameGenderizeRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to parse (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to genderize. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -373,7 +373,7 @@ Name | Type | Description  | Notes
 AiNameGenderHypothesisList GenderizeParsed(AiNameParsedRequest request)
 ```
 
-Detect person's gender from parsed name             
+Detect person's gender from parsed name.             
 
 ### Return type
 
@@ -392,7 +392,7 @@ See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.m
 async Task<AiNameGenderHypothesisList> GenderizeParsedAsync(AiNameParsedRequest request)
 ```
 
-Detect person's gender from parsed name             
+Detect person's gender from parsed name.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -412,7 +412,7 @@ See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.m
 AiNameMatchResult Match(AiNameMatchRequest request)
 ```
 
-Compare people's names. Uses options for comparing instructions             
+Compare people's names. Uses options for comparing instructions.             
 
 ### Return type
 
@@ -432,12 +432,12 @@ new AiNameMatchRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to match (required) | 
- **otherName** | **string**| Another name to match (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to match. | 
+ **otherName** | **string**| Another name to match. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -449,7 +449,7 @@ Name | Type | Description  | Notes
 async Task<AiNameMatchResult> MatchAsync(AiNameMatchRequest request)
 ```
 
-Compare people's names. Uses options for comparing instructions             
+Compare people's names. Uses options for comparing instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -471,12 +471,12 @@ new AiNameMatchRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to match (required) | 
- **otherName** | **string**| Another name to match (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **name** | **string**| A name to match. | 
+ **otherName** | **string**| Another name to match. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -487,7 +487,7 @@ Name | Type | Description  | Notes
 AiNameMatchResult MatchParsed(AiNameParsedMatchRequest request)
 ```
 
-Compare people's parsed names and attributes. Uses options for comparing instructions             
+Compare people's parsed names and attributes. Uses options for comparing instructions.             
 
 ### Return type
 
@@ -506,7 +506,7 @@ See parameter model documentation at [AiNameParsedMatchRequest](AiNameParsedMatc
 async Task<AiNameMatchResult> MatchParsedAsync(AiNameParsedMatchRequest request)
 ```
 
-Compare people's parsed names and attributes. Uses options for comparing instructions             
+Compare people's parsed names and attributes. Uses options for comparing instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -526,7 +526,7 @@ See parameter model documentation at [AiNameParsedMatchRequest](AiNameParsedMatc
 AiNameComponentList Parse(AiNameParseRequest request)
 ```
 
-Parse name to components             
+Parse name to components.             
 
 ### Return type
 
@@ -545,12 +545,12 @@ new AiNameParseRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to parse (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
- **style** | **string**| Name writing style Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+ **name** | **string**| A name to parse. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -561,7 +561,7 @@ Name | Type | Description  | Notes
 async Task<AiNameComponentList> ParseAsync(AiNameParseRequest request)
 ```
 
-Parse name to components             
+Parse name to components.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -582,12 +582,12 @@ new AiNameParseRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| A name to parse (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
- **style** | **string**| Name writing style Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
+ **name** | **string**| A name to parse. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         ﻿<a name="ParseEmailAddress"></a>
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 AiNameExtractedList ParseEmailAddress(AiNameParseEmailAddressRequest request)
 ```
 
-Parse person's name out of an email address             
+Parse person's name out of an email address.             
 
 ### Return type
 
@@ -616,11 +616,11 @@ new AiNameParseEmailAddressRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **emailAddress** | **string**| Email address to parse (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **emailAddress** | **string**| Email address to parse. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -632,7 +632,7 @@ Name | Type | Description  | Notes
 async Task<AiNameExtractedList> ParseEmailAddressAsync(AiNameParseEmailAddressRequest request)
 ```
 
-Parse person's name out of an email address             
+Parse person's name out of an email address.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -653,11 +653,11 @@ new AiNameParseEmailAddressRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **emailAddress** | **string**| Email address to parse (required) | 
- **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian)              | [optional] 
- **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France              | [optional] 
- **encoding** | **string**| A character encoding name | [optional] 
- **script** | **string**| A writing system code; starts with the ISO-15924 script name | [optional] 
+ **emailAddress** | **string**| Email address to parse. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

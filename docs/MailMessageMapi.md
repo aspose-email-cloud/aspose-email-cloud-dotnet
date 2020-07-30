@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | [**MapiMessageDto**](MapiMessageDto.md) | Email message object.              | [optional] 
+**Value** | [**MapiMessageDto**](MapiMessageDto.md) | Email message object.              | 
 
 ## Parent class
 

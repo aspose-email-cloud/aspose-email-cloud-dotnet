@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Message** | [**MailMessageBase**](MailMessageBase.md) | Message to send              | [optional] 
+**Message** | [**MailMessageBase**](MailMessageBase.md) | Message to send              | 
 
 ## Parent class
 

@@ -3,7 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ParentFolder** | **string** | Path to parent folder.              | [optional] 
-**FolderName** | **string** | Folder name.              | [optional] 
+**FolderName** | **string** | Folder name.              | 
 
 ## Parent class
 

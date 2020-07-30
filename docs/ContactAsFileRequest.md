@@ -3,7 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Format** | **string** | Enumerates contact formats. Enum, available values: VCard, WebDav, Msg | 
-**Value** | [**ContactDto**](ContactDto.md) | Contact model.              | [optional] 
+**Value** | [**ContactDto**](ContactDto.md) | Contact model.              | 
 
 
 

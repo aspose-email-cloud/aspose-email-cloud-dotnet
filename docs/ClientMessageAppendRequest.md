@@ -3,7 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Folder** | **string** | Path to folder on email server to append message to.              | [optional] 
-**Message** | [**MailMessageBase**](MailMessageBase.md) | Message to append.              | [optional] 
+**Message** | [**MailMessageBase**](MailMessageBase.md) | Message to append.              | 
 **MarkAsSent** | **bool?** | Determines that appended message should be market as sent or not.              | 
 
 ## Parent class

@@ -47,12 +47,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ClientAccountGetMultiRequest"/> class.
         /// </summary>
-        /// <param name="name">File name on storage</param>
+        /// <param name="fileName">File name on storage</param>
         /// <param name="folder">Folder on storage</param>
         /// <param name="storage">Storage name</param>
-        public ClientAccountGetMultiRequest(string name, string folder = null, string storage = null)
+        public ClientAccountGetMultiRequest(string fileName, string folder = null, string storage = null)
         {
-            this.name = name;
+            this.fileName = fileName;
             this.folder = folder;
             this.storage = storage;
         }
@@ -60,7 +60,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// File name on storage
         /// </summary>
-        public string name { get; set; }
+        public string fileName { get; set; }
 
         /// <summary>
         /// Folder on storage

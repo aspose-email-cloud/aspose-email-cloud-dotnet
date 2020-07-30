@@ -16,14 +16,14 @@ Get email client account from storage.
 ### request Parameter
 ```csharp
 new ClientAccountGetRequest(
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| File name on storage. | 
+ **fileName** | **string**| File name on storage. | 
  **folder** | **string**| Folder on storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
@@ -47,14 +47,14 @@ Task<[**EmailClientAccount**](EmailClientAccount.md)>
 ### request Parameter
 ```csharp
 new ClientAccountGetRequest(
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| File name on storage. | 
+ **fileName** | **string**| File name on storage. | 
  **folder** | **string**| Folder on storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
@@ -75,14 +75,14 @@ Get email client multi account file (*.multi.account). Will respond error if fil
 ### request Parameter
 ```csharp
 new ClientAccountGetMultiRequest(
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| File name on storage | 
+ **fileName** | **string**| File name on storage | 
  **folder** | **string**| Folder on storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
 
@@ -106,14 +106,14 @@ Task<[**EmailClientMultiAccount**](EmailClientMultiAccount.md)>
 ### request Parameter
 ```csharp
 new ClientAccountGetMultiRequest(
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| File name on storage | 
+ **fileName** | **string**| File name on storage | 
  **folder** | **string**| Folder on storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
 

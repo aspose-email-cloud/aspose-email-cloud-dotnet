@@ -48,13 +48,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// Initializes a new instance of the <see cref="MapiMessageGetRequest"/> class.
         /// </summary>
         /// <param name="format">Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
-        /// <param name="name">Email document file name.</param>
+        /// <param name="fileName">Email document file name.</param>
         /// <param name="folder">Path to folder in storage.</param>
         /// <param name="storage">Storage name.</param>
-        public MapiMessageGetRequest(string format, string name, string folder = null, string storage = null)
+        public MapiMessageGetRequest(string format, string fileName, string folder = null, string storage = null)
         {
             this.format = format;
-            this.name = name;
+            this.fileName = fileName;
             this.folder = folder;
             this.storage = storage;
         }
@@ -67,7 +67,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Email document file name.
         /// </summary>
-        public string name { get; set; }
+        public string fileName { get; set; }
 
         /// <summary>
         /// Path to folder in storage.

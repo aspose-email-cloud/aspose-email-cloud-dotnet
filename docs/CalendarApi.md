@@ -239,14 +239,14 @@ Get calendar file from storage.
 ### request Parameter
 ```csharp
 new CalendarGetRequest(
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| iCalendar file name in storage. | 
+ **fileName** | **string**| iCalendar file name in storage. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
@@ -270,14 +270,14 @@ Task<[**CalendarDto**](CalendarDto.md)>
 ### request Parameter
 ```csharp
 new CalendarGetRequest(
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| iCalendar file name in storage. | 
+ **fileName** | **string**| iCalendar file name in storage. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
@@ -298,7 +298,7 @@ Get iCalendar from storage as AlternateView
 ### request Parameter
 ```csharp
 new CalendarGetAsAlternateRequest(
-    name,
+    fileName,
     calendarAction,
     sequenceId=sequenceId,
     folder=folder,
@@ -307,7 +307,7 @@ new CalendarGetAsAlternateRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| iCalendar file name in storage | 
+ **fileName** | **string**| iCalendar file name in storage | 
  **calendarAction** | **string**| iCalendar method type Enum, available values: Create, Update, Cancel | 
  **sequenceId** | **string**| The sequence id | [optional] 
  **folder** | **string**| Path to folder in storage | [optional] 
@@ -333,7 +333,7 @@ Task<[**AlternateView**](AlternateView.md)>
 ### request Parameter
 ```csharp
 new CalendarGetAsAlternateRequest(
-    name,
+    fileName,
     calendarAction,
     sequenceId=sequenceId,
     folder=folder,
@@ -342,7 +342,7 @@ new CalendarGetAsAlternateRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| iCalendar file name in storage | 
+ **fileName** | **string**| iCalendar file name in storage | 
  **calendarAction** | **string**| iCalendar method type Enum, available values: Create, Update, Cancel | 
  **sequenceId** | **string**| The sequence id | [optional] 
  **folder** | **string**| Path to folder in storage | [optional] 

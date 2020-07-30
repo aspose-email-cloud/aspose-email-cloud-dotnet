@@ -3,7 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **SourceFolder** | **string** | Folder to move message from.              | [optional] 
-**DestinationFolder** | **string** | Folder to move message to.              | [optional] 
+**DestinationFolder** | **string** | Folder to move message to.              | 
 
 ## Parent class
 

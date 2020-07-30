@@ -87,7 +87,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             }
             var response = apiInvoker.InvokeApi(
                 resourcePath,
-                "POST",
+                "PUT",
                 formParams: formParams);
             return response == null ? null : SerializationHelper.Deserialize<ContactList>(response);
         }

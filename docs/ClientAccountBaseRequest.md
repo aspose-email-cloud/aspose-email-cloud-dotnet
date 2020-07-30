@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AccountLocation** | [**StorageFileLocation**](StorageFileLocation.md) | Email client account configuration location on storage.              | [optional] 
+**AccountLocation** | [**StorageFileLocation**](StorageFileLocation.md) | Email client account configuration location on storage.              | 
 
 
 

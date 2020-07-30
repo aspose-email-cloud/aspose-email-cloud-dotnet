@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Value** | [**EmailDto**](EmailDto.md) | Message document object.              | [optional] 
+**Value** | [**EmailDto**](EmailDto.md) | Message document object.              | 
 
 ## Parent class
 

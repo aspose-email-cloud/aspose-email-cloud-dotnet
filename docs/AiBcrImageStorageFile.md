@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**File** | [**StorageFileLocation**](StorageFileLocation.md) | Image location              | [optional] 
+**File** | [**StorageFileLocation**](StorageFileLocation.md) | Image location              | 
 
 ## Parent class
 

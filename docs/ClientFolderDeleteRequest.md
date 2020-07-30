@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Folder** | **string** | Path to folder to delete.              | [optional] 
+**Folder** | **string** | Path to folder to delete.              | 
 
 ## Parent class
 

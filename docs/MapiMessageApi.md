@@ -94,13 +94,13 @@ Converts email file to a MAPI model representation
 ### request Parameter
 ```csharp
 new MapiMessageFromFileRequest(
-    fileFormat,
+    format,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fileFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -123,13 +123,13 @@ Task<[**MapiMessageDto**](MapiMessageDto.md)>
 ### request Parameter
 ```csharp
 new MapiMessageFromFileRequest(
-    fileFormat,
+    format,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fileFormat** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -150,7 +150,7 @@ Get MAPI message document.
 ```csharp
 new MapiMessageGetRequest(
     format,
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
@@ -158,7 +158,7 @@ new MapiMessageGetRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
- **name** | **string**| Email document file name. | 
+ **fileName** | **string**| Email document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
@@ -183,7 +183,7 @@ Task<[**MapiMessageDto**](MapiMessageDto.md)>
 ```csharp
 new MapiMessageGetRequest(
     format,
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
@@ -191,7 +191,7 @@ new MapiMessageGetRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
- **name** | **string**| Email document file name. | 
+ **fileName** | **string**| Email document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 

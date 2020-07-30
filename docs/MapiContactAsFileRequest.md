@@ -3,7 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Format** | **string** | Enumerates contact formats. Enum, available values: VCard, WebDav, Msg | 
-**Value** | [**MapiContactDto**](MapiContactDto.md) | MAPI contact model.              | [optional] 
+**Value** | [**MapiContactDto**](MapiContactDto.md) | MAPI contact model.              | 
 
 
 

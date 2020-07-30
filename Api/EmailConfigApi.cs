@@ -115,7 +115,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
-                "POST",
+                "PUT",
                 postBody);
             return response == null ? null : SerializationHelper.Deserialize<EmailAccountConfigList>(response);
         }
@@ -154,7 +154,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             var postBody = SerializationHelper.Serialize(request); // http body (model) parameter
             var response = apiInvoker.InvokeApi(
                 resourcePath,
-                "POST",
+                "PUT",
                 postBody);
             return response == null ? null : SerializationHelper.Deserialize<EmailAccountConfigList>(response);
         }

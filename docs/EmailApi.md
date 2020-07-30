@@ -149,11 +149,13 @@ Converts email document to a model representation
 ### request Parameter
 ```csharp
 new EmailFromFileRequest(
+    format,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **format** | **string**|  Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -176,11 +178,13 @@ Task<[**EmailDto**](EmailDto.md)>
 ### request Parameter
 ```csharp
 new EmailFromFileRequest(
+    format,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **format** | **string**|  Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -201,7 +205,7 @@ Get email document from storage.
 ```csharp
 new EmailGetRequest(
     format,
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
@@ -209,7 +213,7 @@ new EmailGetRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
- **name** | **string**| Email document file name. | 
+ **fileName** | **string**| Email document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
@@ -234,7 +238,7 @@ Task<[**EmailDto**](EmailDto.md)>
 ```csharp
 new EmailGetRequest(
     format,
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
@@ -242,7 +246,7 @@ new EmailGetRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
- **name** | **string**| Email document file name. | 
+ **fileName** | **string**| Email document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 

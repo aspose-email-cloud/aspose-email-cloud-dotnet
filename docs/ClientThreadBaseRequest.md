@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ThreadId** | **string** | Thread identifier.              | [optional] 
+**ThreadId** | **string** | Thread identifier.              | 
 
 ## Parent class
 

@@ -3,7 +3,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Format** | **string** | Calendar file format Enum, available values: Ics, Msg | 
-**Value** | [**CalendarDto**](CalendarDto.md) | iCalendar model              | [optional] 
+**Value** | [**CalendarDto**](CalendarDto.md) | iCalendar model              | 
 
 
 

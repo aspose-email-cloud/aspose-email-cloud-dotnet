@@ -145,14 +145,14 @@ Get MAPI calendar document.
 ### request Parameter
 ```csharp
 new MapiCalendarGetRequest(
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| Calendar file name in storage. | 
+ **fileName** | **string**| Calendar file name in storage. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
@@ -176,14 +176,14 @@ Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
 ### request Parameter
 ```csharp
 new MapiCalendarGetRequest(
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| Calendar file name in storage. | 
+ **fileName** | **string**| Calendar file name in storage. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 

@@ -52,7 +52,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             }
 
             emlStream.Seek(0, SeekOrigin.Begin);
-            var dto = await Api.Email.FromFileAsync(new EmailFromFileRequest(emlStream));
+            var dto = await Api.Email.FromFileAsync(new EmailFromFileRequest("Eml", emlStream));
             Assert.AreEqual(FromAddress, dto.From.Address);
         }
 

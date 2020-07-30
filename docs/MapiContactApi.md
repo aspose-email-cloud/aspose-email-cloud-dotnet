@@ -94,13 +94,13 @@ Converts contact file to a MAPI model representation.
 ### request Parameter
 ```csharp
 new MapiContactFromFileRequest(
-    fileFormat,
+    format,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fileFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -123,13 +123,13 @@ Task<[**MapiContactDto**](MapiContactDto.md)>
 ### request Parameter
 ```csharp
 new MapiContactFromFileRequest(
-    fileFormat,
+    format,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fileFormat** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
+ **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -150,7 +150,7 @@ Get MAPI contact document.
 ```csharp
 new MapiContactGetRequest(
     format,
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
@@ -158,7 +158,7 @@ new MapiContactGetRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
- **name** | **string**| Contact document file name. | 
+ **fileName** | **string**| Contact document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
@@ -183,7 +183,7 @@ Task<[**MapiContactDto**](MapiContactDto.md)>
 ```csharp
 new MapiContactGetRequest(
     format,
-    name,
+    fileName,
     folder=folder,
     storage=storage)
 ```
@@ -191,7 +191,7 @@ new MapiContactGetRequest(
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
- **name** | **string**| Contact document file name. | 
+ **fileName** | **string**| Contact document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 

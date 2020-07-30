@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**DestinationFolder** | **string** | Email account folder to move thread to.              | [optional] 
+**DestinationFolder** | **string** | Email account folder to move thread to.              | 
 
 ## Parent class
 
