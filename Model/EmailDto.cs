@@ -43,166 +43,168 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Collection of alternate views of message.             
-        /// </summary>  
+        /// </summary>
         public List<AlternateView> AlternateViews { get; set; }
 
         /// <summary>
         /// Email message attachments.             
-        /// </summary>  
+        /// </summary>
         public List<Attachment> Attachments { get; set; }
 
         /// <summary>
         /// BCC recipients.             
-        /// </summary>  
+        /// </summary>
         public List<MailAddress> Bcc { get; set; }
 
         /// <summary>
         /// Email message body as plain text.             
-        /// </summary>  
+        /// </summary>
         public string Body { get; set; }
 
         /// <summary>
         /// Body encoding.             
-        /// </summary>  
+        /// </summary>
         public string BodyEncoding { get; set; }
 
         /// <summary>
         /// The content type of message body. Enum, available values: PlainText, Html, Rtf
-        /// </summary>  
+        /// </summary>
         public string BodyType { get; set; }
 
         /// <summary>
         /// CC recipients.             
-        /// </summary>  
+        /// </summary>
         public List<MailAddress> Cc { get; set; }
 
         /// <summary>
         /// Message date.             
-        /// </summary>  
+        /// </summary>
         public DateTime? Date { get; set; }
 
         /// <summary>
         /// Delivery notifications. Items: Email delivery notification options. Enum, available values: Delay, Never, None, OnFailure, OnSuccess
-        /// </summary>  
+        /// </summary>
         public List<string> DeliveryNotificationOptions { get; set; }
 
         /// <summary>
         /// From address.             
-        /// </summary>  
+        /// </summary>
         public MailAddress From { get; set; }
 
         /// <summary>
         /// Document headers.             
-        /// </summary>  
+        /// </summary>
         public Dictionary<string, string> Headers { get; set; }
 
         /// <summary>
         /// HTML body.             
-        /// </summary>  
+        /// </summary>
         public string HtmlBody { get; set; }
 
         /// <summary>
         /// Html body as plain text. Read only.             
-        /// </summary>  
+        /// </summary>
         public string HtmlBodyText { get; set; }
 
         /// <summary>
         /// Indicates whether the message body is in Html.             
-        /// </summary>  
+        /// </summary>
         public bool? IsBodyHtml { get; set; }
 
         /// <summary>
         /// Indicates whether or not a message has been sent.             
-        /// </summary>  
+        /// </summary>
         public bool? IsDraft { get; set; }
 
         /// <summary>
         /// Indicates whether the message is encrypted. Read only.             
-        /// </summary>  
+        /// </summary>
         public bool? IsEncrypted { get; set; }
 
         /// <summary>
         /// Indicates whether the message is signed. Read only.             
-        /// </summary>  
+        /// </summary>
         public bool? IsSigned { get; set; }
 
         /// <summary>
         /// Linked resources of message.             
-        /// </summary>  
+        /// </summary>
         public List<LinkedResource> LinkedResources { get; set; }
 
         /// <summary>
         /// Message id.             
-        /// </summary>  
+        /// </summary>
         public string MessageId { get; set; }
 
         /// <summary>
         /// Indicates whether original EML message is in TNEF format. Read only.             
-        /// </summary>  
+        /// </summary>
         public bool? OriginalIsTnef { get; set; }
 
         /// <summary>
         /// Preferred encoding.             
-        /// </summary>  
+        /// </summary>
         public string PreferredTextEncoding { get; set; }
 
         /// <summary>
         /// Email priority status. Enum, available values: High, Low, Normal
-        /// </summary>  
+        /// </summary>
         public string Priority { get; set; }
 
         /// <summary>
         /// Read receipt addresses.             
-        /// </summary>  
+        /// </summary>
         public List<MailAddress> ReadReceiptTo { get; set; }
 
         /// <summary>
         /// The list of addresses to reply to for the mail message.             
-        /// </summary>  
+        /// </summary>
         public List<MailAddress> ReplyToList { get; set; }
 
         /// <summary>
         /// ReversePath address.             
-        /// </summary>  
+        /// </summary>
         public MailAddress ReversePath { get; set; }
 
         /// <summary>
         /// Sender address.             
-        /// </summary>  
+        /// </summary>
         public MailAddress Sender { get; set; }
 
         /// <summary>
         /// Specifies the sensitivity of a MailMessage. Enum, available values: None, Normal, Personal, Private, CompanyConfidential
-        /// </summary>  
+        /// </summary>
         public string Sensitivity { get; set; }
 
         /// <summary>
         /// Message subject.             
-        /// </summary>  
+        /// </summary>
         public string Subject { get; set; }
 
         /// <summary>
         /// Subject encoding.             
-        /// </summary>  
+        /// </summary>
         public string SubjectEncoding { get; set; }
 
         /// <summary>
         /// Coordinated Universal Time (UTC) offset for the message dates. This property defines the time zone difference, between the local time and UTC represented as count of ticks (10 000 per millisecond).             
-        /// </summary>  
+        /// </summary>
         public long? TimeZoneOffset { get; set; }
 
         /// <summary>
         /// The address collection that contains the recipients of message.             
-        /// </summary>  
+        /// </summary>
         public List<MailAddress> To { get; set; }
 
         /// <summary>
         /// The X-Mailer the software that created the e-mail message.             
-        /// </summary>  
+        /// </summary>
         public string XMailer { get; set; }
+
 
         /// <summary>EmailDto constructor</summary>
         public EmailDto() {}
+
 
         /// <summary>EmailDto constructor</summary>
         /// <param name="alternateViews">Collection of alternate views of message.             </param>
@@ -237,8 +239,41 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="timeZoneOffset">Coordinated Universal Time (UTC) offset for the message dates. This property defines the time zone difference, between the local time and UTC represented as count of ticks (10 000 per millisecond).             </param>
         /// <param name="to">The address collection that contains the recipients of message.             </param>
         /// <param name="xMailer">The X-Mailer the software that created the e-mail message.             </param>
-        public EmailDto(List<AlternateView> alternateViews, List<Attachment> attachments, List<MailAddress> bcc, string body, string bodyEncoding, string bodyType, List<MailAddress> cc, DateTime? date, List<string> deliveryNotificationOptions, MailAddress from, Dictionary<string, string> headers, string htmlBody, string htmlBodyText, bool? isBodyHtml, bool? isDraft, bool? isEncrypted, bool? isSigned, List<LinkedResource> linkedResources, string messageId, bool? originalIsTnef, string preferredTextEncoding, string priority, List<MailAddress> readReceiptTo, List<MailAddress> replyToList, MailAddress reversePath, MailAddress sender, string sensitivity, string subject, string subjectEncoding, long? timeZoneOffset, List<MailAddress> to, string xMailer)
-        {
+        public EmailDto(
+            List<AlternateView> alternateViews,
+            List<Attachment> attachments,
+            List<MailAddress> bcc,
+            string body,
+            string bodyEncoding,
+            string bodyType,
+            List<MailAddress> cc,
+            DateTime? date,
+            List<string> deliveryNotificationOptions,
+            MailAddress from,
+            Dictionary<string, string> headers,
+            string htmlBody,
+            string htmlBodyText,
+            bool? isBodyHtml,
+            bool? isDraft,
+            bool? isEncrypted,
+            bool? isSigned,
+            List<LinkedResource> linkedResources,
+            string messageId,
+            bool? originalIsTnef,
+            string preferredTextEncoding,
+            string priority,
+            List<MailAddress> readReceiptTo,
+            List<MailAddress> replyToList,
+            MailAddress reversePath,
+            MailAddress sender,
+            string sensitivity,
+            string subject,
+            string subjectEncoding,
+            long? timeZoneOffset,
+            List<MailAddress> to,
+            string xMailer
+        )
+        { 
             AlternateViews = alternateViews;
             Attachments = attachments;
             Bcc = bcc;

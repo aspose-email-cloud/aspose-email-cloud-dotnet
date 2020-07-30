@@ -43,31 +43,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Address type.             
-        /// </summary>  
+        /// </summary>
         public string AddressType { get; set; }
 
         /// <summary>
         /// Email address.             
-        /// </summary>  
+        /// </summary>
         public string EmailAddress { get; set; }
 
         /// <summary>
         /// User-readable display name for the e-mail address.             
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Telephone number of the mail user's primary fax machine.             
-        /// </summary>  
+        /// </summary>
         public string FaxNumber { get; set; }
 
         /// <summary>
         /// SMTP e-mail address that  corresponds to the e-mail address.             
-        /// </summary>  
+        /// </summary>
         public string OriginalDisplayName { get; set; }
+
 
         /// <summary>MapiElectronicAddressDto constructor</summary>
         public MapiElectronicAddressDto() {}
+
 
         /// <summary>MapiElectronicAddressDto constructor</summary>
         /// <param name="addressType">Address type.             </param>
@@ -75,8 +77,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="displayName">User-readable display name for the e-mail address.             </param>
         /// <param name="faxNumber">Telephone number of the mail user's primary fax machine.             </param>
         /// <param name="originalDisplayName">SMTP e-mail address that  corresponds to the e-mail address.             </param>
-        public MapiElectronicAddressDto(string addressType, string emailAddress, string displayName, string faxNumber, string originalDisplayName)
-        {
+        public MapiElectronicAddressDto(
+            string addressType,
+            string emailAddress,
+            string displayName,
+            string faxNumber,
+            string originalDisplayName
+        )
+        { 
             AddressType = addressType;
             EmailAddress = emailAddress;
             DisplayName = displayName;

@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Name             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Score of name             
-        /// </summary>  
+        /// </summary>
         public double? Score { get; set; }
+
 
         /// <summary>AiNameWeighted constructor</summary>
         public AiNameWeighted() {}
 
+
         /// <summary>AiNameWeighted constructor</summary>
         /// <param name="name">Name             </param>
         /// <param name="score">Score of name             </param>
-        public AiNameWeighted(string name, double? score)
-        {
+        public AiNameWeighted(
+            string name,
+            double? score
+        )
+        { 
             Name = name;
             Score = score;
         }

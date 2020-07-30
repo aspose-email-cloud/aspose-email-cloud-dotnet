@@ -43,34 +43,41 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// List of attendees.             
-        /// </summary>  
+        /// </summary>
         public List<MapiRecipientDto> AppointmentRecipients { get; set; }
 
         /// <summary>
         /// List of unsendable attendees.             
-        /// </summary>  
+        /// </summary>
         public List<MapiRecipientDto> AppointmentUnsendableRecipients { get; set; }
 
         /// <summary>
         /// Value indicating whether attendees are not allowed to propose a new date and/or time for the meeting.             
-        /// </summary>  
+        /// </summary>
         public bool? NotAllowPropose { get; set; }
 
         /// <summary>
         /// Value indicating whether a response is requested to a Message object.             
-        /// </summary>  
+        /// </summary>
         public bool? ResponseRequested { get; set; }
+
 
         /// <summary>MapiCalendarAttendeesDto constructor</summary>
         public MapiCalendarAttendeesDto() {}
+
 
         /// <summary>MapiCalendarAttendeesDto constructor</summary>
         /// <param name="appointmentRecipients">List of attendees.             </param>
         /// <param name="appointmentUnsendableRecipients">List of unsendable attendees.             </param>
         /// <param name="notAllowPropose">Value indicating whether attendees are not allowed to propose a new date and/or time for the meeting.             </param>
         /// <param name="responseRequested">Value indicating whether a response is requested to a Message object.             </param>
-        public MapiCalendarAttendeesDto(List<MapiRecipientDto> appointmentRecipients, List<MapiRecipientDto> appointmentUnsendableRecipients, bool? notAllowPropose, bool? responseRequested)
-        {
+        public MapiCalendarAttendeesDto(
+            List<MapiRecipientDto> appointmentRecipients,
+            List<MapiRecipientDto> appointmentUnsendableRecipients,
+            bool? notAllowPropose,
+            bool? responseRequested
+        )
+        { 
             AppointmentRecipients = appointmentRecipients;
             AppointmentUnsendableRecipients = appointmentUnsendableRecipients;
             NotAllowPropose = notAllowPropose;

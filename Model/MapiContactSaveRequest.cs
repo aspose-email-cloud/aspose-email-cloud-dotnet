@@ -43,18 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Enumerates contact formats. Enum, available values: VCard, WebDav, Msg
-        /// </summary>  
+        /// </summary>
         public string Format { get; set; }
+
 
         /// <summary>MapiContactSaveRequest constructor</summary>
         public MapiContactSaveRequest() {}
+
 
         /// <summary>MapiContactSaveRequest constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
         /// <param name="format">Enumerates contact formats. Enum, available values: VCard, WebDav, Msg</param>
-        public MapiContactSaveRequest(StorageFileLocation storageFile, MapiContactDto value, string format)
-        {
+        public MapiContactSaveRequest(
+            StorageFileLocation storageFile,
+            MapiContactDto value,
+            string format
+        )
+        { 
             StorageFile = storageFile;
             Value = value;
             Format = format;

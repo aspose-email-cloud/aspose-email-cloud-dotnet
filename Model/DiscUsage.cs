@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Application used disc space.
-        /// </summary>  
+        /// </summary>
         public long? UsedSize { get; set; }
 
         /// <summary>
         /// Total disc space.
-        /// </summary>  
+        /// </summary>
         public long? TotalSize { get; set; }
+
 
         /// <summary>DiscUsage constructor</summary>
         public DiscUsage() {}
 
+
         /// <summary>DiscUsage constructor</summary>
         /// <param name="usedSize">Application used disc space.</param>
         /// <param name="totalSize">Total disc space.</param>
-        public DiscUsage(long? usedSize, long? totalSize)
-        {
+        public DiscUsage(
+            long? usedSize,
+            long? totalSize
+        )
+        { 
             UsedSize = usedSize;
             TotalSize = totalSize;
         }

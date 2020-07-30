@@ -43,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Represents the free/busy status for a calendar event. Enum, available values: Free, Tentative, Busy, Oof, WorkingElsewhere, NoData
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
+
 
         /// <summary>MapiLegacyFreeBusyPropertyDto constructor</summary>
         public MapiLegacyFreeBusyPropertyDto() {}
 
+
         /// <summary>MapiLegacyFreeBusyPropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
         /// <param name="value">Represents the free/busy status for a calendar event. Enum, available values: Free, Tentative, Busy, Oof, WorkingElsewhere, NoData</param>
-        public MapiLegacyFreeBusyPropertyDto(MapiPropertyDescriptor descriptor, string discriminator, string value)
-        {
+        public MapiLegacyFreeBusyPropertyDto(
+            MapiPropertyDescriptor descriptor
+            ,
+            string value
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
             Value = value;
         }
         /// <summary>

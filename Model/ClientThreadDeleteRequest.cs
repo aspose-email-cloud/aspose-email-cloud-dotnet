@@ -43,18 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Folder on email server, where thread is stored.             
-        /// </summary>  
+        /// </summary>
         public string Folder { get; set; }
+
 
         /// <summary>ClientThreadDeleteRequest constructor</summary>
         public ClientThreadDeleteRequest() {}
+
 
         /// <summary>ClientThreadDeleteRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="threadId">Thread identifier.             </param>
         /// <param name="folder">Folder on email server, where thread is stored.             </param>
-        public ClientThreadDeleteRequest(StorageFileLocation accountLocation, string threadId, string folder)
-        {
+        public ClientThreadDeleteRequest(
+            StorageFileLocation accountLocation,
+            string threadId,
+            string folder
+        )
+        { 
             AccountLocation = accountLocation;
             ThreadId = threadId;
             Folder = folder;

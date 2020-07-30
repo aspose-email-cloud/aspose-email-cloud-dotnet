@@ -43,19 +43,26 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Other parsed name to match             
-        /// </summary>  
+        /// </summary>
         public List<AiNameComponent> OtherParsedName { get; set; }
+
 
         /// <summary>AiNameParsedMatchRequest constructor</summary>
         public AiNameParsedMatchRequest() {}
+
 
         /// <summary>AiNameParsedMatchRequest constructor</summary>
         /// <param name="culturalContext">AiName parser cultural context             </param>
         /// <param name="format">Format of the name. Predefined format can be used by ID, or custom format can be specified. Predefined formats:      /format/default/ (= '%t%F%m%N%L%p')     /format/FN+LN/ (= '%F%L')     /format/title+FN+LN/ (= '%t%F%L')     /format/FN+MN+LN/ (= '%F%M%N%L')     /format/title+FN+MN+LN/ (= '%t%F%M%N%L')     /format/FN+MI+LN/ (= '%F%m%N%L')     /format/title+FN+MI+LN/ (= '%t%F%m%N%L')     /format/LN/ (= '%L')     /format/title+LN/ (= '%t%L')     /format/LN+FN+MN/ (= '%L,%F%M%N')     /format/LN+title+FN+MN/ (= '%L,%t%F%M%N')     /format/LN+FN+MI/ (= '%L,%F%m%N')     /format/LN+title+FN+MI/ (= '%L,%t%F%m%N')  Custom format string - custom combination of characters and the next term placeholders:      '%t' - Title (prefix)     '%F' - First name     '%f' - First initial     '%M' - Middle name(s)     '%m' - Middle initial(s)     '%N' - Nickname     '%L' - Last name     '%l' - Last initial     '%p' - Postfix  If no value for format option was provided, its default value is '%t%F%m%N%L%p'             </param>
         /// <param name="parsedName">Parsed name             </param>
         /// <param name="otherParsedName">Other parsed name to match             </param>
-        public AiNameParsedMatchRequest(AiNameCulturalContext culturalContext, string format, List<AiNameComponent> parsedName, List<AiNameComponent> otherParsedName)
-        {
+        public AiNameParsedMatchRequest(
+            AiNameCulturalContext culturalContext,
+            string format,
+            List<AiNameComponent> parsedName,
+            List<AiNameComponent> otherParsedName
+        )
+        { 
             CulturalContext = culturalContext;
             Format = format;
             ParsedName = parsedName;

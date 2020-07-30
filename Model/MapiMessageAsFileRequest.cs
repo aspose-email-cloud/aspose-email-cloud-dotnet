@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
-        /// </summary>  
+        /// </summary>
         public string Format { get; set; }
 
         /// <summary>
         /// MAPI message model.             
-        /// </summary>  
+        /// </summary>
         public MapiMessageDto Value { get; set; }
+
 
         /// <summary>MapiMessageAsFileRequest constructor</summary>
         public MapiMessageAsFileRequest() {}
 
+
         /// <summary>MapiMessageAsFileRequest constructor</summary>
         /// <param name="format">Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
         /// <param name="value">MAPI message model.             </param>
-        public MapiMessageAsFileRequest(string format, MapiMessageDto value)
-        {
+        public MapiMessageAsFileRequest(
+            string format,
+            MapiMessageDto value
+        )
+        { 
             Format = format;
             Value = value;
         }

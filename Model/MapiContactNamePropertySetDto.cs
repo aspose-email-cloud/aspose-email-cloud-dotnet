@@ -43,56 +43,58 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Full name of the contact             
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Title of the contact             
-        /// </summary>  
+        /// </summary>
         public string DisplayNamePrefix { get; set; }
 
         /// <summary>
         /// Name under which to file this contact when displaying a list of contacts             
-        /// </summary>  
+        /// </summary>
         public string FileUnder { get; set; }
 
         /// <summary>
         /// Value specifying how to generate and recompute the property when other properties are changed             
-        /// </summary>  
+        /// </summary>
         public long? FileUnderId { get; set; }
 
         /// <summary>
         /// Generation suffix of the contact             
-        /// </summary>  
+        /// </summary>
         public string Generation { get; set; }
 
         /// <summary>
         /// Given name (first name) of the contact             
-        /// </summary>  
+        /// </summary>
         public string GivenName { get; set; }
 
         /// <summary>
         /// Initials of the contact             
-        /// </summary>  
+        /// </summary>
         public string Initials { get; set; }
 
         /// <summary>
         /// Middle name of the contact             
-        /// </summary>  
+        /// </summary>
         public string MiddleName { get; set; }
 
         /// <summary>
         /// Nickname of the contact             
-        /// </summary>  
+        /// </summary>
         public string Nickname { get; set; }
 
         /// <summary>
         /// Surname (family name) of the contact             
-        /// </summary>  
+        /// </summary>
         public string Surname { get; set; }
+
 
         /// <summary>MapiContactNamePropertySetDto constructor</summary>
         public MapiContactNamePropertySetDto() {}
+
 
         /// <summary>MapiContactNamePropertySetDto constructor</summary>
         /// <param name="displayName">Full name of the contact             </param>
@@ -105,8 +107,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="middleName">Middle name of the contact             </param>
         /// <param name="nickname">Nickname of the contact             </param>
         /// <param name="surname">Surname (family name) of the contact             </param>
-        public MapiContactNamePropertySetDto(string displayName, string displayNamePrefix, string fileUnder, long? fileUnderId, string generation, string givenName, string initials, string middleName, string nickname, string surname)
-        {
+        public MapiContactNamePropertySetDto(
+            string displayName,
+            string displayNamePrefix,
+            string fileUnder,
+            long? fileUnderId,
+            string generation,
+            string givenName,
+            string initials,
+            string middleName,
+            string nickname,
+            string surname
+        )
+        { 
             DisplayName = displayName;
             DisplayNamePrefix = displayNamePrefix;
             FileUnder = fileUnder;

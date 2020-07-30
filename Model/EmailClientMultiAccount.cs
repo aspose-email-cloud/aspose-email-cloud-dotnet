@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email client receive accounts             
-        /// </summary>  
+        /// </summary>
         public List<EmailClientAccount> ReceiveAccounts { get; set; }
 
         /// <summary>
         /// Email client send account             
-        /// </summary>  
+        /// </summary>
         public EmailClientAccount SendAccount { get; set; }
+
 
         /// <summary>EmailClientMultiAccount constructor</summary>
         public EmailClientMultiAccount() {}
 
+
         /// <summary>EmailClientMultiAccount constructor</summary>
         /// <param name="receiveAccounts">Email client receive accounts             </param>
         /// <param name="sendAccount">Email client send account             </param>
-        public EmailClientMultiAccount(List<EmailClientAccount> receiveAccounts, EmailClientAccount sendAccount)
-        {
+        public EmailClientMultiAccount(
+            List<EmailClientAccount> receiveAccounts,
+            EmailClientAccount sendAccount
+        )
+        { 
             ReceiveAccounts = receiveAccounts;
             SendAccount = sendAccount;
         }

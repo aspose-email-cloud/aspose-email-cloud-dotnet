@@ -41,13 +41,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class EmailAccountConfigList : ListResponseOfEmailAccountConfig 
     {
+
         /// <summary>EmailAccountConfigList constructor</summary>
         public EmailAccountConfigList() {}
 
+
         /// <summary>EmailAccountConfigList constructor</summary>
         /// <param name="value"></param>
-        public EmailAccountConfigList(List<EmailAccountConfig> value)
-        {
+        public EmailAccountConfigList(
+            List<EmailAccountConfig> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

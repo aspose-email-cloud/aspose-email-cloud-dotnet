@@ -41,13 +41,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class CalendarStorageList : ListResponseOfStorageModelOfCalendarDto 
     {
+
         /// <summary>CalendarStorageList constructor</summary>
         public CalendarStorageList() {}
 
+
         /// <summary>CalendarStorageList constructor</summary>
         /// <param name="value"></param>
-        public CalendarStorageList(List<StorageModelOfCalendarDto> value)
-        {
+        public CalendarStorageList(
+            List<StorageModelOfCalendarDto> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

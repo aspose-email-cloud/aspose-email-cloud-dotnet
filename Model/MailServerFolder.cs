@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Gets or sets mail folder name             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Gets or sets mail folder id             
-        /// </summary>  
+        /// </summary>
         public string Id { get; set; }
+
 
         /// <summary>MailServerFolder constructor</summary>
         public MailServerFolder() {}
 
+
         /// <summary>MailServerFolder constructor</summary>
         /// <param name="name">Gets or sets mail folder name             </param>
         /// <param name="id">Gets or sets mail folder id             </param>
-        public MailServerFolder(string name, string id)
-        {
+        public MailServerFolder(
+            string name,
+            string id
+        )
+        { 
             Name = name;
             Id = id;
         }

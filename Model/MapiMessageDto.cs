@@ -43,131 +43,133 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Message text             
-        /// </summary>  
+        /// </summary>
         public string MessageBody { get; set; }
 
         /// <summary>
         /// Date and time the message sender submitted a message.             
-        /// </summary>  
+        /// </summary>
         public DateTime? ClientSubmitTime { get; set; }
 
         /// <summary>
         /// Topic of the first message in a conversation thread.             
-        /// </summary>  
+        /// </summary>
         public string ConversationTopic { get; set; }
 
         /// <summary>
         /// Date and time a message was delivered.             
-        /// </summary>  
+        /// </summary>
         public DateTime? DeliveryTime { get; set; }
 
         /// <summary>
         /// List of the display names of any blind carbon copy (BCC) message recipients, separated by semicolons (;).             
-        /// </summary>  
+        /// </summary>
         public string DisplayBcc { get; set; }
 
         /// <summary>
         /// List of the display names of any carbon copy (CC) message recipients, separated by semicolons (;).             
-        /// </summary>  
+        /// </summary>
         public string DisplayCc { get; set; }
 
         /// <summary>
         /// Display name for the message.             
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Prefix of the display name.             
-        /// </summary>  
+        /// </summary>
         public string DisplayNamePrefix { get; set; }
 
         /// <summary>
         /// List of the display names of the primary (To) message recipients, separated by semicolons (;).             
-        /// </summary>  
+        /// </summary>
         public string DisplayTo { get; set; }
 
         /// <summary>
         /// Message flags.              Items: Mapi message flags. Enum, available values: MsgFlagZero, MsgFlagRead, MsgFlagUnmodified, MsgFlagSubmit, MsgFlagUnsent, MsgFlagHasAttach, MsgFlagFromMe, MsgFlagAssociated, MsgFlagResend, MsgFlagNotifyRead, MsgFlagNotifyUnread, MsgFlagEverRead, MsgFlagOriginX400, MsgFlagOriginInternet, MsgFlagOriginMiscExt
-        /// </summary>  
+        /// </summary>
         public List<string> Flags { get; set; }
 
         /// <summary>
         /// Transport message headers             
-        /// </summary>  
+        /// </summary>
         public Dictionary<string, string> Headers { get; set; }
 
         /// <summary>
         /// Internet message id of the message.             
-        /// </summary>  
+        /// </summary>
         public string InternetMessageId { get; set; }
 
         /// <summary>
         /// Represents outlook message format. Enum, available values: Ascii, Unicode
-        /// </summary>  
+        /// </summary>
         public string MessageFormat { get; set; }
 
         /// <summary>
         /// Normalized subject of the message.             
-        /// </summary>  
+        /// </summary>
         public string NormalizedSubject { get; set; }
 
         /// <summary>
         /// Value indicating whether the read receipt is requested.
-        /// </summary>  
+        /// </summary>
         public bool? ReadReceiptRequested { get; set; }
 
         /// <summary>
         /// Reply to names.
-        /// </summary>  
+        /// </summary>
         public string ReplyTo { get; set; }
 
         /// <summary>
         /// Message sender's e-mail address type.
-        /// </summary>  
+        /// </summary>
         public string SenderAddressType { get; set; }
 
         /// <summary>
         /// Message sender's e-mail address.
-        /// </summary>  
+        /// </summary>
         public string SenderEmailAddress { get; set; }
 
         /// <summary>
         /// Message sender's display name.
-        /// </summary>  
+        /// </summary>
         public string SenderName { get; set; }
 
         /// <summary>
         /// Message sender's e-mail address.
-        /// </summary>  
+        /// </summary>
         public string SenderSmtpAddress { get; set; }
 
         /// <summary>
         /// Address type for the messaging user represented by the sender.
-        /// </summary>  
+        /// </summary>
         public string SentRepresentingAddressType { get; set; }
 
         /// <summary>
         /// E-mail address for the messaging user represented by the sender.
-        /// </summary>  
+        /// </summary>
         public string SentRepresentingEmailAddress { get; set; }
 
         /// <summary>
         /// Display name for the messaging user represented by the sender.
-        /// </summary>  
+        /// </summary>
         public string SentRepresentingName { get; set; }
 
         /// <summary>
         /// E-mail address for the messaging user represented by the sender.
-        /// </summary>  
+        /// </summary>
         public string SentRepresentingSmtpAddress { get; set; }
 
         /// <summary>
         /// Transport-specific message envelope information.
-        /// </summary>  
+        /// </summary>
         public string TransportMessageHeaders { get; set; }
+
 
         /// <summary>MapiMessageDto constructor</summary>
         public MapiMessageDto() {}
+
 
         /// <summary>MapiMessageDto constructor</summary>
         /// <param name="attachments">Message item attachments.             </param>
@@ -186,7 +188,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="subject">Subject of the message.             </param>
         /// <param name="subjectPrefix">Subject prefix that typically indicates some action on a message, such as \"FW: \" for forwarding.             </param>
         /// <param name="properties">List of MAPI properties             </param>
-        /// <param name="discriminator"></param>
         /// <param name="messageBody">Message text             </param>
         /// <param name="clientSubmitTime">Date and time the message sender submitted a message.             </param>
         /// <param name="conversationTopic">Topic of the first message in a conversation thread.             </param>
@@ -212,8 +213,51 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="sentRepresentingName">Display name for the messaging user represented by the sender.</param>
         /// <param name="sentRepresentingSmtpAddress">E-mail address for the messaging user represented by the sender.</param>
         /// <param name="transportMessageHeaders">Transport-specific message envelope information.</param>
-        public MapiMessageDto(List<MapiAttachmentDto> attachments, string billing, string body, string bodyHtml, string bodyRtf, string bodyType, List<string> categories, List<string> companies, string itemId, string messageClass, string mileage, List<MapiRecipientDto> recipients, string sensitivity, string subject, string subjectPrefix, List<MapiPropertyDto> properties, string discriminator, string messageBody, DateTime? clientSubmitTime, string conversationTopic, DateTime? deliveryTime, string displayBcc, string displayCc, string displayName, string displayNamePrefix, string displayTo, List<string> flags, Dictionary<string, string> headers, string internetMessageId, string messageFormat, string normalizedSubject, bool? readReceiptRequested, string replyTo, string senderAddressType, string senderEmailAddress, string senderName, string senderSmtpAddress, string sentRepresentingAddressType, string sentRepresentingEmailAddress, string sentRepresentingName, string sentRepresentingSmtpAddress, string transportMessageHeaders)
-        {
+        public MapiMessageDto(
+            List<MapiAttachmentDto> attachments,
+            string billing,
+            string body,
+            string bodyHtml,
+            string bodyRtf,
+            string bodyType,
+            List<string> categories,
+            List<string> companies,
+            string itemId,
+            string messageClass,
+            string mileage,
+            List<MapiRecipientDto> recipients,
+            string sensitivity,
+            string subject,
+            string subjectPrefix,
+            List<MapiPropertyDto> properties
+            ,
+            string messageBody,
+            DateTime? clientSubmitTime,
+            string conversationTopic,
+            DateTime? deliveryTime,
+            string displayBcc,
+            string displayCc,
+            string displayName,
+            string displayNamePrefix,
+            string displayTo,
+            List<string> flags,
+            Dictionary<string, string> headers,
+            string internetMessageId,
+            string messageFormat,
+            string normalizedSubject,
+            bool? readReceiptRequested,
+            string replyTo,
+            string senderAddressType,
+            string senderEmailAddress,
+            string senderName,
+            string senderSmtpAddress,
+            string sentRepresentingAddressType,
+            string sentRepresentingEmailAddress,
+            string sentRepresentingName,
+            string sentRepresentingSmtpAddress,
+            string transportMessageHeaders
+        )
+        { 
             Attachments = attachments;
             Billing = billing;
             Body = body;
@@ -230,7 +274,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
             Subject = subject;
             SubjectPrefix = subjectPrefix;
             Properties = properties;
-            Discriminator = discriminator;
             MessageBody = messageBody;
             ClientSubmitTime = clientSubmitTime;
             ConversationTopic = conversationTopic;

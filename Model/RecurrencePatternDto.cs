@@ -43,49 +43,55 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Number of recurrence units.             
-        /// </summary>  
+        /// </summary>
         public int? Interval { get; set; }
 
         /// <summary>
         /// Number of occurrences of the recurrence pattern.             
-        /// </summary>  
+        /// </summary>
         public int? Occurs { get; set; }
 
         /// <summary>
         /// End date.             
-        /// </summary>  
+        /// </summary>
         public DateTime? EndDate { get; set; }
 
         /// <summary>
         /// Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay
-        /// </summary>  
+        /// </summary>
         public string WeekStart { get; set; }
 
         /// <summary>
         /// Gets or sets Discriminator
-        /// </summary>  
+        /// </summary>
         public string Discriminator
         {
             get { return GetType().Name; }
             set { /*do nothing*/}
         }
 
+
         /// <summary>RecurrencePatternDto constructor</summary>
         public RecurrencePatternDto() {}
+
 
         /// <summary>RecurrencePatternDto constructor</summary>
         /// <param name="interval">Number of recurrence units.             </param>
         /// <param name="occurs">Number of occurrences of the recurrence pattern.             </param>
         /// <param name="endDate">End date.             </param>
         /// <param name="weekStart">Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
-        /// <param name="discriminator"></param>
-        public RecurrencePatternDto(int? interval, int? occurs, DateTime? endDate, string weekStart, string discriminator)
-        {
+        public RecurrencePatternDto(
+            int? interval,
+            int? occurs,
+            DateTime? endDate,
+            string weekStart
+            
+        )
+        { 
             Interval = interval;
             Occurs = occurs;
             EndDate = endDate;
             WeekStart = weekStart;
-            Discriminator = discriminator;
         }
         /// <summary>
         /// Get the string presentation of the object

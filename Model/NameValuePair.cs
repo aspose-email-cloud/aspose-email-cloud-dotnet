@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Property name             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Property value             
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
+
 
         /// <summary>NameValuePair constructor</summary>
         public NameValuePair() {}
 
+
         /// <summary>NameValuePair constructor</summary>
         /// <param name="name">Property name             </param>
         /// <param name="value">Property value             </param>
-        public NameValuePair(string name, string value)
-        {
+        public NameValuePair(
+            string name,
+            string value
+        )
+        { 
             Name = name;
             Value = value;
         }

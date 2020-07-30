@@ -43,29 +43,36 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Path to folder on email server to append message to.             
-        /// </summary>  
+        /// </summary>
         public string Folder { get; set; }
 
         /// <summary>
         /// Message to append.             
-        /// </summary>  
+        /// </summary>
         public MailMessageBase Message { get; set; }
 
         /// <summary>
         /// Determines that appended message should be market as sent or not.             
-        /// </summary>  
+        /// </summary>
         public bool? MarkAsSent { get; set; }
+
 
         /// <summary>ClientMessageAppendRequest constructor</summary>
         public ClientMessageAppendRequest() {}
+
 
         /// <summary>ClientMessageAppendRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="folder">Path to folder on email server to append message to.             </param>
         /// <param name="message">Message to append.             </param>
         /// <param name="markAsSent">Determines that appended message should be market as sent or not.             </param>
-        public ClientMessageAppendRequest(StorageFileLocation accountLocation, string folder, MailMessageBase message, bool? markAsSent)
-        {
+        public ClientMessageAppendRequest(
+            StorageFileLocation accountLocation,
+            string folder,
+            MailMessageBase message,
+            bool? markAsSent
+        )
+        { 
             AccountLocation = accountLocation;
             Folder = folder;
             Message = message;

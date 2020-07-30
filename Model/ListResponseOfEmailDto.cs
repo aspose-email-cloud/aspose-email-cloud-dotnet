@@ -43,16 +43,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Gets or sets Value
-        /// </summary>  
+        /// </summary>
         public List<EmailDto> Value { get; set; }
+
 
         /// <summary>ListResponseOfEmailDto constructor</summary>
         public ListResponseOfEmailDto() {}
 
+
         /// <summary>ListResponseOfEmailDto constructor</summary>
         /// <param name="value"></param>
-        public ListResponseOfEmailDto(List<EmailDto> value)
-        {
+        public ListResponseOfEmailDto(
+            List<EmailDto> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

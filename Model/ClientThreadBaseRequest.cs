@@ -43,17 +43,22 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Thread identifier.             
-        /// </summary>  
+        /// </summary>
         public string ThreadId { get; set; }
+
 
         /// <summary>ClientThreadBaseRequest constructor</summary>
         public ClientThreadBaseRequest() {}
 
+
         /// <summary>ClientThreadBaseRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="threadId">Thread identifier.             </param>
-        public ClientThreadBaseRequest(StorageFileLocation accountLocation, string threadId)
-        {
+        public ClientThreadBaseRequest(
+            StorageFileLocation accountLocation,
+            string threadId
+        )
+        { 
             AccountLocation = accountLocation;
             ThreadId = threadId;
         }

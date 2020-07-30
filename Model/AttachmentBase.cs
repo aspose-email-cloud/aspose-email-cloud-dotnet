@@ -43,34 +43,41 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Attachment file content as Base64 string.             
-        /// </summary>  
+        /// </summary>
         public string Base64Data { get; set; }
 
         /// <summary>
         /// Attachment content id             
-        /// </summary>  
+        /// </summary>
         public string ContentId { get; set; }
 
         /// <summary>
         /// Content type             
-        /// </summary>  
+        /// </summary>
         public ContentType ContentType { get; set; }
 
         /// <summary>
         /// Attachment headers.             
-        /// </summary>  
+        /// </summary>
         public Dictionary<string, string> Headers { get; set; }
+
 
         /// <summary>AttachmentBase constructor</summary>
         public AttachmentBase() {}
+
 
         /// <summary>AttachmentBase constructor</summary>
         /// <param name="base64Data">Attachment file content as Base64 string.             </param>
         /// <param name="contentId">Attachment content id             </param>
         /// <param name="contentType">Content type             </param>
         /// <param name="headers">Attachment headers.             </param>
-        public AttachmentBase(string base64Data, string contentId, ContentType contentType, Dictionary<string, string> headers)
-        {
+        public AttachmentBase(
+            string base64Data,
+            string contentId,
+            ContentType contentType,
+            Dictionary<string, string> headers
+        )
+        { 
             Base64Data = base64Data;
             ContentId = contentId;
             ContentType = contentType;

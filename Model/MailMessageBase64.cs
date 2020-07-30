@@ -43,24 +43,28 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email message file data encoded to Base64 string.             
-        /// </summary>  
+        /// </summary>
         public string ValueBase64 { get; set; }
 
         /// <summary>
         /// Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
-        /// </summary>  
+        /// </summary>
         public string Format { get; set; }
+
 
         /// <summary>MailMessageBase64 constructor</summary>
         public MailMessageBase64() {}
 
+
         /// <summary>MailMessageBase64 constructor</summary>
-        /// <param name="discriminator"></param>
         /// <param name="valueBase64">Email message file data encoded to Base64 string.             </param>
         /// <param name="format">Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
-        public MailMessageBase64(string discriminator, string valueBase64, string format)
-        {
-            Discriminator = discriminator;
+        public MailMessageBase64(
+            //,
+            string valueBase64,
+            string format
+        )
+        { 
             ValueBase64 = valueBase64;
             Format = format;
         }

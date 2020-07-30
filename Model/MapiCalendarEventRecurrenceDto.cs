@@ -43,36 +43,38 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Time zone information that describes how to convert the meeting date and time on a recurring series to and from UTC.             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarTimeZoneDto AppointmentTimeZoneDefinitionRecur { get; set; }
 
         /// <summary>
         /// Date of the last instance.             
-        /// </summary>  
+        /// </summary>
         public DateTime? ClipEnd { get; set; }
 
         /// <summary>
         /// Date of the first instance.             
-        /// </summary>  
+        /// </summary>
         public DateTime? ClipStart { get; set; }
 
         /// <summary>
         /// Value indicating whether the object represents an exception.             
-        /// </summary>  
+        /// </summary>
         public bool? IsException { get; set; }
 
         /// <summary>
         /// Recurrence pattern.             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarRecurrencePatternDto RecurrencePattern { get; set; }
 
         /// <summary>
         /// Time zone information for a recurring meeting.             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarTimeZoneDto TimeZoneStruct { get; set; }
+
 
         /// <summary>MapiCalendarEventRecurrenceDto constructor</summary>
         public MapiCalendarEventRecurrenceDto() {}
+
 
         /// <summary>MapiCalendarEventRecurrenceDto constructor</summary>
         /// <param name="appointmentTimeZoneDefinitionRecur">Time zone information that describes how to convert the meeting date and time on a recurring series to and from UTC.             </param>
@@ -81,8 +83,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="isException">Value indicating whether the object represents an exception.             </param>
         /// <param name="recurrencePattern">Recurrence pattern.             </param>
         /// <param name="timeZoneStruct">Time zone information for a recurring meeting.             </param>
-        public MapiCalendarEventRecurrenceDto(MapiCalendarTimeZoneDto appointmentTimeZoneDefinitionRecur, DateTime? clipEnd, DateTime? clipStart, bool? isException, MapiCalendarRecurrencePatternDto recurrencePattern, MapiCalendarTimeZoneDto timeZoneStruct)
-        {
+        public MapiCalendarEventRecurrenceDto(
+            MapiCalendarTimeZoneDto appointmentTimeZoneDefinitionRecur,
+            DateTime? clipEnd,
+            DateTime? clipStart,
+            bool? isException,
+            MapiCalendarRecurrencePatternDto recurrencePattern,
+            MapiCalendarTimeZoneDto timeZoneStruct
+        )
+        { 
             AppointmentTimeZoneDefinitionRecur = appointmentTimeZoneDefinitionRecur;
             ClipEnd = clipEnd;
             ClipStart = clipStart;

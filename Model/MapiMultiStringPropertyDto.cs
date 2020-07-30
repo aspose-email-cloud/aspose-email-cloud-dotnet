@@ -43,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Property values             
-        /// </summary>  
+        /// </summary>
         public List<string> Values { get; set; }
+
 
         /// <summary>MapiMultiStringPropertyDto constructor</summary>
         public MapiMultiStringPropertyDto() {}
 
+
         /// <summary>MapiMultiStringPropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
         /// <param name="values">Property values             </param>
-        public MapiMultiStringPropertyDto(MapiPropertyDescriptor descriptor, string discriminator, List<string> values)
-        {
+        public MapiMultiStringPropertyDto(
+            MapiPropertyDescriptor descriptor
+            ,
+            List<string> values
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
             Values = values;
         }
         /// <summary>

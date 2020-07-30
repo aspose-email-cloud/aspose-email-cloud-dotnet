@@ -43,24 +43,31 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Message is read flag.             
-        /// </summary>  
+        /// </summary>
         public bool? IsRead { get; set; }
 
         /// <summary>
         /// Folder on email server, where thread is stored.             
-        /// </summary>  
+        /// </summary>
         public string Folder { get; set; }
+
 
         /// <summary>ClientThreadSetIsReadRequest constructor</summary>
         public ClientThreadSetIsReadRequest() {}
+
 
         /// <summary>ClientThreadSetIsReadRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="threadId">Thread identifier.             </param>
         /// <param name="isRead">Message is read flag.             </param>
         /// <param name="folder">Folder on email server, where thread is stored.             </param>
-        public ClientThreadSetIsReadRequest(StorageFileLocation accountLocation, string threadId, bool? isRead, string folder)
-        {
+        public ClientThreadSetIsReadRequest(
+            StorageFileLocation accountLocation,
+            string threadId,
+            bool? isRead,
+            string folder
+        )
+        { 
             AccountLocation = accountLocation;
             ThreadId = threadId;
             IsRead = isRead;

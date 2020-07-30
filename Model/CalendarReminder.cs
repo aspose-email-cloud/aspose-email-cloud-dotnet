@@ -43,46 +43,48 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Defines the action to be invoked when an alarm is triggered. Enum, available values: Audio, Display, Email, Procedure, None
-        /// </summary>  
+        /// </summary>
         public string Action { get; set; }
 
         /// <summary>
         /// Collection of Reminder Attachments. Could be an absolute URI or Base64 string representation of attachment content             
-        /// </summary>  
+        /// </summary>
         public List<string> Attachments { get; set; }
 
         /// <summary>
         /// Contains collection of ReminderAttendee objects.             
-        /// </summary>  
+        /// </summary>
         public List<ReminderAttendee> Attendees { get; set; }
 
         /// <summary>
         /// Provides a more complete description of the alarm.
-        /// </summary>  
+        /// </summary>
         public string Description { get; set; }
 
         /// <summary>
         /// Specifies the delay period in ticks, after which the alarm will repeat.             
-        /// </summary>  
+        /// </summary>
         public long? Duration { get; set; }
 
         /// <summary>
         /// Defines the number of time the alarm should be repeated, after the initial trigger.             
-        /// </summary>  
+        /// </summary>
         public int? Repeat { get; set; }
 
         /// <summary>
         /// Defines a short summary or subject for the alarm.
-        /// </summary>  
+        /// </summary>
         public string Summary { get; set; }
 
         /// <summary>
         /// Specifies when an alarm will trigger.
-        /// </summary>  
+        /// </summary>
         public ReminderTrigger Trigger { get; set; }
+
 
         /// <summary>CalendarReminder constructor</summary>
         public CalendarReminder() {}
+
 
         /// <summary>CalendarReminder constructor</summary>
         /// <param name="action">Defines the action to be invoked when an alarm is triggered. Enum, available values: Audio, Display, Email, Procedure, None</param>
@@ -93,8 +95,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="repeat">Defines the number of time the alarm should be repeated, after the initial trigger.             </param>
         /// <param name="summary">Defines a short summary or subject for the alarm.</param>
         /// <param name="trigger">Specifies when an alarm will trigger.</param>
-        public CalendarReminder(string action, List<string> attachments, List<ReminderAttendee> attendees, string description, long? duration, int? repeat, string summary, ReminderTrigger trigger)
-        {
+        public CalendarReminder(
+            string action,
+            List<string> attachments,
+            List<ReminderAttendee> attendees,
+            string description,
+            long? duration,
+            int? repeat,
+            string summary,
+            ReminderTrigger trigger
+        )
+        { 
             Action = action;
             Attachments = attachments;
             Attendees = attendees;

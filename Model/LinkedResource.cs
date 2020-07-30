@@ -43,11 +43,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// URI that the resource must match.             
-        /// </summary>  
+        /// </summary>
         public string ContentLink { get; set; }
+
 
         /// <summary>LinkedResource constructor</summary>
         public LinkedResource() {}
+
 
         /// <summary>LinkedResource constructor</summary>
         /// <param name="base64Data">Attachment file content as Base64 string.             </param>
@@ -55,8 +57,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="contentType">Content type             </param>
         /// <param name="headers">Attachment headers.             </param>
         /// <param name="contentLink">URI that the resource must match.             </param>
-        public LinkedResource(string base64Data, string contentId, ContentType contentType, Dictionary<string, string> headers, string contentLink)
-        {
+        public LinkedResource(
+            string base64Data,
+            string contentId,
+            ContentType contentType,
+            Dictionary<string, string> headers,
+            string contentLink
+        )
+        { 
             Base64Data = base64Data;
             ContentId = contentId;
             ContentType = contentType;

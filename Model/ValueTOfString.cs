@@ -43,16 +43,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Gets or sets Value
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
+
 
         /// <summary>ValueTOfString constructor</summary>
         public ValueTOfString() {}
 
+
         /// <summary>ValueTOfString constructor</summary>
         /// <param name="value"></param>
-        public ValueTOfString(string value)
-        {
+        public ValueTOfString(
+            string value
+        )
+        { 
             Value = value;
         }
         /// <summary>

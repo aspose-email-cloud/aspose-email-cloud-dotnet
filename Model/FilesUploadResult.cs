@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// List of uploaded file names
-        /// </summary>  
+        /// </summary>
         public List<string> Uploaded { get; set; }
 
         /// <summary>
         /// List of errors.
-        /// </summary>  
+        /// </summary>
         public List<Error> Errors { get; set; }
+
 
         /// <summary>FilesUploadResult constructor</summary>
         public FilesUploadResult() {}
 
+
         /// <summary>FilesUploadResult constructor</summary>
         /// <param name="uploaded">List of uploaded file names</param>
         /// <param name="errors">List of errors.</param>
-        public FilesUploadResult(List<string> uploaded, List<Error> errors)
-        {
+        public FilesUploadResult(
+            List<string> uploaded,
+            List<Error> errors
+        )
+        { 
             Uploaded = uploaded;
             Errors = errors;
         }

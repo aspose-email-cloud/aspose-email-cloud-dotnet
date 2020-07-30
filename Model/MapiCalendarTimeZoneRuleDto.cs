@@ -43,51 +43,53 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Date and time that indicate when to begin using the Standard/Daylight time.             
-        /// </summary>  
+        /// </summary>
         public DateTime? Date { get; set; }
 
         /// <summary>
         /// Day of week. Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
-        /// </summary>  
+        /// </summary>
         public string DayOfWeek { get; set; }
 
         /// <summary>
         /// Hour.             
-        /// </summary>  
+        /// </summary>
         public int? Hour { get; set; }
 
         /// <summary>
         /// Milliseconds.             
-        /// </summary>  
+        /// </summary>
         public int? Milliseconds { get; set; }
 
         /// <summary>
         /// Minute.             
-        /// </summary>  
+        /// </summary>
         public int? Minute { get; set; }
 
         /// <summary>
         /// Month.             
-        /// </summary>  
+        /// </summary>
         public int? Month { get; set; }
 
         /// <summary>
         /// Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last
-        /// </summary>  
+        /// </summary>
         public string Position { get; set; }
 
         /// <summary>
         /// Seconds.             
-        /// </summary>  
+        /// </summary>
         public int? Seconds { get; set; }
 
         /// <summary>
         /// Year.             
-        /// </summary>  
+        /// </summary>
         public int? Year { get; set; }
+
 
         /// <summary>MapiCalendarTimeZoneRuleDto constructor</summary>
         public MapiCalendarTimeZoneRuleDto() {}
+
 
         /// <summary>MapiCalendarTimeZoneRuleDto constructor</summary>
         /// <param name="date">Date and time that indicate when to begin using the Standard/Daylight time.             </param>
@@ -99,8 +101,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="position">Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last</param>
         /// <param name="seconds">Seconds.             </param>
         /// <param name="year">Year.             </param>
-        public MapiCalendarTimeZoneRuleDto(DateTime? date, string dayOfWeek, int? hour, int? milliseconds, int? minute, int? month, string position, int? seconds, int? year)
-        {
+        public MapiCalendarTimeZoneRuleDto(
+            DateTime? date,
+            string dayOfWeek,
+            int? hour,
+            int? milliseconds,
+            int? minute,
+            int? month,
+            string position,
+            int? seconds,
+            int? year
+        )
+        { 
             Date = date;
             DayOfWeek = dayOfWeek;
             Hour = hour;

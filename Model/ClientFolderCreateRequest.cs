@@ -43,23 +43,29 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Path to parent folder.             
-        /// </summary>  
+        /// </summary>
         public string ParentFolder { get; set; }
 
         /// <summary>
         /// Folder name.             
-        /// </summary>  
+        /// </summary>
         public string FolderName { get; set; }
+
 
         /// <summary>ClientFolderCreateRequest constructor</summary>
         public ClientFolderCreateRequest() {}
+
 
         /// <summary>ClientFolderCreateRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="parentFolder">Path to parent folder.             </param>
         /// <param name="folderName">Folder name.             </param>
-        public ClientFolderCreateRequest(StorageFileLocation accountLocation, string parentFolder, string folderName)
-        {
+        public ClientFolderCreateRequest(
+            StorageFileLocation accountLocation,
+            string parentFolder,
+            string folderName
+        )
+        { 
             AccountLocation = accountLocation;
             ParentFolder = parentFolder;
             FolderName = folderName;

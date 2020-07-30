@@ -41,13 +41,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class EmailStorageList : ListResponseOfStorageModelOfEmailDto 
     {
+
         /// <summary>EmailStorageList constructor</summary>
         public EmailStorageList() {}
 
+
         /// <summary>EmailStorageList constructor</summary>
         /// <param name="value"></param>
-        public EmailStorageList(List<StorageModelOfEmailDto> value)
-        {
+        public EmailStorageList(
+            List<StorageModelOfEmailDto> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

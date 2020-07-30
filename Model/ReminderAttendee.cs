@@ -43,16 +43,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Contains the email address.
-        /// </summary>  
+        /// </summary>
         public string Address { get; set; }
+
 
         /// <summary>ReminderAttendee constructor</summary>
         public ReminderAttendee() {}
 
+
         /// <summary>ReminderAttendee constructor</summary>
         /// <param name="address">Contains the email address.</param>
-        public ReminderAttendee(string address)
-        {
+        public ReminderAttendee(
+            string address
+        )
+        { 
             Address = address;
         }
         /// <summary>

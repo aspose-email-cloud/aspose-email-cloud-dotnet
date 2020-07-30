@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Event category.             
-        /// </summary>  
+        /// </summary>
         public EnumWithCustomOfEventCategory Category { get; set; }
 
         /// <summary>
         /// Event date.             
-        /// </summary>  
+        /// </summary>
         public DateTime? Date { get; set; }
+
 
         /// <summary>CustomerEvent constructor</summary>
         public CustomerEvent() {}
 
+
         /// <summary>CustomerEvent constructor</summary>
         /// <param name="category">Event category.             </param>
         /// <param name="date">Event date.             </param>
-        public CustomerEvent(EnumWithCustomOfEventCategory category, DateTime? date)
-        {
+        public CustomerEvent(
+            EnumWithCustomOfEventCategory category,
+            DateTime? date
+        )
+        { 
             Category = category;
             Date = date;
         }

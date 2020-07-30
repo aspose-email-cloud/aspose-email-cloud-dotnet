@@ -43,21 +43,23 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Day of the month on which the recurrence falls.             
-        /// </summary>  
+        /// </summary>
         public int? Day { get; set; }
 
         /// <summary>
         /// Days of week at which the event occurs.              Items: Enumerates the days of week of the mapi calendar recurrence pattern Enum, available values: Saturday, Friday, Thursday, Wednesday, Tuesday, Monday, Sunday
-        /// </summary>  
+        /// </summary>
         public List<string> DayOfWeek { get; set; }
 
         /// <summary>
         /// Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last
-        /// </summary>  
+        /// </summary>
         public string Position { get; set; }
+
 
         /// <summary>MapiCalendarYearlyAndMonthlyRecurrencePatternDto constructor</summary>
         public MapiCalendarYearlyAndMonthlyRecurrencePatternDto() {}
+
 
         /// <summary>MapiCalendarYearlyAndMonthlyRecurrencePatternDto constructor</summary>
         /// <param name="calendarType">Enumerated the calendar type of the mapi recurrence Enum, available values: Default, CalGregorian, CalGregorianUs, CalJapan, CalTaiwan, CalKorea, CalHijri, CalThai, CalHebrew, CalGregorianMeFrench, CalGregorianArabic, CalGregorianXLitEnglish, CalGregorianXLitFrench, CalLunarJapanese, CalChineseLunar, CalSaka, CalLunarEtoChn, CalLunarEtoKor, CalLunarRokuyou, CalLunarKorean, CalUmAlQura</param>
@@ -73,12 +75,29 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="slidingFlag">Defines whether pattern is sliding or not.             </param>
         /// <param name="startDate">Start date of an item recurrence pattern.             </param>
         /// <param name="weekStartDay">Day of week. Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
-        /// <param name="discriminator"></param>
         /// <param name="day">Day of the month on which the recurrence falls.             </param>
         /// <param name="dayOfWeek">Days of week at which the event occurs.             </param>
         /// <param name="position">Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last</param>
-        public MapiCalendarYearlyAndMonthlyRecurrencePatternDto(string calendarType, List<DateTime?> deletedInstanceDates, DateTime? endDate, string endType, List<MapiCalendarExceptionInfoDto> exceptions, string frequency, List<DateTime?> modifiedInstanceDates, long? occurrenceCount, string patternType, long? period, bool? slidingFlag, DateTime? startDate, string weekStartDay, string discriminator, int? day, List<string> dayOfWeek, string position)
-        {
+        public MapiCalendarYearlyAndMonthlyRecurrencePatternDto(
+            string calendarType,
+            List<DateTime?> deletedInstanceDates,
+            DateTime? endDate,
+            string endType,
+            List<MapiCalendarExceptionInfoDto> exceptions,
+            string frequency,
+            List<DateTime?> modifiedInstanceDates,
+            long? occurrenceCount,
+            string patternType,
+            long? period,
+            bool? slidingFlag,
+            DateTime? startDate,
+            string weekStartDay
+            ,
+            int? day,
+            List<string> dayOfWeek,
+            string position
+        )
+        { 
             CalendarType = calendarType;
             DeletedInstanceDates = deletedInstanceDates;
             EndDate = endDate;
@@ -92,7 +111,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
             SlidingFlag = slidingFlag;
             StartDate = startDate;
             WeekStartDay = weekStartDay;
-            Discriminator = discriminator;
             Day = day;
             DayOfWeek = dayOfWeek;
             Position = position;

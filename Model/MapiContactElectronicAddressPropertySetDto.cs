@@ -43,51 +43,53 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Refers to the group of properties that define the business fax address for a contact.
-        /// </summary>  
+        /// </summary>
         public MapiContactElectronicAddressDto BusinessFax { get; set; }
 
         /// <summary>
         /// Default value of electronic address Uses when user does not set any electronic address if UseAutocomplete property is set 'true'             
-        /// </summary>  
+        /// </summary>
         public MapiContactElectronicAddressDto DefaultEmailAddress { get; set; }
 
         /// <summary>
         /// Refers to the group of properties that define the first e-mail address for a contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactElectronicAddressDto Email1 { get; set; }
 
         /// <summary>
         /// Refers to the group of properties that define the second e-mail address for a contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactElectronicAddressDto Email2 { get; set; }
 
         /// <summary>
         /// Refers to the group of properties that define the third e-mail address for a contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactElectronicAddressDto Email3 { get; set; }
 
         /// <summary>
         /// Refers to the group of properties that define the home fax address for a contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactElectronicAddressDto HomeFax { get; set; }
 
         /// <summary>
         /// Shows if MapiContactElectronicAddressPropertySetDto is empty
-        /// </summary>  
+        /// </summary>
         public bool? IsEmpty { get; set; }
 
         /// <summary>
         /// Refers to the group of properties that define the primary fax address for a contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactElectronicAddressDto PrimaryFax { get; set; }
 
         /// <summary>
         /// Indicates that one electronic address is completed automatically in case if user does not set any electronic address             
-        /// </summary>  
+        /// </summary>
         public bool? UseAutocomplete { get; set; }
+
 
         /// <summary>MapiContactElectronicAddressPropertySetDto constructor</summary>
         public MapiContactElectronicAddressPropertySetDto() {}
+
 
         /// <summary>MapiContactElectronicAddressPropertySetDto constructor</summary>
         /// <param name="businessFax">Refers to the group of properties that define the business fax address for a contact.</param>
@@ -99,8 +101,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="isEmpty">Shows if MapiContactElectronicAddressPropertySetDto is empty</param>
         /// <param name="primaryFax">Refers to the group of properties that define the primary fax address for a contact.             </param>
         /// <param name="useAutocomplete">Indicates that one electronic address is completed automatically in case if user does not set any electronic address             </param>
-        public MapiContactElectronicAddressPropertySetDto(MapiContactElectronicAddressDto businessFax, MapiContactElectronicAddressDto defaultEmailAddress, MapiContactElectronicAddressDto email1, MapiContactElectronicAddressDto email2, MapiContactElectronicAddressDto email3, MapiContactElectronicAddressDto homeFax, bool? isEmpty, MapiContactElectronicAddressDto primaryFax, bool? useAutocomplete)
-        {
+        public MapiContactElectronicAddressPropertySetDto(
+            MapiContactElectronicAddressDto businessFax,
+            MapiContactElectronicAddressDto defaultEmailAddress,
+            MapiContactElectronicAddressDto email1,
+            MapiContactElectronicAddressDto email2,
+            MapiContactElectronicAddressDto email3,
+            MapiContactElectronicAddressDto homeFax,
+            bool? isEmpty,
+            MapiContactElectronicAddressDto primaryFax,
+            bool? useAutocomplete
+        )
+        { 
             BusinessFax = businessFax;
             DefaultEmailAddress = defaultEmailAddress;
             Email1 = email1;

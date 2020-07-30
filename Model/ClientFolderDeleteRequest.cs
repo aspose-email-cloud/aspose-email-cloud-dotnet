@@ -43,17 +43,22 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Path to folder to delete.             
-        /// </summary>  
+        /// </summary>
         public string Folder { get; set; }
+
 
         /// <summary>ClientFolderDeleteRequest constructor</summary>
         public ClientFolderDeleteRequest() {}
 
+
         /// <summary>ClientFolderDeleteRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="folder">Path to folder to delete.             </param>
-        public ClientFolderDeleteRequest(StorageFileLocation accountLocation, string folder)
-        {
+        public ClientFolderDeleteRequest(
+            StorageFileLocation accountLocation,
+            string folder
+        )
+        { 
             AccountLocation = accountLocation;
             Folder = folder;
         }

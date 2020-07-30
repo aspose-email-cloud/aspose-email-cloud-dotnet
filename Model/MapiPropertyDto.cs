@@ -43,28 +43,31 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Property descriptor             
-        /// </summary>  
+        /// </summary>
         public MapiPropertyDescriptor Descriptor { get; set; }
 
         /// <summary>
         /// Gets or sets Discriminator
-        /// </summary>  
+        /// </summary>
         public string Discriminator
         {
             get { return GetType().Name; }
             set { /*do nothing*/}
         }
 
+
         /// <summary>MapiPropertyDto constructor</summary>
         public MapiPropertyDto() {}
 
+
         /// <summary>MapiPropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
-        public MapiPropertyDto(MapiPropertyDescriptor descriptor, string discriminator)
-        {
+        public MapiPropertyDto(
+            MapiPropertyDescriptor descriptor
+            
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
         }
         /// <summary>
         /// Get the string presentation of the object

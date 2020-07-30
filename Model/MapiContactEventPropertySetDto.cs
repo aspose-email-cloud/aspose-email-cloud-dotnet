@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Specifies the birthday of the contact.
-        /// </summary>  
+        /// </summary>
         public DateTime? Birthday { get; set; }
 
         /// <summary>
         /// Specifies the wedding anniversary of the contact.             
-        /// </summary>  
+        /// </summary>
         public DateTime? WeddingAnniversary { get; set; }
+
 
         /// <summary>MapiContactEventPropertySetDto constructor</summary>
         public MapiContactEventPropertySetDto() {}
 
+
         /// <summary>MapiContactEventPropertySetDto constructor</summary>
         /// <param name="birthday">Specifies the birthday of the contact.</param>
         /// <param name="weddingAnniversary">Specifies the wedding anniversary of the contact.             </param>
-        public MapiContactEventPropertySetDto(DateTime? birthday, DateTime? weddingAnniversary)
-        {
+        public MapiContactEventPropertySetDto(
+            DateTime? birthday,
+            DateTime? weddingAnniversary
+        )
+        { 
             Birthday = birthday;
             WeddingAnniversary = weddingAnniversary;
         }

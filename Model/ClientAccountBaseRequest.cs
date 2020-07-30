@@ -43,16 +43,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email client account configuration location on storage.             
-        /// </summary>  
+        /// </summary>
         public StorageFileLocation AccountLocation { get; set; }
+
 
         /// <summary>ClientAccountBaseRequest constructor</summary>
         public ClientAccountBaseRequest() {}
 
+
         /// <summary>ClientAccountBaseRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
-        public ClientAccountBaseRequest(StorageFileLocation accountLocation)
-        {
+        public ClientAccountBaseRequest(
+            StorageFileLocation accountLocation
+        )
+        { 
             AccountLocation = accountLocation;
         }
         /// <summary>

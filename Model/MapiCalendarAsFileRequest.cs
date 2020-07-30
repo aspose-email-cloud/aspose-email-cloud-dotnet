@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Calendar file format Enum, available values: Ics, Msg
-        /// </summary>  
+        /// </summary>
         public string Format { get; set; }
 
         /// <summary>
         /// MAPI calendar model.             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarDto Value { get; set; }
+
 
         /// <summary>MapiCalendarAsFileRequest constructor</summary>
         public MapiCalendarAsFileRequest() {}
 
+
         /// <summary>MapiCalendarAsFileRequest constructor</summary>
         /// <param name="format">Calendar file format Enum, available values: Ics, Msg</param>
         /// <param name="value">MAPI calendar model.             </param>
-        public MapiCalendarAsFileRequest(string format, MapiCalendarDto value)
-        {
+        public MapiCalendarAsFileRequest(
+            string format,
+            MapiCalendarDto value
+        )
+        { 
             Format = format;
             Value = value;
         }

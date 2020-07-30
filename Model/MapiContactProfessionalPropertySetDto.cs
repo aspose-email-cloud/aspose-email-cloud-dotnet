@@ -43,41 +43,43 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Gets or sets the job title of the contact             
-        /// </summary>  
+        /// </summary>
         public string Title { get; set; }
 
         /// <summary>
         /// Gets or sets the company that employs the contact             
-        /// </summary>  
+        /// </summary>
         public string CompanyName { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the department to which the contact belongs             
-        /// </summary>  
+        /// </summary>
         public string DepartmentName { get; set; }
 
         /// <summary>
         /// Gets or sets the location of the office that the contact works in             
-        /// </summary>  
+        /// </summary>
         public string OfficeLocation { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the contact's manager             
-        /// </summary>  
+        /// </summary>
         public string ManagerName { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the contact's assistant             
-        /// </summary>  
+        /// </summary>
         public string Assistant { get; set; }
 
         /// <summary>
         /// Gets or sets the profession of the contact             
-        /// </summary>  
+        /// </summary>
         public string Profession { get; set; }
+
 
         /// <summary>MapiContactProfessionalPropertySetDto constructor</summary>
         public MapiContactProfessionalPropertySetDto() {}
+
 
         /// <summary>MapiContactProfessionalPropertySetDto constructor</summary>
         /// <param name="title">Gets or sets the job title of the contact             </param>
@@ -87,8 +89,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="managerName">Gets or sets the name of the contact's manager             </param>
         /// <param name="assistant">Gets or sets the name of the contact's assistant             </param>
         /// <param name="profession">Gets or sets the profession of the contact             </param>
-        public MapiContactProfessionalPropertySetDto(string title, string companyName, string departmentName, string officeLocation, string managerName, string assistant, string profession)
-        {
+        public MapiContactProfessionalPropertySetDto(
+            string title,
+            string companyName,
+            string departmentName,
+            string officeLocation,
+            string managerName,
+            string assistant,
+            string profession
+        )
+        { 
             Title = title;
             CompanyName = companyName;
             DepartmentName = departmentName;

@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Gets or sets StorageFile
-        /// </summary>  
+        /// </summary>
         public StorageFileLocation StorageFile { get; set; }
 
         /// <summary>
         /// Gets or sets Value
-        /// </summary>  
+        /// </summary>
         public MapiMessageDto Value { get; set; }
+
 
         /// <summary>StorageModelOfMapiMessageDto constructor</summary>
         public StorageModelOfMapiMessageDto() {}
 
+
         /// <summary>StorageModelOfMapiMessageDto constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
-        public StorageModelOfMapiMessageDto(StorageFileLocation storageFile, MapiMessageDto value)
-        {
+        public StorageModelOfMapiMessageDto(
+            StorageFileLocation storageFile,
+            MapiMessageDto value
+        )
+        { 
             StorageFile = storageFile;
             Value = value;
         }

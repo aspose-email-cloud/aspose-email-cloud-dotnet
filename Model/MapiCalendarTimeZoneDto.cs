@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Human-readable description of the time zone.             
-        /// </summary>  
+        /// </summary>
         public string KeyName { get; set; }
 
         /// <summary>
         /// Time zone rules             
-        /// </summary>  
+        /// </summary>
         public List<MapiCalendarTimeZoneInfoDto> TimeZoneRules { get; set; }
+
 
         /// <summary>MapiCalendarTimeZoneDto constructor</summary>
         public MapiCalendarTimeZoneDto() {}
 
+
         /// <summary>MapiCalendarTimeZoneDto constructor</summary>
         /// <param name="keyName">Human-readable description of the time zone.             </param>
         /// <param name="timeZoneRules">Time zone rules             </param>
-        public MapiCalendarTimeZoneDto(string keyName, List<MapiCalendarTimeZoneInfoDto> timeZoneRules)
-        {
+        public MapiCalendarTimeZoneDto(
+            string keyName,
+            List<MapiCalendarTimeZoneInfoDto> timeZoneRules
+        )
+        { 
             KeyName = keyName;
             TimeZoneRules = timeZoneRules;
         }

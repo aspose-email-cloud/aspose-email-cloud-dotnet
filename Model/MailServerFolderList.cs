@@ -41,13 +41,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class MailServerFolderList : ListResponseOfMailServerFolder 
     {
+
         /// <summary>MailServerFolderList constructor</summary>
         public MailServerFolderList() {}
 
+
         /// <summary>MailServerFolderList constructor</summary>
         /// <param name="value"></param>
-        public MailServerFolderList(List<MailServerFolder> value)
-        {
+        public MailServerFolderList(
+            List<MailServerFolder> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

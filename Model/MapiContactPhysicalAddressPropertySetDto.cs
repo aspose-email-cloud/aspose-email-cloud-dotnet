@@ -43,28 +43,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Specifies the address of the contact's work             
-        /// </summary>  
+        /// </summary>
         public MapiContactPhysicalAddressDto WorkAddress { get; set; }
 
         /// <summary>
         /// Specifies the address of the contact's home             
-        /// </summary>  
+        /// </summary>
         public MapiContactPhysicalAddressDto HomeAddress { get; set; }
 
         /// <summary>
         /// Specifies the other contact's address             
-        /// </summary>  
+        /// </summary>
         public MapiContactPhysicalAddressDto OtherAddress { get; set; }
+
 
         /// <summary>MapiContactPhysicalAddressPropertySetDto constructor</summary>
         public MapiContactPhysicalAddressPropertySetDto() {}
+
 
         /// <summary>MapiContactPhysicalAddressPropertySetDto constructor</summary>
         /// <param name="workAddress">Specifies the address of the contact's work             </param>
         /// <param name="homeAddress">Specifies the address of the contact's home             </param>
         /// <param name="otherAddress">Specifies the other contact's address             </param>
-        public MapiContactPhysicalAddressPropertySetDto(MapiContactPhysicalAddressDto workAddress, MapiContactPhysicalAddressDto homeAddress, MapiContactPhysicalAddressDto otherAddress)
-        {
+        public MapiContactPhysicalAddressPropertySetDto(
+            MapiContactPhysicalAddressDto workAddress,
+            MapiContactPhysicalAddressDto homeAddress,
+            MapiContactPhysicalAddressDto otherAddress
+        )
+        { 
             WorkAddress = workAddress;
             HomeAddress = homeAddress;
             OtherAddress = otherAddress;

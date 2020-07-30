@@ -41,13 +41,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class EmailList : ListResponseOfEmailDto 
     {
+
         /// <summary>EmailList constructor</summary>
         public EmailList() {}
 
+
         /// <summary>EmailList constructor</summary>
         /// <param name="value"></param>
-        public EmailList(List<EmailDto> value)
-        {
+        public EmailList(
+            List<EmailDto> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

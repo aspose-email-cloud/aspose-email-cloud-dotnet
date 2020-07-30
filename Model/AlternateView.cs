@@ -43,16 +43,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Base URI.             
-        /// </summary>  
+        /// </summary>
         public string BaseUri { get; set; }
 
         /// <summary>
         /// Embedded resources referred to by this alternate view.             
-        /// </summary>  
+        /// </summary>
         public List<LinkedResource> LinkedResources { get; set; }
+
 
         /// <summary>AlternateView constructor</summary>
         public AlternateView() {}
+
 
         /// <summary>AlternateView constructor</summary>
         /// <param name="base64Data">Attachment file content as Base64 string.             </param>
@@ -61,8 +63,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="headers">Attachment headers.             </param>
         /// <param name="baseUri">Base URI.             </param>
         /// <param name="linkedResources">Embedded resources referred to by this alternate view.             </param>
-        public AlternateView(string base64Data, string contentId, ContentType contentType, Dictionary<string, string> headers, string baseUri, List<LinkedResource> linkedResources)
-        {
+        public AlternateView(
+            string base64Data,
+            string contentId,
+            ContentType contentType,
+            Dictionary<string, string> headers,
+            string baseUri,
+            List<LinkedResource> linkedResources
+        )
+        { 
             Base64Data = base64Data;
             ContentId = contentId;
             ContentType = contentType;

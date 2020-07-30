@@ -43,28 +43,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email address to discover.             
-        /// </summary>  
+        /// </summary>
         public string Address { get; set; }
 
         /// <summary>
         /// Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.             
-        /// </summary>  
+        /// </summary>
         public bool? FastProcessing { get; set; }
 
         /// <summary>
         /// Email account login. If not specified, address used as a login.             
-        /// </summary>  
+        /// </summary>
         public string Login { get; set; }
+
 
         /// <summary>DiscoverEmailConfigRequest constructor</summary>
         public DiscoverEmailConfigRequest() {}
+
 
         /// <summary>DiscoverEmailConfigRequest constructor</summary>
         /// <param name="address">Email address to discover.             </param>
         /// <param name="fastProcessing">Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.             </param>
         /// <param name="login">Email account login. If not specified, address used as a login.             </param>
-        public DiscoverEmailConfigRequest(string address, bool? fastProcessing, string login)
-        {
+        public DiscoverEmailConfigRequest(
+            string address,
+            bool? fastProcessing,
+            string login
+        )
+        { 
             Address = address;
             FastProcessing = fastProcessing;
             Login = login;

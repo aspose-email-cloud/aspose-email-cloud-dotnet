@@ -43,28 +43,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// iCalendar document model             
-        /// </summary>  
+        /// </summary>
         public CalendarDto Value { get; set; }
 
         /// <summary>
         /// iCalendar actions. Enum, available values: Create, Update, Cancel
-        /// </summary>  
+        /// </summary>
         public string Action { get; set; }
 
         /// <summary>
         /// iCalendar sequence id             
-        /// </summary>  
+        /// </summary>
         public string SequenceId { get; set; }
+
 
         /// <summary>CalendarAsAlternateRequest constructor</summary>
         public CalendarAsAlternateRequest() {}
+
 
         /// <summary>CalendarAsAlternateRequest constructor</summary>
         /// <param name="value">iCalendar document model             </param>
         /// <param name="action">iCalendar actions. Enum, available values: Create, Update, Cancel</param>
         /// <param name="sequenceId">iCalendar sequence id             </param>
-        public CalendarAsAlternateRequest(CalendarDto value, string action, string sequenceId)
-        {
+        public CalendarAsAlternateRequest(
+            CalendarDto value,
+            string action,
+            string sequenceId
+        )
+        { 
             Value = value;
             Action = action;
             SequenceId = sequenceId;

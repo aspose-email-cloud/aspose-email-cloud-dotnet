@@ -43,31 +43,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// File or folder name.
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// True if it is a folder.
-        /// </summary>  
+        /// </summary>
         public bool? IsFolder { get; set; }
 
         /// <summary>
         /// File or folder last modified DateTime.
-        /// </summary>  
+        /// </summary>
         public DateTime? ModifiedDate { get; set; }
 
         /// <summary>
         /// File or folder size.
-        /// </summary>  
+        /// </summary>
         public long? Size { get; set; }
 
         /// <summary>
         /// File or folder path.
-        /// </summary>  
+        /// </summary>
         public string Path { get; set; }
+
 
         /// <summary>StorageFile constructor</summary>
         public StorageFile() {}
+
 
         /// <summary>StorageFile constructor</summary>
         /// <param name="name">File or folder name.</param>
@@ -75,8 +77,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="modifiedDate">File or folder last modified DateTime.</param>
         /// <param name="size">File or folder size.</param>
         /// <param name="path">File or folder path.</param>
-        public StorageFile(string name, bool? isFolder, DateTime? modifiedDate, long? size, string path)
-        {
+        public StorageFile(
+            string name,
+            bool? isFolder,
+            DateTime? modifiedDate,
+            long? size,
+            string path
+        )
+        { 
             Name = name;
             IsFolder = isFolder;
             ModifiedDate = modifiedDate;

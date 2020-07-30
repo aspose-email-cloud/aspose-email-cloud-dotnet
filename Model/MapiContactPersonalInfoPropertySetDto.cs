@@ -43,101 +43,103 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Specifies the name of the contact's spouse/partner             
-        /// </summary>  
+        /// </summary>
         public string SpouseName { get; set; }
 
         /// <summary>
         /// Specifies the contact's personal web page URL             
-        /// </summary>  
+        /// </summary>
         public string PersonalHomePage { get; set; }
 
         /// <summary>
         /// Specifies the language that the contact uses             
-        /// </summary>  
+        /// </summary>
         public string Language { get; set; }
 
         /// <summary>
         /// Specifies the additional notes             
-        /// </summary>  
+        /// </summary>
         public string Notes { get; set; }
 
         /// <summary>
         /// Specifies the hobbies of the contact             
-        /// </summary>  
+        /// </summary>
         public string Hobbies { get; set; }
 
         /// <summary>
         /// Specifies the location of the contact             
-        /// </summary>  
+        /// </summary>
         public string Location { get; set; }
 
         /// <summary>
         /// Specifies the contact's instant messaging address             
-        /// </summary>  
+        /// </summary>
         public string InstantMessagingAddress { get; set; }
 
         /// <summary>
         /// Specifies an organizational ID number for the contact             
-        /// </summary>  
+        /// </summary>
         public string OrganizationalIdNumber { get; set; }
 
         /// <summary>
         /// Specifies the contact's customer ID number             
-        /// </summary>  
+        /// </summary>
         public string CustomerId { get; set; }
 
         /// <summary>
         /// Specifies the contact's government ID number             
-        /// </summary>  
+        /// </summary>
         public string GovernmentIdNumber { get; set; }
 
         /// <summary>
         /// Specifies a URL path from which a client can retrieve free/busy information for the contact as an iCal file             
-        /// </summary>  
+        /// </summary>
         public string FreeBusyLocation { get; set; }
 
         /// <summary>
         /// Specifies the account name of the contact             
-        /// </summary>  
+        /// </summary>
         public string Account { get; set; }
 
         /// <summary>
         /// Specifies the contact's business web page URL             
-        /// </summary>  
+        /// </summary>
         public string Html { get; set; }
 
         /// <summary>
         /// Specifies the contact's business web page URL             
-        /// </summary>  
+        /// </summary>
         public string BusinessHomePage { get; set; }
 
         /// <summary>
         /// Specifies the contact's File Transfer Protocol (FTP) URL             
-        /// </summary>  
+        /// </summary>
         public string FtpSite { get; set; }
 
         /// <summary>
         /// Specifies the name of the network to which the contact's computer is connected             
-        /// </summary>  
+        /// </summary>
         public string ComputerNetworkName { get; set; }
 
         /// <summary>
         /// Gender of the contact Enum, available values: Unspecified, Female, Male
-        /// </summary>  
+        /// </summary>
         public string Gender { get; set; }
 
         /// <summary>
         /// Specifies the name of the person who referred this contact to the user             
-        /// </summary>  
+        /// </summary>
         public string ReferredByName { get; set; }
 
         /// <summary>
         /// Contains a list of names of children.             
-        /// </summary>  
+        /// </summary>
         public List<string> Children { get; set; }
+
 
         /// <summary>MapiContactPersonalInfoPropertySetDto constructor</summary>
         public MapiContactPersonalInfoPropertySetDto() {}
+
 
         /// <summary>MapiContactPersonalInfoPropertySetDto constructor</summary>
         /// <param name="spouseName">Specifies the name of the contact's spouse/partner             </param>
@@ -159,8 +161,28 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="gender">Gender of the contact Enum, available values: Unspecified, Female, Male</param>
         /// <param name="referredByName">Specifies the name of the person who referred this contact to the user             </param>
         /// <param name="children">Contains a list of names of children.             </param>
-        public MapiContactPersonalInfoPropertySetDto(string spouseName, string personalHomePage, string language, string notes, string hobbies, string location, string instantMessagingAddress, string organizationalIdNumber, string customerId, string governmentIdNumber, string freeBusyLocation, string account, string html, string businessHomePage, string ftpSite, string computerNetworkName, string gender, string referredByName, List<string> children)
-        {
+        public MapiContactPersonalInfoPropertySetDto(
+            string spouseName,
+            string personalHomePage,
+            string language,
+            string notes,
+            string hobbies,
+            string location,
+            string instantMessagingAddress,
+            string organizationalIdNumber,
+            string customerId,
+            string governmentIdNumber,
+            string freeBusyLocation,
+            string account,
+            string html,
+            string businessHomePage,
+            string ftpSite,
+            string computerNetworkName,
+            string gender,
+            string referredByName,
+            List<string> children
+        )
+        { 
             SpouseName = spouseName;
             PersonalHomePage = personalHomePage;
             Language = language;

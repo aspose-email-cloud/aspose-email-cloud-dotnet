@@ -41,13 +41,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class MailMessageBaseList : ListResponseOfMailMessageBase 
     {
+
         /// <summary>MailMessageBaseList constructor</summary>
         public MailMessageBaseList() {}
 
+
         /// <summary>MailMessageBaseList constructor</summary>
         /// <param name="value"></param>
-        public MailMessageBaseList(List<MailMessageBase> value)
-        {
+        public MailMessageBaseList(
+            List<MailMessageBase> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

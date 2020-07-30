@@ -43,16 +43,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// File Version ID.
-        /// </summary>  
+        /// </summary>
         public string VersionId { get; set; }
 
         /// <summary>
         /// Specifies whether the file is (true) or is not (false) the latest version of an file.
-        /// </summary>  
+        /// </summary>
         public bool? IsLatest { get; set; }
+
 
         /// <summary>FileVersion constructor</summary>
         public FileVersion() {}
+
 
         /// <summary>FileVersion constructor</summary>
         /// <param name="name">File or folder name.</param>
@@ -62,8 +64,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="path">File or folder path.</param>
         /// <param name="versionId">File Version ID.</param>
         /// <param name="isLatest">Specifies whether the file is (true) or is not (false) the latest version of an file.</param>
-        public FileVersion(string name, bool? isFolder, DateTime? modifiedDate, long? size, string path, string versionId, bool? isLatest)
-        {
+        public FileVersion(
+            string name,
+            bool? isFolder,
+            DateTime? modifiedDate,
+            long? size,
+            string path,
+            string versionId,
+            bool? isLatest
+        )
+        { 
             Name = name;
             IsFolder = isFolder;
             ModifiedDate = modifiedDate;

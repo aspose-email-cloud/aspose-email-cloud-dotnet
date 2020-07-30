@@ -43,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Identifies the display types for physical addresses. Enum, available values: None, Home, Business, Other
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
+
 
         /// <summary>MapiPhysicalAddressIndexPropertyDto constructor</summary>
         public MapiPhysicalAddressIndexPropertyDto() {}
 
+
         /// <summary>MapiPhysicalAddressIndexPropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
         /// <param name="value">Identifies the display types for physical addresses. Enum, available values: None, Home, Business, Other</param>
-        public MapiPhysicalAddressIndexPropertyDto(MapiPropertyDescriptor descriptor, string discriminator, string value)
-        {
+        public MapiPhysicalAddressIndexPropertyDto(
+            MapiPropertyDescriptor descriptor
+            ,
+            string value
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
             Value = value;
         }
         /// <summary>

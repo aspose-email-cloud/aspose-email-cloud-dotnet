@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Recognized name gender. Enum, available values: Male, Female, Unknown
-        /// </summary>  
+        /// </summary>
         public string Gender { get; set; }
 
         /// <summary>
         /// Hypothesis score             
-        /// </summary>  
+        /// </summary>
         public double? Score { get; set; }
+
 
         /// <summary>AiNameGenderHypothesis constructor</summary>
         public AiNameGenderHypothesis() {}
 
+
         /// <summary>AiNameGenderHypothesis constructor</summary>
         /// <param name="gender">Recognized name gender. Enum, available values: Male, Female, Unknown</param>
         /// <param name="score">Hypothesis score             </param>
-        public AiNameGenderHypothesis(string gender, double? score)
-        {
+        public AiNameGenderHypothesis(
+            string gender,
+            double? score
+        )
+        { 
             Gender = gender;
             Score = score;
         }

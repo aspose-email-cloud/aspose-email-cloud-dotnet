@@ -43,36 +43,38 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Address type of an electronic address
-        /// </summary>  
+        /// </summary>
         public string AddressType { get; set; }
 
         /// <summary>
         /// User-readable display name for the e-mail address
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// E-mail address of the contact
-        /// </summary>  
+        /// </summary>
         public string EmailAddress { get; set; }
 
         /// <summary>
         /// Telephone number of the mail user's primary fax machine
-        /// </summary>  
+        /// </summary>
         public string FaxNumber { get; set; }
 
         /// <summary>
         /// Shows if MapiContactElectronicAddress is empty
-        /// </summary>  
+        /// </summary>
         public bool? IsEmpty { get; set; }
 
         /// <summary>
         /// SMTP e-mail address that corresponds to the e-mail address for the Contact object.
-        /// </summary>  
+        /// </summary>
         public string OriginalDisplayName { get; set; }
+
 
         /// <summary>MapiContactElectronicAddressDto constructor</summary>
         public MapiContactElectronicAddressDto() {}
+
 
         /// <summary>MapiContactElectronicAddressDto constructor</summary>
         /// <param name="addressType">Address type of an electronic address</param>
@@ -81,8 +83,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="faxNumber">Telephone number of the mail user's primary fax machine</param>
         /// <param name="isEmpty">Shows if MapiContactElectronicAddress is empty</param>
         /// <param name="originalDisplayName">SMTP e-mail address that corresponds to the e-mail address for the Contact object.</param>
-        public MapiContactElectronicAddressDto(string addressType, string displayName, string emailAddress, string faxNumber, bool? isEmpty, string originalDisplayName)
-        {
+        public MapiContactElectronicAddressDto(
+            string addressType,
+            string displayName,
+            string emailAddress,
+            string faxNumber,
+            bool? isEmpty,
+            string originalDisplayName
+        )
+        { 
             AddressType = addressType;
             DisplayName = displayName;
             EmailAddress = emailAddress;

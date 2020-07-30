@@ -43,17 +43,22 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Message identifier.             
-        /// </summary>  
+        /// </summary>
         public string MessageId { get; set; }
+
 
         /// <summary>ClientMessageBaseRequest constructor</summary>
         public ClientMessageBaseRequest() {}
 
+
         /// <summary>ClientMessageBaseRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="messageId">Message identifier.             </param>
-        public ClientMessageBaseRequest(StorageFileLocation accountLocation, string messageId)
-        {
+        public ClientMessageBaseRequest(
+            StorageFileLocation accountLocation,
+            string messageId
+        )
+        { 
             AccountLocation = accountLocation;
             MessageId = messageId;
         }

@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// The request id
-        /// </summary>  
+        /// </summary>
         public string RequestId { get; set; }
 
         /// <summary>
         /// Date
-        /// </summary>  
+        /// </summary>
         public DateTime? Date { get; set; }
+
 
         /// <summary>ErrorDetails constructor</summary>
         public ErrorDetails() {}
 
+
         /// <summary>ErrorDetails constructor</summary>
         /// <param name="requestId">The request id</param>
         /// <param name="date">Date</param>
-        public ErrorDetails(string requestId, DateTime? date)
-        {
+        public ErrorDetails(
+            string requestId,
+            DateTime? date
+        )
+        { 
             RequestId = requestId;
             Date = date;
         }

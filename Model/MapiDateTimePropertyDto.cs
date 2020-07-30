@@ -43,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Property value             
-        /// </summary>  
+        /// </summary>
         public DateTime? Value { get; set; }
+
 
         /// <summary>MapiDateTimePropertyDto constructor</summary>
         public MapiDateTimePropertyDto() {}
 
+
         /// <summary>MapiDateTimePropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
         /// <param name="value">Property value             </param>
-        public MapiDateTimePropertyDto(MapiPropertyDescriptor descriptor, string discriminator, DateTime? value)
-        {
+        public MapiDateTimePropertyDto(
+            MapiPropertyDescriptor descriptor
+            ,
+            DateTime? value
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
             Value = value;
         }
         /// <summary>

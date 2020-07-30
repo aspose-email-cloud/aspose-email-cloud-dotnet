@@ -41,13 +41,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class AiNameComponentList : ListResponseOfAiNameComponent 
     {
+
         /// <summary>AiNameComponentList constructor</summary>
         public AiNameComponentList() {}
 
+
         /// <summary>AiNameComponentList constructor</summary>
         /// <param name="value"></param>
-        public AiNameComponentList(List<AiNameComponent> value)
-        {
+        public AiNameComponentList(
+            List<AiNameComponent> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

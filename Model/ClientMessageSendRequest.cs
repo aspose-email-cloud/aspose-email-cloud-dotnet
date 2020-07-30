@@ -43,17 +43,22 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Message to send             
-        /// </summary>  
+        /// </summary>
         public MailMessageBase Message { get; set; }
+
 
         /// <summary>ClientMessageSendRequest constructor</summary>
         public ClientMessageSendRequest() {}
 
+
         /// <summary>ClientMessageSendRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="message">Message to send             </param>
-        public ClientMessageSendRequest(StorageFileLocation accountLocation, MailMessageBase message)
-        {
+        public ClientMessageSendRequest(
+            StorageFileLocation accountLocation,
+            MailMessageBase message
+        )
+        { 
             AccountLocation = accountLocation;
             Message = message;
         }

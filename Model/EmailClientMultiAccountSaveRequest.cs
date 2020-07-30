@@ -41,14 +41,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class EmailClientMultiAccountSaveRequest : StorageModelOfEmailClientMultiAccount 
     {
+
         /// <summary>EmailClientMultiAccountSaveRequest constructor</summary>
         public EmailClientMultiAccountSaveRequest() {}
+
 
         /// <summary>EmailClientMultiAccountSaveRequest constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
-        public EmailClientMultiAccountSaveRequest(StorageFileLocation storageFile, EmailClientMultiAccount value)
-        {
+        public EmailClientMultiAccountSaveRequest(
+            StorageFileLocation storageFile,
+            EmailClientMultiAccount value
+        )
+        { 
             StorageFile = storageFile;
             Value = value;
         }

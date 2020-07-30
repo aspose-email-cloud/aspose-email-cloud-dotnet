@@ -43,24 +43,31 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Folder to move message from.             
-        /// </summary>  
+        /// </summary>
         public string SourceFolder { get; set; }
 
         /// <summary>
         /// Folder to move message to.             
-        /// </summary>  
+        /// </summary>
         public string DestinationFolder { get; set; }
+
 
         /// <summary>ClientMessageMoveRequest constructor</summary>
         public ClientMessageMoveRequest() {}
+
 
         /// <summary>ClientMessageMoveRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="messageId">Message identifier.             </param>
         /// <param name="sourceFolder">Folder to move message from.             </param>
         /// <param name="destinationFolder">Folder to move message to.             </param>
-        public ClientMessageMoveRequest(StorageFileLocation accountLocation, string messageId, string sourceFolder, string destinationFolder)
-        {
+        public ClientMessageMoveRequest(
+            StorageFileLocation accountLocation,
+            string messageId,
+            string sourceFolder,
+            string destinationFolder
+        )
+        { 
             AccountLocation = accountLocation;
             MessageId = messageId;
             SourceFolder = sourceFolder;

@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Phone number category. Enum, available values: Custom, Home, Work, Office, Mobile, Fax, HomeFax, WorkFax, Pager, Car, Isdn, Telex, Callback, Radio, Company, TtyTdd, Assistant, Primary
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
 
         /// <summary>
         /// Gets or sets Description
-        /// </summary>  
+        /// </summary>
         public string Description { get; set; }
+
 
         /// <summary>EnumWithCustomOfPhoneNumberCategory constructor</summary>
         public EnumWithCustomOfPhoneNumberCategory() {}
 
+
         /// <summary>EnumWithCustomOfPhoneNumberCategory constructor</summary>
         /// <param name="value">Phone number category. Enum, available values: Custom, Home, Work, Office, Mobile, Fax, HomeFax, WorkFax, Pager, Car, Isdn, Telex, Callback, Radio, Company, TtyTdd, Assistant, Primary</param>
         /// <param name="description"></param>
-        public EnumWithCustomOfPhoneNumberCategory(string value, string description)
-        {
+        public EnumWithCustomOfPhoneNumberCategory(
+            string value,
+            string description
+        )
+        { 
             Value = value;
             Description = description;
         }

@@ -43,34 +43,41 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Thread identifier             
-        /// </summary>  
+        /// </summary>
         public string Id { get; set; }
 
         /// <summary>
         /// Thread subject             
-        /// </summary>  
+        /// </summary>
         public string Subject { get; set; }
 
         /// <summary>
         /// List of messages in thread             
-        /// </summary>  
+        /// </summary>
         public List<EmailDto> Messages { get; set; }
 
         /// <summary>
         /// Thread folder location             
-        /// </summary>  
+        /// </summary>
         public string Folder { get; set; }
+
 
         /// <summary>EmailThread constructor</summary>
         public EmailThread() {}
+
 
         /// <summary>EmailThread constructor</summary>
         /// <param name="id">Thread identifier             </param>
         /// <param name="subject">Thread subject             </param>
         /// <param name="messages">List of messages in thread             </param>
         /// <param name="folder">Thread folder location             </param>
-        public EmailThread(string id, string subject, List<EmailDto> messages, string folder)
-        {
+        public EmailThread(
+            string id,
+            string subject,
+            List<EmailDto> messages,
+            string folder
+        )
+        { 
             Id = id;
             Subject = subject;
             Messages = messages;

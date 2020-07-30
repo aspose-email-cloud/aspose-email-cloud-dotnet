@@ -43,16 +43,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Files and folders contained by folder StorageFile.
-        /// </summary>  
+        /// </summary>
         public List<StorageFile> Value { get; set; }
+
 
         /// <summary>FilesList constructor</summary>
         public FilesList() {}
 
+
         /// <summary>FilesList constructor</summary>
         /// <param name="value">Files and folders contained by folder StorageFile.</param>
-        public FilesList(List<StorageFile> value)
-        {
+        public FilesList(
+            List<StorageFile> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

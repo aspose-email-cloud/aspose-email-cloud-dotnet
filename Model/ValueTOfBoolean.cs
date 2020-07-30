@@ -43,16 +43,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Gets or sets Value
-        /// </summary>  
+        /// </summary>
         public bool? Value { get; set; }
+
 
         /// <summary>ValueTOfBoolean constructor</summary>
         public ValueTOfBoolean() {}
 
+
         /// <summary>ValueTOfBoolean constructor</summary>
         /// <param name="value"></param>
-        public ValueTOfBoolean(bool? value)
-        {
+        public ValueTOfBoolean(
+            bool? value
+        )
+        { 
             Value = value;
         }
         /// <summary>

@@ -43,34 +43,41 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Code             
-        /// </summary>  
+        /// </summary>
         public string Code { get; set; }
 
         /// <summary>
         /// Message             
-        /// </summary>  
+        /// </summary>
         public string Message { get; set; }
 
         /// <summary>
         /// Description             
-        /// </summary>  
+        /// </summary>
         public string Description { get; set; }
 
         /// <summary>
         /// Inner Error             
-        /// </summary>  
+        /// </summary>
         public ErrorDetails InnerError { get; set; }
+
 
         /// <summary>Error constructor</summary>
         public Error() {}
+
 
         /// <summary>Error constructor</summary>
         /// <param name="code">Code             </param>
         /// <param name="message">Message             </param>
         /// <param name="description">Description             </param>
         /// <param name="innerError">Inner Error             </param>
-        public Error(string code, string message, string description, ErrorDetails innerError)
-        {
+        public Error(
+            string code,
+            string message,
+            string description,
+            ErrorDetails innerError
+        )
+        { 
             Code = code;
             Message = message;
             Description = description;

@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Parameter name             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Parameter value             
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
+
 
         /// <summary>ContentTypeParameter constructor</summary>
         public ContentTypeParameter() {}
 
+
         /// <summary>ContentTypeParameter constructor</summary>
         /// <param name="name">Parameter name             </param>
         /// <param name="value">Parameter value             </param>
-        public ContentTypeParameter(string name, string value)
-        {
+        public ContentTypeParameter(
+            string name,
+            string value
+        )
+        { 
             Name = name;
             Value = value;
         }

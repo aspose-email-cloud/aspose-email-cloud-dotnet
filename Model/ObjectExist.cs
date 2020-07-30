@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Indicates that the file or folder exists.
-        /// </summary>  
+        /// </summary>
         public bool? Exists { get; set; }
 
         /// <summary>
         /// True if it is a folder, false if it is a file.
-        /// </summary>  
+        /// </summary>
         public bool? IsFolder { get; set; }
+
 
         /// <summary>ObjectExist constructor</summary>
         public ObjectExist() {}
 
+
         /// <summary>ObjectExist constructor</summary>
         /// <param name="exists">Indicates that the file or folder exists.</param>
         /// <param name="isFolder">True if it is a folder, false if it is a file.</param>
-        public ObjectExist(bool? exists, bool? isFolder)
-        {
+        public ObjectExist(
+            bool? exists,
+            bool? isFolder
+        )
+        { 
             Exists = exists;
             IsFolder = isFolder;
         }

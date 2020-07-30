@@ -43,18 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Message is read flag.             
-        /// </summary>  
+        /// </summary>
         public bool? IsRead { get; set; }
+
 
         /// <summary>ClientMessageSetIsReadRequest constructor</summary>
         public ClientMessageSetIsReadRequest() {}
+
 
         /// <summary>ClientMessageSetIsReadRequest constructor</summary>
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="messageId">Message identifier.             </param>
         /// <param name="isRead">Message is read flag.             </param>
-        public ClientMessageSetIsReadRequest(StorageFileLocation accountLocation, string messageId, bool? isRead)
-        {
+        public ClientMessageSetIsReadRequest(
+            StorageFileLocation accountLocation,
+            string messageId,
+            bool? isRead
+        )
+        { 
             AccountLocation = accountLocation;
             MessageId = messageId;
             IsRead = isRead;

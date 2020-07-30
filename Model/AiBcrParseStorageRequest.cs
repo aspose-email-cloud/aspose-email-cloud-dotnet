@@ -43,28 +43,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Parse output folder location on storage             
-        /// </summary>  
+        /// </summary>
         public StorageFolderLocation OutFolder { get; set; }
 
         /// <summary>
         /// Images to parse.             
-        /// </summary>  
+        /// </summary>
         public List<AiBcrImageStorageFile> Images { get; set; }
 
         /// <summary>
         /// Recognition options.             
-        /// </summary>  
+        /// </summary>
         public AiBcrOptions Options { get; set; }
+
 
         /// <summary>AiBcrParseStorageRequest constructor</summary>
         public AiBcrParseStorageRequest() {}
+
 
         /// <summary>AiBcrParseStorageRequest constructor</summary>
         /// <param name="outFolder">Parse output folder location on storage             </param>
         /// <param name="images">Images to parse.             </param>
         /// <param name="options">Recognition options.             </param>
-        public AiBcrParseStorageRequest(StorageFolderLocation outFolder, List<AiBcrImageStorageFile> images, AiBcrOptions options)
-        {
+        public AiBcrParseStorageRequest(
+            StorageFolderLocation outFolder,
+            List<AiBcrImageStorageFile> images,
+            AiBcrOptions options
+        )
+        { 
             OutFolder = outFolder;
             Images = images;
             Options = options;

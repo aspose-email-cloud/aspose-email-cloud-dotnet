@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Url category. Enum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
 
         /// <summary>
         /// Gets or sets Description
-        /// </summary>  
+        /// </summary>
         public string Description { get; set; }
+
 
         /// <summary>EnumWithCustomOfUrlCategory constructor</summary>
         public EnumWithCustomOfUrlCategory() {}
 
+
         /// <summary>EnumWithCustomOfUrlCategory constructor</summary>
         /// <param name="value">Url category. Enum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom</param>
         /// <param name="description"></param>
-        public EnumWithCustomOfUrlCategory(string value, string description)
-        {
+        public EnumWithCustomOfUrlCategory(
+            string value,
+            string description
+        )
+        { 
             Value = value;
             Description = description;
         }

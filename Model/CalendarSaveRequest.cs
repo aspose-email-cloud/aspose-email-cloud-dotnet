@@ -43,18 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Calendar file format Enum, available values: Ics, Msg
-        /// </summary>  
+        /// </summary>
         public string Format { get; set; }
+
 
         /// <summary>CalendarSaveRequest constructor</summary>
         public CalendarSaveRequest() {}
+
 
         /// <summary>CalendarSaveRequest constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
         /// <param name="format">Calendar file format Enum, available values: Ics, Msg</param>
-        public CalendarSaveRequest(StorageFileLocation storageFile, CalendarDto value, string format)
-        {
+        public CalendarSaveRequest(
+            StorageFileLocation storageFile,
+            CalendarDto value,
+            string format
+        )
+        { 
             StorageFile = storageFile;
             Value = value;
             Format = format;

@@ -43,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email client account password             
-        /// </summary>  
+        /// </summary>
         public string Password { get; set; }
+
 
         /// <summary>EmailClientAccountPasswordCredentials constructor</summary>
         public EmailClientAccountPasswordCredentials() {}
 
+
         /// <summary>EmailClientAccountPasswordCredentials constructor</summary>
         /// <param name="login">Email client account login             </param>
-        /// <param name="discriminator"></param>
         /// <param name="password">Email client account password             </param>
-        public EmailClientAccountPasswordCredentials(string login, string discriminator, string password)
-        {
+        public EmailClientAccountPasswordCredentials(
+            string login
+            ,
+            string password
+        )
+        { 
             Login = login;
-            Discriminator = discriminator;
             Password = password;
         }
         /// <summary>

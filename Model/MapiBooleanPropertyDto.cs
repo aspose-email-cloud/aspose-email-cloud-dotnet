@@ -43,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Property value             
-        /// </summary>  
+        /// </summary>
         public bool? Value { get; set; }
+
 
         /// <summary>MapiBooleanPropertyDto constructor</summary>
         public MapiBooleanPropertyDto() {}
 
+
         /// <summary>MapiBooleanPropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
         /// <param name="value">Property value             </param>
-        public MapiBooleanPropertyDto(MapiPropertyDescriptor descriptor, string discriminator, bool? value)
-        {
+        public MapiBooleanPropertyDto(
+            MapiPropertyDescriptor descriptor
+            ,
+            bool? value
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
             Value = value;
         }
         /// <summary>

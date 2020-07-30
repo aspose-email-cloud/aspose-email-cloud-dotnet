@@ -43,35 +43,39 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff
-        /// </summary>  
+        /// </summary>
         public string PhotoImageFormat { get; set; }
 
         /// <summary>
         /// Photo serialized as base64 string.             
-        /// </summary>  
+        /// </summary>
         public string Base64Data { get; set; }
 
         /// <summary>
         /// Gets or sets Discriminator
-        /// </summary>  
+        /// </summary>
         public string Discriminator
         {
             get { return GetType().Name; }
             set { /*do nothing*/}
         }
 
+
         /// <summary>ContactPhoto constructor</summary>
         public ContactPhoto() {}
+
 
         /// <summary>ContactPhoto constructor</summary>
         /// <param name="photoImageFormat">MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff</param>
         /// <param name="base64Data">Photo serialized as base64 string.             </param>
-        /// <param name="discriminator"></param>
-        public ContactPhoto(string photoImageFormat, string base64Data, string discriminator)
-        {
+        public ContactPhoto(
+            string photoImageFormat,
+            string base64Data
+            
+        )
+        { 
             PhotoImageFormat = photoImageFormat;
             Base64Data = base64Data;
-            Discriminator = discriminator;
         }
         /// <summary>
         /// Get the string presentation of the object

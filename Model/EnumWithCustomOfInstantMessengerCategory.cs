@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Instant messenger address category. Enum, available values: GoogleTalk, Aim, Yahoo, Skype, Qq, Msn, Icq, Jabber, Custom, ImAddress1, ImAddress2, ImAddress3
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
 
         /// <summary>
         /// Gets or sets Description
-        /// </summary>  
+        /// </summary>
         public string Description { get; set; }
+
 
         /// <summary>EnumWithCustomOfInstantMessengerCategory constructor</summary>
         public EnumWithCustomOfInstantMessengerCategory() {}
 
+
         /// <summary>EnumWithCustomOfInstantMessengerCategory constructor</summary>
         /// <param name="value">Instant messenger address category. Enum, available values: GoogleTalk, Aim, Yahoo, Skype, Qq, Msn, Icq, Jabber, Custom, ImAddress1, ImAddress2, ImAddress3</param>
         /// <param name="description"></param>
-        public EnumWithCustomOfInstantMessengerCategory(string value, string description)
-        {
+        public EnumWithCustomOfInstantMessengerCategory(
+            string value,
+            string description
+        )
+        { 
             Value = value;
             Description = description;
         }

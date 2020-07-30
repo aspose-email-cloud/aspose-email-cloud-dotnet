@@ -43,44 +43,54 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay
-        /// </summary>  
+        /// </summary>
         public string StartDay { get; set; }
 
         /// <summary>
         /// Represents a calendar month. Enum, available values: None, January, February, March, April, May, June, July, August, September, October, November, December
-        /// </summary>  
+        /// </summary>
         public string StartMonth { get; set; }
 
         /// <summary>
         /// Start offset.             
-        /// </summary>  
+        /// </summary>
         public int? StartOffset { get; set; }
 
         /// <summary>
         /// Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last
-        /// </summary>  
+        /// </summary>
         public string StartPosition { get; set; }
+
 
         /// <summary>YearlyRecurrencePatternDto constructor</summary>
         public YearlyRecurrencePatternDto() {}
+
 
         /// <summary>YearlyRecurrencePatternDto constructor</summary>
         /// <param name="interval">Number of recurrence units.             </param>
         /// <param name="occurs">Number of occurrences of the recurrence pattern.             </param>
         /// <param name="endDate">End date.             </param>
         /// <param name="weekStart">Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
-        /// <param name="discriminator"></param>
         /// <param name="startDay">Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
         /// <param name="startMonth">Represents a calendar month. Enum, available values: None, January, February, March, April, May, June, July, August, September, October, November, December</param>
         /// <param name="startOffset">Start offset.             </param>
         /// <param name="startPosition">Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last</param>
-        public YearlyRecurrencePatternDto(int? interval, int? occurs, DateTime? endDate, string weekStart, string discriminator, string startDay, string startMonth, int? startOffset, string startPosition)
-        {
+        public YearlyRecurrencePatternDto(
+            int? interval,
+            int? occurs,
+            DateTime? endDate,
+            string weekStart
+            ,
+            string startDay,
+            string startMonth,
+            int? startOffset,
+            string startPosition
+        )
+        { 
             Interval = interval;
             Occurs = occurs;
             EndDate = endDate;
             WeekStart = weekStart;
-            Discriminator = discriminator;
             StartDay = startDay;
             StartMonth = startMonth;
             StartOffset = startOffset;

@@ -43,26 +43,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Enumerates the types of regenerating pattern. Enum, available values: Daily, Weekly, Monthly, Yearly
-        /// </summary>  
+        /// </summary>
         public string RegeneratingType { get; set; }
+
 
         /// <summary>TaskRegeneratingPatternDto constructor</summary>
         public TaskRegeneratingPatternDto() {}
+
 
         /// <summary>TaskRegeneratingPatternDto constructor</summary>
         /// <param name="interval">Number of recurrence units.             </param>
         /// <param name="occurs">Number of occurrences of the recurrence pattern.             </param>
         /// <param name="endDate">End date.             </param>
         /// <param name="weekStart">Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
-        /// <param name="discriminator"></param>
         /// <param name="regeneratingType">Enumerates the types of regenerating pattern. Enum, available values: Daily, Weekly, Monthly, Yearly</param>
-        public TaskRegeneratingPatternDto(int? interval, int? occurs, DateTime? endDate, string weekStart, string discriminator, string regeneratingType)
-        {
+        public TaskRegeneratingPatternDto(
+            int? interval,
+            int? occurs,
+            DateTime? endDate,
+            string weekStart
+            ,
+            string regeneratingType
+        )
+        { 
             Interval = interval;
             Occurs = occurs;
             EndDate = endDate;
             WeekStart = weekStart;
-            Discriminator = discriminator;
             RegeneratingType = regeneratingType;
         }
         /// <summary>

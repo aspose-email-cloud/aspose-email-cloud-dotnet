@@ -41,13 +41,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class EmailThreadList : ListResponseOfEmailThread 
     {
+
         /// <summary>EmailThreadList constructor</summary>
         public EmailThreadList() {}
 
+
         /// <summary>EmailThreadList constructor</summary>
         /// <param name="value"></param>
-        public EmailThreadList(List<EmailThread> value)
-        {
+        public EmailThreadList(
+            List<EmailThread> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

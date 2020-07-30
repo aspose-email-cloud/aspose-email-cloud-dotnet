@@ -41,13 +41,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// </summary>
     public class StorageFileLocationList : ListResponseOfStorageFileLocation 
     {
+
         /// <summary>StorageFileLocationList constructor</summary>
         public StorageFileLocationList() {}
 
+
         /// <summary>StorageFileLocationList constructor</summary>
         /// <param name="value"></param>
-        public StorageFileLocationList(List<StorageFileLocation> value)
-        {
+        public StorageFileLocationList(
+            List<StorageFileLocation> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

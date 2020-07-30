@@ -43,31 +43,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \"it\" or \"ita\" for Italian)             
-        /// </summary>  
+        /// </summary>
         public string Language { get; set; }
 
         /// <summary>
         /// A geographic code such as an ISO-3166 two letter country code, for example \"FR\" for France             
-        /// </summary>  
+        /// </summary>
         public string Location { get; set; }
 
         /// <summary>
         /// A writing system code; starts with the ISO-15924 script name             
-        /// </summary>  
+        /// </summary>
         public string Script { get; set; }
 
         /// <summary>
         /// A character encoding name             
-        /// </summary>  
+        /// </summary>
         public string Encoding { get; set; }
 
         /// <summary>
         /// Name writing style. Enum, available values: Formal, Informal, Legal, Academic
-        /// </summary>  
+        /// </summary>
         public string Style { get; set; }
+
 
         /// <summary>AiNameCulturalContext constructor</summary>
         public AiNameCulturalContext() {}
+
 
         /// <summary>AiNameCulturalContext constructor</summary>
         /// <param name="language">An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \"it\" or \"ita\" for Italian)             </param>
@@ -75,8 +77,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="script">A writing system code; starts with the ISO-15924 script name             </param>
         /// <param name="encoding">A character encoding name             </param>
         /// <param name="style">Name writing style. Enum, available values: Formal, Informal, Legal, Academic</param>
-        public AiNameCulturalContext(string language, string location, string script, string encoding, string style)
-        {
+        public AiNameCulturalContext(
+            string language,
+            string location,
+            string script,
+            string encoding,
+            string style
+        )
+        { 
             Language = language;
             Location = location;
             Script = script;

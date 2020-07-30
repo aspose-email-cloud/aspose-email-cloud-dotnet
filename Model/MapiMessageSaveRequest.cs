@@ -43,18 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
-        /// </summary>  
+        /// </summary>
         public string Format { get; set; }
+
 
         /// <summary>MapiMessageSaveRequest constructor</summary>
         public MapiMessageSaveRequest() {}
+
 
         /// <summary>MapiMessageSaveRequest constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
         /// <param name="format">Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
-        public MapiMessageSaveRequest(StorageFileLocation storageFile, MapiMessageDto value, string format)
-        {
+        public MapiMessageSaveRequest(
+            StorageFileLocation storageFile,
+            MapiMessageDto value,
+            string format
+        )
+        { 
             StorageFile = storageFile;
             Value = value;
             Format = format;

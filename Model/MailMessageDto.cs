@@ -43,18 +43,21 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Message document object.             
-        /// </summary>  
+        /// </summary>
         public EmailDto Value { get; set; }
+
 
         /// <summary>MailMessageDto constructor</summary>
         public MailMessageDto() {}
 
+
         /// <summary>MailMessageDto constructor</summary>
-        /// <param name="discriminator"></param>
         /// <param name="value">Message document object.             </param>
-        public MailMessageDto(string discriminator, EmailDto value)
-        {
-            Discriminator = discriminator;
+        public MailMessageDto(
+            //,
+            EmailDto value
+        )
+        { 
             Value = value;
         }
         /// <summary>

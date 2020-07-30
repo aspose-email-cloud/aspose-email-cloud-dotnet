@@ -43,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Formatted name value             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Usually empty; can contain extra message describing some issue occurred during the formatting             
-        /// </summary>  
+        /// </summary>
         public string Comments { get; set; }
+
 
         /// <summary>AiNameFormatted constructor</summary>
         public AiNameFormatted() {}
 
+
         /// <summary>AiNameFormatted constructor</summary>
         /// <param name="name">Formatted name value             </param>
         /// <param name="comments">Usually empty; can contain extra message describing some issue occurred during the formatting             </param>
-        public AiNameFormatted(string name, string comments)
-        {
+        public AiNameFormatted(
+            string name,
+            string comments
+        )
+        { 
             Name = name;
             Comments = comments;
         }
