@@ -1,8 +1,6 @@
 namespace Aspose.Email.Cloud.Sdk.Api
 {
     using System.Collections.Generic;
-    using System.Text.RegularExpressions;
-    using Model;
     using Client;
     using Client.Internal.RequestHandlers;
 
@@ -11,8 +9,6 @@ namespace Aspose.Email.Cloud.Sdk.Api
     /// </summary>
     public class EmailCloud
     {
-        private readonly ApiInvoker apiInvoker;
-        private readonly Configuration configuration;
     
         /** <summary>iCalendar document operations.             </summary>*/
         public CalendarApi Calendar {get;}
@@ -59,35 +55,33 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="configuration">Configuration settings</param>
         public EmailCloud(Configuration configuration)
         {
-            this.configuration = configuration;
-
             var requestHandlers = new List<IRequestHandler>
             {
-                new AuthRequestHandler(this.configuration),
-                new DebugLogRequestHandler(this.configuration),
+                new AuthRequestHandler(configuration),
+                new DebugLogRequestHandler(configuration),
                 new ApiExceptionRequestHandler()
             };
-            apiInvoker = new ApiInvoker(requestHandlers);
+            var apiInvoker = new ApiInvoker(requestHandlers);
 
         
-            Calendar = new CalendarApi(apiInvoker, this.configuration);
+            Calendar = new CalendarApi(apiInvoker, configuration);
         
-            Contact = new ContactApi(apiInvoker, this.configuration);
+            Contact = new ContactApi(apiInvoker, configuration);
         
-            Email = new EmailApi(apiInvoker, this.configuration);
+            Email = new EmailApi(apiInvoker, configuration);
         
-            DisposableEmail = new DisposableEmailApi(apiInvoker, this.configuration);
+            DisposableEmail = new DisposableEmailApi(apiInvoker, configuration);
         
-            EmailConfig = new EmailConfigApi(apiInvoker, this.configuration);
+            EmailConfig = new EmailConfigApi(apiInvoker, configuration);
         
         
-            Mapi = new MapiGroup(apiInvoker, this.configuration);
+            Mapi = new MapiGroup(apiInvoker, configuration);
         
-            Client = new ClientGroup(apiInvoker, this.configuration);
+            Client = new ClientGroup(apiInvoker, configuration);
         
-            Ai = new AiGroup(apiInvoker, this.configuration);
+            Ai = new AiGroup(apiInvoker, configuration);
         
-            CloudStorage = new CloudStorageGroup(apiInvoker, this.configuration);
+            CloudStorage = new CloudStorageGroup(apiInvoker, configuration);
         
         }
     }

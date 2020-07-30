@@ -86,7 +86,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Converts contact model to specified format and returns as file              
         /// </summary>
-        /// <param name="request">Request. <see cref="ContactAsFileRequest" /></param>
+        /// <param name="request">Contact model and format to convert</param>
         /// <returns><see cref="System.IO.Stream"/></returns>
         public async Task<System.IO.Stream> AsFileAsync(
             ContactAsFileRequest request) =>
@@ -125,7 +125,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Converts ContactDto to MapiContactDto.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ContactAsMapiRequest" /></param>
+        /// <param name="contactDto">Contact model to convert</param>
         /// <returns><see cref="MapiContactDto"/></returns>
         public async Task<MapiContactDto> AsMapiAsync(
             ContactDto contactDto) =>
@@ -425,7 +425,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Save contact to storage.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ContactSaveRequest" /></param>
+        /// <param name="request">Create/Update contact request.</param>
         public async Task SaveAsync(
             ContactSaveRequest request) =>
             await Task.Run(() => Save(request

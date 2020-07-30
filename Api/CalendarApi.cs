@@ -85,7 +85,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Convert iCalendar to AlternateView              
         /// </summary>
-        /// <param name="request">Request. <see cref="CalendarAsAlternateRequest" /></param>
+        /// <param name="request">iCalendar to AlternateView request</param>
         /// <returns><see cref="AlternateView"/></returns>
         public async Task<AlternateView> AsAlternateAsync(
             CalendarAsAlternateRequest request) =>
@@ -125,7 +125,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Converts calendar model to specified format and returns as file.              
         /// </summary>
-        /// <param name="request">Request. <see cref="CalendarAsFileRequest" /></param>
+        /// <param name="request">Calendar model and format to convert.</param>
         /// <returns><see cref="System.IO.Stream"/></returns>
         public async Task<System.IO.Stream> AsFileAsync(
             CalendarAsFileRequest request) =>
@@ -164,7 +164,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Converts CalendarDto to MapiCalendarDto.              
         /// </summary>
-        /// <param name="request">Request. <see cref="CalendarAsMapiRequest" /></param>
+        /// <param name="calendarDto">iCalendar model calendar representation.</param>
         /// <returns><see cref="MapiCalendarDto"/></returns>
         public async Task<MapiCalendarDto> AsMapiAsync(
             CalendarDto calendarDto) =>
@@ -480,7 +480,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Save iCalendar              
         /// </summary>
-        /// <param name="request">Request. <see cref="CalendarSaveRequest" /></param>
+        /// <param name="request">iCalendar create/update request</param>
         public async Task SaveAsync(
             CalendarSaveRequest request) =>
             await Task.Run(() => Save(request

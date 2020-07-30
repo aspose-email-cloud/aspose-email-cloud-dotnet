@@ -83,7 +83,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Create new folder in email account              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientFolderCreateRequest" /></param>
+        /// <param name="request">Create folder request</param>
         public async Task CreateAsync(
             ClientFolderCreateRequest request) =>
             await Task.Run(() => Create(request
@@ -119,7 +119,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Delete a folder in email account              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientFolderDeleteRequest" /></param>
+        /// <param name="request">Delete folder request</param>
         public async Task DeleteAsync(
             ClientFolderDeleteRequest request) =>
             await Task.Run(() => Delete(request

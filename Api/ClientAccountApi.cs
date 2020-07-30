@@ -163,7 +163,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Create/update email client account file (*.account) with credentials              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientAccountSaveRequest" /></param>
+        /// <param name="request">Email account information</param>
         public async Task SaveAsync(
             EmailClientAccountSaveRequest request) =>
             await Task.Run(() => Save(request
@@ -199,7 +199,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientAccountSaveMultiRequest" /></param>
+        /// <param name="request">Email accounts information.</param>
         public async Task SaveMultiAsync(
             EmailClientMultiAccountSaveRequest request) =>
             await Task.Run(() => SaveMulti(request

@@ -15,7 +15,7 @@ namespace Aspose.Email.Cloud.Sdk.Client {
       /// Gets or sets the error content (body json object)
       /// </summary>
       /// <value>The error content (Http response body).</value>
-      public object ErrorContent { get; private set; }
+      public object ErrorContent { get; }
 
       /// <summary>
       /// Initializes a new instance of the <see cref="ApiException"/> class.

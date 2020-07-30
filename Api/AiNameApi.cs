@@ -171,7 +171,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Expands a person&#39;s parsed name into a list of possible alternatives using options for expanding instructions.              
         /// </summary>
-        /// <param name="request">Request. <see cref="AiNameExpandParsedRequest" /></param>
+        /// <param name="request">Parsed name with options.</param>
         /// <returns><see cref="AiNameWeightedVariants"/></returns>
         public async Task<AiNameWeightedVariants> ExpandParsedAsync(
             AiNameParsedRequest request) =>
@@ -254,7 +254,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Formats a person&#39;s parsed name in correct case and name order using options for formatting instructions.              
         /// </summary>
-        /// <param name="request">Request. <see cref="AiNameFormatParsedRequest" /></param>
+        /// <param name="request">Parsed name with options.</param>
         /// <returns><see cref="AiNameFormatted"/></returns>
         public async Task<AiNameFormatted> FormatParsedAsync(
             AiNameParsedRequest request) =>
@@ -336,7 +336,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Detect person&#39;s gender from parsed name.              
         /// </summary>
-        /// <param name="request">Request. <see cref="AiNameGenderizeParsedRequest" /></param>
+        /// <param name="request">Gender detection request data.</param>
         /// <returns><see cref="AiNameGenderHypothesisList"/></returns>
         public async Task<AiNameGenderHypothesisList> GenderizeParsedAsync(
             AiNameParsedRequest request) =>
@@ -426,7 +426,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Compare people&#39;s parsed names and attributes. Uses options for comparing instructions.              
         /// </summary>
-        /// <param name="request">Request. <see cref="AiNameMatchParsedRequest" /></param>
+        /// <param name="request">Parsed names to match.</param>
         /// <returns><see cref="AiNameMatchResult"/></returns>
         public async Task<AiNameMatchResult> MatchParsedAsync(
             AiNameParsedMatchRequest request) =>

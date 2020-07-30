@@ -1,9 +1,6 @@
 namespace Aspose.Email.Cloud.Sdk.Api
 {
 
-    using System.Collections.Generic;
-    using System.Text.RegularExpressions;
-    using Model;
     using Client;
     
     /** <summary>Cloud file storage operations.             </summary>*/

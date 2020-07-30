@@ -85,7 +85,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Converts MAPI message model to EmailDto model              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiMessageAsEmailDtoRequest" /></param>
+        /// <param name="mapiMessage">MAPI message model to convert</param>
         /// <returns><see cref="EmailDto"/></returns>
         public async Task<EmailDto> AsEmailDtoAsync(
             MapiMessageDto mapiMessage) =>
@@ -125,7 +125,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Converts MAPI message model to specified format and returns as file.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiMessageAsFileRequest" /></param>
+        /// <param name="request">MAPI message model to convert.</param>
         /// <returns><see cref="System.IO.Stream"/></returns>
         public async Task<System.IO.Stream> AsFileAsync(
             MapiMessageAsFileRequest request) =>
@@ -263,7 +263,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Save MAPI message to storage.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiMessageSaveRequest" /></param>
+        /// <param name="request">Message create/update request.</param>
         public async Task SaveAsync(
             MapiMessageSaveRequest request) =>
             await Task.Run(() => Save(request

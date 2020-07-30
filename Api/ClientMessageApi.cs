@@ -85,7 +85,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Add email message to specified folder in email account.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientMessageAppendRequest" /></param>
+        /// <param name="request">Append email request.</param>
         /// <returns><see cref="ValueTOfString"/></returns>
         public async Task<ValueTOfString> AppendAsync(
             ClientMessageAppendRequest request) =>
@@ -180,7 +180,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Delete message.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientMessageDeleteRequest" /></param>
+        /// <param name="request">Delete message request.</param>
         public async Task DeleteAsync(
             ClientMessageDeleteRequest request) =>
             await Task.Run(() => Delete(request
@@ -371,7 +371,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Move message to another folder.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientMessageMoveRequest" /></param>
+        /// <param name="request">Move message request.</param>
         public async Task MoveAsync(
             ClientMessageMoveRequest request) =>
             await Task.Run(() => Move(request
@@ -407,7 +407,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Send an email specified by model in request.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientMessageSendRequest" /></param>
+        /// <param name="request">Send email request.</param>
         public async Task SendAsync(
             ClientMessageSendRequest request) =>
             await Task.Run(() => Send(request
@@ -496,7 +496,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Mark message as read or unread.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientMessageSetIsReadRequest" /></param>
+        /// <param name="request">Delete message request.</param>
         public async Task SetIsReadAsync(
             ClientMessageSetIsReadRequest request) =>
             await Task.Run(() => SetIsRead(request

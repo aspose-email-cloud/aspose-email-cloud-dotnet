@@ -124,7 +124,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.              
         /// </summary>
-        /// <param name="request">Request. <see cref="EmailConfigDiscoverOauthRequest" /></param>
+        /// <param name="request">Discover email configuration request.</param>
         /// <returns><see cref="EmailAccountConfigList"/></returns>
         public async Task<EmailAccountConfigList> DiscoverOauthAsync(
             DiscoverEmailConfigOauth request) =>
@@ -163,7 +163,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Discover email accounts by email address. Validates discovered accounts using login and password.              
         /// </summary>
-        /// <param name="request">Request. <see cref="EmailConfigDiscoverPasswordRequest" /></param>
+        /// <param name="request">Discover email configuration request.</param>
         /// <returns><see cref="EmailAccountConfigList"/></returns>
         public async Task<EmailAccountConfigList> DiscoverPasswordAsync(
             DiscoverEmailConfigPassword request) =>

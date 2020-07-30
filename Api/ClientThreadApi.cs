@@ -83,7 +83,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Delete thread by id. All messages from thread will also be deleted.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientThreadDeleteRequest" /></param>
+        /// <param name="request">Delete email thread request.</param>
         public async Task DeleteAsync(
             ClientThreadDeleteRequest request) =>
             await Task.Run(() => Delete(request
@@ -218,7 +218,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Move thread to another folder.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientThreadMoveRequest" /></param>
+        /// <param name="request">Move thread request.</param>
         public async Task MoveAsync(
             ClientThreadMoveRequest request) =>
             await Task.Run(() => Move(request
@@ -254,7 +254,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Mark all messages in thread as read or unread.              
         /// </summary>
-        /// <param name="request">Request. <see cref="ClientThreadSetIsReadRequest" /></param>
+        /// <param name="request">Email account specifier and IsRead flag.</param>
         public async Task SetIsReadAsync(
             ClientThreadSetIsReadRequest request) =>
             await Task.Run(() => SetIsRead(request

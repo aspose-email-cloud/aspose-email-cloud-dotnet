@@ -85,7 +85,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Converts MAPI calendar model to CalendarDto model.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarAsCalendarDtoRequest" /></param>
+        /// <param name="mapiCalendarDto">MAPI calendar model to convert.</param>
         /// <returns><see cref="CalendarDto"/></returns>
         public async Task<CalendarDto> AsCalendarDtoAsync(
             MapiCalendarDto mapiCalendarDto) =>
@@ -125,7 +125,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Converts MAPI calendar model to specified format and returns as file.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarAsFileRequest" /></param>
+        /// <param name="request">MAPI calendar model to convert.</param>
         /// <returns><see cref="System.IO.Stream"/></returns>
         public async Task<System.IO.Stream> AsFileAsync(
             MapiCalendarAsFileRequest request) =>
@@ -247,7 +247,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Save MAPI Calendar to storage.              
         /// </summary>
-        /// <param name="request">Request. <see cref="MapiCalendarSaveRequest" /></param>
+        /// <param name="request">Calendar create/update request.</param>
         public async Task SaveAsync(
             MapiCalendarSaveRequest request) =>
             await Task.Run(() => Save(request

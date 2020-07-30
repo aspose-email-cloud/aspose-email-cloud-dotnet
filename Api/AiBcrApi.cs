@@ -133,7 +133,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Parse images from storage to vCard files              
         /// </summary>
-        /// <param name="request">Request. <see cref="AiBcrParseStorageRequest" /></param>
+        /// <param name="request">Request with images located on storage</param>
         /// <returns><see cref="StorageFileLocationList"/></returns>
         public async Task<StorageFileLocationList> ParseStorageAsync(
             AiBcrParseStorageRequest request) =>
