@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents an embedded resource in a message.             
     /// </summary>
@@ -39,11 +43,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// URI that the resource must match.             
-        /// </summary>  
+        /// </summary>
         public string ContentLink { get; set; }
+
 
         /// <summary>LinkedResource constructor</summary>
         public LinkedResource() {}
+
 
         /// <summary>LinkedResource constructor</summary>
         /// <param name="base64Data">Attachment file content as Base64 string.             </param>
@@ -51,8 +57,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="contentType">Content type             </param>
         /// <param name="headers">Attachment headers.             </param>
         /// <param name="contentLink">URI that the resource must match.             </param>
-        public LinkedResource(string base64Data, string contentId, ContentType contentType, Dictionary<string, string> headers, string contentLink)
-        {
+        public LinkedResource(
+            string base64Data,
+            string contentId,
+            ContentType contentType,
+            Dictionary<string, string> headers,
+            string contentLink
+        )
+        { 
             Base64Data = base64Data;
             ContentId = contentId;
             ContentType = contentType;

@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.Email.Cloud.Sdk.Model;
-using Aspose.Email.Cloud.Sdk.Model.Requests;
 using Aspose.Email.Cloud.Sdk.Tests.Utils;
 using NUnit.Framework;
 
@@ -45,9 +44,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task ModelToEmailDtoTest()
         {
             var emailDto =
-                await EmailApi.ConvertMapiMessageModelToEmailModelAsync(
-                    new ConvertMapiMessageModelToEmailModelRequest(
-                        MapiMessage));
+                await Api.Mapi.Message.AsEmailDtoAsync(MapiMessage);
             Assert.AreEqual(MapiMessage.Subject, emailDto.Subject);
             Assert.AreEqual(MapiMessage.Body, emailDto.Body);
         }
@@ -55,9 +52,9 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         [Test]
         public async Task ModelToFileTest()
         {
-            var emlStream = await EmailApi.ConvertMapiMessageModelToFileAsync(
-                new ConvertMapiMessageModelToFileRequest(
-                    "Eml", MapiMessage));
+            var emlStream =
+                await Api.Mapi.Message.AsFileAsync(
+                    new MapiMessageAsFileRequest("Eml", MapiMessage));
             using (var memoryStream = new MemoryStream())
             {
                 await emlStream.CopyToAsync(memoryStream);
@@ -66,8 +63,9 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             }
 
             emlStream.Seek(0, SeekOrigin.Begin);
-            var mapiMessageConverted = await EmailApi.GetEmailFileAsMapiModelAsync(
-                new GetEmailFileAsMapiModelRequest("Eml", emlStream));
+            var mapiMessageConverted =
+                await Api.Mapi.Message.FromFileAsync(
+                    new MapiMessageFromFileRequest("Eml", emlStream));
             Assert.AreEqual(MapiMessage.Subject, mapiMessageConverted.Subject);
             //Subject is also available as MapiPropertyDto:
             var subjectProperty = mapiMessageConverted.Properties.First(p =>
@@ -83,13 +81,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task StorageTest()
         {
             var fileName = $"{Guid.NewGuid()}.msg";
-            await EmailApi.SaveMapiMessageModelAsync(
-                new SaveMapiMessageModelRequest(
-                    "Msg", fileName, new StorageModelRqOfMapiMessageDto(
-                        MapiMessage, new StorageFolderLocation(StorageName, Folder))));
-            var mapiMessageFromStorage = await EmailApi.GetMapiMessageModelAsync(
-                new GetMapiMessageModelRequest(
-                    "Msg", fileName, Folder, StorageName));
+            await Api.Mapi.Message.SaveAsync(new MapiMessageSaveRequest(
+                new StorageFileLocation(StorageName, Folder, fileName), MapiMessage, "Msg"));
+            var mapiMessageFromStorage =
+                await Api.Mapi.Message.GetAsync(
+                    new MapiMessageGetRequest("Msg", fileName, Folder, StorageName));
             Assert.AreEqual(MapiMessage.Subject, mapiMessageFromStorage.Subject);
         }
     }

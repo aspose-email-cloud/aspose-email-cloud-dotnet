@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,25 +36,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Image for recognition             
     /// </summary>
     public class AiBcrImage 
     {
         /// <summary>
-        /// Determines that image contains single VCard or more. Ignored in current version. Multiple cards on image support will be added soon             
-        /// </summary>  
+        /// Determines that image contains single VCard or more.             
+        /// </summary>
         public bool? IsSingle { get; set; }
+
 
         /// <summary>AiBcrImage constructor</summary>
         public AiBcrImage() {}
 
+
         /// <summary>AiBcrImage constructor</summary>
-        /// <param name="isSingle">Determines that image contains single VCard or more. Ignored in current version. Multiple cards on image support will be added soon             </param>
-        public AiBcrImage(bool? isSingle)
-        {
+        /// <param name="isSingle">Determines that image contains single VCard or more.             </param>
+        public AiBcrImage(
+            bool? isSingle
+        )
+        { 
             IsSingle = isSingle;
         }
         /// <summary>

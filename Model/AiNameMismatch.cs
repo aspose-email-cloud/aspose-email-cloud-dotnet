@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Names mismatch detailed description             
     /// </summary>
@@ -39,28 +43,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Mismatch type. Enum, available values: Unknown, FirstName, MiddleName, MiddleLastName, MiddleNickname, Gender, Context
-        /// </summary>  
+        /// </summary>
         public string Category { get; set; }
 
         /// <summary>
         /// Similarity score             
-        /// </summary>  
+        /// </summary>
         public double? Similarity { get; set; }
 
         /// <summary>
         /// Explanation or mismatch subtype             
-        /// </summary>  
+        /// </summary>
         public string Explanation { get; set; }
+
 
         /// <summary>AiNameMismatch constructor</summary>
         public AiNameMismatch() {}
+
 
         /// <summary>AiNameMismatch constructor</summary>
         /// <param name="category">Mismatch type. Enum, available values: Unknown, FirstName, MiddleName, MiddleLastName, MiddleNickname, Gender, Context</param>
         /// <param name="similarity">Similarity score             </param>
         /// <param name="explanation">Explanation or mismatch subtype             </param>
-        public AiNameMismatch(string category, double? similarity, string explanation)
-        {
+        public AiNameMismatch(
+            string category,
+            double? similarity,
+            string explanation
+        )
+        { 
             Category = category;
             Similarity = similarity;
             Explanation = explanation;

@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Email client virtual account, which contains several accounts             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email client receive accounts             
-        /// </summary>  
+        /// </summary>
         public List<EmailClientAccount> ReceiveAccounts { get; set; }
 
         /// <summary>
         /// Email client send account             
-        /// </summary>  
+        /// </summary>
         public EmailClientAccount SendAccount { get; set; }
+
 
         /// <summary>EmailClientMultiAccount constructor</summary>
         public EmailClientMultiAccount() {}
 
+
         /// <summary>EmailClientMultiAccount constructor</summary>
         /// <param name="receiveAccounts">Email client receive accounts             </param>
         /// <param name="sendAccount">Email client send account             </param>
-        public EmailClientMultiAccount(List<EmailClientAccount> receiveAccounts, EmailClientAccount sendAccount)
-        {
+        public EmailClientMultiAccount(
+            List<EmailClientAccount> receiveAccounts,
+            EmailClientAccount sendAccount
+        )
+        { 
             ReceiveAccounts = receiveAccounts;
             SendAccount = sendAccount;
         }

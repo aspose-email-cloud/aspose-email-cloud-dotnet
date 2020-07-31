@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Specify three physical addresses: Home Address, Work Address, and Other Address. One of the addresses can be marked as the Mailing Address             
     /// </summary>
@@ -39,28 +43,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Specifies the address of the contact's work             
-        /// </summary>  
+        /// </summary>
         public MapiContactPhysicalAddressDto WorkAddress { get; set; }
 
         /// <summary>
         /// Specifies the address of the contact's home             
-        /// </summary>  
+        /// </summary>
         public MapiContactPhysicalAddressDto HomeAddress { get; set; }
 
         /// <summary>
         /// Specifies the other contact's address             
-        /// </summary>  
+        /// </summary>
         public MapiContactPhysicalAddressDto OtherAddress { get; set; }
+
 
         /// <summary>MapiContactPhysicalAddressPropertySetDto constructor</summary>
         public MapiContactPhysicalAddressPropertySetDto() {}
+
 
         /// <summary>MapiContactPhysicalAddressPropertySetDto constructor</summary>
         /// <param name="workAddress">Specifies the address of the contact's work             </param>
         /// <param name="homeAddress">Specifies the address of the contact's home             </param>
         /// <param name="otherAddress">Specifies the other contact's address             </param>
-        public MapiContactPhysicalAddressPropertySetDto(MapiContactPhysicalAddressDto workAddress, MapiContactPhysicalAddressDto homeAddress, MapiContactPhysicalAddressDto otherAddress)
-        {
+        public MapiContactPhysicalAddressPropertySetDto(
+            MapiContactPhysicalAddressDto workAddress,
+            MapiContactPhysicalAddressDto homeAddress,
+            MapiContactPhysicalAddressDto otherAddress
+        )
+        { 
             WorkAddress = workAddress;
             HomeAddress = homeAddress;
             OtherAddress = otherAddress;

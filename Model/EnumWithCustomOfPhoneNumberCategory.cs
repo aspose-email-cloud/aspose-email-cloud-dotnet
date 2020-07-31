@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// 
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Phone number category. Enum, available values: Custom, Home, Work, Office, Mobile, Fax, HomeFax, WorkFax, Pager, Car, Isdn, Telex, Callback, Radio, Company, TtyTdd, Assistant, Primary
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
 
         /// <summary>
         /// Gets or sets Description
-        /// </summary>  
+        /// </summary>
         public string Description { get; set; }
+
 
         /// <summary>EnumWithCustomOfPhoneNumberCategory constructor</summary>
         public EnumWithCustomOfPhoneNumberCategory() {}
 
+
         /// <summary>EnumWithCustomOfPhoneNumberCategory constructor</summary>
         /// <param name="value">Phone number category. Enum, available values: Custom, Home, Work, Office, Mobile, Fax, HomeFax, WorkFax, Pager, Car, Isdn, Telex, Callback, Radio, Company, TtyTdd, Assistant, Primary</param>
         /// <param name="description"></param>
-        public EnumWithCustomOfPhoneNumberCategory(string value, string description)
-        {
+        public EnumWithCustomOfPhoneNumberCategory(
+            string value,
+            string description
+        )
+        { 
             Value = value;
             Description = description;
         }

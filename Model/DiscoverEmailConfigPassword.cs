@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,28 +36,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// 
     /// </summary>
-    public class DiscoverEmailConfigPassword : DiscoverEmailConfigRq 
+    public class DiscoverEmailConfigPassword : DiscoverEmailConfigRequest 
     {
         /// <summary>
         /// Email account password.             
-        /// </summary>  
+        /// </summary>
         public string Password { get; set; }
+
 
         /// <summary>DiscoverEmailConfigPassword constructor</summary>
         public DiscoverEmailConfigPassword() {}
+
 
         /// <summary>DiscoverEmailConfigPassword constructor</summary>
         /// <param name="address">Email address to discover.             </param>
         /// <param name="fastProcessing">Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.             </param>
         /// <param name="login">Email account login. If not specified, address used as a login.             </param>
         /// <param name="password">Email account password.             </param>
-        public DiscoverEmailConfigPassword(string address, bool? fastProcessing, string login, string password)
-        {
+        public DiscoverEmailConfigPassword(
+            string address,
+            bool? fastProcessing,
+            string login,
+            string password
+        )
+        { 
             Address = address;
             FastProcessing = fastProcessing;
             Login = login;

@@ -4,8 +4,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ContentLink** | **string** | URI that the resource must match.              | [optional] 
 
- Parent class: [AttachmentBase](AttachmentBase.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [AttachmentBase](AttachmentBase.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

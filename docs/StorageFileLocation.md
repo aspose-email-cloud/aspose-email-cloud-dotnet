@@ -4,8 +4,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **FileName** | **string** | A file name in storage              | 
 
- Parent class: [StorageFolderLocation](StorageFolderLocation.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [StorageFolderLocation](StorageFolderLocation.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

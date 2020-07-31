@@ -7,8 +7,10 @@ Name | Type | Description | Notes
 **StartOffset** | **int?** | Start offset.              | 
 **StartPosition** | **string** | Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last | 
 
- Parent class: [RecurrencePatternDto](RecurrencePatternDto.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [RecurrencePatternDto](RecurrencePatternDto.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

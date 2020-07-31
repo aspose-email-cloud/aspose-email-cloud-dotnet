@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Mapi property with ImportanceChoicesType value             
     /// </summary>
@@ -39,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Levels of importance for an item. Enum, available values: Low, Normal, High
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
+
 
         /// <summary>MapiImportancePropertyDto constructor</summary>
         public MapiImportancePropertyDto() {}
 
+
         /// <summary>MapiImportancePropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
         /// <param name="value">Levels of importance for an item. Enum, available values: Low, Normal, High</param>
-        public MapiImportancePropertyDto(MapiPropertyDescriptor descriptor, string discriminator, string value)
-        {
+        public MapiImportancePropertyDto(
+            MapiPropertyDescriptor descriptor
+            ,
+            string value
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
             Value = value;
         }
         /// <summary>

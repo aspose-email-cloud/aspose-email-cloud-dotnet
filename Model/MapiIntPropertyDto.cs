@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Mapi property with Integer value             
     /// </summary>
@@ -39,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Property value             
-        /// </summary>  
+        /// </summary>
         public int? Value { get; set; }
+
 
         /// <summary>MapiIntPropertyDto constructor</summary>
         public MapiIntPropertyDto() {}
 
+
         /// <summary>MapiIntPropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
         /// <param name="value">Property value             </param>
-        public MapiIntPropertyDto(MapiPropertyDescriptor descriptor, string discriminator, int? value)
-        {
+        public MapiIntPropertyDto(
+            MapiPropertyDescriptor descriptor
+            ,
+            int? value
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
             Value = value;
         }
         /// <summary>

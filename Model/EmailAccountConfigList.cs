@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,20 +36,22 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// List of email accounts             
     /// </summary>
     public class EmailAccountConfigList : ListResponseOfEmailAccountConfig 
     {
+
         /// <summary>EmailAccountConfigList constructor</summary>
         public EmailAccountConfigList() {}
 
+
         /// <summary>EmailAccountConfigList constructor</summary>
         /// <param name="value"></param>
-        public EmailAccountConfigList(List<EmailAccountConfig> value)
-        {
+        public EmailAccountConfigList(
+            List<EmailAccountConfig> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

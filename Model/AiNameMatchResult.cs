@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Two names match result             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Similarity score             
-        /// </summary>  
+        /// </summary>
         public double? Similarity { get; set; }
 
         /// <summary>
         /// Detailed description of mismatches             
-        /// </summary>  
+        /// </summary>
         public List<AiNameMismatch> Mismatches { get; set; }
+
 
         /// <summary>AiNameMatchResult constructor</summary>
         public AiNameMatchResult() {}
 
+
         /// <summary>AiNameMatchResult constructor</summary>
         /// <param name="similarity">Similarity score             </param>
         /// <param name="mismatches">Detailed description of mismatches             </param>
-        public AiNameMatchResult(double? similarity, List<AiNameMismatch> mismatches)
-        {
+        public AiNameMatchResult(
+            double? similarity,
+            List<AiNameMismatch> mismatches
+        )
+        { 
             Similarity = similarity;
             Mismatches = mismatches;
         }

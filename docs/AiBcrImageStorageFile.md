@@ -2,10 +2,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**File** | [**StorageFileLocation**](StorageFileLocation.md) | Image location              | [optional] 
+**File** | [**StorageFileLocation**](StorageFileLocation.md) | Image location              | 
 
- Parent class: [AiBcrImage](AiBcrImage.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [AiBcrImage](AiBcrImage.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

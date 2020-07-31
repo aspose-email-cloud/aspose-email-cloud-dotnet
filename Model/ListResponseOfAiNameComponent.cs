@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// 
     /// </summary>
@@ -39,16 +43,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Gets or sets Value
-        /// </summary>  
+        /// </summary>
         public List<AiNameComponent> Value { get; set; }
+
 
         /// <summary>ListResponseOfAiNameComponent constructor</summary>
         public ListResponseOfAiNameComponent() {}
 
+
         /// <summary>ListResponseOfAiNameComponent constructor</summary>
         /// <param name="value"></param>
-        public ListResponseOfAiNameComponent(List<AiNameComponent> value)
-        {
+        public ListResponseOfAiNameComponent(
+            List<AiNameComponent> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

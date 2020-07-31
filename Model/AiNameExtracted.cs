@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Extracted name             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Extracted name components             
-        /// </summary>  
+        /// </summary>
         public List<AiNameExtractedComponent> Name { get; set; }
 
         /// <summary>
         /// Extracted name score             
-        /// </summary>  
+        /// </summary>
         public double? Score { get; set; }
+
 
         /// <summary>AiNameExtracted constructor</summary>
         public AiNameExtracted() {}
 
+
         /// <summary>AiNameExtracted constructor</summary>
         /// <param name="name">Extracted name components             </param>
         /// <param name="score">Extracted name score             </param>
-        public AiNameExtracted(List<AiNameExtractedComponent> name, double? score)
-        {
+        public AiNameExtracted(
+            List<AiNameExtractedComponent> name,
+            double? score
+        )
+        { 
             Name = name;
             Score = score;
         }

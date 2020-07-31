@@ -4,7 +4,6 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.Email.Cloud.Sdk.Model;
-using Aspose.Email.Cloud.Sdk.Model.Requests;
 using Aspose.Email.Cloud.Sdk.Tests.Utils;
 using NUnit.Framework;
 
@@ -46,10 +45,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         [Test]
         public async Task ModelToCalendarDtoTest()
         {
-            var calendarDto =
-                await EmailApi.ConvertMapiCalendarModelToCalendarModelAsync(
-                    new ConvertMapiCalendarModelToCalendarModelRequest(
-                        MapiCalendar));
+            var calendarDto = await Api.Mapi.Calendar.AsCalendarDtoAsync(MapiCalendar);
             Assert.AreEqual(MapiCalendar.Subject, calendarDto.Summary);
             Assert.AreEqual(MapiCalendar.Location, calendarDto.Location);
         }
@@ -57,9 +53,9 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         [Test]
         public async Task ModelToFileTest()
         {
-            var icsStream = await EmailApi.ConvertMapiCalendarModelToFileAsync(
-                new ConvertMapiCalendarModelToFileRequest(
-                    "Ics", MapiCalendar));
+            var icsStream =
+                await Api.Mapi.Calendar.AsFileAsync(
+                    new MapiCalendarAsFileRequest("Ics", MapiCalendar));
             using (var memoryStream = new MemoryStream())
             {
                 await icsStream.CopyToAsync(memoryStream);
@@ -68,8 +64,8 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             }
 
             icsStream.Seek(0, SeekOrigin.Begin);
-            var mapiCalendarConverted = await EmailApi.GetCalendarFileAsMapiModelAsync(
-                new GetCalendarFileAsMapiModelRequest(icsStream));
+            var mapiCalendarConverted =
+                await Api.Mapi.Calendar.FromFileAsync(new MapiCalendarFromFileRequest(icsStream));
             Assert.AreEqual(MapiCalendar.Location, mapiCalendarConverted.Location);
         }
 
@@ -77,13 +73,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task StorageTest()
         {
             var fileName = $"{Guid.NewGuid()}.msg";
-            await EmailApi.SaveMapiCalendarModelAsync(
-                new SaveMapiCalendarModelRequest(
-                    fileName, "Msg", new StorageModelRqOfMapiCalendarDto(
-                        MapiCalendar, new StorageFolderLocation(StorageName, Folder))));
-            var mapiCalendarFromStorage = await EmailApi.GetMapiCalendarModelAsync(
-                new GetMapiCalendarModelRequest(
-                    fileName, Folder, StorageName));
+            await Api.Mapi.Calendar.SaveAsync(new MapiCalendarSaveRequest(
+                new StorageFileLocation(StorageName, Folder, fileName), MapiCalendar, "Msg"));
+            var mapiCalendarFromStorage =
+                await Api.Mapi.Calendar.GetAsync(
+                    new MapiCalendarGetRequest(fileName, Folder, StorageName));
             Assert.AreEqual(MapiCalendar.Location, mapiCalendarFromStorage.Location);
         }
     }

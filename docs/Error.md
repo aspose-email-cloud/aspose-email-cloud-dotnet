@@ -2,13 +2,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Code** | **string** |  | [optional] 
-**Message** | **string** |  | [optional] 
-**Description** | **string** |  | [optional] 
-**InnerError** | [**ErrorDetails**](ErrorDetails.md) |  | [optional] 
+**Code** | **string** | Code              | [optional] 
+**Message** | **string** | Message              | [optional] 
+**Description** | **string** | Description              | [optional] 
+**InnerError** | [**ErrorDetails**](ErrorDetails.md) | Inner Error              | [optional] 
 
 
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

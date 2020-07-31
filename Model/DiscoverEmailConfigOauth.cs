@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,35 +36,35 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// 
     /// </summary>
-    public class DiscoverEmailConfigOauth : DiscoverEmailConfigRq 
+    public class DiscoverEmailConfigOauth : DiscoverEmailConfigRequest 
     {
         /// <summary>
         /// OAuth client id.             
-        /// </summary>  
+        /// </summary>
         public string ClientId { get; set; }
 
         /// <summary>
         /// OAuth client secret.             
-        /// </summary>  
+        /// </summary>
         public string ClientSecret { get; set; }
 
         /// <summary>
         /// OAuth refresh token.             
-        /// </summary>  
+        /// </summary>
         public string RefreshToken { get; set; }
 
         /// <summary>
         /// The url to obtain access token. If not specified, will be discovered from email configuration.             
-        /// </summary>  
+        /// </summary>
         public string RequestUrl { get; set; }
+
 
         /// <summary>DiscoverEmailConfigOauth constructor</summary>
         public DiscoverEmailConfigOauth() {}
+
 
         /// <summary>DiscoverEmailConfigOauth constructor</summary>
         /// <param name="address">Email address to discover.             </param>
@@ -68,8 +74,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="clientSecret">OAuth client secret.             </param>
         /// <param name="refreshToken">OAuth refresh token.             </param>
         /// <param name="requestUrl">The url to obtain access token. If not specified, will be discovered from email configuration.             </param>
-        public DiscoverEmailConfigOauth(string address, bool? fastProcessing, string login, string clientId, string clientSecret, string refreshToken, string requestUrl)
-        {
+        public DiscoverEmailConfigOauth(
+            string address,
+            bool? fastProcessing,
+            string login,
+            string clientId,
+            string clientSecret,
+            string refreshToken,
+            string requestUrl
+        )
+        { 
             Address = address;
             FastProcessing = fastProcessing;
             Login = login;

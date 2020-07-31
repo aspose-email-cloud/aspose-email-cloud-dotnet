@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents the mapi calendar time zone information.             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Human-readable description of the time zone.             
-        /// </summary>  
+        /// </summary>
         public string KeyName { get; set; }
 
         /// <summary>
         /// Time zone rules             
-        /// </summary>  
+        /// </summary>
         public List<MapiCalendarTimeZoneInfoDto> TimeZoneRules { get; set; }
+
 
         /// <summary>MapiCalendarTimeZoneDto constructor</summary>
         public MapiCalendarTimeZoneDto() {}
 
+
         /// <summary>MapiCalendarTimeZoneDto constructor</summary>
         /// <param name="keyName">Human-readable description of the time zone.             </param>
         /// <param name="timeZoneRules">Time zone rules             </param>
-        public MapiCalendarTimeZoneDto(string keyName, List<MapiCalendarTimeZoneInfoDto> timeZoneRules)
-        {
+        public MapiCalendarTimeZoneDto(
+            string keyName,
+            List<MapiCalendarTimeZoneInfoDto> timeZoneRules
+        )
+        { 
             KeyName = keyName;
             TimeZoneRules = timeZoneRules;
         }

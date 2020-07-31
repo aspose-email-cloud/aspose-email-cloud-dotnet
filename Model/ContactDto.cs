@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// VCard document representation.             
     /// </summary>
@@ -39,186 +43,188 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Associated persons.             
-        /// </summary>  
+        /// </summary>
         public List<AssociatedPerson> AssociatedPersons { get; set; }
 
         /// <summary>
         /// Document attachments.             
-        /// </summary>  
+        /// </summary>
         public List<Attachment> Attachments { get; set; }
 
         /// <summary>
         /// Company name.             
-        /// </summary>  
+        /// </summary>
         public string CompanyName { get; set; }
 
         /// <summary>
         /// Computer network.             
-        /// </summary>  
+        /// </summary>
         public string ComputerNetworkName { get; set; }
 
         /// <summary>
         /// Customer id.             
-        /// </summary>  
+        /// </summary>
         public string CustomerId { get; set; }
 
         /// <summary>
         /// Department name.             
-        /// </summary>  
+        /// </summary>
         public string DepartmentName { get; set; }
 
         /// <summary>
         /// Display name.             
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Person's email addresses.             
-        /// </summary>  
+        /// </summary>
         public List<EmailAddress> EmailAddresses { get; set; }
 
         /// <summary>
         /// Person's events.             
-        /// </summary>  
+        /// </summary>
         public List<CustomerEvent> Events { get; set; }
 
         /// <summary>
         /// A name used for sorting.             
-        /// </summary>  
+        /// </summary>
         public string FileAs { get; set; }
 
         /// <summary>
         /// Specifies how to generate and recompute the value of the dispidFileAs property when other contact name properties change. Coincides MS-OXPROPS revision 16.2 from 7/31/2014. Enum, available values: Empty, DisplayName, FirstName, LastName, Organization, LastFirstMiddle, OrgLastFirstMiddle, LastFirstMiddleOrg, LastFirstMiddle2, LastFirstMiddle3, OrgLastFirstMiddle2, OrgLastFirstMiddle3, LastFirstMiddleOrg2, LastFirstMiddleOrg3, LastFirstMiddleGen, FirstMiddleLastGen, LastFirstMiddleGen2, BestMatch, AccordingToLocale, None
-        /// </summary>  
+        /// </summary>
         public string FileAsMapping { get; set; }
 
         /// <summary>
         /// URL path from which a client can retrieve free/busy information for the contact as an iCal file.             
-        /// </summary>  
+        /// </summary>
         public string FreeBusyLocation { get; set; }
 
         /// <summary>
         /// Enum defines gender of a person. Enum, available values: Unspecified, Female, Male
-        /// </summary>  
+        /// </summary>
         public string Gender { get; set; }
 
         /// <summary>
         /// Person's given name.             
-        /// </summary>  
+        /// </summary>
         public string GivenName { get; set; }
 
         /// <summary>
         /// Government id number.             
-        /// </summary>  
+        /// </summary>
         public string GovernmentIdNumber { get; set; }
 
         /// <summary>
         /// Person's hobbies.             
-        /// </summary>  
+        /// </summary>
         public string Hobbies { get; set; }
 
         /// <summary>
         /// Person's initials.             
-        /// </summary>  
+        /// </summary>
         public string Initials { get; set; }
 
         /// <summary>
         /// Person's instant messenger addresses.             
-        /// </summary>  
+        /// </summary>
         public List<InstantMessengerAddress> InstantMessengers { get; set; }
 
         /// <summary>
         /// Person's job title.             
-        /// </summary>  
+        /// </summary>
         public string JobTitle { get; set; }
 
         /// <summary>
         /// Language.             
-        /// </summary>  
+        /// </summary>
         public string Language { get; set; }
 
         /// <summary>
         /// Person's location.             
-        /// </summary>  
+        /// </summary>
         public string Location { get; set; }
 
         /// <summary>
         /// Person's middle name.             
-        /// </summary>  
+        /// </summary>
         public string MiddleName { get; set; }
 
         /// <summary>
         /// Person's nickname.             
-        /// </summary>  
+        /// </summary>
         public string Nickname { get; set; }
 
         /// <summary>
         /// Notes.             
-        /// </summary>  
+        /// </summary>
         public string Notes { get; set; }
 
         /// <summary>
         /// Defines format of a text. Enum, available values: Text, Html
-        /// </summary>  
+        /// </summary>
         public string NotesFormat { get; set; }
 
         /// <summary>
         /// Office location.             
-        /// </summary>  
+        /// </summary>
         public string OfficeLocation { get; set; }
 
         /// <summary>
         /// Contains an identifier for the mail user used within the mail user's organization.             
-        /// </summary>  
+        /// </summary>
         public string OrganizationalIdNumber { get; set; }
 
         /// <summary>
         /// Person's phone numbers.             
-        /// </summary>  
+        /// </summary>
         public List<PhoneNumber> PhoneNumbers { get; set; }
 
         /// <summary>
         /// Person's photo.             
-        /// </summary>  
+        /// </summary>
         public ContactPhoto Photo { get; set; }
 
         /// <summary>
         /// Person's physical addresses.             
-        /// </summary>  
+        /// </summary>
         public List<PostalAddress> PhysicalAddresses { get; set; }
 
         /// <summary>
         /// Encoding for all text properties.             
-        /// </summary>  
+        /// </summary>
         public string PreferredTextEncoding { get; set; }
 
         /// <summary>
         /// A prefix of a full name such like Mr.(mister), Dr.(doctor) and so on.             
-        /// </summary>  
+        /// </summary>
         public string Prefix { get; set; }
 
         /// <summary>
         /// A job position of a person in a company.             
-        /// </summary>  
+        /// </summary>
         public string Profession { get; set; }
 
         /// <summary>
         /// A suffix of a full name such like Jr.(junior), Sr.(senior) and so on.             
-        /// </summary>  
+        /// </summary>
         public string Suffix { get; set; }
 
         /// <summary>
         /// Person's surname.             
-        /// </summary>  
+        /// </summary>
         public string Surname { get; set; }
 
         /// <summary>
         /// Person's urls.             
-        /// </summary>  
+        /// </summary>
         public List<Url> Urls { get; set; }
+
 
         /// <summary>ContactDto constructor</summary>
         public ContactDto() {}
+
 
         /// <summary>ContactDto constructor</summary>
         /// <param name="associatedPersons">Associated persons.             </param>
@@ -257,8 +263,45 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="suffix">A suffix of a full name such like Jr.(junior), Sr.(senior) and so on.             </param>
         /// <param name="surname">Person's surname.             </param>
         /// <param name="urls">Person's urls.             </param>
-        public ContactDto(List<AssociatedPerson> associatedPersons, List<Attachment> attachments, string companyName, string computerNetworkName, string customerId, string departmentName, string displayName, List<EmailAddress> emailAddresses, List<CustomerEvent> events, string fileAs, string fileAsMapping, string freeBusyLocation, string gender, string givenName, string governmentIdNumber, string hobbies, string initials, List<InstantMessengerAddress> instantMessengers, string jobTitle, string language, string location, string middleName, string nickname, string notes, string notesFormat, string officeLocation, string organizationalIdNumber, List<PhoneNumber> phoneNumbers, ContactPhoto photo, List<PostalAddress> physicalAddresses, string preferredTextEncoding, string prefix, string profession, string suffix, string surname, List<Url> urls)
-        {
+        public ContactDto(
+            List<AssociatedPerson> associatedPersons,
+            List<Attachment> attachments,
+            string companyName,
+            string computerNetworkName,
+            string customerId,
+            string departmentName,
+            string displayName,
+            List<EmailAddress> emailAddresses,
+            List<CustomerEvent> events,
+            string fileAs,
+            string fileAsMapping,
+            string freeBusyLocation,
+            string gender,
+            string givenName,
+            string governmentIdNumber,
+            string hobbies,
+            string initials,
+            List<InstantMessengerAddress> instantMessengers,
+            string jobTitle,
+            string language,
+            string location,
+            string middleName,
+            string nickname,
+            string notes,
+            string notesFormat,
+            string officeLocation,
+            string organizationalIdNumber,
+            List<PhoneNumber> phoneNumbers,
+            ContactPhoto photo,
+            List<PostalAddress> physicalAddresses,
+            string preferredTextEncoding,
+            string prefix,
+            string profession,
+            string suffix,
+            string surname,
+            List<Url> urls
+        )
+        { 
             AssociatedPersons = associatedPersons;
             Attachments = attachments;
             CompanyName = companyName;

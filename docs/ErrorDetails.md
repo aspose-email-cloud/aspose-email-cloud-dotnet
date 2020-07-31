@@ -2,11 +2,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**RequestId** | **string** |  | [optional] 
-**Date** | **DateTime?** |  | 
+**RequestId** | **string** | The request id | [optional] 
+**Date** | **DateTime?** | Date | 
 
 
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

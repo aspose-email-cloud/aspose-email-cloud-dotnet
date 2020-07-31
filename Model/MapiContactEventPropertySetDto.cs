@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Specify events associated with a contact.             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Specifies the birthday of the contact.
-        /// </summary>  
+        /// </summary>
         public DateTime? Birthday { get; set; }
 
         /// <summary>
         /// Specifies the wedding anniversary of the contact.             
-        /// </summary>  
+        /// </summary>
         public DateTime? WeddingAnniversary { get; set; }
+
 
         /// <summary>MapiContactEventPropertySetDto constructor</summary>
         public MapiContactEventPropertySetDto() {}
 
+
         /// <summary>MapiContactEventPropertySetDto constructor</summary>
         /// <param name="birthday">Specifies the birthday of the contact.</param>
         /// <param name="weddingAnniversary">Specifies the wedding anniversary of the contact.             </param>
-        public MapiContactEventPropertySetDto(DateTime? birthday, DateTime? weddingAnniversary)
-        {
+        public MapiContactEventPropertySetDto(
+            DateTime? birthday,
+            DateTime? weddingAnniversary
+        )
+        { 
             Birthday = birthday;
             WeddingAnniversary = weddingAnniversary;
         }

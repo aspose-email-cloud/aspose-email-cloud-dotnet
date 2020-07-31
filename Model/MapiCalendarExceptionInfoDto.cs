@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// An exception specifies changes to an instance of a recurring series.             
     /// </summary>
@@ -39,76 +43,78 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Attachments in the recurrence exception.             
-        /// </summary>  
+        /// </summary>
         public List<MapiAttachmentDto> Attachments { get; set; }
 
         /// <summary>
         /// Body.             
-        /// </summary>  
+        /// </summary>
         public string Body { get; set; }
 
         /// <summary>
         /// Enumerates the mapi calendar possible busy status Enum, available values: Free, Tentative, Busy, OutOfOffice
-        /// </summary>  
+        /// </summary>
         public string BusyStatus { get; set; }
 
         /// <summary>
         /// End date.             
-        /// </summary>  
+        /// </summary>
         public DateTime? EndDateTime { get; set; }
 
         /// <summary>
         /// Value of this field specifies whether the Exception Embedded Message object contains attachments.             
-        /// </summary>  
+        /// </summary>
         public bool? HasAttachment { get; set; }
 
         /// <summary>
         /// Location.             
-        /// </summary>  
+        /// </summary>
         public string Location { get; set; }
 
         /// <summary>
         /// Enumerates the appointment state Enum, available values: Meeting, Received, Canceled
-        /// </summary>  
+        /// </summary>
         public string MeetingType { get; set; }
 
         /// <summary>
         /// Original start date.             
-        /// </summary>  
+        /// </summary>
         public DateTime? OriginalStartDate { get; set; }
 
         /// <summary>
         /// Override flags.              Items: Specifies what data in the MapiCalendarOverride structure has a value different from the recurring series. Enum, available values: Subject, MeetingType, ReminderDelta, Reminder, Location, BusyStatus, Attachment, Subtype, AppointmentColor, ExceptionalBody
-        /// </summary>  
+        /// </summary>
         public List<string> OverrideFlags { get; set; }
 
         /// <summary>
         /// Reminder delta.             
-        /// </summary>  
+        /// </summary>
         public int? ReminderDelta { get; set; }
 
         /// <summary>
         /// Value for the PidLidReminderSet property.             
-        /// </summary>  
+        /// </summary>
         public bool? ReminderSet { get; set; }
 
         /// <summary>
         /// Start date.             
-        /// </summary>  
+        /// </summary>
         public DateTime? StartDateTime { get; set; }
 
         /// <summary>
         /// Subject.             
-        /// </summary>  
+        /// </summary>
         public string Subject { get; set; }
 
         /// <summary>
         /// SubType.             
-        /// </summary>  
+        /// </summary>
         public int? SubType { get; set; }
+
 
         /// <summary>MapiCalendarExceptionInfoDto constructor</summary>
         public MapiCalendarExceptionInfoDto() {}
+
 
         /// <summary>MapiCalendarExceptionInfoDto constructor</summary>
         /// <param name="attachments">Attachments in the recurrence exception.             </param>
@@ -125,8 +131,23 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="startDateTime">Start date.             </param>
         /// <param name="subject">Subject.             </param>
         /// <param name="subType">SubType.             </param>
-        public MapiCalendarExceptionInfoDto(List<MapiAttachmentDto> attachments, string body, string busyStatus, DateTime? endDateTime, bool? hasAttachment, string location, string meetingType, DateTime? originalStartDate, List<string> overrideFlags, int? reminderDelta, bool? reminderSet, DateTime? startDateTime, string subject, int? subType)
-        {
+        public MapiCalendarExceptionInfoDto(
+            List<MapiAttachmentDto> attachments,
+            string body,
+            string busyStatus,
+            DateTime? endDateTime,
+            bool? hasAttachment,
+            string location,
+            string meetingType,
+            DateTime? originalStartDate,
+            List<string> overrideFlags,
+            int? reminderDelta,
+            bool? reminderSet,
+            DateTime? startDateTime,
+            string subject,
+            int? subType
+        )
+        { 
             Attachments = attachments;
             Body = body;
             BusyStatus = busyStatus;

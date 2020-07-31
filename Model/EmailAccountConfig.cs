@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Email account configuration.             
     /// </summary>
@@ -39,46 +43,48 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email account display name             
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav
-        /// </summary>  
+        /// </summary>
         public string ProtocolType { get; set; }
 
         /// <summary>
         /// Email account host.             
-        /// </summary>  
+        /// </summary>
         public string Host { get; set; }
 
         /// <summary>
         /// Port.             
-        /// </summary>  
+        /// </summary>
         public int? Port { get; set; }
 
         /// <summary>
         /// Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
-        /// </summary>  
+        /// </summary>
         public string SocketType { get; set; }
 
         /// <summary>
         /// Supported authentication types.              Items: Email account authentication types. Enum, available values: NoAuth, OAuth2, PasswordCleartext, PasswordEncrypted, SmtpAfterPop, ClientIpAddress
-        /// </summary>  
+        /// </summary>
         public List<string> AuthenticationTypes { get; set; }
 
         /// <summary>
         /// Extra account information.             
-        /// </summary>  
+        /// </summary>
         public List<NameValuePair> ExtraInfo { get; set; }
 
         /// <summary>
         /// Determines that configuration validated. Set to false if validation skipped.             
-        /// </summary>  
+        /// </summary>
         public bool? IsValidated { get; set; }
+
 
         /// <summary>EmailAccountConfig constructor</summary>
         public EmailAccountConfig() {}
+
 
         /// <summary>EmailAccountConfig constructor</summary>
         /// <param name="displayName">Email account display name             </param>
@@ -89,8 +95,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="authenticationTypes">Supported authentication types.             </param>
         /// <param name="extraInfo">Extra account information.             </param>
         /// <param name="isValidated">Determines that configuration validated. Set to false if validation skipped.             </param>
-        public EmailAccountConfig(string displayName, string protocolType, string host, int? port, string socketType, List<string> authenticationTypes, List<NameValuePair> extraInfo, bool? isValidated)
-        {
+        public EmailAccountConfig(
+            string displayName,
+            string protocolType,
+            string host,
+            int? port,
+            string socketType,
+            List<string> authenticationTypes,
+            List<NameValuePair> extraInfo,
+            bool? isValidated
+        )
+        { 
             DisplayName = displayName;
             ProtocolType = protocolType;
             Host = host;

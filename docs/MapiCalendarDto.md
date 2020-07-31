@@ -21,8 +21,10 @@ Name | Type | Description | Notes
 **Uid** | **string** | Unique identifier.              | [optional] 
 **Organizer** | [**MapiElectronicAddressDto**](MapiElectronicAddressDto.md) | Organizer              | [optional] 
 
- Parent class: [MapiMessageItemBaseDto](MapiMessageItemBaseDto.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [MapiMessageItemBaseDto](MapiMessageItemBaseDto.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

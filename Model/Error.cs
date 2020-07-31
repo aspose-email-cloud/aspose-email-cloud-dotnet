@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,43 +36,48 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// Error
     /// </summary>
     public class Error 
     {
         /// <summary>
-        /// Gets or sets Code
-        /// </summary>  
+        /// Code             
+        /// </summary>
         public string Code { get; set; }
 
         /// <summary>
-        /// Gets or sets Message
-        /// </summary>  
+        /// Message             
+        /// </summary>
         public string Message { get; set; }
 
         /// <summary>
-        /// Gets or sets Description
-        /// </summary>  
+        /// Description             
+        /// </summary>
         public string Description { get; set; }
 
         /// <summary>
-        /// Gets or sets InnerError
-        /// </summary>  
+        /// Inner Error             
+        /// </summary>
         public ErrorDetails InnerError { get; set; }
+
 
         /// <summary>Error constructor</summary>
         public Error() {}
 
+
         /// <summary>Error constructor</summary>
-        /// <param name="code"></param>
-        /// <param name="message"></param>
-        /// <param name="description"></param>
-        /// <param name="innerError"></param>
-        public Error(string code, string message, string description, ErrorDetails innerError)
-        {
+        /// <param name="code">Code             </param>
+        /// <param name="message">Message             </param>
+        /// <param name="description">Description             </param>
+        /// <param name="innerError">Inner Error             </param>
+        public Error(
+            string code,
+            string message,
+            string description,
+            ErrorDetails innerError
+        )
+        { 
             Code = code;
             Message = message;
             Description = description;

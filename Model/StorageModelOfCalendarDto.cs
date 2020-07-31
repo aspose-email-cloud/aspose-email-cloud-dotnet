@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// 
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Gets or sets StorageFile
-        /// </summary>  
+        /// </summary>
         public StorageFileLocation StorageFile { get; set; }
 
         /// <summary>
         /// Gets or sets Value
-        /// </summary>  
+        /// </summary>
         public CalendarDto Value { get; set; }
+
 
         /// <summary>StorageModelOfCalendarDto constructor</summary>
         public StorageModelOfCalendarDto() {}
 
+
         /// <summary>StorageModelOfCalendarDto constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
-        public StorageModelOfCalendarDto(StorageFileLocation storageFile, CalendarDto value)
-        {
+        public StorageModelOfCalendarDto(
+            StorageFileLocation storageFile,
+            CalendarDto value
+        )
+        { 
             StorageFile = storageFile;
             Value = value;
         }

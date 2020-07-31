@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Mapi attachment             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Attachment's name             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Attachment data represented as Base64 string.             
-        /// </summary>  
+        /// </summary>
         public string DataBase64 { get; set; }
+
 
         /// <summary>MapiAttachmentDto constructor</summary>
         public MapiAttachmentDto() {}
 
+
         /// <summary>MapiAttachmentDto constructor</summary>
         /// <param name="name">Attachment's name             </param>
         /// <param name="dataBase64">Attachment data represented as Base64 string.             </param>
-        public MapiAttachmentDto(string name, string dataBase64)
-        {
+        public MapiAttachmentDto(
+            string name,
+            string dataBase64
+        )
+        { 
             Name = name;
             DataBase64 = dataBase64;
         }

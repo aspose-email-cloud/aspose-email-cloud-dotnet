@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// A phone number.             
     /// </summary>
@@ -39,28 +43,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Phone number category.             
-        /// </summary>  
+        /// </summary>
         public EnumWithCustomOfPhoneNumberCategory Category { get; set; }
 
         /// <summary>
         /// Phone number.             
-        /// </summary>  
+        /// </summary>
         public string Number { get; set; }
 
         /// <summary>
         /// Defines whether phone number is preferred.             
-        /// </summary>  
+        /// </summary>
         public bool? Preferred { get; set; }
+
 
         /// <summary>PhoneNumber constructor</summary>
         public PhoneNumber() {}
+
 
         /// <summary>PhoneNumber constructor</summary>
         /// <param name="category">Phone number category.             </param>
         /// <param name="number">Phone number.             </param>
         /// <param name="preferred">Defines whether phone number is preferred.             </param>
-        public PhoneNumber(EnumWithCustomOfPhoneNumberCategory category, string number, bool? preferred)
-        {
+        public PhoneNumber(
+            EnumWithCustomOfPhoneNumberCategory category,
+            string number,
+            bool? preferred
+        )
+        { 
             Category = category;
             Number = number;
             Preferred = preferred;

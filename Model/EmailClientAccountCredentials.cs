@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents email client account credentials             
     /// </summary>
@@ -39,29 +43,31 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email client account login             
-        /// </summary>  
+        /// </summary>
         public string Login { get; set; }
 
         /// <summary>
         /// Gets or sets Discriminator
-        /// </summary>  
-        
+        /// </summary>
         public string Discriminator
         {
             get { return GetType().Name; }
             set { /*do nothing*/}
         }
 
+
         /// <summary>EmailClientAccountCredentials constructor</summary>
         public EmailClientAccountCredentials() {}
 
+
         /// <summary>EmailClientAccountCredentials constructor</summary>
         /// <param name="login">Email client account login             </param>
-        /// <param name="discriminator"></param>
-        public EmailClientAccountCredentials(string login, string discriminator)
-        {
+        public EmailClientAccountCredentials(
+            string login
+            
+        )
+        { 
             Login = login;
-            Discriminator = discriminator;
         }
         /// <summary>
         /// Get the string presentation of the object

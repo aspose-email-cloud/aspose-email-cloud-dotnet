@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents a Content-Type header.             
     /// </summary>
@@ -39,31 +43,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// The boundary parameter included in the Content-Type header.             
-        /// </summary>  
+        /// </summary>
         public string Boundary { get; set; }
 
         /// <summary>
         /// CharSet parameter.             
-        /// </summary>  
+        /// </summary>
         public string CharSet { get; set; }
 
         /// <summary>
         /// The internet media type.             
-        /// </summary>  
+        /// </summary>
         public string MediaType { get; set; }
 
         /// <summary>
         /// Name parameter.             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Full list of parameters             
-        /// </summary>  
+        /// </summary>
         public List<ContentTypeParameter> Parameters { get; set; }
+
 
         /// <summary>ContentType constructor</summary>
         public ContentType() {}
+
 
         /// <summary>ContentType constructor</summary>
         /// <param name="boundary">The boundary parameter included in the Content-Type header.             </param>
@@ -71,8 +77,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="mediaType">The internet media type.             </param>
         /// <param name="name">Name parameter.             </param>
         /// <param name="parameters">Full list of parameters             </param>
-        public ContentType(string boundary, string charSet, string mediaType, string name, List<ContentTypeParameter> parameters)
-        {
+        public ContentType(
+            string boundary,
+            string charSet,
+            string mediaType,
+            string name,
+            List<ContentTypeParameter> parameters
+        )
+        { 
             Boundary = boundary;
             CharSet = charSet;
             MediaType = mediaType;

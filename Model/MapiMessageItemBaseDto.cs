@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Base Dto for MapiMessage, MapiCalendar or MapiContact             
     /// </summary>
@@ -39,96 +43,97 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Message item attachments.             
-        /// </summary>  
+        /// </summary>
         public List<MapiAttachmentDto> Attachments { get; set; }
 
         /// <summary>
         /// Billing information associated with an item.             
-        /// </summary>  
+        /// </summary>
         public string Billing { get; set; }
 
         /// <summary>
         /// Message text.             
-        /// </summary>  
+        /// </summary>
         public string Body { get; set; }
 
         /// <summary>
         /// Gets the BodyRtf of the message converted to HTML, if present, otherwise an empty string.             
-        /// </summary>  
+        /// </summary>
         public string BodyHtml { get; set; }
 
         /// <summary>
         /// RTF formatted message text.             
-        /// </summary>  
+        /// </summary>
         public string BodyRtf { get; set; }
 
         /// <summary>
         /// The content type of message body. Enum, available values: PlainText, Html, Rtf
-        /// </summary>  
+        /// </summary>
         public string BodyType { get; set; }
 
         /// <summary>
         /// Contains keywords or categories for the message object.             
-        /// </summary>  
+        /// </summary>
         public List<string> Categories { get; set; }
 
         /// <summary>
         /// Contains the names of the companies that are associated with an item.             
-        /// </summary>  
+        /// </summary>
         public List<string> Companies { get; set; }
 
         /// <summary>
         /// The item id, uses with a server.             
-        /// </summary>  
+        /// </summary>
         public string ItemId { get; set; }
 
         /// <summary>
         /// Case-sensitive string that identifies the sender-defined message class, such as IPM.Note. The message class specifies the type, purpose, or content of the message.             
-        /// </summary>  
+        /// </summary>
         public string MessageClass { get; set; }
 
         /// <summary>
         /// Contains the mileage information that is associated with an item.             
-        /// </summary>  
+        /// </summary>
         public string Mileage { get; set; }
 
         /// <summary>
         /// Recipients of the message.             
-        /// </summary>  
+        /// </summary>
         public List<MapiRecipientDto> Recipients { get; set; }
 
         /// <summary>
         /// Contains values that indicate the message sensitivity. Enum, available values: None, Personal, Private, CompanyConfidential
-        /// </summary>  
+        /// </summary>
         public string Sensitivity { get; set; }
 
         /// <summary>
         /// Subject of the message.             
-        /// </summary>  
+        /// </summary>
         public string Subject { get; set; }
 
         /// <summary>
         /// Subject prefix that typically indicates some action on a message, such as \"FW: \" for forwarding.             
-        /// </summary>  
+        /// </summary>
         public string SubjectPrefix { get; set; }
 
         /// <summary>
         /// List of MAPI properties             
-        /// </summary>  
+        /// </summary>
         public List<MapiPropertyDto> Properties { get; set; }
 
         /// <summary>
         /// Gets or sets Discriminator
-        /// </summary>  
-        
+        /// </summary>
         public string Discriminator
         {
             get { return GetType().Name; }
             set { /*do nothing*/}
         }
 
+
         /// <summary>MapiMessageItemBaseDto constructor</summary>
         public MapiMessageItemBaseDto() {}
+
 
         /// <summary>MapiMessageItemBaseDto constructor</summary>
         /// <param name="attachments">Message item attachments.             </param>
@@ -147,9 +152,26 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="subject">Subject of the message.             </param>
         /// <param name="subjectPrefix">Subject prefix that typically indicates some action on a message, such as \"FW: \" for forwarding.             </param>
         /// <param name="properties">List of MAPI properties             </param>
-        /// <param name="discriminator"></param>
-        public MapiMessageItemBaseDto(List<MapiAttachmentDto> attachments, string billing, string body, string bodyHtml, string bodyRtf, string bodyType, List<string> categories, List<string> companies, string itemId, string messageClass, string mileage, List<MapiRecipientDto> recipients, string sensitivity, string subject, string subjectPrefix, List<MapiPropertyDto> properties, string discriminator)
-        {
+        public MapiMessageItemBaseDto(
+            List<MapiAttachmentDto> attachments,
+            string billing,
+            string body,
+            string bodyHtml,
+            string bodyRtf,
+            string bodyType,
+            List<string> categories,
+            List<string> companies,
+            string itemId,
+            string messageClass,
+            string mileage,
+            List<MapiRecipientDto> recipients,
+            string sensitivity,
+            string subject,
+            string subjectPrefix,
+            List<MapiPropertyDto> properties
+            
+        )
+        { 
             Attachments = attachments;
             Billing = billing;
             Body = body;
@@ -166,7 +188,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
             Subject = subject;
             SubjectPrefix = subjectPrefix;
             Properties = properties;
-            Discriminator = discriminator;
         }
         /// <summary>
         /// Get the string presentation of the object

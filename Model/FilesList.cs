@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,25 +36,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// Files list
     /// </summary>
     public class FilesList 
     {
         /// <summary>
-        /// Gets or sets Value
-        /// </summary>  
+        /// Files and folders contained by folder StorageFile.
+        /// </summary>
         public List<StorageFile> Value { get; set; }
+
 
         /// <summary>FilesList constructor</summary>
         public FilesList() {}
 
+
         /// <summary>FilesList constructor</summary>
-        /// <param name="value"></param>
-        public FilesList(List<StorageFile> value)
-        {
+        /// <param name="value">Files and folders contained by folder StorageFile.</param>
+        public FilesList(
+            List<StorageFile> value
+        )
+        { 
             Value = value;
         }
         /// <summary>

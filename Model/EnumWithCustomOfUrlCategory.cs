@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// 
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Url category. Enum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
 
         /// <summary>
         /// Gets or sets Description
-        /// </summary>  
+        /// </summary>
         public string Description { get; set; }
+
 
         /// <summary>EnumWithCustomOfUrlCategory constructor</summary>
         public EnumWithCustomOfUrlCategory() {}
 
+
         /// <summary>EnumWithCustomOfUrlCategory constructor</summary>
         /// <param name="value">Url category. Enum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom</param>
         /// <param name="description"></param>
-        public EnumWithCustomOfUrlCategory(string value, string description)
-        {
+        public EnumWithCustomOfUrlCategory(
+            string value,
+            string description
+        )
+        { 
             Value = value;
             Description = description;
         }
