@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.FolderApi
 
-        ﻿<a name="CopyFolder"></a>
+        <a name="CopyFolder"></a>
 # CopyFolder
 
 ```csharp
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
  **destStorageName** | **string**| Destination storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="CreateFolder"></a>
+        <a name="CreateFolder"></a>
 # CreateFolder
 
 ```csharp
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="DeleteFolder"></a>
+        <a name="DeleteFolder"></a>
 # DeleteFolder
 
 ```csharp
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
  **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="GetFilesList"></a>
+        <a name="GetFilesList"></a>
 # GetFilesList
 
 ```csharp
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="MoveFolder"></a>
+        <a name="MoveFolder"></a>
 # MoveFolder
 
 ```csharp

@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.MapiCalendarApi
 
-        ﻿<a name="AsCalendarDto"></a>
+        <a name="AsCalendarDto"></a>
 # AsCalendarDto
 
 ```csharp
@@ -39,7 +39,7 @@ Task<[**CalendarDto**](CalendarDto.md)>
 See parameter model documentation at [MapiCalendarDto](MapiCalendarDto.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="AsFile"></a>
+        <a name="AsFile"></a>
 # AsFile
 
 ```csharp
@@ -78,7 +78,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 See parameter model documentation at [MapiCalendarAsFileRequest](MapiCalendarAsFileRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="FromFile"></a>
+        <a name="FromFile"></a>
 # FromFile
 
 ```csharp
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Get"></a>
+        <a name="Get"></a>
 # Get
 
 ```csharp
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Save"></a>
+        <a name="Save"></a>
 # Save
 
 ```csharp

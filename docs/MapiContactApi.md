@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.MapiContactApi
 
-        ﻿<a name="AsContactDto"></a>
+        <a name="AsContactDto"></a>
 # AsContactDto
 
 ```csharp
@@ -39,7 +39,7 @@ Task<[**ContactDto**](ContactDto.md)>
 See parameter model documentation at [MapiContactDto](MapiContactDto.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="AsFile"></a>
+        <a name="AsFile"></a>
 # AsFile
 
 ```csharp
@@ -78,7 +78,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 See parameter model documentation at [MapiContactAsFileRequest](MapiContactAsFileRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="FromFile"></a>
+        <a name="FromFile"></a>
 # FromFile
 
 ```csharp
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Get"></a>
+        <a name="Get"></a>
 # Get
 
 ```csharp
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Save"></a>
+        <a name="Save"></a>
 # Save
 
 ```csharp

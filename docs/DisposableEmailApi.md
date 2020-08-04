@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.DisposableEmailApi
 
-        ﻿<a name="IsDisposable"></a>
+        <a name="IsDisposable"></a>
 # IsDisposable
 
 ```csharp

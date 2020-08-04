@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.AiBcrApi
 
-        ﻿<a name="Parse"></a>
+        <a name="Parse"></a>
 # Parse
 
 ```csharp
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
  **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="ParseStorage"></a>
+        <a name="ParseStorage"></a>
 # ParseStorage
 
 ```csharp

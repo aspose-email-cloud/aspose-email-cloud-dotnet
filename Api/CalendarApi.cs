@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    ﻿
+                    
         /// <summary>
         /// Convert iCalendar to AlternateView              
         /// </summary>
@@ -93,7 +93,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Converts calendar model to specified format and returns as file.              
         /// </summary>
@@ -133,7 +133,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Converts CalendarDto to MapiCalendarDto.              
         /// </summary>
@@ -172,7 +172,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Converts calendar document to specified format and returns as file.              
         /// </summary>
@@ -226,7 +226,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Convert(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Converts calendar document to a model representation.              
         /// </summary>
@@ -271,7 +271,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => FromFile(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Get calendar file from storage.              
         /// </summary>
@@ -311,7 +311,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Get(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Get iCalendar from storage as AlternateView              
         /// </summary>
@@ -360,7 +360,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetAsAlternate(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Converts calendar document from storage to specified format and returns as file.              
         /// </summary>
@@ -410,7 +410,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetAsFile(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Get iCalendar list from storage folder.              
         /// </summary>
@@ -451,7 +451,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetList(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Save iCalendar              
         /// </summary>

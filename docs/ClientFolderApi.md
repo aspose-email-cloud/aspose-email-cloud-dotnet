@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.ClientFolderApi
 
-        ﻿<a name="Create"></a>
+        <a name="Create"></a>
 # Create
 
 ```csharp
@@ -39,7 +39,7 @@ Task (empty response body)
 See parameter model documentation at [ClientFolderCreateRequest](ClientFolderCreateRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Delete"></a>
+        <a name="Delete"></a>
 # Delete
 
 ```csharp
@@ -78,7 +78,7 @@ Task (empty response body)
 See parameter model documentation at [ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="GetList"></a>
+        <a name="GetList"></a>
 # GetList
 
 ```csharp

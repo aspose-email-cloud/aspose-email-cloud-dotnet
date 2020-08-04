@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.ClientMessageApi
 
-        ﻿<a name="Append"></a>
+        <a name="Append"></a>
 # Append
 
 ```csharp
@@ -39,7 +39,7 @@ Task<[**ValueTOfString**](ValueTOfString.md)>
 See parameter model documentation at [ClientMessageAppendRequest](ClientMessageAppendRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="AppendFile"></a>
+        <a name="AppendFile"></a>
 # AppendFile
 
 ```csharp
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
  **markAsSent** | **bool?**| Determines that appended message should be market as sent or not. | [optional] [default to true]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Delete"></a>
+        <a name="Delete"></a>
 # Delete
 
 ```csharp
@@ -153,7 +153,7 @@ Task (empty response body)
 See parameter model documentation at [ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Fetch"></a>
+        <a name="Fetch"></a>
 # Fetch
 
 ```csharp
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
  **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="FetchFile"></a>
+        <a name="FetchFile"></a>
 # FetchFile
 
 ```csharp
@@ -299,7 +299,7 @@ Name | Type | Description  | Notes
  **format** | **string**| Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="List"></a>
+        <a name="List"></a>
 # List
 
 ```csharp
@@ -382,7 +382,7 @@ Name | Type | Description  | Notes
  **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Move"></a>
+        <a name="Move"></a>
 # Move
 
 ```csharp
@@ -421,7 +421,7 @@ Task (empty response body)
 See parameter model documentation at [ClientMessageMoveRequest](ClientMessageMoveRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Send"></a>
+        <a name="Send"></a>
 # Send
 
 ```csharp
@@ -460,7 +460,7 @@ Task (empty response body)
 See parameter model documentation at [ClientMessageSendRequest](ClientMessageSendRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="SendFile"></a>
+        <a name="SendFile"></a>
 # SendFile
 
 ```csharp
@@ -527,7 +527,7 @@ Name | Type | Description  | Notes
  **format** | **string**| Email file format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="SetIsRead"></a>
+        <a name="SetIsRead"></a>
 # SetIsRead
 
 ```csharp

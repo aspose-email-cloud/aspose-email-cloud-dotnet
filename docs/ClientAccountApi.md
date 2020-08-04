@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.ClientAccountApi
 
-        ﻿<a name="Get"></a>
+        <a name="Get"></a>
 # Get
 
 ```csharp
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="GetMulti"></a>
+        <a name="GetMulti"></a>
 # GetMulti
 
 ```csharp
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Save"></a>
+        <a name="Save"></a>
 # Save
 
 ```csharp
@@ -157,7 +157,7 @@ Task (empty response body)
 See parameter model documentation at [EmailClientAccountSaveRequest](EmailClientAccountSaveRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="SaveMulti"></a>
+        <a name="SaveMulti"></a>
 # SaveMulti
 
 ```csharp

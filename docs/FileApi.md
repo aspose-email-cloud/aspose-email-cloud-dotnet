@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.FileApi
 
-        ﻿<a name="CopyFile"></a>
+        <a name="CopyFile"></a>
 # CopyFile
 
 ```csharp
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
  **versionId** | **string**| File version ID to copy | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="DeleteFile"></a>
+        <a name="DeleteFile"></a>
 # DeleteFile
 
 ```csharp
@@ -126,7 +126,7 @@ Name | Type | Description  | Notes
  **versionId** | **string**| File version ID to delete | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="DownloadFile"></a>
+        <a name="DownloadFile"></a>
 # DownloadFile
 
 ```csharp
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
  **versionId** | **string**| File version ID to download | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="MoveFile"></a>
+        <a name="MoveFile"></a>
 # MoveFile
 
 ```csharp
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
  **versionId** | **string**| File version ID to move | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="UploadFile"></a>
+        <a name="UploadFile"></a>
 # UploadFile
 
 ```csharp

@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.StorageApi
 
-        ﻿<a name="GetDiscUsage"></a>
+        <a name="GetDiscUsage"></a>
 # GetDiscUsage
 
 ```csharp
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="GetFileVersions"></a>
+        <a name="GetFileVersions"></a>
 # GetFileVersions
 
 ```csharp
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="ObjectExists"></a>
+        <a name="ObjectExists"></a>
 # ObjectExists
 
 ```csharp
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
  **versionId** | **string**| File version ID | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Exists"></a>
+        <a name="Exists"></a>
 # Exists
 
 ```csharp

@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.ContactApi
 
-        ﻿<a name="AsFile"></a>
+        <a name="AsFile"></a>
 # AsFile
 
 ```csharp
@@ -39,7 +39,7 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 See parameter model documentation at [ContactAsFileRequest](ContactAsFileRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="AsMapi"></a>
+        <a name="AsMapi"></a>
 # AsMapi
 
 ```csharp
@@ -78,7 +78,7 @@ Task<[**MapiContactDto**](MapiContactDto.md)>
 See parameter model documentation at [ContactDto](ContactDto.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Convert"></a>
+        <a name="Convert"></a>
 # Convert
 
 ```csharp
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="FromFile"></a>
+        <a name="FromFile"></a>
 # FromFile
 
 ```csharp
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Get"></a>
+        <a name="Get"></a>
 # Get
 
 ```csharp
@@ -255,7 +255,7 @@ Name | Type | Description  | Notes
  **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="GetAsFile"></a>
+        <a name="GetAsFile"></a>
 # GetAsFile
 
 ```csharp
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
  **folder** | **string**| Path to folder in storage | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="GetList"></a>
+        <a name="GetList"></a>
 # GetList
 
 ```csharp
@@ -389,7 +389,7 @@ Name | Type | Description  | Notes
  **pageNumber** | **int?**| Page number. | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Save"></a>
+        <a name="Save"></a>
 # Save
 
 ```csharp

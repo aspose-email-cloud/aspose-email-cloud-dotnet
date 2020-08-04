@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    ﻿
+                    
         /// <summary>
         /// The call proposes k most probable names for given starting characters.              
         /// </summary>
@@ -97,7 +97,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Complete(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Expands a person&#39;s name into a list of possible alternatives using options for expanding instructions.              
         /// </summary>
@@ -140,7 +140,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Expand(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Expands a person&#39;s parsed name into a list of possible alternatives using options for expanding instructions.              
         /// </summary>
@@ -179,7 +179,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Formats a person&#39;s name in correct case and name order using options for formatting instructions.              
         /// </summary>
@@ -223,7 +223,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Format(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Formats a person&#39;s parsed name in correct case and name order using options for formatting instructions.              
         /// </summary>
@@ -262,7 +262,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Detect person&#39;s gender from name string.              
         /// </summary>
@@ -305,7 +305,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Genderize(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Detect person&#39;s gender from parsed name.              
         /// </summary>
@@ -344,7 +344,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Compare people&#39;s names. Uses options for comparing instructions.              
         /// </summary>
@@ -395,7 +395,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Match(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Compare people&#39;s parsed names and attributes. Uses options for comparing instructions.              
         /// </summary>
@@ -434,7 +434,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Parse name to components.              
         /// </summary>
@@ -477,7 +477,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Parse(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Parse person&#39;s name out of an email address.              
         /// </summary>

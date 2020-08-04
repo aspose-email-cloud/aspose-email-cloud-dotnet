@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    ﻿
+                    
         /// <summary>
         /// Parse images to vCard document models              
         /// </summary>
@@ -102,7 +102,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Parse(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Parse images from storage to vCard files              
         /// </summary>

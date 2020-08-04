@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    ﻿
+                    
         /// <summary>
         /// Get disc usage 
         /// </summary>
@@ -85,7 +85,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetDiscUsage(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Get file versions 
         /// </summary>
@@ -124,7 +124,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetFileVersions(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Check if file or folder exists 
         /// </summary>
@@ -164,7 +164,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => ObjectExists(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Check if storage exists 
         /// </summary>

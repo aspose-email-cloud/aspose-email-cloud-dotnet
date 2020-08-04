@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    ﻿
+                    
         /// <summary>
         /// Discover email accounts by email address. Does not validate discovered accounts.              
         /// </summary>
@@ -93,7 +93,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Discover(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.              
         /// </summary>
@@ -132,7 +132,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Discover email accounts by email address. Validates discovered accounts using login and password.              
         /// </summary>

@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    ﻿
+                    
         /// <summary>
         /// Create new folder in email account              
         /// </summary>
@@ -90,7 +90,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Delete a folder in email account              
         /// </summary>
@@ -126,7 +126,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Get folders list in email account              
         /// </summary>

@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    ﻿
+                    
         /// <summary>
         /// Copy folder 
         /// </summary>
@@ -99,7 +99,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => CopyFolder(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Create the folder 
         /// </summary>
@@ -135,7 +135,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => CreateFolder(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Delete folder 
         /// </summary>
@@ -172,7 +172,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => DeleteFolder(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Get all files and folders within a folder 
         /// </summary>
@@ -211,7 +211,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetFilesList(request));
         #endif
 
-                    ﻿
+                    
         /// <summary>
         /// Move folder 
         /// </summary>

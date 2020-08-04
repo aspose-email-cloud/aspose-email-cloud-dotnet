@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.ClientThreadApi
 
-        ﻿<a name="Delete"></a>
+        <a name="Delete"></a>
 # Delete
 
 ```csharp
@@ -39,7 +39,7 @@ Task (empty response body)
 See parameter model documentation at [ClientThreadDeleteRequest](ClientThreadDeleteRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="GetList"></a>
+        <a name="GetList"></a>
 # GetList
 
 ```csharp
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
  **messagesCacheLimit** | **int?**| Limit messages cache size if CacheFile is used. Ignored in accounts without limits support              | [optional] [default to 200]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="GetMessages"></a>
+        <a name="GetMessages"></a>
 # GetMessages
 
 ```csharp
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
  **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Move"></a>
+        <a name="Move"></a>
 # Move
 
 ```csharp
@@ -216,7 +216,7 @@ Task (empty response body)
 See parameter model documentation at [ClientThreadMoveRequest](ClientThreadMoveRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="SetIsRead"></a>
+        <a name="SetIsRead"></a>
 # SetIsRead
 
 ```csharp

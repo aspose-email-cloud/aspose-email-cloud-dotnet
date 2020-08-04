@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.AiNameApi
 
-        ﻿<a name="Complete"></a>
+        <a name="Complete"></a>
 # Complete
 
 ```csharp
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Expand"></a>
+        <a name="Expand"></a>
 # Expand
 
 ```csharp
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="ExpandParsed"></a>
+        <a name="ExpandParsed"></a>
 # ExpandParsed
 
 ```csharp
@@ -181,7 +181,7 @@ Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
 See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Format"></a>
+        <a name="Format"></a>
 # Format
 
 ```csharp
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="FormatParsed"></a>
+        <a name="FormatParsed"></a>
 # FormatParsed
 
 ```csharp
@@ -295,7 +295,7 @@ Task<[**AiNameFormatted**](AiNameFormatted.md)>
 See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Genderize"></a>
+        <a name="Genderize"></a>
 # Genderize
 
 ```csharp
@@ -366,7 +366,7 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="GenderizeParsed"></a>
+        <a name="GenderizeParsed"></a>
 # GenderizeParsed
 
 ```csharp
@@ -405,7 +405,7 @@ Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
 See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Match"></a>
+        <a name="Match"></a>
 # Match
 
 ```csharp
@@ -480,7 +480,7 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="MatchParsed"></a>
+        <a name="MatchParsed"></a>
 # MatchParsed
 
 ```csharp
@@ -519,7 +519,7 @@ Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
 See parameter model documentation at [AiNameParsedMatchRequest](AiNameParsedMatchRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="Parse"></a>
+        <a name="Parse"></a>
 # Parse
 
 ```csharp
@@ -590,7 +590,7 @@ Name | Type | Description  | Notes
  **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="ParseEmailAddress"></a>
+        <a name="ParseEmailAddress"></a>
 # ParseEmailAddress
 
 ```csharp

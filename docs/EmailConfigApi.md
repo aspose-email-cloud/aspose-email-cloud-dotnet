@@ -1,6 +1,6 @@
 # Aspose.Email.Cloud.Sdk.EmailConfigApi
 
-        ﻿<a name="Discover"></a>
+        <a name="Discover"></a>
 # Discover
 
 ```csharp
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
  **fastProcessing** | **bool?**| Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.              | [optional] [default to false]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="DiscoverOauth"></a>
+        <a name="DiscoverOauth"></a>
 # DiscoverOauth
 
 ```csharp
@@ -94,7 +94,7 @@ Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 See parameter model documentation at [DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        ﻿<a name="DiscoverPassword"></a>
+        <a name="DiscoverPassword"></a>
 # DiscoverPassword
 
 ```csharp
