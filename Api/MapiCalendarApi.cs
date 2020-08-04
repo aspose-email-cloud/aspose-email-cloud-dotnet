@@ -1,3 +1,4 @@
+
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="MapiCalendarApi.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud

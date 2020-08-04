@@ -1,3 +1,4 @@
+
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="StorageFolderLocation.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud

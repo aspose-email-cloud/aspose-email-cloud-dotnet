@@ -1,3 +1,4 @@
+
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="AiNameWeightedVariants.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
