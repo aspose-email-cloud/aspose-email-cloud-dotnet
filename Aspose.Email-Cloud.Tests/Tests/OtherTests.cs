@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                     {Login = "example@gmail.com", Password = "password"}
             };
             var fileName = $"{Guid.NewGuid().ToString()}.account";
-            await Api.Client.Account.SaveAsync(new EmailClientAccountSaveRequest(
+            await Api.Client.Account.SaveAsync(new ClientAccountSaveRequest(
                 new StorageFileLocation(StorageName, Folder, fileName), emailClientAccount));
             var response = await Api.Client.Account.GetAsync(
                 new ClientAccountGetRequest(fileName, Folder, StorageName));
@@ -94,7 +94,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             };
             var fileName = $"{Guid.NewGuid()}.multi.account";
             await Api.Client.Account.SaveMultiAsync(
-                new EmailClientMultiAccountSaveRequest(
+                new ClientAccountSaveMultiRequest(
                     new StorageFileLocation(StorageName, Folder, fileName), multiAccount));
             var multiAccountFromStorage = await Api.Client.Account.GetMultiAsync(
                 new ClientAccountGetMultiRequest(fileName, Folder, StorageName));

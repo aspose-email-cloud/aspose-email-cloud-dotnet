@@ -1,6 +1,6 @@
 
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DiscoverEmailConfigPassword.cs">
+// <copyright company="Aspose" file="ClientAccountSaveMultiRequest.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -38,36 +38,25 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// 
+    /// Email client multi account save request.             
     /// </summary>
-    public class DiscoverEmailConfigPassword : DiscoverEmailConfigRequest 
+    public class ClientAccountSaveMultiRequest : StorageModelOfEmailClientMultiAccount 
     {
-        /// <summary>
-        /// Email account password.             
-        /// </summary>
-        public string Password { get; set; }
+
+        /// <summary>ClientAccountSaveMultiRequest constructor</summary>
+        public ClientAccountSaveMultiRequest() {}
 
 
-        /// <summary>DiscoverEmailConfigPassword constructor</summary>
-        public DiscoverEmailConfigPassword() {}
-
-
-        /// <summary>DiscoverEmailConfigPassword constructor</summary>
-        /// <param name="address">Email address to discover.             </param>
-        /// <param name="fastProcessing">Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.             </param>
-        /// <param name="login">Email account login. If not specified, address used as a login.             </param>
-        /// <param name="password">Email account password.             </param>
-        public DiscoverEmailConfigPassword(
-            string address,
-            bool? fastProcessing,
-            string login,
-            string password
+        /// <summary>ClientAccountSaveMultiRequest constructor</summary>
+        /// <param name="storageFile"></param>
+        /// <param name="value"></param>
+        public ClientAccountSaveMultiRequest(
+            StorageFileLocation storageFile,
+            EmailClientMultiAccount value
         )
         { 
-            Address = address;
-            FastProcessing = fastProcessing;
-            Login = login;
-            Password = password;
+            StorageFile = storageFile;
+            Value = value;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -76,11 +65,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class DiscoverEmailConfigPassword {\n");
-          sb.Append("  Address: ").Append(this.Address).Append("\n");
-          sb.Append("  FastProcessing: ").Append(this.FastProcessing).Append("\n");
-          sb.Append("  Login: ").Append(this.Login).Append("\n");
-          sb.Append("  Password: ").Append(this.Password).Append("\n");
+          sb.Append("class ClientAccountSaveMultiRequest {\n");
+          sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
+          sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

@@ -1,4 +1,4 @@
-# Model.DiscoverEmailConfigPassword
+# Model.EmailConfigDiscoverPasswordRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

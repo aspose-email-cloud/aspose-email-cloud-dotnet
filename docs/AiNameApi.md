@@ -484,7 +484,7 @@ Name | Type | Description  | Notes
 # MatchParsed
 
 ```csharp
-AiNameMatchResult MatchParsed(AiNameParsedMatchRequest request)
+AiNameMatchResult MatchParsed(AiNameMatchParsedRequest request)
 ```
 
 Compare people's parsed names and attributes. Uses options for comparing instructions.             
@@ -495,7 +495,7 @@ Compare people's parsed names and attributes. Uses options for comparing instruc
 
 ### request Parameter
 
-See parameter model documentation at [AiNameParsedMatchRequest](AiNameParsedMatchRequest.md)
+See parameter model documentation at [AiNameMatchParsedRequest](AiNameMatchParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -503,7 +503,7 @@ See parameter model documentation at [AiNameParsedMatchRequest](AiNameParsedMatc
 # MatchParsedAsync
 
 ```csharp
-async Task<AiNameMatchResult> MatchParsedAsync(AiNameParsedMatchRequest request)
+async Task<AiNameMatchResult> MatchParsedAsync(AiNameMatchParsedRequest request)
 ```
 
 Compare people's parsed names and attributes. Uses options for comparing instructions.             
@@ -516,7 +516,7 @@ Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
 
 ### request Parameter
 
-See parameter model documentation at [AiNameParsedMatchRequest](AiNameParsedMatchRequest.md)
+See parameter model documentation at [AiNameMatchParsedRequest](AiNameMatchParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="Parse"></a>

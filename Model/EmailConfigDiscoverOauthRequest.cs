@@ -1,6 +1,6 @@
 
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="DiscoverEmailConfigOauth.cs">
+// <copyright company="Aspose" file="EmailConfigDiscoverOauthRequest.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -40,7 +40,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     /// <summary>
     /// 
     /// </summary>
-    public class DiscoverEmailConfigOauth : DiscoverEmailConfigRequest 
+    public class EmailConfigDiscoverOauthRequest : DiscoverEmailConfigRequest 
     {
         /// <summary>
         /// OAuth client id.             
@@ -63,11 +63,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string RequestUrl { get; set; }
 
 
-        /// <summary>DiscoverEmailConfigOauth constructor</summary>
-        public DiscoverEmailConfigOauth() {}
+        /// <summary>EmailConfigDiscoverOauthRequest constructor</summary>
+        public EmailConfigDiscoverOauthRequest() {}
 
 
-        /// <summary>DiscoverEmailConfigOauth constructor</summary>
+        /// <summary>EmailConfigDiscoverOauthRequest constructor</summary>
         /// <param name="address">Email address to discover.             </param>
         /// <param name="fastProcessing">Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.             </param>
         /// <param name="login">Email account login. If not specified, address used as a login.             </param>
@@ -75,7 +75,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="clientSecret">OAuth client secret.             </param>
         /// <param name="refreshToken">OAuth refresh token.             </param>
         /// <param name="requestUrl">The url to obtain access token. If not specified, will be discovered from email configuration.             </param>
-        public DiscoverEmailConfigOauth(
+        public EmailConfigDiscoverOauthRequest(
             string address,
             bool? fastProcessing,
             string login,
@@ -100,7 +100,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class DiscoverEmailConfigOauth {\n");
+          sb.Append("class EmailConfigDiscoverOauthRequest {\n");
           sb.Append("  Address: ").Append(this.Address).Append("\n");
           sb.Append("  FastProcessing: ").Append(this.FastProcessing).Append("\n");
           sb.Append("  Login: ").Append(this.Login).Append("\n");

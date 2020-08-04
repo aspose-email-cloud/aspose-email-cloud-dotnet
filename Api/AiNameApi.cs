@@ -403,7 +403,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Parsed names to match.</param>
         /// <returns><see cref="AiNameMatchResult"/></returns>
         public AiNameMatchResult MatchParsed(
-            AiNameParsedMatchRequest request)
+            AiNameMatchParsedRequest request)
         {
             // verify the required parameter 'request' is set
             if (request == null)
@@ -430,7 +430,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Parsed names to match.</param>
         /// <returns><see cref="AiNameMatchResult"/></returns>
         public async Task<AiNameMatchResult> MatchParsedAsync(
-            AiNameParsedMatchRequest request) =>
+            AiNameMatchParsedRequest request) =>
             await Task.Run(() => MatchParsed(request
         ));
         #endif

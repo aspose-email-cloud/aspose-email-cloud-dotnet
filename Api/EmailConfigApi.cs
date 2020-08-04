@@ -101,7 +101,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Discover email configuration request.</param>
         /// <returns><see cref="EmailAccountConfigList"/></returns>
         public EmailAccountConfigList DiscoverOauth(
-            DiscoverEmailConfigOauth request)
+            EmailConfigDiscoverOauthRequest request)
         {
             // verify the required parameter 'request' is set
             if (request == null)
@@ -128,7 +128,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Discover email configuration request.</param>
         /// <returns><see cref="EmailAccountConfigList"/></returns>
         public async Task<EmailAccountConfigList> DiscoverOauthAsync(
-            DiscoverEmailConfigOauth request) =>
+            EmailConfigDiscoverOauthRequest request) =>
             await Task.Run(() => DiscoverOauth(request
         ));
         #endif
@@ -140,7 +140,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Discover email configuration request.</param>
         /// <returns><see cref="EmailAccountConfigList"/></returns>
         public EmailAccountConfigList DiscoverPassword(
-            DiscoverEmailConfigPassword request)
+            EmailConfigDiscoverPasswordRequest request)
         {
             // verify the required parameter 'request' is set
             if (request == null)
@@ -167,7 +167,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="request">Discover email configuration request.</param>
         /// <returns><see cref="EmailAccountConfigList"/></returns>
         public async Task<EmailAccountConfigList> DiscoverPasswordAsync(
-            DiscoverEmailConfigPassword request) =>
+            EmailConfigDiscoverPasswordRequest request) =>
             await Task.Run(() => DiscoverPassword(request
         ));
         #endif

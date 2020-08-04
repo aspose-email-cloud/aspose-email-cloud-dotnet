@@ -1,4 +1,4 @@
-# Model.EmailClientMultiAccountSaveRequest
+# Model.ClientAccountSaveMultiRequest
 ## Properties
 Class has no properties
 

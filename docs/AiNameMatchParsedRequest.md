@@ -1,4 +1,4 @@
-# Model.AiNameParsedMatchRequest
+# Model.AiNameMatchParsedRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

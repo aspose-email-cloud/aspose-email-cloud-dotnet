@@ -141,7 +141,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// </summary>
         /// <param name="request">Email account information</param>
         public void Save(
-            EmailClientAccountSaveRequest request)
+            ClientAccountSaveRequest request)
         {
             // verify the required parameter 'request' is set
             if (request == null)
@@ -166,7 +166,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// </summary>
         /// <param name="request">Email account information</param>
         public async Task SaveAsync(
-            EmailClientAccountSaveRequest request) =>
+            ClientAccountSaveRequest request) =>
             await Task.Run(() => Save(request
         ));
         #endif
@@ -177,7 +177,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// </summary>
         /// <param name="request">Email accounts information.</param>
         public void SaveMulti(
-            EmailClientMultiAccountSaveRequest request)
+            ClientAccountSaveMultiRequest request)
         {
             // verify the required parameter 'request' is set
             if (request == null)
@@ -202,7 +202,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// </summary>
         /// <param name="request">Email accounts information.</param>
         public async Task SaveMultiAsync(
-            EmailClientMultiAccountSaveRequest request) =>
+            ClientAccountSaveMultiRequest request) =>
             await Task.Run(() => SaveMulti(request
         ));
         #endif

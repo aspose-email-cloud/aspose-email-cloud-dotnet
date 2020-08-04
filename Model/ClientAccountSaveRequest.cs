@@ -1,6 +1,6 @@
 
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="EmailClientMultiAccountSaveRequest.cs">
+// <copyright company="Aspose" file="ClientAccountSaveRequest.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -38,21 +38,21 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Email client multi account save request.             
+    /// Email client account save request             
     /// </summary>
-    public class EmailClientMultiAccountSaveRequest : StorageModelOfEmailClientMultiAccount 
+    public class ClientAccountSaveRequest : StorageModelOfEmailClientAccount 
     {
 
-        /// <summary>EmailClientMultiAccountSaveRequest constructor</summary>
-        public EmailClientMultiAccountSaveRequest() {}
+        /// <summary>ClientAccountSaveRequest constructor</summary>
+        public ClientAccountSaveRequest() {}
 
 
-        /// <summary>EmailClientMultiAccountSaveRequest constructor</summary>
+        /// <summary>ClientAccountSaveRequest constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
-        public EmailClientMultiAccountSaveRequest(
+        public ClientAccountSaveRequest(
             StorageFileLocation storageFile,
-            EmailClientMultiAccount value
+            EmailClientAccount value
         )
         { 
             StorageFile = storageFile;
@@ -65,7 +65,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class EmailClientMultiAccountSaveRequest {\n");
+          sb.Append("class ClientAccountSaveRequest {\n");
           sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
           sb.Append("  Value: ").Append(this.Value).Append("\n");
           sb.Append("}\n");

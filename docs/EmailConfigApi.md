@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 # DiscoverOauth
 
 ```csharp
-EmailAccountConfigList DiscoverOauth(DiscoverEmailConfigOauth request)
+EmailAccountConfigList DiscoverOauth(EmailConfigDiscoverOauthRequest request)
 ```
 
 Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
@@ -70,7 +70,7 @@ Discover email accounts by email address. Validates discovered accounts using OA
 
 ### request Parameter
 
-See parameter model documentation at [DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
+See parameter model documentation at [EmailConfigDiscoverOauthRequest](EmailConfigDiscoverOauthRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -78,7 +78,7 @@ See parameter model documentation at [DiscoverEmailConfigOauth](DiscoverEmailCon
 # DiscoverOauthAsync
 
 ```csharp
-async Task<EmailAccountConfigList> DiscoverOauthAsync(DiscoverEmailConfigOauth request)
+async Task<EmailAccountConfigList> DiscoverOauthAsync(EmailConfigDiscoverOauthRequest request)
 ```
 
 Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
@@ -91,14 +91,14 @@ Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 
 ### request Parameter
 
-See parameter model documentation at [DiscoverEmailConfigOauth](DiscoverEmailConfigOauth.md)
+See parameter model documentation at [EmailConfigDiscoverOauthRequest](EmailConfigDiscoverOauthRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="DiscoverPassword"></a>
 # DiscoverPassword
 
 ```csharp
-EmailAccountConfigList DiscoverPassword(DiscoverEmailConfigPassword request)
+EmailAccountConfigList DiscoverPassword(EmailConfigDiscoverPasswordRequest request)
 ```
 
 Discover email accounts by email address. Validates discovered accounts using login and password.             
@@ -109,7 +109,7 @@ Discover email accounts by email address. Validates discovered accounts using lo
 
 ### request Parameter
 
-See parameter model documentation at [DiscoverEmailConfigPassword](DiscoverEmailConfigPassword.md)
+See parameter model documentation at [EmailConfigDiscoverPasswordRequest](EmailConfigDiscoverPasswordRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -117,7 +117,7 @@ See parameter model documentation at [DiscoverEmailConfigPassword](DiscoverEmail
 # DiscoverPasswordAsync
 
 ```csharp
-async Task<EmailAccountConfigList> DiscoverPasswordAsync(DiscoverEmailConfigPassword request)
+async Task<EmailAccountConfigList> DiscoverPasswordAsync(EmailConfigDiscoverPasswordRequest request)
 ```
 
 Discover email accounts by email address. Validates discovered accounts using login and password.             
@@ -130,6 +130,6 @@ Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 
 ### request Parameter
 
-See parameter model documentation at [DiscoverEmailConfigPassword](DiscoverEmailConfigPassword.md)
+See parameter model documentation at [EmailConfigDiscoverPasswordRequest](EmailConfigDiscoverPasswordRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

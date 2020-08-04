@@ -1,6 +1,6 @@
 
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright company="Aspose" file="EmailClientAccountSaveRequest.cs">
+// <copyright company="Aspose" file="EmailConfigDiscoverPasswordRequest.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud
 // </copyright>
 // <summary>
@@ -38,25 +38,36 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Email client account save request             
+    /// 
     /// </summary>
-    public class EmailClientAccountSaveRequest : StorageModelOfEmailClientAccount 
+    public class EmailConfigDiscoverPasswordRequest : DiscoverEmailConfigRequest 
     {
+        /// <summary>
+        /// Email account password.             
+        /// </summary>
+        public string Password { get; set; }
 
-        /// <summary>EmailClientAccountSaveRequest constructor</summary>
-        public EmailClientAccountSaveRequest() {}
+
+        /// <summary>EmailConfigDiscoverPasswordRequest constructor</summary>
+        public EmailConfigDiscoverPasswordRequest() {}
 
 
-        /// <summary>EmailClientAccountSaveRequest constructor</summary>
-        /// <param name="storageFile"></param>
-        /// <param name="value"></param>
-        public EmailClientAccountSaveRequest(
-            StorageFileLocation storageFile,
-            EmailClientAccount value
+        /// <summary>EmailConfigDiscoverPasswordRequest constructor</summary>
+        /// <param name="address">Email address to discover.             </param>
+        /// <param name="fastProcessing">Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.             </param>
+        /// <param name="login">Email account login. If not specified, address used as a login.             </param>
+        /// <param name="password">Email account password.             </param>
+        public EmailConfigDiscoverPasswordRequest(
+            string address,
+            bool? fastProcessing,
+            string login,
+            string password
         )
         { 
-            StorageFile = storageFile;
-            Value = value;
+            Address = address;
+            FastProcessing = fastProcessing;
+            Login = login;
+            Password = password;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -65,9 +76,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public override string ToString()  
         {
           var sb = new StringBuilder();
-          sb.Append("class EmailClientAccountSaveRequest {\n");
-          sb.Append("  StorageFile: ").Append(this.StorageFile).Append("\n");
-          sb.Append("  Value: ").Append(this.Value).Append("\n");
+          sb.Append("class EmailConfigDiscoverPasswordRequest {\n");
+          sb.Append("  Address: ").Append(this.Address).Append("\n");
+          sb.Append("  FastProcessing: ").Append(this.FastProcessing).Append("\n");
+          sb.Append("  Login: ").Append(this.Login).Append("\n");
+          sb.Append("  Password: ").Append(this.Password).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

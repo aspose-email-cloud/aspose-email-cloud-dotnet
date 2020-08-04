@@ -1,4 +1,4 @@
-# Model.DiscoverEmailConfigOauth
+# Model.EmailConfigDiscoverOauthRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

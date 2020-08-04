@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 # Save
 
 ```csharp
-void Save(EmailClientAccountSaveRequest request)
+void Save(ClientAccountSaveRequest request)
 ```
 
 Create/update email client account file (*.account) with credentials             
@@ -133,7 +133,7 @@ void (empty response body)
 
 ### request Parameter
 
-See parameter model documentation at [EmailClientAccountSaveRequest](EmailClientAccountSaveRequest.md)
+See parameter model documentation at [ClientAccountSaveRequest](ClientAccountSaveRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -141,7 +141,7 @@ See parameter model documentation at [EmailClientAccountSaveRequest](EmailClient
 # SaveAsync
 
 ```csharp
-async Task SaveAsync(EmailClientAccountSaveRequest request)
+async Task SaveAsync(ClientAccountSaveRequest request)
 ```
 
 Create/update email client account file (*.account) with credentials             
@@ -154,14 +154,14 @@ Task (empty response body)
 
 ### request Parameter
 
-See parameter model documentation at [EmailClientAccountSaveRequest](EmailClientAccountSaveRequest.md)
+See parameter model documentation at [ClientAccountSaveRequest](ClientAccountSaveRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="SaveMulti"></a>
 # SaveMulti
 
 ```csharp
-void SaveMulti(EmailClientMultiAccountSaveRequest request)
+void SaveMulti(ClientAccountSaveMultiRequest request)
 ```
 
 Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
@@ -172,7 +172,7 @@ void (empty response body)
 
 ### request Parameter
 
-See parameter model documentation at [EmailClientMultiAccountSaveRequest](EmailClientMultiAccountSaveRequest.md)
+See parameter model documentation at [ClientAccountSaveMultiRequest](ClientAccountSaveMultiRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -180,7 +180,7 @@ See parameter model documentation at [EmailClientMultiAccountSaveRequest](EmailC
 # SaveMultiAsync
 
 ```csharp
-async Task SaveMultiAsync(EmailClientMultiAccountSaveRequest request)
+async Task SaveMultiAsync(ClientAccountSaveMultiRequest request)
 ```
 
 Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
@@ -193,6 +193,6 @@ Task (empty response body)
 
 ### request Parameter
 
-See parameter model documentation at [EmailClientMultiAccountSaveRequest](EmailClientMultiAccountSaveRequest.md)
+See parameter model documentation at [ClientAccountSaveMultiRequest](ClientAccountSaveMultiRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
