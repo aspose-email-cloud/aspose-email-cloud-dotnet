@@ -47,9 +47,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadFileRequest"/> class.
         /// </summary>
-        /// <param name="path">Path where to upload including filename and extension e.g. /file.ext or /Folder 1/file.ext             If the content is multipart and path does not contains the file name it tries to get them from filename parameter             from Content-Disposition header.             </param>
+        /// <param name="path"></param>
         /// <param name="file">File to upload</param>
-        /// <param name="storageName">Storage name</param>
+        /// <param name="storageName"></param>
         public UploadFileRequest(string path, System.IO.Stream file, string storageName = null)
         {
             this.path = path;
@@ -58,7 +58,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// Path where to upload including filename and extension e.g. /file.ext or /Folder 1/file.ext             If the content is multipart and path does not contains the file name it tries to get them from filename parameter             from Content-Disposition header.             
+        /// Gets or sets path
         /// </summary>
         public string path { get; set; }
 
@@ -68,7 +68,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public System.IO.Stream File { get; set; }
 
         /// <summary>
-        /// Storage name
+        /// Gets or sets storageName
         /// </summary>
         public string storageName { get; set; }
   }

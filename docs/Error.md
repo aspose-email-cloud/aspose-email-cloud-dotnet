@@ -2,10 +2,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Code** | **string** | Code              | [optional] 
-**Message** | **string** | Message              | [optional] 
-**Description** | **string** | Description              | [optional] 
-**InnerError** | [**ErrorDetails**](ErrorDetails.md) | Inner Error              | [optional] 
+**Code** | **string** |  | [optional] 
+**Message** | **string** |  | [optional] 
+**Description** | **string** |  | [optional] 
+**InnerError** | [**ErrorDetails**](ErrorDetails.md) |  | [optional] 
 
 
 

@@ -47,10 +47,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="MoveFolderRequest"/> class.
         /// </summary>
-        /// <param name="srcPath">Folder path to move e.g. &#39;/folder&#39;</param>
-        /// <param name="destPath">Destination folder path to move to e.g &#39;/dst&#39;</param>
-        /// <param name="srcStorageName">Source storage name</param>
-        /// <param name="destStorageName">Destination storage name</param>
+        /// <param name="srcPath"></param>
+        /// <param name="destPath"></param>
+        /// <param name="srcStorageName"></param>
+        /// <param name="destStorageName"></param>
         public MoveFolderRequest(string srcPath, string destPath, string srcStorageName = null, string destStorageName = null)
         {
             this.srcPath = srcPath;
@@ -60,22 +60,22 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// Folder path to move e.g. '/folder'
+        /// Gets or sets srcPath
         /// </summary>
         public string srcPath { get; set; }
 
         /// <summary>
-        /// Destination folder path to move to e.g '/dst'
+        /// Gets or sets destPath
         /// </summary>
         public string destPath { get; set; }
 
         /// <summary>
-        /// Source storage name
+        /// Gets or sets srcStorageName
         /// </summary>
         public string srcStorageName { get; set; }
 
         /// <summary>
-        /// Destination storage name
+        /// Gets or sets destStorageName
         /// </summary>
         public string destStorageName { get; set; }
   }

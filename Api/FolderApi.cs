@@ -56,7 +56,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         }
                     
         /// <summary>
-        /// Copy folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="CopyFolderRequest" /></param>
         public void CopyFolder(CopyFolderRequest request)
@@ -92,7 +92,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Copy folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="CopyFolderRequest" /></param>
         public async Task CopyFolderAsync(CopyFolderRequest request) =>
@@ -101,7 +101,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     
         /// <summary>
-        /// Create the folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="CreateFolderRequest" /></param>
         public void CreateFolder(CreateFolderRequest request)
@@ -128,7 +128,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Create the folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="CreateFolderRequest" /></param>
         public async Task CreateFolderAsync(CreateFolderRequest request) =>
@@ -137,7 +137,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     
         /// <summary>
-        /// Delete folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteFolderRequest" /></param>
         public void DeleteFolder(DeleteFolderRequest request)
@@ -165,7 +165,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Delete folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="DeleteFolderRequest" /></param>
         public async Task DeleteFolderAsync(DeleteFolderRequest request) =>
@@ -174,7 +174,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     
         /// <summary>
-        /// Get all files and folders within a folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="GetFilesListRequest" /></param>
         /// <returns><see cref="FilesList"/></returns>
@@ -203,7 +203,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Get all files and folders within a folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="GetFilesListRequest" /></param>
         /// <returns><see cref="FilesList"/></returns>
@@ -213,7 +213,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
                     
         /// <summary>
-        /// Move folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="MoveFolderRequest" /></param>
         public void MoveFolder(MoveFolderRequest request)
@@ -249,7 +249,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Move folder 
+        ///  
         /// </summary>
         /// <param name="request">Request. <see cref="MoveFolderRequest" /></param>
         public async Task MoveFolderAsync(MoveFolderRequest request) =>

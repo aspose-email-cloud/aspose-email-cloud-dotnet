@@ -37,27 +37,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Error
+    /// 
     /// </summary>
     public class Error 
     {
         /// <summary>
-        /// Code             
+        /// Gets or sets Code
         /// </summary>
         public string Code { get; set; }
 
         /// <summary>
-        /// Message             
+        /// Gets or sets Message
         /// </summary>
         public string Message { get; set; }
 
         /// <summary>
-        /// Description             
+        /// Gets or sets Description
         /// </summary>
         public string Description { get; set; }
 
         /// <summary>
-        /// Inner Error             
+        /// Gets or sets InnerError
         /// </summary>
         public ErrorDetails InnerError { get; set; }
 
@@ -67,10 +67,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>Error constructor</summary>
-        /// <param name="code">Code             </param>
-        /// <param name="message">Message             </param>
-        /// <param name="description">Description             </param>
-        /// <param name="innerError">Inner Error             </param>
+        /// <param name="code"></param>
+        /// <param name="message"></param>
+        /// <param name="description"></param>
+        /// <param name="innerError"></param>
         public Error(
             string code,
             string message,

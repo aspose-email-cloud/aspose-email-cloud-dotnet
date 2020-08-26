@@ -7,11 +7,11 @@ All methods have Async versions. These async versions are not available on .NETF
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CopyFile**](FileApi.md#CopyFile)/[**CopyFileAsync**](FileApi.md#CopyFileAsync)| **PUT** /email/storage/file/copy/{srcPath}| Copy file
-[**DeleteFile**](FileApi.md#DeleteFile)/[**DeleteFileAsync**](FileApi.md#DeleteFileAsync)| **DELETE** /email/storage/file/{path}| Delete file
-[**DownloadFile**](FileApi.md#DownloadFile)/[**DownloadFileAsync**](FileApi.md#DownloadFileAsync)| **GET** /email/storage/file/{path}| Download file
-[**MoveFile**](FileApi.md#MoveFile)/[**MoveFileAsync**](FileApi.md#MoveFileAsync)| **PUT** /email/storage/file/move/{srcPath}| Move file
-[**UploadFile**](FileApi.md#UploadFile)/[**UploadFileAsync**](FileApi.md#UploadFileAsync)| **PUT** /email/storage/file/{path}| Upload file
+[**CopyFile**](FileApi.md#CopyFile)/[**CopyFileAsync**](FileApi.md#CopyFileAsync)| **PUT** /email/storage/file/copy/{srcPath}| 
+[**DeleteFile**](FileApi.md#DeleteFile)/[**DeleteFileAsync**](FileApi.md#DeleteFileAsync)| **DELETE** /email/storage/file/{path}| 
+[**DownloadFile**](FileApi.md#DownloadFile)/[**DownloadFileAsync**](FileApi.md#DownloadFileAsync)| **GET** /email/storage/file/{path}| 
+[**MoveFile**](FileApi.md#MoveFile)/[**MoveFileAsync**](FileApi.md#MoveFileAsync)| **PUT** /email/storage/file/move/{srcPath}| 
+[**UploadFile**](FileApi.md#UploadFile)/[**UploadFileAsync**](FileApi.md#UploadFileAsync)| **PUT** /email/storage/file/{path}| 
 
 
 

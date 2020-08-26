@@ -47,14 +47,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDiscUsageRequest"/> class.
         /// </summary>
-        /// <param name="storageName">Storage name</param>
+        /// <param name="storageName"></param>
         public GetDiscUsageRequest(string storageName = null)
         {
             this.storageName = storageName;
         }
 
         /// <summary>
-        /// Storage name
+        /// Gets or sets storageName
         /// </summary>
         public string storageName { get; set; }
   }

@@ -7,7 +7,7 @@
 void CopyFolder(CopyFolderRequest request)
 ```
 
-Copy folder
+
 
 ### Return type
 
@@ -24,10 +24,10 @@ new CopyFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Source folder path e.g. &#39;/src&#39; | 
- **destPath** | **string**| Destination folder path e.g. &#39;/dst&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -38,7 +38,7 @@ Name | Type | Description  | Notes
 async Task CopyFolderAsync(CopyFolderRequest request)
 ```
 
-Copy folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -57,10 +57,10 @@ new CopyFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Source folder path e.g. &#39;/src&#39; | 
- **destPath** | **string**| Destination folder path e.g. &#39;/dst&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="CreateFolder"></a>
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 void CreateFolder(CreateFolderRequest request)
 ```
 
-Create the folder
+
 
 ### Return type
 
@@ -85,8 +85,8 @@ new CreateFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 async Task CreateFolderAsync(CreateFolderRequest request)
 ```
 
-Create the folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -114,8 +114,8 @@ new CreateFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="DeleteFolder"></a>
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 void DeleteFolder(DeleteFolderRequest request)
 ```
 
-Delete folder
+
 
 ### Return type
 
@@ -141,9 +141,9 @@ new DeleteFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **recursive** | **bool?**|  | [optional] [default to false]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 async Task DeleteFolderAsync(DeleteFolderRequest request)
 ```
 
-Delete folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -172,9 +172,9 @@ new DeleteFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
+ **recursive** | **bool?**|  | [optional] [default to false]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="GetFilesList"></a>
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 FilesList GetFilesList(GetFilesListRequest request)
 ```
 
-Get all files and folders within a folder
+
 
 ### Return type
 
@@ -199,8 +199,8 @@ new GetFilesListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -211,7 +211,7 @@ Name | Type | Description  | Notes
 async Task<FilesList> GetFilesListAsync(GetFilesListRequest request)
 ```
 
-Get all files and folders within a folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -228,8 +228,8 @@ new GetFilesListRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+ **path** | **string**|  | 
+ **storageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="MoveFolder"></a>
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 void MoveFolder(MoveFolderRequest request)
 ```
 
-Move folder
+
 
 ### Return type
 
@@ -256,10 +256,10 @@ new MoveFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Folder path to move e.g. &#39;/folder&#39; | 
- **destPath** | **string**| Destination folder path to move to e.g &#39;/dst&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 async Task MoveFolderAsync(MoveFolderRequest request)
 ```
 
-Move folder
+
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -289,9 +289,9 @@ new MoveFolderRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **srcPath** | **string**| Folder path to move e.g. &#39;/folder&#39; | 
- **destPath** | **string**| Destination folder path to move to e.g &#39;/dst&#39; | 
- **srcStorageName** | **string**| Source storage name | [optional] 
- **destStorageName** | **string**| Destination storage name | [optional] 
+ **srcPath** | **string**|  | 
+ **destPath** | **string**|  | 
+ **srcStorageName** | **string**|  | [optional] 
+ **destStorageName** | **string**|  | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

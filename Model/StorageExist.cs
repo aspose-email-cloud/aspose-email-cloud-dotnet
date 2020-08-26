@@ -37,12 +37,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// Storage exists
+    /// 
     /// </summary>
     public class StorageExist 
     {
         /// <summary>
-        /// Shows that the storage exists.             
+        /// Gets or sets Exists
         /// </summary>
         public bool? Exists { get; set; }
 
@@ -52,7 +52,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>StorageExist constructor</summary>
-        /// <param name="exists">Shows that the storage exists.             </param>
+        /// <param name="exists"></param>
         public StorageExist(
             bool? exists
         )

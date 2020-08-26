@@ -47,11 +47,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CopyFileRequest"/> class.
         /// </summary>
-        /// <param name="srcPath">Source file path e.g. &#39;/folder/file.ext&#39;</param>
-        /// <param name="destPath">Destination file path</param>
-        /// <param name="srcStorageName">Source storage name</param>
-        /// <param name="destStorageName">Destination storage name</param>
-        /// <param name="versionId">File version ID to copy</param>
+        /// <param name="srcPath"></param>
+        /// <param name="destPath"></param>
+        /// <param name="srcStorageName"></param>
+        /// <param name="destStorageName"></param>
+        /// <param name="versionId"></param>
         public CopyFileRequest(string srcPath, string destPath, string srcStorageName = null, string destStorageName = null, string versionId = null)
         {
             this.srcPath = srcPath;
@@ -62,27 +62,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// Source file path e.g. '/folder/file.ext'
+        /// Gets or sets srcPath
         /// </summary>
         public string srcPath { get; set; }
 
         /// <summary>
-        /// Destination file path
+        /// Gets or sets destPath
         /// </summary>
         public string destPath { get; set; }
 
         /// <summary>
-        /// Source storage name
+        /// Gets or sets srcStorageName
         /// </summary>
         public string srcStorageName { get; set; }
 
         /// <summary>
-        /// Destination storage name
+        /// Gets or sets destStorageName
         /// </summary>
         public string destStorageName { get; set; }
 
         /// <summary>
-        /// File version ID to copy
+        /// Gets or sets versionId
         /// </summary>
         public string versionId { get; set; }
   }
