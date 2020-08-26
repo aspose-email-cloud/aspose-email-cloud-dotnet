@@ -3,7 +3,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
     using Client;
     
-    /** <summary>Cloud file storage operations.             </summary>*/
+    /** <summary>Cloud file storage operations.</summary>*/
     public class CloudStorageGroup
     {
     

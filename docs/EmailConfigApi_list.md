@@ -1,5 +1,4 @@
 
-
 ## Documentation for EmailConfigApi operations
 
 All URIs are relative to *https://api.aspose.cloud/v4.0*

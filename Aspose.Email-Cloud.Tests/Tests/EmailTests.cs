@@ -43,7 +43,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var mapiStream = await Api.Email.AsFileAsync(
                 new EmailAsFileRequest("Msg", Email));
             var emlStream =
-                await Api.Email.ConvertAsync(new EmailConvertRequest("Eml", mapiStream));
+                await Api.Email.ConvertAsync(new EmailConvertRequest("Msg", "Eml", mapiStream));
             using (var memoryStream = new MemoryStream())
             {
                 await emlStream.CopyToAsync(memoryStream);

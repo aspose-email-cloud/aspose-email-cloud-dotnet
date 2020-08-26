@@ -1,4 +1,3 @@
-
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="EmailSaveRequest.cs">
 //   Copyright (c) 2016-2020 Aspose.Email for Cloud

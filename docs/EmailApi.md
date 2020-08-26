@@ -94,13 +94,15 @@ Converts email document to specified format and returns as file
 ### request Parameter
 ```csharp
 new EmailConvertRequest(
-    format,
+    fromFormat,
+    toFormat,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **fromFormat** | **string**| File format to convert to Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **toFormat** | **string**| File format to convert from Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -123,13 +125,15 @@ Performs operation asynchronously. Not available on .NETFramework v2.0
 ### request Parameter
 ```csharp
 new EmailConvertRequest(
-    format,
+    fromFormat,
+    toFormat,
     file)
 ```
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **fromFormat** | **string**| File format to convert to Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **toFormat** | **string**| File format to convert from Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

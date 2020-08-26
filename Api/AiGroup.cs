@@ -3,14 +3,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
     using Client;
     
-    /** <summary>AI powered operations.             </summary>*/
+    /** <summary>AI powered operations.</summary>*/
     public class AiGroup
     {
     
-        /** <summary>AI Business card recognition operations.             </summary>*/
+        /** <summary>AI Business card recognition operations.</summary>*/
         public AiBcrApi Bcr { get; }
     
-        /** <summary>AI Name operations.             </summary>*/
+        /** <summary>AI Name operations.</summary>*/
         public AiNameApi Name { get; }
     
         internal AiGroup(ApiInvoker apiInvoker, Configuration configuration)

@@ -10,32 +10,32 @@ namespace Aspose.Email.Cloud.Sdk.Api
     public class EmailCloud
     {
     
-        /** <summary>iCalendar document operations.             </summary>*/
+        /** <summary>iCalendar document operations.</summary>*/
         public CalendarApi Calendar {get;}
     
-        /** <summary>Contact document operations. Supported formats: VCard, MSG, WebDav             </summary>*/
+        /** <summary>Contact document operations. Supported formats: VCard, MSG, WebDav</summary>*/
         public ContactApi Contact {get;}
     
-        /** <summary>Email document (*.eml) operations.             </summary>*/
+        /** <summary>Email document (*.eml) operations.</summary>*/
         public EmailApi Email {get;}
     
-        /** <summary>Check email address is disposable operations             </summary>*/
+        /** <summary>Check email address is disposable operations</summary>*/
         public DisposableEmailApi DisposableEmail {get;}
     
-        /** <summary>Email server configuration discovery.             </summary>*/
+        /** <summary>Email server configuration discovery.</summary>*/
         public EmailConfigApi EmailConfig {get;}
     
     
-        /** <summary>MAPI operations.             </summary>*/
+        /** <summary>MAPI operations.</summary>*/
         public MapiGroup Mapi {get;}
     
-        /** <summary>Builtin Email client operations.             </summary>*/
+        /** <summary>Builtin Email client operations.</summary>*/
         public ClientGroup Client {get;}
     
-        /** <summary>AI powered operations.             </summary>*/
+        /** <summary>AI powered operations.</summary>*/
         public AiGroup Ai {get;}
     
-        /** <summary>Cloud file storage operations.             </summary>*/
+        /** <summary>Cloud file storage operations.</summary>*/
         public CloudStorageGroup CloudStorage {get;}
     
 

@@ -1,4 +1,3 @@
-
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="EmailApi.cs">
 //   Copyright (c) 2018-2020 Aspose.Email for Cloud
@@ -142,11 +141,18 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <returns><see cref="System.IO.Stream"/></returns>
         public System.IO.Stream Convert(EmailConvertRequest request)
         {
-            // verify the required parameter 'format' is set
-            if (request.format == null)
+            // verify the required parameter 'fromFormat' is set
+            if (request.fromFormat == null)
             {
                 throw new ApiException(400,
-                    "Missing required parameter 'format' when calling Convert");
+                    "Missing required parameter 'fromFormat' when calling Convert");
+            }
+
+            // verify the required parameter 'toFormat' is set
+            if (request.toFormat == null)
+            {
+                throw new ApiException(400,
+                    "Missing required parameter 'toFormat' when calling Convert");
             }
 
             // verify the required parameter 'file' is set
@@ -163,7 +169,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var formParams = new Dictionary<string, object>();
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fromFormat", request.fromFormat);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "toFormat", request.toFormat);
             if (request.File != null)
             {
                 formParams.Add("file",

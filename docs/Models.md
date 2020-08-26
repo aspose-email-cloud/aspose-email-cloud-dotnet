@@ -1,4 +1,3 @@
-
 ## List of Models
 
  - [Model.AiBcrImage](AiBcrImage.md)
