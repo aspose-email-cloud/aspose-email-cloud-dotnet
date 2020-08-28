@@ -2,7 +2,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Exists** | **bool?** |  | 
+**Exists** | **bool?** | Shows that the storage exists.              | 
 
 
 

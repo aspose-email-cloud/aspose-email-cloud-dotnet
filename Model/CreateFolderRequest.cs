@@ -47,8 +47,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateFolderRequest"/> class.
         /// </summary>
-        /// <param name="path"></param>
-        /// <param name="storageName"></param>
+        /// <param name="path">Folder path to create e.g. &#39;folder_1/folder_2/&#39;</param>
+        /// <param name="storageName">Storage name</param>
         public CreateFolderRequest(string path, string storageName = null)
         {
             this.path = path;
@@ -56,12 +56,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// Gets or sets path
+        /// Folder path to create e.g. 'folder_1/folder_2/'
         /// </summary>
         public string path { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName
+        /// Storage name
         /// </summary>
         public string storageName { get; set; }
   }

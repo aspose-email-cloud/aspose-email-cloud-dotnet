@@ -47,14 +47,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="StorageExistsRequest"/> class.
         /// </summary>
-        /// <param name="storageName"></param>
+        /// <param name="storageName">Storage name</param>
         public StorageExistsRequest(string storageName)
         {
             this.storageName = storageName;
         }
 
         /// <summary>
-        /// Gets or sets storageName
+        /// Storage name
         /// </summary>
         public string storageName { get; set; }
   }

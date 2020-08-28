@@ -47,8 +47,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GetFileVersionsRequest"/> class.
         /// </summary>
-        /// <param name="path"></param>
-        /// <param name="storageName"></param>
+        /// <param name="path">File path e.g. &#39;/file.ext&#39;</param>
+        /// <param name="storageName">Storage name</param>
         public GetFileVersionsRequest(string path, string storageName = null)
         {
             this.path = path;
@@ -56,12 +56,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// Gets or sets path
+        /// File path e.g. '/file.ext'
         /// </summary>
         public string path { get; set; }
 
         /// <summary>
-        /// Gets or sets storageName
+        /// Storage name
         /// </summary>
         public string storageName { get; set; }
   }

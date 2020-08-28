@@ -37,17 +37,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// 
+    /// File upload result
     /// </summary>
     public class FilesUploadResult 
     {
         /// <summary>
-        /// Gets or sets Uploaded
+        /// List of uploaded file names
         /// </summary>
         public List<string> Uploaded { get; set; }
 
         /// <summary>
-        /// Gets or sets Errors
+        /// List of errors.
         /// </summary>
         public List<Error> Errors { get; set; }
 
@@ -57,8 +57,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>FilesUploadResult constructor</summary>
-        /// <param name="uploaded"></param>
-        /// <param name="errors"></param>
+        /// <param name="uploaded">List of uploaded file names</param>
+        /// <param name="errors">List of errors.</param>
         public FilesUploadResult(
             List<string> uploaded,
             List<Error> errors

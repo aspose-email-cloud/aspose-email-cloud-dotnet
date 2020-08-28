@@ -7,7 +7,7 @@
 DiscUsage GetDiscUsage(GetDiscUsageRequest request)
 ```
 
-
+Get disc usage
 
 ### Return type
 
@@ -21,7 +21,7 @@ new GetDiscUsageRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storageName** | **string**|  | [optional] 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -32,7 +32,7 @@ Name | Type | Description  | Notes
 async Task<DiscUsage> GetDiscUsageAsync(GetDiscUsageRequest request)
 ```
 
-
+Get disc usage
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -48,7 +48,7 @@ new GetDiscUsageRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storageName** | **string**|  | [optional] 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="GetFileVersions"></a>
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 FileVersions GetFileVersions(GetFileVersionsRequest request)
 ```
 
-
+Get file versions
 
 ### Return type
 
@@ -73,8 +73,8 @@ new GetFileVersionsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
- **storageName** | **string**|  | [optional] 
+ **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -85,7 +85,7 @@ Name | Type | Description  | Notes
 async Task<FileVersions> GetFileVersionsAsync(GetFileVersionsRequest request)
 ```
 
-
+Get file versions
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -102,8 +102,8 @@ new GetFileVersionsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
- **storageName** | **string**|  | [optional] 
+ **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="ObjectExists"></a>
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 ObjectExist ObjectExists(ObjectExistsRequest request)
 ```
 
-
+Check if file or folder exists
 
 ### Return type
 
@@ -129,9 +129,9 @@ new ObjectExistsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
- **storageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **path** | **string**| File or folder path e.g. &#39;/file.ext&#39; or &#39;/folder&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 async Task<ObjectExist> ObjectExistsAsync(ObjectExistsRequest request)
 ```
 
-
+Check if file or folder exists
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -160,9 +160,9 @@ new ObjectExistsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **path** | **string**|  | 
- **storageName** | **string**|  | [optional] 
- **versionId** | **string**|  | [optional] 
+ **path** | **string**| File or folder path e.g. &#39;/file.ext&#39; or &#39;/folder&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
         <a name="Exists"></a>
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 StorageExist Exists(StorageExistsRequest request)
 ```
 
-
+Check if storage exists
 
 ### Return type
 
@@ -186,7 +186,7 @@ new StorageExistsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storageName** | **string**|  | 
+ **storageName** | **string**| Storage name | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 async Task<StorageExist> ExistsAsync(StorageExistsRequest request)
 ```
 
-
+Check if storage exists
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -213,6 +213,6 @@ new StorageExistsRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **storageName** | **string**|  | 
+ **storageName** | **string**| Storage name | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

@@ -21,14 +21,17 @@ Aspose.Email Cloud is a REST API for creating email applications that work with 
 - Email configuration discovery.
 - Disposable email address detection.
 
-## New features in version 20.7
-- New MAPI message files API with models:
-    - `MapiMessageDto` - represents the Microsoft Outlook message.
-    - `MapiCalendarDto` - represents the Microsoft Outlook calendar object.
-    - `MapiContactDto` - represents the Microsoft Outlook contact information. 
-- Improved Recurrence pattern support for CalendarDto.
+## New features in version 20.9
 
-See [Release notes](https://docs.aspose.cloud/display/emailcloud/Aspose.Email+Cloud+20.7+Release+Notes).
+Aspose.Email Cloud SDK 20.9.0 is based on a new v4.0 REST API.
+
+- All SDK functions are divided into groups (Email, Calendar, Contact, Client, Ai, Mapi, etc.).
+- Unified file API provided for supported file types (Save, Get, Convert, AsFile, FromFile, AsMapi/AsDto).
+- HierarchicalObject based API is removed.
+- All models are stored in one folder/namespace.
+- The request models are simplified.
+
+See [Release notes](https://docs.aspose.cloud/display/emailcloud/Aspose.Email+Cloud+20.9+Release+Notes).
 
 
 ## How to use the SDK?

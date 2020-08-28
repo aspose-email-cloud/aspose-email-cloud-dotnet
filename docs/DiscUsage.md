@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**UsedSize** | **long?** |  | 
-**TotalSize** | **long?** |  | 
+**UsedSize** | **long?** | Application used disc space. | 
+**TotalSize** | **long?** | Total disc space. | 
 
 
 

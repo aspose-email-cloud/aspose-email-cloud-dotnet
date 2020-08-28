@@ -37,32 +37,32 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// 
+    /// File or folder information
     /// </summary>
     public class StorageFile 
     {
         /// <summary>
-        /// Gets or sets Name
+        /// File or folder name.
         /// </summary>
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets IsFolder
+        /// True if it is a folder.
         /// </summary>
         public bool? IsFolder { get; set; }
 
         /// <summary>
-        /// Gets or sets ModifiedDate
+        /// File or folder last modified DateTime.
         /// </summary>
         public DateTime? ModifiedDate { get; set; }
 
         /// <summary>
-        /// Gets or sets Size
+        /// File or folder size.
         /// </summary>
         public long? Size { get; set; }
 
         /// <summary>
-        /// Gets or sets Path
+        /// File or folder path.
         /// </summary>
         public string Path { get; set; }
 
@@ -72,11 +72,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>StorageFile constructor</summary>
-        /// <param name="name"></param>
-        /// <param name="isFolder"></param>
-        /// <param name="modifiedDate"></param>
-        /// <param name="size"></param>
-        /// <param name="path"></param>
+        /// <param name="name">File or folder name.</param>
+        /// <param name="isFolder">True if it is a folder.</param>
+        /// <param name="modifiedDate">File or folder last modified DateTime.</param>
+        /// <param name="size">File or folder size.</param>
+        /// <param name="path">File or folder path.</param>
         public StorageFile(
             string name,
             bool? isFolder,

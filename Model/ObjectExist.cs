@@ -37,17 +37,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// 
+    /// Object exists
     /// </summary>
     public class ObjectExist 
     {
         /// <summary>
-        /// Gets or sets Exists
+        /// Indicates that the file or folder exists.
         /// </summary>
         public bool? Exists { get; set; }
 
         /// <summary>
-        /// Gets or sets IsFolder
+        /// True if it is a folder, false if it is a file.
         /// </summary>
         public bool? IsFolder { get; set; }
 
@@ -57,8 +57,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>ObjectExist constructor</summary>
-        /// <param name="exists"></param>
-        /// <param name="isFolder"></param>
+        /// <param name="exists">Indicates that the file or folder exists.</param>
+        /// <param name="isFolder">True if it is a folder, false if it is a file.</param>
         public ObjectExist(
             bool? exists,
             bool? isFolder

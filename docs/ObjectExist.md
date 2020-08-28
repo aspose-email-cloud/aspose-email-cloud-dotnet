@@ -2,8 +2,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Exists** | **bool?** |  | 
-**IsFolder** | **bool?** |  | 
+**Exists** | **bool?** | Indicates that the file or folder exists. | 
+**IsFolder** | **bool?** | True if it is a folder, false if it is a file. | 
 
 
 

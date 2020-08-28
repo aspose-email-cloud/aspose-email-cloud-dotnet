@@ -37,17 +37,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// 
+    /// Class for disc space information.
     /// </summary>
     public class DiscUsage 
     {
         /// <summary>
-        /// Gets or sets UsedSize
+        /// Application used disc space.
         /// </summary>
         public long? UsedSize { get; set; }
 
         /// <summary>
-        /// Gets or sets TotalSize
+        /// Total disc space.
         /// </summary>
         public long? TotalSize { get; set; }
 
@@ -57,8 +57,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>DiscUsage constructor</summary>
-        /// <param name="usedSize"></param>
-        /// <param name="totalSize"></param>
+        /// <param name="usedSize">Application used disc space.</param>
+        /// <param name="totalSize">Total disc space.</param>
         public DiscUsage(
             long? usedSize,
             long? totalSize

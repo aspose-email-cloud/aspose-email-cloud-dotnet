@@ -37,17 +37,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Runtime.Serialization;
     using System.Text;
     /// <summary>
-    /// 
+    /// File Version
     /// </summary>
     public class FileVersion : StorageFile 
     {
         /// <summary>
-        /// Gets or sets VersionId
+        /// File Version ID.
         /// </summary>
         public string VersionId { get; set; }
 
         /// <summary>
-        /// Gets or sets IsLatest
+        /// Specifies whether the file is (true) or is not (false) the latest version of an file.
         /// </summary>
         public bool? IsLatest { get; set; }
 
@@ -57,13 +57,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>FileVersion constructor</summary>
-        /// <param name="name"></param>
-        /// <param name="isFolder"></param>
-        /// <param name="modifiedDate"></param>
-        /// <param name="size"></param>
-        /// <param name="path"></param>
-        /// <param name="versionId"></param>
-        /// <param name="isLatest"></param>
+        /// <param name="name">File or folder name.</param>
+        /// <param name="isFolder">True if it is a folder.</param>
+        /// <param name="modifiedDate">File or folder last modified DateTime.</param>
+        /// <param name="size">File or folder size.</param>
+        /// <param name="path">File or folder path.</param>
+        /// <param name="versionId">File Version ID.</param>
+        /// <param name="isLatest">Specifies whether the file is (true) or is not (false) the latest version of an file.</param>
         public FileVersion(
             string name,
             bool? isFolder,
