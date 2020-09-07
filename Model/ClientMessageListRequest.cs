@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="accountStorageFolder">Folder in storage where account file located</param>
         /// <param name="recursive">Specifies that should message be searched in subfolders recursively</param>
         /// <param name="type">MailMessageBase type. Using this property you can get messages in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64</param>
-        /// <param name="format">Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
+        /// <param name="format">Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         public ClientMessageListRequest(string folder, string account, string queryString = null, string storage = null, string accountStorageFolder = null, bool? recursive = null, string type = null, string format = null)
         {
             this.folder = folder;
@@ -103,7 +103,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string type { get; set; }
 
         /// <summary>
-        /// Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
+        /// Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
         public string format { get; set; }
   }

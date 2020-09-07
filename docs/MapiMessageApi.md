@@ -100,7 +100,7 @@ new MapiMessageFromFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -129,7 +129,7 @@ new MapiMessageFromFileRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
  **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
@@ -157,7 +157,7 @@ new MapiMessageGetRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
  **fileName** | **string**| Email document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
@@ -190,7 +190,7 @@ new MapiMessageGetRequest(
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef | 
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
  **fileName** | **string**| Email document file name. | 
  **folder** | **string**| Path to folder in storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 

@@ -51,7 +51,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="file">Message file to append.</param>
         /// <param name="storage">Storage name where account file located.</param>
         /// <param name="accountStorageFolder">Folder in storage where account file located.</param>
-        /// <param name="format">Email file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
+        /// <param name="format">Email file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         /// <param name="folder">Path to folder on email server to append message to.</param>
         /// <param name="markAsSent">Determines that appended message should be market as sent or not.</param>
         public ClientMessageAppendFileRequest(string account, System.IO.Stream file, string storage = null, string accountStorageFolder = null, string format = null, string folder = null, bool? markAsSent = null)
@@ -86,7 +86,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string accountStorageFolder { get; set; }
 
         /// <summary>
-        /// Email file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
+        /// Email file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
         public string format { get; set; }
 

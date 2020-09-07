@@ -52,7 +52,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="folder">Account folder to fetch from (should be specified for some protocols such as IMAP)             </param>
         /// <param name="storage">Storage name where account file located.</param>
         /// <param name="accountStorageFolder">Folder in storage where account file located.</param>
-        /// <param name="format">Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef</param>
+        /// <param name="format">Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         public ClientMessageFetchFileRequest(string messageId, string account, string folder = null, string storage = null, string accountStorageFolder = null, string format = null)
         {
             this.messageId = messageId;
@@ -89,7 +89,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string accountStorageFolder { get; set; }
 
         /// <summary>
-        /// Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef
+        /// Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
         public string format { get; set; }
   }
