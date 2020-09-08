@@ -4,7 +4,6 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Aspose.Email.Cloud.Sdk.Model;
-using Aspose.Email.Cloud.Sdk.Model.Requests;
 using Aspose.Email.Cloud.Sdk.Tests.Utils;
 using NUnit.Framework;
 
@@ -41,35 +40,15 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             }
         };
 
-        /// <summary>
-        /// Contact format specified as Enum, but SDK represents it as a string.
-        /// Test checks that value parsing works properly
-        /// </summary>
-        [Test]
-        public async Task ContactFormatTest()
-        {
-            foreach (var format in new[] {"vcard", "msg"})
-            {
-                var extension = format == "vcard" ? ".vcf" : ".msg";
-                var name = $"{Guid.NewGuid().ToString()}{extension}";
-                await EmailApi.CreateContactAsync(new CreateContactRequest(format, name,
-                    new HierarchicalObjectRequest(
-                        new HierarchicalObject("CONTACT", null, new List<BaseObject>()),
-                        new StorageFolderLocation(StorageName, Folder))));
-                var contactExist = await IsFileExist(name);
-                Assert.IsTrue(contactExist);
-            }
-        }
 
         [Test]
         public async Task ContactModelTest()
         {
             var contactFile = $"{Guid.NewGuid().ToString()}.vcf";
-            await EmailApi.SaveContactModelAsync(
-                new SaveContactModelRequest(
-                    "VCard", contactFile,
-                    new StorageModelRqOfContactDto(Contact,
-                        new StorageFolderLocation(StorageName, Folder))));
+            await Api.Contact.SaveAsync(
+                new ContactSaveRequest(
+                    new StorageFileLocation(StorageName, Folder, contactFile),
+                    Contact, "VCard"));
             var exists = await IsFileExist(contactFile);
             Assert.True(exists);
         }
@@ -77,11 +56,10 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         [Test]
         public async Task ConvertContactTest()
         {
-            var mapiStream = await EmailApi.ConvertContactModelToFileAsync(
-                new ConvertContactModelToFileRequest(
-                    "Msg", Contact));
-            var vcardStream = await EmailApi.ConvertContactAsync(new ConvertContactRequest(
-                "VCard", "Msg", mapiStream));
+            var mapiStream = await Api.Contact.AsFileAsync(
+                new ContactAsFileRequest("Msg", Contact));
+            var vcardStream = await Api.Contact.ConvertAsync(
+                new ContactConvertRequest("VCard", "Msg", mapiStream));
             using (var memoryStream = new MemoryStream())
             {
                 await vcardStream.CopyToAsync(memoryStream);
@@ -90,16 +68,16 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             }
 
             vcardStream.Seek(0, SeekOrigin.Begin);
-            var dto = await EmailApi.GetContactFileAsModelAsync(
-                new GetContactFileAsModelRequest("VCard", vcardStream));
+            var dto = await Api.Contact.FromFileAsync(
+                new ContactFromFileRequest("VCard", vcardStream));
             Assert.AreEqual(Surname, dto.Surname);
         }
-        
+
         [Test]
         public async Task ConvertModelToMapiModelTest()
         {
-            var mapiContact = await EmailApi.ConvertContactModelToMapiModelAsync(
-                new ConvertContactModelToMapiModelRequest(Contact));
+            var mapiContact = await Api.Contact.AsMapiAsync(
+                Contact);
             Assert.AreEqual(Contact.Surname, mapiContact.NameInfo.Surname);
         }
     }

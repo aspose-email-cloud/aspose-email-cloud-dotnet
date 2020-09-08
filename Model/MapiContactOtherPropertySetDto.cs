@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// The properties are used to specify additional properties of contact.             
     /// </summary>
@@ -39,46 +43,48 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Indicates whether the end-user wants this message object hidden from other users who have access to the message object.             
-        /// </summary>  
+        /// </summary>
         public bool? Private { get; set; }
 
         /// <summary>
         /// Specifies whether to create a journal for each action associated with this contact.             
-        /// </summary>  
+        /// </summary>
         public bool? Journal { get; set; }
 
         /// <summary>
         /// Specifies the initial signal time for a reminder.             
-        /// </summary>  
+        /// </summary>
         public DateTime? ReminderTime { get; set; }
 
         /// <summary>
         /// Represents the status of a meeting request.             
-        /// </summary>  
+        /// </summary>
         public string ReminderTopic { get; set; }
 
         /// <summary>
         /// Specifies the first field on the contact that is intended for miscellaneous use for the contact.             
-        /// </summary>  
+        /// </summary>
         public string UserField1 { get; set; }
 
         /// <summary>
         /// Specifies the second field on the contact that is intended for miscellaneous use for the contact.             
-        /// </summary>  
+        /// </summary>
         public string UserField2 { get; set; }
 
         /// <summary>
         /// Specifies the third field on the contact that is intended for miscellaneous use for the contact.             
-        /// </summary>  
+        /// </summary>
         public string UserField3 { get; set; }
 
         /// <summary>
         /// Specifies the forth field on the contact that is intended for miscellaneous use for the contact.             
-        /// </summary>  
+        /// </summary>
         public string UserField4 { get; set; }
+
 
         /// <summary>MapiContactOtherPropertySetDto constructor</summary>
         public MapiContactOtherPropertySetDto() {}
+
 
         /// <summary>MapiContactOtherPropertySetDto constructor</summary>
         /// <param name="_private">Indicates whether the end-user wants this message object hidden from other users who have access to the message object.             </param>
@@ -89,8 +95,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="userField2">Specifies the second field on the contact that is intended for miscellaneous use for the contact.             </param>
         /// <param name="userField3">Specifies the third field on the contact that is intended for miscellaneous use for the contact.             </param>
         /// <param name="userField4">Specifies the forth field on the contact that is intended for miscellaneous use for the contact.             </param>
-        public MapiContactOtherPropertySetDto(bool? _private, bool? journal, DateTime? reminderTime, string reminderTopic, string userField1, string userField2, string userField3, string userField4)
-        {
+        public MapiContactOtherPropertySetDto(
+            bool? _private,
+            bool? journal,
+            DateTime? reminderTime,
+            string reminderTopic,
+            string userField1,
+            string userField2,
+            string userField3,
+            string userField4
+        )
+        { 
             Private = _private;
             Journal = journal;
             ReminderTime = reminderTime;

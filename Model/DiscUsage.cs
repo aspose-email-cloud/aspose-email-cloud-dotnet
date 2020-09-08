@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,31 +36,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// Class for disc space information.
     /// </summary>
     public class DiscUsage 
     {
         /// <summary>
-        /// Gets or sets UsedSize
-        /// </summary>  
+        /// Application used disc space.
+        /// </summary>
         public long? UsedSize { get; set; }
 
         /// <summary>
-        /// Gets or sets TotalSize
-        /// </summary>  
+        /// Total disc space.
+        /// </summary>
         public long? TotalSize { get; set; }
+
 
         /// <summary>DiscUsage constructor</summary>
         public DiscUsage() {}
 
+
         /// <summary>DiscUsage constructor</summary>
-        /// <param name="usedSize"></param>
-        /// <param name="totalSize"></param>
-        public DiscUsage(long? usedSize, long? totalSize)
-        {
+        /// <param name="usedSize">Application used disc space.</param>
+        /// <param name="totalSize">Total disc space.</param>
+        public DiscUsage(
+            long? usedSize,
+            long? totalSize
+        )
+        { 
             UsedSize = usedSize;
             TotalSize = totalSize;
         }

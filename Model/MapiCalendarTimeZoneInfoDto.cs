@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents the mapi calendar time zone rule.             
     /// </summary>
@@ -39,41 +43,43 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Time zone's offset in minutes from UTC.             
-        /// </summary>  
+        /// </summary>
         public int? Bias { get; set; }
 
         /// <summary>
         /// Offset in minutes from lBias during daylight saving time.             
-        /// </summary>  
+        /// </summary>
         public int? DaylightBias { get; set; }
 
         /// <summary>
         /// Date and local time that indicate when to begin using the DaylightBias.             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarTimeZoneRuleDto DaylightDate { get; set; }
 
         /// <summary>
         /// Offset in minutes from lBias during standard time.             
-        /// </summary>  
+        /// </summary>
         public int? StandardBias { get; set; }
 
         /// <summary>
         /// Date and local time that indicate when to begin using the StandardBias.             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarTimeZoneRuleDto StandardDate { get; set; }
 
         /// <summary>
         /// Individual bit flags that specify information about this TimeZoneRule.              Items: Enumerates the individual bit flags that specify information about TimeZoneRule Enum, available values: TzRuleFlagRecurCurrentTzReg, TzRuleFlagEffectiveTzReg
-        /// </summary>  
+        /// </summary>
         public List<string> TimeZoneFlags { get; set; }
 
         /// <summary>
         /// Year in which this rule is scheduled to take effect.             
-        /// </summary>  
+        /// </summary>
         public int? Year { get; set; }
+
 
         /// <summary>MapiCalendarTimeZoneInfoDto constructor</summary>
         public MapiCalendarTimeZoneInfoDto() {}
+
 
         /// <summary>MapiCalendarTimeZoneInfoDto constructor</summary>
         /// <param name="bias">Time zone's offset in minutes from UTC.             </param>
@@ -83,8 +89,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="standardDate">Date and local time that indicate when to begin using the StandardBias.             </param>
         /// <param name="timeZoneFlags">Individual bit flags that specify information about this TimeZoneRule.             </param>
         /// <param name="year">Year in which this rule is scheduled to take effect.             </param>
-        public MapiCalendarTimeZoneInfoDto(int? bias, int? daylightBias, MapiCalendarTimeZoneRuleDto daylightDate, int? standardBias, MapiCalendarTimeZoneRuleDto standardDate, List<string> timeZoneFlags, int? year)
-        {
+        public MapiCalendarTimeZoneInfoDto(
+            int? bias,
+            int? daylightBias,
+            MapiCalendarTimeZoneRuleDto daylightDate,
+            int? standardBias,
+            MapiCalendarTimeZoneRuleDto standardDate,
+            List<string> timeZoneFlags,
+            int? year
+        )
+        { 
             Bias = bias;
             DaylightBias = daylightBias;
             DaylightDate = daylightDate;

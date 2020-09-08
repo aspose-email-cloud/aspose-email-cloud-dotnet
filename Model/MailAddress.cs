@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents the address of a message.
     /// </summary>
@@ -39,34 +43,41 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Display name             
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Address             
-        /// </summary>  
+        /// </summary>
         public string Address { get; set; }
 
         /// <summary>
         /// Identifies the participation status for the calendar user. Enum, available values: NeedsAction, Accepted, Declined, Tentative, Delegated
-        /// </summary>  
+        /// </summary>
         public string ParticipationStatus { get; set; }
 
         /// <summary>
         /// The original e-mail address string             
-        /// </summary>  
+        /// </summary>
         public string OriginalAddressString { get; set; }
+
 
         /// <summary>MailAddress constructor</summary>
         public MailAddress() {}
+
 
         /// <summary>MailAddress constructor</summary>
         /// <param name="displayName">Display name             </param>
         /// <param name="address">Address             </param>
         /// <param name="participationStatus">Identifies the participation status for the calendar user. Enum, available values: NeedsAction, Accepted, Declined, Tentative, Delegated</param>
         /// <param name="originalAddressString">The original e-mail address string             </param>
-        public MailAddress(string displayName, string address, string participationStatus, string originalAddressString)
-        {
+        public MailAddress(
+            string displayName,
+            string address,
+            string participationStatus,
+            string originalAddressString
+        )
+        { 
             DisplayName = displayName;
             Address = address;
             ParticipationStatus = participationStatus;

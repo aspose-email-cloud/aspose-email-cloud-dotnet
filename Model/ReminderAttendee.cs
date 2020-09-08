@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Defines an \&quot;Attendee\&quot; within a alarm.
     /// </summary>
@@ -39,16 +43,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Contains the email address.
-        /// </summary>  
+        /// </summary>
         public string Address { get; set; }
+
 
         /// <summary>ReminderAttendee constructor</summary>
         public ReminderAttendee() {}
 
+
         /// <summary>ReminderAttendee constructor</summary>
         /// <param name="address">Contains the email address.</param>
-        public ReminderAttendee(string address)
-        {
+        public ReminderAttendee(
+            string address
+        )
+        { 
             Address = address;
         }
         /// <summary>

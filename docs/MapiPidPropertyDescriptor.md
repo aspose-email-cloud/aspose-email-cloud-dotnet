@@ -7,8 +7,10 @@ Name | Type | Description | Notes
 **MultipleValuesDataType** | **bool?** | Indicates if data type contains of multiple values              | 
 **Name** | **string** | A string that identifies the property              | [optional] 
 
- Parent class: [MapiPropertyDescriptor](MapiPropertyDescriptor.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [MapiPropertyDescriptor](MapiPropertyDescriptor.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

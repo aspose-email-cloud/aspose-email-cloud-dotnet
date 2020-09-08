@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,29 +36,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Daily recurrence.             
     /// </summary>
     public class DailyRecurrencePatternDto : RecurrencePatternDto 
     {
+
         /// <summary>DailyRecurrencePatternDto constructor</summary>
         public DailyRecurrencePatternDto() {}
+
 
         /// <summary>DailyRecurrencePatternDto constructor</summary>
         /// <param name="interval">Number of recurrence units.             </param>
         /// <param name="occurs">Number of occurrences of the recurrence pattern.             </param>
         /// <param name="endDate">End date.             </param>
         /// <param name="weekStart">Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
-        /// <param name="discriminator"></param>
-        public DailyRecurrencePatternDto(int? interval, int? occurs, DateTime? endDate, string weekStart, string discriminator)
-        {
+        public DailyRecurrencePatternDto(
+            int? interval,
+            int? occurs,
+            DateTime? endDate,
+            string weekStart
+            
+        )
+        { 
             Interval = interval;
             Occurs = occurs;
             EndDate = endDate;
             WeekStart = weekStart;
-            Discriminator = discriminator;
         }
         /// <summary>
         /// Get the string presentation of the object

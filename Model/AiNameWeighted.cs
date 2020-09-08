@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Name with score             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Name             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Score of name             
-        /// </summary>  
+        /// </summary>
         public double? Score { get; set; }
+
 
         /// <summary>AiNameWeighted constructor</summary>
         public AiNameWeighted() {}
 
+
         /// <summary>AiNameWeighted constructor</summary>
         /// <param name="name">Name             </param>
         /// <param name="score">Score of name             </param>
-        public AiNameWeighted(string name, double? score)
-        {
+        public AiNameWeighted(
+            string name,
+            double? score
+        )
+        { 
             Name = name;
             Score = score;
         }

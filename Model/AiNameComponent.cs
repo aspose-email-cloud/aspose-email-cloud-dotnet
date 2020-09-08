@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Parsed name component             
     /// </summary>
@@ -39,34 +43,41 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Component value             
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
 
         /// <summary>
         /// Name component category. Enum, available values: Unknown, Mononym, Score, Format, FirstInitial, FirstName, MiddleInitial, MiddleName, MiddleNickname, MiddleSobriquet, MiddleMaidenName, MiddlePatronym, MiddleMatronym, LastInitial, LastName, LastNobiliaryParticle, LastNominalConjunction, LastPaternalSurname, LastMaternalSurname, PrefixTitle, PostfixGenerationalTitle, PostfixPostnominalLetters, ArabicIsm, ArabicKunya, ArabicNasab, ArabicSlaqab, ArabicNisbah
-        /// </summary>  
+        /// </summary>
         public string Category { get; set; }
 
         /// <summary>
         /// Score from 0.0 to 1.0             
-        /// </summary>  
+        /// </summary>
         public double? Score { get; set; }
 
         /// <summary>
         /// Component position from 0             
-        /// </summary>  
+        /// </summary>
         public int? Position { get; set; }
+
 
         /// <summary>AiNameComponent constructor</summary>
         public AiNameComponent() {}
+
 
         /// <summary>AiNameComponent constructor</summary>
         /// <param name="value">Component value             </param>
         /// <param name="category">Name component category. Enum, available values: Unknown, Mononym, Score, Format, FirstInitial, FirstName, MiddleInitial, MiddleName, MiddleNickname, MiddleSobriquet, MiddleMaidenName, MiddlePatronym, MiddleMatronym, LastInitial, LastName, LastNobiliaryParticle, LastNominalConjunction, LastPaternalSurname, LastMaternalSurname, PrefixTitle, PostfixGenerationalTitle, PostfixPostnominalLetters, ArabicIsm, ArabicKunya, ArabicNasab, ArabicSlaqab, ArabicNisbah</param>
         /// <param name="score">Score from 0.0 to 1.0             </param>
         /// <param name="position">Component position from 0             </param>
-        public AiNameComponent(string value, string category, double? score, int? position)
-        {
+        public AiNameComponent(
+            string value,
+            string category,
+            double? score,
+            int? position
+        )
+        { 
             Value = value;
             Category = category;
             Score = score;

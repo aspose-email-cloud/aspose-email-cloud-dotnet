@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Name gender hypothesis             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Recognized name gender. Enum, available values: Male, Female, Unknown
-        /// </summary>  
+        /// </summary>
         public string Gender { get; set; }
 
         /// <summary>
         /// Hypothesis score             
-        /// </summary>  
+        /// </summary>
         public double? Score { get; set; }
+
 
         /// <summary>AiNameGenderHypothesis constructor</summary>
         public AiNameGenderHypothesis() {}
 
+
         /// <summary>AiNameGenderHypothesis constructor</summary>
         /// <param name="gender">Recognized name gender. Enum, available values: Male, Female, Unknown</param>
         /// <param name="score">Hypothesis score             </param>
-        public AiNameGenderHypothesis(string gender, double? score)
-        {
+        public AiNameGenderHypothesis(
+            string gender,
+            double? score
+        )
+        { 
             Gender = gender;
             Score = score;
         }

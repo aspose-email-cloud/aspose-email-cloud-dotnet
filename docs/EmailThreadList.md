@@ -1,10 +1,11 @@
 # Model.EmailThreadList
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Class has no properties
 
- Parent class: [ListResponseOfEmailThread](ListResponseOfEmailThread.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [ListResponseOfEmailThread](ListResponseOfEmailThread.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

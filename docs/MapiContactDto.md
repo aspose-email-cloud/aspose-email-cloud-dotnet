@@ -12,8 +12,10 @@ Name | Type | Description | Notes
 **ProfessionalInfo** | [**MapiContactProfessionalPropertySetDto**](MapiContactProfessionalPropertySetDto.md) | Properties are used to store professional details for the person represented by the contact.              | [optional] 
 **Telephones** | [**MapiContactTelephonePropertySetDto**](MapiContactTelephonePropertySetDto.md) | Specify telephone numbers for the contact.              | [optional] 
 
- Parent class: [MapiMessageItemBaseDto](MapiMessageItemBaseDto.md)
+## Parent class
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+See: [MapiMessageItemBaseDto](MapiMessageItemBaseDto.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

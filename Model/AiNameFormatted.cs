@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Formatted name             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Formatted name value             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Usually empty; can contain extra message describing some issue occurred during the formatting             
-        /// </summary>  
+        /// </summary>
         public string Comments { get; set; }
+
 
         /// <summary>AiNameFormatted constructor</summary>
         public AiNameFormatted() {}
 
+
         /// <summary>AiNameFormatted constructor</summary>
         /// <param name="name">Formatted name value             </param>
         /// <param name="comments">Usually empty; can contain extra message describing some issue occurred during the formatting             </param>
-        public AiNameFormatted(string name, string comments)
-        {
+        public AiNameFormatted(
+            string name,
+            string comments
+        )
+        { 
             Name = name;
             Comments = comments;
         }

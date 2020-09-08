@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,25 +36,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Contains data and type of contact&#39;s photo.             
     /// </summary>
     public class MapiContactPhotoDto : ContactPhoto 
     {
+
         /// <summary>MapiContactPhotoDto constructor</summary>
         public MapiContactPhotoDto() {}
+
 
         /// <summary>MapiContactPhotoDto constructor</summary>
         /// <param name="photoImageFormat">MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff</param>
         /// <param name="base64Data">Photo serialized as base64 string.             </param>
-        /// <param name="discriminator"></param>
-        public MapiContactPhotoDto(string photoImageFormat, string base64Data, string discriminator)
-        {
+        public MapiContactPhotoDto(
+            string photoImageFormat,
+            string base64Data
+            
+        )
+        { 
             PhotoImageFormat = photoImageFormat;
             Base64Data = base64Data;
-            Discriminator = discriminator;
         }
         /// <summary>
         /// Get the string presentation of the object

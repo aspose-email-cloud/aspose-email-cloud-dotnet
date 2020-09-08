@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Email address.             
     /// </summary>
@@ -39,36 +43,38 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Address category.             
-        /// </summary>  
+        /// </summary>
         public EnumWithCustomOfEmailAddressCategory Category { get; set; }
 
         /// <summary>
         /// Display name.             
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Defines whether email address is preferred.             
-        /// </summary>  
+        /// </summary>
         public bool? Preferred { get; set; }
 
         /// <summary>
         /// A routing type for an email.             
-        /// </summary>  
+        /// </summary>
         public string RoutingType { get; set; }
 
         /// <summary>
         /// Email address.             
-        /// </summary>  
+        /// </summary>
         public string Address { get; set; }
 
         /// <summary>
         /// The original e-mail address string             
-        /// </summary>  
+        /// </summary>
         public string OriginalAddressString { get; set; }
+
 
         /// <summary>EmailAddress constructor</summary>
         public EmailAddress() {}
+
 
         /// <summary>EmailAddress constructor</summary>
         /// <param name="category">Address category.             </param>
@@ -77,8 +83,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="routingType">A routing type for an email.             </param>
         /// <param name="address">Email address.             </param>
         /// <param name="originalAddressString">The original e-mail address string             </param>
-        public EmailAddress(EnumWithCustomOfEmailAddressCategory category, string displayName, bool? preferred, string routingType, string address, string originalAddressString)
-        {
+        public EmailAddress(
+            EnumWithCustomOfEmailAddressCategory category,
+            string displayName,
+            bool? preferred,
+            string routingType,
+            string address,
+            string originalAddressString
+        )
+        { 
             Category = category;
             DisplayName = displayName;
             Preferred = preferred;

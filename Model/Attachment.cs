@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Document attachment.             
     /// </summary>
@@ -39,31 +43,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Content-Disposition header. Read only.             
-        /// </summary>  
+        /// </summary>
         public string ContentDisposition { get; set; }
 
         /// <summary>
         /// Determines if attachment is an embedded message. Read only.             
-        /// </summary>  
+        /// </summary>
         public bool? IsEmbeddedMessage { get; set; }
 
         /// <summary>
         /// Attachment name.             
-        /// </summary>  
+        /// </summary>
         public string Name { get; set; }
 
         /// <summary>
         /// Encoding of attachment name.             
-        /// </summary>  
+        /// </summary>
         public string NameEncoding { get; set; }
 
         /// <summary>
         /// Preferred text encoding.             
-        /// </summary>  
+        /// </summary>
         public string PreferredTextEncoding { get; set; }
+
 
         /// <summary>Attachment constructor</summary>
         public Attachment() {}
+
 
         /// <summary>Attachment constructor</summary>
         /// <param name="base64Data">Attachment file content as Base64 string.             </param>
@@ -75,8 +81,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="name">Attachment name.             </param>
         /// <param name="nameEncoding">Encoding of attachment name.             </param>
         /// <param name="preferredTextEncoding">Preferred text encoding.             </param>
-        public Attachment(string base64Data, string contentId, ContentType contentType, Dictionary<string, string> headers, string contentDisposition, bool? isEmbeddedMessage, string name, string nameEncoding, string preferredTextEncoding)
-        {
+        public Attachment(
+            string base64Data,
+            string contentId,
+            ContentType contentType,
+            Dictionary<string, string> headers,
+            string contentDisposition,
+            bool? isEmbeddedMessage,
+            string name,
+            string nameEncoding,
+            string preferredTextEncoding
+        )
+        { 
             Base64Data = base64Data;
             ContentId = contentId;
             ContentType = contentType;

@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Instant messenger address.             
     /// </summary>
@@ -39,28 +43,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Address category.             
-        /// </summary>  
+        /// </summary>
         public EnumWithCustomOfInstantMessengerCategory Category { get; set; }
 
         /// <summary>
         /// Address.             
-        /// </summary>  
+        /// </summary>
         public string Address { get; set; }
 
         /// <summary>
         /// Determines whether this address is preferred.             
-        /// </summary>  
+        /// </summary>
         public bool? Preferred { get; set; }
+
 
         /// <summary>InstantMessengerAddress constructor</summary>
         public InstantMessengerAddress() {}
+
 
         /// <summary>InstantMessengerAddress constructor</summary>
         /// <param name="category">Address category.             </param>
         /// <param name="address">Address.             </param>
         /// <param name="preferred">Determines whether this address is preferred.             </param>
-        public InstantMessengerAddress(EnumWithCustomOfInstantMessengerCategory category, string address, bool? preferred)
-        {
+        public InstantMessengerAddress(
+            EnumWithCustomOfInstantMessengerCategory category,
+            string address,
+            bool? preferred
+        )
+        { 
             Category = category;
             Address = address;
             Preferred = preferred;

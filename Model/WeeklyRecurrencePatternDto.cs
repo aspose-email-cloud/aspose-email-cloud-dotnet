@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Weekly recurrence pattern.             
     /// </summary>
@@ -39,26 +43,33 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Start days              Items: Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay
-        /// </summary>  
+        /// </summary>
         public List<string> StartDays { get; set; }
+
 
         /// <summary>WeeklyRecurrencePatternDto constructor</summary>
         public WeeklyRecurrencePatternDto() {}
+
 
         /// <summary>WeeklyRecurrencePatternDto constructor</summary>
         /// <param name="interval">Number of recurrence units.             </param>
         /// <param name="occurs">Number of occurrences of the recurrence pattern.             </param>
         /// <param name="endDate">End date.             </param>
         /// <param name="weekStart">Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
-        /// <param name="discriminator"></param>
         /// <param name="startDays">Start days             </param>
-        public WeeklyRecurrencePatternDto(int? interval, int? occurs, DateTime? endDate, string weekStart, string discriminator, List<string> startDays)
-        {
+        public WeeklyRecurrencePatternDto(
+            int? interval,
+            int? occurs,
+            DateTime? endDate,
+            string weekStart
+            ,
+            List<string> startDays
+        )
+        { 
             Interval = interval;
             Occurs = occurs;
             EndDate = endDate;
             WeekStart = weekStart;
-            Discriminator = discriminator;
             StartDays = startDays;
         }
         /// <summary>

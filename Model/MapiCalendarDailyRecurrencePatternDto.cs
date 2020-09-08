@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents the daily recurrence pattern of the mapi calendar.             
     /// </summary>
@@ -39,11 +43,13 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Days of week at which the event occurs.              Items: Enumerates the days of week of the mapi calendar recurrence pattern Enum, available values: Saturday, Friday, Thursday, Wednesday, Tuesday, Monday, Sunday
-        /// </summary>  
+        /// </summary>
         public List<string> DayOfWeek { get; set; }
+
 
         /// <summary>MapiCalendarDailyRecurrencePatternDto constructor</summary>
         public MapiCalendarDailyRecurrencePatternDto() {}
+
 
         /// <summary>MapiCalendarDailyRecurrencePatternDto constructor</summary>
         /// <param name="calendarType">Enumerated the calendar type of the mapi recurrence Enum, available values: Default, CalGregorian, CalGregorianUs, CalJapan, CalTaiwan, CalKorea, CalHijri, CalThai, CalHebrew, CalGregorianMeFrench, CalGregorianArabic, CalGregorianXLitEnglish, CalGregorianXLitFrench, CalLunarJapanese, CalChineseLunar, CalSaka, CalLunarEtoChn, CalLunarEtoKor, CalLunarRokuyou, CalLunarKorean, CalUmAlQura</param>
@@ -59,10 +65,25 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="slidingFlag">Defines whether pattern is sliding or not.             </param>
         /// <param name="startDate">Start date of an item recurrence pattern.             </param>
         /// <param name="weekStartDay">Day of week. Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
-        /// <param name="discriminator"></param>
         /// <param name="dayOfWeek">Days of week at which the event occurs.             </param>
-        public MapiCalendarDailyRecurrencePatternDto(string calendarType, List<DateTime?> deletedInstanceDates, DateTime? endDate, string endType, List<MapiCalendarExceptionInfoDto> exceptions, string frequency, List<DateTime?> modifiedInstanceDates, long? occurrenceCount, string patternType, long? period, bool? slidingFlag, DateTime? startDate, string weekStartDay, string discriminator, List<string> dayOfWeek)
-        {
+        public MapiCalendarDailyRecurrencePatternDto(
+            string calendarType,
+            List<DateTime?> deletedInstanceDates,
+            DateTime? endDate,
+            string endType,
+            List<MapiCalendarExceptionInfoDto> exceptions,
+            string frequency,
+            List<DateTime?> modifiedInstanceDates,
+            long? occurrenceCount,
+            string patternType,
+            long? period,
+            bool? slidingFlag,
+            DateTime? startDate,
+            string weekStartDay
+            ,
+            List<string> dayOfWeek
+        )
+        { 
             CalendarType = calendarType;
             DeletedInstanceDates = deletedInstanceDates;
             EndDate = endDate;
@@ -76,7 +97,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
             SlidingFlag = slidingFlag;
             StartDate = startDate;
             WeekStartDay = weekStartDay;
-            Discriminator = discriminator;
             DayOfWeek = dayOfWeek;
         }
         /// <summary>

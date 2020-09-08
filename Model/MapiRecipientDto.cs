@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents the recipient information in the Microsoft Outlook Message.             
     /// </summary>
@@ -39,34 +43,41 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Email address of the message recipient or sender.             
-        /// </summary>  
+        /// </summary>
         public string EmailAddress { get; set; }
 
         /// <summary>
         /// Type of the address of the message recipient or sender.             
-        /// </summary>  
+        /// </summary>
         public string AddressType { get; set; }
 
         /// <summary>
         /// Display name of the message recipient or sender.             
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// Represent the PR_RECIPIENT_TYPE property which contains the recipient type for a message recipient. Enum, available values: Unknown, MapiBcc, MapiCc, MapiP1, MapiSubmitted, MapiTo
-        /// </summary>  
+        /// </summary>
         public string RecipientType { get; set; }
+
 
         /// <summary>MapiRecipientDto constructor</summary>
         public MapiRecipientDto() {}
+
 
         /// <summary>MapiRecipientDto constructor</summary>
         /// <param name="emailAddress">Email address of the message recipient or sender.             </param>
         /// <param name="addressType">Type of the address of the message recipient or sender.             </param>
         /// <param name="displayName">Display name of the message recipient or sender.             </param>
         /// <param name="recipientType">Represent the PR_RECIPIENT_TYPE property which contains the recipient type for a message recipient. Enum, available values: Unknown, MapiBcc, MapiCc, MapiP1, MapiSubmitted, MapiTo</param>
-        public MapiRecipientDto(string emailAddress, string addressType, string displayName, string recipientType)
-        {
+        public MapiRecipientDto(
+            string emailAddress,
+            string addressType,
+            string displayName,
+            string recipientType
+        )
+        { 
             EmailAddress = emailAddress;
             AddressType = addressType;
             DisplayName = displayName;

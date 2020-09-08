@@ -2,11 +2,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Uploaded** | **List&lt;string&gt;** |  | [optional] 
-**Errors** | [**List&lt;Error&gt;**](Error.md) |  | [optional] 
+**Uploaded** | **List&lt;string&gt;** | List of uploaded file names | [optional] 
+**Errors** | [**List&lt;Error&gt;**](Error.md) | List of errors. | [optional] 
 
 
 
-[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
 

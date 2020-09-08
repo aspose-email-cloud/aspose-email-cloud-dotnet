@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,31 +36,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// File upload result
     /// </summary>
     public class FilesUploadResult 
     {
         /// <summary>
-        /// Gets or sets Uploaded
-        /// </summary>  
+        /// List of uploaded file names
+        /// </summary>
         public List<string> Uploaded { get; set; }
 
         /// <summary>
-        /// Gets or sets Errors
-        /// </summary>  
+        /// List of errors.
+        /// </summary>
         public List<Error> Errors { get; set; }
+
 
         /// <summary>FilesUploadResult constructor</summary>
         public FilesUploadResult() {}
 
+
         /// <summary>FilesUploadResult constructor</summary>
-        /// <param name="uploaded"></param>
-        /// <param name="errors"></param>
-        public FilesUploadResult(List<string> uploaded, List<Error> errors)
-        {
+        /// <param name="uploaded">List of uploaded file names</param>
+        /// <param name="errors">List of errors.</param>
+        public FilesUploadResult(
+            List<string> uploaded,
+            List<Error> errors
+        )
+        { 
             Uploaded = uploaded;
             Errors = errors;
         }

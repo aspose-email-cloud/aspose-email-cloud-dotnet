@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Extracted name component             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Extracted from email address name component category. Enum, available values: Unknown, GivenName, Surname, SomeName, NoName, Initial
-        /// </summary>  
+        /// </summary>
         public string Category { get; set; }
 
         /// <summary>
         /// Extracted value             
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
+
 
         /// <summary>AiNameExtractedComponent constructor</summary>
         public AiNameExtractedComponent() {}
 
+
         /// <summary>AiNameExtractedComponent constructor</summary>
         /// <param name="category">Extracted from email address name component category. Enum, available values: Unknown, GivenName, Surname, SomeName, NoName, Initial</param>
         /// <param name="value">Extracted value             </param>
-        public AiNameExtractedComponent(string category, string value)
-        {
+        public AiNameExtractedComponent(
+            string category,
+            string value
+        )
+        { 
             Category = category;
             Value = value;
         }

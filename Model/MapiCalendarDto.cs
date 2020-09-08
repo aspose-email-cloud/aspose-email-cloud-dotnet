@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents the mapi calendar object             
     /// </summary>
@@ -39,96 +43,98 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Value indicating whether a Meeting Response object is a counter proposal.             
-        /// </summary>  
+        /// </summary>
         public bool? AppointmentCounterProposal { get; set; }
 
         /// <summary>
         /// Attendees             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarAttendeesDto Attendees { get; set; }
 
         /// <summary>
         /// Enumerates the mapi calendar possible busy status Enum, available values: Free, Tentative, Busy, OutOfOffice
-        /// </summary>  
+        /// </summary>
         public string BusyStatus { get; set; }
 
         /// <summary>
         /// Actions the user has taken on this Meeting object.              Items: Enumerates the actions the user can taken on the Meeting object Enum, available values: Manager, Delegate, DeletedWithNoResponse, DeletedExceptionWithNoResponse, RespondedTentative, RespondedAccept, RespondedDecline, ModifiedStartTime, ModifiedEndTime, ModifiedLocation, RespondedExceptionDecline, Canceled, ExceptionCanceled
-        /// </summary>  
+        /// </summary>
         public List<string> ClientIntent { get; set; }
 
         /// <summary>
         /// End date and time of the event. If the date is not set, default value for DateTime is returned.             
-        /// </summary>  
+        /// </summary>
         public DateTime? EndDate { get; set; }
 
         /// <summary>
         /// Time zone information that indicates the time zone of the EndDate property.             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarTimeZoneDto EndDateTimeZone { get; set; }
 
         /// <summary>
         /// Value indicating whether the event is an all-day event.             
-        /// </summary>  
+        /// </summary>
         public bool? IsAllDay { get; set; }
 
         /// <summary>
         /// Categories of the calendar object.             
-        /// </summary>  
+        /// </summary>
         public string KeyWords { get; set; }
 
         /// <summary>
         /// Location of the event.             
-        /// </summary>  
+        /// </summary>
         public string Location { get; set; }
 
         /// <summary>
         /// Recurrence properties.             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarEventRecurrenceDto Recurrence { get; set; }
 
         /// <summary>
         /// Interval, in minutes, between the time at which the reminder first becomes overdue and the start time of the Calendar object.             
-        /// </summary>  
+        /// </summary>
         public int? ReminderDelta { get; set; }
 
         /// <summary>
         /// Full path of the sound that a client SHOULD play when the reminder becomes overdue.             
-        /// </summary>  
+        /// </summary>
         public string ReminderFileParameter { get; set; }
 
         /// <summary>
         /// Value indicating whether a reminder is set on the object.             
-        /// </summary>  
+        /// </summary>
         public bool? ReminderSet { get; set; }
 
         /// <summary>
         /// Sequence number.             
-        /// </summary>  
+        /// </summary>
         public int? Sequence { get; set; }
 
         /// <summary>
         /// Start date and time of the event. If the date is not set, default value for DateTime is returned.             
-        /// </summary>  
+        /// </summary>
         public DateTime? StartDate { get; set; }
 
         /// <summary>
         /// Time zone information that indicates the time zone of the StartDate property.             
-        /// </summary>  
+        /// </summary>
         public MapiCalendarTimeZoneDto StartDateTimeZone { get; set; }
 
         /// <summary>
         /// Unique identifier.             
-        /// </summary>  
+        /// </summary>
         public string Uid { get; set; }
 
         /// <summary>
         /// Organizer             
-        /// </summary>  
+        /// </summary>
         public MapiElectronicAddressDto Organizer { get; set; }
+
 
         /// <summary>MapiCalendarDto constructor</summary>
         public MapiCalendarDto() {}
+
 
         /// <summary>MapiCalendarDto constructor</summary>
         /// <param name="attachments">Message item attachments.             </param>
@@ -147,7 +153,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="subject">Subject of the message.             </param>
         /// <param name="subjectPrefix">Subject prefix that typically indicates some action on a message, such as \"FW: \" for forwarding.             </param>
         /// <param name="properties">List of MAPI properties             </param>
-        /// <param name="discriminator"></param>
         /// <param name="appointmentCounterProposal">Value indicating whether a Meeting Response object is a counter proposal.             </param>
         /// <param name="attendees">Attendees             </param>
         /// <param name="busyStatus">Enumerates the mapi calendar possible busy status Enum, available values: Free, Tentative, Busy, OutOfOffice</param>
@@ -166,8 +171,44 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="startDateTimeZone">Time zone information that indicates the time zone of the StartDate property.             </param>
         /// <param name="uid">Unique identifier.             </param>
         /// <param name="organizer">Organizer             </param>
-        public MapiCalendarDto(List<MapiAttachmentDto> attachments, string billing, string body, string bodyHtml, string bodyRtf, string bodyType, List<string> categories, List<string> companies, string itemId, string messageClass, string mileage, List<MapiRecipientDto> recipients, string sensitivity, string subject, string subjectPrefix, List<MapiPropertyDto> properties, string discriminator, bool? appointmentCounterProposal, MapiCalendarAttendeesDto attendees, string busyStatus, List<string> clientIntent, DateTime? endDate, MapiCalendarTimeZoneDto endDateTimeZone, bool? isAllDay, string keyWords, string location, MapiCalendarEventRecurrenceDto recurrence, int? reminderDelta, string reminderFileParameter, bool? reminderSet, int? sequence, DateTime? startDate, MapiCalendarTimeZoneDto startDateTimeZone, string uid, MapiElectronicAddressDto organizer)
-        {
+        public MapiCalendarDto(
+            List<MapiAttachmentDto> attachments,
+            string billing,
+            string body,
+            string bodyHtml,
+            string bodyRtf,
+            string bodyType,
+            List<string> categories,
+            List<string> companies,
+            string itemId,
+            string messageClass,
+            string mileage,
+            List<MapiRecipientDto> recipients,
+            string sensitivity,
+            string subject,
+            string subjectPrefix,
+            List<MapiPropertyDto> properties
+            ,
+            bool? appointmentCounterProposal,
+            MapiCalendarAttendeesDto attendees,
+            string busyStatus,
+            List<string> clientIntent,
+            DateTime? endDate,
+            MapiCalendarTimeZoneDto endDateTimeZone,
+            bool? isAllDay,
+            string keyWords,
+            string location,
+            MapiCalendarEventRecurrenceDto recurrence,
+            int? reminderDelta,
+            string reminderFileParameter,
+            bool? reminderSet,
+            int? sequence,
+            DateTime? startDate,
+            MapiCalendarTimeZoneDto startDateTimeZone,
+            string uid,
+            MapiElectronicAddressDto organizer
+        )
+        { 
             Attachments = attachments;
             Billing = billing;
             Body = body;
@@ -184,7 +225,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
             Subject = subject;
             SubjectPrefix = subjectPrefix;
             Properties = properties;
-            Discriminator = discriminator;
             AppointmentCounterProposal = appointmentCounterProposal;
             Attendees = attendees;
             BusyStatus = busyStatus;

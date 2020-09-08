@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,25 +36,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// Storage exists
     /// </summary>
     public class StorageExist 
     {
         /// <summary>
-        /// Gets or sets Exists
-        /// </summary>  
+        /// Shows that the storage exists.             
+        /// </summary>
         public bool? Exists { get; set; }
+
 
         /// <summary>StorageExist constructor</summary>
         public StorageExist() {}
 
+
         /// <summary>StorageExist constructor</summary>
-        /// <param name="exists"></param>
-        public StorageExist(bool? exists)
-        {
+        /// <param name="exists">Shows that the storage exists.             </param>
+        public StorageExist(
+            bool? exists
+        )
+        { 
             Exists = exists;
         }
         /// <summary>

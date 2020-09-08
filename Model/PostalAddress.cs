@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// A postal address             
     /// </summary>
@@ -39,61 +43,63 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Address.             
-        /// </summary>  
+        /// </summary>
         public string Address { get; set; }
 
         /// <summary>
         /// Address category.             
-        /// </summary>  
+        /// </summary>
         public EnumWithCustomOfPostalAddressCategory Category { get; set; }
 
         /// <summary>
         /// Address's city.             
-        /// </summary>  
+        /// </summary>
         public string City { get; set; }
 
         /// <summary>
         /// Address's country.             
-        /// </summary>  
+        /// </summary>
         public string Country { get; set; }
 
         /// <summary>
         /// Country code.             
-        /// </summary>  
+        /// </summary>
         public string CountryCode { get; set; }
 
         /// <summary>
         /// Defines whether address may be used for mailing.             
-        /// </summary>  
+        /// </summary>
         public bool? IsMailingAddress { get; set; }
 
         /// <summary>
         /// Postal code.             
-        /// </summary>  
+        /// </summary>
         public string PostalCode { get; set; }
 
         /// <summary>
         /// Post Office box.             
-        /// </summary>  
+        /// </summary>
         public string PostOfficeBox { get; set; }
 
         /// <summary>
         /// Defines whether postal address is preferred.             
-        /// </summary>  
+        /// </summary>
         public bool? Preferred { get; set; }
 
         /// <summary>
         /// Address's region.             
-        /// </summary>  
+        /// </summary>
         public string StateOrProvince { get; set; }
 
         /// <summary>
         /// Address's street.             
-        /// </summary>  
+        /// </summary>
         public string Street { get; set; }
+
 
         /// <summary>PostalAddress constructor</summary>
         public PostalAddress() {}
+
 
         /// <summary>PostalAddress constructor</summary>
         /// <param name="address">Address.             </param>
@@ -107,8 +113,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="preferred">Defines whether postal address is preferred.             </param>
         /// <param name="stateOrProvince">Address's region.             </param>
         /// <param name="street">Address's street.             </param>
-        public PostalAddress(string address, EnumWithCustomOfPostalAddressCategory category, string city, string country, string countryCode, bool? isMailingAddress, string postalCode, string postOfficeBox, bool? preferred, string stateOrProvince, string street)
-        {
+        public PostalAddress(
+            string address,
+            EnumWithCustomOfPostalAddressCategory category,
+            string city,
+            string country,
+            string countryCode,
+            bool? isMailingAddress,
+            string postalCode,
+            string postOfficeBox,
+            bool? preferred,
+            string stateOrProvince,
+            string street
+        )
+        { 
             Address = address;
             Category = category;
             City = city;

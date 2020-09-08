@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Refers to the group of properties that define the e-mail address or fax address for a contact.             
     /// </summary>
@@ -39,36 +43,38 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Address type of an electronic address
-        /// </summary>  
+        /// </summary>
         public string AddressType { get; set; }
 
         /// <summary>
         /// User-readable display name for the e-mail address
-        /// </summary>  
+        /// </summary>
         public string DisplayName { get; set; }
 
         /// <summary>
         /// E-mail address of the contact
-        /// </summary>  
+        /// </summary>
         public string EmailAddress { get; set; }
 
         /// <summary>
         /// Telephone number of the mail user's primary fax machine
-        /// </summary>  
+        /// </summary>
         public string FaxNumber { get; set; }
 
         /// <summary>
         /// Shows if MapiContactElectronicAddress is empty
-        /// </summary>  
+        /// </summary>
         public bool? IsEmpty { get; set; }
 
         /// <summary>
         /// SMTP e-mail address that corresponds to the e-mail address for the Contact object.
-        /// </summary>  
+        /// </summary>
         public string OriginalDisplayName { get; set; }
+
 
         /// <summary>MapiContactElectronicAddressDto constructor</summary>
         public MapiContactElectronicAddressDto() {}
+
 
         /// <summary>MapiContactElectronicAddressDto constructor</summary>
         /// <param name="addressType">Address type of an electronic address</param>
@@ -77,8 +83,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="faxNumber">Telephone number of the mail user's primary fax machine</param>
         /// <param name="isEmpty">Shows if MapiContactElectronicAddress is empty</param>
         /// <param name="originalDisplayName">SMTP e-mail address that corresponds to the e-mail address for the Contact object.</param>
-        public MapiContactElectronicAddressDto(string addressType, string displayName, string emailAddress, string faxNumber, bool? isEmpty, string originalDisplayName)
-        {
+        public MapiContactElectronicAddressDto(
+            string addressType,
+            string displayName,
+            string emailAddress,
+            string faxNumber,
+            bool? isEmpty,
+            string originalDisplayName
+        )
+        { 
             AddressType = addressType;
             DisplayName = displayName;
             EmailAddress = emailAddress;

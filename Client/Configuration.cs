@@ -43,7 +43,7 @@ namespace Aspose.Email.Cloud.Sdk.Client
         /// <summary>
         /// The default API version
         /// </summary>
-        private const string DefaultApiVersion = "v3.0";
+        private const string DefaultApiVersion = "v4.0";
 
         #endregion
 

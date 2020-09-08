@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,31 +36,34 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// Object exists
     /// </summary>
     public class ObjectExist 
     {
         /// <summary>
-        /// Gets or sets Exists
-        /// </summary>  
+        /// Indicates that the file or folder exists.
+        /// </summary>
         public bool? Exists { get; set; }
 
         /// <summary>
-        /// Gets or sets IsFolder
-        /// </summary>  
+        /// True if it is a folder, false if it is a file.
+        /// </summary>
         public bool? IsFolder { get; set; }
+
 
         /// <summary>ObjectExist constructor</summary>
         public ObjectExist() {}
 
+
         /// <summary>ObjectExist constructor</summary>
-        /// <param name="exists"></param>
-        /// <param name="isFolder"></param>
-        public ObjectExist(bool? exists, bool? isFolder)
-        {
+        /// <param name="exists">Indicates that the file or folder exists.</param>
+        /// <param name="isFolder">True if it is a folder, false if it is a file.</param>
+        public ObjectExist(
+            bool? exists,
+            bool? isFolder
+        )
+        { 
             Exists = exists;
             IsFolder = isFolder;
         }

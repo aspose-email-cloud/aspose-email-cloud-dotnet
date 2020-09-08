@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Mapi property with response type value             
     /// </summary>
@@ -39,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Represents the types of recipient responses that are received for a meeting. Enum, available values: Unknown, Organizer, Tentative, Accept, Decline, NoResponseReceived
-        /// </summary>  
+        /// </summary>
         public string Value { get; set; }
+
 
         /// <summary>MapiResponseTypePropertyDto constructor</summary>
         public MapiResponseTypePropertyDto() {}
 
+
         /// <summary>MapiResponseTypePropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
         /// <param name="value">Represents the types of recipient responses that are received for a meeting. Enum, available values: Unknown, Organizer, Tentative, Accept, Decline, NoResponseReceived</param>
-        public MapiResponseTypePropertyDto(MapiPropertyDescriptor descriptor, string discriminator, string value)
-        {
+        public MapiResponseTypePropertyDto(
+            MapiPropertyDescriptor descriptor
+            ,
+            string value
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
             Value = value;
         }
         /// <summary>

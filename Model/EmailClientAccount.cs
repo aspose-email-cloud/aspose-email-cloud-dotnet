@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// A universal email client account             
     /// </summary>
@@ -39,36 +43,38 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Mail server host name or IP address             
-        /// </summary>  
+        /// </summary>
         public string Host { get; set; }
 
         /// <summary>
         /// Mail server port             
-        /// </summary>  
+        /// </summary>
         public int? Port { get; set; }
 
         /// <summary>
         /// Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
-        /// </summary>  
+        /// </summary>
         public string SecurityOptions { get; set; }
 
         /// <summary>
         /// Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav
-        /// </summary>  
+        /// </summary>
         public string ProtocolType { get; set; }
 
         /// <summary>
         /// Email client account credentials             
-        /// </summary>  
+        /// </summary>
         public EmailClientAccountCredentials Credentials { get; set; }
 
         /// <summary>
         /// File with messages cache. Used to provide extra functions, which are not supported by account             
-        /// </summary>  
+        /// </summary>
         public StorageFileLocation CacheFile { get; set; }
+
 
         /// <summary>EmailClientAccount constructor</summary>
         public EmailClientAccount() {}
+
 
         /// <summary>EmailClientAccount constructor</summary>
         /// <param name="host">Mail server host name or IP address             </param>
@@ -77,8 +83,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
         /// <param name="credentials">Email client account credentials             </param>
         /// <param name="cacheFile">File with messages cache. Used to provide extra functions, which are not supported by account             </param>
-        public EmailClientAccount(string host, int? port, string securityOptions, string protocolType, EmailClientAccountCredentials credentials, StorageFileLocation cacheFile)
-        {
+        public EmailClientAccount(
+            string host,
+            int? port,
+            string securityOptions,
+            string protocolType,
+            EmailClientAccountCredentials credentials,
+            StorageFileLocation cacheFile
+        )
+        { 
             Host = host;
             Port = port;
             SecurityOptions = securityOptions;

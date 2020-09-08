@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// A storage folder location information             
     /// </summary>
@@ -39,22 +43,27 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// A storage name             
-        /// </summary>  
+        /// </summary>
         public string Storage { get; set; }
 
         /// <summary>
         /// A path to a folder in specified storage             
-        /// </summary>  
+        /// </summary>
         public string FolderPath { get; set; }
+
 
         /// <summary>StorageFolderLocation constructor</summary>
         public StorageFolderLocation() {}
 
+
         /// <summary>StorageFolderLocation constructor</summary>
         /// <param name="storage">A storage name             </param>
         /// <param name="folderPath">A path to a folder in specified storage             </param>
-        public StorageFolderLocation(string storage, string folderPath)
-        {
+        public StorageFolderLocation(
+            string storage,
+            string folderPath
+        )
+        { 
             Storage = storage;
             FolderPath = folderPath;
         }

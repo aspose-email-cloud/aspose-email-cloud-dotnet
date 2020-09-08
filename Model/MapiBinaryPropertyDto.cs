@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Mapi property with Binary value represented as a Base64 string             
     /// </summary>
@@ -39,20 +43,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Property value converted to Base64             
-        /// </summary>  
+        /// </summary>
         public string ValueBase64 { get; set; }
+
 
         /// <summary>MapiBinaryPropertyDto constructor</summary>
         public MapiBinaryPropertyDto() {}
 
+
         /// <summary>MapiBinaryPropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="discriminator"></param>
         /// <param name="valueBase64">Property value converted to Base64             </param>
-        public MapiBinaryPropertyDto(MapiPropertyDescriptor descriptor, string discriminator, string valueBase64)
-        {
+        public MapiBinaryPropertyDto(
+            MapiPropertyDescriptor descriptor
+            ,
+            string valueBase64
+        )
+        { 
             Descriptor = descriptor;
-            Discriminator = discriminator;
             ValueBase64 = valueBase64;
         }
         /// <summary>

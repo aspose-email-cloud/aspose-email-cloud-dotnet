@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Specify optional telephone numbers for the contact.             
     /// </summary>
@@ -39,101 +43,103 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Shows if MapiContactTelephonePropertySet is empty             
-        /// </summary>  
+        /// </summary>
         public bool? IsEmpty { get; set; }
 
         /// <summary>
         /// Default value of electronic address Uses when user does not set any electronic address if UseAutocomplete property is set 'true'             
-        /// </summary>  
+        /// </summary>
         public string DefaultTelephoneNumber { get; set; }
 
         /// <summary>
         /// Indicates that one electronic address is completed automatically in case if user does not set any electronic address             
-        /// </summary>  
+        /// </summary>
         public bool? UseAutocomplete { get; set; }
 
         /// <summary>
         /// Gets or sets the callback telephone number             
-        /// </summary>  
+        /// </summary>
         public string CallbackTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the business telephone number             
-        /// </summary>  
+        /// </summary>
         public string BusinessTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the home telephone number             
-        /// </summary>  
+        /// </summary>
         public string HomeTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the primary telephone number             
-        /// </summary>  
+        /// </summary>
         public string PrimaryTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the second business telephone number             
-        /// </summary>  
+        /// </summary>
         public string Business2TelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the mobile telephone number             
-        /// </summary>  
+        /// </summary>
         public string MobileTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the radio telephone number             
-        /// </summary>  
+        /// </summary>
         public string RadioTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the car telephone number             
-        /// </summary>  
+        /// </summary>
         public string CarTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets an alternate telephone number             
-        /// </summary>  
+        /// </summary>
         public string OtherTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the telephone number of the contact's assistant             
-        /// </summary>  
+        /// </summary>
         public string AssistantTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets a second home telephone number             
-        /// </summary>  
+        /// </summary>
         public string Home2TelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the telephone number for the contact's text telephone (TTY) or telecommunication device for the deaf (TDD)             
-        /// </summary>  
+        /// </summary>
         public string TtyTddPhoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the company phone number             
-        /// </summary>  
+        /// </summary>
         public string CompanyMainTelephoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the telex number             
-        /// </summary>  
+        /// </summary>
         public string TelexNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the integrated services digital network (ISDN) number             
-        /// </summary>  
+        /// </summary>
         public string IsdnNumber { get; set; }
 
         /// <summary>
         /// Gets or sets a pager telephone number             
-        /// </summary>  
+        /// </summary>
         public string PagerTelephoneNumber { get; set; }
+
 
         /// <summary>MapiContactTelephonePropertySetDto constructor</summary>
         public MapiContactTelephonePropertySetDto() {}
+
 
         /// <summary>MapiContactTelephonePropertySetDto constructor</summary>
         /// <param name="isEmpty">Shows if MapiContactTelephonePropertySet is empty             </param>
@@ -155,8 +161,28 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="telexNumber">Gets or sets the telex number             </param>
         /// <param name="isdnNumber">Gets or sets the integrated services digital network (ISDN) number             </param>
         /// <param name="pagerTelephoneNumber">Gets or sets a pager telephone number             </param>
-        public MapiContactTelephonePropertySetDto(bool? isEmpty, string defaultTelephoneNumber, bool? useAutocomplete, string callbackTelephoneNumber, string businessTelephoneNumber, string homeTelephoneNumber, string primaryTelephoneNumber, string business2TelephoneNumber, string mobileTelephoneNumber, string radioTelephoneNumber, string carTelephoneNumber, string otherTelephoneNumber, string assistantTelephoneNumber, string home2TelephoneNumber, string ttyTddPhoneNumber, string companyMainTelephoneNumber, string telexNumber, string isdnNumber, string pagerTelephoneNumber)
-        {
+        public MapiContactTelephonePropertySetDto(
+            bool? isEmpty,
+            string defaultTelephoneNumber,
+            bool? useAutocomplete,
+            string callbackTelephoneNumber,
+            string businessTelephoneNumber,
+            string homeTelephoneNumber,
+            string primaryTelephoneNumber,
+            string business2TelephoneNumber,
+            string mobileTelephoneNumber,
+            string radioTelephoneNumber,
+            string carTelephoneNumber,
+            string otherTelephoneNumber,
+            string assistantTelephoneNumber,
+            string home2TelephoneNumber,
+            string ttyTddPhoneNumber,
+            string companyMainTelephoneNumber,
+            string telexNumber,
+            string isdnNumber,
+            string pagerTelephoneNumber
+        )
+        { 
             IsEmpty = isEmpty;
             DefaultTelephoneNumber = defaultTelephoneNumber;
             UseAutocomplete = useAutocomplete;

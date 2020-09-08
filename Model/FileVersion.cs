@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,36 +36,44 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
-    /// 
+    /// File Version
     /// </summary>
     public class FileVersion : StorageFile 
     {
         /// <summary>
-        /// Gets or sets VersionId
-        /// </summary>  
+        /// File Version ID.
+        /// </summary>
         public string VersionId { get; set; }
 
         /// <summary>
-        /// Gets or sets IsLatest
-        /// </summary>  
+        /// Specifies whether the file is (true) or is not (false) the latest version of an file.
+        /// </summary>
         public bool? IsLatest { get; set; }
+
 
         /// <summary>FileVersion constructor</summary>
         public FileVersion() {}
 
+
         /// <summary>FileVersion constructor</summary>
-        /// <param name="name"></param>
-        /// <param name="isFolder"></param>
-        /// <param name="modifiedDate"></param>
-        /// <param name="size"></param>
-        /// <param name="path"></param>
-        /// <param name="versionId"></param>
-        /// <param name="isLatest"></param>
-        public FileVersion(string name, bool? isFolder, DateTime? modifiedDate, long? size, string path, string versionId, bool? isLatest)
-        {
+        /// <param name="name">File or folder name.</param>
+        /// <param name="isFolder">True if it is a folder.</param>
+        /// <param name="modifiedDate">File or folder last modified DateTime.</param>
+        /// <param name="size">File or folder size.</param>
+        /// <param name="path">File or folder path.</param>
+        /// <param name="versionId">File Version ID.</param>
+        /// <param name="isLatest">Specifies whether the file is (true) or is not (false) the latest version of an file.</param>
+        public FileVersion(
+            string name,
+            bool? isFolder,
+            DateTime? modifiedDate,
+            long? size,
+            string path,
+            string versionId,
+            bool? isLatest
+        )
+        { 
             Name = name;
             IsFolder = isFolder;
             ModifiedDate = modifiedDate;

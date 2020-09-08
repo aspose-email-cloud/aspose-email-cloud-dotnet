@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Represents outlook contact information.             
     /// </summary>
@@ -39,51 +43,53 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Specify properties for up to three different e-mail addresses and three different fax addresses.             
-        /// </summary>  
+        /// </summary>
         public MapiContactElectronicAddressPropertySetDto ElectronicAddresses { get; set; }
 
         /// <summary>
         /// Specify events associated with a contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactEventPropertySetDto Events { get; set; }
 
         /// <summary>
         /// The properties are used to specify the name of the person represented by the contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactNamePropertySetDto NameInfo { get; set; }
 
         /// <summary>
         /// Specify other fields of contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactOtherPropertySetDto OtherFields { get; set; }
 
         /// <summary>
         /// Specify other additional contact information.             
-        /// </summary>  
+        /// </summary>
         public MapiContactPersonalInfoPropertySetDto PersonalInfo { get; set; }
 
         /// <summary>
         /// Contact photo.             
-        /// </summary>  
+        /// </summary>
         public MapiContactPhotoDto Photo { get; set; }
 
         /// <summary>
         /// Specify three physical addresses: Home Address, Work Address, and Other Address. One of the addresses can be marked as the Mailing Address.             
-        /// </summary>  
+        /// </summary>
         public MapiContactPhysicalAddressPropertySetDto PhysicalAddresses { get; set; }
 
         /// <summary>
         /// Properties are used to store professional details for the person represented by the contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactProfessionalPropertySetDto ProfessionalInfo { get; set; }
 
         /// <summary>
         /// Specify telephone numbers for the contact.             
-        /// </summary>  
+        /// </summary>
         public MapiContactTelephonePropertySetDto Telephones { get; set; }
+
 
         /// <summary>MapiContactDto constructor</summary>
         public MapiContactDto() {}
+
 
         /// <summary>MapiContactDto constructor</summary>
         /// <param name="attachments">Message item attachments.             </param>
@@ -102,7 +108,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="subject">Subject of the message.             </param>
         /// <param name="subjectPrefix">Subject prefix that typically indicates some action on a message, such as \"FW: \" for forwarding.             </param>
         /// <param name="properties">List of MAPI properties             </param>
-        /// <param name="discriminator"></param>
         /// <param name="electronicAddresses">Specify properties for up to three different e-mail addresses and three different fax addresses.             </param>
         /// <param name="events">Specify events associated with a contact.             </param>
         /// <param name="nameInfo">The properties are used to specify the name of the person represented by the contact.             </param>
@@ -112,8 +117,35 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="physicalAddresses">Specify three physical addresses: Home Address, Work Address, and Other Address. One of the addresses can be marked as the Mailing Address.             </param>
         /// <param name="professionalInfo">Properties are used to store professional details for the person represented by the contact.             </param>
         /// <param name="telephones">Specify telephone numbers for the contact.             </param>
-        public MapiContactDto(List<MapiAttachmentDto> attachments, string billing, string body, string bodyHtml, string bodyRtf, string bodyType, List<string> categories, List<string> companies, string itemId, string messageClass, string mileage, List<MapiRecipientDto> recipients, string sensitivity, string subject, string subjectPrefix, List<MapiPropertyDto> properties, string discriminator, MapiContactElectronicAddressPropertySetDto electronicAddresses, MapiContactEventPropertySetDto events, MapiContactNamePropertySetDto nameInfo, MapiContactOtherPropertySetDto otherFields, MapiContactPersonalInfoPropertySetDto personalInfo, MapiContactPhotoDto photo, MapiContactPhysicalAddressPropertySetDto physicalAddresses, MapiContactProfessionalPropertySetDto professionalInfo, MapiContactTelephonePropertySetDto telephones)
-        {
+        public MapiContactDto(
+            List<MapiAttachmentDto> attachments,
+            string billing,
+            string body,
+            string bodyHtml,
+            string bodyRtf,
+            string bodyType,
+            List<string> categories,
+            List<string> companies,
+            string itemId,
+            string messageClass,
+            string mileage,
+            List<MapiRecipientDto> recipients,
+            string sensitivity,
+            string subject,
+            string subjectPrefix,
+            List<MapiPropertyDto> properties
+            ,
+            MapiContactElectronicAddressPropertySetDto electronicAddresses,
+            MapiContactEventPropertySetDto events,
+            MapiContactNamePropertySetDto nameInfo,
+            MapiContactOtherPropertySetDto otherFields,
+            MapiContactPersonalInfoPropertySetDto personalInfo,
+            MapiContactPhotoDto photo,
+            MapiContactPhysicalAddressPropertySetDto physicalAddresses,
+            MapiContactProfessionalPropertySetDto professionalInfo,
+            MapiContactTelephonePropertySetDto telephones
+        )
+        { 
             Attachments = attachments;
             Billing = billing;
             Body = body;
@@ -130,7 +162,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
             Subject = subject;
             SubjectPrefix = subjectPrefix;
             Properties = properties;
-            Discriminator = discriminator;
             ElectronicAddresses = electronicAddresses;
             Events = events;
             NameInfo = nameInfo;

@@ -23,6 +23,12 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable MemberCanBeProtected.Global
+// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 namespace Aspose.Email.Cloud.Sdk.Model
 {
     using System;
@@ -30,8 +36,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using System.Text;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
     /// <summary>
     /// Refers to the group of properties that define physical address for a contact.             
     /// </summary>
@@ -39,51 +43,53 @@ namespace Aspose.Email.Cloud.Sdk.Model
     {
         /// <summary>
         /// Gets or sets a value indicating whether this address is mailing address             
-        /// </summary>  
+        /// </summary>
         public bool? IsMailingAddress { get; set; }
 
         /// <summary>
         /// Specifies the street portion of the contact's address             
-        /// </summary>  
+        /// </summary>
         public string Street { get; set; }
 
         /// <summary>
         /// Specifies the city or locality portion of the contact's address             
-        /// </summary>  
+        /// </summary>
         public string City { get; set; }
 
         /// <summary>
         /// Specifies the state or province portion of the contact's address             
-        /// </summary>  
+        /// </summary>
         public string StateOrProvince { get; set; }
 
         /// <summary>
         /// Specifies the postal code (ZIP code) portion of the contact's address             
-        /// </summary>  
+        /// </summary>
         public string PostalCode { get; set; }
 
         /// <summary>
         /// Specifies the country or region portion of the contact's address             
-        /// </summary>  
+        /// </summary>
         public string Country { get; set; }
 
         /// <summary>
         /// Specifies the country code portion of the contact's address             
-        /// </summary>  
+        /// </summary>
         public string CountryCode { get; set; }
 
         /// <summary>
         /// Specifies the complete address of the contact's address             
-        /// </summary>  
+        /// </summary>
         public string Address { get; set; }
 
         /// <summary>
         /// Gets or sets the post office box             
-        /// </summary>  
+        /// </summary>
         public string PostOfficeBox { get; set; }
+
 
         /// <summary>MapiContactPhysicalAddressDto constructor</summary>
         public MapiContactPhysicalAddressDto() {}
+
 
         /// <summary>MapiContactPhysicalAddressDto constructor</summary>
         /// <param name="isMailingAddress">Gets or sets a value indicating whether this address is mailing address             </param>
@@ -95,8 +101,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="countryCode">Specifies the country code portion of the contact's address             </param>
         /// <param name="address">Specifies the complete address of the contact's address             </param>
         /// <param name="postOfficeBox">Gets or sets the post office box             </param>
-        public MapiContactPhysicalAddressDto(bool? isMailingAddress, string street, string city, string stateOrProvince, string postalCode, string country, string countryCode, string address, string postOfficeBox)
-        {
+        public MapiContactPhysicalAddressDto(
+            bool? isMailingAddress,
+            string street,
+            string city,
+            string stateOrProvince,
+            string postalCode,
+            string country,
+            string countryCode,
+            string address,
+            string postOfficeBox
+        )
+        { 
             IsMailingAddress = isMailingAddress;
             Street = street;
             City = city;
