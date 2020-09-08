@@ -63,7 +63,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public EmailClientAccount Get(ClientAccountGetRequest request)
         {
             // verify the required parameter 'fileName' is set
-            if (request.fileName == null)
+            if (request.FileName == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'fileName' when calling Get");
@@ -75,9 +75,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.fileName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.FileName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -103,7 +103,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public EmailClientMultiAccount GetMulti(ClientAccountGetMultiRequest request)
         {
             // verify the required parameter 'fileName' is set
-            if (request.fileName == null)
+            if (request.FileName == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'fileName' when calling GetMulti");
@@ -115,9 +115,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.fileName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.FileName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");

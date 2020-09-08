@@ -53,10 +53,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="isSingle">Determines that image contains single VCard or more.</param>
         public AiBcrParseRequest(System.IO.Stream file, string countries = null, string languages = null, bool? isSingle = null)
         {
-            this.File = file;
-            this.countries = countries;
-            this.languages = languages;
-            this.isSingle = isSingle;
+            File = file;
+            Countries = countries;
+            Languages = languages;
+            IsSingle = isSingle;
         }
 
         /// <summary>
@@ -67,16 +67,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Comma-separated codes of countries.
         /// </summary>
-        public string countries { get; set; }
+        public string Countries { get; set; }
 
         /// <summary>
         /// Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \"it\" or \"ita\" for Italian); it's \"\" by default.             
         /// </summary>
-        public string languages { get; set; }
+        public string Languages { get; set; }
 
         /// <summary>
         /// Determines that image contains single VCard or more.
         /// </summary>
-        public bool? isSingle { get; set; }
+        public bool? IsSingle { get; set; }
   }
 }

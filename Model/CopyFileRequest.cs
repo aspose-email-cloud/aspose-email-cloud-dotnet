@@ -54,36 +54,36 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="versionId">File version ID to copy</param>
         public CopyFileRequest(string srcPath, string destPath, string srcStorageName = null, string destStorageName = null, string versionId = null)
         {
-            this.srcPath = srcPath;
-            this.destPath = destPath;
-            this.srcStorageName = srcStorageName;
-            this.destStorageName = destStorageName;
-            this.versionId = versionId;
+            SrcPath = srcPath;
+            DestPath = destPath;
+            SrcStorageName = srcStorageName;
+            DestStorageName = destStorageName;
+            VersionId = versionId;
         }
 
         /// <summary>
         /// Source file path e.g. '/folder/file.ext'
         /// </summary>
-        public string srcPath { get; set; }
+        public string SrcPath { get; set; }
 
         /// <summary>
         /// Destination file path
         /// </summary>
-        public string destPath { get; set; }
+        public string DestPath { get; set; }
 
         /// <summary>
         /// Source storage name
         /// </summary>
-        public string srcStorageName { get; set; }
+        public string SrcStorageName { get; set; }
 
         /// <summary>
         /// Destination storage name
         /// </summary>
-        public string destStorageName { get; set; }
+        public string DestStorageName { get; set; }
 
         /// <summary>
         /// File version ID to copy
         /// </summary>
-        public string versionId { get; set; }
+        public string VersionId { get; set; }
   }
 }

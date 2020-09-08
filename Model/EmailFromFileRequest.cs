@@ -51,14 +51,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="file">File to convert</param>
         public EmailFromFileRequest(string format, System.IO.Stream file)
         {
-            this.format = format;
-            this.File = file;
+            Format = format;
+            File = file;
         }
 
         /// <summary>
         ///  Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
 
         /// <summary>
         /// File to convert

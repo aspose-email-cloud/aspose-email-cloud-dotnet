@@ -52,24 +52,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="versionId">File version ID</param>
         public ObjectExistsRequest(string path, string storageName = null, string versionId = null)
         {
-            this.path = path;
-            this.storageName = storageName;
-            this.versionId = versionId;
+            Path = path;
+            StorageName = storageName;
+            VersionId = versionId;
         }
 
         /// <summary>
         /// File or folder path e.g. '/file.ext' or '/folder'
         /// </summary>
-        public string path { get; set; }
+        public string Path { get; set; }
 
         /// <summary>
         /// Storage name
         /// </summary>
-        public string storageName { get; set; }
+        public string StorageName { get; set; }
 
         /// <summary>
         /// File version ID
         /// </summary>
-        public string versionId { get; set; }
+        public string VersionId { get; set; }
   }
 }

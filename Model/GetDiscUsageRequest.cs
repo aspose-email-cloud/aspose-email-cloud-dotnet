@@ -50,12 +50,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="storageName">Storage name</param>
         public GetDiscUsageRequest(string storageName = null)
         {
-            this.storageName = storageName;
+            StorageName = storageName;
         }
 
         /// <summary>
         /// Storage name
         /// </summary>
-        public string storageName { get; set; }
+        public string StorageName { get; set; }
   }
 }

@@ -52,24 +52,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="versionId">File version ID to delete</param>
         public DeleteFileRequest(string path, string storageName = null, string versionId = null)
         {
-            this.path = path;
-            this.storageName = storageName;
-            this.versionId = versionId;
+            Path = path;
+            StorageName = storageName;
+            VersionId = versionId;
         }
 
         /// <summary>
         /// File path e.g. '/folder/file.ext'
         /// </summary>
-        public string path { get; set; }
+        public string Path { get; set; }
 
         /// <summary>
         /// Storage name
         /// </summary>
-        public string storageName { get; set; }
+        public string StorageName { get; set; }
 
         /// <summary>
         /// File version ID to delete
         /// </summary>
-        public string versionId { get; set; }
+        public string VersionId { get; set; }
   }
 }

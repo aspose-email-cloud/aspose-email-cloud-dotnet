@@ -50,7 +50,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="file">File to convert</param>
         public MapiCalendarFromFileRequest(System.IO.Stream file)
         {
-            this.File = file;
+            File = file;
         }
 
         /// <summary>

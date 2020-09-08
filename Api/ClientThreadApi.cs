@@ -99,14 +99,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public EmailThreadList GetList(ClientThreadGetListRequest request)
         {
             // verify the required parameter 'folder' is set
-            if (request.folder == null)
+            if (request.Folder == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'folder' when calling GetList");
             }
 
             // verify the required parameter 'account' is set
-            if (request.account == null)
+            if (request.Account == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'account' when calling GetList");
@@ -118,12 +118,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.account);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.accountStorageFolder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "updateFolderCache", request.updateFolderCache);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messagesCacheLimit", request.messagesCacheLimit);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.Account);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.AccountStorageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "updateFolderCache", request.UpdateFolderCache);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messagesCacheLimit", request.MessagesCacheLimit);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -149,14 +149,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public EmailList GetMessages(ClientThreadGetMessagesRequest request)
         {
             // verify the required parameter 'threadId' is set
-            if (request.threadId == null)
+            if (request.ThreadId == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'threadId' when calling GetMessages");
             }
 
             // verify the required parameter 'account' is set
-            if (request.account == null)
+            if (request.Account == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'account' when calling GetMessages");
@@ -168,11 +168,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "threadId", request.threadId);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.account);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.accountStorageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "threadId", request.ThreadId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.Account);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.AccountStorageFolder);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");

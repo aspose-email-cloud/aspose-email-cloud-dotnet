@@ -51,18 +51,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="storageName">Storage name</param>
         public GetFilesListRequest(string path, string storageName = null)
         {
-            this.path = path;
-            this.storageName = storageName;
+            Path = path;
+            StorageName = storageName;
         }
 
         /// <summary>
         /// Folder path e.g. '/folder'
         /// </summary>
-        public string path { get; set; }
+        public string Path { get; set; }
 
         /// <summary>
         /// Storage name
         /// </summary>
-        public string storageName { get; set; }
+        public string StorageName { get; set; }
   }
 }

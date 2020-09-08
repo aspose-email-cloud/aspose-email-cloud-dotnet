@@ -54,36 +54,36 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="folder">Path to folder in storage</param>
         public ContactGetAsFileRequest(string fileName, string toFormat, string fromFormat, string storage = null, string folder = null)
         {
-            this.fileName = fileName;
-            this.toFormat = toFormat;
-            this.fromFormat = fromFormat;
-            this.storage = storage;
-            this.folder = folder;
+            FileName = fileName;
+            ToFormat = toFormat;
+            FromFormat = fromFormat;
+            Storage = storage;
+            Folder = folder;
         }
 
         /// <summary>
         /// Calendar document file name
         /// </summary>
-        public string fileName { get; set; }
+        public string FileName { get; set; }
 
         /// <summary>
         /// File format Enum, available values: VCard, WebDav, Msg
         /// </summary>
-        public string toFormat { get; set; }
+        public string ToFormat { get; set; }
 
         /// <summary>
         /// File format to convert from Enum, available values: VCard, WebDav, Msg
         /// </summary>
-        public string fromFormat { get; set; }
+        public string FromFormat { get; set; }
 
         /// <summary>
         /// Storage name
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Path to folder in storage
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
   }
 }

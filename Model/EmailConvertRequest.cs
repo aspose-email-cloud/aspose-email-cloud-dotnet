@@ -52,20 +52,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="file">File to convert</param>
         public EmailConvertRequest(string fromFormat, string toFormat, System.IO.Stream file)
         {
-            this.fromFormat = fromFormat;
-            this.toFormat = toFormat;
-            this.File = file;
+            FromFormat = fromFormat;
+            ToFormat = toFormat;
+            File = file;
         }
 
         /// <summary>
         /// File format to convert to Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
-        public string fromFormat { get; set; }
+        public string FromFormat { get; set; }
 
         /// <summary>
         /// File format to convert from Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
-        public string toFormat { get; set; }
+        public string ToFormat { get; set; }
 
         /// <summary>
         /// File to convert

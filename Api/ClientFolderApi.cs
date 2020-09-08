@@ -135,7 +135,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public MailServerFolderList GetList(ClientFolderGetListRequest request)
         {
             // verify the required parameter 'account' is set
-            if (request.account == null)
+            if (request.Account == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'account' when calling GetList");
@@ -147,10 +147,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.account);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.accountStorageFolder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "parentFolder", request.parentFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.Account);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.AccountStorageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "parentFolder", request.ParentFolder);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");

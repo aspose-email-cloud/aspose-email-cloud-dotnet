@@ -51,18 +51,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="fastProcessing">Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.             </param>
         public EmailConfigDiscoverRequest(string address, bool? fastProcessing = null)
         {
-            this.address = address;
-            this.fastProcessing = fastProcessing;
+            Address = address;
+            FastProcessing = fastProcessing;
         }
 
         /// <summary>
         /// Email address.
         /// </summary>
-        public string address { get; set; }
+        public string Address { get; set; }
 
         /// <summary>
         /// Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.             
         /// </summary>
-        public bool? fastProcessing { get; set; }
+        public bool? FastProcessing { get; set; }
   }
 }

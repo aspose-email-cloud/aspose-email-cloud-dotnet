@@ -54,36 +54,36 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="accountStorageFolder">Folder in storage where account file located</param>
         public ClientThreadGetMessagesRequest(string threadId, string account, string folder = null, string storage = null, string accountStorageFolder = null)
         {
-            this.threadId = threadId;
-            this.account = account;
-            this.folder = folder;
-            this.storage = storage;
-            this.accountStorageFolder = accountStorageFolder;
+            ThreadId = threadId;
+            Account = account;
+            Folder = folder;
+            Storage = storage;
+            AccountStorageFolder = accountStorageFolder;
         }
 
         /// <summary>
         /// Thread identifier
         /// </summary>
-        public string threadId { get; set; }
+        public string ThreadId { get; set; }
 
         /// <summary>
         /// Email account
         /// </summary>
-        public string account { get; set; }
+        public string Account { get; set; }
 
         /// <summary>
         /// Specifies account folder to get thread from             
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Storage name where account file located
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Folder in storage where account file located
         /// </summary>
-        public string accountStorageFolder { get; set; }
+        public string AccountStorageFolder { get; set; }
   }
 }

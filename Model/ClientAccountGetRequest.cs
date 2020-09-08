@@ -52,24 +52,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="storage">Storage name.</param>
         public ClientAccountGetRequest(string fileName, string folder = null, string storage = null)
         {
-            this.fileName = fileName;
-            this.folder = folder;
-            this.storage = storage;
+            FileName = fileName;
+            Folder = folder;
+            Storage = storage;
         }
 
         /// <summary>
         /// File name on storage.
         /// </summary>
-        public string fileName { get; set; }
+        public string FileName { get; set; }
 
         /// <summary>
         /// Folder on storage.
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Storage name.
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
   }
 }

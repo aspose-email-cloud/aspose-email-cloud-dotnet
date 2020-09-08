@@ -55,42 +55,42 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="messagesCacheLimit">Limit messages cache size if CacheFile is used. Ignored in accounts without limits support             </param>
         public ClientThreadGetListRequest(string folder, string account, string storage = null, string accountStorageFolder = null, bool? updateFolderCache = null, int? messagesCacheLimit = null)
         {
-            this.folder = folder;
-            this.account = account;
-            this.storage = storage;
-            this.accountStorageFolder = accountStorageFolder;
-            this.updateFolderCache = updateFolderCache;
-            this.messagesCacheLimit = messagesCacheLimit;
+            Folder = folder;
+            Account = account;
+            Storage = storage;
+            AccountStorageFolder = accountStorageFolder;
+            UpdateFolderCache = updateFolderCache;
+            MessagesCacheLimit = messagesCacheLimit;
         }
 
         /// <summary>
         /// A folder in email account.             
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Email account
         /// </summary>
-        public string account { get; set; }
+        public string Account { get; set; }
 
         /// <summary>
         /// Storage name where account file located
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Folder in storage where account file located
         /// </summary>
-        public string accountStorageFolder { get; set; }
+        public string AccountStorageFolder { get; set; }
 
         /// <summary>
         /// This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account             
         /// </summary>
-        public bool? updateFolderCache { get; set; }
+        public bool? UpdateFolderCache { get; set; }
 
         /// <summary>
         /// Limit messages cache size if CacheFile is used. Ignored in accounts without limits support             
         /// </summary>
-        public int? messagesCacheLimit { get; set; }
+        public int? MessagesCacheLimit { get; set; }
   }
 }

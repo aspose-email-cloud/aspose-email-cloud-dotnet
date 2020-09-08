@@ -76,9 +76,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var formParams = new Dictionary<string, object>();
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "countries", request.countries);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "languages", request.languages);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "isSingle", request.isSingle);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "countries", request.Countries);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "languages", request.Languages);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "isSingle", request.IsSingle);
             if (request.File != null)
             {
                 formParams.Add("file",

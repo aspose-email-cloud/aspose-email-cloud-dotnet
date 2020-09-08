@@ -142,7 +142,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public MapiMessageDto FromFile(MapiMessageFromFileRequest request)
         {
             // verify the required parameter 'format' is set
-            if (request.format == null)
+            if (request.Format == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'format' when calling FromFile");
@@ -162,7 +162,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var formParams = new Dictionary<string, object>();
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
             if (request.File != null)
             {
                 formParams.Add("file",
@@ -195,14 +195,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public MapiMessageDto Get(MapiMessageGetRequest request)
         {
             // verify the required parameter 'format' is set
-            if (request.format == null)
+            if (request.Format == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'format' when calling Get");
             }
 
             // verify the required parameter 'fileName' is set
-            if (request.fileName == null)
+            if (request.FileName == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'fileName' when calling Get");
@@ -214,10 +214,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.fileName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.FileName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");

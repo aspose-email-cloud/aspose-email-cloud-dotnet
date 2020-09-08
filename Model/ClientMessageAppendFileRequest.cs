@@ -56,19 +56,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="markAsSent">Determines that appended message should be market as sent or not.</param>
         public ClientMessageAppendFileRequest(string account, System.IO.Stream file, string storage = null, string accountStorageFolder = null, string format = null, string folder = null, bool? markAsSent = null)
         {
-            this.account = account;
-            this.File = file;
-            this.storage = storage;
-            this.accountStorageFolder = accountStorageFolder;
-            this.format = format;
-            this.folder = folder;
-            this.markAsSent = markAsSent;
+            Account = account;
+            File = file;
+            Storage = storage;
+            AccountStorageFolder = accountStorageFolder;
+            Format = format;
+            Folder = folder;
+            MarkAsSent = markAsSent;
         }
 
         /// <summary>
         /// Email account.
         /// </summary>
-        public string account { get; set; }
+        public string Account { get; set; }
 
         /// <summary>
         /// Message file to append.
@@ -78,26 +78,26 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Storage name where account file located.
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Folder in storage where account file located.
         /// </summary>
-        public string accountStorageFolder { get; set; }
+        public string AccountStorageFolder { get; set; }
 
         /// <summary>
         /// Email file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
 
         /// <summary>
         /// Path to folder on email server to append message to.
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Determines that appended message should be market as sent or not.
         /// </summary>
-        public bool? markAsSent { get; set; }
+        public bool? MarkAsSent { get; set; }
   }
 }

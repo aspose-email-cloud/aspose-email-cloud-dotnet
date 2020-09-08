@@ -62,14 +62,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public void CopyFolder(CopyFolderRequest request)
         {
             // verify the required parameter 'srcPath' is set
-            if (request.srcPath == null)
+            if (request.SrcPath == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'srcPath' when calling CopyFolder");
             }
 
             // verify the required parameter 'destPath' is set
-            if (request.destPath == null)
+            if (request.DestPath == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'destPath' when calling CopyFolder");
@@ -81,10 +81,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "srcPath", request.srcPath);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "destPath", request.destPath);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "srcStorageName", request.srcStorageName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "destStorageName", request.destStorageName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "srcPath", request.SrcPath);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "destPath", request.DestPath);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "srcStorageName", request.SrcStorageName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "destStorageName", request.DestStorageName);
             apiInvoker.InvokeApi(
                 resourcePath,
                 "PUT");
@@ -107,7 +107,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public void CreateFolder(CreateFolderRequest request)
         {
             // verify the required parameter 'path' is set
-            if (request.path == null)
+            if (request.Path == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'path' when calling CreateFolder");
@@ -119,8 +119,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.path);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.storageName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.Path);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.StorageName);
             apiInvoker.InvokeApi(
                 resourcePath,
                 "PUT");
@@ -143,7 +143,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public void DeleteFolder(DeleteFolderRequest request)
         {
             // verify the required parameter 'path' is set
-            if (request.path == null)
+            if (request.Path == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'path' when calling DeleteFolder");
@@ -155,9 +155,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.path);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.storageName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "recursive", request.recursive);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.Path);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.StorageName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "recursive", request.Recursive);
             apiInvoker.InvokeApi(
                 resourcePath,
                 "DELETE");
@@ -181,7 +181,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public FilesList GetFilesList(GetFilesListRequest request)
         {
             // verify the required parameter 'path' is set
-            if (request.path == null)
+            if (request.Path == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'path' when calling GetFilesList");
@@ -193,8 +193,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.path);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.storageName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.Path);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.StorageName);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -219,14 +219,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public void MoveFolder(MoveFolderRequest request)
         {
             // verify the required parameter 'srcPath' is set
-            if (request.srcPath == null)
+            if (request.SrcPath == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'srcPath' when calling MoveFolder");
             }
 
             // verify the required parameter 'destPath' is set
-            if (request.destPath == null)
+            if (request.DestPath == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'destPath' when calling MoveFolder");
@@ -238,10 +238,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "srcPath", request.srcPath);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "destPath", request.destPath);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "srcStorageName", request.srcStorageName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "destStorageName", request.destStorageName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "srcPath", request.SrcPath);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "destPath", request.DestPath);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "srcStorageName", request.SrcStorageName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "destStorageName", request.DestStorageName);
             apiInvoker.InvokeApi(
                 resourcePath,
                 "PUT");

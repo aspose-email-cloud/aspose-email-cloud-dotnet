@@ -51,14 +51,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="file">File to convert</param>
         public CalendarConvertRequest(string format, System.IO.Stream file)
         {
-            this.format = format;
-            this.File = file;
+            Format = format;
+            File = file;
         }
 
         /// <summary>
         /// File format. Enum, available values: Ics, Msg
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
 
         /// <summary>
         /// File to convert

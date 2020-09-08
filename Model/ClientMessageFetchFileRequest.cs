@@ -55,42 +55,42 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="format">Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         public ClientMessageFetchFileRequest(string messageId, string account, string folder = null, string storage = null, string accountStorageFolder = null, string format = null)
         {
-            this.messageId = messageId;
-            this.account = account;
-            this.folder = folder;
-            this.storage = storage;
-            this.accountStorageFolder = accountStorageFolder;
-            this.format = format;
+            MessageId = messageId;
+            Account = account;
+            Folder = folder;
+            Storage = storage;
+            AccountStorageFolder = accountStorageFolder;
+            Format = format;
         }
 
         /// <summary>
         /// Message identifier
         /// </summary>
-        public string messageId { get; set; }
+        public string MessageId { get; set; }
 
         /// <summary>
         /// Email account
         /// </summary>
-        public string account { get; set; }
+        public string Account { get; set; }
 
         /// <summary>
         /// Account folder to fetch from (should be specified for some protocols such as IMAP)             
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Storage name where account file located.
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Folder in storage where account file located.
         /// </summary>
-        public string accountStorageFolder { get; set; }
+        public string AccountStorageFolder { get; set; }
 
         /// <summary>
         /// Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
   }
 }

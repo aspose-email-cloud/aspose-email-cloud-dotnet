@@ -53,30 +53,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="storage">Storage name.</param>
         public CalendarGetListRequest(string folder, int? itemsPerPage = null, int? pageNumber = null, string storage = null)
         {
-            this.folder = folder;
-            this.itemsPerPage = itemsPerPage;
-            this.pageNumber = pageNumber;
-            this.storage = storage;
+            Folder = folder;
+            ItemsPerPage = itemsPerPage;
+            PageNumber = pageNumber;
+            Storage = storage;
         }
 
         /// <summary>
         /// Path to folder in storage.
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Count of items on page.
         /// </summary>
-        public int? itemsPerPage { get; set; }
+        public int? ItemsPerPage { get; set; }
 
         /// <summary>
         /// Page number.
         /// </summary>
-        public int? pageNumber { get; set; }
+        public int? PageNumber { get; set; }
 
         /// <summary>
         /// Storage name.
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
   }
 }

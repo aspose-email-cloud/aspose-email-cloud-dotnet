@@ -53,30 +53,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="folder">Path to folder in storage.</param>
         public CalendarGetAsFileRequest(string fileName, string format, string storage = null, string folder = null)
         {
-            this.fileName = fileName;
-            this.format = format;
-            this.storage = storage;
-            this.folder = folder;
+            FileName = fileName;
+            Format = format;
+            Storage = storage;
+            Folder = folder;
         }
 
         /// <summary>
         /// Calendar document file name.
         /// </summary>
-        public string fileName { get; set; }
+        public string FileName { get; set; }
 
         /// <summary>
         /// File format. Enum, available values: Ics, Msg
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
 
         /// <summary>
         /// Storage name.
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Path to folder in storage.
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
   }
 }

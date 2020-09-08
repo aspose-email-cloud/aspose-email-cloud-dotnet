@@ -68,7 +68,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.storageName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.StorageName);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -94,7 +94,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public FileVersions GetFileVersions(GetFileVersionsRequest request)
         {
             // verify the required parameter 'path' is set
-            if (request.path == null)
+            if (request.Path == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'path' when calling GetFileVersions");
@@ -106,8 +106,8 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.path);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.storageName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.Path);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.StorageName);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -133,7 +133,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public ObjectExist ObjectExists(ObjectExistsRequest request)
         {
             // verify the required parameter 'path' is set
-            if (request.path == null)
+            if (request.Path == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'path' when calling ObjectExists");
@@ -145,9 +145,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.path);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.storageName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "versionId", request.versionId);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "path", request.Path);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storageName", request.StorageName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "versionId", request.VersionId);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -173,7 +173,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public StorageExist Exists(StorageExistsRequest request)
         {
             // verify the required parameter 'storageName' is set
-            if (request.storageName == null)
+            if (request.StorageName == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'storageName' when calling Exists");
@@ -185,7 +185,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddPathParameter(resourcePath, "storageName", request.storageName);
+            resourcePath = UrlHelper.AddPathParameter(resourcePath, "storageName", request.StorageName);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");

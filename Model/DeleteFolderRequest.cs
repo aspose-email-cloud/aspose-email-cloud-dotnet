@@ -52,24 +52,24 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="recursive">Enable to delete folders, subfolders and files</param>
         public DeleteFolderRequest(string path, string storageName = null, bool? recursive = null)
         {
-            this.path = path;
-            this.storageName = storageName;
-            this.recursive = recursive;
+            Path = path;
+            StorageName = storageName;
+            Recursive = recursive;
         }
 
         /// <summary>
         /// Folder path e.g. '/folder'
         /// </summary>
-        public string path { get; set; }
+        public string Path { get; set; }
 
         /// <summary>
         /// Storage name
         /// </summary>
-        public string storageName { get; set; }
+        public string StorageName { get; set; }
 
         /// <summary>
         /// Enable to delete folders, subfolders and files
         /// </summary>
-        public bool? recursive { get; set; }
+        public bool? Recursive { get; set; }
   }
 }

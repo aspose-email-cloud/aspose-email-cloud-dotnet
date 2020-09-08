@@ -51,18 +51,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="storageName">Storage name</param>
         public CreateFolderRequest(string path, string storageName = null)
         {
-            this.path = path;
-            this.storageName = storageName;
+            Path = path;
+            StorageName = storageName;
         }
 
         /// <summary>
         /// Folder path to create e.g. 'folder_1/folder_2/'
         /// </summary>
-        public string path { get; set; }
+        public string Path { get; set; }
 
         /// <summary>
         /// Storage name
         /// </summary>
-        public string storageName { get; set; }
+        public string StorageName { get; set; }
   }
 }
