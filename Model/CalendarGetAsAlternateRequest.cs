@@ -54,36 +54,36 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="storage">Storage name</param>
         public CalendarGetAsAlternateRequest(string fileName, string calendarAction, string sequenceId = null, string folder = null, string storage = null)
         {
-            this.fileName = fileName;
-            this.calendarAction = calendarAction;
-            this.sequenceId = sequenceId;
-            this.folder = folder;
-            this.storage = storage;
+            FileName = fileName;
+            CalendarAction = calendarAction;
+            SequenceId = sequenceId;
+            Folder = folder;
+            Storage = storage;
         }
 
         /// <summary>
         /// iCalendar file name in storage
         /// </summary>
-        public string fileName { get; set; }
+        public string FileName { get; set; }
 
         /// <summary>
         /// iCalendar method type Enum, available values: Create, Update, Cancel
         /// </summary>
-        public string calendarAction { get; set; }
+        public string CalendarAction { get; set; }
 
         /// <summary>
         /// The sequence id
         /// </summary>
-        public string sequenceId { get; set; }
+        public string SequenceId { get; set; }
 
         /// <summary>
         /// Path to folder in storage
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Storage name
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
   }
 }

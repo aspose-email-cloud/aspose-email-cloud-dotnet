@@ -63,7 +63,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public ValueTOfBoolean IsDisposable(DisposableEmailIsDisposableRequest request)
         {
             // verify the required parameter 'address' is set
-            if (request.address == null)
+            if (request.Address == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'address' when calling IsDisposable");
@@ -75,7 +75,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "address", request.address);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "address", request.Address);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");

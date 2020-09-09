@@ -57,54 +57,54 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="format">Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         public ClientMessageListRequest(string folder, string account, string queryString = null, string storage = null, string accountStorageFolder = null, bool? recursive = null, string type = null, string format = null)
         {
-            this.folder = folder;
-            this.account = account;
-            this.queryString = queryString;
-            this.storage = storage;
-            this.accountStorageFolder = accountStorageFolder;
-            this.recursive = recursive;
-            this.type = type;
-            this.format = format;
+            Folder = folder;
+            Account = account;
+            QueryString = queryString;
+            Storage = storage;
+            AccountStorageFolder = accountStorageFolder;
+            Recursive = recursive;
+            Type = type;
+            Format = format;
         }
 
         /// <summary>
         /// A folder in email account
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Email account
         /// </summary>
-        public string account { get; set; }
+        public string Account { get; set; }
 
         /// <summary>
         /// A MailQuery search string
         /// </summary>
-        public string queryString { get; set; }
+        public string QueryString { get; set; }
 
         /// <summary>
         /// Storage name where account file located
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Folder in storage where account file located
         /// </summary>
-        public string accountStorageFolder { get; set; }
+        public string AccountStorageFolder { get; set; }
 
         /// <summary>
         /// Specifies that should message be searched in subfolders recursively
         /// </summary>
-        public bool? recursive { get; set; }
+        public bool? Recursive { get; set; }
 
         /// <summary>
         /// MailMessageBase type. Using this property you can get messages in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64
         /// </summary>
-        public string type { get; set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
   }
 }

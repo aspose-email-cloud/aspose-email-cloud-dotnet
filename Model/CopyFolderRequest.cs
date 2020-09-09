@@ -53,30 +53,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="destStorageName">Destination storage name</param>
         public CopyFolderRequest(string srcPath, string destPath, string srcStorageName = null, string destStorageName = null)
         {
-            this.srcPath = srcPath;
-            this.destPath = destPath;
-            this.srcStorageName = srcStorageName;
-            this.destStorageName = destStorageName;
+            SrcPath = srcPath;
+            DestPath = destPath;
+            SrcStorageName = srcStorageName;
+            DestStorageName = destStorageName;
         }
 
         /// <summary>
         /// Source folder path e.g. '/src'
         /// </summary>
-        public string srcPath { get; set; }
+        public string SrcPath { get; set; }
 
         /// <summary>
         /// Destination folder path e.g. '/dst'
         /// </summary>
-        public string destPath { get; set; }
+        public string DestPath { get; set; }
 
         /// <summary>
         /// Source storage name
         /// </summary>
-        public string srcStorageName { get; set; }
+        public string SrcStorageName { get; set; }
 
         /// <summary>
         /// Destination storage name
         /// </summary>
-        public string destStorageName { get; set; }
+        public string DestStorageName { get; set; }
   }
 }

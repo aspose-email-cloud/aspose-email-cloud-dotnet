@@ -56,48 +56,48 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="format">Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         public ClientMessageFetchRequest(string messageId, string account, string folder = null, string storage = null, string accountStorageFolder = null, string type = null, string format = null)
         {
-            this.messageId = messageId;
-            this.account = account;
-            this.folder = folder;
-            this.storage = storage;
-            this.accountStorageFolder = accountStorageFolder;
-            this.type = type;
-            this.format = format;
+            MessageId = messageId;
+            Account = account;
+            Folder = folder;
+            Storage = storage;
+            AccountStorageFolder = accountStorageFolder;
+            Type = type;
+            Format = format;
         }
 
         /// <summary>
         /// Message identifier
         /// </summary>
-        public string messageId { get; set; }
+        public string MessageId { get; set; }
 
         /// <summary>
         /// Email account
         /// </summary>
-        public string account { get; set; }
+        public string Account { get; set; }
 
         /// <summary>
         /// Account folder to fetch from (should be specified for some protocols such as IMAP)             
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Storage name where account file located.
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Folder in storage where account file located.
         /// </summary>
-        public string accountStorageFolder { get; set; }
+        public string AccountStorageFolder { get; set; }
 
         /// <summary>
         /// MailMessageBase type. Using this property you can fetch message in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64
         /// </summary>
-        public string type { get; set; }
+        public string Type { get; set; }
 
         /// <summary>
         /// Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
   }
 }

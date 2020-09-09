@@ -53,30 +53,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="storage">Storage name.</param>
         public MapiContactGetRequest(string format, string fileName, string folder = null, string storage = null)
         {
-            this.format = format;
-            this.fileName = fileName;
-            this.folder = folder;
-            this.storage = storage;
+            Format = format;
+            FileName = fileName;
+            Folder = folder;
+            Storage = storage;
         }
 
         /// <summary>
         /// Contact document format. Enum, available values: VCard, WebDav, Msg
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
 
         /// <summary>
         /// Contact document file name.
         /// </summary>
-        public string fileName { get; set; }
+        public string FileName { get; set; }
 
         /// <summary>
         /// Path to folder in storage.
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Storage name.
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
   }
 }

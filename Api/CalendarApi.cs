@@ -181,7 +181,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public System.IO.Stream Convert(CalendarConvertRequest request)
         {
             // verify the required parameter 'format' is set
-            if (request.format == null)
+            if (request.Format == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'format' when calling Convert");
@@ -201,7 +201,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var formParams = new Dictionary<string, object>();
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
             if (request.File != null)
             {
                 formParams.Add("file",
@@ -280,7 +280,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public CalendarDto Get(CalendarGetRequest request)
         {
             // verify the required parameter 'fileName' is set
-            if (request.fileName == null)
+            if (request.FileName == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'fileName' when calling Get");
@@ -292,9 +292,9 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.fileName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.FileName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -320,14 +320,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public AlternateView GetAsAlternate(CalendarGetAsAlternateRequest request)
         {
             // verify the required parameter 'fileName' is set
-            if (request.fileName == null)
+            if (request.FileName == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'fileName' when calling GetAsAlternate");
             }
 
             // verify the required parameter 'calendarAction' is set
-            if (request.calendarAction == null)
+            if (request.CalendarAction == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'calendarAction' when calling GetAsAlternate");
@@ -339,11 +339,11 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.fileName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "calendarAction", request.calendarAction);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "sequenceId", request.sequenceId);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.FileName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "calendarAction", request.CalendarAction);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "sequenceId", request.SequenceId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -369,14 +369,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public System.IO.Stream GetAsFile(CalendarGetAsFileRequest request)
         {
             // verify the required parameter 'fileName' is set
-            if (request.fileName == null)
+            if (request.FileName == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'fileName' when calling GetAsFile");
             }
 
             // verify the required parameter 'format' is set
-            if (request.format == null)
+            if (request.Format == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'format' when calling GetAsFile");
@@ -388,10 +388,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.fileName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "fileName", request.FileName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
             return apiInvoker.InvokeBinaryApi(
                 resourcePath,
                 "GET",
@@ -419,7 +419,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public CalendarStorageList GetList(CalendarGetListRequest request)
         {
             // verify the required parameter 'folder' is set
-            if (request.folder == null)
+            if (request.Folder == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'folder' when calling GetList");
@@ -431,10 +431,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "itemsPerPage", request.itemsPerPage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "pageNumber", request.pageNumber);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "itemsPerPage", request.ItemsPerPage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "pageNumber", request.PageNumber);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");

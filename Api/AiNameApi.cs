@@ -63,7 +63,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public AiNameWeightedVariants Complete(AiNameCompleteRequest request)
         {
             // verify the required parameter 'name' is set
-            if (request.name == null)
+            if (request.Name == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'name' when calling Complete");
@@ -75,12 +75,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.language);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.location);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.encoding);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.script);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.style);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.Name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.Language);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.Location);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.Encoding);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.Script);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.Style);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -106,7 +106,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public AiNameWeightedVariants Expand(AiNameExpandRequest request)
         {
             // verify the required parameter 'name' is set
-            if (request.name == null)
+            if (request.Name == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'name' when calling Expand");
@@ -118,12 +118,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.language);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.location);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.encoding);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.script);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.style);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.Name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.Language);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.Location);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.Encoding);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.Script);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.Style);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -188,7 +188,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public AiNameFormatted Format(AiNameFormatRequest request)
         {
             // verify the required parameter 'name' is set
-            if (request.name == null)
+            if (request.Name == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'name' when calling Format");
@@ -200,13 +200,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.language);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.location);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.encoding);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.script);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.style);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.Name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.Language);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.Location);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.Encoding);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.Script);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.Style);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -271,7 +271,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public AiNameGenderHypothesisList Genderize(AiNameGenderizeRequest request)
         {
             // verify the required parameter 'name' is set
-            if (request.name == null)
+            if (request.Name == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'name' when calling Genderize");
@@ -283,12 +283,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.language);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.location);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.encoding);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.script);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.style);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.Name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.Language);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.Location);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.Encoding);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.Script);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.Style);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -353,14 +353,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public AiNameMatchResult Match(AiNameMatchRequest request)
         {
             // verify the required parameter 'name' is set
-            if (request.name == null)
+            if (request.Name == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'name' when calling Match");
             }
 
             // verify the required parameter 'otherName' is set
-            if (request.otherName == null)
+            if (request.OtherName == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'otherName' when calling Match");
@@ -372,13 +372,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "otherName", request.otherName);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.language);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.location);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.encoding);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.script);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.style);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.Name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "otherName", request.OtherName);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.Language);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.Location);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.Encoding);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.Script);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.Style);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -443,7 +443,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public AiNameComponentList Parse(AiNameParseRequest request)
         {
             // verify the required parameter 'name' is set
-            if (request.name == null)
+            if (request.Name == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'name' when calling Parse");
@@ -455,12 +455,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.name);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.language);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.location);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.encoding);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.script);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.style);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "name", request.Name);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.Language);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.Location);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.Encoding);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.Script);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.Style);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -486,7 +486,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public AiNameExtractedList ParseEmailAddress(AiNameParseEmailAddressRequest request)
         {
             // verify the required parameter 'emailAddress' is set
-            if (request.emailAddress == null)
+            if (request.EmailAddress == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'emailAddress' when calling ParseEmailAddress");
@@ -498,12 +498,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "emailAddress", request.emailAddress);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.language);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.location);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.encoding);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.script);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.style);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "emailAddress", request.EmailAddress);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "language", request.Language);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "location", request.Location);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "encoding", request.Encoding);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "script", request.Script);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "style", request.Style);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");

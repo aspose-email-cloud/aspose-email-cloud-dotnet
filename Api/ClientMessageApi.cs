@@ -102,7 +102,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public ValueTOfString AppendFile(ClientMessageAppendFileRequest request)
         {
             // verify the required parameter 'account' is set
-            if (request.account == null)
+            if (request.Account == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'account' when calling AppendFile");
@@ -122,12 +122,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var formParams = new Dictionary<string, object>();
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.account);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.accountStorageFolder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "markAsSent", request.markAsSent);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.Account);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.AccountStorageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "markAsSent", request.MarkAsSent);
             if (request.File != null)
             {
                 formParams.Add("file",
@@ -196,14 +196,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public MailMessageBase Fetch(ClientMessageFetchRequest request)
         {
             // verify the required parameter 'messageId' is set
-            if (request.messageId == null)
+            if (request.MessageId == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'messageId' when calling Fetch");
             }
 
             // verify the required parameter 'account' is set
-            if (request.account == null)
+            if (request.Account == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'account' when calling Fetch");
@@ -215,13 +215,13 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.messageId);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.account);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.accountStorageFolder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "type", request.type);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.MessageId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.Account);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.AccountStorageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "type", request.Type);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -247,14 +247,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public System.IO.Stream FetchFile(ClientMessageFetchFileRequest request)
         {
             // verify the required parameter 'messageId' is set
-            if (request.messageId == null)
+            if (request.MessageId == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'messageId' when calling FetchFile");
             }
 
             // verify the required parameter 'account' is set
-            if (request.account == null)
+            if (request.Account == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'account' when calling FetchFile");
@@ -266,12 +266,12 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.messageId);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.account);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.accountStorageFolder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "messageId", request.MessageId);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.Account);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.AccountStorageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
             return apiInvoker.InvokeBinaryApi(
                 resourcePath,
                 "GET",
@@ -299,14 +299,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public MailMessageBaseList List(ClientMessageListRequest request)
         {
             // verify the required parameter 'folder' is set
-            if (request.folder == null)
+            if (request.Folder == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'folder' when calling List");
             }
 
             // verify the required parameter 'account' is set
-            if (request.account == null)
+            if (request.Account == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'account' when calling List");
@@ -318,14 +318,14 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace(resourcePath, "\\*", string.Empty)
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.folder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.account);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "queryString", request.queryString);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.accountStorageFolder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "recursive", request.recursive);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "type", request.type);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "folder", request.Folder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.Account);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "queryString", request.QueryString);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.AccountStorageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "recursive", request.Recursive);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "type", request.Type);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
             var response = apiInvoker.InvokeApi(
                 resourcePath,
                 "GET");
@@ -422,7 +422,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         public void SendFile(ClientMessageSendFileRequest request)
         {
             // verify the required parameter 'account' is set
-            if (request.account == null)
+            if (request.Account == null)
             {
                 throw new ApiException(400,
                     "Missing required parameter 'account' when calling SendFile");
@@ -442,10 +442,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
                 .Replace("&amp;", "&")
                 .Replace("/?", "?");
             var formParams = new Dictionary<string, object>();
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.account);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.storage);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.accountStorageFolder);
-            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.format);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "account", request.Account);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "storage", request.Storage);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "accountStorageFolder", request.AccountStorageFolder);
+            resourcePath = UrlHelper.AddQueryParameterToUrl(resourcePath, "format", request.Format);
             if (request.File != null)
             {
                 formParams.Add("file",

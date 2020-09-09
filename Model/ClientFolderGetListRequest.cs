@@ -53,30 +53,30 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="parentFolder">Folder in which subfolders should be listed</param>
         public ClientFolderGetListRequest(string account, string storage = null, string accountStorageFolder = null, string parentFolder = null)
         {
-            this.account = account;
-            this.storage = storage;
-            this.accountStorageFolder = accountStorageFolder;
-            this.parentFolder = parentFolder;
+            Account = account;
+            Storage = storage;
+            AccountStorageFolder = accountStorageFolder;
+            ParentFolder = parentFolder;
         }
 
         /// <summary>
         /// Email account
         /// </summary>
-        public string account { get; set; }
+        public string Account { get; set; }
 
         /// <summary>
         /// Storage name where account file located
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Folder in storage where account file located
         /// </summary>
-        public string accountStorageFolder { get; set; }
+        public string AccountStorageFolder { get; set; }
 
         /// <summary>
         /// Folder in which subfolders should be listed
         /// </summary>
-        public string parentFolder { get; set; }
+        public string ParentFolder { get; set; }
   }
 }

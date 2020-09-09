@@ -52,15 +52,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="storageName">Storage name</param>
         public UploadFileRequest(string path, System.IO.Stream file, string storageName = null)
         {
-            this.path = path;
-            this.File = file;
-            this.storageName = storageName;
+            Path = path;
+            File = file;
+            StorageName = storageName;
         }
 
         /// <summary>
         /// Path where to upload including filename and extension e.g. /file.ext or /Folder 1/file.ext             If the content is multipart and path does not contains the file name it tries to get them from filename parameter             from Content-Disposition header.             
         /// </summary>
-        public string path { get; set; }
+        public string Path { get; set; }
 
         /// <summary>
         /// File to upload
@@ -70,6 +70,6 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Storage name
         /// </summary>
-        public string storageName { get; set; }
+        public string StorageName { get; set; }
   }
 }

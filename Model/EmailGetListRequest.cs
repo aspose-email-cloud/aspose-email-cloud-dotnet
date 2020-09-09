@@ -54,36 +54,36 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="pageNumber">Page number.</param>
         public EmailGetListRequest(string format, string folder = null, string storage = null, int? itemsPerPage = null, int? pageNumber = null)
         {
-            this.format = format;
-            this.folder = folder;
-            this.storage = storage;
-            this.itemsPerPage = itemsPerPage;
-            this.pageNumber = pageNumber;
+            Format = format;
+            Folder = folder;
+            Storage = storage;
+            ItemsPerPage = itemsPerPage;
+            PageNumber = pageNumber;
         }
 
         /// <summary>
         /// Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
 
         /// <summary>
         /// Path to folder in storage.
         /// </summary>
-        public string folder { get; set; }
+        public string Folder { get; set; }
 
         /// <summary>
         /// Storage name.
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Count of items on page.
         /// </summary>
-        public int? itemsPerPage { get; set; }
+        public int? ItemsPerPage { get; set; }
 
         /// <summary>
         /// Page number.
         /// </summary>
-        public int? pageNumber { get; set; }
+        public int? PageNumber { get; set; }
   }
 }

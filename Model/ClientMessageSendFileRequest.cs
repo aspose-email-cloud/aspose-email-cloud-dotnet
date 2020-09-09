@@ -54,17 +54,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="format">Email file format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         public ClientMessageSendFileRequest(string account, System.IO.Stream file, string storage = null, string accountStorageFolder = null, string format = null)
         {
-            this.account = account;
-            this.File = file;
-            this.storage = storage;
-            this.accountStorageFolder = accountStorageFolder;
-            this.format = format;
+            Account = account;
+            File = file;
+            Storage = storage;
+            AccountStorageFolder = accountStorageFolder;
+            Format = format;
         }
 
         /// <summary>
         /// Email account
         /// </summary>
-        public string account { get; set; }
+        public string Account { get; set; }
 
         /// <summary>
         /// File to send
@@ -74,16 +74,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Storage name where account file located.
         /// </summary>
-        public string storage { get; set; }
+        public string Storage { get; set; }
 
         /// <summary>
         /// Folder in storage where account file located.
         /// </summary>
-        public string accountStorageFolder { get; set; }
+        public string AccountStorageFolder { get; set; }
 
         /// <summary>
         /// Email file format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
-        public string format { get; set; }
+        public string Format { get; set; }
   }
 }

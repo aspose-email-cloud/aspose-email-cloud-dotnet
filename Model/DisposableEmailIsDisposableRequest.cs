@@ -50,12 +50,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="address">An email address to check</param>
         public DisposableEmailIsDisposableRequest(string address)
         {
-            this.address = address;
+            Address = address;
         }
 
         /// <summary>
         /// An email address to check
         /// </summary>
-        public string address { get; set; }
+        public string Address { get; set; }
   }
 }

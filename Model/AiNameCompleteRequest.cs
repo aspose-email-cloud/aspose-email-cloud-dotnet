@@ -55,42 +55,42 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="style">Name writing style. Enum, available values: Formal, Informal, Legal, Academic</param>
         public AiNameCompleteRequest(string name, string language = null, string location = null, string encoding = null, string script = null, string style = null)
         {
-            this.name = name;
-            this.language = language;
-            this.location = location;
-            this.encoding = encoding;
-            this.script = script;
-            this.style = style;
+            Name = name;
+            Language = language;
+            Location = location;
+            Encoding = encoding;
+            Script = script;
+            Style = style;
         }
 
         /// <summary>
         /// A name to complete.
         /// </summary>
-        public string name { get; set; }
+        public string Name { get; set; }
 
         /// <summary>
         /// An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \"it\" or \"ita\" for Italian).             
         /// </summary>
-        public string language { get; set; }
+        public string Language { get; set; }
 
         /// <summary>
         /// A geographic code such as an ISO-3166 two letter country code, for example \"FR\" for France.             
         /// </summary>
-        public string location { get; set; }
+        public string Location { get; set; }
 
         /// <summary>
         /// A character encoding name.
         /// </summary>
-        public string encoding { get; set; }
+        public string Encoding { get; set; }
 
         /// <summary>
         /// A writing system code; starts with the ISO-15924 script name.
         /// </summary>
-        public string script { get; set; }
+        public string Script { get; set; }
 
         /// <summary>
         /// Name writing style. Enum, available values: Formal, Informal, Legal, Academic
         /// </summary>
-        public string style { get; set; }
+        public string Style { get; set; }
   }
 }
