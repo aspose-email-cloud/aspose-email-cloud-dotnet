@@ -1,162 +1,228 @@
 # Aspose.Email.Cloud.Sdk.StorageApi
 
-        <a name="GetDiscUsage"></a>
+<a name="GetDiscUsage"></a>
 # GetDiscUsage
-
-```csharp
-DiscUsage GetDiscUsage(GetDiscUsageRequest request)
-```
 
 Get disc usage
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-[**DiscUsage**](DiscUsage.md)
+```csharp
+// Prepare parameters:
+var request = new GetDiscUsageRequest
+{ 
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = Api.CloudStorage.Storage.GetDiscUsage(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new GetDiscUsageRequest(
-    storageName=storageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storageName** | **string**| Storage name | [optional] 
+
+### Return type
+
+[**DiscUsage**](DiscUsage.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetDiscUsageAsync"></a>
 # GetDiscUsageAsync
 
-```csharp
-async Task<DiscUsage> GetDiscUsageAsync(GetDiscUsageRequest request)
-```
-
 Get disc usage
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task<[**DiscUsage**](DiscUsage.md)>
+```csharp
+// Prepare parameters:
+var request = new GetDiscUsageRequest
+{ 
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = await Api.CloudStorage.Storage.GetDiscUsageAsync(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new GetDiscUsageRequest(
-    storageName=storageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="GetFileVersions"></a>
-# GetFileVersions
+### Return type
 
-```csharp
-FileVersions GetFileVersions(GetFileVersionsRequest request)
-```
+[**DiscUsage**](DiscUsage.md)
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="GetFileVersions"></a>
+# GetFileVersions
 
 Get file versions
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-[**FileVersions**](FileVersions.md)
+```csharp
+// Prepare parameters:
+var request = new GetFileVersionsRequest
+{ 
+    Path = "/storage/path/to/file.ext",
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = Api.CloudStorage.Storage.GetFileVersions(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new GetFileVersionsRequest(
-    path,
-    storageName=storageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
  **storageName** | **string**| Storage name | [optional] 
+
+### Return type
+
+[**FileVersions**](FileVersions.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetFileVersionsAsync"></a>
 # GetFileVersionsAsync
 
-```csharp
-async Task<FileVersions> GetFileVersionsAsync(GetFileVersionsRequest request)
-```
-
 Get file versions
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task<[**FileVersions**](FileVersions.md)>
+```csharp
+// Prepare parameters:
+var request = new GetFileVersionsRequest
+{ 
+    Path = "/storage/path/to/file.ext",
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = await Api.CloudStorage.Storage.GetFileVersionsAsync(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new GetFileVersionsRequest(
-    path,
-    storageName=storageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="ObjectExists"></a>
-# ObjectExists
+### Return type
 
-```csharp
-ObjectExist ObjectExists(ObjectExistsRequest request)
-```
+[**FileVersions**](FileVersions.md)
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="ObjectExists"></a>
+# ObjectExists
 
 Check if file or folder exists
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-[**ObjectExist**](ObjectExist.md)
+```csharp
+// Prepare parameters:
+var request = new ObjectExistsRequest
+{ 
+    Path = "/storage/path/to/folder/or/file.ext",
+    StorageName = "First Storage",
+};
+
+// Call method:
+var result = Api.CloudStorage.Storage.ObjectExists(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new ObjectExistsRequest(
-    path,
-    storageName=storageName,
-    versionId=versionId)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **path** | **string**| File or folder path e.g. &#39;/file.ext&#39; or &#39;/folder&#39; | 
  **storageName** | **string**| Storage name | [optional] 
  **versionId** | **string**| File version ID | [optional] 
+
+### Return type
+
+[**ObjectExist**](ObjectExist.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ObjectExistsAsync"></a>
 # ObjectExistsAsync
 
-```csharp
-async Task<ObjectExist> ObjectExistsAsync(ObjectExistsRequest request)
-```
-
 Check if file or folder exists
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task<[**ObjectExist**](ObjectExist.md)>
+```csharp
+// Prepare parameters:
+var request = new ObjectExistsRequest
+{ 
+    Path = "/storage/path/to/folder/or/file.ext",
+    StorageName = "First Storage",
+};
+
+// Call method:
+var result = await Api.CloudStorage.Storage.ObjectExistsAsync(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new ObjectExistsRequest(
-    path,
-    storageName=storageName,
-    versionId=versionId)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -164,55 +230,83 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **versionId** | **string**| File version ID | [optional] 
 
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Exists"></a>
-# Exists
+### Return type
 
-```csharp
-StorageExist Exists(StorageExistsRequest request)
-```
+[**ObjectExist**](ObjectExist.md)
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="Exists"></a>
+# Exists
 
 Check if storage exists
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-[**StorageExist**](StorageExist.md)
+```csharp
+// Prepare parameters:
+var request = new StorageExistsRequest
+{ 
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = Api.CloudStorage.Storage.Exists(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new StorageExistsRequest(
-    storageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storageName** | **string**| Storage name | 
+
+### Return type
+
+[**StorageExist**](StorageExist.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ExistsAsync"></a>
 # ExistsAsync
 
-```csharp
-async Task<StorageExist> ExistsAsync(StorageExistsRequest request)
-```
-
 Check if storage exists
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task<[**StorageExist**](StorageExist.md)>
+```csharp
+// Prepare parameters:
+var request = new StorageExistsRequest
+{ 
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = await Api.CloudStorage.Storage.ExistsAsync(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new StorageExistsRequest(
-    storageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **storageName** | **string**| Storage name | 
+
+### Return type
+
+[**StorageExist**](StorageExist.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

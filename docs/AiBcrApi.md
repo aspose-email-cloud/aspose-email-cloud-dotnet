@@ -1,26 +1,34 @@
 # Aspose.Email.Cloud.Sdk.AiBcrApi
 
-        <a name="Parse"></a>
+<a name="Parse"></a>
 # Parse
-
-```csharp
-ContactList Parse(AiBcrParseRequest request)
-```
 
 Parse images to vCard document models             
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-[**ContactList**](ContactList.md)
+```csharp
+// Prepare parameters:
+var request = new AiBcrParseRequest
+{ 
+    File = new MemoryStream(File.ReadAllBytes("/path/to/image.png")),
+    Countries = "us",
+    Languages = "en",
+    IsSingle = true
+};
+
+// Call method:
+var result = Api.Ai.Bcr.Parse(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new AiBcrParseRequest(
-    file,
-    countries=countries,
-    languages=languages,
-    isSingle=isSingle)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -28,32 +36,44 @@ Name | Type | Description  | Notes
  **countries** | **string**| Comma-separated codes of countries. | [optional] 
  **languages** | **string**| Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default.              | [optional] 
  **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
+
+### Return type
+
+[**ContactList**](ContactList.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ParseAsync"></a>
 # ParseAsync
 
-```csharp
-async Task<ContactList> ParseAsync(AiBcrParseRequest request)
-```
-
 Parse images to vCard document models             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task<[**ContactList**](ContactList.md)>
+```csharp
+// Prepare parameters:
+var request = new AiBcrParseRequest
+{ 
+    File = new MemoryStream(File.ReadAllBytes("/path/to/image.png")),
+    Countries = "us",
+    Languages = "en",
+    IsSingle = true
+};
+
+// Call method:
+var result = await Api.Ai.Bcr.ParseAsync(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new AiBcrParseRequest(
-    file,
-    countries=countries,
-    languages=languages,
-    isSingle=isSingle)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -62,43 +82,111 @@ Name | Type | Description  | Notes
  **languages** | **string**| Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default.              | [optional] 
  **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
 
+### Return type
+
+[**ContactList**](ContactList.md)
+
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="ParseStorage"></a>
+<a name="ParseStorage"></a>
 # ParseStorage
 
+Parse images from storage to vCard files             
+
+<details>
+    <summary>Method call example:</summary>
+
 ```csharp
-StorageFileLocationList ParseStorage(AiBcrParseStorageRequest request)
+// Prepare parameters:
+var request = new AiBcrParseStorageRequest
+{
+    OutFolder = new StorageFolderLocation
+    {
+        Storage = "First Storage",
+        FolderPath = "VCard/files/produced/by/parser/will/be/placed/here"
+    },
+    Images = new List<AiBcrImageStorageFile>
+    {
+        new AiBcrImageStorageFile
+        {
+            File = new StorageFileLocation
+            {
+                FileName = "VCardScanImage.jpg",
+                Storage = "First Storage",
+                FolderPath = "image/location/on/storage"
+            },
+            IsSingle = true
+        }
+    }
+};
+
+// Call method:
+var result = Api.Ai.Bcr.ParseStorage(request);
+
+// Result example:
+result = ;
 ```
 
-Parse images from storage to vCard files             
+</details>
+
+### request Parameter
+See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
+
 
 ### Return type
 
 [**StorageFileLocationList**](StorageFileLocationList.md)
-
-### request Parameter
-
-See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ParseStorageAsync"></a>
 # ParseStorageAsync
 
-```csharp
-async Task<StorageFileLocationList> ParseStorageAsync(AiBcrParseStorageRequest request)
-```
-
 Parse images from storage to vCard files             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+// Prepare parameters:
+var request = new AiBcrParseStorageRequest
+{
+    OutFolder = new StorageFolderLocation
+    {
+        Storage = "First Storage",
+        FolderPath = "VCard/files/produced/by/parser/will/be/placed/here"
+    },
+    Images = new List<AiBcrImageStorageFile>
+    {
+        new AiBcrImageStorageFile
+        {
+            File = new StorageFileLocation
+            {
+                FileName = "VCardScanImage.jpg",
+                Storage = "First Storage",
+                FolderPath = "image/location/on/storage"
+            },
+            IsSingle = true
+        }
+    }
+};
+
+// Call method:
+var result = await Api.Ai.Bcr.ParseStorageAsync(request);
+
+// Result example:
+result = ;
+```
+
+</details>
+
+### request Parameter
+See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
+
+
 ### Return type
 
 Task<[**StorageFileLocationList**](StorageFileLocationList.md)>
-
-### request Parameter
-
-See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

@@ -1,56 +1,102 @@
 # Aspose.Email.Cloud.Sdk.ClientAccountApi
 
-        <a name="Get"></a>
+<a name="Get"></a>
 # Get
-
-```csharp
-EmailClientAccount Get(ClientAccountGetRequest request)
-```
 
 Get email client account from storage.             
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-[**EmailClientAccount**](EmailClientAccount.md)
+```csharp
+// Prepare parameters:
+var request = new ClientAccountGetRequest
+{ 
+    FileName = "email.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = Api.Client.Account.Get(request);
+
+// Result example:
+result = new EmailClientAccount
+{
+    Host = "smtp.example.com",
+    Port = 465,
+    SecurityOptions = "SSLAuto",
+    ProtocolType = "SMTP",
+    Credentials = new EmailClientAccountOauthCredentials
+    {
+        ClientId = "clientId",
+        ClientSecret = "clientSecret",
+        RefreshToken = "refreshToken",
+        Login = "example@example.com"
+    }
+};
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new ClientAccountGetRequest(
-    fileName,
-    folder=folder,
-    storage=storage)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileName** | **string**| File name on storage. | 
  **folder** | **string**| Folder on storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
+
+### Return type
+
+[**EmailClientAccount**](EmailClientAccount.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsync"></a>
 # GetAsync
 
-```csharp
-async Task<EmailClientAccount> GetAsync(ClientAccountGetRequest request)
-```
-
 Get email client account from storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task<[**EmailClientAccount**](EmailClientAccount.md)>
+```csharp
+// Prepare parameters:
+var request = new ClientAccountGetRequest
+{ 
+    FileName = "email.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = await Api.Client.Account.GetAsync(request);
+
+// Result example:
+result = new EmailClientAccount
+{
+    Host = "smtp.example.com",
+    Port = 465,
+    SecurityOptions = "SSLAuto",
+    ProtocolType = "SMTP",
+    Credentials = new EmailClientAccountOauthCredentials
+    {
+        ClientId = "clientId",
+        ClientSecret = "clientSecret",
+        RefreshToken = "refreshToken",
+        Login = "example@example.com"
+    }
+};
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new ClientAccountGetRequest(
-    fileName,
-    folder=folder,
-    storage=storage)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -58,58 +104,164 @@ Name | Type | Description  | Notes
  **folder** | **string**| Folder on storage. | [optional] 
  **storage** | **string**| Storage name. | [optional] 
 
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="GetMulti"></a>
-# GetMulti
+### Return type
 
-```csharp
-EmailClientMultiAccount GetMulti(ClientAccountGetMultiRequest request)
-```
+[**EmailClientAccount**](EmailClientAccount.md)
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="GetMulti"></a>
+# GetMulti
 
 Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-[**EmailClientMultiAccount**](EmailClientMultiAccount.md)
+```csharp
+// Prepare parameters:
+var request = new ClientAccountGetMultiRequest
+{ 
+    FileName = "email.multi.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = Api.Client.Account.GetMulti(request);
+
+// Result example:
+result = new EmailClientMultiAccount
+{
+    ReceiveAccounts = new List<EmailClientAccount>
+    {
+        new EmailClientAccount
+        {
+            Host = "imap.gmail.com",
+            Port = 993,
+            SecurityOptions = "SSLAuto",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        },
+        new EmailClientAccount
+        {
+            Host = "exchange@outlook.com",
+            Port = 443,
+            ProtocolType = "EWS",
+            Credentials = new EmailClientAccountOauthCredentials
+            {
+                ClientId = "clientId",
+                ClientSecret = "clientSecret",
+                RefreshToken = "refreshToken",
+                Login = "example@outlook.com"
+            }
+        }
+    },
+    SendAccount = new EmailClientAccount
+    {
+        Host = "smtp.gmail.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountPasswordCredentials
+        {
+            Password = "password",
+            Login = "example@gmail.com"
+        }
+    }
+};
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new ClientAccountGetMultiRequest(
-    fileName,
-    folder=folder,
-    storage=storage)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fileName** | **string**| File name on storage | 
  **folder** | **string**| Folder on storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
+
+### Return type
+
+[**EmailClientMultiAccount**](EmailClientMultiAccount.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetMultiAsync"></a>
 # GetMultiAsync
 
-```csharp
-async Task<EmailClientMultiAccount> GetMultiAsync(ClientAccountGetMultiRequest request)
-```
-
 Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task<[**EmailClientMultiAccount**](EmailClientMultiAccount.md)>
+```csharp
+// Prepare parameters:
+var request = new ClientAccountGetMultiRequest
+{ 
+    FileName = "email.multi.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = await Api.Client.Account.GetMultiAsync(request);
+
+// Result example:
+result = new EmailClientMultiAccount
+{
+    ReceiveAccounts = new List<EmailClientAccount>
+    {
+        new EmailClientAccount
+        {
+            Host = "imap.gmail.com",
+            Port = 993,
+            SecurityOptions = "SSLAuto",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        },
+        new EmailClientAccount
+        {
+            Host = "exchange@outlook.com",
+            Port = 443,
+            ProtocolType = "EWS",
+            Credentials = new EmailClientAccountOauthCredentials
+            {
+                ClientId = "clientId",
+                ClientSecret = "clientSecret",
+                RefreshToken = "refreshToken",
+                Login = "example@outlook.com"
+            }
+        }
+    },
+    SendAccount = new EmailClientAccount
+    {
+        Host = "smtp.gmail.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountPasswordCredentials
+        {
+            Password = "password",
+            Login = "example@gmail.com"
+        }
+    }
+};
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new ClientAccountGetMultiRequest(
-    fileName,
-    folder=folder,
-    storage=storage)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -117,82 +269,270 @@ Name | Type | Description  | Notes
  **folder** | **string**| Folder on storage | [optional] 
  **storage** | **string**| Storage name | [optional] 
 
+### Return type
+
+[**EmailClientMultiAccount**](EmailClientMultiAccount.md)
+
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Save"></a>
+<a name="Save"></a>
 # Save
 
+Create/update email client account file (*.account) with credentials             
+
+<details>
+    <summary>Method call example:</summary>
+
 ```csharp
-void Save(ClientAccountSaveRequest request)
+// Prepare parameters:
+var request = new ClientAccountSaveRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientAccount
+    {
+        Host = "smtp.example.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountOauthCredentials
+        {
+            ClientId = "clientId",
+            ClientSecret = "clientSecret",
+            RefreshToken = "refreshToken",
+            Login = "example@example.com"
+        }
+    }
+};
+
+// Call method:
+Api.Client.Account.Save(request);
+
 ```
 
-Create/update email client account file (*.account) with credentials             
+</details>
+
+### request Parameter
+See parameter model documentation at [ClientAccountSaveRequest](ClientAccountSaveRequest.md)
+
 
 ### Return type
 
 void (empty response body)
-
-### request Parameter
-
-See parameter model documentation at [ClientAccountSaveRequest](ClientAccountSaveRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveAsync"></a>
 # SaveAsync
 
-```csharp
-async Task SaveAsync(ClientAccountSaveRequest request)
-```
-
 Create/update email client account file (*.account) with credentials             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+// Prepare parameters:
+var request = new ClientAccountSaveRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientAccount
+    {
+        Host = "smtp.example.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountOauthCredentials
+        {
+            ClientId = "clientId",
+            ClientSecret = "clientSecret",
+            RefreshToken = "refreshToken",
+            Login = "example@example.com"
+        }
+    }
+};
+
+// Call method:
+await Api.Client.Account.SaveAsync(request);
+
+```
+
+</details>
+
+### request Parameter
+See parameter model documentation at [ClientAccountSaveRequest](ClientAccountSaveRequest.md)
+
 
 ### Return type
 
 Task (empty response body)
 
-### request Parameter
-
-See parameter model documentation at [ClientAccountSaveRequest](ClientAccountSaveRequest.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="SaveMulti"></a>
+<a name="SaveMulti"></a>
 # SaveMulti
 
+Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+
+<details>
+    <summary>Method call example:</summary>
+
 ```csharp
-void SaveMulti(ClientAccountSaveMultiRequest request)
+// Prepare parameters:
+var request = new ClientAccountSaveMultiRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.multi.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientMultiAccount
+    {
+        ReceiveAccounts = new List<EmailClientAccount>
+        {
+            new EmailClientAccount
+            {
+                Host = "imap.gmail.com",
+                Port = 993,
+                SecurityOptions = "SSLAuto",
+                Credentials = new EmailClientAccountPasswordCredentials
+                {
+                    Password = "password",
+                    Login = "example@gmail.com"
+                }
+            },
+            new EmailClientAccount
+            {
+                Host = "exchange@outlook.com",
+                Port = 443,
+                ProtocolType = "EWS",
+                Credentials = new EmailClientAccountOauthCredentials
+                {
+                    ClientId = "clientId",
+                    ClientSecret = "clientSecret",
+                    RefreshToken = "refreshToken",
+                    Login = "example@outlook.com"
+                }
+            }
+        },
+        SendAccount = new EmailClientAccount
+        {
+            Host = "smtp.gmail.com",
+            Port = 465,
+            SecurityOptions = "SSLAuto",
+            ProtocolType = "SMTP",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        }
+    }
+};
+
+// Call method:
+Api.Client.Account.SaveMulti(request);
+
 ```
 
-Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+</details>
+
+### request Parameter
+See parameter model documentation at [ClientAccountSaveMultiRequest](ClientAccountSaveMultiRequest.md)
+
 
 ### Return type
 
 void (empty response body)
-
-### request Parameter
-
-See parameter model documentation at [ClientAccountSaveMultiRequest](ClientAccountSaveMultiRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveMultiAsync"></a>
 # SaveMultiAsync
 
-```csharp
-async Task SaveMultiAsync(ClientAccountSaveMultiRequest request)
-```
-
 Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+// Prepare parameters:
+var request = new ClientAccountSaveMultiRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.multi.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientMultiAccount
+    {
+        ReceiveAccounts = new List<EmailClientAccount>
+        {
+            new EmailClientAccount
+            {
+                Host = "imap.gmail.com",
+                Port = 993,
+                SecurityOptions = "SSLAuto",
+                Credentials = new EmailClientAccountPasswordCredentials
+                {
+                    Password = "password",
+                    Login = "example@gmail.com"
+                }
+            },
+            new EmailClientAccount
+            {
+                Host = "exchange@outlook.com",
+                Port = 443,
+                ProtocolType = "EWS",
+                Credentials = new EmailClientAccountOauthCredentials
+                {
+                    ClientId = "clientId",
+                    ClientSecret = "clientSecret",
+                    RefreshToken = "refreshToken",
+                    Login = "example@outlook.com"
+                }
+            }
+        },
+        SendAccount = new EmailClientAccount
+        {
+            Host = "smtp.gmail.com",
+            Port = 465,
+            SecurityOptions = "SSLAuto",
+            ProtocolType = "SMTP",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        }
+    }
+};
+
+// Call method:
+await Api.Client.Account.SaveMultiAsync(request);
+
+```
+
+</details>
+
+### request Parameter
+See parameter model documentation at [ClientAccountSaveMultiRequest](ClientAccountSaveMultiRequest.md)
+
+
 ### Return type
 
 Task (empty response body)
-
-### request Parameter
-
-See parameter model documentation at [ClientAccountSaveMultiRequest](ClientAccountSaveMultiRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

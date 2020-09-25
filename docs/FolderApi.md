@@ -1,26 +1,32 @@
 # Aspose.Email.Cloud.Sdk.FolderApi
 
-        <a name="CopyFolder"></a>
+<a name="CopyFolder"></a>
 # CopyFolder
-
-```csharp
-void CopyFolder(CopyFolderRequest request)
-```
 
 Copy folder
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-void (empty response body)
+```csharp
+// Prepare parameters:
+var request = new CopyFolderRequest
+{ 
+    SrcPath = "/storage/path/to/source/folder",
+    DestPath = "/storage/path/to/destination/folder",
+    SrcStorageName = "First Storage",
+    DestStorageName = "Other Storage"
+};
+
+// Call method:
+Api.CloudStorage.Folder.CopyFolder(request);
+
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new CopyFolderRequest(
-    srcPath,
-    destPath,
-    srcStorageName=srcStorageName,
-    destStorageName=destStorageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -28,32 +34,42 @@ Name | Type | Description  | Notes
  **destPath** | **string**| Destination folder path e.g. &#39;/dst&#39; | 
  **srcStorageName** | **string**| Source storage name | [optional] 
  **destStorageName** | **string**| Destination storage name | [optional] 
+
+### Return type
+
+void (empty response body)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CopyFolderAsync"></a>
 # CopyFolderAsync
 
-```csharp
-async Task CopyFolderAsync(CopyFolderRequest request)
-```
-
 Copy folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task (empty response body)
+```csharp
+// Prepare parameters:
+var request = new CopyFolderRequest
+{ 
+    SrcPath = "/storage/path/to/source/folder",
+    DestPath = "/storage/path/to/destination/folder",
+    SrcStorageName = "First Storage",
+    DestStorageName = "Other Storage"
+};
+
+// Call method:
+await Api.CloudStorage.Folder.CopyFolderAsync(request);
+
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new CopyFolderRequest(
-    srcPath,
-    destPath,
-    srcStorageName=srcStorageName,
-    destStorageName=destStorageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -62,113 +78,153 @@ Name | Type | Description  | Notes
  **srcStorageName** | **string**| Source storage name | [optional] 
  **destStorageName** | **string**| Destination storage name | [optional] 
 
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="CreateFolder"></a>
-# CreateFolder
-
-```csharp
-void CreateFolder(CreateFolderRequest request)
-```
-
-Create the folder
-
 ### Return type
 
 void (empty response body)
 
-### request Parameter
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="CreateFolder"></a>
+# CreateFolder
+
+Create the folder
+
+<details>
+    <summary>Method call example:</summary>
+
 ```csharp
-new CreateFolderRequest(
-    path,
-    storageName=storageName)
+// Prepare parameters:
+var request = new CreateFolderRequest
+{ 
+    Path = "/storage/path/to/new/folder",
+    StorageName = "First Storage"
+};
+
+// Call method:
+Api.CloudStorage.Folder.CreateFolder(request);
+
 ```
+
+</details>
+
+### request Parameter
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
  **storageName** | **string**| Storage name | [optional] 
+
+### Return type
+
+void (empty response body)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CreateFolderAsync"></a>
 # CreateFolderAsync
 
-```csharp
-async Task CreateFolderAsync(CreateFolderRequest request)
-```
-
 Create the folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task (empty response body)
+```csharp
+// Prepare parameters:
+var request = new CreateFolderRequest
+{ 
+    Path = "/storage/path/to/new/folder",
+    StorageName = "First Storage"
+};
+
+// Call method:
+await Api.CloudStorage.Folder.CreateFolderAsync(request);
+
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new CreateFolderRequest(
-    path,
-    storageName=storageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="DeleteFolder"></a>
-# DeleteFolder
-
-```csharp
-void DeleteFolder(DeleteFolderRequest request)
-```
-
-Delete folder
-
 ### Return type
 
 void (empty response body)
 
-### request Parameter
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="DeleteFolder"></a>
+# DeleteFolder
+
+Delete folder
+
+<details>
+    <summary>Method call example:</summary>
+
 ```csharp
-new DeleteFolderRequest(
-    path,
-    storageName=storageName,
-    recursive=recursive)
+// Prepare parameters:
+var request = new DeleteFolderRequest
+{ 
+    Path = "/storage/path/to/folder",
+    StorageName = "First Storage",
+    Recursive = true
+};
+
+// Call method:
+Api.CloudStorage.Folder.DeleteFolder(request);
+
 ```
+
+</details>
+
+### request Parameter
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
  **storageName** | **string**| Storage name | [optional] 
  **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
+
+### Return type
+
+void (empty response body)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteFolderAsync"></a>
 # DeleteFolderAsync
 
-```csharp
-async Task DeleteFolderAsync(DeleteFolderRequest request)
-```
-
 Delete folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task (empty response body)
+```csharp
+// Prepare parameters:
+var request = new DeleteFolderRequest
+{ 
+    Path = "/storage/path/to/folder",
+    StorageName = "First Storage",
+    Recursive = true
+};
+
+// Call method:
+await Api.CloudStorage.Folder.DeleteFolderAsync(request);
+
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new DeleteFolderRequest(
-    path,
-    storageName=storageName,
-    recursive=recursive)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -176,83 +232,117 @@ Name | Type | Description  | Notes
  **storageName** | **string**| Storage name | [optional] 
  **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
 
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="GetFilesList"></a>
-# GetFilesList
+### Return type
 
-```csharp
-FilesList GetFilesList(GetFilesListRequest request)
-```
+void (empty response body)
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="GetFilesList"></a>
+# GetFilesList
 
 Get all files and folders within a folder
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-[**FilesList**](FilesList.md)
+```csharp
+// Prepare parameters:
+var request = new GetFilesListRequest
+{ 
+    Path = "/storage/path/to/folder",
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = Api.CloudStorage.Folder.GetFilesList(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new GetFilesListRequest(
-    path,
-    storageName=storageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
  **storageName** | **string**| Storage name | [optional] 
+
+### Return type
+
+[**FilesList**](FilesList.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetFilesListAsync"></a>
 # GetFilesListAsync
 
-```csharp
-async Task<FilesList> GetFilesListAsync(GetFilesListRequest request)
-```
-
 Get all files and folders within a folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task<[**FilesList**](FilesList.md)>
+```csharp
+// Prepare parameters:
+var request = new GetFilesListRequest
+{ 
+    Path = "/storage/path/to/folder",
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = await Api.CloudStorage.Folder.GetFilesListAsync(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new GetFilesListRequest(
-    path,
-    storageName=storageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
  **storageName** | **string**| Storage name | [optional] 
 
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="MoveFolder"></a>
-# MoveFolder
+### Return type
 
-```csharp
-void MoveFolder(MoveFolderRequest request)
-```
+[**FilesList**](FilesList.md)
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="MoveFolder"></a>
+# MoveFolder
 
 Move folder
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-void (empty response body)
+```csharp
+// Prepare parameters:
+var request = new MoveFolderRequest
+{ 
+    SrcPath = "/storage/path/to/source/folder",
+    DestPath = "/storage/path/to/destination/folder",
+    SrcStorageName = "First Storage",
+    DestStorageName = "Other Storage"
+};
+
+// Call method:
+Api.CloudStorage.Folder.MoveFolder(request);
+
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new MoveFolderRequest(
-    srcPath,
-    destPath,
-    srcStorageName=srcStorageName,
-    destStorageName=destStorageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -260,32 +350,42 @@ Name | Type | Description  | Notes
  **destPath** | **string**| Destination folder path to move to e.g &#39;/dst&#39; | 
  **srcStorageName** | **string**| Source storage name | [optional] 
  **destStorageName** | **string**| Destination storage name | [optional] 
+
+### Return type
+
+void (empty response body)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MoveFolderAsync"></a>
 # MoveFolderAsync
 
-```csharp
-async Task MoveFolderAsync(MoveFolderRequest request)
-```
-
 Move folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
+<details>
+    <summary>Method call example:</summary>
 
-Task (empty response body)
+```csharp
+// Prepare parameters:
+var request = new MoveFolderRequest
+{ 
+    SrcPath = "/storage/path/to/source/folder",
+    DestPath = "/storage/path/to/destination/folder",
+    SrcStorageName = "First Storage",
+    DestStorageName = "Other Storage"
+};
+
+// Call method:
+await Api.CloudStorage.Folder.MoveFolderAsync(request);
+
+```
+
+</details>
 
 ### request Parameter
-```csharp
-new MoveFolderRequest(
-    srcPath,
-    destPath,
-    srcStorageName=srcStorageName,
-    destStorageName=destStorageName)
-```
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -293,5 +393,9 @@ Name | Type | Description  | Notes
  **destPath** | **string**| Destination folder path to move to e.g &#39;/dst&#39; | 
  **srcStorageName** | **string**| Source storage name | [optional] 
  **destStorageName** | **string**| Destination storage name | [optional] 
+
+### Return type
+
+void (empty response body)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
