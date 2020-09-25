@@ -40,7 +40,7 @@ var request = new CalendarAsAlternateRequest
         StartDate = DateTime.Today,
         Summary = "Some summary"
     },
-    SequenceId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75"
+    SequenceId = "cf4ffb6c-895d-4e58-bdb4-0a3918e96a43"
 };
 
 // Call method:
@@ -50,7 +50,7 @@ var result = Api.Calendar.AsAlternate(request);
 result = new AlternateView
 {
     Base64Data = "<File content represented as Base64 string>",
-    ContentId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+    ContentId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75",
     ContentType = new ContentType
     {
         CharSet = "utf-8",
@@ -132,7 +132,7 @@ var request = new CalendarAsAlternateRequest
         StartDate = DateTime.Today,
         Summary = "Some summary"
     },
-    SequenceId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75"
+    SequenceId = "cf4ffb6c-895d-4e58-bdb4-0a3918e96a43"
 };
 
 // Call method:
@@ -142,7 +142,7 @@ var result = await Api.Calendar.AsAlternateAsync(request);
 result = new AlternateView
 {
     Base64Data = "<File content represented as Base64 string>",
-    ContentId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+    ContentId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75",
     ContentType = new ContentType
     {
         CharSet = "utf-8",
@@ -893,7 +893,7 @@ var result = Api.Calendar.GetAsAlternate(request);
 result = new AlternateView
 {
     Base64Data = "<File content represented as Base64 string>",
-    ContentId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+    ContentId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75",
     ContentType = new ContentType
     {
         CharSet = "utf-8",
@@ -967,7 +967,7 @@ var result = await Api.Calendar.GetAsAlternateAsync(request);
 result = new AlternateView
 {
     Base64Data = "<File content represented as Base64 string>",
-    ContentId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+    ContentId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75",
     ContentType = new ContentType
     {
         CharSet = "utf-8",

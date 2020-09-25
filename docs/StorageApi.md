@@ -19,7 +19,11 @@ var request = new GetDiscUsageRequest
 var result = Api.CloudStorage.Storage.GetDiscUsage(request);
 
 // Result example:
-result = ;
+result = new DiscUsage
+{
+    UsedSize = 1048576,
+    TotalSize = 3145728
+};
 ```
 
 </details>
@@ -58,7 +62,11 @@ var request = new GetDiscUsageRequest
 var result = await Api.CloudStorage.Storage.GetDiscUsageAsync(request);
 
 // Result example:
-result = ;
+result = new DiscUsage
+{
+    UsedSize = 1048576,
+    TotalSize = 3145728
+};
 ```
 
 </details>
@@ -95,7 +103,21 @@ var request = new GetFileVersionsRequest
 var result = Api.CloudStorage.Storage.GetFileVersions(request);
 
 // Result example:
-result = ;
+result = new FileVersions
+{
+    Value = new List<FileVersion>
+    {
+        new FileVersion
+        {
+            VersionId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+            IsLatest = true,
+            Name = "file.ext",
+            ModifiedDate = DateTime.Today,
+            Size = 4096,
+            Path = "/storage/path/to"
+        }
+    }
+};
 ```
 
 </details>
@@ -136,7 +158,21 @@ var request = new GetFileVersionsRequest
 var result = await Api.CloudStorage.Storage.GetFileVersionsAsync(request);
 
 // Result example:
-result = ;
+result = new FileVersions
+{
+    Value = new List<FileVersion>
+    {
+        new FileVersion
+        {
+            VersionId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+            IsLatest = true,
+            Name = "file.ext",
+            ModifiedDate = DateTime.Today,
+            Size = 4096,
+            Path = "/storage/path/to"
+        }
+    }
+};
 ```
 
 </details>
@@ -174,7 +210,10 @@ var request = new ObjectExistsRequest
 var result = Api.CloudStorage.Storage.ObjectExists(request);
 
 // Result example:
-result = ;
+result = new ObjectExist
+{
+    Exists = true
+};
 ```
 
 </details>
@@ -216,7 +255,10 @@ var request = new ObjectExistsRequest
 var result = await Api.CloudStorage.Storage.ObjectExistsAsync(request);
 
 // Result example:
-result = ;
+result = new ObjectExist
+{
+    Exists = true
+};
 ```
 
 </details>
@@ -254,7 +296,10 @@ var request = new StorageExistsRequest
 var result = Api.CloudStorage.Storage.Exists(request);
 
 // Result example:
-result = ;
+result = new StorageExist
+{
+    Exists = true
+};
 ```
 
 </details>
@@ -293,7 +338,10 @@ var request = new StorageExistsRequest
 var result = await Api.CloudStorage.Storage.ExistsAsync(request);
 
 // Result example:
-result = ;
+result = new StorageExist
+{
+    Exists = true
+};
 ```
 
 </details>

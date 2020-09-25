@@ -257,7 +257,19 @@ var request = new GetFilesListRequest
 var result = Api.CloudStorage.Folder.GetFilesList(request);
 
 // Result example:
-result = ;
+result = new FilesList
+{
+    Value = new List<StorageFile>
+    {
+        new StorageFile
+        {
+            Name = "file.ext",
+            ModifiedDate = DateTime.Today,
+            Size = 1024,
+            Path = "/path/to/file/on/storage"
+        }
+    }
+};
 ```
 
 </details>
@@ -298,7 +310,19 @@ var request = new GetFilesListRequest
 var result = await Api.CloudStorage.Folder.GetFilesListAsync(request);
 
 // Result example:
-result = ;
+result = new FilesList
+{
+    Value = new List<StorageFile>
+    {
+        new StorageFile
+        {
+            Name = "file.ext",
+            ModifiedDate = DateTime.Today,
+            Size = 1024,
+            Path = "/path/to/file/on/storage"
+        }
+    }
+};
 ```
 
 </details>
