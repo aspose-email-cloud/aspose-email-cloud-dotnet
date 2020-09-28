@@ -1,4 +1,6 @@
 # MapiCalendarDailyRecurrencePatternDto
+Represents the daily recurrence pattern of the mapi calendar.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

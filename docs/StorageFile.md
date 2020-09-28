@@ -1,4 +1,6 @@
 # StorageFile
+File or folder information
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

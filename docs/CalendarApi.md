@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.CalendarApi
+# CalendarApi (EmailCloud.Calendar)
+
+iCalendar document operations.
 
 <a name="AsAlternate"></a>
 ## AsAlternate
@@ -9,7 +11,7 @@ Returns: iCalendar document represented as AlternateView
 
 Method call example:
 ```csharp
-var result = Api.Calendar.AsAlternate(request);
+var result = api.Calendar.AsAlternate(request);
 ```
 
 ### request Parameter
@@ -108,6 +110,8 @@ result = new AlternateView
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarAsAlternateRequest
 {
@@ -143,7 +147,7 @@ var request = new CalendarAsAlternateRequest
 };
 
 // Call method:
-var result = Api.Calendar.AsAlternate(request);
+var result = api.Calendar.AsAlternate(request);
 
 // Result example:
 result = new AlternateView
@@ -192,7 +196,7 @@ Returns: iCalendar document represented as AlternateView
 
 Method call example:
 ```csharp
-var result = await Api.Calendar.AsAlternateAsync(request);
+var result = await api.Calendar.AsAlternateAsync(request);
 ```
 
 ### request Parameter
@@ -291,6 +295,8 @@ result = new AlternateView
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarAsAlternateRequest
 {
@@ -326,7 +332,7 @@ var request = new CalendarAsAlternateRequest
 };
 
 // Call method:
-var result = await Api.Calendar.AsAlternateAsync(request);
+var result = await api.Calendar.AsAlternateAsync(request);
 
 // Result example:
 result = new AlternateView
@@ -372,7 +378,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = Api.Calendar.AsFile(request);
+var result = api.Calendar.AsFile(request);
 ```
 
 ### request Parameter
@@ -445,6 +451,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarAsFileRequest
 {
@@ -479,7 +487,7 @@ var request = new CalendarAsFileRequest
 };
 
 // Call method:
-var result = Api.Calendar.AsFile(request);
+var result = api.Calendar.AsFile(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -503,7 +511,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = await Api.Calendar.AsFileAsync(request);
+var result = await api.Calendar.AsFileAsync(request);
 ```
 
 ### request Parameter
@@ -576,6 +584,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarAsFileRequest
 {
@@ -610,7 +620,7 @@ var request = new CalendarAsFileRequest
 };
 
 // Call method:
-var result = await Api.Calendar.AsFileAsync(request);
+var result = await api.Calendar.AsFileAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -631,7 +641,7 @@ Returns: MAPI model calendar representation.
 
 Method call example:
 ```csharp
-var result = Api.Calendar.AsMapi(calendarDto);
+var result = api.Calendar.AsMapi(calendarDto);
 ```
 
 ### calendarDto Parameter
@@ -743,6 +753,8 @@ result = new MapiCalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var calendarDto = new CalendarDto
 {
@@ -774,7 +786,7 @@ var calendarDto = new CalendarDto
 };
 
 // Call method:
-var result = Api.Calendar.AsMapi(calendarDto);
+var result = api.Calendar.AsMapi(calendarDto);
 
 // Result example:
 result = new MapiCalendarDto
@@ -840,7 +852,7 @@ Returns: MAPI model calendar representation.
 
 Method call example:
 ```csharp
-var result = await Api.Calendar.AsMapiAsync(calendarDto);
+var result = await api.Calendar.AsMapiAsync(calendarDto);
 ```
 
 ### calendarDto Parameter
@@ -952,6 +964,8 @@ result = new MapiCalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var calendarDto = new CalendarDto
 {
@@ -983,7 +997,7 @@ var calendarDto = new CalendarDto
 };
 
 // Call method:
-var result = await Api.Calendar.AsMapiAsync(calendarDto);
+var result = await api.Calendar.AsMapiAsync(calendarDto);
 
 // Result example:
 result = new MapiCalendarDto
@@ -1046,7 +1060,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = Api.Calendar.Convert(request);
+var result = api.Calendar.Convert(request);
 ```
 
 ### request Parameter
@@ -1092,6 +1106,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarConvertRequest
 { 
@@ -1100,7 +1116,7 @@ var request = new CalendarConvertRequest
 };
 
 // Call method:
-var result = Api.Calendar.Convert(request);
+var result = api.Calendar.Convert(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -1124,7 +1140,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = await Api.Calendar.ConvertAsync(request);
+var result = await api.Calendar.ConvertAsync(request);
 ```
 
 ### request Parameter
@@ -1170,6 +1186,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarConvertRequest
 { 
@@ -1178,7 +1196,7 @@ var request = new CalendarConvertRequest
 };
 
 // Call method:
-var result = await Api.Calendar.ConvertAsync(request);
+var result = await api.Calendar.ConvertAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -1199,7 +1217,7 @@ Returns: iCalendar model.
 
 Method call example:
 ```csharp
-var result = Api.Calendar.FromFile(request);
+var result = api.Calendar.FromFile(request);
 ```
 
 ### request Parameter
@@ -1268,6 +1286,8 @@ result = new CalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarFromFileRequest
 { 
@@ -1275,7 +1295,7 @@ var request = new CalendarFromFileRequest
 };
 
 // Call method:
-var result = Api.Calendar.FromFile(request);
+var result = api.Calendar.FromFile(request);
 
 // Result example:
 result = new CalendarDto
@@ -1323,7 +1343,7 @@ Returns: iCalendar model.
 
 Method call example:
 ```csharp
-var result = await Api.Calendar.FromFileAsync(request);
+var result = await api.Calendar.FromFileAsync(request);
 ```
 
 ### request Parameter
@@ -1392,6 +1412,8 @@ result = new CalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarFromFileRequest
 { 
@@ -1399,7 +1421,7 @@ var request = new CalendarFromFileRequest
 };
 
 // Call method:
-var result = await Api.Calendar.FromFileAsync(request);
+var result = await api.Calendar.FromFileAsync(request);
 
 // Result example:
 result = new CalendarDto
@@ -1444,7 +1466,7 @@ Returns: iCalendar model.
 
 Method call example:
 ```csharp
-var result = Api.Calendar.Get(request);
+var result = api.Calendar.Get(request);
 ```
 
 ### request Parameter
@@ -1515,6 +1537,8 @@ result = new CalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarGetRequest
 { 
@@ -1524,7 +1548,7 @@ var request = new CalendarGetRequest
 };
 
 // Call method:
-var result = Api.Calendar.Get(request);
+var result = api.Calendar.Get(request);
 
 // Result example:
 result = new CalendarDto
@@ -1572,7 +1596,7 @@ Returns: iCalendar model.
 
 Method call example:
 ```csharp
-var result = await Api.Calendar.GetAsync(request);
+var result = await api.Calendar.GetAsync(request);
 ```
 
 ### request Parameter
@@ -1643,6 +1667,8 @@ result = new CalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarGetRequest
 { 
@@ -1652,7 +1678,7 @@ var request = new CalendarGetRequest
 };
 
 // Call method:
-var result = await Api.Calendar.GetAsync(request);
+var result = await api.Calendar.GetAsync(request);
 
 // Result example:
 result = new CalendarDto
@@ -1697,7 +1723,7 @@ Returns: iCalendar document represented as AlternateView
 
 Method call example:
 ```csharp
-var result = Api.Calendar.GetAsAlternate(request);
+var result = api.Calendar.GetAsAlternate(request);
 ```
 
 ### request Parameter
@@ -1770,6 +1796,8 @@ result = new AlternateView
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarGetAsAlternateRequest
 { 
@@ -1780,7 +1808,7 @@ var request = new CalendarGetAsAlternateRequest
 };
 
 // Call method:
-var result = Api.Calendar.GetAsAlternate(request);
+var result = api.Calendar.GetAsAlternate(request);
 
 // Result example:
 result = new AlternateView
@@ -1829,7 +1857,7 @@ Returns: iCalendar document represented as AlternateView
 
 Method call example:
 ```csharp
-var result = await Api.Calendar.GetAsAlternateAsync(request);
+var result = await api.Calendar.GetAsAlternateAsync(request);
 ```
 
 ### request Parameter
@@ -1902,6 +1930,8 @@ result = new AlternateView
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarGetAsAlternateRequest
 { 
@@ -1912,7 +1942,7 @@ var request = new CalendarGetAsAlternateRequest
 };
 
 // Call method:
-var result = await Api.Calendar.GetAsAlternateAsync(request);
+var result = await api.Calendar.GetAsAlternateAsync(request);
 
 // Result example:
 result = new AlternateView
@@ -1958,7 +1988,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = Api.Calendar.GetAsFile(request);
+var result = api.Calendar.GetAsFile(request);
 ```
 
 ### request Parameter
@@ -2006,6 +2036,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarGetAsFileRequest
 { 
@@ -2016,7 +2048,7 @@ var request = new CalendarGetAsFileRequest
 };
 
 // Call method:
-var result = Api.Calendar.GetAsFile(request);
+var result = api.Calendar.GetAsFile(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -2040,7 +2072,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = await Api.Calendar.GetAsFileAsync(request);
+var result = await api.Calendar.GetAsFileAsync(request);
 ```
 
 ### request Parameter
@@ -2088,6 +2120,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarGetAsFileRequest
 { 
@@ -2098,7 +2132,7 @@ var request = new CalendarGetAsFileRequest
 };
 
 // Call method:
-var result = await Api.Calendar.GetAsFileAsync(request);
+var result = await api.Calendar.GetAsFileAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -2119,7 +2153,7 @@ Returns: iCalendar document list.
 
 Method call example:
 ```csharp
-var result = Api.Calendar.GetList(request);
+var result = api.Calendar.GetList(request);
 ```
 
 ### request Parameter
@@ -2206,6 +2240,8 @@ result = new CalendarStorageList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarGetListRequest
 { 
@@ -2216,7 +2252,7 @@ var request = new CalendarGetListRequest
 };
 
 // Call method:
-var result = Api.Calendar.GetList(request);
+var result = api.Calendar.GetList(request);
 
 // Result example:
 result = new CalendarStorageList
@@ -2279,7 +2315,7 @@ Returns: iCalendar document list.
 
 Method call example:
 ```csharp
-var result = await Api.Calendar.GetListAsync(request);
+var result = await api.Calendar.GetListAsync(request);
 ```
 
 ### request Parameter
@@ -2366,6 +2402,8 @@ result = new CalendarStorageList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarGetListRequest
 { 
@@ -2376,7 +2414,7 @@ var request = new CalendarGetListRequest
 };
 
 // Call method:
-var result = await Api.Calendar.GetListAsync(request);
+var result = await api.Calendar.GetListAsync(request);
 
 // Result example:
 result = new CalendarStorageList
@@ -2436,7 +2474,7 @@ Returns: Returns 200 if update is successful.
 
 Method call example:
 ```csharp
-Api.Calendar.Save(request);
+api.Calendar.Save(request);
 ```
 
 ### request Parameter
@@ -2504,6 +2542,8 @@ var request = new CalendarSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarSaveRequest
 {
@@ -2544,7 +2584,7 @@ var request = new CalendarSaveRequest
 };
 
 // Call method:
-Api.Calendar.Save(request);
+api.Calendar.Save(request);
 
 ```
 
@@ -2563,7 +2603,7 @@ Returns: Returns 200 if update is successful.
 
 Method call example:
 ```csharp
-await Api.Calendar.SaveAsync(request);
+await api.Calendar.SaveAsync(request);
 ```
 
 ### request Parameter
@@ -2631,6 +2671,8 @@ var request = new CalendarSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CalendarSaveRequest
 {
@@ -2671,7 +2713,7 @@ var request = new CalendarSaveRequest
 };
 
 // Call method:
-await Api.Calendar.SaveAsync(request);
+await api.Calendar.SaveAsync(request);
 
 ```
 

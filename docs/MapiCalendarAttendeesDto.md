@@ -1,4 +1,6 @@
 # MapiCalendarAttendeesDto
+Mapi calendar attendees.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

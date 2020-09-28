@@ -1,4 +1,6 @@
 # MapiContactAsFileRequest
+Convert MapiContact to file request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

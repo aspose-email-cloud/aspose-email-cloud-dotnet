@@ -1,4 +1,6 @@
 # CalendarAsFileRequest
+iCalendar model to file request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

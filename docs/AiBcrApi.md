@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.AiBcrApi
+# AiBcrApi (EmailCloud.Ai.Bcr)
+
+AI Business card recognition operations.
 
 <a name="Parse"></a>
 ## Parse
@@ -9,7 +11,7 @@ Returns: List of vCards
 
 Method call example:
 ```csharp
-var result = Api.Ai.Bcr.Parse(request);
+var result = api.Ai.Bcr.Parse(request);
 ```
 
 ### request Parameter
@@ -113,6 +115,8 @@ result = new ContactList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiBcrParseRequest
 { 
@@ -123,7 +127,7 @@ var request = new AiBcrParseRequest
 };
 
 // Call method:
-var result = Api.Ai.Bcr.Parse(request);
+var result = api.Ai.Bcr.Parse(request);
 
 // Result example:
 result = new ContactList
@@ -203,7 +207,7 @@ Returns: List of vCards
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Bcr.ParseAsync(request);
+var result = await api.Ai.Bcr.ParseAsync(request);
 ```
 
 ### request Parameter
@@ -307,6 +311,8 @@ result = new ContactList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiBcrParseRequest
 { 
@@ -317,7 +323,7 @@ var request = new AiBcrParseRequest
 };
 
 // Call method:
-var result = await Api.Ai.Bcr.ParseAsync(request);
+var result = await api.Ai.Bcr.ParseAsync(request);
 
 // Result example:
 result = new ContactList
@@ -394,7 +400,7 @@ Returns: List of vCard files located on storage
 
 Method call example:
 ```csharp
-var result = Api.Ai.Bcr.ParseStorage(request);
+var result = api.Ai.Bcr.ParseStorage(request);
 ```
 
 ### request Parameter
@@ -465,6 +471,8 @@ result = new StorageFileLocationList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiBcrParseStorageRequest
 {
@@ -489,7 +497,7 @@ var request = new AiBcrParseStorageRequest
 };
 
 // Call method:
-var result = Api.Ai.Bcr.ParseStorage(request);
+var result = api.Ai.Bcr.ParseStorage(request);
 
 // Result example:
 result = new StorageFileLocationList
@@ -521,7 +529,7 @@ Returns: List of vCard files located on storage
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Bcr.ParseStorageAsync(request);
+var result = await api.Ai.Bcr.ParseStorageAsync(request);
 ```
 
 ### request Parameter
@@ -592,6 +600,8 @@ result = new StorageFileLocationList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiBcrParseStorageRequest
 {
@@ -616,7 +626,7 @@ var request = new AiBcrParseStorageRequest
 };
 
 // Call method:
-var result = await Api.Ai.Bcr.ParseStorageAsync(request);
+var result = await api.Ai.Bcr.ParseStorageAsync(request);
 
 // Result example:
 result = new StorageFileLocationList

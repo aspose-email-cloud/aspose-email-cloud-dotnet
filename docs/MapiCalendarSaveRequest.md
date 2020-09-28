@@ -1,4 +1,6 @@
 # MapiCalendarSaveRequest
+Save MapiCalendar to storage request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

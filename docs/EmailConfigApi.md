@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.EmailConfigApi
+# EmailConfigApi (EmailCloud.EmailConfig)
+
+Email server configuration discovery.
 
 <a name="Discover"></a>
 ## Discover
@@ -9,7 +11,7 @@ Returns: Discovered account configurations.
 
 Method call example:
 ```csharp
-var result = Api.EmailConfig.Discover(request);
+var result = api.EmailConfig.Discover(request);
 ```
 
 ### request Parameter
@@ -117,13 +119,15 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new EmailConfigDiscoverRequest
 { 
 };
 
 // Call method:
-var result = Api.EmailConfig.Discover(request);
+var result = api.EmailConfig.Discover(request);
 
 // Result example:
 result = new EmailAccountConfigList
@@ -211,7 +215,7 @@ Returns: Discovered account configurations.
 
 Method call example:
 ```csharp
-var result = await Api.EmailConfig.DiscoverAsync(request);
+var result = await api.EmailConfig.DiscoverAsync(request);
 ```
 
 ### request Parameter
@@ -319,13 +323,15 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new EmailConfigDiscoverRequest
 { 
 };
 
 // Call method:
-var result = await Api.EmailConfig.DiscoverAsync(request);
+var result = await api.EmailConfig.DiscoverAsync(request);
 
 // Result example:
 result = new EmailAccountConfigList
@@ -410,7 +416,7 @@ Returns: Discovered account configurations.
 
 Method call example:
 ```csharp
-var result = Api.EmailConfig.DiscoverOauth(request);
+var result = api.EmailConfig.DiscoverOauth(request);
 ```
 
 ### request Parameter
@@ -524,6 +530,8 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new EmailConfigDiscoverOauthRequest
 {
@@ -535,7 +543,7 @@ var request = new EmailConfigDiscoverOauthRequest
 };
 
 // Call method:
-var result = Api.EmailConfig.DiscoverOauth(request);
+var result = api.EmailConfig.DiscoverOauth(request);
 
 // Result example:
 result = new EmailAccountConfigList
@@ -623,7 +631,7 @@ Returns: Discovered account configurations.
 
 Method call example:
 ```csharp
-var result = await Api.EmailConfig.DiscoverOauthAsync(request);
+var result = await api.EmailConfig.DiscoverOauthAsync(request);
 ```
 
 ### request Parameter
@@ -737,6 +745,8 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new EmailConfigDiscoverOauthRequest
 {
@@ -748,7 +758,7 @@ var request = new EmailConfigDiscoverOauthRequest
 };
 
 // Call method:
-var result = await Api.EmailConfig.DiscoverOauthAsync(request);
+var result = await api.EmailConfig.DiscoverOauthAsync(request);
 
 // Result example:
 result = new EmailAccountConfigList
@@ -833,7 +843,7 @@ Returns: Discovered account configurations.
 
 Method call example:
 ```csharp
-var result = Api.EmailConfig.DiscoverPassword(request);
+var result = api.EmailConfig.DiscoverPassword(request);
 ```
 
 ### request Parameter
@@ -945,6 +955,8 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new EmailConfigDiscoverPasswordRequest
 {
@@ -954,7 +966,7 @@ var request = new EmailConfigDiscoverPasswordRequest
 };
 
 // Call method:
-var result = Api.EmailConfig.DiscoverPassword(request);
+var result = api.EmailConfig.DiscoverPassword(request);
 
 // Result example:
 result = new EmailAccountConfigList
@@ -1042,7 +1054,7 @@ Returns: Discovered account configurations.
 
 Method call example:
 ```csharp
-var result = await Api.EmailConfig.DiscoverPasswordAsync(request);
+var result = await api.EmailConfig.DiscoverPasswordAsync(request);
 ```
 
 ### request Parameter
@@ -1154,6 +1166,8 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new EmailConfigDiscoverPasswordRequest
 {
@@ -1163,7 +1177,7 @@ var request = new EmailConfigDiscoverPasswordRequest
 };
 
 // Call method:
-var result = await Api.EmailConfig.DiscoverPasswordAsync(request);
+var result = await api.EmailConfig.DiscoverPasswordAsync(request);
 
 // Result example:
 result = new EmailAccountConfigList

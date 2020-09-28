@@ -1,4 +1,6 @@
 # AiBcrImageStorageFile
+Image from storage for recognition             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

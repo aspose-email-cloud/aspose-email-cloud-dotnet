@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.ContactApi
+# ContactApi (EmailCloud.Contact)
+
+Contact document operations. Supported formats: VCard, MSG, WebDav
 
 <a name="AsFile"></a>
 ## AsFile
@@ -9,7 +11,7 @@ Returns: File stream in specified format
 
 Method call example:
 ```csharp
-var result = Api.Contact.AsFile(request);
+var result = api.Contact.AsFile(request);
 ```
 
 ### request Parameter
@@ -108,6 +110,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactAsFileRequest
 {
@@ -168,7 +172,7 @@ var request = new ContactAsFileRequest
 };
 
 // Call method:
-var result = Api.Contact.AsFile(request);
+var result = api.Contact.AsFile(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -192,7 +196,7 @@ Returns: File stream in specified format
 
 Method call example:
 ```csharp
-var result = await Api.Contact.AsFileAsync(request);
+var result = await api.Contact.AsFileAsync(request);
 ```
 
 ### request Parameter
@@ -291,6 +295,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactAsFileRequest
 {
@@ -351,7 +357,7 @@ var request = new ContactAsFileRequest
 };
 
 // Call method:
-var result = await Api.Contact.AsFileAsync(request);
+var result = await api.Contact.AsFileAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -372,7 +378,7 @@ Returns: MAPI model contact representation
 
 Method call example:
 ```csharp
-var result = Api.Contact.AsMapi(contactDto);
+var result = api.Contact.AsMapi(contactDto);
 ```
 
 ### contactDto Parameter
@@ -491,6 +497,8 @@ result = new MapiContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var contactDto = new ContactDto
 {
@@ -548,7 +556,7 @@ var contactDto = new ContactDto
 };
 
 // Call method:
-var result = Api.Contact.AsMapi(contactDto);
+var result = api.Contact.AsMapi(contactDto);
 
 // Result example:
 result = new MapiContactDto
@@ -595,7 +603,7 @@ Returns: MAPI model contact representation
 
 Method call example:
 ```csharp
-var result = await Api.Contact.AsMapiAsync(contactDto);
+var result = await api.Contact.AsMapiAsync(contactDto);
 ```
 
 ### contactDto Parameter
@@ -714,6 +722,8 @@ result = new MapiContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var contactDto = new ContactDto
 {
@@ -771,7 +781,7 @@ var contactDto = new ContactDto
 };
 
 // Call method:
-var result = await Api.Contact.AsMapiAsync(contactDto);
+var result = await api.Contact.AsMapiAsync(contactDto);
 
 // Result example:
 result = new MapiContactDto
@@ -815,7 +825,7 @@ Returns: File stream in specified destination format
 
 Method call example:
 ```csharp
-var result = Api.Contact.Convert(request);
+var result = api.Contact.Convert(request);
 ```
 
 ### request Parameter
@@ -862,6 +872,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactConvertRequest
 { 
@@ -871,7 +883,7 @@ var request = new ContactConvertRequest
 };
 
 // Call method:
-var result = Api.Contact.Convert(request);
+var result = api.Contact.Convert(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -895,7 +907,7 @@ Returns: File stream in specified destination format
 
 Method call example:
 ```csharp
-var result = await Api.Contact.ConvertAsync(request);
+var result = await api.Contact.ConvertAsync(request);
 ```
 
 ### request Parameter
@@ -942,6 +954,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactConvertRequest
 { 
@@ -951,7 +965,7 @@ var request = new ContactConvertRequest
 };
 
 // Call method:
-var result = await Api.Contact.ConvertAsync(request);
+var result = await api.Contact.ConvertAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -972,7 +986,7 @@ Returns: Contact model
 
 Method call example:
 ```csharp
-var result = Api.Contact.FromFile(request);
+var result = api.Contact.FromFile(request);
 ```
 
 ### request Parameter
@@ -1068,6 +1082,8 @@ result = new ContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactFromFileRequest
 { 
@@ -1076,7 +1092,7 @@ var request = new ContactFromFileRequest
 };
 
 // Call method:
-var result = Api.Contact.FromFile(request);
+var result = api.Contact.FromFile(request);
 
 // Result example:
 result = new ContactDto
@@ -1150,7 +1166,7 @@ Returns: Contact model
 
 Method call example:
 ```csharp
-var result = await Api.Contact.FromFileAsync(request);
+var result = await api.Contact.FromFileAsync(request);
 ```
 
 ### request Parameter
@@ -1246,6 +1262,8 @@ result = new ContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactFromFileRequest
 { 
@@ -1254,7 +1272,7 @@ var request = new ContactFromFileRequest
 };
 
 // Call method:
-var result = await Api.Contact.FromFileAsync(request);
+var result = await api.Contact.FromFileAsync(request);
 
 // Result example:
 result = new ContactDto
@@ -1325,7 +1343,7 @@ Returns: Contact document.
 
 Method call example:
 ```csharp
-var result = Api.Contact.Get(request);
+var result = api.Contact.Get(request);
 ```
 
 ### request Parameter
@@ -1423,6 +1441,8 @@ result = new ContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactGetRequest
 { 
@@ -1433,7 +1453,7 @@ var request = new ContactGetRequest
 };
 
 // Call method:
-var result = Api.Contact.Get(request);
+var result = api.Contact.Get(request);
 
 // Result example:
 result = new ContactDto
@@ -1507,7 +1527,7 @@ Returns: Contact document.
 
 Method call example:
 ```csharp
-var result = await Api.Contact.GetAsync(request);
+var result = await api.Contact.GetAsync(request);
 ```
 
 ### request Parameter
@@ -1605,6 +1625,8 @@ result = new ContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactGetRequest
 { 
@@ -1615,7 +1637,7 @@ var request = new ContactGetRequest
 };
 
 // Call method:
-var result = await Api.Contact.GetAsync(request);
+var result = await api.Contact.GetAsync(request);
 
 // Result example:
 result = new ContactDto
@@ -1686,7 +1708,7 @@ Returns: File stream in specified format
 
 Method call example:
 ```csharp
-var result = Api.Contact.GetAsFile(request);
+var result = api.Contact.GetAsFile(request);
 ```
 
 ### request Parameter
@@ -1735,6 +1757,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactGetAsFileRequest
 { 
@@ -1746,7 +1770,7 @@ var request = new ContactGetAsFileRequest
 };
 
 // Call method:
-var result = Api.Contact.GetAsFile(request);
+var result = api.Contact.GetAsFile(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -1770,7 +1794,7 @@ Returns: File stream in specified format
 
 Method call example:
 ```csharp
-var result = await Api.Contact.GetAsFileAsync(request);
+var result = await api.Contact.GetAsFileAsync(request);
 ```
 
 ### request Parameter
@@ -1819,6 +1843,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactGetAsFileRequest
 { 
@@ -1830,7 +1856,7 @@ var request = new ContactGetAsFileRequest
 };
 
 // Call method:
-var result = await Api.Contact.GetAsFileAsync(request);
+var result = await api.Contact.GetAsFileAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -1851,7 +1877,7 @@ Returns: Contact list.
 
 Method call example:
 ```csharp
-var result = Api.Contact.GetList(request);
+var result = api.Contact.GetList(request);
 ```
 
 ### request Parameter
@@ -1965,6 +1991,8 @@ result = new ContactStorageList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactGetListRequest
 { 
@@ -1976,7 +2004,7 @@ var request = new ContactGetListRequest
 };
 
 // Call method:
-var result = Api.Contact.GetList(request);
+var result = api.Contact.GetList(request);
 
 // Result example:
 result = new ContactStorageList
@@ -2065,7 +2093,7 @@ Returns: Contact list.
 
 Method call example:
 ```csharp
-var result = await Api.Contact.GetListAsync(request);
+var result = await api.Contact.GetListAsync(request);
 ```
 
 ### request Parameter
@@ -2179,6 +2207,8 @@ result = new ContactStorageList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactGetListRequest
 { 
@@ -2190,7 +2220,7 @@ var request = new ContactGetListRequest
 };
 
 // Call method:
-var result = await Api.Contact.GetListAsync(request);
+var result = await api.Contact.GetListAsync(request);
 
 // Result example:
 result = new ContactStorageList
@@ -2276,7 +2306,7 @@ Returns: Returns 200 if create is successful.
 
 Method call example:
 ```csharp
-Api.Contact.Save(request);
+api.Contact.Save(request);
 ```
 
 ### request Parameter
@@ -2370,6 +2400,8 @@ var request = new ContactSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactSaveRequest
 {
@@ -2436,7 +2468,7 @@ var request = new ContactSaveRequest
 };
 
 // Call method:
-Api.Contact.Save(request);
+api.Contact.Save(request);
 
 ```
 
@@ -2455,7 +2487,7 @@ Returns: Returns 200 if create is successful.
 
 Method call example:
 ```csharp
-await Api.Contact.SaveAsync(request);
+await api.Contact.SaveAsync(request);
 ```
 
 ### request Parameter
@@ -2549,6 +2581,8 @@ var request = new ContactSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ContactSaveRequest
 {
@@ -2615,7 +2649,7 @@ var request = new ContactSaveRequest
 };
 
 // Call method:
-await Api.Contact.SaveAsync(request);
+await api.Contact.SaveAsync(request);
 
 ```
 

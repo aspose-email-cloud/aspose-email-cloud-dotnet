@@ -1,4 +1,6 @@
 # MapiPhysicalAddressIndexPropertyDto
+Mapi property with PhysicalAddressIndexType value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

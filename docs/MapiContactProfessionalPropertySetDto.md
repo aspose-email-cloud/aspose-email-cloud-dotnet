@@ -1,4 +1,6 @@
 # MapiContactProfessionalPropertySetDto
+Properties are used to store professional details for the person represented by the contact             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # EmailThreadList
+List of email threads             
+
 ## Properties
 Class has no properties
 

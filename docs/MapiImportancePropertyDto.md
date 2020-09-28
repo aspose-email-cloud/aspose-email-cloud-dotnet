@@ -1,4 +1,6 @@
 # MapiImportancePropertyDto
+Mapi property with ImportanceChoicesType value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

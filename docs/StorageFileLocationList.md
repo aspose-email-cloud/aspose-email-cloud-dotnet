@@ -1,4 +1,6 @@
 # StorageFileLocationList
+List of files located on storage.             
+
 ## Properties
 Class has no properties
 

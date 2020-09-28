@@ -1,4 +1,6 @@
 # EmailAccountConfigList
+List of email accounts             
+
 ## Properties
 Class has no properties
 

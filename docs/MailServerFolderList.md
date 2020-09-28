@@ -1,4 +1,6 @@
 # MailServerFolderList
+List of email client folders.             
+
 ## Properties
 Class has no properties
 

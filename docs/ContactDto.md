@@ -1,4 +1,6 @@
 # ContactDto
+VCard document representation.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

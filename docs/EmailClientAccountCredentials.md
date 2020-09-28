@@ -1,4 +1,6 @@
 # EmailClientAccountCredentials
+Represents email client account credentials             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

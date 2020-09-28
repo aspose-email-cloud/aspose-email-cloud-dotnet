@@ -1,4 +1,6 @@
 # WeeklyRecurrencePatternDto
+Weekly recurrence pattern.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

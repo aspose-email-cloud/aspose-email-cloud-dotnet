@@ -1,4 +1,6 @@
 # ErrorDetails
+The error details
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

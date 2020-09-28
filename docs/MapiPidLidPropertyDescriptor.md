@@ -1,4 +1,6 @@
 # MapiPidLidPropertyDescriptor
+Property identified by an unsigned 32-bit quantity along with a property set             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

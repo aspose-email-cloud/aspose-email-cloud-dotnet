@@ -1,4 +1,6 @@
 # MapiPidPropertyDescriptor
+Mapi pid property descriptor base class             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

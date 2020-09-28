@@ -1,4 +1,6 @@
 # CalendarAsAlternateRequest
+Convert iCalendar to AlternateView request             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

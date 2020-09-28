@@ -1,4 +1,6 @@
 # MailMessageMapi
+Email message represented as MAPI object.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

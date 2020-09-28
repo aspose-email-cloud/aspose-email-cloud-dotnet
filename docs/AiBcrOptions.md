@@ -1,4 +1,6 @@
 # AiBcrOptions
+Recognition options.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

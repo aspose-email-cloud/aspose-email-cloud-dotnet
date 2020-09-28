@@ -1,4 +1,6 @@
 # RecurrencePatternDto
+iCalendar recurrence pattern.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

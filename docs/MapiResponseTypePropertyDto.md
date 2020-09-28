@@ -1,4 +1,6 @@
 # MapiResponseTypePropertyDto
+Mapi property with response type value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

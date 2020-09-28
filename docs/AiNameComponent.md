@@ -1,4 +1,6 @@
 # AiNameComponent
+Parsed name component             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # ClientMessageDeleteRequest
+Email client delete message request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

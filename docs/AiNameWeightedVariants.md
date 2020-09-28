@@ -1,4 +1,6 @@
 # AiNameWeightedVariants
+Name variants             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

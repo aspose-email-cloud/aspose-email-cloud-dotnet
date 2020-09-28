@@ -1,4 +1,5 @@
 # ListResponseOfAiNameComponent
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

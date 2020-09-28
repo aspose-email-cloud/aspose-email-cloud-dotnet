@@ -1,4 +1,5 @@
 # ListResponseOfMailMessageBase
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

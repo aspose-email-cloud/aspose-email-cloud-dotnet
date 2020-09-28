@@ -1,4 +1,6 @@
 # AttachmentBase
+AttachmentBase class             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

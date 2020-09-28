@@ -1,4 +1,6 @@
 # Url
+Url and its category.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

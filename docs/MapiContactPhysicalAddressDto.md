@@ -1,4 +1,6 @@
 # MapiContactPhysicalAddressDto
+Refers to the group of properties that define physical address for a contact.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

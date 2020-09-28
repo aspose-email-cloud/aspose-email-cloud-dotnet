@@ -1,4 +1,6 @@
 # MapiPropertyDto
+Mapi property             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

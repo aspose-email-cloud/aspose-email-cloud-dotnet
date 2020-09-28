@@ -1,4 +1,5 @@
 # StorageModelOfContactDto
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # ReminderAttendee
+Defines an \&quot;Attendee\&quot; within a alarm.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

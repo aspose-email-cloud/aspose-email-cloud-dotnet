@@ -1,4 +1,6 @@
 # MapiMultiIntPropertyDto
+Mapi property with Multiple Integer values             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # EmailList
+Email document list.             
+
 ## Properties
 Class has no properties
 

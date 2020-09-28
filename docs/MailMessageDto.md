@@ -1,4 +1,6 @@
 # MailMessageDto
+Represents email message, stored as an EmailDto object.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

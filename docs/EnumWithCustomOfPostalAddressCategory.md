@@ -1,4 +1,5 @@
 # EnumWithCustomOfPostalAddressCategory
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

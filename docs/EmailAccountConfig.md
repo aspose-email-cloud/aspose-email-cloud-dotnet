@@ -1,4 +1,6 @@
 # EmailAccountConfig
+Email account configuration.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

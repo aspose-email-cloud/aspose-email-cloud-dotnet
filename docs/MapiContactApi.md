@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.MapiContactApi
+# MapiContactApi (EmailCloud.Mapi.Contact)
+
+MAPI contact operations
 
 <a name="AsContactDto"></a>
 ## AsContactDto
@@ -9,7 +11,7 @@ Returns: Contact model.
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Contact.AsContactDto(mapiContactDto);
+var result = api.Mapi.Contact.AsContactDto(mapiContactDto);
 ```
 
 ### mapiContactDto Parameter
@@ -128,6 +130,8 @@ result = new ContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var mapiContactDto = new MapiContactDto
 {
@@ -158,7 +162,7 @@ var mapiContactDto = new MapiContactDto
 };
 
 // Call method:
-var result = Api.Mapi.Contact.AsContactDto(mapiContactDto);
+var result = api.Mapi.Contact.AsContactDto(mapiContactDto);
 
 // Result example:
 result = new ContactDto
@@ -232,7 +236,7 @@ Returns: Contact model.
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Contact.AsContactDtoAsync(mapiContactDto);
+var result = await api.Mapi.Contact.AsContactDtoAsync(mapiContactDto);
 ```
 
 ### mapiContactDto Parameter
@@ -351,6 +355,8 @@ result = new ContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var mapiContactDto = new MapiContactDto
 {
@@ -381,7 +387,7 @@ var mapiContactDto = new MapiContactDto
 };
 
 // Call method:
-var result = await Api.Mapi.Contact.AsContactDtoAsync(mapiContactDto);
+var result = await api.Mapi.Contact.AsContactDtoAsync(mapiContactDto);
 
 // Result example:
 result = new ContactDto
@@ -452,7 +458,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Contact.AsFile(request);
+var result = api.Mapi.Contact.AsFile(request);
 ```
 
 ### request Parameter
@@ -525,6 +531,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiContactAsFileRequest
 {
@@ -559,7 +567,7 @@ var request = new MapiContactAsFileRequest
 };
 
 // Call method:
-var result = Api.Mapi.Contact.AsFile(request);
+var result = api.Mapi.Contact.AsFile(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -583,7 +591,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Contact.AsFileAsync(request);
+var result = await api.Mapi.Contact.AsFileAsync(request);
 ```
 
 ### request Parameter
@@ -656,6 +664,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiContactAsFileRequest
 {
@@ -690,7 +700,7 @@ var request = new MapiContactAsFileRequest
 };
 
 // Call method:
-var result = await Api.Mapi.Contact.AsFileAsync(request);
+var result = await api.Mapi.Contact.AsFileAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -711,7 +721,7 @@ Returns: MAPI model
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Contact.FromFile(request);
+var result = api.Mapi.Contact.FromFile(request);
 ```
 
 ### request Parameter
@@ -780,6 +790,8 @@ result = new MapiContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiContactFromFileRequest
 { 
@@ -788,7 +800,7 @@ var request = new MapiContactFromFileRequest
 };
 
 // Call method:
-var result = Api.Mapi.Contact.FromFile(request);
+var result = api.Mapi.Contact.FromFile(request);
 
 // Result example:
 result = new MapiContactDto
@@ -835,7 +847,7 @@ Returns: MAPI model
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Contact.FromFileAsync(request);
+var result = await api.Mapi.Contact.FromFileAsync(request);
 ```
 
 ### request Parameter
@@ -904,6 +916,8 @@ result = new MapiContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiContactFromFileRequest
 { 
@@ -912,7 +926,7 @@ var request = new MapiContactFromFileRequest
 };
 
 // Call method:
-var result = await Api.Mapi.Contact.FromFileAsync(request);
+var result = await api.Mapi.Contact.FromFileAsync(request);
 
 // Result example:
 result = new MapiContactDto
@@ -956,7 +970,7 @@ Returns: Contact model.
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Contact.Get(request);
+var result = api.Mapi.Contact.Get(request);
 ```
 
 ### request Parameter
@@ -1027,6 +1041,8 @@ result = new MapiContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiContactGetRequest
 { 
@@ -1037,7 +1053,7 @@ var request = new MapiContactGetRequest
 };
 
 // Call method:
-var result = Api.Mapi.Contact.Get(request);
+var result = api.Mapi.Contact.Get(request);
 
 // Result example:
 result = new MapiContactDto
@@ -1084,7 +1100,7 @@ Returns: Contact model.
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Contact.GetAsync(request);
+var result = await api.Mapi.Contact.GetAsync(request);
 ```
 
 ### request Parameter
@@ -1155,6 +1171,8 @@ result = new MapiContactDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiContactGetRequest
 { 
@@ -1165,7 +1183,7 @@ var request = new MapiContactGetRequest
 };
 
 // Call method:
-var result = await Api.Mapi.Contact.GetAsync(request);
+var result = await api.Mapi.Contact.GetAsync(request);
 
 // Result example:
 result = new MapiContactDto
@@ -1209,7 +1227,7 @@ Returns: Returns 200 if create is successful.
 
 Method call example:
 ```csharp
-Api.Mapi.Contact.Save(request);
+api.Mapi.Contact.Save(request);
 ```
 
 ### request Parameter
@@ -1277,6 +1295,8 @@ var request = new MapiContactSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiContactSaveRequest
 {
@@ -1317,7 +1337,7 @@ var request = new MapiContactSaveRequest
 };
 
 // Call method:
-Api.Mapi.Contact.Save(request);
+api.Mapi.Contact.Save(request);
 
 ```
 
@@ -1336,7 +1356,7 @@ Returns: Returns 200 if create is successful.
 
 Method call example:
 ```csharp
-await Api.Mapi.Contact.SaveAsync(request);
+await api.Mapi.Contact.SaveAsync(request);
 ```
 
 ### request Parameter
@@ -1404,6 +1424,8 @@ var request = new MapiContactSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiContactSaveRequest
 {
@@ -1444,7 +1466,7 @@ var request = new MapiContactSaveRequest
 };
 
 // Call method:
-await Api.Mapi.Contact.SaveAsync(request);
+await api.Mapi.Contact.SaveAsync(request);
 
 ```
 

@@ -1,4 +1,6 @@
 # AiNameWeighted
+Name with score             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

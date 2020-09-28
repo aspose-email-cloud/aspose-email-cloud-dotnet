@@ -1,4 +1,6 @@
 # MapiDateTimePropertyDto
+Mapi property with DateTime value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

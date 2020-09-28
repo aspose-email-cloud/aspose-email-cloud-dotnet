@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.ClientThreadApi
+# ClientThreadApi (EmailCloud.Client.Thread)
+
+Email client thread operations.
 
 <a name="Delete"></a>
 ## Delete
@@ -9,7 +11,7 @@ Returns: Returns 200 if delete is successful.
 
 Method call example:
 ```csharp
-Api.Client.Thread.Delete(request);
+api.Client.Thread.Delete(request);
 ```
 
 ### request Parameter
@@ -51,6 +53,8 @@ var request = new ClientThreadDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadDeleteRequest
 {
@@ -65,7 +69,7 @@ var request = new ClientThreadDeleteRequest
 };
 
 // Call method:
-Api.Client.Thread.Delete(request);
+api.Client.Thread.Delete(request);
 
 ```
 
@@ -84,7 +88,7 @@ Returns: Returns 200 if delete is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Thread.DeleteAsync(request);
+await api.Client.Thread.DeleteAsync(request);
 ```
 
 ### request Parameter
@@ -126,6 +130,8 @@ var request = new ClientThreadDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadDeleteRequest
 {
@@ -140,7 +146,7 @@ var request = new ClientThreadDeleteRequest
 };
 
 // Call method:
-await Api.Client.Thread.DeleteAsync(request);
+await api.Client.Thread.DeleteAsync(request);
 
 ```
 
@@ -156,7 +162,7 @@ Returns: List of threads
 
 Method call example:
 ```csharp
-var result = Api.Client.Thread.GetList(request);
+var result = api.Client.Thread.GetList(request);
 ```
 
 ### request Parameter
@@ -248,6 +254,8 @@ result = new EmailThreadList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadGetListRequest
 { 
@@ -258,7 +266,7 @@ var request = new ClientThreadGetListRequest
 };
 
 // Call method:
-var result = Api.Client.Thread.GetList(request);
+var result = api.Client.Thread.GetList(request);
 
 // Result example:
 result = new EmailThreadList
@@ -326,7 +334,7 @@ Returns: List of threads
 
 Method call example:
 ```csharp
-var result = await Api.Client.Thread.GetListAsync(request);
+var result = await api.Client.Thread.GetListAsync(request);
 ```
 
 ### request Parameter
@@ -418,6 +426,8 @@ result = new EmailThreadList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadGetListRequest
 { 
@@ -428,7 +438,7 @@ var request = new ClientThreadGetListRequest
 };
 
 // Call method:
-var result = await Api.Client.Thread.GetListAsync(request);
+var result = await api.Client.Thread.GetListAsync(request);
 
 // Result example:
 result = new EmailThreadList
@@ -493,7 +503,7 @@ Returns: Requested thread with fully fetched messages
 
 Method call example:
 ```csharp
-var result = Api.Client.Thread.GetMessages(request);
+var result = api.Client.Thread.GetMessages(request);
 ```
 
 ### request Parameter
@@ -539,6 +549,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadGetMessagesRequest
 { 
@@ -550,7 +562,7 @@ var request = new ClientThreadGetMessagesRequest
 };
 
 // Call method:
-var result = Api.Client.Thread.GetMessages(request);
+var result = api.Client.Thread.GetMessages(request);
 
 // Result example:
 result = ;
@@ -571,7 +583,7 @@ Returns: Requested thread with fully fetched messages
 
 Method call example:
 ```csharp
-var result = await Api.Client.Thread.GetMessagesAsync(request);
+var result = await api.Client.Thread.GetMessagesAsync(request);
 ```
 
 ### request Parameter
@@ -617,6 +629,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadGetMessagesRequest
 { 
@@ -628,7 +642,7 @@ var request = new ClientThreadGetMessagesRequest
 };
 
 // Call method:
-var result = await Api.Client.Thread.GetMessagesAsync(request);
+var result = await api.Client.Thread.GetMessagesAsync(request);
 
 // Result example:
 result = ;
@@ -646,7 +660,7 @@ Returns: Returns 200 if move is successful.
 
 Method call example:
 ```csharp
-Api.Client.Thread.Move(request);
+api.Client.Thread.Move(request);
 ```
 
 ### request Parameter
@@ -688,6 +702,8 @@ var request = new ClientThreadMoveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadMoveRequest
 {
@@ -702,7 +718,7 @@ var request = new ClientThreadMoveRequest
 };
 
 // Call method:
-Api.Client.Thread.Move(request);
+api.Client.Thread.Move(request);
 
 ```
 
@@ -721,7 +737,7 @@ Returns: Returns 200 if move is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Thread.MoveAsync(request);
+await api.Client.Thread.MoveAsync(request);
 ```
 
 ### request Parameter
@@ -763,6 +779,8 @@ var request = new ClientThreadMoveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadMoveRequest
 {
@@ -777,7 +795,7 @@ var request = new ClientThreadMoveRequest
 };
 
 // Call method:
-await Api.Client.Thread.MoveAsync(request);
+await api.Client.Thread.MoveAsync(request);
 
 ```
 
@@ -793,7 +811,7 @@ Returns: Returns 200 if flag set is successful.
 
 Method call example:
 ```csharp
-Api.Client.Thread.SetIsRead(request);
+api.Client.Thread.SetIsRead(request);
 ```
 
 ### request Parameter
@@ -836,6 +854,8 @@ var request = new ClientThreadSetIsReadRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadSetIsReadRequest
 {
@@ -851,7 +871,7 @@ var request = new ClientThreadSetIsReadRequest
 };
 
 // Call method:
-Api.Client.Thread.SetIsRead(request);
+api.Client.Thread.SetIsRead(request);
 
 ```
 
@@ -870,7 +890,7 @@ Returns: Returns 200 if flag set is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Thread.SetIsReadAsync(request);
+await api.Client.Thread.SetIsReadAsync(request);
 ```
 
 ### request Parameter
@@ -913,6 +933,8 @@ var request = new ClientThreadSetIsReadRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientThreadSetIsReadRequest
 {
@@ -928,7 +950,7 @@ var request = new ClientThreadSetIsReadRequest
 };
 
 // Call method:
-await Api.Client.Thread.SetIsReadAsync(request);
+await api.Client.Thread.SetIsReadAsync(request);
 
 ```
 

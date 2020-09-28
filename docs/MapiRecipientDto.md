@@ -1,4 +1,6 @@
 # MapiRecipientDto
+Represents the recipient information in the Microsoft Outlook Message.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

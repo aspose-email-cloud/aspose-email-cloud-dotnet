@@ -1,4 +1,6 @@
 # NameValuePair
+Name-Value property             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

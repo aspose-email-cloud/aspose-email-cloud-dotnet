@@ -1,4 +1,6 @@
 # ClientMessageSendRequest
+Email client send message request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # ClientMessageAppendRequest
+Email client append message request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

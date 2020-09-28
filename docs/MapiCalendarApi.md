@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.MapiCalendarApi
+# MapiCalendarApi (EmailCloud.Mapi.Calendar)
+
+MAPI calendar operations.
 
 <a name="AsCalendarDto"></a>
 ## AsCalendarDto
@@ -9,7 +11,7 @@ Returns: CalendarDto model.
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Calendar.AsCalendarDto(mapiCalendarDto);
+var result = api.Mapi.Calendar.AsCalendarDto(mapiCalendarDto);
 ```
 
 ### mapiCalendarDto Parameter
@@ -121,6 +123,8 @@ result = new CalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var mapiCalendarDto = new MapiCalendarDto
 {
@@ -170,7 +174,7 @@ var mapiCalendarDto = new MapiCalendarDto
 };
 
 // Call method:
-var result = Api.Mapi.Calendar.AsCalendarDto(mapiCalendarDto);
+var result = api.Mapi.Calendar.AsCalendarDto(mapiCalendarDto);
 
 // Result example:
 result = new CalendarDto
@@ -218,7 +222,7 @@ Returns: CalendarDto model.
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Calendar.AsCalendarDtoAsync(mapiCalendarDto);
+var result = await api.Mapi.Calendar.AsCalendarDtoAsync(mapiCalendarDto);
 ```
 
 ### mapiCalendarDto Parameter
@@ -330,6 +334,8 @@ result = new CalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var mapiCalendarDto = new MapiCalendarDto
 {
@@ -379,7 +385,7 @@ var mapiCalendarDto = new MapiCalendarDto
 };
 
 // Call method:
-var result = await Api.Mapi.Calendar.AsCalendarDtoAsync(mapiCalendarDto);
+var result = await api.Mapi.Calendar.AsCalendarDtoAsync(mapiCalendarDto);
 
 // Result example:
 result = new CalendarDto
@@ -424,7 +430,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Calendar.AsFile(request);
+var result = api.Mapi.Calendar.AsFile(request);
 ```
 
 ### request Parameter
@@ -516,6 +522,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiCalendarAsFileRequest
 {
@@ -569,7 +577,7 @@ var request = new MapiCalendarAsFileRequest
 };
 
 // Call method:
-var result = Api.Mapi.Calendar.AsFile(request);
+var result = api.Mapi.Calendar.AsFile(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -593,7 +601,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Calendar.AsFileAsync(request);
+var result = await api.Mapi.Calendar.AsFileAsync(request);
 ```
 
 ### request Parameter
@@ -685,6 +693,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiCalendarAsFileRequest
 {
@@ -738,7 +748,7 @@ var request = new MapiCalendarAsFileRequest
 };
 
 // Call method:
-var result = await Api.Mapi.Calendar.AsFileAsync(request);
+var result = await api.Mapi.Calendar.AsFileAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -759,7 +769,7 @@ Returns: MAPI model.
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Calendar.FromFile(request);
+var result = api.Mapi.Calendar.FromFile(request);
 ```
 
 ### request Parameter
@@ -846,6 +856,8 @@ result = new MapiCalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiCalendarFromFileRequest
 { 
@@ -853,7 +865,7 @@ var request = new MapiCalendarFromFileRequest
 };
 
 // Call method:
-var result = Api.Mapi.Calendar.FromFile(request);
+var result = api.Mapi.Calendar.FromFile(request);
 
 // Result example:
 result = new MapiCalendarDto
@@ -919,7 +931,7 @@ Returns: MAPI model.
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Calendar.FromFileAsync(request);
+var result = await api.Mapi.Calendar.FromFileAsync(request);
 ```
 
 ### request Parameter
@@ -1006,6 +1018,8 @@ result = new MapiCalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiCalendarFromFileRequest
 { 
@@ -1013,7 +1027,7 @@ var request = new MapiCalendarFromFileRequest
 };
 
 // Call method:
-var result = await Api.Mapi.Calendar.FromFileAsync(request);
+var result = await api.Mapi.Calendar.FromFileAsync(request);
 
 // Result example:
 result = new MapiCalendarDto
@@ -1076,7 +1090,7 @@ Returns: MAPI Calendar model.
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Calendar.Get(request);
+var result = api.Mapi.Calendar.Get(request);
 ```
 
 ### request Parameter
@@ -1165,6 +1179,8 @@ result = new MapiCalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiCalendarGetRequest
 { 
@@ -1174,7 +1190,7 @@ var request = new MapiCalendarGetRequest
 };
 
 // Call method:
-var result = Api.Mapi.Calendar.Get(request);
+var result = api.Mapi.Calendar.Get(request);
 
 // Result example:
 result = new MapiCalendarDto
@@ -1240,7 +1256,7 @@ Returns: MAPI Calendar model.
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Calendar.GetAsync(request);
+var result = await api.Mapi.Calendar.GetAsync(request);
 ```
 
 ### request Parameter
@@ -1329,6 +1345,8 @@ result = new MapiCalendarDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiCalendarGetRequest
 { 
@@ -1338,7 +1356,7 @@ var request = new MapiCalendarGetRequest
 };
 
 // Call method:
-var result = await Api.Mapi.Calendar.GetAsync(request);
+var result = await api.Mapi.Calendar.GetAsync(request);
 
 // Result example:
 result = new MapiCalendarDto
@@ -1401,7 +1419,7 @@ Returns: Returns 200 if update is successful.
 
 Method call example:
 ```csharp
-Api.Mapi.Calendar.Save(request);
+api.Mapi.Calendar.Save(request);
 ```
 
 ### request Parameter
@@ -1488,6 +1506,8 @@ var request = new MapiCalendarSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiCalendarSaveRequest
 {
@@ -1547,7 +1567,7 @@ var request = new MapiCalendarSaveRequest
 };
 
 // Call method:
-Api.Mapi.Calendar.Save(request);
+api.Mapi.Calendar.Save(request);
 
 ```
 
@@ -1566,7 +1586,7 @@ Returns: Returns 200 if update is successful.
 
 Method call example:
 ```csharp
-await Api.Mapi.Calendar.SaveAsync(request);
+await api.Mapi.Calendar.SaveAsync(request);
 ```
 
 ### request Parameter
@@ -1653,6 +1673,8 @@ var request = new MapiCalendarSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiCalendarSaveRequest
 {
@@ -1712,7 +1734,7 @@ var request = new MapiCalendarSaveRequest
 };
 
 // Call method:
-await Api.Mapi.Calendar.SaveAsync(request);
+await api.Mapi.Calendar.SaveAsync(request);
 
 ```
 

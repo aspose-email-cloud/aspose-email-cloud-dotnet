@@ -1,4 +1,6 @@
 # CalendarStorageList
+iCalendar models list with corresponding storage locations.             
+
 ## Properties
 Class has no properties
 

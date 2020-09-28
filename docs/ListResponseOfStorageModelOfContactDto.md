@@ -1,4 +1,5 @@
 # ListResponseOfStorageModelOfContactDto
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

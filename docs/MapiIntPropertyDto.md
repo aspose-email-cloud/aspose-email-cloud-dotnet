@@ -1,4 +1,6 @@
 # MapiIntPropertyDto
+Mapi property with Integer value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

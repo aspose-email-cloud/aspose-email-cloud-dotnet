@@ -1,4 +1,6 @@
 # ReminderTrigger
+Specifies when an alarm will trigger.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

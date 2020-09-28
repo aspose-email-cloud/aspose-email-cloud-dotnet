@@ -1,4 +1,6 @@
 # MapiCalendarExceptionInfoDto
+An exception specifies changes to an instance of a recurring series.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

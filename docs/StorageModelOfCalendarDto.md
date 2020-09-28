@@ -1,4 +1,5 @@
 # StorageModelOfCalendarDto
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

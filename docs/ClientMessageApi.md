@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.ClientMessageApi
+# ClientMessageApi (EmailCloud.Client.Message)
+
+Email client message operations.
 
 <a name="Append"></a>
 ## Append
@@ -9,7 +11,7 @@ Returns: Message id.
 
 Method call example:
 ```csharp
-var result = Api.Client.Message.Append(request);
+var result = api.Client.Message.Append(request);
 ```
 
 ### request Parameter
@@ -97,6 +99,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageAppendRequest
 {
@@ -149,7 +153,7 @@ var request = new ClientMessageAppendRequest
 };
 
 // Call method:
-var result = Api.Client.Message.Append(request);
+var result = api.Client.Message.Append(request);
 
 // Result example:
 result = ;
@@ -170,7 +174,7 @@ Returns: Message id.
 
 Method call example:
 ```csharp
-var result = await Api.Client.Message.AppendAsync(request);
+var result = await api.Client.Message.AppendAsync(request);
 ```
 
 ### request Parameter
@@ -258,6 +262,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageAppendRequest
 {
@@ -310,7 +316,7 @@ var request = new ClientMessageAppendRequest
 };
 
 // Call method:
-var result = await Api.Client.Message.AppendAsync(request);
+var result = await api.Client.Message.AppendAsync(request);
 
 // Result example:
 result = ;
@@ -328,7 +334,7 @@ Returns: Message id.
 
 Method call example:
 ```csharp
-var result = Api.Client.Message.AppendFile(request);
+var result = api.Client.Message.AppendFile(request);
 ```
 
 ### request Parameter
@@ -375,6 +381,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageAppendFileRequest
 { 
@@ -387,7 +395,7 @@ var request = new ClientMessageAppendFileRequest
 };
 
 // Call method:
-var result = Api.Client.Message.AppendFile(request);
+var result = api.Client.Message.AppendFile(request);
 
 // Result example:
 result = ;
@@ -408,7 +416,7 @@ Returns: Message id.
 
 Method call example:
 ```csharp
-var result = await Api.Client.Message.AppendFileAsync(request);
+var result = await api.Client.Message.AppendFileAsync(request);
 ```
 
 ### request Parameter
@@ -455,6 +463,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageAppendFileRequest
 { 
@@ -467,7 +477,7 @@ var request = new ClientMessageAppendFileRequest
 };
 
 // Call method:
-var result = await Api.Client.Message.AppendFileAsync(request);
+var result = await api.Client.Message.AppendFileAsync(request);
 
 // Result example:
 result = ;
@@ -485,7 +495,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-Api.Client.Message.Delete(request);
+api.Client.Message.Delete(request);
 ```
 
 ### request Parameter
@@ -527,6 +537,8 @@ var request = new ClientMessageDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageDeleteRequest
 {
@@ -541,7 +553,7 @@ var request = new ClientMessageDeleteRequest
 };
 
 // Call method:
-Api.Client.Message.Delete(request);
+api.Client.Message.Delete(request);
 
 ```
 
@@ -560,7 +572,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Message.DeleteAsync(request);
+await api.Client.Message.DeleteAsync(request);
 ```
 
 ### request Parameter
@@ -602,6 +614,8 @@ var request = new ClientMessageDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageDeleteRequest
 {
@@ -616,7 +630,7 @@ var request = new ClientMessageDeleteRequest
 };
 
 // Call method:
-await Api.Client.Message.DeleteAsync(request);
+await api.Client.Message.DeleteAsync(request);
 
 ```
 
@@ -632,7 +646,7 @@ Returns: MailMessageBase object that represents fetched message in requested for
 
 Method call example:
 ```csharp
-var result = Api.Client.Message.Fetch(request);
+var result = api.Client.Message.Fetch(request);
 ```
 
 ### request Parameter
@@ -683,6 +697,8 @@ result = new MailMessageBase
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageFetchRequest
 { 
@@ -696,7 +712,7 @@ var request = new ClientMessageFetchRequest
 };
 
 // Call method:
-var result = Api.Client.Message.Fetch(request);
+var result = api.Client.Message.Fetch(request);
 
 // Result example:
 result = new MailMessageBase
@@ -720,7 +736,7 @@ Returns: MailMessageBase object that represents fetched message in requested for
 
 Method call example:
 ```csharp
-var result = await Api.Client.Message.FetchAsync(request);
+var result = await api.Client.Message.FetchAsync(request);
 ```
 
 ### request Parameter
@@ -771,6 +787,8 @@ result = new MailMessageBase
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageFetchRequest
 { 
@@ -784,7 +802,7 @@ var request = new ClientMessageFetchRequest
 };
 
 // Call method:
-var result = await Api.Client.Message.FetchAsync(request);
+var result = await api.Client.Message.FetchAsync(request);
 
 // Result example:
 result = new MailMessageBase
@@ -805,7 +823,7 @@ Returns: Email message file in requested format.
 
 Method call example:
 ```csharp
-var result = Api.Client.Message.FetchFile(request);
+var result = api.Client.Message.FetchFile(request);
 ```
 
 ### request Parameter
@@ -855,6 +873,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageFetchFileRequest
 { 
@@ -867,7 +887,7 @@ var request = new ClientMessageFetchFileRequest
 };
 
 // Call method:
-var result = Api.Client.Message.FetchFile(request);
+var result = api.Client.Message.FetchFile(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -891,7 +911,7 @@ Returns: Email message file in requested format.
 
 Method call example:
 ```csharp
-var result = await Api.Client.Message.FetchFileAsync(request);
+var result = await api.Client.Message.FetchFileAsync(request);
 ```
 
 ### request Parameter
@@ -941,6 +961,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageFetchFileRequest
 { 
@@ -953,7 +975,7 @@ var request = new ClientMessageFetchFileRequest
 };
 
 // Call method:
-var result = await Api.Client.Message.FetchFileAsync(request);
+var result = await api.Client.Message.FetchFileAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -976,7 +998,7 @@ Returns: List of MailMessageBase objects that represent fetched message in reque
 
 Method call example:
 ```csharp
-var result = Api.Client.Message.List(request);
+var result = api.Client.Message.List(request);
 ```
 
 ### request Parameter
@@ -1025,6 +1047,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageListRequest
 { 
@@ -1039,7 +1063,7 @@ var request = new ClientMessageListRequest
 };
 
 // Call method:
-var result = Api.Client.Message.List(request);
+var result = api.Client.Message.List(request);
 
 // Result example:
 result = ;
@@ -1062,7 +1086,7 @@ Returns: List of MailMessageBase objects that represent fetched message in reque
 
 Method call example:
 ```csharp
-var result = await Api.Client.Message.ListAsync(request);
+var result = await api.Client.Message.ListAsync(request);
 ```
 
 ### request Parameter
@@ -1111,6 +1135,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageListRequest
 { 
@@ -1125,7 +1151,7 @@ var request = new ClientMessageListRequest
 };
 
 // Call method:
-var result = await Api.Client.Message.ListAsync(request);
+var result = await api.Client.Message.ListAsync(request);
 
 // Result example:
 result = ;
@@ -1143,7 +1169,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-Api.Client.Message.Move(request);
+api.Client.Message.Move(request);
 ```
 
 ### request Parameter
@@ -1186,6 +1212,8 @@ var request = new ClientMessageMoveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageMoveRequest
 {
@@ -1201,7 +1229,7 @@ var request = new ClientMessageMoveRequest
 };
 
 // Call method:
-Api.Client.Message.Move(request);
+api.Client.Message.Move(request);
 
 ```
 
@@ -1220,7 +1248,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Message.MoveAsync(request);
+await api.Client.Message.MoveAsync(request);
 ```
 
 ### request Parameter
@@ -1263,6 +1291,8 @@ var request = new ClientMessageMoveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageMoveRequest
 {
@@ -1278,7 +1308,7 @@ var request = new ClientMessageMoveRequest
 };
 
 // Call method:
-await Api.Client.Message.MoveAsync(request);
+await api.Client.Message.MoveAsync(request);
 
 ```
 
@@ -1294,7 +1324,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-Api.Client.Message.Send(request);
+api.Client.Message.Send(request);
 ```
 
 ### request Parameter
@@ -1372,6 +1402,8 @@ var request = new ClientMessageSendRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageSendRequest
 {
@@ -1422,7 +1454,7 @@ var request = new ClientMessageSendRequest
 };
 
 // Call method:
-Api.Client.Message.Send(request);
+api.Client.Message.Send(request);
 
 ```
 
@@ -1441,7 +1473,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Message.SendAsync(request);
+await api.Client.Message.SendAsync(request);
 ```
 
 ### request Parameter
@@ -1519,6 +1551,8 @@ var request = new ClientMessageSendRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageSendRequest
 {
@@ -1569,7 +1603,7 @@ var request = new ClientMessageSendRequest
 };
 
 // Call method:
-await Api.Client.Message.SendAsync(request);
+await api.Client.Message.SendAsync(request);
 
 ```
 
@@ -1585,7 +1619,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-Api.Client.Message.SendFile(request);
+api.Client.Message.SendFile(request);
 ```
 
 ### request Parameter
@@ -1623,6 +1657,8 @@ var request = new ClientMessageSendFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageSendFileRequest
 { 
@@ -1634,7 +1670,7 @@ var request = new ClientMessageSendFileRequest
 };
 
 // Call method:
-Api.Client.Message.SendFile(request);
+api.Client.Message.SendFile(request);
 
 ```
 
@@ -1653,7 +1689,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Message.SendFileAsync(request);
+await api.Client.Message.SendFileAsync(request);
 ```
 
 ### request Parameter
@@ -1691,6 +1727,8 @@ var request = new ClientMessageSendFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageSendFileRequest
 { 
@@ -1702,7 +1740,7 @@ var request = new ClientMessageSendFileRequest
 };
 
 // Call method:
-await Api.Client.Message.SendFileAsync(request);
+await api.Client.Message.SendFileAsync(request);
 
 ```
 
@@ -1718,7 +1756,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-Api.Client.Message.SetIsRead(request);
+api.Client.Message.SetIsRead(request);
 ```
 
 ### request Parameter
@@ -1760,6 +1798,8 @@ var request = new ClientMessageSetIsReadRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageSetIsReadRequest
 {
@@ -1774,7 +1814,7 @@ var request = new ClientMessageSetIsReadRequest
 };
 
 // Call method:
-Api.Client.Message.SetIsRead(request);
+api.Client.Message.SetIsRead(request);
 
 ```
 
@@ -1793,7 +1833,7 @@ Returns: Returns 200 if send is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Message.SetIsReadAsync(request);
+await api.Client.Message.SetIsReadAsync(request);
 ```
 
 ### request Parameter
@@ -1835,6 +1875,8 @@ var request = new ClientMessageSetIsReadRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientMessageSetIsReadRequest
 {
@@ -1849,7 +1891,7 @@ var request = new ClientMessageSetIsReadRequest
 };
 
 // Call method:
-await Api.Client.Message.SetIsReadAsync(request);
+await api.Client.Message.SetIsReadAsync(request);
 
 ```
 

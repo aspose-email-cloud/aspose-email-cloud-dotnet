@@ -1,4 +1,6 @@
 # ClientFolderDeleteRequest
+Email client delete folder request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

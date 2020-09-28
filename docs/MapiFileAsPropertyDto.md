@@ -1,4 +1,6 @@
 # MapiFileAsPropertyDto
+Mapi property with FileAsMapping value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

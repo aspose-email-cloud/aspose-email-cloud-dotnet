@@ -1,4 +1,6 @@
 # MapiContactDto
+Represents outlook contact information.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

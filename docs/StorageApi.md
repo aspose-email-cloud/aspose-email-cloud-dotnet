@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.StorageApi
+# StorageApi (EmailCloud.CloudStorage.Storage)
+
+Storage operations controller
 
 <a name="GetDiscUsage"></a>
 ## GetDiscUsage
@@ -9,7 +11,7 @@ Returns: Disc usage.
 
 Method call example:
 ```csharp
-var result = Api.CloudStorage.Storage.GetDiscUsage(request);
+var result = api.CloudStorage.Storage.GetDiscUsage(request);
 ```
 
 ### request Parameter
@@ -55,6 +57,8 @@ result = new DiscUsage
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new GetDiscUsageRequest
 { 
@@ -62,7 +66,7 @@ var request = new GetDiscUsageRequest
 };
 
 // Call method:
-var result = Api.CloudStorage.Storage.GetDiscUsage(request);
+var result = api.CloudStorage.Storage.GetDiscUsage(request);
 
 // Result example:
 result = new DiscUsage
@@ -87,7 +91,7 @@ Returns: Disc usage.
 
 Method call example:
 ```csharp
-var result = await Api.CloudStorage.Storage.GetDiscUsageAsync(request);
+var result = await api.CloudStorage.Storage.GetDiscUsageAsync(request);
 ```
 
 ### request Parameter
@@ -133,6 +137,8 @@ result = new DiscUsage
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new GetDiscUsageRequest
 { 
@@ -140,7 +146,7 @@ var request = new GetDiscUsageRequest
 };
 
 // Call method:
-var result = await Api.CloudStorage.Storage.GetDiscUsageAsync(request);
+var result = await api.CloudStorage.Storage.GetDiscUsageAsync(request);
 
 // Result example:
 result = new DiscUsage
@@ -162,7 +168,7 @@ Returns: File versions.
 
 Method call example:
 ```csharp
-var result = Api.CloudStorage.Storage.GetFileVersions(request);
+var result = api.CloudStorage.Storage.GetFileVersions(request);
 ```
 
 ### request Parameter
@@ -219,6 +225,8 @@ result = new FileVersions
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new GetFileVersionsRequest
 { 
@@ -227,7 +235,7 @@ var request = new GetFileVersionsRequest
 };
 
 // Call method:
-var result = Api.CloudStorage.Storage.GetFileVersions(request);
+var result = api.CloudStorage.Storage.GetFileVersions(request);
 
 // Result example:
 result = new FileVersions
@@ -262,7 +270,7 @@ Returns: File versions.
 
 Method call example:
 ```csharp
-var result = await Api.CloudStorage.Storage.GetFileVersionsAsync(request);
+var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
 ```
 
 ### request Parameter
@@ -319,6 +327,8 @@ result = new FileVersions
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new GetFileVersionsRequest
 { 
@@ -327,7 +337,7 @@ var request = new GetFileVersionsRequest
 };
 
 // Call method:
-var result = await Api.CloudStorage.Storage.GetFileVersionsAsync(request);
+var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
 
 // Result example:
 result = new FileVersions
@@ -359,7 +369,7 @@ Returns: Object exist result.
 
 Method call example:
 ```csharp
-var result = Api.CloudStorage.Storage.ObjectExists(request);
+var result = api.CloudStorage.Storage.ObjectExists(request);
 ```
 
 ### request Parameter
@@ -405,6 +415,8 @@ result = new ObjectExist
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ObjectExistsRequest
 { 
@@ -413,7 +425,7 @@ var request = new ObjectExistsRequest
 };
 
 // Call method:
-var result = Api.CloudStorage.Storage.ObjectExists(request);
+var result = api.CloudStorage.Storage.ObjectExists(request);
 
 // Result example:
 result = new ObjectExist
@@ -437,7 +449,7 @@ Returns: Object exist result.
 
 Method call example:
 ```csharp
-var result = await Api.CloudStorage.Storage.ObjectExistsAsync(request);
+var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
 ```
 
 ### request Parameter
@@ -483,6 +495,8 @@ result = new ObjectExist
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ObjectExistsRequest
 { 
@@ -491,7 +505,7 @@ var request = new ObjectExistsRequest
 };
 
 // Call method:
-var result = await Api.CloudStorage.Storage.ObjectExistsAsync(request);
+var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
 
 // Result example:
 result = new ObjectExist
@@ -512,7 +526,7 @@ Returns: Storage exist result.
 
 Method call example:
 ```csharp
-var result = Api.CloudStorage.Storage.Exists(request);
+var result = api.CloudStorage.Storage.Exists(request);
 ```
 
 ### request Parameter
@@ -557,6 +571,8 @@ result = new StorageExist
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new StorageExistsRequest
 { 
@@ -564,7 +580,7 @@ var request = new StorageExistsRequest
 };
 
 // Call method:
-var result = Api.CloudStorage.Storage.Exists(request);
+var result = api.CloudStorage.Storage.Exists(request);
 
 // Result example:
 result = new StorageExist
@@ -588,7 +604,7 @@ Returns: Storage exist result.
 
 Method call example:
 ```csharp
-var result = await Api.CloudStorage.Storage.ExistsAsync(request);
+var result = await api.CloudStorage.Storage.ExistsAsync(request);
 ```
 
 ### request Parameter
@@ -633,6 +649,8 @@ result = new StorageExist
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new StorageExistsRequest
 { 
@@ -640,7 +658,7 @@ var request = new StorageExistsRequest
 };
 
 // Call method:
-var result = await Api.CloudStorage.Storage.ExistsAsync(request);
+var result = await api.CloudStorage.Storage.ExistsAsync(request);
 
 // Result example:
 result = new StorageExist

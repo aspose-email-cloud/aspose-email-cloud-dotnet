@@ -1,4 +1,6 @@
 # MapiMessageAsFileRequest
+Convert MapiMessage to file request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

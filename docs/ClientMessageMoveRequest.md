@@ -1,4 +1,6 @@
 # ClientMessageMoveRequest
+Email client move message request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

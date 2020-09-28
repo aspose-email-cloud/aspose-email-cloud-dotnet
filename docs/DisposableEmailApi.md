@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.DisposableEmailApi
+# DisposableEmailApi (EmailCloud.DisposableEmail)
+
+Check email address is disposable operations
 
 <a name="IsDisposable"></a>
 ## IsDisposable
@@ -9,7 +11,7 @@ Returns: true if address is disposable
 
 Method call example:
 ```csharp
-var result = Api.DisposableEmail.IsDisposable(request);
+var result = api.DisposableEmail.IsDisposable(request);
 ```
 
 ### request Parameter
@@ -51,6 +53,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new DisposableEmailIsDisposableRequest
 { 
@@ -58,7 +62,7 @@ var request = new DisposableEmailIsDisposableRequest
 };
 
 // Call method:
-var result = Api.DisposableEmail.IsDisposable(request);
+var result = api.DisposableEmail.IsDisposable(request);
 
 // Result example:
 result = ;
@@ -79,7 +83,7 @@ Returns: true if address is disposable
 
 Method call example:
 ```csharp
-var result = await Api.DisposableEmail.IsDisposableAsync(request);
+var result = await api.DisposableEmail.IsDisposableAsync(request);
 ```
 
 ### request Parameter
@@ -121,6 +125,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new DisposableEmailIsDisposableRequest
 { 
@@ -128,7 +134,7 @@ var request = new DisposableEmailIsDisposableRequest
 };
 
 // Call method:
-var result = await Api.DisposableEmail.IsDisposableAsync(request);
+var result = await api.DisposableEmail.IsDisposableAsync(request);
 
 // Result example:
 result = ;

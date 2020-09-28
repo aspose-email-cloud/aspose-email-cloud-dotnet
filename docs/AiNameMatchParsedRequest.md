@@ -1,4 +1,6 @@
 # AiNameMatchParsedRequest
+Two parsed names to match request             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # MapiPidNamePropertyDescriptor
+Property identified by a string name along with a property set             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

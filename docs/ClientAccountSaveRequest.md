@@ -1,4 +1,6 @@
 # ClientAccountSaveRequest
+Email client account save request             
+
 ## Properties
 Class has no properties
 

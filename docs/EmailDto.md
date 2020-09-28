@@ -1,4 +1,6 @@
 # EmailDto
+Email message representation.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

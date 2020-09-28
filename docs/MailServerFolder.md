@@ -1,4 +1,6 @@
 # MailServerFolder
+Email account folder             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

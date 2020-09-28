@@ -1,4 +1,6 @@
 # AiNameFormatted
+Formatted name             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

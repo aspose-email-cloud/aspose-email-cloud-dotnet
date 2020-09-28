@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.AiNameApi
+# AiNameApi (EmailCloud.Ai.Name)
+
+AI Name operations.
 
 <a name="Complete"></a>
 ## Complete
@@ -9,7 +11,7 @@ Returns: List of name variations.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.Complete(request);
+var result = api.Ai.Name.Complete(request);
 ```
 
 ### request Parameter
@@ -66,6 +68,8 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameCompleteRequest
 { 
@@ -73,7 +77,7 @@ var request = new AiNameCompleteRequest
 };
 
 // Call method:
-var result = Api.Ai.Name.Complete(request);
+var result = api.Ai.Name.Complete(request);
 
 // Result example:
 result = new AiNameWeightedVariants
@@ -109,7 +113,7 @@ Returns: List of name variations.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.CompleteAsync(request);
+var result = await api.Ai.Name.CompleteAsync(request);
 ```
 
 ### request Parameter
@@ -166,6 +170,8 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameCompleteRequest
 { 
@@ -173,7 +179,7 @@ var request = new AiNameCompleteRequest
 };
 
 // Call method:
-var result = await Api.Ai.Name.CompleteAsync(request);
+var result = await api.Ai.Name.CompleteAsync(request);
 
 // Result example:
 result = new AiNameWeightedVariants
@@ -206,7 +212,7 @@ Returns: List of name variations.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.Expand(request);
+var result = api.Ai.Name.Expand(request);
 ```
 
 ### request Parameter
@@ -263,6 +269,8 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameExpandRequest
 { 
@@ -270,7 +278,7 @@ var request = new AiNameExpandRequest
 };
 
 // Call method:
-var result = Api.Ai.Name.Expand(request);
+var result = api.Ai.Name.Expand(request);
 
 // Result example:
 result = new AiNameWeightedVariants
@@ -306,7 +314,7 @@ Returns: List of name variations.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.ExpandAsync(request);
+var result = await api.Ai.Name.ExpandAsync(request);
 ```
 
 ### request Parameter
@@ -363,6 +371,8 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameExpandRequest
 { 
@@ -370,7 +380,7 @@ var request = new AiNameExpandRequest
 };
 
 // Call method:
-var result = await Api.Ai.Name.ExpandAsync(request);
+var result = await api.Ai.Name.ExpandAsync(request);
 
 // Result example:
 result = new AiNameWeightedVariants
@@ -403,7 +413,7 @@ Returns: List of name variations.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.ExpandParsed(request);
+var result = api.Ai.Name.ExpandParsed(request);
 ```
 
 ### request Parameter
@@ -458,11 +468,13 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = ;
 
 // Call method:
-var result = Api.Ai.Name.ExpandParsed(request);
+var result = api.Ai.Name.ExpandParsed(request);
 
 // Result example:
 result = new AiNameWeightedVariants
@@ -498,7 +510,7 @@ Returns: List of name variations.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.ExpandParsedAsync(request);
+var result = await api.Ai.Name.ExpandParsedAsync(request);
 ```
 
 ### request Parameter
@@ -553,11 +565,13 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = ;
 
 // Call method:
-var result = await Api.Ai.Name.ExpandParsedAsync(request);
+var result = await api.Ai.Name.ExpandParsedAsync(request);
 
 // Result example:
 result = new AiNameWeightedVariants
@@ -590,7 +604,7 @@ Returns: Formatted name.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.Format(request);
+var result = api.Ai.Name.Format(request);
 ```
 
 ### request Parameter
@@ -637,6 +651,8 @@ result = new AiNameFormatted
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameFormatRequest
 { 
@@ -645,7 +661,7 @@ var request = new AiNameFormatRequest
 };
 
 // Call method:
-var result = Api.Ai.Name.Format(request);
+var result = api.Ai.Name.Format(request);
 
 // Result example:
 result = new AiNameFormatted
@@ -670,7 +686,7 @@ Returns: Formatted name.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.FormatAsync(request);
+var result = await api.Ai.Name.FormatAsync(request);
 ```
 
 ### request Parameter
@@ -717,6 +733,8 @@ result = new AiNameFormatted
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameFormatRequest
 { 
@@ -725,7 +743,7 @@ var request = new AiNameFormatRequest
 };
 
 // Call method:
-var result = await Api.Ai.Name.FormatAsync(request);
+var result = await api.Ai.Name.FormatAsync(request);
 
 // Result example:
 result = new AiNameFormatted
@@ -747,7 +765,7 @@ Returns: Formatted name.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.FormatParsed(request);
+var result = api.Ai.Name.FormatParsed(request);
 ```
 
 ### request Parameter
@@ -791,11 +809,13 @@ result = new AiNameFormatted
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = ;
 
 // Call method:
-var result = Api.Ai.Name.FormatParsed(request);
+var result = api.Ai.Name.FormatParsed(request);
 
 // Result example:
 result = new AiNameFormatted
@@ -820,7 +840,7 @@ Returns: Formatted name.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.FormatParsedAsync(request);
+var result = await api.Ai.Name.FormatParsedAsync(request);
 ```
 
 ### request Parameter
@@ -864,11 +884,13 @@ result = new AiNameFormatted
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = ;
 
 // Call method:
-var result = await Api.Ai.Name.FormatParsedAsync(request);
+var result = await api.Ai.Name.FormatParsedAsync(request);
 
 // Result example:
 result = new AiNameFormatted
@@ -890,7 +912,7 @@ Returns: Hypotheses about person&#39;s gender.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.Genderize(request);
+var result = api.Ai.Name.Genderize(request);
 ```
 
 ### request Parameter
@@ -932,6 +954,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameGenderizeRequest
 { 
@@ -939,7 +963,7 @@ var request = new AiNameGenderizeRequest
 };
 
 // Call method:
-var result = Api.Ai.Name.Genderize(request);
+var result = api.Ai.Name.Genderize(request);
 
 // Result example:
 result = ;
@@ -960,7 +984,7 @@ Returns: Hypotheses about person&#39;s gender.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.GenderizeAsync(request);
+var result = await api.Ai.Name.GenderizeAsync(request);
 ```
 
 ### request Parameter
@@ -1002,6 +1026,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameGenderizeRequest
 { 
@@ -1009,7 +1035,7 @@ var request = new AiNameGenderizeRequest
 };
 
 // Call method:
-var result = await Api.Ai.Name.GenderizeAsync(request);
+var result = await api.Ai.Name.GenderizeAsync(request);
 
 // Result example:
 result = ;
@@ -1027,7 +1053,7 @@ Returns: Hypotheses about person&#39;s gender.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.GenderizeParsed(request);
+var result = api.Ai.Name.GenderizeParsed(request);
 ```
 
 ### request Parameter
@@ -1067,11 +1093,13 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = ;
 
 // Call method:
-var result = Api.Ai.Name.GenderizeParsed(request);
+var result = api.Ai.Name.GenderizeParsed(request);
 
 // Result example:
 result = ;
@@ -1092,7 +1120,7 @@ Returns: Hypotheses about person&#39;s gender.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.GenderizeParsedAsync(request);
+var result = await api.Ai.Name.GenderizeParsedAsync(request);
 ```
 
 ### request Parameter
@@ -1132,11 +1160,13 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = ;
 
 // Call method:
-var result = await Api.Ai.Name.GenderizeParsedAsync(request);
+var result = await api.Ai.Name.GenderizeParsedAsync(request);
 
 // Result example:
 result = ;
@@ -1154,7 +1184,7 @@ Returns: Match result.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.Match(request);
+var result = api.Ai.Name.Match(request);
 ```
 
 ### request Parameter
@@ -1208,6 +1238,8 @@ result = new AiNameMatchResult
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameMatchRequest
 { 
@@ -1216,7 +1248,7 @@ var request = new AiNameMatchRequest
 };
 
 // Call method:
-var result = Api.Ai.Name.Match(request);
+var result = api.Ai.Name.Match(request);
 
 // Result example:
 result = new AiNameMatchResult
@@ -1248,7 +1280,7 @@ Returns: Match result.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.MatchAsync(request);
+var result = await api.Ai.Name.MatchAsync(request);
 ```
 
 ### request Parameter
@@ -1302,6 +1334,8 @@ result = new AiNameMatchResult
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameMatchRequest
 { 
@@ -1310,7 +1344,7 @@ var request = new AiNameMatchRequest
 };
 
 // Call method:
-var result = await Api.Ai.Name.MatchAsync(request);
+var result = await api.Ai.Name.MatchAsync(request);
 
 // Result example:
 result = new AiNameMatchResult
@@ -1339,7 +1373,7 @@ Returns: Match result.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.MatchParsed(request);
+var result = api.Ai.Name.MatchParsed(request);
 ```
 
 ### request Parameter
@@ -1390,11 +1424,13 @@ result = new AiNameMatchResult
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = ;
 
 // Call method:
-var result = Api.Ai.Name.MatchParsed(request);
+var result = api.Ai.Name.MatchParsed(request);
 
 // Result example:
 result = new AiNameMatchResult
@@ -1426,7 +1462,7 @@ Returns: Match result.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.MatchParsedAsync(request);
+var result = await api.Ai.Name.MatchParsedAsync(request);
 ```
 
 ### request Parameter
@@ -1477,11 +1513,13 @@ result = new AiNameMatchResult
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = ;
 
 // Call method:
-var result = await Api.Ai.Name.MatchParsedAsync(request);
+var result = await api.Ai.Name.MatchParsedAsync(request);
 
 // Result example:
 result = new AiNameMatchResult
@@ -1510,7 +1548,7 @@ Returns: List of name components.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.Parse(request);
+var result = api.Ai.Name.Parse(request);
 ```
 
 ### request Parameter
@@ -1554,6 +1592,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameParseRequest
 { 
@@ -1563,7 +1603,7 @@ var request = new AiNameParseRequest
 };
 
 // Call method:
-var result = Api.Ai.Name.Parse(request);
+var result = api.Ai.Name.Parse(request);
 
 // Result example:
 result = ;
@@ -1584,7 +1624,7 @@ Returns: List of name components.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.ParseAsync(request);
+var result = await api.Ai.Name.ParseAsync(request);
 ```
 
 ### request Parameter
@@ -1628,6 +1668,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameParseRequest
 { 
@@ -1637,7 +1679,7 @@ var request = new AiNameParseRequest
 };
 
 // Call method:
-var result = await Api.Ai.Name.ParseAsync(request);
+var result = await api.Ai.Name.ParseAsync(request);
 
 // Result example:
 result = ;
@@ -1655,7 +1697,7 @@ Returns: Match result.
 
 Method call example:
 ```csharp
-var result = Api.Ai.Name.ParseEmailAddress(request);
+var result = api.Ai.Name.ParseEmailAddress(request);
 ```
 
 ### request Parameter
@@ -1697,6 +1739,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameParseEmailAddressRequest
 { 
@@ -1704,7 +1748,7 @@ var request = new AiNameParseEmailAddressRequest
 };
 
 // Call method:
-var result = Api.Ai.Name.ParseEmailAddress(request);
+var result = api.Ai.Name.ParseEmailAddress(request);
 
 // Result example:
 result = ;
@@ -1725,7 +1769,7 @@ Returns: Match result.
 
 Method call example:
 ```csharp
-var result = await Api.Ai.Name.ParseEmailAddressAsync(request);
+var result = await api.Ai.Name.ParseEmailAddressAsync(request);
 ```
 
 ### request Parameter
@@ -1767,6 +1811,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new AiNameParseEmailAddressRequest
 { 
@@ -1774,7 +1820,7 @@ var request = new AiNameParseEmailAddressRequest
 };
 
 // Call method:
-var result = await Api.Ai.Name.ParseEmailAddressAsync(request);
+var result = await api.Ai.Name.ParseEmailAddressAsync(request);
 
 // Result example:
 result = ;

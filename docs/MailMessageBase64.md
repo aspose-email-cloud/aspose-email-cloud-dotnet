@@ -1,4 +1,6 @@
 # MailMessageBase64
+Email message represented as file, encoded to Base64 format.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

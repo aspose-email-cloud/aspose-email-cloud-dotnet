@@ -1,4 +1,6 @@
 # EmailAsFileRequest
+Convert email model to file request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

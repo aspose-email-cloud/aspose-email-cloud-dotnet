@@ -1,4 +1,6 @@
 # MapiBooleanPropertyDto
+Mapi property with Boolean value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

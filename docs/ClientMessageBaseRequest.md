@@ -1,4 +1,6 @@
 # ClientMessageBaseRequest
+Email client message request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

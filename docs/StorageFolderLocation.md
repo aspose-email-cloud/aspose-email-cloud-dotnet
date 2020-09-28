@@ -1,4 +1,6 @@
 # StorageFolderLocation
+A storage folder location information             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

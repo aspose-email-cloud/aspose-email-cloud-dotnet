@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.MapiMessageApi
+# MapiMessageApi (EmailCloud.Mapi.Message)
+
+MAPI message operations
 
 <a name="AsEmailDto"></a>
 ## AsEmailDto
@@ -9,7 +11,7 @@ Returns: EmailDto model
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Message.AsEmailDto(mapiMessage);
+var result = api.Mapi.Message.AsEmailDto(mapiMessage);
 ```
 
 ### mapiMessage Parameter
@@ -122,6 +124,8 @@ result = new EmailDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var mapiMessage = new MapiMessageDto
 {
@@ -165,7 +169,7 @@ var mapiMessage = new MapiMessageDto
 };
 
 // Call method:
-var result = Api.Mapi.Message.AsEmailDto(mapiMessage);
+var result = api.Mapi.Message.AsEmailDto(mapiMessage);
 
 // Result example:
 result = new EmailDto
@@ -220,7 +224,7 @@ Returns: EmailDto model
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
+var result = await api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
 ```
 
 ### mapiMessage Parameter
@@ -333,6 +337,8 @@ result = new EmailDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var mapiMessage = new MapiMessageDto
 {
@@ -376,7 +382,7 @@ var mapiMessage = new MapiMessageDto
 };
 
 // Call method:
-var result = await Api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
+var result = await api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
 
 // Result example:
 result = new EmailDto
@@ -428,7 +434,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Message.AsFile(request);
+var result = api.Mapi.Message.AsFile(request);
 ```
 
 ### request Parameter
@@ -514,6 +520,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiMessageAsFileRequest
 {
@@ -561,7 +569,7 @@ var request = new MapiMessageAsFileRequest
 };
 
 // Call method:
-var result = Api.Mapi.Message.AsFile(request);
+var result = api.Mapi.Message.AsFile(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -585,7 +593,7 @@ Returns: File stream in specified format.
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Message.AsFileAsync(request);
+var result = await api.Mapi.Message.AsFileAsync(request);
 ```
 
 ### request Parameter
@@ -671,6 +679,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiMessageAsFileRequest
 {
@@ -718,7 +728,7 @@ var request = new MapiMessageAsFileRequest
 };
 
 // Call method:
-var result = await Api.Mapi.Message.AsFileAsync(request);
+var result = await api.Mapi.Message.AsFileAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -739,7 +749,7 @@ Returns: MAPI model
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Message.FromFile(request);
+var result = api.Mapi.Message.FromFile(request);
 ```
 
 ### request Parameter
@@ -821,6 +831,8 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiMessageFromFileRequest
 { 
@@ -829,7 +841,7 @@ var request = new MapiMessageFromFileRequest
 };
 
 // Call method:
-var result = Api.Mapi.Message.FromFile(request);
+var result = api.Mapi.Message.FromFile(request);
 
 // Result example:
 result = new MapiMessageDto
@@ -889,7 +901,7 @@ Returns: MAPI model
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Message.FromFileAsync(request);
+var result = await api.Mapi.Message.FromFileAsync(request);
 ```
 
 ### request Parameter
@@ -971,6 +983,8 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiMessageFromFileRequest
 { 
@@ -979,7 +993,7 @@ var request = new MapiMessageFromFileRequest
 };
 
 // Call method:
-var result = await Api.Mapi.Message.FromFileAsync(request);
+var result = await api.Mapi.Message.FromFileAsync(request);
 
 // Result example:
 result = new MapiMessageDto
@@ -1036,7 +1050,7 @@ Returns: MAPI message document.
 
 Method call example:
 ```csharp
-var result = Api.Mapi.Message.Get(request);
+var result = api.Mapi.Message.Get(request);
 ```
 
 ### request Parameter
@@ -1120,6 +1134,8 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiMessageGetRequest
 { 
@@ -1130,7 +1146,7 @@ var request = new MapiMessageGetRequest
 };
 
 // Call method:
-var result = Api.Mapi.Message.Get(request);
+var result = api.Mapi.Message.Get(request);
 
 // Result example:
 result = new MapiMessageDto
@@ -1190,7 +1206,7 @@ Returns: MAPI message document.
 
 Method call example:
 ```csharp
-var result = await Api.Mapi.Message.GetAsync(request);
+var result = await api.Mapi.Message.GetAsync(request);
 ```
 
 ### request Parameter
@@ -1274,6 +1290,8 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiMessageGetRequest
 { 
@@ -1284,7 +1302,7 @@ var request = new MapiMessageGetRequest
 };
 
 // Call method:
-var result = await Api.Mapi.Message.GetAsync(request);
+var result = await api.Mapi.Message.GetAsync(request);
 
 // Result example:
 result = new MapiMessageDto
@@ -1341,7 +1359,7 @@ Returns: Returns 200 if update is successful.
 
 Method call example:
 ```csharp
-Api.Mapi.Message.Save(request);
+api.Mapi.Message.Save(request);
 ```
 
 ### request Parameter
@@ -1422,6 +1440,8 @@ var request = new MapiMessageSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiMessageSaveRequest
 {
@@ -1475,7 +1495,7 @@ var request = new MapiMessageSaveRequest
 };
 
 // Call method:
-Api.Mapi.Message.Save(request);
+api.Mapi.Message.Save(request);
 
 ```
 
@@ -1494,7 +1514,7 @@ Returns: Returns 200 if update is successful.
 
 Method call example:
 ```csharp
-await Api.Mapi.Message.SaveAsync(request);
+await api.Mapi.Message.SaveAsync(request);
 ```
 
 ### request Parameter
@@ -1575,6 +1595,8 @@ var request = new MapiMessageSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MapiMessageSaveRequest
 {
@@ -1628,7 +1650,7 @@ var request = new MapiMessageSaveRequest
 };
 
 // Call method:
-await Api.Mapi.Message.SaveAsync(request);
+await api.Mapi.Message.SaveAsync(request);
 
 ```
 

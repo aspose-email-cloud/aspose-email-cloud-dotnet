@@ -1,4 +1,6 @@
 # ContactList
+List of VCard documents             
+
 ## Properties
 Class has no properties
 

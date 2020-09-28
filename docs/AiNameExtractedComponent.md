@@ -1,4 +1,6 @@
 # AiNameExtractedComponent
+Extracted name component             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

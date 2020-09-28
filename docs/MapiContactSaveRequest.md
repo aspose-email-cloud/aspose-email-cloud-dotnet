@@ -1,4 +1,6 @@
 # MapiContactSaveRequest
+MapiContact save to storage request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

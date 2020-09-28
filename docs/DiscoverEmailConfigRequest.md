@@ -1,4 +1,6 @@
 # DiscoverEmailConfigRequest
+Discover email configuration request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

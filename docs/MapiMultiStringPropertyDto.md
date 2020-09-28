@@ -1,4 +1,6 @@
 # MapiMultiStringPropertyDto
+Mapi property with Multiple String values             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # AiBcrParseStorageRequest
+Parse business card images from Storage request             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

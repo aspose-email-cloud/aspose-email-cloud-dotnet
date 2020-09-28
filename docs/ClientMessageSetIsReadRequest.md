@@ -1,4 +1,6 @@
 # ClientMessageSetIsReadRequest
+Email client mark message is read/unread request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # ContentType
+Represents a Content-Type header.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

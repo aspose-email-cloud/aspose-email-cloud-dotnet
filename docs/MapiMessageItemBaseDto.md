@@ -1,4 +1,6 @@
 # MapiMessageItemBaseDto
+Base Dto for MapiMessage, MapiCalendar or MapiContact             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

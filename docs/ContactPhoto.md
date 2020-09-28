@@ -1,4 +1,6 @@
 # ContactPhoto
+Person&#39;s photo.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

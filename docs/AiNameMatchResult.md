@@ -1,4 +1,6 @@
 # AiNameMatchResult
+Two names match result             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

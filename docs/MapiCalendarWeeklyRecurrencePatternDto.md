@@ -1,4 +1,6 @@
 # MapiCalendarWeeklyRecurrencePatternDto
+Represents the weekly recurrence pattern of the mapi calendar             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

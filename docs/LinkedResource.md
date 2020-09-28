@@ -1,4 +1,6 @@
 # LinkedResource
+Represents an embedded resource in a message.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

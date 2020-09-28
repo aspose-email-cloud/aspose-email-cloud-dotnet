@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.FileApi
+# FileApi (EmailCloud.CloudStorage.File)
+
+File operations controller
 
 <a name="CopyFile"></a>
 ## CopyFile
@@ -9,7 +11,7 @@ Returns: Returns 200 if the copy is successful.
 
 Method call example:
 ```csharp
-Api.CloudStorage.File.CopyFile(request);
+api.CloudStorage.File.CopyFile(request);
 ```
 
 ### request Parameter
@@ -46,6 +48,8 @@ var request = new CopyFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CopyFileRequest
 { 
@@ -56,7 +60,7 @@ var request = new CopyFileRequest
 };
 
 // Call method:
-Api.CloudStorage.File.CopyFile(request);
+api.CloudStorage.File.CopyFile(request);
 
 ```
 
@@ -75,7 +79,7 @@ Returns: Returns 200 if the copy is successful.
 
 Method call example:
 ```csharp
-await Api.CloudStorage.File.CopyFileAsync(request);
+await api.CloudStorage.File.CopyFileAsync(request);
 ```
 
 ### request Parameter
@@ -112,6 +116,8 @@ var request = new CopyFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CopyFileRequest
 { 
@@ -122,7 +128,7 @@ var request = new CopyFileRequest
 };
 
 // Call method:
-await Api.CloudStorage.File.CopyFileAsync(request);
+await api.CloudStorage.File.CopyFileAsync(request);
 
 ```
 
@@ -138,7 +144,7 @@ Returns: Returns 200 if the delete is successful.
 
 Method call example:
 ```csharp
-Api.CloudStorage.File.DeleteFile(request);
+api.CloudStorage.File.DeleteFile(request);
 ```
 
 ### request Parameter
@@ -173,6 +179,8 @@ var request = new DeleteFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new DeleteFileRequest
 { 
@@ -181,7 +189,7 @@ var request = new DeleteFileRequest
 };
 
 // Call method:
-Api.CloudStorage.File.DeleteFile(request);
+api.CloudStorage.File.DeleteFile(request);
 
 ```
 
@@ -200,7 +208,7 @@ Returns: Returns 200 if the delete is successful.
 
 Method call example:
 ```csharp
-await Api.CloudStorage.File.DeleteFileAsync(request);
+await api.CloudStorage.File.DeleteFileAsync(request);
 ```
 
 ### request Parameter
@@ -235,6 +243,8 @@ var request = new DeleteFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new DeleteFileRequest
 { 
@@ -243,7 +253,7 @@ var request = new DeleteFileRequest
 };
 
 // Call method:
-await Api.CloudStorage.File.DeleteFileAsync(request);
+await api.CloudStorage.File.DeleteFileAsync(request);
 
 ```
 
@@ -259,7 +269,7 @@ Returns: The raw data of the file.
 
 Method call example:
 ```csharp
-var result = Api.CloudStorage.File.DownloadFile(request);
+var result = api.CloudStorage.File.DownloadFile(request);
 ```
 
 ### request Parameter
@@ -305,6 +315,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new DownloadFileRequest
 { 
@@ -313,7 +325,7 @@ var request = new DownloadFileRequest
 };
 
 // Call method:
-var result = Api.CloudStorage.File.DownloadFile(request);
+var result = api.CloudStorage.File.DownloadFile(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -337,7 +349,7 @@ Returns: The raw data of the file.
 
 Method call example:
 ```csharp
-var result = await Api.CloudStorage.File.DownloadFileAsync(request);
+var result = await api.CloudStorage.File.DownloadFileAsync(request);
 ```
 
 ### request Parameter
@@ -383,6 +395,8 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new DownloadFileRequest
 { 
@@ -391,7 +405,7 @@ var request = new DownloadFileRequest
 };
 
 // Call method:
-var result = await Api.CloudStorage.File.DownloadFileAsync(request);
+var result = await api.CloudStorage.File.DownloadFileAsync(request);
 
 // Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
@@ -412,7 +426,7 @@ Returns: Returns 200 if the move is successful.
 
 Method call example:
 ```csharp
-Api.CloudStorage.File.MoveFile(request);
+api.CloudStorage.File.MoveFile(request);
 ```
 
 ### request Parameter
@@ -449,6 +463,8 @@ var request = new MoveFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MoveFileRequest
 { 
@@ -459,7 +475,7 @@ var request = new MoveFileRequest
 };
 
 // Call method:
-Api.CloudStorage.File.MoveFile(request);
+api.CloudStorage.File.MoveFile(request);
 
 ```
 
@@ -478,7 +494,7 @@ Returns: Returns 200 if the move is successful.
 
 Method call example:
 ```csharp
-await Api.CloudStorage.File.MoveFileAsync(request);
+await api.CloudStorage.File.MoveFileAsync(request);
 ```
 
 ### request Parameter
@@ -515,6 +531,8 @@ var request = new MoveFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MoveFileRequest
 { 
@@ -525,7 +543,7 @@ var request = new MoveFileRequest
 };
 
 // Call method:
-await Api.CloudStorage.File.MoveFileAsync(request);
+await api.CloudStorage.File.MoveFileAsync(request);
 
 ```
 
@@ -541,7 +559,7 @@ Returns: Empty error list if the upload is successful.
 
 Method call example:
 ```csharp
-var result = Api.CloudStorage.File.UploadFile(request);
+var result = api.CloudStorage.File.UploadFile(request);
 ```
 
 ### request Parameter
@@ -585,6 +603,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new UploadFileRequest
 { 
@@ -594,7 +614,7 @@ var request = new UploadFileRequest
 };
 
 // Call method:
-var result = Api.CloudStorage.File.UploadFile(request);
+var result = api.CloudStorage.File.UploadFile(request);
 
 // Result example:
 result = ;
@@ -615,7 +635,7 @@ Returns: Empty error list if the upload is successful.
 
 Method call example:
 ```csharp
-var result = await Api.CloudStorage.File.UploadFileAsync(request);
+var result = await api.CloudStorage.File.UploadFileAsync(request);
 ```
 
 ### request Parameter
@@ -659,6 +679,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new UploadFileRequest
 { 
@@ -668,7 +690,7 @@ var request = new UploadFileRequest
 };
 
 // Call method:
-var result = await Api.CloudStorage.File.UploadFileAsync(request);
+var result = await api.CloudStorage.File.UploadFileAsync(request);
 
 // Result example:
 result = ;

@@ -1,4 +1,6 @@
 # AiNameExtracted
+Extracted name             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

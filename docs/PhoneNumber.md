@@ -1,4 +1,6 @@
 # PhoneNumber
+A phone number.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

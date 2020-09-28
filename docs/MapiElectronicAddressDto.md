@@ -1,4 +1,6 @@
 # MapiElectronicAddressDto
+Refers to the group of properties that define the e-mail address or fax address.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

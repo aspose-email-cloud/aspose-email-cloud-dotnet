@@ -1,4 +1,6 @@
 # EmailAddress
+Email address.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

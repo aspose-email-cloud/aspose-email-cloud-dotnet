@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.FolderApi
+# FolderApi (EmailCloud.CloudStorage.Folder)
+
+Folder operations controller
 
 <a name="CopyFolder"></a>
 ## CopyFolder
@@ -9,7 +11,7 @@ Returns: Returns 200 if the copy is successful.
 
 Method call example:
 ```csharp
-Api.CloudStorage.Folder.CopyFolder(request);
+api.CloudStorage.Folder.CopyFolder(request);
 ```
 
 ### request Parameter
@@ -46,6 +48,8 @@ var request = new CopyFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CopyFolderRequest
 { 
@@ -56,7 +60,7 @@ var request = new CopyFolderRequest
 };
 
 // Call method:
-Api.CloudStorage.Folder.CopyFolder(request);
+api.CloudStorage.Folder.CopyFolder(request);
 
 ```
 
@@ -75,7 +79,7 @@ Returns: Returns 200 if the copy is successful.
 
 Method call example:
 ```csharp
-await Api.CloudStorage.Folder.CopyFolderAsync(request);
+await api.CloudStorage.Folder.CopyFolderAsync(request);
 ```
 
 ### request Parameter
@@ -112,6 +116,8 @@ var request = new CopyFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CopyFolderRequest
 { 
@@ -122,7 +128,7 @@ var request = new CopyFolderRequest
 };
 
 // Call method:
-await Api.CloudStorage.Folder.CopyFolderAsync(request);
+await api.CloudStorage.Folder.CopyFolderAsync(request);
 
 ```
 
@@ -138,7 +144,7 @@ Returns: Returns 200 if the create is successful.
 
 Method call example:
 ```csharp
-Api.CloudStorage.Folder.CreateFolder(request);
+api.CloudStorage.Folder.CreateFolder(request);
 ```
 
 ### request Parameter
@@ -173,6 +179,8 @@ var request = new CreateFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CreateFolderRequest
 { 
@@ -181,7 +189,7 @@ var request = new CreateFolderRequest
 };
 
 // Call method:
-Api.CloudStorage.Folder.CreateFolder(request);
+api.CloudStorage.Folder.CreateFolder(request);
 
 ```
 
@@ -200,7 +208,7 @@ Returns: Returns 200 if the create is successful.
 
 Method call example:
 ```csharp
-await Api.CloudStorage.Folder.CreateFolderAsync(request);
+await api.CloudStorage.Folder.CreateFolderAsync(request);
 ```
 
 ### request Parameter
@@ -235,6 +243,8 @@ var request = new CreateFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new CreateFolderRequest
 { 
@@ -243,7 +253,7 @@ var request = new CreateFolderRequest
 };
 
 // Call method:
-await Api.CloudStorage.Folder.CreateFolderAsync(request);
+await api.CloudStorage.Folder.CreateFolderAsync(request);
 
 ```
 
@@ -259,7 +269,7 @@ Returns: Returns 200 if the delete is successful.
 
 Method call example:
 ```csharp
-Api.CloudStorage.Folder.DeleteFolder(request);
+api.CloudStorage.Folder.DeleteFolder(request);
 ```
 
 ### request Parameter
@@ -295,6 +305,8 @@ var request = new DeleteFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new DeleteFolderRequest
 { 
@@ -304,7 +316,7 @@ var request = new DeleteFolderRequest
 };
 
 // Call method:
-Api.CloudStorage.Folder.DeleteFolder(request);
+api.CloudStorage.Folder.DeleteFolder(request);
 
 ```
 
@@ -323,7 +335,7 @@ Returns: Returns 200 if the delete is successful.
 
 Method call example:
 ```csharp
-await Api.CloudStorage.Folder.DeleteFolderAsync(request);
+await api.CloudStorage.Folder.DeleteFolderAsync(request);
 ```
 
 ### request Parameter
@@ -359,6 +371,8 @@ var request = new DeleteFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new DeleteFolderRequest
 { 
@@ -368,7 +382,7 @@ var request = new DeleteFolderRequest
 };
 
 // Call method:
-await Api.CloudStorage.Folder.DeleteFolderAsync(request);
+await api.CloudStorage.Folder.DeleteFolderAsync(request);
 
 ```
 
@@ -384,7 +398,7 @@ Returns: Returns all files and folders contained by the folder.
 
 Method call example:
 ```csharp
-var result = Api.CloudStorage.Folder.GetFilesList(request);
+var result = api.CloudStorage.Folder.GetFilesList(request);
 ```
 
 ### request Parameter
@@ -439,6 +453,8 @@ result = new FilesList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new GetFilesListRequest
 { 
@@ -447,7 +463,7 @@ var request = new GetFilesListRequest
 };
 
 // Call method:
-var result = Api.CloudStorage.Folder.GetFilesList(request);
+var result = api.CloudStorage.Folder.GetFilesList(request);
 
 // Result example:
 result = new FilesList
@@ -480,7 +496,7 @@ Returns: Returns all files and folders contained by the folder.
 
 Method call example:
 ```csharp
-var result = await Api.CloudStorage.Folder.GetFilesListAsync(request);
+var result = await api.CloudStorage.Folder.GetFilesListAsync(request);
 ```
 
 ### request Parameter
@@ -535,6 +551,8 @@ result = new FilesList
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new GetFilesListRequest
 { 
@@ -543,7 +561,7 @@ var request = new GetFilesListRequest
 };
 
 // Call method:
-var result = await Api.CloudStorage.Folder.GetFilesListAsync(request);
+var result = await api.CloudStorage.Folder.GetFilesListAsync(request);
 
 // Result example:
 result = new FilesList
@@ -573,7 +591,7 @@ Returns: Returns 200 if the move is successful.
 
 Method call example:
 ```csharp
-Api.CloudStorage.Folder.MoveFolder(request);
+api.CloudStorage.Folder.MoveFolder(request);
 ```
 
 ### request Parameter
@@ -610,6 +628,8 @@ var request = new MoveFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MoveFolderRequest
 { 
@@ -620,7 +640,7 @@ var request = new MoveFolderRequest
 };
 
 // Call method:
-Api.CloudStorage.Folder.MoveFolder(request);
+api.CloudStorage.Folder.MoveFolder(request);
 
 ```
 
@@ -639,7 +659,7 @@ Returns: Returns 200 if the move is successful.
 
 Method call example:
 ```csharp
-await Api.CloudStorage.Folder.MoveFolderAsync(request);
+await api.CloudStorage.Folder.MoveFolderAsync(request);
 ```
 
 ### request Parameter
@@ -676,6 +696,8 @@ var request = new MoveFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new MoveFolderRequest
 { 
@@ -686,7 +708,7 @@ var request = new MoveFolderRequest
 };
 
 // Call method:
-await Api.CloudStorage.Folder.MoveFolderAsync(request);
+await api.CloudStorage.Folder.MoveFolderAsync(request);
 
 ```
 

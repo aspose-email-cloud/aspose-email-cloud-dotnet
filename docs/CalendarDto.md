@@ -1,4 +1,6 @@
 # CalendarDto
+iCalendar document representation.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

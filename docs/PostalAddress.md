@@ -1,4 +1,6 @@
 # PostalAddress
+A postal address             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

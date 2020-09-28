@@ -1,4 +1,6 @@
 # MapiAttachmentDto
+Mapi attachment             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

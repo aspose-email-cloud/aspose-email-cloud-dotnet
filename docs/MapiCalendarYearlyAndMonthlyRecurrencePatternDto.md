@@ -1,4 +1,6 @@
 # MapiCalendarYearlyAndMonthlyRecurrencePatternDto
+Represents the yearly and monthly recurrence pattern of the mapi calendar             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

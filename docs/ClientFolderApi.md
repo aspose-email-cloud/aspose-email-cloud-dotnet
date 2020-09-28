@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.ClientFolderApi
+# ClientFolderApi (EmailCloud.Client.Folder)
+
+Email client folder operations.
 
 <a name="Create"></a>
 ## Create
@@ -9,7 +11,7 @@ Returns: Returns 200 if create is successful.
 
 Method call example:
 ```csharp
-Api.Client.Folder.Create(request);
+api.Client.Folder.Create(request);
 ```
 
 ### request Parameter
@@ -51,6 +53,8 @@ var request = new ClientFolderCreateRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientFolderCreateRequest
 {
@@ -65,7 +69,7 @@ var request = new ClientFolderCreateRequest
 };
 
 // Call method:
-Api.Client.Folder.Create(request);
+api.Client.Folder.Create(request);
 
 ```
 
@@ -84,7 +88,7 @@ Returns: Returns 200 if create is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Folder.CreateAsync(request);
+await api.Client.Folder.CreateAsync(request);
 ```
 
 ### request Parameter
@@ -126,6 +130,8 @@ var request = new ClientFolderCreateRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientFolderCreateRequest
 {
@@ -140,7 +146,7 @@ var request = new ClientFolderCreateRequest
 };
 
 // Call method:
-await Api.Client.Folder.CreateAsync(request);
+await api.Client.Folder.CreateAsync(request);
 
 ```
 
@@ -156,7 +162,7 @@ Returns: Returns 200 if delete is successful.
 
 Method call example:
 ```csharp
-Api.Client.Folder.Delete(request);
+api.Client.Folder.Delete(request);
 ```
 
 ### request Parameter
@@ -197,6 +203,8 @@ var request = new ClientFolderDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientFolderDeleteRequest
 {
@@ -210,7 +218,7 @@ var request = new ClientFolderDeleteRequest
 };
 
 // Call method:
-Api.Client.Folder.Delete(request);
+api.Client.Folder.Delete(request);
 
 ```
 
@@ -229,7 +237,7 @@ Returns: Returns 200 if delete is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Folder.DeleteAsync(request);
+await api.Client.Folder.DeleteAsync(request);
 ```
 
 ### request Parameter
@@ -270,6 +278,8 @@ var request = new ClientFolderDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientFolderDeleteRequest
 {
@@ -283,7 +293,7 @@ var request = new ClientFolderDeleteRequest
 };
 
 // Call method:
-await Api.Client.Folder.DeleteAsync(request);
+await api.Client.Folder.DeleteAsync(request);
 
 ```
 
@@ -299,7 +309,7 @@ Returns: Folders list
 
 Method call example:
 ```csharp
-var result = Api.Client.Folder.GetList(request);
+var result = api.Client.Folder.GetList(request);
 ```
 
 ### request Parameter
@@ -344,6 +354,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientFolderGetListRequest
 { 
@@ -354,7 +366,7 @@ var request = new ClientFolderGetListRequest
 };
 
 // Call method:
-var result = Api.Client.Folder.GetList(request);
+var result = api.Client.Folder.GetList(request);
 
 // Result example:
 result = ;
@@ -375,7 +387,7 @@ Returns: Folders list
 
 Method call example:
 ```csharp
-var result = await Api.Client.Folder.GetListAsync(request);
+var result = await api.Client.Folder.GetListAsync(request);
 ```
 
 ### request Parameter
@@ -420,6 +432,8 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientFolderGetListRequest
 { 
@@ -430,7 +444,7 @@ var request = new ClientFolderGetListRequest
 };
 
 // Call method:
-var result = await Api.Client.Folder.GetListAsync(request);
+var result = await api.Client.Folder.GetListAsync(request);
 
 // Result example:
 result = ;

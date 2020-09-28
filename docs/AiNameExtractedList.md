@@ -1,4 +1,6 @@
 # AiNameExtractedList
+Extracted name list.             
+
 ## Properties
 Class has no properties
 

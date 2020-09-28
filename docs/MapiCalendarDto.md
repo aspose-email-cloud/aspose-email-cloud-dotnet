@@ -1,4 +1,6 @@
 # MapiCalendarDto
+Represents the mapi calendar object             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

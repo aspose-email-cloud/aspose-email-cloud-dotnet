@@ -1,4 +1,6 @@
 # MapiContactPersonalInfoPropertySetDto
+Specify other additional contact information.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

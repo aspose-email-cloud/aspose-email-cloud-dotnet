@@ -1,4 +1,6 @@
 # MailAddress
+Represents the address of a message.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

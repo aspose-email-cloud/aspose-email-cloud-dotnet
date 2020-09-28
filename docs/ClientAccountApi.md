@@ -1,4 +1,6 @@
-# Aspose.Email.Cloud.Sdk.ClientAccountApi
+# ClientAccountApi (EmailCloud.Client.Account)
+
+Email server account for built-in client operations.
 
 <a name="Get"></a>
 ## Get
@@ -9,7 +11,7 @@ Returns: Email client account from storage.
 
 Method call example:
 ```csharp
-var result = Api.Client.Account.Get(request);
+var result = api.Client.Account.Get(request);
 ```
 
 ### request Parameter
@@ -66,6 +68,8 @@ result = new EmailClientAccount
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientAccountGetRequest
 { 
@@ -75,7 +79,7 @@ var request = new ClientAccountGetRequest
 };
 
 // Call method:
-var result = Api.Client.Account.Get(request);
+var result = api.Client.Account.Get(request);
 
 // Result example:
 result = new EmailClientAccount
@@ -109,7 +113,7 @@ Returns: Email client account from storage.
 
 Method call example:
 ```csharp
-var result = await Api.Client.Account.GetAsync(request);
+var result = await api.Client.Account.GetAsync(request);
 ```
 
 ### request Parameter
@@ -166,6 +170,8 @@ result = new EmailClientAccount
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientAccountGetRequest
 { 
@@ -175,7 +181,7 @@ var request = new ClientAccountGetRequest
 };
 
 // Call method:
-var result = await Api.Client.Account.GetAsync(request);
+var result = await api.Client.Account.GetAsync(request);
 
 // Result example:
 result = new EmailClientAccount
@@ -206,7 +212,7 @@ Returns: Email client multi account from storage
 
 Method call example:
 ```csharp
-var result = Api.Client.Account.GetMulti(request);
+var result = api.Client.Account.GetMulti(request);
 ```
 
 ### request Parameter
@@ -291,6 +297,8 @@ result = new EmailClientMultiAccount
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientAccountGetMultiRequest
 { 
@@ -300,7 +308,7 @@ var request = new ClientAccountGetMultiRequest
 };
 
 // Call method:
-var result = Api.Client.Account.GetMulti(request);
+var result = api.Client.Account.GetMulti(request);
 
 // Result example:
 result = new EmailClientMultiAccount
@@ -362,7 +370,7 @@ Returns: Email client multi account from storage
 
 Method call example:
 ```csharp
-var result = await Api.Client.Account.GetMultiAsync(request);
+var result = await api.Client.Account.GetMultiAsync(request);
 ```
 
 ### request Parameter
@@ -447,6 +455,8 @@ result = new EmailClientMultiAccount
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientAccountGetMultiRequest
 { 
@@ -456,7 +466,7 @@ var request = new ClientAccountGetMultiRequest
 };
 
 // Call method:
-var result = await Api.Client.Account.GetMultiAsync(request);
+var result = await api.Client.Account.GetMultiAsync(request);
 
 // Result example:
 result = new EmailClientMultiAccount
@@ -515,7 +525,7 @@ Returns: Returns 200 if save is successful.
 
 Method call example:
 ```csharp
-Api.Client.Account.Save(request);
+api.Client.Account.Save(request);
 ```
 
 ### request Parameter
@@ -569,6 +579,8 @@ var request = new ClientAccountSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientAccountSaveRequest
 {
@@ -595,7 +607,7 @@ var request = new ClientAccountSaveRequest
 };
 
 // Call method:
-Api.Client.Account.Save(request);
+api.Client.Account.Save(request);
 
 ```
 
@@ -614,7 +626,7 @@ Returns: Returns 200 if save is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Account.SaveAsync(request);
+await api.Client.Account.SaveAsync(request);
 ```
 
 ### request Parameter
@@ -668,6 +680,8 @@ var request = new ClientAccountSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientAccountSaveRequest
 {
@@ -694,7 +708,7 @@ var request = new ClientAccountSaveRequest
 };
 
 // Call method:
-await Api.Client.Account.SaveAsync(request);
+await api.Client.Account.SaveAsync(request);
 
 ```
 
@@ -710,7 +724,7 @@ Returns: Returns 200 if save is successful.
 
 Method call example:
 ```csharp
-Api.Client.Account.SaveMulti(request);
+api.Client.Account.SaveMulti(request);
 ```
 
 ### request Parameter
@@ -792,6 +806,8 @@ var request = new ClientAccountSaveMultiRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientAccountSaveMultiRequest
 {
@@ -846,7 +862,7 @@ var request = new ClientAccountSaveMultiRequest
 };
 
 // Call method:
-Api.Client.Account.SaveMulti(request);
+api.Client.Account.SaveMulti(request);
 
 ```
 
@@ -865,7 +881,7 @@ Returns: Returns 200 if save is successful.
 
 Method call example:
 ```csharp
-await Api.Client.Account.SaveMultiAsync(request);
+await api.Client.Account.SaveMultiAsync(request);
 ```
 
 ### request Parameter
@@ -947,6 +963,8 @@ var request = new ClientAccountSaveMultiRequest
     <summary>Method call example:</summary>
 
 ```csharp
+var api = new EmailCloud(appKey, appSid);
+
 // Prepare parameters:
 var request = new ClientAccountSaveMultiRequest
 {
@@ -1001,7 +1019,7 @@ var request = new ClientAccountSaveMultiRequest
 };
 
 // Call method:
-await Api.Client.Account.SaveMultiAsync(request);
+await api.Client.Account.SaveMultiAsync(request);
 
 ```
 

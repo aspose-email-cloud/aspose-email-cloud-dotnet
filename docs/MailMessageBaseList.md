@@ -1,4 +1,6 @@
 # MailMessageBaseList
+List of messages.             
+
 ## Properties
 Class has no properties
 

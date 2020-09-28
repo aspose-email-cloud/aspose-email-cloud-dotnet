@@ -1,4 +1,6 @@
 # Attachment
+Document attachment.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

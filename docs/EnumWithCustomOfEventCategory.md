@@ -1,4 +1,5 @@
 # EnumWithCustomOfEventCategory
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # MapiPropertyDescriptor
+Mapi property descriptor             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

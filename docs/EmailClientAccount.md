@@ -1,4 +1,6 @@
 # EmailClientAccount
+A universal email client account             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

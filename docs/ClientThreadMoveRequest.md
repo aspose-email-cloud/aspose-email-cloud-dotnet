@@ -1,4 +1,6 @@
 # ClientThreadMoveRequest
+Email client move thread request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # MapiBinaryPropertyDto
+Mapi property with Binary value represented as a Base64 string             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

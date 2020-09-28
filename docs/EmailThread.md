@@ -1,4 +1,6 @@
 # EmailThread
+Email messages thread             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

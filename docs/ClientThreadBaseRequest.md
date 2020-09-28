@@ -1,4 +1,6 @@
 # ClientThreadBaseRequest
+Email client thread request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

@@ -1,4 +1,6 @@
 # MapiLegacyFreeBusyPropertyDto
+Mapi property with LegacyFreeBusyType value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

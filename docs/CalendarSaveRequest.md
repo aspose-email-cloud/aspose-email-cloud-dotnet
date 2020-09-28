@@ -1,4 +1,6 @@
 # CalendarSaveRequest
+Save iCalendar to storage request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

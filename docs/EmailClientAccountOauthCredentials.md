@@ -1,4 +1,6 @@
 # EmailClientAccountOauthCredentials
+Represents email client account OAuth 2.0 credentials             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

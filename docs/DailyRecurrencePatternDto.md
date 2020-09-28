@@ -1,4 +1,6 @@
 # DailyRecurrencePatternDto
+Daily recurrence.             
+
 ## Properties
 Class has no properties
 

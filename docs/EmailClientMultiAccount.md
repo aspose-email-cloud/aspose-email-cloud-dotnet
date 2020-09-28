@@ -1,4 +1,6 @@
 # EmailClientMultiAccount
+Email client virtual account, which contains several accounts             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

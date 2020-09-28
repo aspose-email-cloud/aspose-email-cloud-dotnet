@@ -1,4 +1,6 @@
 # ClientThreadSetIsReadRequest
+Mark thread messages as read or unread request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

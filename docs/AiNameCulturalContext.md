@@ -1,4 +1,6 @@
 # AiNameCulturalContext
+AiName cultural context             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

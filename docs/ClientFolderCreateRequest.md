@@ -1,4 +1,6 @@
 # ClientFolderCreateRequest
+Email Client create folder request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

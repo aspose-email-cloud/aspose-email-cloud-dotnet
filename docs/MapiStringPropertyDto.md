@@ -1,4 +1,6 @@
 # MapiStringPropertyDto
+Mapi property with string value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

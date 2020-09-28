@@ -1,4 +1,6 @@
 # MailMessageBase
+Universal object that stores email messages in different formats.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

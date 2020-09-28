@@ -1,4 +1,6 @@
 # ClientThreadDeleteRequest
+Delete email client thread request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

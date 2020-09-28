@@ -1,4 +1,6 @@
 # MapiMessageDto
+Represents an Outlook Message format document.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

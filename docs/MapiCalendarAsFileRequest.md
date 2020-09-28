@@ -1,4 +1,6 @@
 # MapiCalendarAsFileRequest
+Convert MapiCalendar to file request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
