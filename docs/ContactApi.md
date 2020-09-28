@@ -5,20 +5,21 @@ Contact document operations. Supported formats: VCard, MSG, WebDav
 <a name="AsFile"></a>
 ## AsFile
 
-Converts contact model to specified format and returns as file             
+**Description**: Converts contact model to specified format and returns as file             
 
-Returns: File stream in specified format
 
-Method call example:
+**Returns:** File stream in specified format
+
+**Method call example:**
 ```csharp
 var result = api.Contact.AsFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Contact model and format to convert
+**Description:** Contact model and format to convert
 
-See parameter model documentation at [ContactAsFileRequest](ContactAsFileRequest.md)
+**See also** parameter model documentation at [**ContactAsFileRequest**](ContactAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -88,9 +89,9 @@ var request = new ContactAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format
+**Description:** File stream in specified format
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -188,22 +189,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsFileAsync"></a>
 ## AsFileAsync
 
-Converts contact model to specified format and returns as file             
+**Description:** Converts contact model to specified format and returns as file             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format
 
-Method call example:
+**Returns:** File stream in specified format
+
+**Method call example:**
 ```csharp
 var result = await api.Contact.AsFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Contact model and format to convert
+**Description:** Contact model and format to convert
 
-See parameter model documentation at [ContactAsFileRequest](ContactAsFileRequest.md)
+**See also** parameter model documentation at [**ContactAsFileRequest**](ContactAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -273,9 +275,9 @@ var request = new ContactAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format
+**Description:** File stream in specified format
 
-*Return type:* **Task<Stream>**
+**Return type:** **Task<Stream>**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -372,20 +374,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsMapi"></a>
 ## AsMapi
 
-Converts ContactDto to MapiContactDto.             
+**Description**: Converts ContactDto to MapiContactDto.             
 
-Returns: MAPI model contact representation
 
-Method call example:
+**Returns:** MAPI model contact representation
+
+**Method call example:**
 ```csharp
 var result = api.Contact.AsMapi(contactDto);
 ```
 
-### contactDto Parameter
+### Parameter: *contactDto*
 
-Contact model to convert
+**Description:** Contact model to convert
 
-See parameter model documentation at [ContactDto](ContactDto.md)
+**See also** parameter model documentation at [**ContactDto**](ContactDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -452,9 +455,9 @@ var contactDto = new ContactDto
 
 ### Result
 
-*Returns:* MAPI model contact representation
+**Description:** MAPI model contact representation
 
-*Return type:* [**MapiContactDto**](MapiContactDto.md)
+**Return type:** [**MapiContactDto**](MapiContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -595,22 +598,23 @@ result = new MapiContactDto
 <a name="AsMapiAsync"></a>
 ## AsMapiAsync
 
-Converts ContactDto to MapiContactDto.             
+**Description:** Converts ContactDto to MapiContactDto.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: MAPI model contact representation
 
-Method call example:
+**Returns:** MAPI model contact representation
+
+**Method call example:**
 ```csharp
 var result = await api.Contact.AsMapiAsync(contactDto);
 ```
 
-### contactDto Parameter
+### Parameter: *contactDto*
 
-Contact model to convert
+**Description:** Contact model to convert
 
-See parameter model documentation at [ContactDto](ContactDto.md)
+**See also** parameter model documentation at [**ContactDto**](ContactDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -677,9 +681,9 @@ var contactDto = new ContactDto
 
 ### Result
 
-*Returns:* MAPI model contact representation
+**Description:** MAPI model contact representation
 
-*Return type:* Task<[**MapiContactDto**](MapiContactDto.md)>
+**Return type:** Task<[**MapiContactDto**](MapiContactDto.md)>
 
 <details>
     <summary>Result example</summary>
@@ -818,21 +822,21 @@ result = new MapiContactDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Convert"></a>
 ## Convert
+**Descrption:** Converts contact document to specified format and returns as file             
 
-Converts contact document to specified format and returns as file             
 
-Returns: File stream in specified destination format
+**Returns:** File stream in specified destination format
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Contact.Convert(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Convert method request.
+**Description:** Convert method request.
 
-See parameter model documentation at [ContactConvertRequest](ContactConvertRequest.md)
+**See also** parameter model documentation at [**ContactConvertRequest**](ContactConvertRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -850,9 +854,9 @@ var request = new ContactConvertRequest
 
 ### Result
 
-*Returns:* File stream in specified destination format
+**Description:** File stream in specified destination format
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -899,22 +903,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="ConvertAsync"></a>
 ## ConvertAsync
 
-Converts contact document to specified format and returns as file             
+**Description:** Converts contact document to specified format and returns as file             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified destination format
 
-Method call example:
+**Returns:** File stream in specified destination format
+
+**Method call example:**
 ```csharp
 var result = await api.Contact.ConvertAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ConvertAsync method request.
+**Description:** ConvertAsync method request.
 
-See parameter model documentation at [ContactConvertRequest](ContactConvertRequest.md)
+**See also** parameter model documentation at [**ContactConvertRequest**](ContactConvertRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -932,9 +937,9 @@ var request = new ContactConvertRequest
 
 ### Result
 
-*Returns:* File stream in specified destination format
+**Returns:** File stream in specified destination format
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -979,21 +984,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="FromFile"></a>
 ## FromFile
+**Descrption:** Converts contact document to a model representation             
 
-Converts contact document to a model representation             
 
-Returns: Contact model
+**Returns:** Contact model
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Contact.FromFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFile method request.
+**Description:** FromFile method request.
 
-See parameter model documentation at [ContactFromFileRequest](ContactFromFileRequest.md)
+**See also** parameter model documentation at [**ContactFromFileRequest**](ContactFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1010,9 +1015,9 @@ var request = new ContactFromFileRequest
 
 ### Result
 
-*Returns:* Contact model
+**Description:** Contact model
 
-*Return type:* [**ContactDto**](ContactDto.md)
+**Return type:** [**ContactDto**](ContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1158,22 +1163,23 @@ result = new ContactDto
 <a name="FromFileAsync"></a>
 ## FromFileAsync
 
-Converts contact document to a model representation             
+**Description:** Converts contact document to a model representation             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Contact model
 
-Method call example:
+**Returns:** Contact model
+
+**Method call example:**
 ```csharp
 var result = await api.Contact.FromFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFileAsync method request.
+**Description:** FromFileAsync method request.
 
-See parameter model documentation at [ContactFromFileRequest](ContactFromFileRequest.md)
+**See also** parameter model documentation at [**ContactFromFileRequest**](ContactFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1190,9 +1196,9 @@ var request = new ContactFromFileRequest
 
 ### Result
 
-*Returns:* Contact model
+**Returns:** Contact model
 
-*Return type:* [**ContactDto**](ContactDto.md)
+**Return type:** [**ContactDto**](ContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1336,21 +1342,21 @@ result = new ContactDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Get"></a>
 ## Get
+**Descrption:** Get contact document from storage.             
 
-Get contact document from storage.             
 
-Returns: Contact document.
+**Returns:** Contact document.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Contact.Get(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Get method request.
+**Description:** Get method request.
 
-See parameter model documentation at [ContactGetRequest](ContactGetRequest.md)
+**See also** parameter model documentation at [**ContactGetRequest**](ContactGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1369,9 +1375,9 @@ var request = new ContactGetRequest
 
 ### Result
 
-*Returns:* Contact document.
+**Description:** Contact document.
 
-*Return type:* [**ContactDto**](ContactDto.md)
+**Return type:** [**ContactDto**](ContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1519,22 +1525,23 @@ result = new ContactDto
 <a name="GetAsync"></a>
 ## GetAsync
 
-Get contact document from storage.             
+**Description:** Get contact document from storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Contact document.
 
-Method call example:
+**Returns:** Contact document.
+
+**Method call example:**
 ```csharp
 var result = await api.Contact.GetAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsync method request.
+**Description:** GetAsync method request.
 
-See parameter model documentation at [ContactGetRequest](ContactGetRequest.md)
+**See also** parameter model documentation at [**ContactGetRequest**](ContactGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1553,9 +1560,9 @@ var request = new ContactGetRequest
 
 ### Result
 
-*Returns:* Contact document.
+**Returns:** Contact document.
 
-*Return type:* [**ContactDto**](ContactDto.md)
+**Return type:** [**ContactDto**](ContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1701,21 +1708,21 @@ result = new ContactDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetAsFile"></a>
 ## GetAsFile
+**Descrption:** Converts contact document from storage to specified format and returns as file             
 
-Converts contact document from storage to specified format and returns as file             
 
-Returns: File stream in specified format
+**Returns:** File stream in specified format
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Contact.GetAsFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsFile method request.
+**Description:** GetAsFile method request.
 
-See parameter model documentation at [ContactGetAsFileRequest](ContactGetAsFileRequest.md)
+**See also** parameter model documentation at [**ContactGetAsFileRequest**](ContactGetAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1735,9 +1742,9 @@ var request = new ContactGetAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format
+**Description:** File stream in specified format
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -1786,22 +1793,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="GetAsFileAsync"></a>
 ## GetAsFileAsync
 
-Converts contact document from storage to specified format and returns as file             
+**Description:** Converts contact document from storage to specified format and returns as file             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format
 
-Method call example:
+**Returns:** File stream in specified format
+
+**Method call example:**
 ```csharp
 var result = await api.Contact.GetAsFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsFileAsync method request.
+**Description:** GetAsFileAsync method request.
 
-See parameter model documentation at [ContactGetAsFileRequest](ContactGetAsFileRequest.md)
+**See also** parameter model documentation at [**ContactGetAsFileRequest**](ContactGetAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1821,9 +1829,9 @@ var request = new ContactGetAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format
+**Returns:** File stream in specified format
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -1870,21 +1878,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetList"></a>
 ## GetList
+**Descrption:** Get contact list from storage folder.             
 
-Get contact list from storage folder.             
 
-Returns: Contact list.
+**Returns:** Contact list.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Contact.GetList(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetList method request.
+**Description:** GetList method request.
 
-See parameter model documentation at [ContactGetListRequest](ContactGetListRequest.md)
+**See also** parameter model documentation at [**ContactGetListRequest**](ContactGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1904,9 +1912,9 @@ var request = new ContactGetListRequest
 
 ### Result
 
-*Returns:* Contact list.
+**Description:** Contact list.
 
-*Return type:* [**ContactStorageList**](ContactStorageList.md)
+**Return type:** [**ContactStorageList**](ContactStorageList.md)
 
 <details>
     <summary>Result example</summary>
@@ -2085,22 +2093,23 @@ result = new ContactStorageList
 <a name="GetListAsync"></a>
 ## GetListAsync
 
-Get contact list from storage folder.             
+**Description:** Get contact list from storage folder.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Contact list.
 
-Method call example:
+**Returns:** Contact list.
+
+**Method call example:**
 ```csharp
 var result = await api.Contact.GetListAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetListAsync method request.
+**Description:** GetListAsync method request.
 
-See parameter model documentation at [ContactGetListRequest](ContactGetListRequest.md)
+**See also** parameter model documentation at [**ContactGetListRequest**](ContactGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2120,9 +2129,9 @@ var request = new ContactGetListRequest
 
 ### Result
 
-*Returns:* Contact list.
+**Returns:** Contact list.
 
-*Return type:* [**ContactStorageList**](ContactStorageList.md)
+**Return type:** [**ContactStorageList**](ContactStorageList.md)
 
 <details>
     <summary>Result example</summary>
@@ -2300,20 +2309,21 @@ result = new ContactStorageList
 <a name="Save"></a>
 ## Save
 
-Save contact to storage.             
+**Description**: Save contact to storage.             
 
-Returns: Returns 200 if create is successful.
 
-Method call example:
+**Returns:** Returns 200 if create is successful.
+
+**Method call example:**
 ```csharp
 api.Contact.Save(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Create/Update contact request.
+**Description:** Create/Update contact request.
 
-See parameter model documentation at [ContactSaveRequest](ContactSaveRequest.md)
+**See also** parameter model documentation at [**ContactSaveRequest**](ContactSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2389,9 +2399,9 @@ var request = new ContactSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if create is successful.
+**Description:** Returns 200 if create is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -2479,22 +2489,23 @@ api.Contact.Save(request);
 <a name="SaveAsync"></a>
 ## SaveAsync
 
-Save contact to storage.             
+**Description:** Save contact to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if create is successful.
 
-Method call example:
+**Returns:** Returns 200 if create is successful.
+
+**Method call example:**
 ```csharp
 await api.Contact.SaveAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Create/Update contact request.
+**Description:** Create/Update contact request.
 
-See parameter model documentation at [ContactSaveRequest](ContactSaveRequest.md)
+**See also** parameter model documentation at [**ContactSaveRequest**](ContactSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2570,9 +2581,9 @@ var request = new ContactSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if create is successful.
+**Description:** Returns 200 if create is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:

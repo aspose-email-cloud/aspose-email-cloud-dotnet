@@ -5,20 +5,21 @@ Email client folder operations.
 <a name="Create"></a>
 ## Create
 
-Create new folder in email account             
+**Description**: Create new folder in email account             
 
-Returns: Returns 200 if create is successful.
 
-Method call example:
+**Returns:** Returns 200 if create is successful.
+
+**Method call example:**
 ```csharp
 api.Client.Folder.Create(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Create folder request
+**Description:** Create folder request
 
-See parameter model documentation at [ClientFolderCreateRequest](ClientFolderCreateRequest.md)
+**See also** parameter model documentation at [**ClientFolderCreateRequest**](ClientFolderCreateRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -42,9 +43,9 @@ var request = new ClientFolderCreateRequest
 
 ### Result
 
-*Returns:* Returns 200 if create is successful.
+**Description:** Returns 200 if create is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -80,22 +81,23 @@ api.Client.Folder.Create(request);
 <a name="CreateAsync"></a>
 ## CreateAsync
 
-Create new folder in email account             
+**Description:** Create new folder in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if create is successful.
 
-Method call example:
+**Returns:** Returns 200 if create is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Folder.CreateAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Create folder request
+**Description:** Create folder request
 
-See parameter model documentation at [ClientFolderCreateRequest](ClientFolderCreateRequest.md)
+**See also** parameter model documentation at [**ClientFolderCreateRequest**](ClientFolderCreateRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -119,9 +121,9 @@ var request = new ClientFolderCreateRequest
 
 ### Result
 
-*Returns:* Returns 200 if create is successful.
+**Description:** Returns 200 if create is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:
@@ -156,20 +158,21 @@ await api.Client.Folder.CreateAsync(request);
 <a name="Delete"></a>
 ## Delete
 
-Delete a folder in email account             
+**Description**: Delete a folder in email account             
 
-Returns: Returns 200 if delete is successful.
 
-Method call example:
+**Returns:** Returns 200 if delete is successful.
+
+**Method call example:**
 ```csharp
 api.Client.Folder.Delete(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Delete folder request
+**Description:** Delete folder request
 
-See parameter model documentation at [ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
+**See also** parameter model documentation at [**ClientFolderDeleteRequest**](ClientFolderDeleteRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -192,9 +195,9 @@ var request = new ClientFolderDeleteRequest
 
 ### Result
 
-*Returns:* Returns 200 if delete is successful.
+**Description:** Returns 200 if delete is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -229,22 +232,23 @@ api.Client.Folder.Delete(request);
 <a name="DeleteAsync"></a>
 ## DeleteAsync
 
-Delete a folder in email account             
+**Description:** Delete a folder in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if delete is successful.
 
-Method call example:
+**Returns:** Returns 200 if delete is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Folder.DeleteAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Delete folder request
+**Description:** Delete folder request
 
-See parameter model documentation at [ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
+**See also** parameter model documentation at [**ClientFolderDeleteRequest**](ClientFolderDeleteRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -267,9 +271,9 @@ var request = new ClientFolderDeleteRequest
 
 ### Result
 
-*Returns:* Returns 200 if delete is successful.
+**Description:** Returns 200 if delete is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:
@@ -302,21 +306,21 @@ await api.Client.Folder.DeleteAsync(request);
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetList"></a>
 ## GetList
+**Descrption:** Get folders list in email account             
 
-Get folders list in email account             
 
-Returns: Folders list
+**Returns:** Folders list
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Client.Folder.GetList(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetList method request.
+**Description:** GetList method request.
 
-See parameter model documentation at [ClientFolderGetListRequest](ClientFolderGetListRequest.md)
+**See also** parameter model documentation at [**ClientFolderGetListRequest**](ClientFolderGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -335,9 +339,9 @@ var request = new ClientFolderGetListRequest
 
 ### Result
 
-*Returns:* Folders list
+**Description:** Folders list
 
-*Return type:* [**MailServerFolderList**](MailServerFolderList.md)
+**Return type:** [**MailServerFolderList**](MailServerFolderList.md)
 
 <details>
     <summary>Result example</summary>
@@ -379,22 +383,23 @@ result = ;
 <a name="GetListAsync"></a>
 ## GetListAsync
 
-Get folders list in email account             
+**Description:** Get folders list in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Folders list
 
-Method call example:
+**Returns:** Folders list
+
+**Method call example:**
 ```csharp
 var result = await api.Client.Folder.GetListAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetListAsync method request.
+**Description:** GetListAsync method request.
 
-See parameter model documentation at [ClientFolderGetListRequest](ClientFolderGetListRequest.md)
+**See also** parameter model documentation at [**ClientFolderGetListRequest**](ClientFolderGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -413,9 +418,9 @@ var request = new ClientFolderGetListRequest
 
 ### Result
 
-*Returns:* Folders list
+**Returns:** Folders list
 
-*Return type:* [**MailServerFolderList**](MailServerFolderList.md)
+**Return type:** [**MailServerFolderList**](MailServerFolderList.md)
 
 <details>
     <summary>Result example</summary>

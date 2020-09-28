@@ -5,20 +5,21 @@ Email client thread operations.
 <a name="Delete"></a>
 ## Delete
 
-Delete thread by id. All messages from thread will also be deleted.             
+**Description**: Delete thread by id. All messages from thread will also be deleted.             
 
-Returns: Returns 200 if delete is successful.
 
-Method call example:
+**Returns:** Returns 200 if delete is successful.
+
+**Method call example:**
 ```csharp
 api.Client.Thread.Delete(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Delete email thread request.
+**Description:** Delete email thread request.
 
-See parameter model documentation at [ClientThreadDeleteRequest](ClientThreadDeleteRequest.md)
+**See also** parameter model documentation at [**ClientThreadDeleteRequest**](ClientThreadDeleteRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -42,9 +43,9 @@ var request = new ClientThreadDeleteRequest
 
 ### Result
 
-*Returns:* Returns 200 if delete is successful.
+**Description:** Returns 200 if delete is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -80,22 +81,23 @@ api.Client.Thread.Delete(request);
 <a name="DeleteAsync"></a>
 ## DeleteAsync
 
-Delete thread by id. All messages from thread will also be deleted.             
+**Description:** Delete thread by id. All messages from thread will also be deleted.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if delete is successful.
 
-Method call example:
+**Returns:** Returns 200 if delete is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Thread.DeleteAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Delete email thread request.
+**Description:** Delete email thread request.
 
-See parameter model documentation at [ClientThreadDeleteRequest](ClientThreadDeleteRequest.md)
+**See also** parameter model documentation at [**ClientThreadDeleteRequest**](ClientThreadDeleteRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -119,9 +121,9 @@ var request = new ClientThreadDeleteRequest
 
 ### Result
 
-*Returns:* Returns 200 if delete is successful.
+**Description:** Returns 200 if delete is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:
@@ -155,21 +157,21 @@ await api.Client.Thread.DeleteAsync(request);
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetList"></a>
 ## GetList
+**Descrption:** Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
 
-Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
 
-Returns: List of threads
+**Returns:** List of threads
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Client.Thread.GetList(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetList method request.
+**Description:** GetList method request.
 
-See parameter model documentation at [ClientThreadGetListRequest](ClientThreadGetListRequest.md)
+**See also** parameter model documentation at [**ClientThreadGetListRequest**](ClientThreadGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -188,9 +190,9 @@ var request = new ClientThreadGetListRequest
 
 ### Result
 
-*Returns:* List of threads
+**Description:** List of threads
 
-*Return type:* [**EmailThreadList**](EmailThreadList.md)
+**Return type:** [**EmailThreadList**](EmailThreadList.md)
 
 <details>
     <summary>Result example</summary>
@@ -326,22 +328,23 @@ result = new EmailThreadList
 <a name="GetListAsync"></a>
 ## GetListAsync
 
-Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
+**Description:** Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: List of threads
 
-Method call example:
+**Returns:** List of threads
+
+**Method call example:**
 ```csharp
 var result = await api.Client.Thread.GetListAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetListAsync method request.
+**Description:** GetListAsync method request.
 
-See parameter model documentation at [ClientThreadGetListRequest](ClientThreadGetListRequest.md)
+**See also** parameter model documentation at [**ClientThreadGetListRequest**](ClientThreadGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -360,9 +363,9 @@ var request = new ClientThreadGetListRequest
 
 ### Result
 
-*Returns:* List of threads
+**Returns:** List of threads
 
-*Return type:* [**EmailThreadList**](EmailThreadList.md)
+**Return type:** [**EmailThreadList**](EmailThreadList.md)
 
 <details>
     <summary>Result example</summary>
@@ -496,21 +499,21 @@ result = new EmailThreadList
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetMessages"></a>
 ## GetMessages
+**Descrption:** Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
 
-Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
 
-Returns: Requested thread with fully fetched messages
+**Returns:** Requested thread with fully fetched messages
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Client.Thread.GetMessages(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetMessages method request.
+**Description:** GetMessages method request.
 
-See parameter model documentation at [ClientThreadGetMessagesRequest](ClientThreadGetMessagesRequest.md)
+**See also** parameter model documentation at [**ClientThreadGetMessagesRequest**](ClientThreadGetMessagesRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -530,9 +533,9 @@ var request = new ClientThreadGetMessagesRequest
 
 ### Result
 
-*Returns:* Requested thread with fully fetched messages
+**Description:** Requested thread with fully fetched messages
 
-*Return type:* [**EmailList**](EmailList.md)
+**Return type:** [**EmailList**](EmailList.md)
 
 <details>
     <summary>Result example</summary>
@@ -575,22 +578,23 @@ result = ;
 <a name="GetMessagesAsync"></a>
 ## GetMessagesAsync
 
-Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+**Description:** Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Requested thread with fully fetched messages
 
-Method call example:
+**Returns:** Requested thread with fully fetched messages
+
+**Method call example:**
 ```csharp
 var result = await api.Client.Thread.GetMessagesAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetMessagesAsync method request.
+**Description:** GetMessagesAsync method request.
 
-See parameter model documentation at [ClientThreadGetMessagesRequest](ClientThreadGetMessagesRequest.md)
+**See also** parameter model documentation at [**ClientThreadGetMessagesRequest**](ClientThreadGetMessagesRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -610,9 +614,9 @@ var request = new ClientThreadGetMessagesRequest
 
 ### Result
 
-*Returns:* Requested thread with fully fetched messages
+**Returns:** Requested thread with fully fetched messages
 
-*Return type:* [**EmailList**](EmailList.md)
+**Return type:** [**EmailList**](EmailList.md)
 
 <details>
     <summary>Result example</summary>
@@ -654,20 +658,21 @@ result = ;
 <a name="Move"></a>
 ## Move
 
-Move thread to another folder.             
+**Description**: Move thread to another folder.             
 
-Returns: Returns 200 if move is successful.
 
-Method call example:
+**Returns:** Returns 200 if move is successful.
+
+**Method call example:**
 ```csharp
 api.Client.Thread.Move(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Move thread request.
+**Description:** Move thread request.
 
-See parameter model documentation at [ClientThreadMoveRequest](ClientThreadMoveRequest.md)
+**See also** parameter model documentation at [**ClientThreadMoveRequest**](ClientThreadMoveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -691,9 +696,9 @@ var request = new ClientThreadMoveRequest
 
 ### Result
 
-*Returns:* Returns 200 if move is successful.
+**Description:** Returns 200 if move is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -729,22 +734,23 @@ api.Client.Thread.Move(request);
 <a name="MoveAsync"></a>
 ## MoveAsync
 
-Move thread to another folder.             
+**Description:** Move thread to another folder.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if move is successful.
 
-Method call example:
+**Returns:** Returns 200 if move is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Thread.MoveAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Move thread request.
+**Description:** Move thread request.
 
-See parameter model documentation at [ClientThreadMoveRequest](ClientThreadMoveRequest.md)
+**See also** parameter model documentation at [**ClientThreadMoveRequest**](ClientThreadMoveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -768,9 +774,9 @@ var request = new ClientThreadMoveRequest
 
 ### Result
 
-*Returns:* Returns 200 if move is successful.
+**Description:** Returns 200 if move is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:
@@ -805,20 +811,21 @@ await api.Client.Thread.MoveAsync(request);
 <a name="SetIsRead"></a>
 ## SetIsRead
 
-Mark all messages in thread as read or unread.             
+**Description**: Mark all messages in thread as read or unread.             
 
-Returns: Returns 200 if flag set is successful.
 
-Method call example:
+**Returns:** Returns 200 if flag set is successful.
+
+**Method call example:**
 ```csharp
 api.Client.Thread.SetIsRead(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Email account specifier and IsRead flag.
+**Description:** Email account specifier and IsRead flag.
 
-See parameter model documentation at [ClientThreadSetIsReadRequest](ClientThreadSetIsReadRequest.md)
+**See also** parameter model documentation at [**ClientThreadSetIsReadRequest**](ClientThreadSetIsReadRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -843,9 +850,9 @@ var request = new ClientThreadSetIsReadRequest
 
 ### Result
 
-*Returns:* Returns 200 if flag set is successful.
+**Description:** Returns 200 if flag set is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -882,22 +889,23 @@ api.Client.Thread.SetIsRead(request);
 <a name="SetIsReadAsync"></a>
 ## SetIsReadAsync
 
-Mark all messages in thread as read or unread.             
+**Description:** Mark all messages in thread as read or unread.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if flag set is successful.
 
-Method call example:
+**Returns:** Returns 200 if flag set is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Thread.SetIsReadAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Email account specifier and IsRead flag.
+**Description:** Email account specifier and IsRead flag.
 
-See parameter model documentation at [ClientThreadSetIsReadRequest](ClientThreadSetIsReadRequest.md)
+**See also** parameter model documentation at [**ClientThreadSetIsReadRequest**](ClientThreadSetIsReadRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -922,9 +930,9 @@ var request = new ClientThreadSetIsReadRequest
 
 ### Result
 
-*Returns:* Returns 200 if flag set is successful.
+**Description:** Returns 200 if flag set is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:

@@ -4,21 +4,21 @@ Storage operations controller
 
 <a name="GetDiscUsage"></a>
 ## GetDiscUsage
+**Descrption:** Get disc usage
 
-Get disc usage
 
-Returns: Disc usage.
+**Returns:** Disc usage.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.CloudStorage.Storage.GetDiscUsage(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetDiscUsage method request.
+**Description:** GetDiscUsage method request.
 
-See parameter model documentation at [GetDiscUsageRequest](GetDiscUsageRequest.md)
+**See also** parameter model documentation at [**GetDiscUsageRequest**](GetDiscUsageRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -34,9 +34,9 @@ var request = new GetDiscUsageRequest
 
 ### Result
 
-*Returns:* Disc usage.
+**Description:** Disc usage.
 
-*Return type:* [**DiscUsage**](DiscUsage.md)
+**Return type:** [**DiscUsage**](DiscUsage.md)
 
 <details>
     <summary>Result example</summary>
@@ -83,22 +83,23 @@ result = new DiscUsage
 <a name="GetDiscUsageAsync"></a>
 ## GetDiscUsageAsync
 
-Get disc usage
+**Description:** Get disc usage
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Disc usage.
 
-Method call example:
+**Returns:** Disc usage.
+
+**Method call example:**
 ```csharp
 var result = await api.CloudStorage.Storage.GetDiscUsageAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetDiscUsageAsync method request.
+**Description:** GetDiscUsageAsync method request.
 
-See parameter model documentation at [GetDiscUsageRequest](GetDiscUsageRequest.md)
+**See also** parameter model documentation at [**GetDiscUsageRequest**](GetDiscUsageRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -114,9 +115,9 @@ var request = new GetDiscUsageRequest
 
 ### Result
 
-*Returns:* Disc usage.
+**Returns:** Disc usage.
 
-*Return type:* [**DiscUsage**](DiscUsage.md)
+**Return type:** [**DiscUsage**](DiscUsage.md)
 
 <details>
     <summary>Result example</summary>
@@ -161,21 +162,21 @@ result = new DiscUsage
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetFileVersions"></a>
 ## GetFileVersions
+**Descrption:** Get file versions
 
-Get file versions
 
-Returns: File versions.
+**Returns:** File versions.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.CloudStorage.Storage.GetFileVersions(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetFileVersions method request.
+**Description:** GetFileVersions method request.
 
-See parameter model documentation at [GetFileVersionsRequest](GetFileVersionsRequest.md)
+**See also** parameter model documentation at [**GetFileVersionsRequest**](GetFileVersionsRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -192,9 +193,9 @@ var request = new GetFileVersionsRequest
 
 ### Result
 
-*Returns:* File versions.
+**Description:** File versions.
 
-*Return type:* [**FileVersions**](FileVersions.md)
+**Return type:** [**FileVersions**](FileVersions.md)
 
 <details>
     <summary>Result example</summary>
@@ -262,22 +263,23 @@ result = new FileVersions
 <a name="GetFileVersionsAsync"></a>
 ## GetFileVersionsAsync
 
-Get file versions
+**Description:** Get file versions
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File versions.
 
-Method call example:
+**Returns:** File versions.
+
+**Method call example:**
 ```csharp
 var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetFileVersionsAsync method request.
+**Description:** GetFileVersionsAsync method request.
 
-See parameter model documentation at [GetFileVersionsRequest](GetFileVersionsRequest.md)
+**See also** parameter model documentation at [**GetFileVersionsRequest**](GetFileVersionsRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -294,9 +296,9 @@ var request = new GetFileVersionsRequest
 
 ### Result
 
-*Returns:* File versions.
+**Returns:** File versions.
 
-*Return type:* [**FileVersions**](FileVersions.md)
+**Return type:** [**FileVersions**](FileVersions.md)
 
 <details>
     <summary>Result example</summary>
@@ -362,21 +364,21 @@ result = new FileVersions
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="ObjectExists"></a>
 ## ObjectExists
+**Descrption:** Check if file or folder exists
 
-Check if file or folder exists
 
-Returns: Object exist result.
+**Returns:** Object exist result.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.CloudStorage.Storage.ObjectExists(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ObjectExists method request.
+**Description:** ObjectExists method request.
 
-See parameter model documentation at [ObjectExistsRequest](ObjectExistsRequest.md)
+**See also** parameter model documentation at [**ObjectExistsRequest**](ObjectExistsRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -393,9 +395,9 @@ var request = new ObjectExistsRequest
 
 ### Result
 
-*Returns:* Object exist result.
+**Description:** Object exist result.
 
-*Return type:* [**ObjectExist**](ObjectExist.md)
+**Return type:** [**ObjectExist**](ObjectExist.md)
 
 <details>
     <summary>Result example</summary>
@@ -441,22 +443,23 @@ result = new ObjectExist
 <a name="ObjectExistsAsync"></a>
 ## ObjectExistsAsync
 
-Check if file or folder exists
+**Description:** Check if file or folder exists
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Object exist result.
 
-Method call example:
+**Returns:** Object exist result.
+
+**Method call example:**
 ```csharp
 var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ObjectExistsAsync method request.
+**Description:** ObjectExistsAsync method request.
 
-See parameter model documentation at [ObjectExistsRequest](ObjectExistsRequest.md)
+**See also** parameter model documentation at [**ObjectExistsRequest**](ObjectExistsRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -473,9 +476,9 @@ var request = new ObjectExistsRequest
 
 ### Result
 
-*Returns:* Object exist result.
+**Returns:** Object exist result.
 
-*Return type:* [**ObjectExist**](ObjectExist.md)
+**Return type:** [**ObjectExist**](ObjectExist.md)
 
 <details>
     <summary>Result example</summary>
@@ -519,21 +522,21 @@ result = new ObjectExist
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Exists"></a>
 ## Exists
+**Descrption:** Check if storage exists
 
-Check if storage exists
 
-Returns: Storage exist result.
+**Returns:** Storage exist result.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.CloudStorage.Storage.Exists(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Exists method request.
+**Description:** Exists method request.
 
-See parameter model documentation at [StorageExistsRequest](StorageExistsRequest.md)
+**See also** parameter model documentation at [**StorageExistsRequest**](StorageExistsRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -549,9 +552,9 @@ var request = new StorageExistsRequest
 
 ### Result
 
-*Returns:* Storage exist result.
+**Description:** Storage exist result.
 
-*Return type:* [**StorageExist**](StorageExist.md)
+**Return type:** [**StorageExist**](StorageExist.md)
 
 <details>
     <summary>Result example</summary>
@@ -596,22 +599,23 @@ result = new StorageExist
 <a name="ExistsAsync"></a>
 ## ExistsAsync
 
-Check if storage exists
+**Description:** Check if storage exists
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Storage exist result.
 
-Method call example:
+**Returns:** Storage exist result.
+
+**Method call example:**
 ```csharp
 var result = await api.CloudStorage.Storage.ExistsAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ExistsAsync method request.
+**Description:** ExistsAsync method request.
 
-See parameter model documentation at [StorageExistsRequest](StorageExistsRequest.md)
+**See also** parameter model documentation at [**StorageExistsRequest**](StorageExistsRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -627,9 +631,9 @@ var request = new StorageExistsRequest
 
 ### Result
 
-*Returns:* Storage exist result.
+**Returns:** Storage exist result.
 
-*Return type:* [**StorageExist**](StorageExist.md)
+**Return type:** [**StorageExist**](StorageExist.md)
 
 <details>
     <summary>Result example</summary>

@@ -5,20 +5,21 @@ MAPI message operations
 <a name="AsEmailDto"></a>
 ## AsEmailDto
 
-Converts MAPI message model to EmailDto model             
+**Description**: Converts MAPI message model to EmailDto model             
 
-Returns: EmailDto model
 
-Method call example:
+**Returns:** EmailDto model
+
+**Method call example:**
 ```csharp
 var result = api.Mapi.Message.AsEmailDto(mapiMessage);
 ```
 
-### mapiMessage Parameter
+### Parameter: *mapiMessage*
 
-MAPI message model to convert
+**Description:** MAPI message model to convert
 
-See parameter model documentation at [MapiMessageDto](MapiMessageDto.md)
+**See also** parameter model documentation at [**MapiMessageDto**](MapiMessageDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -71,9 +72,9 @@ var mapiMessage = new MapiMessageDto
 
 ### Result
 
-*Returns:* EmailDto model
+**Description:** EmailDto model
 
-*Return type:* [**EmailDto**](EmailDto.md)
+**Return type:** [**EmailDto**](EmailDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -216,22 +217,23 @@ result = new EmailDto
 <a name="AsEmailDtoAsync"></a>
 ## AsEmailDtoAsync
 
-Converts MAPI message model to EmailDto model             
+**Description:** Converts MAPI message model to EmailDto model             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: EmailDto model
 
-Method call example:
+**Returns:** EmailDto model
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
 ```
 
-### mapiMessage Parameter
+### Parameter: *mapiMessage*
 
-MAPI message model to convert
+**Description:** MAPI message model to convert
 
-See parameter model documentation at [MapiMessageDto](MapiMessageDto.md)
+**See also** parameter model documentation at [**MapiMessageDto**](MapiMessageDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -284,9 +286,9 @@ var mapiMessage = new MapiMessageDto
 
 ### Result
 
-*Returns:* EmailDto model
+**Description:** EmailDto model
 
-*Return type:* Task<[**EmailDto**](EmailDto.md)>
+**Return type:** Task<[**EmailDto**](EmailDto.md)>
 
 <details>
     <summary>Result example</summary>
@@ -428,20 +430,21 @@ result = new EmailDto
 <a name="AsFile"></a>
 ## AsFile
 
-Converts MAPI message model to specified format and returns as file.             
+**Description**: Converts MAPI message model to specified format and returns as file.             
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = api.Mapi.Message.AsFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-MAPI message model to convert.
+**Description:** MAPI message model to convert.
 
-See parameter model documentation at [MapiMessageAsFileRequest](MapiMessageAsFileRequest.md)
+**See also** parameter model documentation at [**MapiMessageAsFileRequest**](MapiMessageAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -498,9 +501,9 @@ var request = new MapiMessageAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -585,22 +588,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsFileAsync"></a>
 ## AsFileAsync
 
-Converts MAPI message model to specified format and returns as file.             
+**Description:** Converts MAPI message model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Message.AsFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-MAPI message model to convert.
+**Description:** MAPI message model to convert.
 
-See parameter model documentation at [MapiMessageAsFileRequest](MapiMessageAsFileRequest.md)
+**See also** parameter model documentation at [**MapiMessageAsFileRequest**](MapiMessageAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -657,9 +661,9 @@ var request = new MapiMessageAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Task<Stream>**
+**Return type:** **Task<Stream>**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -742,21 +746,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="FromFile"></a>
 ## FromFile
+**Descrption:** Converts email file to a MAPI model representation             
 
-Converts email file to a MAPI model representation             
 
-Returns: MAPI model
+**Returns:** MAPI model
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Mapi.Message.FromFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFile method request.
+**Description:** FromFile method request.
 
-See parameter model documentation at [MapiMessageFromFileRequest](MapiMessageFromFileRequest.md)
+**See also** parameter model documentation at [**MapiMessageFromFileRequest**](MapiMessageFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -773,9 +777,9 @@ var request = new MapiMessageFromFileRequest
 
 ### Result
 
-*Returns:* MAPI model
+**Description:** MAPI model
 
-*Return type:* [**MapiMessageDto**](MapiMessageDto.md)
+**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -893,22 +897,23 @@ result = new MapiMessageDto
 <a name="FromFileAsync"></a>
 ## FromFileAsync
 
-Converts email file to a MAPI model representation             
+**Description:** Converts email file to a MAPI model representation             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: MAPI model
 
-Method call example:
+**Returns:** MAPI model
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Message.FromFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFileAsync method request.
+**Description:** FromFileAsync method request.
 
-See parameter model documentation at [MapiMessageFromFileRequest](MapiMessageFromFileRequest.md)
+**See also** parameter model documentation at [**MapiMessageFromFileRequest**](MapiMessageFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -925,9 +930,9 @@ var request = new MapiMessageFromFileRequest
 
 ### Result
 
-*Returns:* MAPI model
+**Returns:** MAPI model
 
-*Return type:* [**MapiMessageDto**](MapiMessageDto.md)
+**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1043,21 +1048,21 @@ result = new MapiMessageDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Get"></a>
 ## Get
+**Descrption:** Get MAPI message document.             
 
-Get MAPI message document.             
 
-Returns: MAPI message document.
+**Returns:** MAPI message document.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Mapi.Message.Get(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Get method request.
+**Description:** Get method request.
 
-See parameter model documentation at [MapiMessageGetRequest](MapiMessageGetRequest.md)
+**See also** parameter model documentation at [**MapiMessageGetRequest**](MapiMessageGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1076,9 +1081,9 @@ var request = new MapiMessageGetRequest
 
 ### Result
 
-*Returns:* MAPI message document.
+**Description:** MAPI message document.
 
-*Return type:* [**MapiMessageDto**](MapiMessageDto.md)
+**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1198,22 +1203,23 @@ result = new MapiMessageDto
 <a name="GetAsync"></a>
 ## GetAsync
 
-Get MAPI message document.             
+**Description:** Get MAPI message document.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: MAPI message document.
 
-Method call example:
+**Returns:** MAPI message document.
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Message.GetAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsync method request.
+**Description:** GetAsync method request.
 
-See parameter model documentation at [MapiMessageGetRequest](MapiMessageGetRequest.md)
+**See also** parameter model documentation at [**MapiMessageGetRequest**](MapiMessageGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1232,9 +1238,9 @@ var request = new MapiMessageGetRequest
 
 ### Result
 
-*Returns:* MAPI message document.
+**Returns:** MAPI message document.
 
-*Return type:* [**MapiMessageDto**](MapiMessageDto.md)
+**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1353,20 +1359,21 @@ result = new MapiMessageDto
 <a name="Save"></a>
 ## Save
 
-Save MAPI message to storage.             
+**Description**: Save MAPI message to storage.             
 
-Returns: Returns 200 if update is successful.
 
-Method call example:
+**Returns:** Returns 200 if update is successful.
+
+**Method call example:**
 ```csharp
 api.Mapi.Message.Save(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Message create/update request.
+**Description:** Message create/update request.
 
-See parameter model documentation at [MapiMessageSaveRequest](MapiMessageSaveRequest.md)
+**See also** parameter model documentation at [**MapiMessageSaveRequest**](MapiMessageSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1429,9 +1436,9 @@ var request = new MapiMessageSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if update is successful.
+**Description:** Returns 200 if update is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -1506,22 +1513,23 @@ api.Mapi.Message.Save(request);
 <a name="SaveAsync"></a>
 ## SaveAsync
 
-Save MAPI message to storage.             
+**Description:** Save MAPI message to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if update is successful.
 
-Method call example:
+**Returns:** Returns 200 if update is successful.
+
+**Method call example:**
 ```csharp
 await api.Mapi.Message.SaveAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Message create/update request.
+**Description:** Message create/update request.
 
-See parameter model documentation at [MapiMessageSaveRequest](MapiMessageSaveRequest.md)
+**See also** parameter model documentation at [**MapiMessageSaveRequest**](MapiMessageSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1584,9 +1592,9 @@ var request = new MapiMessageSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if update is successful.
+**Description:** Returns 200 if update is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:

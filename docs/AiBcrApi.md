@@ -4,21 +4,21 @@ AI Business card recognition operations.
 
 <a name="Parse"></a>
 ## Parse
+**Descrption:** Parse images to vCard document models             
 
-Parse images to vCard document models             
 
-Returns: List of vCards
+**Returns:** List of vCards
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Ai.Bcr.Parse(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Parse method request.
+**Description:** Parse method request.
 
-See parameter model documentation at [AiBcrParseRequest](AiBcrParseRequest.md)
+**See also** parameter model documentation at [**AiBcrParseRequest**](AiBcrParseRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -37,9 +37,9 @@ var request = new AiBcrParseRequest
 
 ### Result
 
-*Returns:* List of vCards
+**Description:** List of vCards
 
-*Return type:* [**ContactList**](ContactList.md)
+**Return type:** [**ContactList**](ContactList.md)
 
 <details>
     <summary>Result example</summary>
@@ -199,22 +199,23 @@ result = new ContactList
 <a name="ParseAsync"></a>
 ## ParseAsync
 
-Parse images to vCard document models             
+**Description:** Parse images to vCard document models             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: List of vCards
 
-Method call example:
+**Returns:** List of vCards
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Bcr.ParseAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ParseAsync method request.
+**Description:** ParseAsync method request.
 
-See parameter model documentation at [AiBcrParseRequest](AiBcrParseRequest.md)
+**See also** parameter model documentation at [**AiBcrParseRequest**](AiBcrParseRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -233,9 +234,9 @@ var request = new AiBcrParseRequest
 
 ### Result
 
-*Returns:* List of vCards
+**Returns:** List of vCards
 
-*Return type:* [**ContactList**](ContactList.md)
+**Return type:** [**ContactList**](ContactList.md)
 
 <details>
     <summary>Result example</summary>
@@ -394,20 +395,21 @@ result = new ContactList
 <a name="ParseStorage"></a>
 ## ParseStorage
 
-Parse images from storage to vCard files             
+**Description**: Parse images from storage to vCard files             
 
-Returns: List of vCard files located on storage
 
-Method call example:
+**Returns:** List of vCard files located on storage
+
+**Method call example:**
 ```csharp
 var result = api.Ai.Bcr.ParseStorage(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Request with images located on storage
+**Description:** Request with images located on storage
 
-See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
+**See also** parameter model documentation at [**AiBcrParseStorageRequest**](AiBcrParseStorageRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -441,9 +443,9 @@ var request = new AiBcrParseStorageRequest
 
 ### Result
 
-*Returns:* List of vCard files located on storage
+**Description:** List of vCard files located on storage
 
-*Return type:* [**StorageFileLocationList**](StorageFileLocationList.md)
+**Return type:** [**StorageFileLocationList**](StorageFileLocationList.md)
 
 <details>
     <summary>Result example</summary>
@@ -521,22 +523,23 @@ result = new StorageFileLocationList
 <a name="ParseStorageAsync"></a>
 ## ParseStorageAsync
 
-Parse images from storage to vCard files             
+**Description:** Parse images from storage to vCard files             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: List of vCard files located on storage
 
-Method call example:
+**Returns:** List of vCard files located on storage
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Bcr.ParseStorageAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Request with images located on storage
+**Description:** Request with images located on storage
 
-See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
+**See also** parameter model documentation at [**AiBcrParseStorageRequest**](AiBcrParseStorageRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -570,9 +573,9 @@ var request = new AiBcrParseStorageRequest
 
 ### Result
 
-*Returns:* List of vCard files located on storage
+**Description:** List of vCard files located on storage
 
-*Return type:* Task<[**StorageFileLocationList**](StorageFileLocationList.md)>
+**Return type:** Task<[**StorageFileLocationList**](StorageFileLocationList.md)>
 
 <details>
     <summary>Result example</summary>

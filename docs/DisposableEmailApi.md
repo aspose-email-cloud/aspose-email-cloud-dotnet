@@ -4,21 +4,21 @@ Check email address is disposable operations
 
 <a name="IsDisposable"></a>
 ## IsDisposable
+**Descrption:** Check email address is disposable             
 
-Check email address is disposable             
 
-Returns: true if address is disposable
+**Returns:** true if address is disposable
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.DisposableEmail.IsDisposable(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-IsDisposable method request.
+**Description:** IsDisposable method request.
 
-See parameter model documentation at [DisposableEmailIsDisposableRequest](DisposableEmailIsDisposableRequest.md)
+**See also** parameter model documentation at [**DisposableEmailIsDisposableRequest**](DisposableEmailIsDisposableRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -34,9 +34,9 @@ var request = new DisposableEmailIsDisposableRequest
 
 ### Result
 
-*Returns:* true if address is disposable
+**Description:** true if address is disposable
 
-*Return type:* [**ValueTOfBoolean**](ValueTOfBoolean.md)
+**Return type:** [**ValueTOfBoolean**](ValueTOfBoolean.md)
 
 <details>
     <summary>Result example</summary>
@@ -75,22 +75,23 @@ result = ;
 <a name="IsDisposableAsync"></a>
 ## IsDisposableAsync
 
-Check email address is disposable             
+**Description:** Check email address is disposable             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: true if address is disposable
 
-Method call example:
+**Returns:** true if address is disposable
+
+**Method call example:**
 ```csharp
 var result = await api.DisposableEmail.IsDisposableAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-IsDisposableAsync method request.
+**Description:** IsDisposableAsync method request.
 
-See parameter model documentation at [DisposableEmailIsDisposableRequest](DisposableEmailIsDisposableRequest.md)
+**See also** parameter model documentation at [**DisposableEmailIsDisposableRequest**](DisposableEmailIsDisposableRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -106,9 +107,9 @@ var request = new DisposableEmailIsDisposableRequest
 
 ### Result
 
-*Returns:* true if address is disposable
+**Returns:** true if address is disposable
 
-*Return type:* [**ValueTOfBoolean**](ValueTOfBoolean.md)
+**Return type:** [**ValueTOfBoolean**](ValueTOfBoolean.md)
 
 <details>
     <summary>Result example</summary>

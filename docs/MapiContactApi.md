@@ -5,20 +5,21 @@ MAPI contact operations
 <a name="AsContactDto"></a>
 ## AsContactDto
 
-Converts MAPI contact model to ContactDto model.             
+**Description**: Converts MAPI contact model to ContactDto model.             
 
-Returns: Contact model.
 
-Method call example:
+**Returns:** Contact model.
+
+**Method call example:**
 ```csharp
 var result = api.Mapi.Contact.AsContactDto(mapiContactDto);
 ```
 
-### mapiContactDto Parameter
+### Parameter: *mapiContactDto*
 
-MAPI contact model to convert.
+**Description:** MAPI contact model to convert.
 
-See parameter model documentation at [MapiContactDto](MapiContactDto.md)
+**See also** parameter model documentation at [**MapiContactDto**](MapiContactDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -58,9 +59,9 @@ var mapiContactDto = new MapiContactDto
 
 ### Result
 
-*Returns:* Contact model.
+**Description:** Contact model.
 
-*Return type:* [**ContactDto**](ContactDto.md)
+**Return type:** [**ContactDto**](ContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -228,22 +229,23 @@ result = new ContactDto
 <a name="AsContactDtoAsync"></a>
 ## AsContactDtoAsync
 
-Converts MAPI contact model to ContactDto model.             
+**Description:** Converts MAPI contact model to ContactDto model.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Contact model.
 
-Method call example:
+**Returns:** Contact model.
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Contact.AsContactDtoAsync(mapiContactDto);
 ```
 
-### mapiContactDto Parameter
+### Parameter: *mapiContactDto*
 
-MAPI contact model to convert.
+**Description:** MAPI contact model to convert.
 
-See parameter model documentation at [MapiContactDto](MapiContactDto.md)
+**See also** parameter model documentation at [**MapiContactDto**](MapiContactDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -283,9 +285,9 @@ var mapiContactDto = new MapiContactDto
 
 ### Result
 
-*Returns:* Contact model.
+**Description:** Contact model.
 
-*Return type:* Task<[**ContactDto**](ContactDto.md)>
+**Return type:** Task<[**ContactDto**](ContactDto.md)>
 
 <details>
     <summary>Result example</summary>
@@ -452,20 +454,21 @@ result = new ContactDto
 <a name="AsFile"></a>
 ## AsFile
 
-Converts MAPI contact model to specified format and returns as file.             
+**Description**: Converts MAPI contact model to specified format and returns as file.             
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = api.Mapi.Contact.AsFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-MAPI contact model to convert.
+**Description:** MAPI contact model to convert.
 
-See parameter model documentation at [MapiContactAsFileRequest](MapiContactAsFileRequest.md)
+**See also** parameter model documentation at [**MapiContactAsFileRequest**](MapiContactAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -509,9 +512,9 @@ var request = new MapiContactAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -583,22 +586,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsFileAsync"></a>
 ## AsFileAsync
 
-Converts MAPI contact model to specified format and returns as file.             
+**Description:** Converts MAPI contact model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Contact.AsFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-MAPI contact model to convert.
+**Description:** MAPI contact model to convert.
 
-See parameter model documentation at [MapiContactAsFileRequest](MapiContactAsFileRequest.md)
+**See also** parameter model documentation at [**MapiContactAsFileRequest**](MapiContactAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -642,9 +646,9 @@ var request = new MapiContactAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Task<Stream>**
+**Return type:** **Task<Stream>**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -714,21 +718,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="FromFile"></a>
 ## FromFile
+**Descrption:** Converts contact file to a MAPI model representation.             
 
-Converts contact file to a MAPI model representation.             
 
-Returns: MAPI model
+**Returns:** MAPI model
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Mapi.Contact.FromFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFile method request.
+**Description:** FromFile method request.
 
-See parameter model documentation at [MapiContactFromFileRequest](MapiContactFromFileRequest.md)
+**See also** parameter model documentation at [**MapiContactFromFileRequest**](MapiContactFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -745,9 +749,9 @@ var request = new MapiContactFromFileRequest
 
 ### Result
 
-*Returns:* MAPI model
+**Description:** MAPI model
 
-*Return type:* [**MapiContactDto**](MapiContactDto.md)
+**Return type:** [**MapiContactDto**](MapiContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -839,22 +843,23 @@ result = new MapiContactDto
 <a name="FromFileAsync"></a>
 ## FromFileAsync
 
-Converts contact file to a MAPI model representation.             
+**Description:** Converts contact file to a MAPI model representation.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: MAPI model
 
-Method call example:
+**Returns:** MAPI model
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Contact.FromFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFileAsync method request.
+**Description:** FromFileAsync method request.
 
-See parameter model documentation at [MapiContactFromFileRequest](MapiContactFromFileRequest.md)
+**See also** parameter model documentation at [**MapiContactFromFileRequest**](MapiContactFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -871,9 +876,9 @@ var request = new MapiContactFromFileRequest
 
 ### Result
 
-*Returns:* MAPI model
+**Returns:** MAPI model
 
-*Return type:* [**MapiContactDto**](MapiContactDto.md)
+**Return type:** [**MapiContactDto**](MapiContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -963,21 +968,21 @@ result = new MapiContactDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Get"></a>
 ## Get
+**Descrption:** Get MAPI contact document.             
 
-Get MAPI contact document.             
 
-Returns: Contact model.
+**Returns:** Contact model.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Mapi.Contact.Get(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Get method request.
+**Description:** Get method request.
 
-See parameter model documentation at [MapiContactGetRequest](MapiContactGetRequest.md)
+**See also** parameter model documentation at [**MapiContactGetRequest**](MapiContactGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -996,9 +1001,9 @@ var request = new MapiContactGetRequest
 
 ### Result
 
-*Returns:* Contact model.
+**Description:** Contact model.
 
-*Return type:* [**MapiContactDto**](MapiContactDto.md)
+**Return type:** [**MapiContactDto**](MapiContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1092,22 +1097,23 @@ result = new MapiContactDto
 <a name="GetAsync"></a>
 ## GetAsync
 
-Get MAPI contact document.             
+**Description:** Get MAPI contact document.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Contact model.
 
-Method call example:
+**Returns:** Contact model.
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Contact.GetAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsync method request.
+**Description:** GetAsync method request.
 
-See parameter model documentation at [MapiContactGetRequest](MapiContactGetRequest.md)
+**See also** parameter model documentation at [**MapiContactGetRequest**](MapiContactGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1126,9 +1132,9 @@ var request = new MapiContactGetRequest
 
 ### Result
 
-*Returns:* Contact model.
+**Returns:** Contact model.
 
-*Return type:* [**MapiContactDto**](MapiContactDto.md)
+**Return type:** [**MapiContactDto**](MapiContactDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1221,20 +1227,21 @@ result = new MapiContactDto
 <a name="Save"></a>
 ## Save
 
-Save MAPI Contact to storage.             
+**Description**: Save MAPI Contact to storage.             
 
-Returns: Returns 200 if create is successful.
 
-Method call example:
+**Returns:** Returns 200 if create is successful.
+
+**Method call example:**
 ```csharp
 api.Mapi.Contact.Save(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Create/Update contact request.
+**Description:** Create/Update contact request.
 
-See parameter model documentation at [MapiContactSaveRequest](MapiContactSaveRequest.md)
+**See also** parameter model documentation at [**MapiContactSaveRequest**](MapiContactSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1284,9 +1291,9 @@ var request = new MapiContactSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if create is successful.
+**Description:** Returns 200 if create is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -1348,22 +1355,23 @@ api.Mapi.Contact.Save(request);
 <a name="SaveAsync"></a>
 ## SaveAsync
 
-Save MAPI Contact to storage.             
+**Description:** Save MAPI Contact to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if create is successful.
 
-Method call example:
+**Returns:** Returns 200 if create is successful.
+
+**Method call example:**
 ```csharp
 await api.Mapi.Contact.SaveAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Create/Update contact request.
+**Description:** Create/Update contact request.
 
-See parameter model documentation at [MapiContactSaveRequest](MapiContactSaveRequest.md)
+**See also** parameter model documentation at [**MapiContactSaveRequest**](MapiContactSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1413,9 +1421,9 @@ var request = new MapiContactSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if create is successful.
+**Description:** Returns 200 if create is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:

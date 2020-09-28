@@ -4,21 +4,21 @@ Email server configuration discovery.
 
 <a name="Discover"></a>
 ## Discover
+**Descrption:** Discover email accounts by email address. Does not validate discovered accounts.             
 
-Discover email accounts by email address. Does not validate discovered accounts.             
 
-Returns: Discovered account configurations.
+**Returns:** Discovered account configurations.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.EmailConfig.Discover(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Discover method request.
+**Description:** Discover method request.
 
-See parameter model documentation at [EmailConfigDiscoverRequest](EmailConfigDiscoverRequest.md)
+**See also** parameter model documentation at [**EmailConfigDiscoverRequest**](EmailConfigDiscoverRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -33,9 +33,9 @@ var request = new EmailConfigDiscoverRequest
 
 ### Result
 
-*Returns:* Discovered account configurations.
+**Description:** Discovered account configurations.
 
-*Return type:* [**EmailAccountConfigList**](EmailAccountConfigList.md)
+**Return type:** [**EmailAccountConfigList**](EmailAccountConfigList.md)
 
 <details>
     <summary>Result example</summary>
@@ -207,22 +207,23 @@ result = new EmailAccountConfigList
 <a name="DiscoverAsync"></a>
 ## DiscoverAsync
 
-Discover email accounts by email address. Does not validate discovered accounts.             
+**Description:** Discover email accounts by email address. Does not validate discovered accounts.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Discovered account configurations.
 
-Method call example:
+**Returns:** Discovered account configurations.
+
+**Method call example:**
 ```csharp
 var result = await api.EmailConfig.DiscoverAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-DiscoverAsync method request.
+**Description:** DiscoverAsync method request.
 
-See parameter model documentation at [EmailConfigDiscoverRequest](EmailConfigDiscoverRequest.md)
+**See also** parameter model documentation at [**EmailConfigDiscoverRequest**](EmailConfigDiscoverRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -237,9 +238,9 @@ var request = new EmailConfigDiscoverRequest
 
 ### Result
 
-*Returns:* Discovered account configurations.
+**Returns:** Discovered account configurations.
 
-*Return type:* [**EmailAccountConfigList**](EmailAccountConfigList.md)
+**Return type:** [**EmailAccountConfigList**](EmailAccountConfigList.md)
 
 <details>
     <summary>Result example</summary>
@@ -410,20 +411,21 @@ result = new EmailAccountConfigList
 <a name="DiscoverOauth"></a>
 ## DiscoverOauth
 
-Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
+**Description**: Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
 
-Returns: Discovered account configurations.
 
-Method call example:
+**Returns:** Discovered account configurations.
+
+**Method call example:**
 ```csharp
 var result = api.EmailConfig.DiscoverOauth(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Discover email configuration request.
+**Description:** Discover email configuration request.
 
-See parameter model documentation at [EmailConfigDiscoverOauthRequest](EmailConfigDiscoverOauthRequest.md)
+**See also** parameter model documentation at [**EmailConfigDiscoverOauthRequest**](EmailConfigDiscoverOauthRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -444,9 +446,9 @@ var request = new EmailConfigDiscoverOauthRequest
 
 ### Result
 
-*Returns:* Discovered account configurations.
+**Description:** Discovered account configurations.
 
-*Return type:* [**EmailAccountConfigList**](EmailAccountConfigList.md)
+**Return type:** [**EmailAccountConfigList**](EmailAccountConfigList.md)
 
 <details>
     <summary>Result example</summary>
@@ -623,22 +625,23 @@ result = new EmailAccountConfigList
 <a name="DiscoverOauthAsync"></a>
 ## DiscoverOauthAsync
 
-Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
+**Description:** Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Discovered account configurations.
 
-Method call example:
+**Returns:** Discovered account configurations.
+
+**Method call example:**
 ```csharp
 var result = await api.EmailConfig.DiscoverOauthAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Discover email configuration request.
+**Description:** Discover email configuration request.
 
-See parameter model documentation at [EmailConfigDiscoverOauthRequest](EmailConfigDiscoverOauthRequest.md)
+**See also** parameter model documentation at [**EmailConfigDiscoverOauthRequest**](EmailConfigDiscoverOauthRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -659,9 +662,9 @@ var request = new EmailConfigDiscoverOauthRequest
 
 ### Result
 
-*Returns:* Discovered account configurations.
+**Description:** Discovered account configurations.
 
-*Return type:* Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
+**Return type:** Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 
 <details>
     <summary>Result example</summary>
@@ -837,20 +840,21 @@ result = new EmailAccountConfigList
 <a name="DiscoverPassword"></a>
 ## DiscoverPassword
 
-Discover email accounts by email address. Validates discovered accounts using login and password.             
+**Description**: Discover email accounts by email address. Validates discovered accounts using login and password.             
 
-Returns: Discovered account configurations.
 
-Method call example:
+**Returns:** Discovered account configurations.
+
+**Method call example:**
 ```csharp
 var result = api.EmailConfig.DiscoverPassword(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Discover email configuration request.
+**Description:** Discover email configuration request.
 
-See parameter model documentation at [EmailConfigDiscoverPasswordRequest](EmailConfigDiscoverPasswordRequest.md)
+**See also** parameter model documentation at [**EmailConfigDiscoverPasswordRequest**](EmailConfigDiscoverPasswordRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -869,9 +873,9 @@ var request = new EmailConfigDiscoverPasswordRequest
 
 ### Result
 
-*Returns:* Discovered account configurations.
+**Description:** Discovered account configurations.
 
-*Return type:* [**EmailAccountConfigList**](EmailAccountConfigList.md)
+**Return type:** [**EmailAccountConfigList**](EmailAccountConfigList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1046,22 +1050,23 @@ result = new EmailAccountConfigList
 <a name="DiscoverPasswordAsync"></a>
 ## DiscoverPasswordAsync
 
-Discover email accounts by email address. Validates discovered accounts using login and password.             
+**Description:** Discover email accounts by email address. Validates discovered accounts using login and password.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Discovered account configurations.
 
-Method call example:
+**Returns:** Discovered account configurations.
+
+**Method call example:**
 ```csharp
 var result = await api.EmailConfig.DiscoverPasswordAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Discover email configuration request.
+**Description:** Discover email configuration request.
 
-See parameter model documentation at [EmailConfigDiscoverPasswordRequest](EmailConfigDiscoverPasswordRequest.md)
+**See also** parameter model documentation at [**EmailConfigDiscoverPasswordRequest**](EmailConfigDiscoverPasswordRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1080,9 +1085,9 @@ var request = new EmailConfigDiscoverPasswordRequest
 
 ### Result
 
-*Returns:* Discovered account configurations.
+**Description:** Discovered account configurations.
 
-*Return type:* Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
+**Return type:** Task<[**EmailAccountConfigList**](EmailAccountConfigList.md)>
 
 <details>
     <summary>Result example</summary>

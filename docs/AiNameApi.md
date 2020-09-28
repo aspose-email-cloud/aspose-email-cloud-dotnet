@@ -4,21 +4,21 @@ AI Name operations.
 
 <a name="Complete"></a>
 ## Complete
+**Descrption:** The call proposes k most probable names for given starting characters.             
 
-The call proposes k most probable names for given starting characters.             
 
-Returns: List of name variations.
+**Returns:** List of name variations.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.Complete(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Complete method request.
+**Description:** Complete method request.
 
-See parameter model documentation at [AiNameCompleteRequest](AiNameCompleteRequest.md)
+**See also** parameter model documentation at [**AiNameCompleteRequest**](AiNameCompleteRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -34,9 +34,9 @@ var request = new AiNameCompleteRequest
 
 ### Result
 
-*Returns:* List of name variations.
+**Description:** List of name variations.
 
-*Return type:* [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
+**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
 <details>
     <summary>Result example</summary>
@@ -105,22 +105,23 @@ result = new AiNameWeightedVariants
 <a name="CompleteAsync"></a>
 ## CompleteAsync
 
-The call proposes k most probable names for given starting characters.             
+**Description:** The call proposes k most probable names for given starting characters.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: List of name variations.
 
-Method call example:
+**Returns:** List of name variations.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.CompleteAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-CompleteAsync method request.
+**Description:** CompleteAsync method request.
 
-See parameter model documentation at [AiNameCompleteRequest](AiNameCompleteRequest.md)
+**See also** parameter model documentation at [**AiNameCompleteRequest**](AiNameCompleteRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -136,9 +137,9 @@ var request = new AiNameCompleteRequest
 
 ### Result
 
-*Returns:* List of name variations.
+**Returns:** List of name variations.
 
-*Return type:* [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
+**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
 <details>
     <summary>Result example</summary>
@@ -205,21 +206,21 @@ result = new AiNameWeightedVariants
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Expand"></a>
 ## Expand
+**Descrption:** Expands a person's name into a list of possible alternatives using options for expanding instructions.             
 
-Expands a person's name into a list of possible alternatives using options for expanding instructions.             
 
-Returns: List of name variations.
+**Returns:** List of name variations.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.Expand(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Expand method request.
+**Description:** Expand method request.
 
-See parameter model documentation at [AiNameExpandRequest](AiNameExpandRequest.md)
+**See also** parameter model documentation at [**AiNameExpandRequest**](AiNameExpandRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -235,9 +236,9 @@ var request = new AiNameExpandRequest
 
 ### Result
 
-*Returns:* List of name variations.
+**Description:** List of name variations.
 
-*Return type:* [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
+**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
 <details>
     <summary>Result example</summary>
@@ -306,22 +307,23 @@ result = new AiNameWeightedVariants
 <a name="ExpandAsync"></a>
 ## ExpandAsync
 
-Expands a person's name into a list of possible alternatives using options for expanding instructions.             
+**Description:** Expands a person's name into a list of possible alternatives using options for expanding instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: List of name variations.
 
-Method call example:
+**Returns:** List of name variations.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.ExpandAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ExpandAsync method request.
+**Description:** ExpandAsync method request.
 
-See parameter model documentation at [AiNameExpandRequest](AiNameExpandRequest.md)
+**See also** parameter model documentation at [**AiNameExpandRequest**](AiNameExpandRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -337,9 +339,9 @@ var request = new AiNameExpandRequest
 
 ### Result
 
-*Returns:* List of name variations.
+**Returns:** List of name variations.
 
-*Return type:* [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
+**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
 <details>
     <summary>Result example</summary>
@@ -407,20 +409,21 @@ result = new AiNameWeightedVariants
 <a name="ExpandParsed"></a>
 ## ExpandParsed
 
-Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
+**Description**: Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
 
-Returns: List of name variations.
 
-Method call example:
+**Returns:** List of name variations.
+
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.ExpandParsed(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Parsed name with options.
+**Description:** Parsed name with options.
 
-See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
+**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -434,9 +437,9 @@ var request = ;
 
 ### Result
 
-*Returns:* List of name variations.
+**Description:** List of name variations.
 
-*Return type:* [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
+**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
 <details>
     <summary>Result example</summary>
@@ -502,22 +505,23 @@ result = new AiNameWeightedVariants
 <a name="ExpandParsedAsync"></a>
 ## ExpandParsedAsync
 
-Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
+**Description:** Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: List of name variations.
 
-Method call example:
+**Returns:** List of name variations.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.ExpandParsedAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Parsed name with options.
+**Description:** Parsed name with options.
 
-See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
+**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -531,9 +535,9 @@ var request = ;
 
 ### Result
 
-*Returns:* List of name variations.
+**Description:** List of name variations.
 
-*Return type:* Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
+**Return type:** Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
 
 <details>
     <summary>Result example</summary>
@@ -597,21 +601,21 @@ result = new AiNameWeightedVariants
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Format"></a>
 ## Format
+**Descrption:** Formats a person's name in correct case and name order using options for formatting instructions.             
 
-Formats a person's name in correct case and name order using options for formatting instructions.             
 
-Returns: Formatted name.
+**Returns:** Formatted name.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.Format(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Format method request.
+**Description:** Format method request.
 
-See parameter model documentation at [AiNameFormatRequest](AiNameFormatRequest.md)
+**See also** parameter model documentation at [**AiNameFormatRequest**](AiNameFormatRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -628,9 +632,9 @@ var request = new AiNameFormatRequest
 
 ### Result
 
-*Returns:* Formatted name.
+**Description:** Formatted name.
 
-*Return type:* [**AiNameFormatted**](AiNameFormatted.md)
+**Return type:** [**AiNameFormatted**](AiNameFormatted.md)
 
 <details>
     <summary>Result example</summary>
@@ -678,22 +682,23 @@ result = new AiNameFormatted
 <a name="FormatAsync"></a>
 ## FormatAsync
 
-Formats a person's name in correct case and name order using options for formatting instructions.             
+**Description:** Formats a person's name in correct case and name order using options for formatting instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Formatted name.
 
-Method call example:
+**Returns:** Formatted name.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.FormatAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FormatAsync method request.
+**Description:** FormatAsync method request.
 
-See parameter model documentation at [AiNameFormatRequest](AiNameFormatRequest.md)
+**See also** parameter model documentation at [**AiNameFormatRequest**](AiNameFormatRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -710,9 +715,9 @@ var request = new AiNameFormatRequest
 
 ### Result
 
-*Returns:* Formatted name.
+**Returns:** Formatted name.
 
-*Return type:* [**AiNameFormatted**](AiNameFormatted.md)
+**Return type:** [**AiNameFormatted**](AiNameFormatted.md)
 
 <details>
     <summary>Result example</summary>
@@ -759,20 +764,21 @@ result = new AiNameFormatted
 <a name="FormatParsed"></a>
 ## FormatParsed
 
-Formats a person's parsed name in correct case and name order using options for formatting instructions.             
+**Description**: Formats a person's parsed name in correct case and name order using options for formatting instructions.             
 
-Returns: Formatted name.
 
-Method call example:
+**Returns:** Formatted name.
+
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.FormatParsed(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Parsed name with options.
+**Description:** Parsed name with options.
 
-See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
+**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -786,9 +792,9 @@ var request = ;
 
 ### Result
 
-*Returns:* Formatted name.
+**Description:** Formatted name.
 
-*Return type:* [**AiNameFormatted**](AiNameFormatted.md)
+**Return type:** [**AiNameFormatted**](AiNameFormatted.md)
 
 <details>
     <summary>Result example</summary>
@@ -832,22 +838,23 @@ result = new AiNameFormatted
 <a name="FormatParsedAsync"></a>
 ## FormatParsedAsync
 
-Formats a person's parsed name in correct case and name order using options for formatting instructions.             
+**Description:** Formats a person's parsed name in correct case and name order using options for formatting instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Formatted name.
 
-Method call example:
+**Returns:** Formatted name.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.FormatParsedAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Parsed name with options.
+**Description:** Parsed name with options.
 
-See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
+**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -861,9 +868,9 @@ var request = ;
 
 ### Result
 
-*Returns:* Formatted name.
+**Description:** Formatted name.
 
-*Return type:* Task<[**AiNameFormatted**](AiNameFormatted.md)>
+**Return type:** Task<[**AiNameFormatted**](AiNameFormatted.md)>
 
 <details>
     <summary>Result example</summary>
@@ -905,21 +912,21 @@ result = new AiNameFormatted
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Genderize"></a>
 ## Genderize
+**Descrption:** Detect person's gender from name string.             
 
-Detect person's gender from name string.             
 
-Returns: Hypotheses about person&#39;s gender.
+**Returns:** Hypotheses about person&#39;s gender.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.Genderize(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Genderize method request.
+**Description:** Genderize method request.
 
-See parameter model documentation at [AiNameGenderizeRequest](AiNameGenderizeRequest.md)
+**See also** parameter model documentation at [**AiNameGenderizeRequest**](AiNameGenderizeRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -935,9 +942,9 @@ var request = new AiNameGenderizeRequest
 
 ### Result
 
-*Returns:* Hypotheses about person&#39;s gender.
+**Description:** Hypotheses about person&#39;s gender.
 
-*Return type:* [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
+**Return type:** [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
 <details>
     <summary>Result example</summary>
@@ -976,22 +983,23 @@ result = ;
 <a name="GenderizeAsync"></a>
 ## GenderizeAsync
 
-Detect person's gender from name string.             
+**Description:** Detect person's gender from name string.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Hypotheses about person&#39;s gender.
 
-Method call example:
+**Returns:** Hypotheses about person&#39;s gender.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.GenderizeAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GenderizeAsync method request.
+**Description:** GenderizeAsync method request.
 
-See parameter model documentation at [AiNameGenderizeRequest](AiNameGenderizeRequest.md)
+**See also** parameter model documentation at [**AiNameGenderizeRequest**](AiNameGenderizeRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1007,9 +1015,9 @@ var request = new AiNameGenderizeRequest
 
 ### Result
 
-*Returns:* Hypotheses about person&#39;s gender.
+**Returns:** Hypotheses about person&#39;s gender.
 
-*Return type:* [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
+**Return type:** [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1047,20 +1055,21 @@ result = ;
 <a name="GenderizeParsed"></a>
 ## GenderizeParsed
 
-Detect person's gender from parsed name.             
+**Description**: Detect person's gender from parsed name.             
 
-Returns: Hypotheses about person&#39;s gender.
 
-Method call example:
+**Returns:** Hypotheses about person&#39;s gender.
+
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.GenderizeParsed(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Gender detection request data.
+**Description:** Gender detection request data.
 
-See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
+**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1074,9 +1083,9 @@ var request = ;
 
 ### Result
 
-*Returns:* Hypotheses about person&#39;s gender.
+**Description:** Hypotheses about person&#39;s gender.
 
-*Return type:* [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
+**Return type:** [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1112,22 +1121,23 @@ result = ;
 <a name="GenderizeParsedAsync"></a>
 ## GenderizeParsedAsync
 
-Detect person's gender from parsed name.             
+**Description:** Detect person's gender from parsed name.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Hypotheses about person&#39;s gender.
 
-Method call example:
+**Returns:** Hypotheses about person&#39;s gender.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.GenderizeParsedAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Gender detection request data.
+**Description:** Gender detection request data.
 
-See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
+**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1141,9 +1151,9 @@ var request = ;
 
 ### Result
 
-*Returns:* Hypotheses about person&#39;s gender.
+**Description:** Hypotheses about person&#39;s gender.
 
-*Return type:* Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
+**Return type:** Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
 
 <details>
     <summary>Result example</summary>
@@ -1177,21 +1187,21 @@ result = ;
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Match"></a>
 ## Match
+**Descrption:** Compare people's names. Uses options for comparing instructions.             
 
-Compare people's names. Uses options for comparing instructions.             
 
-Returns: Match result.
+**Returns:** Match result.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.Match(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Match method request.
+**Description:** Match method request.
 
-See parameter model documentation at [AiNameMatchRequest](AiNameMatchRequest.md)
+**See also** parameter model documentation at [**AiNameMatchRequest**](AiNameMatchRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1208,9 +1218,9 @@ var request = new AiNameMatchRequest
 
 ### Result
 
-*Returns:* Match result.
+**Description:** Match result.
 
-*Return type:* [**AiNameMatchResult**](AiNameMatchResult.md)
+**Return type:** [**AiNameMatchResult**](AiNameMatchResult.md)
 
 <details>
     <summary>Result example</summary>
@@ -1272,22 +1282,23 @@ result = new AiNameMatchResult
 <a name="MatchAsync"></a>
 ## MatchAsync
 
-Compare people's names. Uses options for comparing instructions.             
+**Description:** Compare people's names. Uses options for comparing instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Match result.
 
-Method call example:
+**Returns:** Match result.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.MatchAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-MatchAsync method request.
+**Description:** MatchAsync method request.
 
-See parameter model documentation at [AiNameMatchRequest](AiNameMatchRequest.md)
+**See also** parameter model documentation at [**AiNameMatchRequest**](AiNameMatchRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1304,9 +1315,9 @@ var request = new AiNameMatchRequest
 
 ### Result
 
-*Returns:* Match result.
+**Returns:** Match result.
 
-*Return type:* [**AiNameMatchResult**](AiNameMatchResult.md)
+**Return type:** [**AiNameMatchResult**](AiNameMatchResult.md)
 
 <details>
     <summary>Result example</summary>
@@ -1367,20 +1378,21 @@ result = new AiNameMatchResult
 <a name="MatchParsed"></a>
 ## MatchParsed
 
-Compare people's parsed names and attributes. Uses options for comparing instructions.             
+**Description**: Compare people's parsed names and attributes. Uses options for comparing instructions.             
 
-Returns: Match result.
 
-Method call example:
+**Returns:** Match result.
+
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.MatchParsed(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Parsed names to match.
+**Description:** Parsed names to match.
 
-See parameter model documentation at [AiNameMatchParsedRequest](AiNameMatchParsedRequest.md)
+**See also** parameter model documentation at [**AiNameMatchParsedRequest**](AiNameMatchParsedRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1394,9 +1406,9 @@ var request = ;
 
 ### Result
 
-*Returns:* Match result.
+**Description:** Match result.
 
-*Return type:* [**AiNameMatchResult**](AiNameMatchResult.md)
+**Return type:** [**AiNameMatchResult**](AiNameMatchResult.md)
 
 <details>
     <summary>Result example</summary>
@@ -1454,22 +1466,23 @@ result = new AiNameMatchResult
 <a name="MatchParsedAsync"></a>
 ## MatchParsedAsync
 
-Compare people's parsed names and attributes. Uses options for comparing instructions.             
+**Description:** Compare people's parsed names and attributes. Uses options for comparing instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Match result.
 
-Method call example:
+**Returns:** Match result.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.MatchParsedAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Parsed names to match.
+**Description:** Parsed names to match.
 
-See parameter model documentation at [AiNameMatchParsedRequest](AiNameMatchParsedRequest.md)
+**See also** parameter model documentation at [**AiNameMatchParsedRequest**](AiNameMatchParsedRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1483,9 +1496,9 @@ var request = ;
 
 ### Result
 
-*Returns:* Match result.
+**Description:** Match result.
 
-*Return type:* Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
+**Return type:** Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
 
 <details>
     <summary>Result example</summary>
@@ -1541,21 +1554,21 @@ result = new AiNameMatchResult
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Parse"></a>
 ## Parse
+**Descrption:** Parse name to components.             
 
-Parse name to components.             
 
-Returns: List of name components.
+**Returns:** List of name components.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.Parse(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Parse method request.
+**Description:** Parse method request.
 
-See parameter model documentation at [AiNameParseRequest](AiNameParseRequest.md)
+**See also** parameter model documentation at [**AiNameParseRequest**](AiNameParseRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1573,9 +1586,9 @@ var request = new AiNameParseRequest
 
 ### Result
 
-*Returns:* List of name components.
+**Description:** List of name components.
 
-*Return type:* [**AiNameComponentList**](AiNameComponentList.md)
+**Return type:** [**AiNameComponentList**](AiNameComponentList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1616,22 +1629,23 @@ result = ;
 <a name="ParseAsync"></a>
 ## ParseAsync
 
-Parse name to components.             
+**Description:** Parse name to components.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: List of name components.
 
-Method call example:
+**Returns:** List of name components.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.ParseAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ParseAsync method request.
+**Description:** ParseAsync method request.
 
-See parameter model documentation at [AiNameParseRequest](AiNameParseRequest.md)
+**See also** parameter model documentation at [**AiNameParseRequest**](AiNameParseRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1649,9 +1663,9 @@ var request = new AiNameParseRequest
 
 ### Result
 
-*Returns:* List of name components.
+**Returns:** List of name components.
 
-*Return type:* [**AiNameComponentList**](AiNameComponentList.md)
+**Return type:** [**AiNameComponentList**](AiNameComponentList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1690,21 +1704,21 @@ result = ;
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="ParseEmailAddress"></a>
 ## ParseEmailAddress
+**Descrption:** Parse person's name out of an email address.             
 
-Parse person's name out of an email address.             
 
-Returns: Match result.
+**Returns:** Match result.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Ai.Name.ParseEmailAddress(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ParseEmailAddress method request.
+**Description:** ParseEmailAddress method request.
 
-See parameter model documentation at [AiNameParseEmailAddressRequest](AiNameParseEmailAddressRequest.md)
+**See also** parameter model documentation at [**AiNameParseEmailAddressRequest**](AiNameParseEmailAddressRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1720,9 +1734,9 @@ var request = new AiNameParseEmailAddressRequest
 
 ### Result
 
-*Returns:* Match result.
+**Description:** Match result.
 
-*Return type:* [**AiNameExtractedList**](AiNameExtractedList.md)
+**Return type:** [**AiNameExtractedList**](AiNameExtractedList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1761,22 +1775,23 @@ result = ;
 <a name="ParseEmailAddressAsync"></a>
 ## ParseEmailAddressAsync
 
-Parse person's name out of an email address.             
+**Description:** Parse person's name out of an email address.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Match result.
 
-Method call example:
+**Returns:** Match result.
+
+**Method call example:**
 ```csharp
 var result = await api.Ai.Name.ParseEmailAddressAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ParseEmailAddressAsync method request.
+**Description:** ParseEmailAddressAsync method request.
 
-See parameter model documentation at [AiNameParseEmailAddressRequest](AiNameParseEmailAddressRequest.md)
+**See also** parameter model documentation at [**AiNameParseEmailAddressRequest**](AiNameParseEmailAddressRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1792,9 +1807,9 @@ var request = new AiNameParseEmailAddressRequest
 
 ### Result
 
-*Returns:* Match result.
+**Returns:** Match result.
 
-*Return type:* [**AiNameExtractedList**](AiNameExtractedList.md)
+**Return type:** [**AiNameExtractedList**](AiNameExtractedList.md)
 
 <details>
     <summary>Result example</summary>

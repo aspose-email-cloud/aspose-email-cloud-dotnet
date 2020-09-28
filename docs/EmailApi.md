@@ -5,20 +5,21 @@ Email document (*.eml) operations.
 <a name="AsFile"></a>
 ## AsFile
 
-Converts Email model to specified format and returns as file.             
+**Description**: Converts Email model to specified format and returns as file.             
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = api.Email.AsFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Email model and format to convert.
+**Description:** Email model and format to convert.
 
-See parameter model documentation at [EmailAsFileRequest](EmailAsFileRequest.md)
+**See also** parameter model documentation at [**EmailAsFileRequest**](EmailAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -69,9 +70,9 @@ var request = new EmailAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -150,22 +151,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsFileAsync"></a>
 ## AsFileAsync
 
-Converts Email model to specified format and returns as file.             
+**Description:** Converts Email model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = await api.Email.AsFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Email model and format to convert.
+**Description:** Email model and format to convert.
 
-See parameter model documentation at [EmailAsFileRequest](EmailAsFileRequest.md)
+**See also** parameter model documentation at [**EmailAsFileRequest**](EmailAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -216,9 +218,9 @@ var request = new EmailAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Task<Stream>**
+**Return type:** **Task<Stream>**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -296,20 +298,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsMapi"></a>
 ## AsMapi
 
-Converts EmailDto to MapiMessageDto.             
+**Description**: Converts EmailDto to MapiMessageDto.             
 
-Returns: MAPI model message representation
 
-Method call example:
+**Returns:** MAPI model message representation
+
+**Method call example:**
 ```csharp
 var result = api.Email.AsMapi(emailDto);
 ```
 
-### emailDto Parameter
+### Parameter: *emailDto*
 
-Email model to convert
+**Description:** Email model to convert
 
-See parameter model documentation at [EmailDto](EmailDto.md)
+**See also** parameter model documentation at [**EmailDto**](EmailDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -357,9 +360,9 @@ var emailDto = new EmailDto
 
 ### Result
 
-*Returns:* MAPI model message representation
+**Description:** MAPI model message representation
 
-*Return type:* [**MapiMessageDto**](MapiMessageDto.md)
+**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -507,22 +510,23 @@ result = new MapiMessageDto
 <a name="AsMapiAsync"></a>
 ## AsMapiAsync
 
-Converts EmailDto to MapiMessageDto.             
+**Description:** Converts EmailDto to MapiMessageDto.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: MAPI model message representation
 
-Method call example:
+**Returns:** MAPI model message representation
+
+**Method call example:**
 ```csharp
 var result = await api.Email.AsMapiAsync(emailDto);
 ```
 
-### emailDto Parameter
+### Parameter: *emailDto*
 
-Email model to convert
+**Description:** Email model to convert
 
-See parameter model documentation at [EmailDto](EmailDto.md)
+**See also** parameter model documentation at [**EmailDto**](EmailDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -570,9 +574,9 @@ var emailDto = new EmailDto
 
 ### Result
 
-*Returns:* MAPI model message representation
+**Description:** MAPI model message representation
 
-*Return type:* Task<[**MapiMessageDto**](MapiMessageDto.md)>
+**Return type:** Task<[**MapiMessageDto**](MapiMessageDto.md)>
 
 <details>
     <summary>Result example</summary>
@@ -718,21 +722,21 @@ result = new MapiMessageDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Convert"></a>
 ## Convert
+**Descrption:** Converts email document to specified format and returns as file             
 
-Converts email document to specified format and returns as file             
 
-Returns: File stream in specified format
+**Returns:** File stream in specified format
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Email.Convert(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Convert method request.
+**Description:** Convert method request.
 
-See parameter model documentation at [EmailConvertRequest](EmailConvertRequest.md)
+**See also** parameter model documentation at [**EmailConvertRequest**](EmailConvertRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -750,9 +754,9 @@ var request = new EmailConvertRequest
 
 ### Result
 
-*Returns:* File stream in specified format
+**Description:** File stream in specified format
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -799,22 +803,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="ConvertAsync"></a>
 ## ConvertAsync
 
-Converts email document to specified format and returns as file             
+**Description:** Converts email document to specified format and returns as file             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format
 
-Method call example:
+**Returns:** File stream in specified format
+
+**Method call example:**
 ```csharp
 var result = await api.Email.ConvertAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ConvertAsync method request.
+**Description:** ConvertAsync method request.
 
-See parameter model documentation at [EmailConvertRequest](EmailConvertRequest.md)
+**See also** parameter model documentation at [**EmailConvertRequest**](EmailConvertRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -832,9 +837,9 @@ var request = new EmailConvertRequest
 
 ### Result
 
-*Returns:* File stream in specified format
+**Returns:** File stream in specified format
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -879,21 +884,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="FromFile"></a>
 ## FromFile
+**Descrption:** Converts email document to a model representation             
 
-Converts email document to a model representation             
 
-Returns: Email document model
+**Returns:** Email document model
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Email.FromFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFile method request.
+**Description:** FromFile method request.
 
-See parameter model documentation at [EmailFromFileRequest](EmailFromFileRequest.md)
+**See also** parameter model documentation at [**EmailFromFileRequest**](EmailFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -910,9 +915,9 @@ var request = new EmailFromFileRequest
 
 ### Result
 
-*Returns:* Email document model
+**Description:** Email document model
 
-*Return type:* [**EmailDto**](EmailDto.md)
+**Return type:** [**EmailDto**](EmailDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1020,22 +1025,23 @@ result = new EmailDto
 <a name="FromFileAsync"></a>
 ## FromFileAsync
 
-Converts email document to a model representation             
+**Description:** Converts email document to a model representation             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Email document model
 
-Method call example:
+**Returns:** Email document model
+
+**Method call example:**
 ```csharp
 var result = await api.Email.FromFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFileAsync method request.
+**Description:** FromFileAsync method request.
 
-See parameter model documentation at [EmailFromFileRequest](EmailFromFileRequest.md)
+**See also** parameter model documentation at [**EmailFromFileRequest**](EmailFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1052,9 +1058,9 @@ var request = new EmailFromFileRequest
 
 ### Result
 
-*Returns:* Email document model
+**Returns:** Email document model
 
-*Return type:* [**EmailDto**](EmailDto.md)
+**Return type:** [**EmailDto**](EmailDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1160,21 +1166,21 @@ result = new EmailDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Get"></a>
 ## Get
+**Descrption:** Get email document from storage.             
 
-Get email document from storage.             
 
-Returns: Email document.
+**Returns:** Email document.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Email.Get(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Get method request.
+**Description:** Get method request.
 
-See parameter model documentation at [EmailGetRequest](EmailGetRequest.md)
+**See also** parameter model documentation at [**EmailGetRequest**](EmailGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1193,9 +1199,9 @@ var request = new EmailGetRequest
 
 ### Result
 
-*Returns:* Email document.
+**Description:** Email document.
 
-*Return type:* [**EmailDto**](EmailDto.md)
+**Return type:** [**EmailDto**](EmailDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1305,22 +1311,23 @@ result = new EmailDto
 <a name="GetAsync"></a>
 ## GetAsync
 
-Get email document from storage.             
+**Description:** Get email document from storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Email document.
 
-Method call example:
+**Returns:** Email document.
+
+**Method call example:**
 ```csharp
 var result = await api.Email.GetAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsync method request.
+**Description:** GetAsync method request.
 
-See parameter model documentation at [EmailGetRequest](EmailGetRequest.md)
+**See also** parameter model documentation at [**EmailGetRequest**](EmailGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1339,9 +1346,9 @@ var request = new EmailGetRequest
 
 ### Result
 
-*Returns:* Email document.
+**Returns:** Email document.
 
-*Return type:* [**EmailDto**](EmailDto.md)
+**Return type:** [**EmailDto**](EmailDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1449,21 +1456,21 @@ result = new EmailDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetAsFile"></a>
 ## GetAsFile
+**Descrption:** Converts email document from storage to specified format and returns as file             
 
-Converts email document from storage to specified format and returns as file             
 
-Returns: File stream in specified format
+**Returns:** File stream in specified format
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Email.GetAsFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsFile method request.
+**Description:** GetAsFile method request.
 
-See parameter model documentation at [EmailGetAsFileRequest](EmailGetAsFileRequest.md)
+**See also** parameter model documentation at [**EmailGetAsFileRequest**](EmailGetAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1482,9 +1489,9 @@ var request = new EmailGetAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format
+**Description:** File stream in specified format
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -1532,22 +1539,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="GetAsFileAsync"></a>
 ## GetAsFileAsync
 
-Converts email document from storage to specified format and returns as file             
+**Description:** Converts email document from storage to specified format and returns as file             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format
 
-Method call example:
+**Returns:** File stream in specified format
+
+**Method call example:**
 ```csharp
 var result = await api.Email.GetAsFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsFileAsync method request.
+**Description:** GetAsFileAsync method request.
 
-See parameter model documentation at [EmailGetAsFileRequest](EmailGetAsFileRequest.md)
+**See also** parameter model documentation at [**EmailGetAsFileRequest**](EmailGetAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1566,9 +1574,9 @@ var request = new EmailGetAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format
+**Returns:** File stream in specified format
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -1614,21 +1622,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetList"></a>
 ## GetList
+**Descrption:** Get email list from storage folder.             
 
-Get email list from storage folder.             
 
-Returns: Email document list.
+**Returns:** Email document list.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Email.GetList(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetList method request.
+**Description:** GetList method request.
 
-See parameter model documentation at [EmailGetListRequest](EmailGetListRequest.md)
+**See also** parameter model documentation at [**EmailGetListRequest**](EmailGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1648,9 +1656,9 @@ var request = new EmailGetListRequest
 
 ### Result
 
-*Returns:* Email document list.
+**Description:** Email document list.
 
-*Return type:* [**EmailStorageList**](EmailStorageList.md)
+**Return type:** [**EmailStorageList**](EmailStorageList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1791,22 +1799,23 @@ result = new EmailStorageList
 <a name="GetListAsync"></a>
 ## GetListAsync
 
-Get email list from storage folder.             
+**Description:** Get email list from storage folder.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Email document list.
 
-Method call example:
+**Returns:** Email document list.
+
+**Method call example:**
 ```csharp
 var result = await api.Email.GetListAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetListAsync method request.
+**Description:** GetListAsync method request.
 
-See parameter model documentation at [EmailGetListRequest](EmailGetListRequest.md)
+**See also** parameter model documentation at [**EmailGetListRequest**](EmailGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1826,9 +1835,9 @@ var request = new EmailGetListRequest
 
 ### Result
 
-*Returns:* Email document list.
+**Returns:** Email document list.
 
-*Return type:* [**EmailStorageList**](EmailStorageList.md)
+**Return type:** [**EmailStorageList**](EmailStorageList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1968,20 +1977,21 @@ result = new EmailStorageList
 <a name="Save"></a>
 ## Save
 
-Save email document to storage.             
+**Description**: Save email document to storage.             
 
-Returns: Returns 200 if update is successful.
 
-Method call example:
+**Returns:** Returns 200 if update is successful.
+
+**Method call example:**
 ```csharp
 api.Email.Save(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Email document create/update request.
+**Description:** Email document create/update request.
 
-See parameter model documentation at [EmailSaveRequest](EmailSaveRequest.md)
+**See also** parameter model documentation at [**EmailSaveRequest**](EmailSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2039,9 +2049,9 @@ var request = new EmailSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if update is successful.
+**Description:** Returns 200 if update is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -2111,22 +2121,23 @@ api.Email.Save(request);
 <a name="SaveAsync"></a>
 ## SaveAsync
 
-Save email document to storage.             
+**Description:** Save email document to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if update is successful.
 
-Method call example:
+**Returns:** Returns 200 if update is successful.
+
+**Method call example:**
 ```csharp
 await api.Email.SaveAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Email document create/update request.
+**Description:** Email document create/update request.
 
-See parameter model documentation at [EmailSaveRequest](EmailSaveRequest.md)
+**See also** parameter model documentation at [**EmailSaveRequest**](EmailSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2184,9 +2195,9 @@ var request = new EmailSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if update is successful.
+**Description:** Returns 200 if update is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:

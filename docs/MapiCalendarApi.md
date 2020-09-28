@@ -5,20 +5,21 @@ MAPI calendar operations.
 <a name="AsCalendarDto"></a>
 ## AsCalendarDto
 
-Converts MAPI calendar model to CalendarDto model.             
+**Description**: Converts MAPI calendar model to CalendarDto model.             
 
-Returns: CalendarDto model.
 
-Method call example:
+**Returns:** CalendarDto model.
+
+**Method call example:**
 ```csharp
 var result = api.Mapi.Calendar.AsCalendarDto(mapiCalendarDto);
 ```
 
-### mapiCalendarDto Parameter
+### Parameter: *mapiCalendarDto*
 
-MAPI calendar model to convert.
+**Description:** MAPI calendar model to convert.
 
-See parameter model documentation at [MapiCalendarDto](MapiCalendarDto.md)
+**See also** parameter model documentation at [**MapiCalendarDto**](MapiCalendarDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -77,9 +78,9 @@ var mapiCalendarDto = new MapiCalendarDto
 
 ### Result
 
-*Returns:* CalendarDto model.
+**Description:** CalendarDto model.
 
-*Return type:* [**CalendarDto**](CalendarDto.md)
+**Return type:** [**CalendarDto**](CalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -214,22 +215,23 @@ result = new CalendarDto
 <a name="AsCalendarDtoAsync"></a>
 ## AsCalendarDtoAsync
 
-Converts MAPI calendar model to CalendarDto model.             
+**Description:** Converts MAPI calendar model to CalendarDto model.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: CalendarDto model.
 
-Method call example:
+**Returns:** CalendarDto model.
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Calendar.AsCalendarDtoAsync(mapiCalendarDto);
 ```
 
-### mapiCalendarDto Parameter
+### Parameter: *mapiCalendarDto*
 
-MAPI calendar model to convert.
+**Description:** MAPI calendar model to convert.
 
-See parameter model documentation at [MapiCalendarDto](MapiCalendarDto.md)
+**See also** parameter model documentation at [**MapiCalendarDto**](MapiCalendarDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -288,9 +290,9 @@ var mapiCalendarDto = new MapiCalendarDto
 
 ### Result
 
-*Returns:* CalendarDto model.
+**Description:** CalendarDto model.
 
-*Return type:* Task<[**CalendarDto**](CalendarDto.md)>
+**Return type:** Task<[**CalendarDto**](CalendarDto.md)>
 
 <details>
     <summary>Result example</summary>
@@ -424,20 +426,21 @@ result = new CalendarDto
 <a name="AsFile"></a>
 ## AsFile
 
-Converts MAPI calendar model to specified format and returns as file.             
+**Description**: Converts MAPI calendar model to specified format and returns as file.             
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = api.Mapi.Calendar.AsFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-MAPI calendar model to convert.
+**Description:** MAPI calendar model to convert.
 
-See parameter model documentation at [MapiCalendarAsFileRequest](MapiCalendarAsFileRequest.md)
+**See also** parameter model documentation at [**MapiCalendarAsFileRequest**](MapiCalendarAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -500,9 +503,9 @@ var request = new MapiCalendarAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -593,22 +596,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsFileAsync"></a>
 ## AsFileAsync
 
-Converts MAPI calendar model to specified format and returns as file.             
+**Description:** Converts MAPI calendar model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Calendar.AsFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-MAPI calendar model to convert.
+**Description:** MAPI calendar model to convert.
 
-See parameter model documentation at [MapiCalendarAsFileRequest](MapiCalendarAsFileRequest.md)
+**See also** parameter model documentation at [**MapiCalendarAsFileRequest**](MapiCalendarAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -671,9 +675,9 @@ var request = new MapiCalendarAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Task<Stream>**
+**Return type:** **Task<Stream>**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -762,21 +766,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="FromFile"></a>
 ## FromFile
+**Descrption:** Converts calendar file to a MAPI model representation.             
 
-Converts calendar file to a MAPI model representation.             
 
-Returns: MAPI model.
+**Returns:** MAPI model.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Mapi.Calendar.FromFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFile method request.
+**Description:** FromFile method request.
 
-See parameter model documentation at [MapiCalendarFromFileRequest](MapiCalendarFromFileRequest.md)
+**See also** parameter model documentation at [**MapiCalendarFromFileRequest**](MapiCalendarFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -792,9 +796,9 @@ var request = new MapiCalendarFromFileRequest
 
 ### Result
 
-*Returns:* MAPI model.
+**Description:** MAPI model.
 
-*Return type:* [**MapiCalendarDto**](MapiCalendarDto.md)
+**Return type:** [**MapiCalendarDto**](MapiCalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -923,22 +927,23 @@ result = new MapiCalendarDto
 <a name="FromFileAsync"></a>
 ## FromFileAsync
 
-Converts calendar file to a MAPI model representation.             
+**Description:** Converts calendar file to a MAPI model representation.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: MAPI model.
 
-Method call example:
+**Returns:** MAPI model.
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Calendar.FromFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFileAsync method request.
+**Description:** FromFileAsync method request.
 
-See parameter model documentation at [MapiCalendarFromFileRequest](MapiCalendarFromFileRequest.md)
+**See also** parameter model documentation at [**MapiCalendarFromFileRequest**](MapiCalendarFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -954,9 +959,9 @@ var request = new MapiCalendarFromFileRequest
 
 ### Result
 
-*Returns:* MAPI model.
+**Returns:** MAPI model.
 
-*Return type:* [**MapiCalendarDto**](MapiCalendarDto.md)
+**Return type:** [**MapiCalendarDto**](MapiCalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1083,21 +1088,21 @@ result = new MapiCalendarDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Get"></a>
 ## Get
+**Descrption:** Get MAPI calendar document.             
 
-Get MAPI calendar document.             
 
-Returns: MAPI Calendar model.
+**Returns:** MAPI Calendar model.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Mapi.Calendar.Get(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Get method request.
+**Description:** Get method request.
 
-See parameter model documentation at [MapiCalendarGetRequest](MapiCalendarGetRequest.md)
+**See also** parameter model documentation at [**MapiCalendarGetRequest**](MapiCalendarGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1115,9 +1120,9 @@ var request = new MapiCalendarGetRequest
 
 ### Result
 
-*Returns:* MAPI Calendar model.
+**Description:** MAPI Calendar model.
 
-*Return type:* [**MapiCalendarDto**](MapiCalendarDto.md)
+**Return type:** [**MapiCalendarDto**](MapiCalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1248,22 +1253,23 @@ result = new MapiCalendarDto
 <a name="GetAsync"></a>
 ## GetAsync
 
-Get MAPI calendar document.             
+**Description:** Get MAPI calendar document.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: MAPI Calendar model.
 
-Method call example:
+**Returns:** MAPI Calendar model.
+
+**Method call example:**
 ```csharp
 var result = await api.Mapi.Calendar.GetAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsync method request.
+**Description:** GetAsync method request.
 
-See parameter model documentation at [MapiCalendarGetRequest](MapiCalendarGetRequest.md)
+**See also** parameter model documentation at [**MapiCalendarGetRequest**](MapiCalendarGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1281,9 +1287,9 @@ var request = new MapiCalendarGetRequest
 
 ### Result
 
-*Returns:* MAPI Calendar model.
+**Returns:** MAPI Calendar model.
 
-*Return type:* [**MapiCalendarDto**](MapiCalendarDto.md)
+**Return type:** [**MapiCalendarDto**](MapiCalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1413,20 +1419,21 @@ result = new MapiCalendarDto
 <a name="Save"></a>
 ## Save
 
-Save MAPI Calendar to storage.             
+**Description**: Save MAPI Calendar to storage.             
 
-Returns: Returns 200 if update is successful.
 
-Method call example:
+**Returns:** Returns 200 if update is successful.
+
+**Method call example:**
 ```csharp
 api.Mapi.Calendar.Save(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Calendar create/update request.
+**Description:** Calendar create/update request.
 
-See parameter model documentation at [MapiCalendarSaveRequest](MapiCalendarSaveRequest.md)
+**See also** parameter model documentation at [**MapiCalendarSaveRequest**](MapiCalendarSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1495,9 +1502,9 @@ var request = new MapiCalendarSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if update is successful.
+**Description:** Returns 200 if update is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -1578,22 +1585,23 @@ api.Mapi.Calendar.Save(request);
 <a name="SaveAsync"></a>
 ## SaveAsync
 
-Save MAPI Calendar to storage.             
+**Description:** Save MAPI Calendar to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if update is successful.
 
-Method call example:
+**Returns:** Returns 200 if update is successful.
+
+**Method call example:**
 ```csharp
 await api.Mapi.Calendar.SaveAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Calendar create/update request.
+**Description:** Calendar create/update request.
 
-See parameter model documentation at [MapiCalendarSaveRequest](MapiCalendarSaveRequest.md)
+**See also** parameter model documentation at [**MapiCalendarSaveRequest**](MapiCalendarSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1662,9 +1670,9 @@ var request = new MapiCalendarSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if update is successful.
+**Description:** Returns 200 if update is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:

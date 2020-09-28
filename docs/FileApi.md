@@ -4,21 +4,21 @@ File operations controller
 
 <a name="CopyFile"></a>
 ## CopyFile
+**Descrption:** Copy file
 
-Copy file
 
-Returns: Returns 200 if the copy is successful.
+**Returns:** Returns 200 if the copy is successful.
 
-Method call example:
+**Method call example:**
 ```csharp
 api.CloudStorage.File.CopyFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-CopyFile method request.
+**Description:** CopyFile method request.
 
-See parameter model documentation at [CopyFileRequest](CopyFileRequest.md)
+**See also** parameter model documentation at [**CopyFileRequest**](CopyFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -37,9 +37,9 @@ var request = new CopyFileRequest
 
 ### Result
 
-*Returns:* Returns 200 if the copy is successful.
+**Description:** Returns 200 if the copy is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -71,22 +71,23 @@ api.CloudStorage.File.CopyFile(request);
 <a name="CopyFileAsync"></a>
 ## CopyFileAsync
 
-Copy file
+**Description:** Copy file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if the copy is successful.
 
-Method call example:
+**Returns:** Returns 200 if the copy is successful.
+
+**Method call example:**
 ```csharp
 await api.CloudStorage.File.CopyFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-CopyFileAsync method request.
+**Description:** CopyFileAsync method request.
 
-See parameter model documentation at [CopyFileRequest](CopyFileRequest.md)
+**See also** parameter model documentation at [**CopyFileRequest**](CopyFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -105,9 +106,9 @@ var request = new CopyFileRequest
 
 ### Result
 
-*Returns:* Returns 200 if the copy is successful.
+**Returns:** Returns 200 if the copy is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -137,21 +138,21 @@ await api.CloudStorage.File.CopyFileAsync(request);
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="DeleteFile"></a>
 ## DeleteFile
+**Descrption:** Delete file
 
-Delete file
 
-Returns: Returns 200 if the delete is successful.
+**Returns:** Returns 200 if the delete is successful.
 
-Method call example:
+**Method call example:**
 ```csharp
 api.CloudStorage.File.DeleteFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-DeleteFile method request.
+**Description:** DeleteFile method request.
 
-See parameter model documentation at [DeleteFileRequest](DeleteFileRequest.md)
+**See also** parameter model documentation at [**DeleteFileRequest**](DeleteFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -168,9 +169,9 @@ var request = new DeleteFileRequest
 
 ### Result
 
-*Returns:* Returns 200 if the delete is successful.
+**Description:** Returns 200 if the delete is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -200,22 +201,23 @@ api.CloudStorage.File.DeleteFile(request);
 <a name="DeleteFileAsync"></a>
 ## DeleteFileAsync
 
-Delete file
+**Description:** Delete file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if the delete is successful.
 
-Method call example:
+**Returns:** Returns 200 if the delete is successful.
+
+**Method call example:**
 ```csharp
 await api.CloudStorage.File.DeleteFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-DeleteFileAsync method request.
+**Description:** DeleteFileAsync method request.
 
-See parameter model documentation at [DeleteFileRequest](DeleteFileRequest.md)
+**See also** parameter model documentation at [**DeleteFileRequest**](DeleteFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -232,9 +234,9 @@ var request = new DeleteFileRequest
 
 ### Result
 
-*Returns:* Returns 200 if the delete is successful.
+**Returns:** Returns 200 if the delete is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -262,21 +264,21 @@ await api.CloudStorage.File.DeleteFileAsync(request);
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="DownloadFile"></a>
 ## DownloadFile
+**Descrption:** Download file
 
-Download file
 
-Returns: The raw data of the file.
+**Returns:** The raw data of the file.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.CloudStorage.File.DownloadFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-DownloadFile method request.
+**Description:** DownloadFile method request.
 
-See parameter model documentation at [DownloadFileRequest](DownloadFileRequest.md)
+**See also** parameter model documentation at [**DownloadFileRequest**](DownloadFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -293,9 +295,9 @@ var request = new DownloadFileRequest
 
 ### Result
 
-*Returns:* The raw data of the file.
+**Description:** The raw data of the file.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -341,22 +343,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="DownloadFileAsync"></a>
 ## DownloadFileAsync
 
-Download file
+**Description:** Download file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: The raw data of the file.
 
-Method call example:
+**Returns:** The raw data of the file.
+
+**Method call example:**
 ```csharp
 var result = await api.CloudStorage.File.DownloadFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-DownloadFileAsync method request.
+**Description:** DownloadFileAsync method request.
 
-See parameter model documentation at [DownloadFileRequest](DownloadFileRequest.md)
+**See also** parameter model documentation at [**DownloadFileRequest**](DownloadFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -373,9 +376,9 @@ var request = new DownloadFileRequest
 
 ### Result
 
-*Returns:* The raw data of the file.
+**Returns:** The raw data of the file.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -419,21 +422,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="MoveFile"></a>
 ## MoveFile
+**Descrption:** Move file
 
-Move file
 
-Returns: Returns 200 if the move is successful.
+**Returns:** Returns 200 if the move is successful.
 
-Method call example:
+**Method call example:**
 ```csharp
 api.CloudStorage.File.MoveFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-MoveFile method request.
+**Description:** MoveFile method request.
 
-See parameter model documentation at [MoveFileRequest](MoveFileRequest.md)
+**See also** parameter model documentation at [**MoveFileRequest**](MoveFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -452,9 +455,9 @@ var request = new MoveFileRequest
 
 ### Result
 
-*Returns:* Returns 200 if the move is successful.
+**Description:** Returns 200 if the move is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -486,22 +489,23 @@ api.CloudStorage.File.MoveFile(request);
 <a name="MoveFileAsync"></a>
 ## MoveFileAsync
 
-Move file
+**Description:** Move file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if the move is successful.
 
-Method call example:
+**Returns:** Returns 200 if the move is successful.
+
+**Method call example:**
 ```csharp
 await api.CloudStorage.File.MoveFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-MoveFileAsync method request.
+**Description:** MoveFileAsync method request.
 
-See parameter model documentation at [MoveFileRequest](MoveFileRequest.md)
+**See also** parameter model documentation at [**MoveFileRequest**](MoveFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -520,9 +524,9 @@ var request = new MoveFileRequest
 
 ### Result
 
-*Returns:* Returns 200 if the move is successful.
+**Returns:** Returns 200 if the move is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -552,21 +556,21 @@ await api.CloudStorage.File.MoveFileAsync(request);
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="UploadFile"></a>
 ## UploadFile
+**Descrption:** Upload file
 
-Upload file
 
-Returns: Empty error list if the upload is successful.
+**Returns:** Empty error list if the upload is successful.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.CloudStorage.File.UploadFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-UploadFile method request.
+**Description:** UploadFile method request.
 
-See parameter model documentation at [UploadFileRequest](UploadFileRequest.md)
+**See also** parameter model documentation at [**UploadFileRequest**](UploadFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -584,9 +588,9 @@ var request = new UploadFileRequest
 
 ### Result
 
-*Returns:* Empty error list if the upload is successful.
+**Description:** Empty error list if the upload is successful.
 
-*Return type:* [**FilesUploadResult**](FilesUploadResult.md)
+**Return type:** [**FilesUploadResult**](FilesUploadResult.md)
 
 <details>
     <summary>Result example</summary>
@@ -627,22 +631,23 @@ result = ;
 <a name="UploadFileAsync"></a>
 ## UploadFileAsync
 
-Upload file
+**Description:** Upload file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Empty error list if the upload is successful.
 
-Method call example:
+**Returns:** Empty error list if the upload is successful.
+
+**Method call example:**
 ```csharp
 var result = await api.CloudStorage.File.UploadFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-UploadFileAsync method request.
+**Description:** UploadFileAsync method request.
 
-See parameter model documentation at [UploadFileRequest](UploadFileRequest.md)
+**See also** parameter model documentation at [**UploadFileRequest**](UploadFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -660,9 +665,9 @@ var request = new UploadFileRequest
 
 ### Result
 
-*Returns:* Empty error list if the upload is successful.
+**Returns:** Empty error list if the upload is successful.
 
-*Return type:* [**FilesUploadResult**](FilesUploadResult.md)
+**Return type:** [**FilesUploadResult**](FilesUploadResult.md)
 
 <details>
     <summary>Result example</summary>

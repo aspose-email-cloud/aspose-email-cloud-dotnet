@@ -5,20 +5,21 @@ iCalendar document operations.
 <a name="AsAlternate"></a>
 ## AsAlternate
 
-Convert iCalendar to AlternateView             
+**Description**: Convert iCalendar to AlternateView             
 
-Returns: iCalendar document represented as AlternateView
 
-Method call example:
+**Returns:** iCalendar document represented as AlternateView
+
+**Method call example:**
 ```csharp
 var result = api.Calendar.AsAlternate(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-iCalendar to AlternateView request
+**Description:** iCalendar to AlternateView request
 
-See parameter model documentation at [CalendarAsAlternateRequest](CalendarAsAlternateRequest.md)
+**See also** parameter model documentation at [**CalendarAsAlternateRequest**](CalendarAsAlternateRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -63,9 +64,9 @@ var request = new CalendarAsAlternateRequest
 
 ### Result
 
-*Returns:* iCalendar document represented as AlternateView
+**Description:** iCalendar document represented as AlternateView
 
-*Return type:* [**AlternateView**](AlternateView.md)
+**Return type:** [**AlternateView**](AlternateView.md)
 
 <details>
     <summary>Result example</summary>
@@ -188,22 +189,23 @@ result = new AlternateView
 <a name="AsAlternateAsync"></a>
 ## AsAlternateAsync
 
-Convert iCalendar to AlternateView             
+**Description:** Convert iCalendar to AlternateView             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: iCalendar document represented as AlternateView
 
-Method call example:
+**Returns:** iCalendar document represented as AlternateView
+
+**Method call example:**
 ```csharp
 var result = await api.Calendar.AsAlternateAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-iCalendar to AlternateView request
+**Description:** iCalendar to AlternateView request
 
-See parameter model documentation at [CalendarAsAlternateRequest](CalendarAsAlternateRequest.md)
+**See also** parameter model documentation at [**CalendarAsAlternateRequest**](CalendarAsAlternateRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -248,9 +250,9 @@ var request = new CalendarAsAlternateRequest
 
 ### Result
 
-*Returns:* iCalendar document represented as AlternateView
+**Description:** iCalendar document represented as AlternateView
 
-*Return type:* Task<[**AlternateView**](AlternateView.md)>
+**Return type:** Task<[**AlternateView**](AlternateView.md)>
 
 <details>
     <summary>Result example</summary>
@@ -372,20 +374,21 @@ result = new AlternateView
 <a name="AsFile"></a>
 ## AsFile
 
-Converts calendar model to specified format and returns as file.             
+**Description**: Converts calendar model to specified format and returns as file.             
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = api.Calendar.AsFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Calendar model and format to convert.
+**Description:** Calendar model and format to convert.
 
-See parameter model documentation at [CalendarAsFileRequest](CalendarAsFileRequest.md)
+**See also** parameter model documentation at [**CalendarAsFileRequest**](CalendarAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -429,9 +432,9 @@ var request = new CalendarAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -503,22 +506,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsFileAsync"></a>
 ## AsFileAsync
 
-Converts calendar model to specified format and returns as file.             
+**Description:** Converts calendar model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = await api.Calendar.AsFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Calendar model and format to convert.
+**Description:** Calendar model and format to convert.
 
-See parameter model documentation at [CalendarAsFileRequest](CalendarAsFileRequest.md)
+**See also** parameter model documentation at [**CalendarAsFileRequest**](CalendarAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -562,9 +566,9 @@ var request = new CalendarAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Task<Stream>**
+**Return type:** **Task<Stream>**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -635,20 +639,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsMapi"></a>
 ## AsMapi
 
-Converts CalendarDto to MapiCalendarDto.             
+**Description**: Converts CalendarDto to MapiCalendarDto.             
 
-Returns: MAPI model calendar representation.
 
-Method call example:
+**Returns:** MAPI model calendar representation.
+
+**Method call example:**
 ```csharp
 var result = api.Calendar.AsMapi(calendarDto);
 ```
 
-### calendarDto Parameter
+### Parameter: *calendarDto*
 
-iCalendar model calendar representation.
+**Description:** iCalendar model calendar representation.
 
-See parameter model documentation at [CalendarDto](CalendarDto.md)
+**See also** parameter model documentation at [**CalendarDto**](CalendarDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -689,9 +694,9 @@ var calendarDto = new CalendarDto
 
 ### Result
 
-*Returns:* MAPI model calendar representation.
+**Description:** MAPI model calendar representation.
 
-*Return type:* [**MapiCalendarDto**](MapiCalendarDto.md)
+**Return type:** [**MapiCalendarDto**](MapiCalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -844,22 +849,23 @@ result = new MapiCalendarDto
 <a name="AsMapiAsync"></a>
 ## AsMapiAsync
 
-Converts CalendarDto to MapiCalendarDto.             
+**Description:** Converts CalendarDto to MapiCalendarDto.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: MAPI model calendar representation.
 
-Method call example:
+**Returns:** MAPI model calendar representation.
+
+**Method call example:**
 ```csharp
 var result = await api.Calendar.AsMapiAsync(calendarDto);
 ```
 
-### calendarDto Parameter
+### Parameter: *calendarDto*
 
-iCalendar model calendar representation.
+**Description:** iCalendar model calendar representation.
 
-See parameter model documentation at [CalendarDto](CalendarDto.md)
+**See also** parameter model documentation at [**CalendarDto**](CalendarDto.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -900,9 +906,9 @@ var calendarDto = new CalendarDto
 
 ### Result
 
-*Returns:* MAPI model calendar representation.
+**Description:** MAPI model calendar representation.
 
-*Return type:* Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
+**Return type:** Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
 
 <details>
     <summary>Result example</summary>
@@ -1053,21 +1059,21 @@ result = new MapiCalendarDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Convert"></a>
 ## Convert
+**Descrption:** Converts calendar document to specified format and returns as file.             
 
-Converts calendar document to specified format and returns as file.             
 
-Returns: File stream in specified format.
+**Returns:** File stream in specified format.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Calendar.Convert(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Convert method request.
+**Description:** Convert method request.
 
-See parameter model documentation at [CalendarConvertRequest](CalendarConvertRequest.md)
+**See also** parameter model documentation at [**CalendarConvertRequest**](CalendarConvertRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1084,9 +1090,9 @@ var request = new CalendarConvertRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -1132,22 +1138,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="ConvertAsync"></a>
 ## ConvertAsync
 
-Converts calendar document to specified format and returns as file.             
+**Description:** Converts calendar document to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = await api.Calendar.ConvertAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ConvertAsync method request.
+**Description:** ConvertAsync method request.
 
-See parameter model documentation at [CalendarConvertRequest](CalendarConvertRequest.md)
+**See also** parameter model documentation at [**CalendarConvertRequest**](CalendarConvertRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1164,9 +1171,9 @@ var request = new CalendarConvertRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Returns:** File stream in specified format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -1210,21 +1217,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="FromFile"></a>
 ## FromFile
+**Descrption:** Converts calendar document to a model representation.             
 
-Converts calendar document to a model representation.             
 
-Returns: iCalendar model.
+**Returns:** iCalendar model.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Calendar.FromFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFile method request.
+**Description:** FromFile method request.
 
-See parameter model documentation at [CalendarFromFileRequest](CalendarFromFileRequest.md)
+**See also** parameter model documentation at [**CalendarFromFileRequest**](CalendarFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1240,9 +1247,9 @@ var request = new CalendarFromFileRequest
 
 ### Result
 
-*Returns:* iCalendar model.
+**Description:** iCalendar model.
 
-*Return type:* [**CalendarDto**](CalendarDto.md)
+**Return type:** [**CalendarDto**](CalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1335,22 +1342,23 @@ result = new CalendarDto
 <a name="FromFileAsync"></a>
 ## FromFileAsync
 
-Converts calendar document to a model representation.             
+**Description:** Converts calendar document to a model representation.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: iCalendar model.
 
-Method call example:
+**Returns:** iCalendar model.
+
+**Method call example:**
 ```csharp
 var result = await api.Calendar.FromFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FromFileAsync method request.
+**Description:** FromFileAsync method request.
 
-See parameter model documentation at [CalendarFromFileRequest](CalendarFromFileRequest.md)
+**See also** parameter model documentation at [**CalendarFromFileRequest**](CalendarFromFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1366,9 +1374,9 @@ var request = new CalendarFromFileRequest
 
 ### Result
 
-*Returns:* iCalendar model.
+**Returns:** iCalendar model.
 
-*Return type:* [**CalendarDto**](CalendarDto.md)
+**Return type:** [**CalendarDto**](CalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1459,21 +1467,21 @@ result = new CalendarDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Get"></a>
 ## Get
+**Descrption:** Get calendar file from storage.             
 
-Get calendar file from storage.             
 
-Returns: iCalendar model.
+**Returns:** iCalendar model.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Calendar.Get(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Get method request.
+**Description:** Get method request.
 
-See parameter model documentation at [CalendarGetRequest](CalendarGetRequest.md)
+**See also** parameter model documentation at [**CalendarGetRequest**](CalendarGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1491,9 +1499,9 @@ var request = new CalendarGetRequest
 
 ### Result
 
-*Returns:* iCalendar model.
+**Description:** iCalendar model.
 
-*Return type:* [**CalendarDto**](CalendarDto.md)
+**Return type:** [**CalendarDto**](CalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1588,22 +1596,23 @@ result = new CalendarDto
 <a name="GetAsync"></a>
 ## GetAsync
 
-Get calendar file from storage.             
+**Description:** Get calendar file from storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: iCalendar model.
 
-Method call example:
+**Returns:** iCalendar model.
+
+**Method call example:**
 ```csharp
 var result = await api.Calendar.GetAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsync method request.
+**Description:** GetAsync method request.
 
-See parameter model documentation at [CalendarGetRequest](CalendarGetRequest.md)
+**See also** parameter model documentation at [**CalendarGetRequest**](CalendarGetRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1621,9 +1630,9 @@ var request = new CalendarGetRequest
 
 ### Result
 
-*Returns:* iCalendar model.
+**Returns:** iCalendar model.
 
-*Return type:* [**CalendarDto**](CalendarDto.md)
+**Return type:** [**CalendarDto**](CalendarDto.md)
 
 <details>
     <summary>Result example</summary>
@@ -1716,21 +1725,21 @@ result = new CalendarDto
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetAsAlternate"></a>
 ## GetAsAlternate
+**Descrption:** Get iCalendar from storage as AlternateView             
 
-Get iCalendar from storage as AlternateView             
 
-Returns: iCalendar document represented as AlternateView
+**Returns:** iCalendar document represented as AlternateView
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Calendar.GetAsAlternate(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsAlternate method request.
+**Description:** GetAsAlternate method request.
 
-See parameter model documentation at [CalendarGetAsAlternateRequest](CalendarGetAsAlternateRequest.md)
+**See also** parameter model documentation at [**CalendarGetAsAlternateRequest**](CalendarGetAsAlternateRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1749,9 +1758,9 @@ var request = new CalendarGetAsAlternateRequest
 
 ### Result
 
-*Returns:* iCalendar document represented as AlternateView
+**Description:** iCalendar document represented as AlternateView
 
-*Return type:* [**AlternateView**](AlternateView.md)
+**Return type:** [**AlternateView**](AlternateView.md)
 
 <details>
     <summary>Result example</summary>
@@ -1849,22 +1858,23 @@ result = new AlternateView
 <a name="GetAsAlternateAsync"></a>
 ## GetAsAlternateAsync
 
-Get iCalendar from storage as AlternateView             
+**Description:** Get iCalendar from storage as AlternateView             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: iCalendar document represented as AlternateView
 
-Method call example:
+**Returns:** iCalendar document represented as AlternateView
+
+**Method call example:**
 ```csharp
 var result = await api.Calendar.GetAsAlternateAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsAlternateAsync method request.
+**Description:** GetAsAlternateAsync method request.
 
-See parameter model documentation at [CalendarGetAsAlternateRequest](CalendarGetAsAlternateRequest.md)
+**See also** parameter model documentation at [**CalendarGetAsAlternateRequest**](CalendarGetAsAlternateRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1883,9 +1893,9 @@ var request = new CalendarGetAsAlternateRequest
 
 ### Result
 
-*Returns:* iCalendar document represented as AlternateView
+**Returns:** iCalendar document represented as AlternateView
 
-*Return type:* [**AlternateView**](AlternateView.md)
+**Return type:** [**AlternateView**](AlternateView.md)
 
 <details>
     <summary>Result example</summary>
@@ -1981,21 +1991,21 @@ result = new AlternateView
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetAsFile"></a>
 ## GetAsFile
+**Descrption:** Converts calendar document from storage to specified format and returns as file.             
 
-Converts calendar document from storage to specified format and returns as file.             
 
-Returns: File stream in specified format.
+**Returns:** File stream in specified format.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Calendar.GetAsFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsFile method request.
+**Description:** GetAsFile method request.
 
-See parameter model documentation at [CalendarGetAsFileRequest](CalendarGetAsFileRequest.md)
+**See also** parameter model documentation at [**CalendarGetAsFileRequest**](CalendarGetAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2014,9 +2024,9 @@ var request = new CalendarGetAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Description:** File stream in specified format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -2064,22 +2074,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="GetAsFileAsync"></a>
 ## GetAsFileAsync
 
-Converts calendar document from storage to specified format and returns as file.             
+**Description:** Converts calendar document from storage to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: File stream in specified format.
 
-Method call example:
+**Returns:** File stream in specified format.
+
+**Method call example:**
 ```csharp
 var result = await api.Calendar.GetAsFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetAsFileAsync method request.
+**Description:** GetAsFileAsync method request.
 
-See parameter model documentation at [CalendarGetAsFileRequest](CalendarGetAsFileRequest.md)
+**See also** parameter model documentation at [**CalendarGetAsFileRequest**](CalendarGetAsFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2098,9 +2109,9 @@ var request = new CalendarGetAsFileRequest
 
 ### Result
 
-*Returns:* File stream in specified format.
+**Returns:** File stream in specified format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -2146,21 +2157,21 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetList"></a>
 ## GetList
+**Descrption:** Get iCalendar list from storage folder.             
 
-Get iCalendar list from storage folder.             
 
-Returns: iCalendar document list.
+**Returns:** iCalendar document list.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Calendar.GetList(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetList method request.
+**Description:** GetList method request.
 
-See parameter model documentation at [CalendarGetListRequest](CalendarGetListRequest.md)
+**See also** parameter model documentation at [**CalendarGetListRequest**](CalendarGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2179,9 +2190,9 @@ var request = new CalendarGetListRequest
 
 ### Result
 
-*Returns:* iCalendar document list.
+**Description:** iCalendar document list.
 
-*Return type:* [**CalendarStorageList**](CalendarStorageList.md)
+**Return type:** [**CalendarStorageList**](CalendarStorageList.md)
 
 <details>
     <summary>Result example</summary>
@@ -2307,22 +2318,23 @@ result = new CalendarStorageList
 <a name="GetListAsync"></a>
 ## GetListAsync
 
-Get iCalendar list from storage folder.             
+**Description:** Get iCalendar list from storage folder.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: iCalendar document list.
 
-Method call example:
+**Returns:** iCalendar document list.
+
+**Method call example:**
 ```csharp
 var result = await api.Calendar.GetListAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-GetListAsync method request.
+**Description:** GetListAsync method request.
 
-See parameter model documentation at [CalendarGetListRequest](CalendarGetListRequest.md)
+**See also** parameter model documentation at [**CalendarGetListRequest**](CalendarGetListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2341,9 +2353,9 @@ var request = new CalendarGetListRequest
 
 ### Result
 
-*Returns:* iCalendar document list.
+**Returns:** iCalendar document list.
 
-*Return type:* [**CalendarStorageList**](CalendarStorageList.md)
+**Return type:** [**CalendarStorageList**](CalendarStorageList.md)
 
 <details>
     <summary>Result example</summary>
@@ -2468,20 +2480,21 @@ result = new CalendarStorageList
 <a name="Save"></a>
 ## Save
 
-Save iCalendar             
+**Description**: Save iCalendar             
 
-Returns: Returns 200 if update is successful.
 
-Method call example:
+**Returns:** Returns 200 if update is successful.
+
+**Method call example:**
 ```csharp
 api.Calendar.Save(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-iCalendar create/update request
+**Description:** iCalendar create/update request
 
-See parameter model documentation at [CalendarSaveRequest](CalendarSaveRequest.md)
+**See also** parameter model documentation at [**CalendarSaveRequest**](CalendarSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2531,9 +2544,9 @@ var request = new CalendarSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if update is successful.
+**Description:** Returns 200 if update is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -2595,22 +2608,23 @@ api.Calendar.Save(request);
 <a name="SaveAsync"></a>
 ## SaveAsync
 
-Save iCalendar             
+**Description:** Save iCalendar             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if update is successful.
 
-Method call example:
+**Returns:** Returns 200 if update is successful.
+
+**Method call example:**
 ```csharp
 await api.Calendar.SaveAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-iCalendar create/update request
+**Description:** iCalendar create/update request
 
-See parameter model documentation at [CalendarSaveRequest](CalendarSaveRequest.md)
+**See also** parameter model documentation at [**CalendarSaveRequest**](CalendarSaveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2660,9 +2674,9 @@ var request = new CalendarSaveRequest
 
 ### Result
 
-*Returns:* Returns 200 if update is successful.
+**Description:** Returns 200 if update is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:

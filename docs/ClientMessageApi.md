@@ -5,20 +5,21 @@ Email client message operations.
 <a name="Append"></a>
 ## Append
 
-Add email message to specified folder in email account.             
+**Description**: Add email message to specified folder in email account.             
 
-Returns: Message id.
 
-Method call example:
+**Returns:** Message id.
+
+**Method call example:**
 ```csharp
 var result = api.Client.Message.Append(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Append email request.
+**Description:** Append email request.
 
-See parameter model documentation at [ClientMessageAppendRequest](ClientMessageAppendRequest.md)
+**See also** parameter model documentation at [**ClientMessageAppendRequest**](ClientMessageAppendRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -80,9 +81,9 @@ var request = new ClientMessageAppendRequest
 
 ### Result
 
-*Returns:* Message id.
+**Description:** Message id.
 
-*Return type:* [**ValueTOfString**](ValueTOfString.md)
+**Return type:** [**ValueTOfString**](ValueTOfString.md)
 
 <details>
     <summary>Result example</summary>
@@ -166,22 +167,23 @@ result = ;
 <a name="AppendAsync"></a>
 ## AppendAsync
 
-Add email message to specified folder in email account.             
+**Description:** Add email message to specified folder in email account.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Message id.
 
-Method call example:
+**Returns:** Message id.
+
+**Method call example:**
 ```csharp
 var result = await api.Client.Message.AppendAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Append email request.
+**Description:** Append email request.
 
-See parameter model documentation at [ClientMessageAppendRequest](ClientMessageAppendRequest.md)
+**See also** parameter model documentation at [**ClientMessageAppendRequest**](ClientMessageAppendRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -243,9 +245,9 @@ var request = new ClientMessageAppendRequest
 
 ### Result
 
-*Returns:* Message id.
+**Description:** Message id.
 
-*Return type:* Task<[**ValueTOfString**](ValueTOfString.md)>
+**Return type:** Task<[**ValueTOfString**](ValueTOfString.md)>
 
 <details>
     <summary>Result example</summary>
@@ -327,21 +329,21 @@ result = ;
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="AppendFile"></a>
 ## AppendFile
+**Descrption:** Add email message from file to specified folder in email account.             
 
-Add email message from file to specified folder in email account.             
 
-Returns: Message id.
+**Returns:** Message id.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Client.Message.AppendFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-AppendFile method request.
+**Description:** AppendFile method request.
 
-See parameter model documentation at [ClientMessageAppendFileRequest](ClientMessageAppendFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageAppendFileRequest**](ClientMessageAppendFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -362,9 +364,9 @@ var request = new ClientMessageAppendFileRequest
 
 ### Result
 
-*Returns:* Message id.
+**Description:** Message id.
 
-*Return type:* [**ValueTOfString**](ValueTOfString.md)
+**Return type:** [**ValueTOfString**](ValueTOfString.md)
 
 <details>
     <summary>Result example</summary>
@@ -408,22 +410,23 @@ result = ;
 <a name="AppendFileAsync"></a>
 ## AppendFileAsync
 
-Add email message from file to specified folder in email account.             
+**Description:** Add email message from file to specified folder in email account.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Message id.
 
-Method call example:
+**Returns:** Message id.
+
+**Method call example:**
 ```csharp
 var result = await api.Client.Message.AppendFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-AppendFileAsync method request.
+**Description:** AppendFileAsync method request.
 
-See parameter model documentation at [ClientMessageAppendFileRequest](ClientMessageAppendFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageAppendFileRequest**](ClientMessageAppendFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -444,9 +447,9 @@ var request = new ClientMessageAppendFileRequest
 
 ### Result
 
-*Returns:* Message id.
+**Returns:** Message id.
 
-*Return type:* [**ValueTOfString**](ValueTOfString.md)
+**Return type:** [**ValueTOfString**](ValueTOfString.md)
 
 <details>
     <summary>Result example</summary>
@@ -489,20 +492,21 @@ result = ;
 <a name="Delete"></a>
 ## Delete
 
-Delete message.             
+**Description**: Delete message.             
 
-Returns: Returns 200 if send is successful.
 
-Method call example:
+**Returns:** Returns 200 if send is successful.
+
+**Method call example:**
 ```csharp
 api.Client.Message.Delete(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Delete message request.
+**Description:** Delete message request.
 
-See parameter model documentation at [ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
+**See also** parameter model documentation at [**ClientMessageDeleteRequest**](ClientMessageDeleteRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -526,9 +530,9 @@ var request = new ClientMessageDeleteRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Description:** Returns 200 if send is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -564,22 +568,23 @@ api.Client.Message.Delete(request);
 <a name="DeleteAsync"></a>
 ## DeleteAsync
 
-Delete message.             
+**Description:** Delete message.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if send is successful.
 
-Method call example:
+**Returns:** Returns 200 if send is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Message.DeleteAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Delete message request.
+**Description:** Delete message request.
 
-See parameter model documentation at [ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
+**See also** parameter model documentation at [**ClientMessageDeleteRequest**](ClientMessageDeleteRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -603,9 +608,9 @@ var request = new ClientMessageDeleteRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Description:** Returns 200 if send is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:
@@ -639,21 +644,21 @@ await api.Client.Message.DeleteAsync(request);
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Fetch"></a>
 ## Fetch
+**Descrption:** Fetch message from email account             
 
-Fetch message from email account             
 
-Returns: MailMessageBase object that represents fetched message in requested format.
+**Returns:** MailMessageBase object that represents fetched message in requested format.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Client.Message.Fetch(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Fetch method request.
+**Description:** Fetch method request.
 
-See parameter model documentation at [ClientMessageFetchRequest](ClientMessageFetchRequest.md)
+**See also** parameter model documentation at [**ClientMessageFetchRequest**](ClientMessageFetchRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -675,9 +680,9 @@ var request = new ClientMessageFetchRequest
 
 ### Result
 
-*Returns:* MailMessageBase object that represents fetched message in requested format.
+**Description:** MailMessageBase object that represents fetched message in requested format.
 
-*Return type:* [**MailMessageBase**](MailMessageBase.md)
+**Return type:** [**MailMessageBase**](MailMessageBase.md)
 
 <details>
     <summary>Result example</summary>
@@ -728,22 +733,23 @@ result = new MailMessageBase
 <a name="FetchAsync"></a>
 ## FetchAsync
 
-Fetch message from email account             
+**Description:** Fetch message from email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: MailMessageBase object that represents fetched message in requested format.
 
-Method call example:
+**Returns:** MailMessageBase object that represents fetched message in requested format.
+
+**Method call example:**
 ```csharp
 var result = await api.Client.Message.FetchAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FetchAsync method request.
+**Description:** FetchAsync method request.
 
-See parameter model documentation at [ClientMessageFetchRequest](ClientMessageFetchRequest.md)
+**See also** parameter model documentation at [**ClientMessageFetchRequest**](ClientMessageFetchRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -765,9 +771,9 @@ var request = new ClientMessageFetchRequest
 
 ### Result
 
-*Returns:* MailMessageBase object that represents fetched message in requested format.
+**Returns:** MailMessageBase object that represents fetched message in requested format.
 
-*Return type:* [**MailMessageBase**](MailMessageBase.md)
+**Return type:** [**MailMessageBase**](MailMessageBase.md)
 
 <details>
     <summary>Result example</summary>
@@ -816,21 +822,21 @@ result = new MailMessageBase
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="FetchFile"></a>
 ## FetchFile
+**Descrption:** Fetch message as file from email account             
 
-Fetch message as file from email account             
 
-Returns: Email message file in requested format.
+**Returns:** Email message file in requested format.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Client.Message.FetchFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FetchFile method request.
+**Description:** FetchFile method request.
 
-See parameter model documentation at [ClientMessageFetchFileRequest](ClientMessageFetchFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageFetchFileRequest**](ClientMessageFetchFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -851,9 +857,9 @@ var request = new ClientMessageFetchFileRequest
 
 ### Result
 
-*Returns:* Email message file in requested format.
+**Description:** Email message file in requested format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -903,22 +909,23 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="FetchFileAsync"></a>
 ## FetchFileAsync
 
-Fetch message as file from email account             
+**Description:** Fetch message as file from email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Email message file in requested format.
 
-Method call example:
+**Returns:** Email message file in requested format.
+
+**Method call example:**
 ```csharp
 var result = await api.Client.Message.FetchFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-FetchFileAsync method request.
+**Description:** FetchFileAsync method request.
 
-See parameter model documentation at [ClientMessageFetchFileRequest](ClientMessageFetchFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageFetchFileRequest**](ClientMessageFetchFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -939,9 +946,9 @@ var request = new ClientMessageFetchFileRequest
 
 ### Result
 
-*Returns:* Email message file in requested format.
+**Returns:** Email message file in requested format.
 
-*Return type:* **Stream**
+**Return type:** **Stream**
 
 <details>
     <summary>Result can be saved to file:</summary>
@@ -989,23 +996,22 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="List"></a>
 ## List
-
-Get messages from folder, filtered by query             
+**Descrption:** Get messages from folder, filtered by query             
 
 The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3     >,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
 
-Returns: List of MailMessageBase objects that represent fetched message in requested format.
+**Returns:** List of MailMessageBase objects that represent fetched message in requested format.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = api.Client.Message.List(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-List method request.
+**Description:** List method request.
 
-See parameter model documentation at [ClientMessageListRequest](ClientMessageListRequest.md)
+**See also** parameter model documentation at [**ClientMessageListRequest**](ClientMessageListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1028,9 +1034,9 @@ var request = new ClientMessageListRequest
 
 ### Result
 
-*Returns:* List of MailMessageBase objects that represent fetched message in requested format.
+**Description:** List of MailMessageBase objects that represent fetched message in requested format.
 
-*Return type:* [**MailMessageBaseList**](MailMessageBaseList.md)
+**Return type:** [**MailMessageBaseList**](MailMessageBaseList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1076,24 +1082,24 @@ result = ;
 <a name="ListAsync"></a>
 ## ListAsync
 
-Get messages from folder, filtered by query             
+**Description:** Get messages from folder, filtered by query             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3     >,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
 
-Returns: List of MailMessageBase objects that represent fetched message in requested format.
+**Returns:** List of MailMessageBase objects that represent fetched message in requested format.
 
-Method call example:
+**Method call example:**
 ```csharp
 var result = await api.Client.Message.ListAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-ListAsync method request.
+**Description:** ListAsync method request.
 
-See parameter model documentation at [ClientMessageListRequest](ClientMessageListRequest.md)
+**See also** parameter model documentation at [**ClientMessageListRequest**](ClientMessageListRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1116,9 +1122,9 @@ var request = new ClientMessageListRequest
 
 ### Result
 
-*Returns:* List of MailMessageBase objects that represent fetched message in requested format.
+**Returns:** List of MailMessageBase objects that represent fetched message in requested format.
 
-*Return type:* [**MailMessageBaseList**](MailMessageBaseList.md)
+**Return type:** [**MailMessageBaseList**](MailMessageBaseList.md)
 
 <details>
     <summary>Result example</summary>
@@ -1163,20 +1169,21 @@ result = ;
 <a name="Move"></a>
 ## Move
 
-Move message to another folder.             
+**Description**: Move message to another folder.             
 
-Returns: Returns 200 if send is successful.
 
-Method call example:
+**Returns:** Returns 200 if send is successful.
+
+**Method call example:**
 ```csharp
 api.Client.Message.Move(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Move message request.
+**Description:** Move message request.
 
-See parameter model documentation at [ClientMessageMoveRequest](ClientMessageMoveRequest.md)
+**See also** parameter model documentation at [**ClientMessageMoveRequest**](ClientMessageMoveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1201,9 +1208,9 @@ var request = new ClientMessageMoveRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Description:** Returns 200 if send is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -1240,22 +1247,23 @@ api.Client.Message.Move(request);
 <a name="MoveAsync"></a>
 ## MoveAsync
 
-Move message to another folder.             
+**Description:** Move message to another folder.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if send is successful.
 
-Method call example:
+**Returns:** Returns 200 if send is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Message.MoveAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Move message request.
+**Description:** Move message request.
 
-See parameter model documentation at [ClientMessageMoveRequest](ClientMessageMoveRequest.md)
+**See also** parameter model documentation at [**ClientMessageMoveRequest**](ClientMessageMoveRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1280,9 +1288,9 @@ var request = new ClientMessageMoveRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Description:** Returns 200 if send is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:
@@ -1318,20 +1326,21 @@ await api.Client.Message.MoveAsync(request);
 <a name="Send"></a>
 ## Send
 
-Send an email specified by model in request.             
+**Description**: Send an email specified by model in request.             
 
-Returns: Returns 200 if send is successful.
 
-Method call example:
+**Returns:** Returns 200 if send is successful.
+
+**Method call example:**
 ```csharp
 api.Client.Message.Send(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Send email request.
+**Description:** Send email request.
 
-See parameter model documentation at [ClientMessageSendRequest](ClientMessageSendRequest.md)
+**See also** parameter model documentation at [**ClientMessageSendRequest**](ClientMessageSendRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1391,9 +1400,9 @@ var request = new ClientMessageSendRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Description:** Returns 200 if send is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -1465,22 +1474,23 @@ api.Client.Message.Send(request);
 <a name="SendAsync"></a>
 ## SendAsync
 
-Send an email specified by model in request.             
+**Description:** Send an email specified by model in request.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if send is successful.
 
-Method call example:
+**Returns:** Returns 200 if send is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Message.SendAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Send email request.
+**Description:** Send email request.
 
-See parameter model documentation at [ClientMessageSendRequest](ClientMessageSendRequest.md)
+**See also** parameter model documentation at [**ClientMessageSendRequest**](ClientMessageSendRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1540,9 +1550,9 @@ var request = new ClientMessageSendRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Description:** Returns 200 if send is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:
@@ -1612,21 +1622,21 @@ await api.Client.Message.SendAsync(request);
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="SendFile"></a>
 ## SendFile
+**Descrption:** Send an email file.             
 
-Send an email file.             
 
-Returns: Returns 200 if send is successful.
+**Returns:** Returns 200 if send is successful.
 
-Method call example:
+**Method call example:**
 ```csharp
 api.Client.Message.SendFile(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-SendFile method request.
+**Description:** SendFile method request.
 
-See parameter model documentation at [ClientMessageSendFileRequest](ClientMessageSendFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageSendFileRequest**](ClientMessageSendFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1646,9 +1656,9 @@ var request = new ClientMessageSendFileRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Description:** Returns 200 if send is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -1681,22 +1691,23 @@ api.Client.Message.SendFile(request);
 <a name="SendFileAsync"></a>
 ## SendFileAsync
 
-Send an email file.             
+**Description:** Send an email file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if send is successful.
 
-Method call example:
+**Returns:** Returns 200 if send is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Message.SendFileAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-SendFileAsync method request.
+**Description:** SendFileAsync method request.
 
-See parameter model documentation at [ClientMessageSendFileRequest](ClientMessageSendFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageSendFileRequest**](ClientMessageSendFileRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1716,9 +1727,9 @@ var request = new ClientMessageSendFileRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Returns:** Returns 200 if send is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -1750,20 +1761,21 @@ await api.Client.Message.SendFileAsync(request);
 <a name="SetIsRead"></a>
 ## SetIsRead
 
-Mark message as read or unread.             
+**Description**: Mark message as read or unread.             
 
-Returns: Returns 200 if send is successful.
 
-Method call example:
+**Returns:** Returns 200 if send is successful.
+
+**Method call example:**
 ```csharp
 api.Client.Message.SetIsRead(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Delete message request.
+**Description:** Delete message request.
 
-See parameter model documentation at [ClientMessageSetIsReadRequest](ClientMessageSetIsReadRequest.md)
+**See also** parameter model documentation at [**ClientMessageSetIsReadRequest**](ClientMessageSetIsReadRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1787,9 +1799,9 @@ var request = new ClientMessageSetIsReadRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Description:** Returns 200 if send is successful.
 
-*Return type:* void (empty response body)
+**Return type:** void (empty response body)
 
 
 ### Complete example:
@@ -1825,22 +1837,23 @@ api.Client.Message.SetIsRead(request);
 <a name="SetIsReadAsync"></a>
 ## SetIsReadAsync
 
-Mark message as read or unread.             
+**Description:** Mark message as read or unread.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-Returns: Returns 200 if send is successful.
 
-Method call example:
+**Returns:** Returns 200 if send is successful.
+
+**Method call example:**
 ```csharp
 await api.Client.Message.SetIsReadAsync(request);
 ```
 
-### request Parameter
+### Parameter: *request*
 
-Delete message request.
+**Description:** Delete message request.
 
-See parameter model documentation at [ClientMessageSetIsReadRequest](ClientMessageSetIsReadRequest.md)
+**See also** parameter model documentation at [**ClientMessageSetIsReadRequest**](ClientMessageSetIsReadRequest.md)
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1864,9 +1877,9 @@ var request = new ClientMessageSetIsReadRequest
 
 ### Result
 
-*Returns:* Returns 200 if send is successful.
+**Description:** Returns 200 if send is successful.
 
-*Return type:* Task (empty response body)
+**Return type:** Task (empty response body)
 
 
 ### Complete example:
