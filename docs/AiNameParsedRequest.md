@@ -1,4 +1,4 @@
-# Model.AiNameParsedRequest
+# AiNameParsedRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -7,7 +7,5 @@ Name | Type | Description | Notes
 **ParsedName** | [**List&lt;AiNameComponent&gt;**](AiNameComponent.md) | Parsed name              | 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

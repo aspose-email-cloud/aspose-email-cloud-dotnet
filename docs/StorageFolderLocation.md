@@ -1,4 +1,4 @@
-# Model.StorageFolderLocation
+# StorageFolderLocation
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +6,14 @@ Name | Type | Description | Notes
 **FolderPath** | **string** | A path to a folder in specified storage              | [optional] 
 
 
+## Example
+```csharp
+var storageFolderLocation = new StorageFolderLocation
+{
+    Storage = "First Storage",
+    FolderPath = "folder/on/storage"
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

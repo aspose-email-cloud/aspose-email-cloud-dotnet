@@ -1,9 +1,113 @@
 # Aspose.Email.Cloud.Sdk.AiBcrApi
 
 <a name="Parse"></a>
-# Parse
+## Parse
 
 Parse images to vCard document models             
+
+Returns: List of vCards
+
+Method call example:
+```csharp
+var result = Api.Ai.Bcr.Parse(request);
+```
+
+### request Parameter
+
+Parse method request.
+
+See parameter model documentation at [AiBcrParseRequest](AiBcrParseRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new AiBcrParseRequest
+{ 
+    File = new MemoryStream(File.ReadAllBytes("/path/to/image.png")),
+    Countries = "us",
+    Languages = "en",
+    IsSingle = true
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* List of vCards
+
+*Return type:* [**ContactList**](ContactList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new ContactList
+{
+    Value = new List<ContactDto>
+    {
+        new ContactDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "attachment.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            DisplayName = "Alex Thomas",
+            EmailAddresses = new List<EmailAddress>
+            {
+                new EmailAddress
+                {
+                    Category = new EnumWithCustom<EmailAddressCategory>
+                    {
+                        Value = "Custom",
+                        Description = "Partners"
+                    },
+                    DisplayName = "Alex Thomas Partners",
+                    Preferred = true,
+                    Address = "email@aspose.com"
+                }
+            },
+            Gender = "Male",
+            GivenName = "Alex",
+            PhoneNumbers = new List<PhoneNumber>
+            {
+                new PhoneNumber
+                {
+                    Category = new EnumWithCustom<PhoneNumberCategory>
+                    {
+                        Value = "Office"
+                    },
+                    Number = "+49 211 4247 21",
+                    Preferred = true
+                }
+            },
+            Profession = "GENERAL DIRECTOR",
+            Surname = "Thomas",
+            Urls = new List<Url>
+            {
+                new Url
+                {
+                    Category = new EnumWithCustom<UrlCategory>
+                    {
+                        Value = "Work"
+                    },
+                    Preferred = true,
+                    Href = "www.aspose.com"
+                }
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -22,33 +126,182 @@ var request = new AiBcrParseRequest
 var result = Api.Ai.Bcr.Parse(request);
 
 // Result example:
-result = ;
+result = new ContactList
+{
+    Value = new List<ContactDto>
+    {
+        new ContactDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "attachment.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            DisplayName = "Alex Thomas",
+            EmailAddresses = new List<EmailAddress>
+            {
+                new EmailAddress
+                {
+                    Category = new EnumWithCustom<EmailAddressCategory>
+                    {
+                        Value = "Custom",
+                        Description = "Partners"
+                    },
+                    DisplayName = "Alex Thomas Partners",
+                    Preferred = true,
+                    Address = "email@aspose.com"
+                }
+            },
+            Gender = "Male",
+            GivenName = "Alex",
+            PhoneNumbers = new List<PhoneNumber>
+            {
+                new PhoneNumber
+                {
+                    Category = new EnumWithCustom<PhoneNumberCategory>
+                    {
+                        Value = "Office"
+                    },
+                    Number = "+49 211 4247 21",
+                    Preferred = true
+                }
+            },
+            Profession = "GENERAL DIRECTOR",
+            Surname = "Thomas",
+            Urls = new List<Url>
+            {
+                new Url
+                {
+                    Category = new EnumWithCustom<UrlCategory>
+                    {
+                        Value = "Work"
+                    },
+                    Preferred = true,
+                    Href = "www.aspose.com"
+                }
+            }
+        }
+    }
+};
 ```
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **file** | **System.IO.Stream**| File to parse | 
- **countries** | **string**| Comma-separated codes of countries. | [optional] 
- **languages** | **string**| Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default.              | [optional] 
- **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
-
-### Return type
-
-[**ContactList**](ContactList.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ParseAsync"></a>
-# ParseAsync
+## ParseAsync
 
 Parse images to vCard document models             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: List of vCards
+
+Method call example:
+```csharp
+var result = await Api.Ai.Bcr.ParseAsync(request);
+```
+
+### request Parameter
+
+ParseAsync method request.
+
+See parameter model documentation at [AiBcrParseRequest](AiBcrParseRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new AiBcrParseRequest
+{ 
+    File = new MemoryStream(File.ReadAllBytes("/path/to/image.png")),
+    Countries = "us",
+    Languages = "en",
+    IsSingle = true
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* List of vCards
+
+*Return type:* [**ContactList**](ContactList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new ContactList
+{
+    Value = new List<ContactDto>
+    {
+        new ContactDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "attachment.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            DisplayName = "Alex Thomas",
+            EmailAddresses = new List<EmailAddress>
+            {
+                new EmailAddress
+                {
+                    Category = new EnumWithCustom<EmailAddressCategory>
+                    {
+                        Value = "Custom",
+                        Description = "Partners"
+                    },
+                    DisplayName = "Alex Thomas Partners",
+                    Preferred = true,
+                    Address = "email@aspose.com"
+                }
+            },
+            Gender = "Male",
+            GivenName = "Alex",
+            PhoneNumbers = new List<PhoneNumber>
+            {
+                new PhoneNumber
+                {
+                    Category = new EnumWithCustom<PhoneNumberCategory>
+                    {
+                        Value = "Office"
+                    },
+                    Number = "+49 211 4247 21",
+                    Preferred = true
+                }
+            },
+            Profession = "GENERAL DIRECTOR",
+            Surname = "Thomas",
+            Urls = new List<Url>
+            {
+                new Url
+                {
+                    Category = new EnumWithCustom<UrlCategory>
+                    {
+                        Value = "Work"
+                    },
+                    Preferred = true,
+                    Href = "www.aspose.com"
+                }
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -67,30 +320,146 @@ var request = new AiBcrParseRequest
 var result = await Api.Ai.Bcr.ParseAsync(request);
 
 // Result example:
-result = ;
+result = new ContactList
+{
+    Value = new List<ContactDto>
+    {
+        new ContactDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "attachment.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            DisplayName = "Alex Thomas",
+            EmailAddresses = new List<EmailAddress>
+            {
+                new EmailAddress
+                {
+                    Category = new EnumWithCustom<EmailAddressCategory>
+                    {
+                        Value = "Custom",
+                        Description = "Partners"
+                    },
+                    DisplayName = "Alex Thomas Partners",
+                    Preferred = true,
+                    Address = "email@aspose.com"
+                }
+            },
+            Gender = "Male",
+            GivenName = "Alex",
+            PhoneNumbers = new List<PhoneNumber>
+            {
+                new PhoneNumber
+                {
+                    Category = new EnumWithCustom<PhoneNumberCategory>
+                    {
+                        Value = "Office"
+                    },
+                    Number = "+49 211 4247 21",
+                    Preferred = true
+                }
+            },
+            Profession = "GENERAL DIRECTOR",
+            Surname = "Thomas",
+            Urls = new List<Url>
+            {
+                new Url
+                {
+                    Category = new EnumWithCustom<UrlCategory>
+                    {
+                        Value = "Work"
+                    },
+                    Preferred = true,
+                    Href = "www.aspose.com"
+                }
+            }
+        }
+    }
+};
 ```
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **file** | **System.IO.Stream**| File to parse | 
- **countries** | **string**| Comma-separated codes of countries. | [optional] 
- **languages** | **string**| Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \&quot;it\&quot; or \&quot;ita\&quot; for Italian); it&#39;s \&quot;\&quot; by default.              | [optional] 
- **isSingle** | **bool?**| Determines that image contains single VCard or more. | [optional] [default to true]
-
-### Return type
-
-[**ContactList**](ContactList.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="ParseStorage"></a>
-# ParseStorage
+## ParseStorage
 
 Parse images from storage to vCard files             
+
+Returns: List of vCard files located on storage
+
+Method call example:
+```csharp
+var result = Api.Ai.Bcr.ParseStorage(request);
+```
+
+### request Parameter
+
+Request with images located on storage
+
+See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new AiBcrParseStorageRequest
+{
+    OutFolder = new StorageFolderLocation
+    {
+        Storage = "First Storage",
+        FolderPath = "VCard/files/produced/by/parser/will/be/placed/here"
+    },
+    Images = new List<AiBcrImageStorageFile>
+    {
+        new AiBcrImageStorageFile
+        {
+            File = new StorageFileLocation
+            {
+                FileName = "VCardScanImage.jpg",
+                Storage = "First Storage",
+                FolderPath = "image/location/on/storage"
+            },
+            IsSingle = true
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* List of vCard files located on storage
+
+*Return type:* [**StorageFileLocationList**](StorageFileLocationList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new StorageFileLocationList
+{
+    Value = new List<StorageFileLocation>
+    {
+        new StorageFileLocation
+        {
+            FileName = "fileOnStorage.txt",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -123,27 +492,101 @@ var request = new AiBcrParseStorageRequest
 var result = Api.Ai.Bcr.ParseStorage(request);
 
 // Result example:
-result = ;
+result = new StorageFileLocationList
+{
+    Value = new List<StorageFileLocation>
+    {
+        new StorageFileLocation
+        {
+            FileName = "fileOnStorage.txt",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
+        }
+    }
+};
 ```
 
 </details>
 
-### request Parameter
-See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
-
-
-### Return type
-
-[**StorageFileLocationList**](StorageFileLocationList.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ParseStorageAsync"></a>
-# ParseStorageAsync
+## ParseStorageAsync
 
 Parse images from storage to vCard files             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: List of vCard files located on storage
+
+Method call example:
+```csharp
+var result = await Api.Ai.Bcr.ParseStorageAsync(request);
+```
+
+### request Parameter
+
+Request with images located on storage
+
+See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new AiBcrParseStorageRequest
+{
+    OutFolder = new StorageFolderLocation
+    {
+        Storage = "First Storage",
+        FolderPath = "VCard/files/produced/by/parser/will/be/placed/here"
+    },
+    Images = new List<AiBcrImageStorageFile>
+    {
+        new AiBcrImageStorageFile
+        {
+            File = new StorageFileLocation
+            {
+                FileName = "VCardScanImage.jpg",
+                Storage = "First Storage",
+                FolderPath = "image/location/on/storage"
+            },
+            IsSingle = true
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* List of vCard files located on storage
+
+*Return type:* Task<[**StorageFileLocationList**](StorageFileLocationList.md)>
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new StorageFileLocationList
+{
+    Value = new List<StorageFileLocation>
+    {
+        new StorageFileLocation
+        {
+            FileName = "fileOnStorage.txt",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -176,17 +619,20 @@ var request = new AiBcrParseStorageRequest
 var result = await Api.Ai.Bcr.ParseStorageAsync(request);
 
 // Result example:
-result = ;
+result = new StorageFileLocationList
+{
+    Value = new List<StorageFileLocation>
+    {
+        new StorageFileLocation
+        {
+            FileName = "fileOnStorage.txt",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
+        }
+    }
+};
 ```
 
 </details>
-
-### request Parameter
-See parameter model documentation at [AiBcrParseStorageRequest](AiBcrParseStorageRequest.md)
-
-
-### Return type
-
-Task<[**StorageFileLocationList**](StorageFileLocationList.md)>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

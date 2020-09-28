@@ -1,4 +1,4 @@
-# Model.AiNameWeightedVariants
+# AiNameWeightedVariants
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +6,25 @@ Name | Type | Description | Notes
 **Comments** | **string** | Usually empty; can contain extra message describing some issue occurred during processing              | [optional] 
 
 
+## Example
+```csharp
+var aiNameWeightedVariants = new AiNameWeightedVariants
+{
+    Names = new List<AiNameWeighted>
+    {
+        new AiNameWeighted
+        {
+            Name = "J. Cane",
+            Score = 1
+        },
+        new AiNameWeighted
+        {
+            Name = "Mr. Cane",
+            Score = 0.75
+        }
+    }
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

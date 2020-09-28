@@ -1,4 +1,4 @@
-# Model.AiNameCulturalContext
+# AiNameCulturalContext
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,7 +9,5 @@ Name | Type | Description | Notes
 **Style** | **string** | Name writing style. Enum, available values: Formal, Informal, Legal, Academic | 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

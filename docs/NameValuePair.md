@@ -1,4 +1,4 @@
-# Model.NameValuePair
+# NameValuePair
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +6,14 @@ Name | Type | Description | Notes
 **Value** | **string** | Property value              | [optional] 
 
 
+## Example
+```csharp
+var nameValuePair = new NameValuePair
+{
+    Name = "name",
+    Value = "value"
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

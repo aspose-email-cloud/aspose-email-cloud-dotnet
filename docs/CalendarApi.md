@@ -1,9 +1,108 @@
 # Aspose.Email.Cloud.Sdk.CalendarApi
 
 <a name="AsAlternate"></a>
-# AsAlternate
+## AsAlternate
 
 Convert iCalendar to AlternateView             
+
+Returns: iCalendar document represented as AlternateView
+
+Method call example:
+```csharp
+var result = Api.Calendar.AsAlternate(request);
+```
+
+### request Parameter
+
+iCalendar to AlternateView request
+
+See parameter model documentation at [CalendarAsAlternateRequest](CalendarAsAlternateRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarAsAlternateRequest
+{
+    Value = new CalendarDto
+    {
+        Attendees = new List<MailAddress>
+        {
+            new MailAddress
+            {
+                DisplayName = "Attendee Name",
+                Address = "attendee@aspose.com",
+                ParticipationStatus = "Accepted"
+            }
+        },
+        Description = "Some description",
+        EndDate = DateTime.Today,
+        Location = "Some location",
+        Organizer = new MailAddress
+        {
+            DisplayName = "Organizer Name",
+            Address = "organizer@aspose.com"
+        },
+        Recurrence = new DailyRecurrencePatternDto
+        {
+            Interval = -1,
+            Occurs = 10,
+            WeekStart = "Monday"
+        },
+        StartDate = DateTime.Today,
+        Summary = "Some summary"
+    },
+    SequenceId = "cf4ffb6c-895d-4e58-bdb4-0a3918e96a43"
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* iCalendar document represented as AlternateView
+
+*Return type:* [**AlternateView**](AlternateView.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new AlternateView
+{
+    Base64Data = "<File content represented as Base64 string>",
+    ContentId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75",
+    ContentType = new ContentType
+    {
+        CharSet = "utf-8",
+        MediaType = "text/calendar",
+        Name = "meeting.ics",
+        Parameters = new List<ContentTypeParameter>
+        {
+            new ContentTypeParameter
+            {
+                Name = "Method",
+                Value = "REQUEST"
+            },
+            new ContentTypeParameter
+            {
+                Name = "Name",
+                Value = "meeting.ics"
+            },
+            new ContentTypeParameter
+            {
+                Name = "charset",
+                Value = "utf-8"
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -80,22 +179,113 @@ result = new AlternateView
 
 </details>
 
-### request Parameter
-See parameter model documentation at [CalendarAsAlternateRequest](CalendarAsAlternateRequest.md)
-
-
-### Return type
-
-[**AlternateView**](AlternateView.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsAlternateAsync"></a>
-# AsAlternateAsync
+## AsAlternateAsync
 
 Convert iCalendar to AlternateView             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: iCalendar document represented as AlternateView
+
+Method call example:
+```csharp
+var result = await Api.Calendar.AsAlternateAsync(request);
+```
+
+### request Parameter
+
+iCalendar to AlternateView request
+
+See parameter model documentation at [CalendarAsAlternateRequest](CalendarAsAlternateRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarAsAlternateRequest
+{
+    Value = new CalendarDto
+    {
+        Attendees = new List<MailAddress>
+        {
+            new MailAddress
+            {
+                DisplayName = "Attendee Name",
+                Address = "attendee@aspose.com",
+                ParticipationStatus = "Accepted"
+            }
+        },
+        Description = "Some description",
+        EndDate = DateTime.Today,
+        Location = "Some location",
+        Organizer = new MailAddress
+        {
+            DisplayName = "Organizer Name",
+            Address = "organizer@aspose.com"
+        },
+        Recurrence = new DailyRecurrencePatternDto
+        {
+            Interval = -1,
+            Occurs = 10,
+            WeekStart = "Monday"
+        },
+        StartDate = DateTime.Today,
+        Summary = "Some summary"
+    },
+    SequenceId = "cf4ffb6c-895d-4e58-bdb4-0a3918e96a43"
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* iCalendar document represented as AlternateView
+
+*Return type:* Task<[**AlternateView**](AlternateView.md)>
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new AlternateView
+{
+    Base64Data = "<File content represented as Base64 string>",
+    ContentId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75",
+    ContentType = new ContentType
+    {
+        CharSet = "utf-8",
+        MediaType = "text/calendar",
+        Name = "meeting.ics",
+        Parameters = new List<ContentTypeParameter>
+        {
+            new ContentTypeParameter
+            {
+                Name = "Method",
+                Value = "REQUEST"
+            },
+            new ContentTypeParameter
+            {
+                Name = "Name",
+                Value = "meeting.ics"
+            },
+            new ContentTypeParameter
+            {
+                Name = "charset",
+                Value = "utf-8"
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -172,19 +362,84 @@ result = new AlternateView
 
 </details>
 
-### request Parameter
-See parameter model documentation at [CalendarAsAlternateRequest](CalendarAsAlternateRequest.md)
-
-
-### Return type
-
-Task<[**AlternateView**](AlternateView.md)>
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="AsFile"></a>
-# AsFile
+## AsFile
 
 Converts calendar model to specified format and returns as file.             
+
+Returns: File stream in specified format.
+
+Method call example:
+```csharp
+var result = Api.Calendar.AsFile(request);
+```
+
+### request Parameter
+
+Calendar model and format to convert.
+
+See parameter model documentation at [CalendarAsFileRequest](CalendarAsFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarAsFileRequest
+{
+    Value = new CalendarDto
+    {
+        Attendees = new List<MailAddress>
+        {
+            new MailAddress
+            {
+                DisplayName = "Attendee Name",
+                Address = "attendee@aspose.com",
+                ParticipationStatus = "Accepted"
+            }
+        },
+        Description = "Some description",
+        EndDate = DateTime.Today,
+        Location = "Some location",
+        Organizer = new MailAddress
+        {
+            DisplayName = "Organizer Name",
+            Address = "organizer@aspose.com"
+        },
+        Recurrence = new DailyRecurrencePatternDto
+        {
+            Interval = -1,
+            Occurs = 10,
+            WeekStart = "Monday"
+        },
+        StartDate = DateTime.Today,
+        Summary = "Some summary"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* File stream in specified format.
+
+*Return type:* **Stream**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    result.CopyTo(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -235,22 +490,87 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 
 </details>
 
-### request Parameter
-See parameter model documentation at [CalendarAsFileRequest](CalendarAsFileRequest.md)
-
-
-### Return type
-
-**Stream**
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsFileAsync"></a>
-# AsFileAsync
+## AsFileAsync
 
 Converts calendar model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: File stream in specified format.
+
+Method call example:
+```csharp
+var result = await Api.Calendar.AsFileAsync(request);
+```
+
+### request Parameter
+
+Calendar model and format to convert.
+
+See parameter model documentation at [CalendarAsFileRequest](CalendarAsFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarAsFileRequest
+{
+    Value = new CalendarDto
+    {
+        Attendees = new List<MailAddress>
+        {
+            new MailAddress
+            {
+                DisplayName = "Attendee Name",
+                Address = "attendee@aspose.com",
+                ParticipationStatus = "Accepted"
+            }
+        },
+        Description = "Some description",
+        EndDate = DateTime.Today,
+        Location = "Some location",
+        Organizer = new MailAddress
+        {
+            DisplayName = "Organizer Name",
+            Address = "organizer@aspose.com"
+        },
+        Recurrence = new DailyRecurrencePatternDto
+        {
+            Interval = -1,
+            Occurs = 10,
+            WeekStart = "Monday"
+        },
+        StartDate = DateTime.Today,
+        Summary = "Some summary"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* File stream in specified format.
+
+*Return type:* **Task<Stream>**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    await result.CopyToAsync(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -301,19 +621,123 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 
 </details>
 
-### request Parameter
-See parameter model documentation at [CalendarAsFileRequest](CalendarAsFileRequest.md)
-
-
-### Return type
-
-**Task<Stream>**
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="AsMapi"></a>
-# AsMapi
+## AsMapi
 
 Converts CalendarDto to MapiCalendarDto.             
+
+Returns: MAPI model calendar representation.
+
+Method call example:
+```csharp
+var result = Api.Calendar.AsMapi(calendarDto);
+```
+
+### calendarDto Parameter
+
+iCalendar model calendar representation.
+
+See parameter model documentation at [CalendarDto](CalendarDto.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var calendarDto = new CalendarDto
+{
+    Attendees = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "Attendee Name",
+            Address = "attendee@aspose.com",
+            ParticipationStatus = "Accepted"
+        }
+    },
+    Description = "Some description",
+    EndDate = DateTime.Today,
+    Location = "Some location",
+    Organizer = new MailAddress
+    {
+        DisplayName = "Organizer Name",
+        Address = "organizer@aspose.com"
+    },
+    Recurrence = new DailyRecurrencePatternDto
+    {
+        Interval = -1,
+        Occurs = 10,
+        WeekStart = "Monday"
+    },
+    StartDate = DateTime.Today,
+    Summary = "Some summary"
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* MAPI model calendar representation.
+
+*Return type:* [**MapiCalendarDto**](MapiCalendarDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiCalendarDto
+{
+    Attendees = new MapiCalendarAttendeesDto
+    {
+        AppointmentRecipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "organizer@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "Organizer Name",
+                RecipientType = "MapiTo"
+            },
+            new MapiRecipientDto
+            {
+                EmailAddress = "attendee@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "Attendee Name",
+                RecipientType = "MapiTo"
+            }
+        }
+    },
+    BusyStatus = "Tentative",
+    ClientIntent = new List<MapiCalendarClientIntent>
+    {
+        "Manager"
+    },
+    EndDate = DateTime.Today,
+    Location = "Some location",
+    Recurrence = new MapiCalendarEventRecurrenceDto
+    {
+        RecurrencePattern = new MapiCalendarDailyRecurrencePatternDto
+        {
+            Frequency = "Daily",
+            OccurrenceCount = 10,
+            WeekStartDay = "Monday"
+        }
+    },
+    StartDate = DateTime.Today,
+    Organizer = new MapiElectronicAddressDto
+    {
+        EmailAddress = "organizer@aspose.com"
+    },
+    Body = "Some description",
+    Subject = "Some summary"
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -403,22 +827,126 @@ result = new MapiCalendarDto
 
 </details>
 
-### calendarDto Parameter
-See parameter model documentation at [CalendarDto](CalendarDto.md)
-
-
-### Return type
-
-[**MapiCalendarDto**](MapiCalendarDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsMapiAsync"></a>
-# AsMapiAsync
+## AsMapiAsync
 
 Converts CalendarDto to MapiCalendarDto.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: MAPI model calendar representation.
+
+Method call example:
+```csharp
+var result = await Api.Calendar.AsMapiAsync(calendarDto);
+```
+
+### calendarDto Parameter
+
+iCalendar model calendar representation.
+
+See parameter model documentation at [CalendarDto](CalendarDto.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var calendarDto = new CalendarDto
+{
+    Attendees = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "Attendee Name",
+            Address = "attendee@aspose.com",
+            ParticipationStatus = "Accepted"
+        }
+    },
+    Description = "Some description",
+    EndDate = DateTime.Today,
+    Location = "Some location",
+    Organizer = new MailAddress
+    {
+        DisplayName = "Organizer Name",
+        Address = "organizer@aspose.com"
+    },
+    Recurrence = new DailyRecurrencePatternDto
+    {
+        Interval = -1,
+        Occurs = 10,
+        WeekStart = "Monday"
+    },
+    StartDate = DateTime.Today,
+    Summary = "Some summary"
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* MAPI model calendar representation.
+
+*Return type:* Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiCalendarDto
+{
+    Attendees = new MapiCalendarAttendeesDto
+    {
+        AppointmentRecipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "organizer@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "Organizer Name",
+                RecipientType = "MapiTo"
+            },
+            new MapiRecipientDto
+            {
+                EmailAddress = "attendee@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "Attendee Name",
+                RecipientType = "MapiTo"
+            }
+        }
+    },
+    BusyStatus = "Tentative",
+    ClientIntent = new List<MapiCalendarClientIntent>
+    {
+        "Manager"
+    },
+    EndDate = DateTime.Today,
+    Location = "Some location",
+    Recurrence = new MapiCalendarEventRecurrenceDto
+    {
+        RecurrencePattern = new MapiCalendarDailyRecurrencePatternDto
+        {
+            Frequency = "Daily",
+            OccurrenceCount = 10,
+            WeekStartDay = "Monday"
+        }
+    },
+    StartDate = DateTime.Today,
+    Organizer = new MapiElectronicAddressDto
+    {
+        EmailAddress = "organizer@aspose.com"
+    },
+    Body = "Some description",
+    Subject = "Some summary"
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -508,19 +1036,57 @@ result = new MapiCalendarDto
 
 </details>
 
-### calendarDto Parameter
-See parameter model documentation at [CalendarDto](CalendarDto.md)
-
-
-### Return type
-
-Task<[**MapiCalendarDto**](MapiCalendarDto.md)>
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Convert"></a>
-# Convert
+## Convert
 
 Converts calendar document to specified format and returns as file.             
+
+Returns: File stream in specified format.
+
+Method call example:
+```csharp
+var result = Api.Calendar.Convert(request);
+```
+
+### request Parameter
+
+Convert method request.
+
+See parameter model documentation at [CalendarConvertRequest](CalendarConvertRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarConvertRequest
+{ 
+    Format = "Ics",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/calendar.msg"))
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* File stream in specified format.
+
+*Return type:* **Stream**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    result.CopyTo(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -545,26 +1111,60 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| File format. Enum, available values: Ics, Msg | 
- **file** | **System.IO.Stream**| File to convert | 
-
-### Return type
-
-**Stream**
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ConvertAsync"></a>
-# ConvertAsync
+## ConvertAsync
 
 Converts calendar document to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: File stream in specified format.
+
+Method call example:
+```csharp
+var result = await Api.Calendar.ConvertAsync(request);
+```
+
+### request Parameter
+
+ConvertAsync method request.
+
+See parameter model documentation at [CalendarConvertRequest](CalendarConvertRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarConvertRequest
+{ 
+    Format = "Ics",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/calendar.msg"))
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* File stream in specified format.
+
+*Return type:* **Stream**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    await result.CopyToAsync(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -589,23 +1189,80 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| File format. Enum, available values: Ics, Msg | 
- **file** | **System.IO.Stream**| File to convert | 
-
-### Return type
-
-**Stream**
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="FromFile"></a>
-# FromFile
+## FromFile
 
 Converts calendar document to a model representation.             
+
+Returns: iCalendar model.
+
+Method call example:
+```csharp
+var result = Api.Calendar.FromFile(request);
+```
+
+### request Parameter
+
+FromFile method request.
+
+See parameter model documentation at [CalendarFromFileRequest](CalendarFromFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarFromFileRequest
+{ 
+    File = new MemoryStream(File.ReadAllBytes("/path/to/calendar.ics"))
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* iCalendar model.
+
+*Return type:* [**CalendarDto**](CalendarDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new CalendarDto
+{
+    Attendees = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "Attendee Name",
+            Address = "attendee@aspose.com",
+            ParticipationStatus = "Accepted"
+        }
+    },
+    Description = "Some description",
+    EndDate = DateTime.Today,
+    Location = "Some location",
+    Organizer = new MailAddress
+    {
+        DisplayName = "Organizer Name",
+        Address = "organizer@aspose.com"
+    },
+    Recurrence = new DailyRecurrencePatternDto
+    {
+        Interval = -1,
+        Occurs = 10,
+        WeekStart = "Monday"
+    },
+    StartDate = DateTime.Today,
+    Summary = "Some summary"
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -653,25 +1310,83 @@ result = new CalendarDto
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **file** | **System.IO.Stream**| File to convert | 
-
-### Return type
-
-[**CalendarDto**](CalendarDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FromFileAsync"></a>
-# FromFileAsync
+## FromFileAsync
 
 Converts calendar document to a model representation.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: iCalendar model.
+
+Method call example:
+```csharp
+var result = await Api.Calendar.FromFileAsync(request);
+```
+
+### request Parameter
+
+FromFileAsync method request.
+
+See parameter model documentation at [CalendarFromFileRequest](CalendarFromFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarFromFileRequest
+{ 
+    File = new MemoryStream(File.ReadAllBytes("/path/to/calendar.ics"))
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* iCalendar model.
+
+*Return type:* [**CalendarDto**](CalendarDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new CalendarDto
+{
+    Attendees = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "Attendee Name",
+            Address = "attendee@aspose.com",
+            ParticipationStatus = "Accepted"
+        }
+    },
+    Description = "Some description",
+    EndDate = DateTime.Today,
+    Location = "Some location",
+    Organizer = new MailAddress
+    {
+        DisplayName = "Organizer Name",
+        Address = "organizer@aspose.com"
+    },
+    Recurrence = new DailyRecurrencePatternDto
+    {
+        Interval = -1,
+        Occurs = 10,
+        WeekStart = "Monday"
+    },
+    StartDate = DateTime.Today,
+    Summary = "Some summary"
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -719,22 +1434,82 @@ result = new CalendarDto
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **file** | **System.IO.Stream**| File to convert | 
-
-### Return type
-
-[**CalendarDto**](CalendarDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Get"></a>
-# Get
+## Get
 
 Get calendar file from storage.             
+
+Returns: iCalendar model.
+
+Method call example:
+```csharp
+var result = Api.Calendar.Get(request);
+```
+
+### request Parameter
+
+Get method request.
+
+See parameter model documentation at [CalendarGetRequest](CalendarGetRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarGetRequest
+{ 
+    FileName = "calendar.ics",
+    Folder = "calendar/location/on/storage",
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* iCalendar model.
+
+*Return type:* [**CalendarDto**](CalendarDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new CalendarDto
+{
+    Attendees = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "Attendee Name",
+            Address = "attendee@aspose.com",
+            ParticipationStatus = "Accepted"
+        }
+    },
+    Description = "Some description",
+    EndDate = DateTime.Today,
+    Location = "Some location",
+    Organizer = new MailAddress
+    {
+        DisplayName = "Organizer Name",
+        Address = "organizer@aspose.com"
+    },
+    Recurrence = new DailyRecurrencePatternDto
+    {
+        Interval = -1,
+        Occurs = 10,
+        WeekStart = "Monday"
+    },
+    StartDate = DateTime.Today,
+    Summary = "Some summary"
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -784,27 +1559,85 @@ result = new CalendarDto
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| iCalendar file name in storage. | 
- **folder** | **string**| Path to folder in storage. | [optional] 
- **storage** | **string**| Storage name. | [optional] 
-
-### Return type
-
-[**CalendarDto**](CalendarDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsync"></a>
-# GetAsync
+## GetAsync
 
 Get calendar file from storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: iCalendar model.
+
+Method call example:
+```csharp
+var result = await Api.Calendar.GetAsync(request);
+```
+
+### request Parameter
+
+GetAsync method request.
+
+See parameter model documentation at [CalendarGetRequest](CalendarGetRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarGetRequest
+{ 
+    FileName = "calendar.ics",
+    Folder = "calendar/location/on/storage",
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* iCalendar model.
+
+*Return type:* [**CalendarDto**](CalendarDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new CalendarDto
+{
+    Attendees = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "Attendee Name",
+            Address = "attendee@aspose.com",
+            ParticipationStatus = "Accepted"
+        }
+    },
+    Description = "Some description",
+    EndDate = DateTime.Today,
+    Location = "Some location",
+    Organizer = new MailAddress
+    {
+        DisplayName = "Organizer Name",
+        Address = "organizer@aspose.com"
+    },
+    Recurrence = new DailyRecurrencePatternDto
+    {
+        Interval = -1,
+        Occurs = 10,
+        WeekStart = "Monday"
+    },
+    StartDate = DateTime.Today,
+    Summary = "Some summary"
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -854,24 +1687,84 @@ result = new CalendarDto
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| iCalendar file name in storage. | 
- **folder** | **string**| Path to folder in storage. | [optional] 
- **storage** | **string**| Storage name. | [optional] 
-
-### Return type
-
-[**CalendarDto**](CalendarDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetAsAlternate"></a>
-# GetAsAlternate
+## GetAsAlternate
 
 Get iCalendar from storage as AlternateView             
+
+Returns: iCalendar document represented as AlternateView
+
+Method call example:
+```csharp
+var result = Api.Calendar.GetAsAlternate(request);
+```
+
+### request Parameter
+
+GetAsAlternate method request.
+
+See parameter model documentation at [CalendarGetAsAlternateRequest](CalendarGetAsAlternateRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarGetAsAlternateRequest
+{ 
+    FileName = "calendar.ics",
+    CalendarAction = "Create",
+    Folder = "calendar/location/on/storage",
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* iCalendar document represented as AlternateView
+
+*Return type:* [**AlternateView**](AlternateView.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new AlternateView
+{
+    Base64Data = "<File content represented as Base64 string>",
+    ContentId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75",
+    ContentType = new ContentType
+    {
+        CharSet = "utf-8",
+        MediaType = "text/calendar",
+        Name = "meeting.ics",
+        Parameters = new List<ContentTypeParameter>
+        {
+            new ContentTypeParameter
+            {
+                Name = "Method",
+                Value = "REQUEST"
+            },
+            new ContentTypeParameter
+            {
+                Name = "Name",
+                Value = "meeting.ics"
+            },
+            new ContentTypeParameter
+            {
+                Name = "charset",
+                Value = "utf-8"
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -923,29 +1816,87 @@ result = new AlternateView
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| iCalendar file name in storage | 
- **calendarAction** | **string**| iCalendar method type Enum, available values: Create, Update, Cancel | 
- **sequenceId** | **string**| The sequence id | [optional] 
- **folder** | **string**| Path to folder in storage | [optional] 
- **storage** | **string**| Storage name | [optional] 
-
-### Return type
-
-[**AlternateView**](AlternateView.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsAlternateAsync"></a>
-# GetAsAlternateAsync
+## GetAsAlternateAsync
 
 Get iCalendar from storage as AlternateView             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: iCalendar document represented as AlternateView
+
+Method call example:
+```csharp
+var result = await Api.Calendar.GetAsAlternateAsync(request);
+```
+
+### request Parameter
+
+GetAsAlternateAsync method request.
+
+See parameter model documentation at [CalendarGetAsAlternateRequest](CalendarGetAsAlternateRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarGetAsAlternateRequest
+{ 
+    FileName = "calendar.ics",
+    CalendarAction = "Create",
+    Folder = "calendar/location/on/storage",
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* iCalendar document represented as AlternateView
+
+*Return type:* [**AlternateView**](AlternateView.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new AlternateView
+{
+    Base64Data = "<File content represented as Base64 string>",
+    ContentId = "fa7a8948-4af1-432a-b4d9-ee0c28542e75",
+    ContentType = new ContentType
+    {
+        CharSet = "utf-8",
+        MediaType = "text/calendar",
+        Name = "meeting.ics",
+        Parameters = new List<ContentTypeParameter>
+        {
+            new ContentTypeParameter
+            {
+                Name = "Method",
+                Value = "REQUEST"
+            },
+            new ContentTypeParameter
+            {
+                Name = "Name",
+                Value = "meeting.ics"
+            },
+            new ContentTypeParameter
+            {
+                Name = "charset",
+                Value = "utf-8"
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -997,26 +1948,59 @@ result = new AlternateView
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| iCalendar file name in storage | 
- **calendarAction** | **string**| iCalendar method type Enum, available values: Create, Update, Cancel | 
- **sequenceId** | **string**| The sequence id | [optional] 
- **folder** | **string**| Path to folder in storage | [optional] 
- **storage** | **string**| Storage name | [optional] 
-
-### Return type
-
-[**AlternateView**](AlternateView.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetAsFile"></a>
-# GetAsFile
+## GetAsFile
 
 Converts calendar document from storage to specified format and returns as file.             
+
+Returns: File stream in specified format.
+
+Method call example:
+```csharp
+var result = Api.Calendar.GetAsFile(request);
+```
+
+### request Parameter
+
+GetAsFile method request.
+
+See parameter model documentation at [CalendarGetAsFileRequest](CalendarGetAsFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarGetAsFileRequest
+{ 
+    FileName = "calendar.msg",
+    Format = "Ics",
+    Storage = "First Storage",
+    Folder = "calendar/file/location/on/storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* File stream in specified format.
+
+*Return type:* **Stream**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    result.CopyTo(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -1043,28 +2027,62 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| Calendar document file name. | 
- **format** | **string**| File format. Enum, available values: Ics, Msg | 
- **storage** | **string**| Storage name. | [optional] 
- **folder** | **string**| Path to folder in storage. | [optional] 
-
-### Return type
-
-**Stream**
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsFileAsync"></a>
-# GetAsFileAsync
+## GetAsFileAsync
 
 Converts calendar document from storage to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: File stream in specified format.
+
+Method call example:
+```csharp
+var result = await Api.Calendar.GetAsFileAsync(request);
+```
+
+### request Parameter
+
+GetAsFileAsync method request.
+
+See parameter model documentation at [CalendarGetAsFileRequest](CalendarGetAsFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarGetAsFileRequest
+{ 
+    FileName = "calendar.msg",
+    Format = "Ics",
+    Storage = "First Storage",
+    Folder = "calendar/file/location/on/storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* File stream in specified format.
+
+*Return type:* **Stream**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    await result.CopyToAsync(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -1091,25 +2109,98 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| Calendar document file name. | 
- **format** | **string**| File format. Enum, available values: Ics, Msg | 
- **storage** | **string**| Storage name. | [optional] 
- **folder** | **string**| Path to folder in storage. | [optional] 
-
-### Return type
-
-**Stream**
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="GetList"></a>
-# GetList
+## GetList
 
 Get iCalendar list from storage folder.             
+
+Returns: iCalendar document list.
+
+Method call example:
+```csharp
+var result = Api.Calendar.GetList(request);
+```
+
+### request Parameter
+
+GetList method request.
+
+See parameter model documentation at [CalendarGetListRequest](CalendarGetListRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarGetListRequest
+{ 
+    Folder = "some/folder/on/storage",
+    ItemsPerPage = 10,
+    PageNumber = 0,
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* iCalendar document list.
+
+*Return type:* [**CalendarStorageList**](CalendarStorageList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new CalendarStorageList
+{
+    Value = new List<StorageModel<CalendarDto>>
+    {
+        new StorageModel<CalendarDto>
+        {
+            StorageFile = new StorageFileLocation
+            {
+                FileName = "calendar.ics",
+                Storage = "First Storage",
+                FolderPath = "file/location/folder/on/storage"
+            },
+            Value = new CalendarDto
+            {
+                Attendees = new List<MailAddress>
+                {
+                    new MailAddress
+                    {
+                        DisplayName = "Attendee Name",
+                        Address = "attendee@aspose.com",
+                        ParticipationStatus = "Accepted"
+                    }
+                },
+                Description = "Some description",
+                EndDate = DateTime.Today,
+                Location = "Some location",
+                Organizer = new MailAddress
+                {
+                    DisplayName = "Organizer Name",
+                    Address = "organizer@aspose.com"
+                },
+                Recurrence = new DailyRecurrencePatternDto
+                {
+                    Interval = -1,
+                    Occurs = 10,
+                    WeekStart = "Monday"
+                },
+                StartDate = DateTime.Today,
+                Summary = "Some summary"
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -1175,28 +2266,101 @@ result = new CalendarStorageList
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folder** | **string**| Path to folder in storage. | 
- **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
- **pageNumber** | **int?**| Page number. | [optional] [default to 0]
- **storage** | **string**| Storage name. | [optional] 
-
-### Return type
-
-[**CalendarStorageList**](CalendarStorageList.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetListAsync"></a>
-# GetListAsync
+## GetListAsync
 
 Get iCalendar list from storage folder.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: iCalendar document list.
+
+Method call example:
+```csharp
+var result = await Api.Calendar.GetListAsync(request);
+```
+
+### request Parameter
+
+GetListAsync method request.
+
+See parameter model documentation at [CalendarGetListRequest](CalendarGetListRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarGetListRequest
+{ 
+    Folder = "some/folder/on/storage",
+    ItemsPerPage = 10,
+    PageNumber = 0,
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* iCalendar document list.
+
+*Return type:* [**CalendarStorageList**](CalendarStorageList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new CalendarStorageList
+{
+    Value = new List<StorageModel<CalendarDto>>
+    {
+        new StorageModel<CalendarDto>
+        {
+            StorageFile = new StorageFileLocation
+            {
+                FileName = "calendar.ics",
+                Storage = "First Storage",
+                FolderPath = "file/location/folder/on/storage"
+            },
+            Value = new CalendarDto
+            {
+                Attendees = new List<MailAddress>
+                {
+                    new MailAddress
+                    {
+                        DisplayName = "Attendee Name",
+                        Address = "attendee@aspose.com",
+                        ParticipationStatus = "Accepted"
+                    }
+                },
+                Description = "Some description",
+                EndDate = DateTime.Today,
+                Location = "Some location",
+                Organizer = new MailAddress
+                {
+                    DisplayName = "Organizer Name",
+                    Address = "organizer@aspose.com"
+                },
+                Recurrence = new DailyRecurrencePatternDto
+                {
+                    Interval = -1,
+                    Occurs = 10,
+                    WeekStart = "Monday"
+                },
+                StartDate = DateTime.Today,
+                Summary = "Some summary"
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -1262,25 +2426,79 @@ result = new CalendarStorageList
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folder** | **string**| Path to folder in storage. | 
- **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
- **pageNumber** | **int?**| Page number. | [optional] [default to 0]
- **storage** | **string**| Storage name. | [optional] 
-
-### Return type
-
-[**CalendarStorageList**](CalendarStorageList.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Save"></a>
-# Save
+## Save
 
 Save iCalendar             
+
+Returns: Returns 200 if update is successful.
+
+Method call example:
+```csharp
+Api.Calendar.Save(request);
+```
+
+### request Parameter
+
+iCalendar create/update request
+
+See parameter model documentation at [CalendarSaveRequest](CalendarSaveRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarSaveRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "calendar.ics",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new CalendarDto
+    {
+        Attendees = new List<MailAddress>
+        {
+            new MailAddress
+            {
+                DisplayName = "Attendee Name",
+                Address = "attendee@aspose.com",
+                ParticipationStatus = "Accepted"
+            }
+        },
+        Description = "Some description",
+        EndDate = DateTime.Today,
+        Location = "Some location",
+        Organizer = new MailAddress
+        {
+            DisplayName = "Organizer Name",
+            Address = "organizer@aspose.com"
+        },
+        Recurrence = new DailyRecurrencePatternDto
+        {
+            Interval = -1,
+            Occurs = 10,
+            WeekStart = "Monday"
+        },
+        StartDate = DateTime.Today,
+        Summary = "Some summary"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* Returns 200 if update is successful.
+
+*Return type:* void (empty response body)
+
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -1332,22 +2550,82 @@ Api.Calendar.Save(request);
 
 </details>
 
-### request Parameter
-See parameter model documentation at [CalendarSaveRequest](CalendarSaveRequest.md)
-
-
-### Return type
-
-void (empty response body)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveAsync"></a>
-# SaveAsync
+## SaveAsync
 
 Save iCalendar             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: Returns 200 if update is successful.
+
+Method call example:
+```csharp
+await Api.Calendar.SaveAsync(request);
+```
+
+### request Parameter
+
+iCalendar create/update request
+
+See parameter model documentation at [CalendarSaveRequest](CalendarSaveRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new CalendarSaveRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "calendar.ics",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new CalendarDto
+    {
+        Attendees = new List<MailAddress>
+        {
+            new MailAddress
+            {
+                DisplayName = "Attendee Name",
+                Address = "attendee@aspose.com",
+                ParticipationStatus = "Accepted"
+            }
+        },
+        Description = "Some description",
+        EndDate = DateTime.Today,
+        Location = "Some location",
+        Organizer = new MailAddress
+        {
+            DisplayName = "Organizer Name",
+            Address = "organizer@aspose.com"
+        },
+        Recurrence = new DailyRecurrencePatternDto
+        {
+            Interval = -1,
+            Occurs = 10,
+            WeekStart = "Monday"
+        },
+        StartDate = DateTime.Today,
+        Summary = "Some summary"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* Returns 200 if update is successful.
+
+*Return type:* Task (empty response body)
+
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -1398,13 +2676,5 @@ await Api.Calendar.SaveAsync(request);
 ```
 
 </details>
-
-### request Parameter
-See parameter model documentation at [CalendarSaveRequest](CalendarSaveRequest.md)
-
-
-### Return type
-
-Task (empty response body)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

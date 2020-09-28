@@ -1,4 +1,4 @@
-# Model.MapiContactElectronicAddressPropertySetDto
+# MapiContactElectronicAddressPropertySetDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -13,7 +13,5 @@ Name | Type | Description | Notes
 **UseAutocomplete** | **bool?** | Indicates that one electronic address is completed automatically in case if user does not set any electronic address              | 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

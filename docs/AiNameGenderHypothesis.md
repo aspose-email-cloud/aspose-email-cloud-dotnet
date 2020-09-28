@@ -1,4 +1,4 @@
-# Model.AiNameGenderHypothesis
+# AiNameGenderHypothesis
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +6,13 @@ Name | Type | Description | Notes
 **Score** | **double?** | Hypothesis score              | 
 
 
+## Example
+```csharp
+var aiNameGenderHypothesis = new AiNameGenderHypothesis
+{
+    Score = 0.8
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

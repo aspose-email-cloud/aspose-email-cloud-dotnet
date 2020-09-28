@@ -1,4 +1,4 @@
-# Model.ReminderTrigger
+# ReminderTrigger
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -7,7 +7,14 @@ Name | Type | Description | Notes
 **Related** | **string** | Specify the relationship of the alarm trigger with respect to the start or end of the event. Enum, available values: Start, End | 
 
 
+## Example
+```csharp
+var reminderTrigger = new ReminderTrigger
+{
+    DateTime = DateTime.Today,
+    Duration = 600000000
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

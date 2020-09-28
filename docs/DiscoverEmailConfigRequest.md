@@ -1,4 +1,4 @@
-# Model.DiscoverEmailConfigRequest
+# DiscoverEmailConfigRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -7,7 +7,5 @@ Name | Type | Description | Notes
 **Login** | **string** | Email account login. If not specified, address used as a login.              | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

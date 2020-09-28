@@ -1,4 +1,4 @@
-# Model.MapiContactPhysicalAddressPropertySetDto
+# MapiContactPhysicalAddressPropertySetDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -7,7 +7,5 @@ Name | Type | Description | Notes
 **OtherAddress** | [**MapiContactPhysicalAddressDto**](MapiContactPhysicalAddressDto.md) | Specifies the other contact&#39;s address              | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

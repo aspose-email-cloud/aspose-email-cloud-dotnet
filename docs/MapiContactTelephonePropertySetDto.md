@@ -1,4 +1,4 @@
-# Model.MapiContactTelephonePropertySetDto
+# MapiContactTelephonePropertySetDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -23,7 +23,5 @@ Name | Type | Description | Notes
 **PagerTelephoneNumber** | **string** | Gets or sets a pager telephone number              | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

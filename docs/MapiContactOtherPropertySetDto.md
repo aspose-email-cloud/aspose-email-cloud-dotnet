@@ -1,4 +1,4 @@
-# Model.MapiContactOtherPropertySetDto
+# MapiContactOtherPropertySetDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -12,7 +12,5 @@ Name | Type | Description | Notes
 **UserField4** | **string** | Specifies the forth field on the contact that is intended for miscellaneous use for the contact.              | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

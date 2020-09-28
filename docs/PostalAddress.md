@@ -1,4 +1,4 @@
-# Model.PostalAddress
+# PostalAddress
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -15,7 +15,23 @@ Name | Type | Description | Notes
 **Street** | **string** | Address&#39;s street.              | [optional] 
 
 
+## Example
+```csharp
+var postalAddress = new PostalAddress
+{
+    Address = "221b",
+    Category = new EnumWithCustom<PostalAddressCategory>
+    {
+        
+    },
+    City = "London",
+    Country = "United Kingdom",
+    IsMailingAddress = true,
+    PostalCode = "NW1 6XE",
+    Preferred = true,
+    Street = "Baker St"
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

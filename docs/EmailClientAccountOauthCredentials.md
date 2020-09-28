@@ -1,4 +1,4 @@
-# Model.EmailClientAccountOauthCredentials
+# EmailClientAccountOauthCredentials
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -11,6 +11,5 @@ Name | Type | Description | Notes
 
 See: [EmailClientAccountCredentials](EmailClientAccountCredentials.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

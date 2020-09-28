@@ -1,4 +1,4 @@
-# Model.MapiAttachmentDto
+# MapiAttachmentDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +6,14 @@ Name | Type | Description | Notes
 **DataBase64** | **string** | Attachment data represented as Base64 string.              | [optional] 
 
 
+## Example
+```csharp
+var mapiAttachmentDto = new MapiAttachmentDto
+{
+    Name = "some-file.txt",
+    DataBase64 = "U29tZSBmaWxlIHRleHQ="
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

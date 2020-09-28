@@ -1,4 +1,4 @@
-# Model.FileVersion
+# FileVersion
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,6 +9,5 @@ Name | Type | Description | Notes
 
 See: [StorageFile](StorageFile.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

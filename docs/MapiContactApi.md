@@ -1,9 +1,128 @@
 # Aspose.Email.Cloud.Sdk.MapiContactApi
 
 <a name="AsContactDto"></a>
-# AsContactDto
+## AsContactDto
 
 Converts MAPI contact model to ContactDto model.             
+
+Returns: Contact model.
+
+Method call example:
+```csharp
+var result = Api.Mapi.Contact.AsContactDto(mapiContactDto);
+```
+
+### mapiContactDto Parameter
+
+MAPI contact model to convert.
+
+See parameter model documentation at [MapiContactDto](MapiContactDto.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var mapiContactDto = new MapiContactDto
+{
+    ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+    {
+        DefaultEmailAddress = new MapiContactElectronicAddressDto
+        {
+            EmailAddress = "email@aspose.com"
+        }
+    },
+    NameInfo = new MapiContactNamePropertySetDto
+    {
+        GivenName = "Alex",
+        Surname = "Thomas"
+    },
+    PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+    {
+        BusinessHomePage = "www.aspose.com"
+    },
+    ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+    {
+        Profession = "GENERAL DIRECTOR"
+    },
+    Telephones = new MapiContactTelephonePropertySetDto
+    {
+        PrimaryTelephoneNumber = "+49 211 4247 21"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* Contact model.
+
+*Return type:* [**ContactDto**](ContactDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new ContactDto
+{
+    Attachments = new List<Attachment>
+    {
+        new Attachment
+        {
+            Name = "attachment.txt",
+            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+        }
+    },
+    DisplayName = "Alex Thomas",
+    EmailAddresses = new List<EmailAddress>
+    {
+        new EmailAddress
+        {
+            Category = new EnumWithCustom<EmailAddressCategory>
+            {
+                Value = "Custom",
+                Description = "Partners"
+            },
+            DisplayName = "Alex Thomas Partners",
+            Preferred = true,
+            Address = "email@aspose.com"
+        }
+    },
+    Gender = "Male",
+    GivenName = "Alex",
+    PhoneNumbers = new List<PhoneNumber>
+    {
+        new PhoneNumber
+        {
+            Category = new EnumWithCustom<PhoneNumberCategory>
+            {
+                Value = "Office"
+            },
+            Number = "+49 211 4247 21",
+            Preferred = true
+        }
+    },
+    Profession = "GENERAL DIRECTOR",
+    Surname = "Thomas",
+    Urls = new List<Url>
+    {
+        new Url
+        {
+            Category = new EnumWithCustom<UrlCategory>
+            {
+                Value = "Work"
+            },
+            Preferred = true,
+            Href = "www.aspose.com"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -100,22 +219,133 @@ result = new ContactDto
 
 </details>
 
-### mapiContactDto Parameter
-See parameter model documentation at [MapiContactDto](MapiContactDto.md)
-
-
-### Return type
-
-[**ContactDto**](ContactDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsContactDtoAsync"></a>
-# AsContactDtoAsync
+## AsContactDtoAsync
 
 Converts MAPI contact model to ContactDto model.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: Contact model.
+
+Method call example:
+```csharp
+var result = await Api.Mapi.Contact.AsContactDtoAsync(mapiContactDto);
+```
+
+### mapiContactDto Parameter
+
+MAPI contact model to convert.
+
+See parameter model documentation at [MapiContactDto](MapiContactDto.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var mapiContactDto = new MapiContactDto
+{
+    ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+    {
+        DefaultEmailAddress = new MapiContactElectronicAddressDto
+        {
+            EmailAddress = "email@aspose.com"
+        }
+    },
+    NameInfo = new MapiContactNamePropertySetDto
+    {
+        GivenName = "Alex",
+        Surname = "Thomas"
+    },
+    PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+    {
+        BusinessHomePage = "www.aspose.com"
+    },
+    ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+    {
+        Profession = "GENERAL DIRECTOR"
+    },
+    Telephones = new MapiContactTelephonePropertySetDto
+    {
+        PrimaryTelephoneNumber = "+49 211 4247 21"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* Contact model.
+
+*Return type:* Task<[**ContactDto**](ContactDto.md)>
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new ContactDto
+{
+    Attachments = new List<Attachment>
+    {
+        new Attachment
+        {
+            Name = "attachment.txt",
+            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+        }
+    },
+    DisplayName = "Alex Thomas",
+    EmailAddresses = new List<EmailAddress>
+    {
+        new EmailAddress
+        {
+            Category = new EnumWithCustom<EmailAddressCategory>
+            {
+                Value = "Custom",
+                Description = "Partners"
+            },
+            DisplayName = "Alex Thomas Partners",
+            Preferred = true,
+            Address = "email@aspose.com"
+        }
+    },
+    Gender = "Male",
+    GivenName = "Alex",
+    PhoneNumbers = new List<PhoneNumber>
+    {
+        new PhoneNumber
+        {
+            Category = new EnumWithCustom<PhoneNumberCategory>
+            {
+                Value = "Office"
+            },
+            Number = "+49 211 4247 21",
+            Preferred = true
+        }
+    },
+    Profession = "GENERAL DIRECTOR",
+    Surname = "Thomas",
+    Urls = new List<Url>
+    {
+        new Url
+        {
+            Category = new EnumWithCustom<UrlCategory>
+            {
+                Value = "Work"
+            },
+            Preferred = true,
+            Href = "www.aspose.com"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -212,19 +442,84 @@ result = new ContactDto
 
 </details>
 
-### mapiContactDto Parameter
-See parameter model documentation at [MapiContactDto](MapiContactDto.md)
-
-
-### Return type
-
-Task<[**ContactDto**](ContactDto.md)>
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="AsFile"></a>
-# AsFile
+## AsFile
 
 Converts MAPI contact model to specified format and returns as file.             
+
+Returns: File stream in specified format.
+
+Method call example:
+```csharp
+var result = Api.Mapi.Contact.AsFile(request);
+```
+
+### request Parameter
+
+MAPI contact model to convert.
+
+See parameter model documentation at [MapiContactAsFileRequest](MapiContactAsFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiContactAsFileRequest
+{
+    Format = "Msg",
+    Value = new MapiContactDto
+    {
+        ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+        {
+            DefaultEmailAddress = new MapiContactElectronicAddressDto
+            {
+                EmailAddress = "email@aspose.com"
+            }
+        },
+        NameInfo = new MapiContactNamePropertySetDto
+        {
+            GivenName = "Alex",
+            Surname = "Thomas"
+        },
+        PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+        {
+            BusinessHomePage = "www.aspose.com"
+        },
+        ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+        {
+            Profession = "GENERAL DIRECTOR"
+        },
+        Telephones = new MapiContactTelephonePropertySetDto
+        {
+            PrimaryTelephoneNumber = "+49 211 4247 21"
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* File stream in specified format.
+
+*Return type:* **Stream**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    result.CopyTo(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -275,22 +570,87 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 
 </details>
 
-### request Parameter
-See parameter model documentation at [MapiContactAsFileRequest](MapiContactAsFileRequest.md)
-
-
-### Return type
-
-**Stream**
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsFileAsync"></a>
-# AsFileAsync
+## AsFileAsync
 
 Converts MAPI contact model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: File stream in specified format.
+
+Method call example:
+```csharp
+var result = await Api.Mapi.Contact.AsFileAsync(request);
+```
+
+### request Parameter
+
+MAPI contact model to convert.
+
+See parameter model documentation at [MapiContactAsFileRequest](MapiContactAsFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiContactAsFileRequest
+{
+    Format = "Msg",
+    Value = new MapiContactDto
+    {
+        ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+        {
+            DefaultEmailAddress = new MapiContactElectronicAddressDto
+            {
+                EmailAddress = "email@aspose.com"
+            }
+        },
+        NameInfo = new MapiContactNamePropertySetDto
+        {
+            GivenName = "Alex",
+            Surname = "Thomas"
+        },
+        PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+        {
+            BusinessHomePage = "www.aspose.com"
+        },
+        ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+        {
+            Profession = "GENERAL DIRECTOR"
+        },
+        Telephones = new MapiContactTelephonePropertySetDto
+        {
+            PrimaryTelephoneNumber = "+49 211 4247 21"
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* File stream in specified format.
+
+*Return type:* **Task<Stream>**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    await result.CopyToAsync(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -341,19 +701,80 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 
 </details>
 
-### request Parameter
-See parameter model documentation at [MapiContactAsFileRequest](MapiContactAsFileRequest.md)
-
-
-### Return type
-
-**Task<Stream>**
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="FromFile"></a>
-# FromFile
+## FromFile
 
 Converts contact file to a MAPI model representation.             
+
+Returns: MAPI model
+
+Method call example:
+```csharp
+var result = Api.Mapi.Contact.FromFile(request);
+```
+
+### request Parameter
+
+FromFile method request.
+
+See parameter model documentation at [MapiContactFromFileRequest](MapiContactFromFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiContactFromFileRequest
+{ 
+    Format = "Msg",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/contact.msg"))
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* MAPI model
+
+*Return type:* [**MapiContactDto**](MapiContactDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiContactDto
+{
+    ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+    {
+        DefaultEmailAddress = new MapiContactElectronicAddressDto
+        {
+            EmailAddress = "email@aspose.com"
+        }
+    },
+    NameInfo = new MapiContactNamePropertySetDto
+    {
+        GivenName = "Alex",
+        Surname = "Thomas"
+    },
+    PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+    {
+        BusinessHomePage = "www.aspose.com"
+    },
+    ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+    {
+        Profession = "GENERAL DIRECTOR"
+    },
+    Telephones = new MapiContactTelephonePropertySetDto
+    {
+        PrimaryTelephoneNumber = "+49 211 4247 21"
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -401,26 +822,83 @@ result = new MapiContactDto
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
- **file** | **System.IO.Stream**| File to convert | 
-
-### Return type
-
-[**MapiContactDto**](MapiContactDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FromFileAsync"></a>
-# FromFileAsync
+## FromFileAsync
 
 Converts contact file to a MAPI model representation.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: MAPI model
+
+Method call example:
+```csharp
+var result = await Api.Mapi.Contact.FromFileAsync(request);
+```
+
+### request Parameter
+
+FromFileAsync method request.
+
+See parameter model documentation at [MapiContactFromFileRequest](MapiContactFromFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiContactFromFileRequest
+{ 
+    Format = "Msg",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/contact.msg"))
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* MAPI model
+
+*Return type:* [**MapiContactDto**](MapiContactDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiContactDto
+{
+    ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+    {
+        DefaultEmailAddress = new MapiContactElectronicAddressDto
+        {
+            EmailAddress = "email@aspose.com"
+        }
+    },
+    NameInfo = new MapiContactNamePropertySetDto
+    {
+        GivenName = "Alex",
+        Surname = "Thomas"
+    },
+    PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+    {
+        BusinessHomePage = "www.aspose.com"
+    },
+    ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+    {
+        Profession = "GENERAL DIRECTOR"
+    },
+    Telephones = new MapiContactTelephonePropertySetDto
+    {
+        PrimaryTelephoneNumber = "+49 211 4247 21"
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -468,23 +946,82 @@ result = new MapiContactDto
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: VCard, WebDav, Msg | 
- **file** | **System.IO.Stream**| File to convert | 
-
-### Return type
-
-[**MapiContactDto**](MapiContactDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Get"></a>
-# Get
+## Get
 
 Get MAPI contact document.             
+
+Returns: Contact model.
+
+Method call example:
+```csharp
+var result = Api.Mapi.Contact.Get(request);
+```
+
+### request Parameter
+
+Get method request.
+
+See parameter model documentation at [MapiContactGetRequest](MapiContactGetRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiContactGetRequest
+{ 
+    Format = "VCard",
+    FileName = "contact.vcf",
+    Folder = "folder/on/storage",
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* Contact model.
+
+*Return type:* [**MapiContactDto**](MapiContactDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiContactDto
+{
+    ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+    {
+        DefaultEmailAddress = new MapiContactElectronicAddressDto
+        {
+            EmailAddress = "email@aspose.com"
+        }
+    },
+    NameInfo = new MapiContactNamePropertySetDto
+    {
+        GivenName = "Alex",
+        Surname = "Thomas"
+    },
+    PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+    {
+        BusinessHomePage = "www.aspose.com"
+    },
+    ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+    {
+        Profession = "GENERAL DIRECTOR"
+    },
+    Telephones = new MapiContactTelephonePropertySetDto
+    {
+        PrimaryTelephoneNumber = "+49 211 4247 21"
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -534,28 +1071,85 @@ result = new MapiContactDto
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
- **fileName** | **string**| Contact document file name. | 
- **folder** | **string**| Path to folder in storage. | [optional] 
- **storage** | **string**| Storage name. | [optional] 
-
-### Return type
-
-[**MapiContactDto**](MapiContactDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsync"></a>
-# GetAsync
+## GetAsync
 
 Get MAPI contact document.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: Contact model.
+
+Method call example:
+```csharp
+var result = await Api.Mapi.Contact.GetAsync(request);
+```
+
+### request Parameter
+
+GetAsync method request.
+
+See parameter model documentation at [MapiContactGetRequest](MapiContactGetRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiContactGetRequest
+{ 
+    Format = "VCard",
+    FileName = "contact.vcf",
+    Folder = "folder/on/storage",
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+*Returns:* Contact model.
+
+*Return type:* [**MapiContactDto**](MapiContactDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiContactDto
+{
+    ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+    {
+        DefaultEmailAddress = new MapiContactElectronicAddressDto
+        {
+            EmailAddress = "email@aspose.com"
+        }
+    },
+    NameInfo = new MapiContactNamePropertySetDto
+    {
+        GivenName = "Alex",
+        Surname = "Thomas"
+    },
+    PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+    {
+        BusinessHomePage = "www.aspose.com"
+    },
+    ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+    {
+        Profession = "GENERAL DIRECTOR"
+    },
+    Telephones = new MapiContactTelephonePropertySetDto
+    {
+        PrimaryTelephoneNumber = "+49 211 4247 21"
+    }
+};
+```
+
+</details>
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -605,25 +1199,79 @@ result = new MapiContactDto
 
 </details>
 
-### request Parameter
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| Contact document format. Enum, available values: VCard, WebDav, Msg | 
- **fileName** | **string**| Contact document file name. | 
- **folder** | **string**| Path to folder in storage. | [optional] 
- **storage** | **string**| Storage name. | [optional] 
-
-### Return type
-
-[**MapiContactDto**](MapiContactDto.md)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 <a name="Save"></a>
-# Save
+## Save
 
 Save MAPI Contact to storage.             
+
+Returns: Returns 200 if create is successful.
+
+Method call example:
+```csharp
+Api.Mapi.Contact.Save(request);
+```
+
+### request Parameter
+
+Create/Update contact request.
+
+See parameter model documentation at [MapiContactSaveRequest](MapiContactSaveRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiContactSaveRequest
+{
+    Format = "Msg",
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "contact.msg",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new MapiContactDto
+    {
+        ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+        {
+            DefaultEmailAddress = new MapiContactElectronicAddressDto
+            {
+                EmailAddress = "email@aspose.com"
+            }
+        },
+        NameInfo = new MapiContactNamePropertySetDto
+        {
+            GivenName = "Alex",
+            Surname = "Thomas"
+        },
+        PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+        {
+            BusinessHomePage = "www.aspose.com"
+        },
+        ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+        {
+            Profession = "GENERAL DIRECTOR"
+        },
+        Telephones = new MapiContactTelephonePropertySetDto
+        {
+            PrimaryTelephoneNumber = "+49 211 4247 21"
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* Returns 200 if create is successful.
+
+*Return type:* void (empty response body)
+
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -675,22 +1323,82 @@ Api.Mapi.Contact.Save(request);
 
 </details>
 
-### request Parameter
-See parameter model documentation at [MapiContactSaveRequest](MapiContactSaveRequest.md)
-
-
-### Return type
-
-void (empty response body)
-
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveAsync"></a>
-# SaveAsync
+## SaveAsync
 
 Save MAPI Contact to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
+
+Returns: Returns 200 if create is successful.
+
+Method call example:
+```csharp
+await Api.Mapi.Contact.SaveAsync(request);
+```
+
+### request Parameter
+
+Create/Update contact request.
+
+See parameter model documentation at [MapiContactSaveRequest](MapiContactSaveRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiContactSaveRequest
+{
+    Format = "Msg",
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "contact.msg",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new MapiContactDto
+    {
+        ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
+        {
+            DefaultEmailAddress = new MapiContactElectronicAddressDto
+            {
+                EmailAddress = "email@aspose.com"
+            }
+        },
+        NameInfo = new MapiContactNamePropertySetDto
+        {
+            GivenName = "Alex",
+            Surname = "Thomas"
+        },
+        PersonalInfo = new MapiContactPersonalInfoPropertySetDto
+        {
+            BusinessHomePage = "www.aspose.com"
+        },
+        ProfessionalInfo = new MapiContactProfessionalPropertySetDto
+        {
+            Profession = "GENERAL DIRECTOR"
+        },
+        Telephones = new MapiContactTelephonePropertySetDto
+        {
+            PrimaryTelephoneNumber = "+49 211 4247 21"
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+*Returns:* Returns 200 if create is successful.
+
+*Return type:* Task (empty response body)
+
+
+### Complete example:
 
 <details>
     <summary>Method call example:</summary>
@@ -741,13 +1449,5 @@ await Api.Mapi.Contact.SaveAsync(request);
 ```
 
 </details>
-
-### request Parameter
-See parameter model documentation at [MapiContactSaveRequest](MapiContactSaveRequest.md)
-
-
-### Return type
-
-Task (empty response body)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

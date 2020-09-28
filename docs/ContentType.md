@@ -1,4 +1,4 @@
-# Model.ContentType
+# ContentType
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,7 +9,5 @@ Name | Type | Description | Notes
 **Parameters** | [**List&lt;ContentTypeParameter&gt;**](ContentTypeParameter.md) | Full list of parameters              | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

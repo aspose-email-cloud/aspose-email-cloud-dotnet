@@ -1,4 +1,4 @@
-# Model.MailServerFolderList
+# MailServerFolderList
 ## Properties
 Class has no properties
 
@@ -6,6 +6,5 @@ Class has no properties
 
 See: [ListResponseOfMailServerFolder](ListResponseOfMailServerFolder.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

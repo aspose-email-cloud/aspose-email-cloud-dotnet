@@ -1,4 +1,4 @@
-# Model.MapiCalendarTimeZoneDto
+# MapiCalendarTimeZoneDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +6,5 @@ Name | Type | Description | Notes
 **TimeZoneRules** | [**List&lt;MapiCalendarTimeZoneInfoDto&gt;**](MapiCalendarTimeZoneInfoDto.md) | Time zone rules              | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

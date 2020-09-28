@@ -1,4 +1,4 @@
-# Model.StorageFile
+# StorageFile
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,7 +9,16 @@ Name | Type | Description | Notes
 **Path** | **string** | File or folder path. | [optional] 
 
 
+## Example
+```csharp
+var storageFile = new StorageFile
+{
+    Name = "file.ext",
+    ModifiedDate = DateTime.Today,
+    Size = 4096,
+    Path = "/storage/path/to"
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

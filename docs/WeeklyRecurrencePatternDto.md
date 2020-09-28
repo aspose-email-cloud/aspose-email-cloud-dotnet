@@ -1,4 +1,4 @@
-# Model.WeeklyRecurrencePatternDto
+# WeeklyRecurrencePatternDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -8,6 +8,20 @@ Name | Type | Description | Notes
 
 See: [RecurrencePatternDto](RecurrencePatternDto.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var weeklyRecurrencePatternDto = new WeeklyRecurrencePatternDto
+{
+    StartDays = new List<CalendarDay>
+    {
+        "Tuesday",
+        "Thursday"
+    },
+    Interval = -1,
+    Occurs = 10,
+    WeekStart = "Sunday"
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

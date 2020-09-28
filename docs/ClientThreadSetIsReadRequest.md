@@ -1,4 +1,4 @@
-# Model.ClientThreadSetIsReadRequest
+# ClientThreadSetIsReadRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,6 +9,21 @@ Name | Type | Description | Notes
 
 See: [ClientThreadBaseRequest](ClientThreadBaseRequest.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var clientThreadSetIsReadRequest = new ClientThreadSetIsReadRequest
+{
+    IsRead = true,
+    Folder = "INBOX",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 
