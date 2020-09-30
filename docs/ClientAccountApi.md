@@ -18,7 +18,7 @@ var result = api.Client.Account.Get(request);
 
 **Description:** Get method request.
 
-**See also** parameter model documentation at [**ClientAccountGetRequest**](ClientAccountGetRequest.md)
+**See also** parameter model documentation at [**ClientAccountGetRequest**](ClientAccountGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -121,7 +121,7 @@ var result = await api.Client.Account.GetAsync(request);
 
 **Description:** GetAsync method request.
 
-**See also** parameter model documentation at [**ClientAccountGetRequest**](ClientAccountGetRequest.md)
+**See also** parameter model documentation at [**ClientAccountGetRequest**](ClientAccountGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -220,7 +220,7 @@ var result = api.Client.Account.GetMulti(request);
 
 **Description:** GetMulti method request.
 
-**See also** parameter model documentation at [**ClientAccountGetMultiRequest**](ClientAccountGetMultiRequest.md)
+**See also** parameter model documentation at [**ClientAccountGetMultiRequest**](ClientAccountGetMultiRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -379,7 +379,7 @@ var result = await api.Client.Account.GetMultiAsync(request);
 
 **Description:** GetMultiAsync method request.
 
-**See also** parameter model documentation at [**ClientAccountGetMultiRequest**](ClientAccountGetMultiRequest.md)
+**See also** parameter model documentation at [**ClientAccountGetMultiRequest**](ClientAccountGetMultiRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -524,8 +524,6 @@ result = new EmailClientMultiAccount
 **Description**: Create/update email client account file (*.account) with credentials             
 
 
-**Returns:** Returns 200 if save is successful.
-
 **Method call example:**
 ```csharp
 api.Client.Account.Save(request);
@@ -571,8 +569,6 @@ var request = new ClientAccountSaveRequest
 
 ### Result
 
-**Description:** Returns 200 if save is successful.
-
 **Return type:** void (empty response body)
 
 
@@ -611,7 +607,6 @@ var request = new ClientAccountSaveRequest
 
 // Call method:
 api.Client.Account.Save(request);
-
 ```
 
 </details>
@@ -626,8 +621,6 @@ api.Client.Account.Save(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if save is successful.
-
 **Method call example:**
 ```csharp
 await api.Client.Account.SaveAsync(request);
@@ -673,8 +666,6 @@ var request = new ClientAccountSaveRequest
 
 ### Result
 
-**Description:** Returns 200 if save is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -713,7 +704,6 @@ var request = new ClientAccountSaveRequest
 
 // Call method:
 await api.Client.Account.SaveAsync(request);
-
 ```
 
 </details>
@@ -724,8 +714,6 @@ await api.Client.Account.SaveAsync(request);
 
 **Description**: Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
 
-
-**Returns:** Returns 200 if save is successful.
 
 **Method call example:**
 ```csharp
@@ -799,8 +787,6 @@ var request = new ClientAccountSaveMultiRequest
 
 
 ### Result
-
-**Description:** Returns 200 if save is successful.
 
 **Return type:** void (empty response body)
 
@@ -868,7 +854,6 @@ var request = new ClientAccountSaveMultiRequest
 
 // Call method:
 api.Client.Account.SaveMulti(request);
-
 ```
 
 </details>
@@ -882,8 +867,6 @@ api.Client.Account.SaveMulti(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if save is successful.
 
 **Method call example:**
 ```csharp
@@ -958,8 +941,6 @@ var request = new ClientAccountSaveMultiRequest
 
 ### Result
 
-**Description:** Returns 200 if save is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -1026,7 +1007,6 @@ var request = new ClientAccountSaveMultiRequest
 
 // Call method:
 await api.Client.Account.SaveMultiAsync(request);
-
 ```
 
 </details>

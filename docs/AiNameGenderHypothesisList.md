@@ -1,5 +1,5 @@
 # AiNameGenderHypothesisList
-Hypotheses about person&#39;s gender             
+Hypotheses about person's gender             
 
 ## Properties
 Class has no properties

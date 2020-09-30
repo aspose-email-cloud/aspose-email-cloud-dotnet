@@ -7,7 +7,7 @@ Request model for MapiCalendarApi.FromFile
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**file** | **System.IO.Stream**| File to convert | 
+**file** |**System.IO.Stream**|File to convert |
 
 ## Example
 ```csharp

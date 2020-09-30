@@ -7,8 +7,6 @@ Folder operations controller
 **Descrption:** Copy folder
 
 
-**Returns:** Returns 200 if the copy is successful.
-
 **Method call example:**
 ```csharp
 api.CloudStorage.Folder.CopyFolder(request);
@@ -18,7 +16,7 @@ api.CloudStorage.Folder.CopyFolder(request);
 
 **Description:** CopyFolder method request.
 
-**See also** parameter model documentation at [**CopyFolderRequest**](CopyFolderRequest.md)
+**See also** parameter model documentation at [**CopyFolderRequest**](CopyFolderRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -36,8 +34,6 @@ var request = new CopyFolderRequest
 </details>
 
 ### Result
-
-**Description:** Returns 200 if the copy is successful.
 
 **Return type:** void (empty response body)
 
@@ -76,8 +72,6 @@ api.CloudStorage.Folder.CopyFolder(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if the copy is successful.
-
 **Method call example:**
 ```csharp
 await api.CloudStorage.Folder.CopyFolderAsync(request);
@@ -87,7 +81,7 @@ await api.CloudStorage.Folder.CopyFolderAsync(request);
 
 **Description:** CopyFolderAsync method request.
 
-**See also** parameter model documentation at [**CopyFolderRequest**](CopyFolderRequest.md)
+**See also** parameter model documentation at [**CopyFolderRequest**](CopyFolderRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -105,8 +99,6 @@ var request = new CopyFolderRequest
 </details>
 
 ### Result
-
-**Returns:** Returns 200 if the copy is successful.
 
 **Return type:** void (empty response body)
 
@@ -141,8 +133,6 @@ await api.CloudStorage.Folder.CopyFolderAsync(request);
 **Descrption:** Create the folder
 
 
-**Returns:** Returns 200 if the create is successful.
-
 **Method call example:**
 ```csharp
 api.CloudStorage.Folder.CreateFolder(request);
@@ -152,7 +142,7 @@ api.CloudStorage.Folder.CreateFolder(request);
 
 **Description:** CreateFolder method request.
 
-**See also** parameter model documentation at [**CreateFolderRequest**](CreateFolderRequest.md)
+**See also** parameter model documentation at [**CreateFolderRequest**](CreateFolderRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -168,8 +158,6 @@ var request = new CreateFolderRequest
 </details>
 
 ### Result
-
-**Description:** Returns 200 if the create is successful.
 
 **Return type:** void (empty response body)
 
@@ -206,8 +194,6 @@ api.CloudStorage.Folder.CreateFolder(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if the create is successful.
-
 **Method call example:**
 ```csharp
 await api.CloudStorage.Folder.CreateFolderAsync(request);
@@ -217,7 +203,7 @@ await api.CloudStorage.Folder.CreateFolderAsync(request);
 
 **Description:** CreateFolderAsync method request.
 
-**See also** parameter model documentation at [**CreateFolderRequest**](CreateFolderRequest.md)
+**See also** parameter model documentation at [**CreateFolderRequest**](CreateFolderRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -233,8 +219,6 @@ var request = new CreateFolderRequest
 </details>
 
 ### Result
-
-**Returns:** Returns 200 if the create is successful.
 
 **Return type:** void (empty response body)
 
@@ -267,8 +251,6 @@ await api.CloudStorage.Folder.CreateFolderAsync(request);
 **Descrption:** Delete folder
 
 
-**Returns:** Returns 200 if the delete is successful.
-
 **Method call example:**
 ```csharp
 api.CloudStorage.Folder.DeleteFolder(request);
@@ -278,7 +260,7 @@ api.CloudStorage.Folder.DeleteFolder(request);
 
 **Description:** DeleteFolder method request.
 
-**See also** parameter model documentation at [**DeleteFolderRequest**](DeleteFolderRequest.md)
+**See also** parameter model documentation at [**DeleteFolderRequest**](DeleteFolderRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -295,8 +277,6 @@ var request = new DeleteFolderRequest
 </details>
 
 ### Result
-
-**Description:** Returns 200 if the delete is successful.
 
 **Return type:** void (empty response body)
 
@@ -334,8 +314,6 @@ api.CloudStorage.Folder.DeleteFolder(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if the delete is successful.
-
 **Method call example:**
 ```csharp
 await api.CloudStorage.Folder.DeleteFolderAsync(request);
@@ -345,7 +323,7 @@ await api.CloudStorage.Folder.DeleteFolderAsync(request);
 
 **Description:** DeleteFolderAsync method request.
 
-**See also** parameter model documentation at [**DeleteFolderRequest**](DeleteFolderRequest.md)
+**See also** parameter model documentation at [**DeleteFolderRequest**](DeleteFolderRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -362,8 +340,6 @@ var request = new DeleteFolderRequest
 </details>
 
 ### Result
-
-**Returns:** Returns 200 if the delete is successful.
 
 **Return type:** void (empty response body)
 
@@ -408,7 +384,7 @@ var result = api.CloudStorage.Folder.GetFilesList(request);
 
 **Description:** GetFilesList method request.
 
-**See also** parameter model documentation at [**GetFilesListRequest**](GetFilesListRequest.md)
+**See also** parameter model documentation at [**GetFilesListRequest**](GetFilesListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -507,7 +483,7 @@ var result = await api.CloudStorage.Folder.GetFilesListAsync(request);
 
 **Description:** GetFilesListAsync method request.
 
-**See also** parameter model documentation at [**GetFilesListRequest**](GetFilesListRequest.md)
+**See also** parameter model documentation at [**GetFilesListRequest**](GetFilesListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -591,8 +567,6 @@ result = new FilesList
 **Descrption:** Move folder
 
 
-**Returns:** Returns 200 if the move is successful.
-
 **Method call example:**
 ```csharp
 api.CloudStorage.Folder.MoveFolder(request);
@@ -602,7 +576,7 @@ api.CloudStorage.Folder.MoveFolder(request);
 
 **Description:** MoveFolder method request.
 
-**See also** parameter model documentation at [**MoveFolderRequest**](MoveFolderRequest.md)
+**See also** parameter model documentation at [**MoveFolderRequest**](MoveFolderRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -620,8 +594,6 @@ var request = new MoveFolderRequest
 </details>
 
 ### Result
-
-**Description:** Returns 200 if the move is successful.
 
 **Return type:** void (empty response body)
 
@@ -660,8 +632,6 @@ api.CloudStorage.Folder.MoveFolder(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if the move is successful.
-
 **Method call example:**
 ```csharp
 await api.CloudStorage.Folder.MoveFolderAsync(request);
@@ -671,7 +641,7 @@ await api.CloudStorage.Folder.MoveFolderAsync(request);
 
 **Description:** MoveFolderAsync method request.
 
-**See also** parameter model documentation at [**MoveFolderRequest**](MoveFolderRequest.md)
+**See also** parameter model documentation at [**MoveFolderRequest**](MoveFolderRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -689,8 +659,6 @@ var request = new MoveFolderRequest
 </details>
 
 ### Result
-
-**Returns:** Returns 200 if the move is successful.
 
 **Return type:** void (empty response body)
 

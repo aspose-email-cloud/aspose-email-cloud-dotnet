@@ -18,7 +18,7 @@ var result = api.Ai.Name.Complete(request);
 
 **Description:** Complete method request.
 
-**See also** parameter model documentation at [**AiNameCompleteRequest**](AiNameCompleteRequest.md)
+**See also** parameter model documentation at [**AiNameCompleteRequest**](AiNameCompleteRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -26,7 +26,7 @@ var result = api.Ai.Name.Complete(request);
 ```csharp
 var request = new AiNameCompleteRequest
 { 
-    Name = "Dav",
+    Name = "Dav"
 };
 ```
 
@@ -73,7 +73,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new AiNameCompleteRequest
 { 
-    Name = "Dav",
+    Name = "Dav"
 };
 
 // Call method:
@@ -121,7 +121,7 @@ var result = await api.Ai.Name.CompleteAsync(request);
 
 **Description:** CompleteAsync method request.
 
-**See also** parameter model documentation at [**AiNameCompleteRequest**](AiNameCompleteRequest.md)
+**See also** parameter model documentation at [**AiNameCompleteRequest**](AiNameCompleteRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -129,7 +129,7 @@ var result = await api.Ai.Name.CompleteAsync(request);
 ```csharp
 var request = new AiNameCompleteRequest
 { 
-    Name = "Dav",
+    Name = "Dav"
 };
 ```
 
@@ -176,7 +176,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new AiNameCompleteRequest
 { 
-    Name = "Dav",
+    Name = "Dav"
 };
 
 // Call method:
@@ -220,7 +220,7 @@ var result = api.Ai.Name.Expand(request);
 
 **Description:** Expand method request.
 
-**See also** parameter model documentation at [**AiNameExpandRequest**](AiNameExpandRequest.md)
+**See also** parameter model documentation at [**AiNameExpandRequest**](AiNameExpandRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -228,7 +228,7 @@ var result = api.Ai.Name.Expand(request);
 ```csharp
 var request = new AiNameExpandRequest
 { 
-    Name = "John Cane",
+    Name = "John Cane"
 };
 ```
 
@@ -275,7 +275,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new AiNameExpandRequest
 { 
-    Name = "John Cane",
+    Name = "John Cane"
 };
 
 // Call method:
@@ -323,7 +323,7 @@ var result = await api.Ai.Name.ExpandAsync(request);
 
 **Description:** ExpandAsync method request.
 
-**See also** parameter model documentation at [**AiNameExpandRequest**](AiNameExpandRequest.md)
+**See also** parameter model documentation at [**AiNameExpandRequest**](AiNameExpandRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -331,7 +331,7 @@ var result = await api.Ai.Name.ExpandAsync(request);
 ```csharp
 var request = new AiNameExpandRequest
 { 
-    Name = "John Cane",
+    Name = "John Cane"
 };
 ```
 
@@ -378,7 +378,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new AiNameExpandRequest
 { 
-    Name = "John Cane",
+    Name = "John Cane"
 };
 
 // Call method:
@@ -615,7 +615,7 @@ var result = api.Ai.Name.Format(request);
 
 **Description:** Format method request.
 
-**See also** parameter model documentation at [**AiNameFormatRequest**](AiNameFormatRequest.md)
+**See also** parameter model documentation at [**AiNameFormatRequest**](AiNameFormatRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -624,7 +624,7 @@ var result = api.Ai.Name.Format(request);
 var request = new AiNameFormatRequest
 { 
     Name = "Mr. John Michael Cane",
-    Format = "%t%L%f%m",
+    Format = "%t%L%f%m"
 };
 ```
 
@@ -661,7 +661,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new AiNameFormatRequest
 { 
     Name = "Mr. John Michael Cane",
-    Format = "%t%L%f%m",
+    Format = "%t%L%f%m"
 };
 
 // Call method:
@@ -698,7 +698,7 @@ var result = await api.Ai.Name.FormatAsync(request);
 
 **Description:** FormatAsync method request.
 
-**See also** parameter model documentation at [**AiNameFormatRequest**](AiNameFormatRequest.md)
+**See also** parameter model documentation at [**AiNameFormatRequest**](AiNameFormatRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -707,7 +707,7 @@ var result = await api.Ai.Name.FormatAsync(request);
 var request = new AiNameFormatRequest
 { 
     Name = "Mr. John Michael Cane",
-    Format = "%t%L%f%m",
+    Format = "%t%L%f%m"
 };
 ```
 
@@ -744,7 +744,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new AiNameFormatRequest
 { 
     Name = "Mr. John Michael Cane",
-    Format = "%t%L%f%m",
+    Format = "%t%L%f%m"
 };
 
 // Call method:
@@ -926,7 +926,7 @@ var result = api.Ai.Name.Genderize(request);
 
 **Description:** Genderize method request.
 
-**See also** parameter model documentation at [**AiNameGenderizeRequest**](AiNameGenderizeRequest.md)
+**See also** parameter model documentation at [**AiNameGenderizeRequest**](AiNameGenderizeRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -934,7 +934,7 @@ var result = api.Ai.Name.Genderize(request);
 ```csharp
 var request = new AiNameGenderizeRequest
 { 
-    Name = "John Cane",
+    Name = "John Cane"
 };
 ```
 
@@ -942,7 +942,7 @@ var request = new AiNameGenderizeRequest
 
 ### Result
 
-**Description:** Hypotheses about person&#39;s gender.
+**Description:** Hypotheses about person's gender.
 
 **Return type:** [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
@@ -966,7 +966,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new AiNameGenderizeRequest
 { 
-    Name = "John Cane",
+    Name = "John Cane"
 };
 
 // Call method:
@@ -988,7 +988,7 @@ result = ;
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Hypotheses about person&#39;s gender.
+**Returns:** Hypotheses about person's gender.
 
 **Method call example:**
 ```csharp
@@ -999,7 +999,7 @@ var result = await api.Ai.Name.GenderizeAsync(request);
 
 **Description:** GenderizeAsync method request.
 
-**See also** parameter model documentation at [**AiNameGenderizeRequest**](AiNameGenderizeRequest.md)
+**See also** parameter model documentation at [**AiNameGenderizeRequest**](AiNameGenderizeRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1007,7 +1007,7 @@ var result = await api.Ai.Name.GenderizeAsync(request);
 ```csharp
 var request = new AiNameGenderizeRequest
 { 
-    Name = "John Cane",
+    Name = "John Cane"
 };
 ```
 
@@ -1015,7 +1015,7 @@ var request = new AiNameGenderizeRequest
 
 ### Result
 
-**Returns:** Hypotheses about person&#39;s gender.
+**Returns:** Hypotheses about person's gender.
 
 **Return type:** [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
@@ -1039,7 +1039,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new AiNameGenderizeRequest
 { 
-    Name = "John Cane",
+    Name = "John Cane"
 };
 
 // Call method:
@@ -1058,7 +1058,7 @@ result = ;
 **Description**: Detect person's gender from parsed name.             
 
 
-**Returns:** Hypotheses about person&#39;s gender.
+**Returns:** Hypotheses about person's gender.
 
 **Method call example:**
 ```csharp
@@ -1083,7 +1083,7 @@ var request = ;
 
 ### Result
 
-**Description:** Hypotheses about person&#39;s gender.
+**Description:** Hypotheses about person's gender.
 
 **Return type:** [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
@@ -1126,7 +1126,7 @@ result = ;
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Hypotheses about person&#39;s gender.
+**Returns:** Hypotheses about person's gender.
 
 **Method call example:**
 ```csharp
@@ -1151,7 +1151,7 @@ var request = ;
 
 ### Result
 
-**Description:** Hypotheses about person&#39;s gender.
+**Description:** Hypotheses about person's gender.
 
 **Return type:** Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
 
@@ -1201,7 +1201,7 @@ var result = api.Ai.Name.Match(request);
 
 **Description:** Match method request.
 
-**See also** parameter model documentation at [**AiNameMatchRequest**](AiNameMatchRequest.md)
+**See also** parameter model documentation at [**AiNameMatchRequest**](AiNameMatchRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1210,7 +1210,7 @@ var result = api.Ai.Name.Match(request);
 var request = new AiNameMatchRequest
 { 
     Name = "John Michael Cane",
-    OtherName = "Cane J.",
+    OtherName = "Cane J."
 };
 ```
 
@@ -1254,7 +1254,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new AiNameMatchRequest
 { 
     Name = "John Michael Cane",
-    OtherName = "Cane J.",
+    OtherName = "Cane J."
 };
 
 // Call method:
@@ -1298,7 +1298,7 @@ var result = await api.Ai.Name.MatchAsync(request);
 
 **Description:** MatchAsync method request.
 
-**See also** parameter model documentation at [**AiNameMatchRequest**](AiNameMatchRequest.md)
+**See also** parameter model documentation at [**AiNameMatchRequest**](AiNameMatchRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1307,7 +1307,7 @@ var result = await api.Ai.Name.MatchAsync(request);
 var request = new AiNameMatchRequest
 { 
     Name = "John Michael Cane",
-    OtherName = "Cane J.",
+    OtherName = "Cane J."
 };
 ```
 
@@ -1351,7 +1351,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new AiNameMatchRequest
 { 
     Name = "John Michael Cane",
-    OtherName = "Cane J.",
+    OtherName = "Cane J."
 };
 
 // Call method:
@@ -1568,7 +1568,7 @@ var result = api.Ai.Name.Parse(request);
 
 **Description:** Parse method request.
 
-**See also** parameter model documentation at [**AiNameParseRequest**](AiNameParseRequest.md)
+**See also** parameter model documentation at [**AiNameParseRequest**](AiNameParseRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1578,7 +1578,7 @@ var request = new AiNameParseRequest
 { 
     Name = "John Cane",
     Language = "eng",
-    Location = "USA",
+    Location = "USA"
 };
 ```
 
@@ -1612,7 +1612,7 @@ var request = new AiNameParseRequest
 { 
     Name = "John Cane",
     Language = "eng",
-    Location = "USA",
+    Location = "USA"
 };
 
 // Call method:
@@ -1645,7 +1645,7 @@ var result = await api.Ai.Name.ParseAsync(request);
 
 **Description:** ParseAsync method request.
 
-**See also** parameter model documentation at [**AiNameParseRequest**](AiNameParseRequest.md)
+**See also** parameter model documentation at [**AiNameParseRequest**](AiNameParseRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1655,7 +1655,7 @@ var request = new AiNameParseRequest
 { 
     Name = "John Cane",
     Language = "eng",
-    Location = "USA",
+    Location = "USA"
 };
 ```
 
@@ -1689,7 +1689,7 @@ var request = new AiNameParseRequest
 { 
     Name = "John Cane",
     Language = "eng",
-    Location = "USA",
+    Location = "USA"
 };
 
 // Call method:
@@ -1718,7 +1718,7 @@ var result = api.Ai.Name.ParseEmailAddress(request);
 
 **Description:** ParseEmailAddress method request.
 
-**See also** parameter model documentation at [**AiNameParseEmailAddressRequest**](AiNameParseEmailAddressRequest.md)
+**See also** parameter model documentation at [**AiNameParseEmailAddressRequest**](AiNameParseEmailAddressRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1726,7 +1726,7 @@ var result = api.Ai.Name.ParseEmailAddress(request);
 ```csharp
 var request = new AiNameParseEmailAddressRequest
 { 
-    EmailAddress = "john-cane@gmail.com",
+    EmailAddress = "john-cane@gmail.com"
 };
 ```
 
@@ -1758,7 +1758,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new AiNameParseEmailAddressRequest
 { 
-    EmailAddress = "john-cane@gmail.com",
+    EmailAddress = "john-cane@gmail.com"
 };
 
 // Call method:
@@ -1791,7 +1791,7 @@ var result = await api.Ai.Name.ParseEmailAddressAsync(request);
 
 **Description:** ParseEmailAddressAsync method request.
 
-**See also** parameter model documentation at [**AiNameParseEmailAddressRequest**](AiNameParseEmailAddressRequest.md)
+**See also** parameter model documentation at [**AiNameParseEmailAddressRequest**](AiNameParseEmailAddressRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1799,7 +1799,7 @@ var result = await api.Ai.Name.ParseEmailAddressAsync(request);
 ```csharp
 var request = new AiNameParseEmailAddressRequest
 { 
-    EmailAddress = "john-cane@gmail.com",
+    EmailAddress = "john-cane@gmail.com"
 };
 ```
 
@@ -1831,7 +1831,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new AiNameParseEmailAddressRequest
 { 
-    EmailAddress = "john-cane@gmail.com",
+    EmailAddress = "john-cane@gmail.com"
 };
 
 // Call method:

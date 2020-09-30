@@ -7,9 +7,9 @@ Request model for MapiCalendarApi.Get
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**fileName** | **string**| Calendar file name in storage. | 
-**folder** | **string**| Path to folder in storage. | [optional] 
-**storage** | **string**| Storage name. | [optional] 
+**fileName** |**string**|Calendar file name in storage. |
+**folder** |**string**|Path to folder in storage. |[optional] 
+**storage** |**string**|Storage name. |[optional] 
 
 ## Example
 ```csharp

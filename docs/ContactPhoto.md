@@ -1,5 +1,5 @@
 # ContactPhoto
-Person&#39;s photo.             
+Person's photo.             
 
 ## Properties
 Name | Type | Description | Notes

@@ -18,7 +18,7 @@ var result = api.EmailConfig.Discover(request);
 
 **Description:** Discover method request.
 
-**See also** parameter model documentation at [**EmailConfigDiscoverRequest**](EmailConfigDiscoverRequest.md)
+**See also** parameter model documentation at [**EmailConfigDiscoverRequest**](EmailConfigDiscoverRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -223,7 +223,7 @@ var result = await api.EmailConfig.DiscoverAsync(request);
 
 **Description:** DiscoverAsync method request.
 
-**See also** parameter model documentation at [**EmailConfigDiscoverRequest**](EmailConfigDiscoverRequest.md)
+**See also** parameter model documentation at [**EmailConfigDiscoverRequest**](EmailConfigDiscoverRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>

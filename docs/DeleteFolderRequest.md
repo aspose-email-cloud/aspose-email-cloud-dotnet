@@ -7,9 +7,9 @@ Request model for FolderApi.DeleteFolder
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**path** | **string**| Folder path e.g. &#39;/folder&#39; | 
-**storageName** | **string**| Storage name | [optional] 
-**recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
+**path** |**string**|Folder path e.g. '/folder' |
+**storageName** |**string**|Storage name |[optional] 
+**recursive** |**bool?**|Enable to delete folders, subfolders and files |[optional] [default to false]
 
 ## Example
 ```csharp

@@ -780,7 +780,7 @@ var result = api.Mapi.Calendar.FromFile(request);
 
 **Description:** FromFile method request.
 
-**See also** parameter model documentation at [**MapiCalendarFromFileRequest**](MapiCalendarFromFileRequest.md)
+**See also** parameter model documentation at [**MapiCalendarFromFileRequest**](MapiCalendarFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -943,7 +943,7 @@ var result = await api.Mapi.Calendar.FromFileAsync(request);
 
 **Description:** FromFileAsync method request.
 
-**See also** parameter model documentation at [**MapiCalendarFromFileRequest**](MapiCalendarFromFileRequest.md)
+**See also** parameter model documentation at [**MapiCalendarFromFileRequest**](MapiCalendarFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1102,7 +1102,7 @@ var result = api.Mapi.Calendar.Get(request);
 
 **Description:** Get method request.
 
-**See also** parameter model documentation at [**MapiCalendarGetRequest**](MapiCalendarGetRequest.md)
+**See also** parameter model documentation at [**MapiCalendarGetRequest**](MapiCalendarGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1269,7 +1269,7 @@ var result = await api.Mapi.Calendar.GetAsync(request);
 
 **Description:** GetAsync method request.
 
-**See also** parameter model documentation at [**MapiCalendarGetRequest**](MapiCalendarGetRequest.md)
+**See also** parameter model documentation at [**MapiCalendarGetRequest**](MapiCalendarGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1422,8 +1422,6 @@ result = new MapiCalendarDto
 **Description**: Save MAPI Calendar to storage.             
 
 
-**Returns:** Returns 200 if update is successful.
-
 **Method call example:**
 ```csharp
 api.Mapi.Calendar.Save(request);
@@ -1501,8 +1499,6 @@ var request = new MapiCalendarSaveRequest
 
 
 ### Result
-
-**Description:** Returns 200 if update is successful.
 
 **Return type:** void (empty response body)
 
@@ -1575,7 +1571,6 @@ var request = new MapiCalendarSaveRequest
 
 // Call method:
 api.Mapi.Calendar.Save(request);
-
 ```
 
 </details>
@@ -1589,8 +1584,6 @@ api.Mapi.Calendar.Save(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if update is successful.
 
 **Method call example:**
 ```csharp
@@ -1670,8 +1663,6 @@ var request = new MapiCalendarSaveRequest
 
 ### Result
 
-**Description:** Returns 200 if update is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -1743,7 +1734,6 @@ var request = new MapiCalendarSaveRequest
 
 // Call method:
 await api.Mapi.Calendar.SaveAsync(request);
-
 ```
 
 </details>

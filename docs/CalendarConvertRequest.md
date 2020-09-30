@@ -7,8 +7,8 @@ Request model for CalendarApi.Convert
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**format** | **string**| File format. Enum, available values: Ics, Msg | 
-**file** | **System.IO.Stream**| File to convert | 
+**format** |**string**|File format. Enum, available values: Ics, Msg |
+**file** |**System.IO.Stream**|File to convert |
 
 ## Example
 ```csharp

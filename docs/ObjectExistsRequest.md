@@ -7,16 +7,16 @@ Request model for StorageApi.ObjectExists
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**path** | **string**| File or folder path e.g. &#39;/file.ext&#39; or &#39;/folder&#39; | 
-**storageName** | **string**| Storage name | [optional] 
-**versionId** | **string**| File version ID | [optional] 
+**path** |**string**|File or folder path e.g. '/file.ext' or '/folder' |
+**storageName** |**string**|Storage name |[optional] 
+**versionId** |**string**|File version ID |[optional] 
 
 ## Example
 ```csharp
 var request = new ObjectExistsRequest
 { 
     Path = "/storage/path/to/folder/or/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 ```
 

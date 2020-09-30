@@ -7,8 +7,8 @@ Request model for FolderApi.GetFilesList
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**path** | **string**| Folder path e.g. &#39;/folder&#39; | 
-**storageName** | **string**| Storage name | [optional] 
+**path** |**string**|Folder path e.g. '/folder' |
+**storageName** |**string**|Storage name |[optional] 
 
 ## Example
 ```csharp

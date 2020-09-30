@@ -736,7 +736,7 @@ var result = api.Email.Convert(request);
 
 **Description:** Convert method request.
 
-**See also** parameter model documentation at [**EmailConvertRequest**](EmailConvertRequest.md)
+**See also** parameter model documentation at [**EmailConvertRequest**](EmailConvertRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -819,7 +819,7 @@ var result = await api.Email.ConvertAsync(request);
 
 **Description:** ConvertAsync method request.
 
-**See also** parameter model documentation at [**EmailConvertRequest**](EmailConvertRequest.md)
+**See also** parameter model documentation at [**EmailConvertRequest**](EmailConvertRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -898,7 +898,7 @@ var result = api.Email.FromFile(request);
 
 **Description:** FromFile method request.
 
-**See also** parameter model documentation at [**EmailFromFileRequest**](EmailFromFileRequest.md)
+**See also** parameter model documentation at [**EmailFromFileRequest**](EmailFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1041,7 +1041,7 @@ var result = await api.Email.FromFileAsync(request);
 
 **Description:** FromFileAsync method request.
 
-**See also** parameter model documentation at [**EmailFromFileRequest**](EmailFromFileRequest.md)
+**See also** parameter model documentation at [**EmailFromFileRequest**](EmailFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1180,7 +1180,7 @@ var result = api.Email.Get(request);
 
 **Description:** Get method request.
 
-**See also** parameter model documentation at [**EmailGetRequest**](EmailGetRequest.md)
+**See also** parameter model documentation at [**EmailGetRequest**](EmailGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1327,7 +1327,7 @@ var result = await api.Email.GetAsync(request);
 
 **Description:** GetAsync method request.
 
-**See also** parameter model documentation at [**EmailGetRequest**](EmailGetRequest.md)
+**See also** parameter model documentation at [**EmailGetRequest**](EmailGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1470,7 +1470,7 @@ var result = api.Email.GetAsFile(request);
 
 **Description:** GetAsFile method request.
 
-**See also** parameter model documentation at [**EmailGetAsFileRequest**](EmailGetAsFileRequest.md)
+**See also** parameter model documentation at [**EmailGetAsFileRequest**](EmailGetAsFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1555,7 +1555,7 @@ var result = await api.Email.GetAsFileAsync(request);
 
 **Description:** GetAsFileAsync method request.
 
-**See also** parameter model documentation at [**EmailGetAsFileRequest**](EmailGetAsFileRequest.md)
+**See also** parameter model documentation at [**EmailGetAsFileRequest**](EmailGetAsFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1636,7 +1636,7 @@ var result = api.Email.GetList(request);
 
 **Description:** GetList method request.
 
-**See also** parameter model documentation at [**EmailGetListRequest**](EmailGetListRequest.md)
+**See also** parameter model documentation at [**EmailGetListRequest**](EmailGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1815,7 +1815,7 @@ var result = await api.Email.GetListAsync(request);
 
 **Description:** GetListAsync method request.
 
-**See also** parameter model documentation at [**EmailGetListRequest**](EmailGetListRequest.md)
+**See also** parameter model documentation at [**EmailGetListRequest**](EmailGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1980,8 +1980,6 @@ result = new EmailStorageList
 **Description**: Save email document to storage.             
 
 
-**Returns:** Returns 200 if update is successful.
-
 **Method call example:**
 ```csharp
 api.Email.Save(request);
@@ -2048,8 +2046,6 @@ var request = new EmailSaveRequest
 
 
 ### Result
-
-**Description:** Returns 200 if update is successful.
 
 **Return type:** void (empty response body)
 
@@ -2111,7 +2107,6 @@ var request = new EmailSaveRequest
 
 // Call method:
 api.Email.Save(request);
-
 ```
 
 </details>
@@ -2125,8 +2120,6 @@ api.Email.Save(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if update is successful.
 
 **Method call example:**
 ```csharp
@@ -2195,8 +2188,6 @@ var request = new EmailSaveRequest
 
 ### Result
 
-**Description:** Returns 200 if update is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -2257,7 +2248,6 @@ var request = new EmailSaveRequest
 
 // Call method:
 await api.Email.SaveAsync(request);
-
 ```
 
 </details>

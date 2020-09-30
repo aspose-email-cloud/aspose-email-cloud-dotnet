@@ -7,7 +7,7 @@ Request model for DisposableEmailApi.IsDisposable
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**address** | **string**| An email address to check | 
+**address** |**string**|An email address to check |
 
 ## Example
 ```csharp

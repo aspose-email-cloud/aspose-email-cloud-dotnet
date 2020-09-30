@@ -8,8 +8,6 @@ Email client thread operations.
 **Description**: Delete thread by id. All messages from thread will also be deleted.             
 
 
-**Returns:** Returns 200 if delete is successful.
-
 **Method call example:**
 ```csharp
 api.Client.Thread.Delete(request);
@@ -42,8 +40,6 @@ var request = new ClientThreadDeleteRequest
 
 
 ### Result
-
-**Description:** Returns 200 if delete is successful.
 
 **Return type:** void (empty response body)
 
@@ -71,7 +67,6 @@ var request = new ClientThreadDeleteRequest
 
 // Call method:
 api.Client.Thread.Delete(request);
-
 ```
 
 </details>
@@ -85,8 +80,6 @@ api.Client.Thread.Delete(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if delete is successful.
 
 **Method call example:**
 ```csharp
@@ -121,8 +114,6 @@ var request = new ClientThreadDeleteRequest
 
 ### Result
 
-**Description:** Returns 200 if delete is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -149,7 +140,6 @@ var request = new ClientThreadDeleteRequest
 
 // Call method:
 await api.Client.Thread.DeleteAsync(request);
-
 ```
 
 </details>
@@ -171,7 +161,7 @@ var result = api.Client.Thread.GetList(request);
 
 **Description:** GetList method request.
 
-**See also** parameter model documentation at [**ClientThreadGetListRequest**](ClientThreadGetListRequest.md)
+**See also** parameter model documentation at [**ClientThreadGetListRequest**](ClientThreadGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -182,7 +172,7 @@ var request = new ClientThreadGetListRequest
     Folder = "INBOX/SubFolder",
     Account = "email.account",
     Storage = "First Storage",
-    AccountStorageFolder = "email/account/location/on/storage",
+    AccountStorageFolder = "email/account/location/on/storage"
 };
 ```
 
@@ -264,7 +254,7 @@ var request = new ClientThreadGetListRequest
     Folder = "INBOX/SubFolder",
     Account = "email.account",
     Storage = "First Storage",
-    AccountStorageFolder = "email/account/location/on/storage",
+    AccountStorageFolder = "email/account/location/on/storage"
 };
 
 // Call method:
@@ -344,7 +334,7 @@ var result = await api.Client.Thread.GetListAsync(request);
 
 **Description:** GetListAsync method request.
 
-**See also** parameter model documentation at [**ClientThreadGetListRequest**](ClientThreadGetListRequest.md)
+**See also** parameter model documentation at [**ClientThreadGetListRequest**](ClientThreadGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -355,7 +345,7 @@ var request = new ClientThreadGetListRequest
     Folder = "INBOX/SubFolder",
     Account = "email.account",
     Storage = "First Storage",
-    AccountStorageFolder = "email/account/location/on/storage",
+    AccountStorageFolder = "email/account/location/on/storage"
 };
 ```
 
@@ -437,7 +427,7 @@ var request = new ClientThreadGetListRequest
     Folder = "INBOX/SubFolder",
     Account = "email.account",
     Storage = "First Storage",
-    AccountStorageFolder = "email/account/location/on/storage",
+    AccountStorageFolder = "email/account/location/on/storage"
 };
 
 // Call method:
@@ -513,7 +503,7 @@ var result = api.Client.Thread.GetMessages(request);
 
 **Description:** GetMessages method request.
 
-**See also** parameter model documentation at [**ClientThreadGetMessagesRequest**](ClientThreadGetMessagesRequest.md)
+**See also** parameter model documentation at [**ClientThreadGetMessagesRequest**](ClientThreadGetMessagesRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -594,7 +584,7 @@ var result = await api.Client.Thread.GetMessagesAsync(request);
 
 **Description:** GetMessagesAsync method request.
 
-**See also** parameter model documentation at [**ClientThreadGetMessagesRequest**](ClientThreadGetMessagesRequest.md)
+**See also** parameter model documentation at [**ClientThreadGetMessagesRequest**](ClientThreadGetMessagesRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -661,8 +651,6 @@ result = ;
 **Description**: Move thread to another folder.             
 
 
-**Returns:** Returns 200 if move is successful.
-
 **Method call example:**
 ```csharp
 api.Client.Thread.Move(request);
@@ -696,8 +684,6 @@ var request = new ClientThreadMoveRequest
 
 ### Result
 
-**Description:** Returns 200 if move is successful.
-
 **Return type:** void (empty response body)
 
 
@@ -724,7 +710,6 @@ var request = new ClientThreadMoveRequest
 
 // Call method:
 api.Client.Thread.Move(request);
-
 ```
 
 </details>
@@ -739,8 +724,6 @@ api.Client.Thread.Move(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if move is successful.
-
 **Method call example:**
 ```csharp
 await api.Client.Thread.MoveAsync(request);
@@ -774,8 +757,6 @@ var request = new ClientThreadMoveRequest
 
 ### Result
 
-**Description:** Returns 200 if move is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -802,7 +783,6 @@ var request = new ClientThreadMoveRequest
 
 // Call method:
 await api.Client.Thread.MoveAsync(request);
-
 ```
 
 </details>
@@ -813,8 +793,6 @@ await api.Client.Thread.MoveAsync(request);
 
 **Description**: Mark all messages in thread as read or unread.             
 
-
-**Returns:** Returns 200 if flag set is successful.
 
 **Method call example:**
 ```csharp
@@ -849,8 +827,6 @@ var request = new ClientThreadSetIsReadRequest
 
 
 ### Result
-
-**Description:** Returns 200 if flag set is successful.
 
 **Return type:** void (empty response body)
 
@@ -879,7 +855,6 @@ var request = new ClientThreadSetIsReadRequest
 
 // Call method:
 api.Client.Thread.SetIsRead(request);
-
 ```
 
 </details>
@@ -893,8 +868,6 @@ api.Client.Thread.SetIsRead(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if flag set is successful.
 
 **Method call example:**
 ```csharp
@@ -930,8 +903,6 @@ var request = new ClientThreadSetIsReadRequest
 
 ### Result
 
-**Description:** Returns 200 if flag set is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -959,7 +930,6 @@ var request = new ClientThreadSetIsReadRequest
 
 // Call method:
 await api.Client.Thread.SetIsReadAsync(request);
-
 ```
 
 </details>

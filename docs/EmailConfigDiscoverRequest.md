@@ -7,8 +7,8 @@ Request model for EmailConfigApi.Discover
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**address** | **string**| Email address. | 
-**fastProcessing** | **bool?**| Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.              | [optional] [default to false]
+**address** |**string**|Email address. |
+**fastProcessing** |**bool?**|Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.              |[optional] [default to false]
 
 ## Example
 ```csharp

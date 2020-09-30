@@ -732,7 +732,7 @@ var result = api.Mapi.Contact.FromFile(request);
 
 **Description:** FromFile method request.
 
-**See also** parameter model documentation at [**MapiContactFromFileRequest**](MapiContactFromFileRequest.md)
+**See also** parameter model documentation at [**MapiContactFromFileRequest**](MapiContactFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -859,7 +859,7 @@ var result = await api.Mapi.Contact.FromFileAsync(request);
 
 **Description:** FromFileAsync method request.
 
-**See also** parameter model documentation at [**MapiContactFromFileRequest**](MapiContactFromFileRequest.md)
+**See also** parameter model documentation at [**MapiContactFromFileRequest**](MapiContactFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -982,7 +982,7 @@ var result = api.Mapi.Contact.Get(request);
 
 **Description:** Get method request.
 
-**See also** parameter model documentation at [**MapiContactGetRequest**](MapiContactGetRequest.md)
+**See also** parameter model documentation at [**MapiContactGetRequest**](MapiContactGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1113,7 +1113,7 @@ var result = await api.Mapi.Contact.GetAsync(request);
 
 **Description:** GetAsync method request.
 
-**See also** parameter model documentation at [**MapiContactGetRequest**](MapiContactGetRequest.md)
+**See also** parameter model documentation at [**MapiContactGetRequest**](MapiContactGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1230,8 +1230,6 @@ result = new MapiContactDto
 **Description**: Save MAPI Contact to storage.             
 
 
-**Returns:** Returns 200 if create is successful.
-
 **Method call example:**
 ```csharp
 api.Mapi.Contact.Save(request);
@@ -1290,8 +1288,6 @@ var request = new MapiContactSaveRequest
 
 
 ### Result
-
-**Description:** Returns 200 if create is successful.
 
 **Return type:** void (empty response body)
 
@@ -1345,7 +1341,6 @@ var request = new MapiContactSaveRequest
 
 // Call method:
 api.Mapi.Contact.Save(request);
-
 ```
 
 </details>
@@ -1359,8 +1354,6 @@ api.Mapi.Contact.Save(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if create is successful.
 
 **Method call example:**
 ```csharp
@@ -1421,8 +1414,6 @@ var request = new MapiContactSaveRequest
 
 ### Result
 
-**Description:** Returns 200 if create is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -1475,7 +1466,6 @@ var request = new MapiContactSaveRequest
 
 // Call method:
 await api.Mapi.Contact.SaveAsync(request);
-
 ```
 
 </details>

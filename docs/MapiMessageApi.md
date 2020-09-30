@@ -760,7 +760,7 @@ var result = api.Mapi.Message.FromFile(request);
 
 **Description:** FromFile method request.
 
-**See also** parameter model documentation at [**MapiMessageFromFileRequest**](MapiMessageFromFileRequest.md)
+**See also** parameter model documentation at [**MapiMessageFromFileRequest**](MapiMessageFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -913,7 +913,7 @@ var result = await api.Mapi.Message.FromFileAsync(request);
 
 **Description:** FromFileAsync method request.
 
-**See also** parameter model documentation at [**MapiMessageFromFileRequest**](MapiMessageFromFileRequest.md)
+**See also** parameter model documentation at [**MapiMessageFromFileRequest**](MapiMessageFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1062,7 +1062,7 @@ var result = api.Mapi.Message.Get(request);
 
 **Description:** Get method request.
 
-**See also** parameter model documentation at [**MapiMessageGetRequest**](MapiMessageGetRequest.md)
+**See also** parameter model documentation at [**MapiMessageGetRequest**](MapiMessageGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1219,7 +1219,7 @@ var result = await api.Mapi.Message.GetAsync(request);
 
 **Description:** GetAsync method request.
 
-**See also** parameter model documentation at [**MapiMessageGetRequest**](MapiMessageGetRequest.md)
+**See also** parameter model documentation at [**MapiMessageGetRequest**](MapiMessageGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1362,8 +1362,6 @@ result = new MapiMessageDto
 **Description**: Save MAPI message to storage.             
 
 
-**Returns:** Returns 200 if update is successful.
-
 **Method call example:**
 ```csharp
 api.Mapi.Message.Save(request);
@@ -1435,8 +1433,6 @@ var request = new MapiMessageSaveRequest
 
 
 ### Result
-
-**Description:** Returns 200 if update is successful.
 
 **Return type:** void (empty response body)
 
@@ -1503,7 +1499,6 @@ var request = new MapiMessageSaveRequest
 
 // Call method:
 api.Mapi.Message.Save(request);
-
 ```
 
 </details>
@@ -1517,8 +1512,6 @@ api.Mapi.Message.Save(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if update is successful.
 
 **Method call example:**
 ```csharp
@@ -1592,8 +1585,6 @@ var request = new MapiMessageSaveRequest
 
 ### Result
 
-**Description:** Returns 200 if update is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -1659,7 +1650,6 @@ var request = new MapiMessageSaveRequest
 
 // Call method:
 await api.Mapi.Message.SaveAsync(request);
-
 ```
 
 </details>

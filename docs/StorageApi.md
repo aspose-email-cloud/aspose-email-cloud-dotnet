@@ -18,7 +18,7 @@ var result = api.CloudStorage.Storage.GetDiscUsage(request);
 
 **Description:** GetDiscUsage method request.
 
-**See also** parameter model documentation at [**GetDiscUsageRequest**](GetDiscUsageRequest.md)
+**See also** parameter model documentation at [**GetDiscUsageRequest**](GetDiscUsageRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -99,7 +99,7 @@ var result = await api.CloudStorage.Storage.GetDiscUsageAsync(request);
 
 **Description:** GetDiscUsageAsync method request.
 
-**See also** parameter model documentation at [**GetDiscUsageRequest**](GetDiscUsageRequest.md)
+**See also** parameter model documentation at [**GetDiscUsageRequest**](GetDiscUsageRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -176,7 +176,7 @@ var result = api.CloudStorage.Storage.GetFileVersions(request);
 
 **Description:** GetFileVersions method request.
 
-**See also** parameter model documentation at [**GetFileVersionsRequest**](GetFileVersionsRequest.md)
+**See also** parameter model documentation at [**GetFileVersionsRequest**](GetFileVersionsRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -279,7 +279,7 @@ var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
 
 **Description:** GetFileVersionsAsync method request.
 
-**See also** parameter model documentation at [**GetFileVersionsRequest**](GetFileVersionsRequest.md)
+**See also** parameter model documentation at [**GetFileVersionsRequest**](GetFileVersionsRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -378,7 +378,7 @@ var result = api.CloudStorage.Storage.ObjectExists(request);
 
 **Description:** ObjectExists method request.
 
-**See also** parameter model documentation at [**ObjectExistsRequest**](ObjectExistsRequest.md)
+**See also** parameter model documentation at [**ObjectExistsRequest**](ObjectExistsRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -387,7 +387,7 @@ var result = api.CloudStorage.Storage.ObjectExists(request);
 var request = new ObjectExistsRequest
 { 
     Path = "/storage/path/to/folder/or/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 ```
 
@@ -423,7 +423,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new ObjectExistsRequest
 { 
     Path = "/storage/path/to/folder/or/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 
 // Call method:
@@ -459,7 +459,7 @@ var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
 
 **Description:** ObjectExistsAsync method request.
 
-**See also** parameter model documentation at [**ObjectExistsRequest**](ObjectExistsRequest.md)
+**See also** parameter model documentation at [**ObjectExistsRequest**](ObjectExistsRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -468,7 +468,7 @@ var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
 var request = new ObjectExistsRequest
 { 
     Path = "/storage/path/to/folder/or/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 ```
 
@@ -504,7 +504,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new ObjectExistsRequest
 { 
     Path = "/storage/path/to/folder/or/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 
 // Call method:
@@ -536,7 +536,7 @@ var result = api.CloudStorage.Storage.Exists(request);
 
 **Description:** Exists method request.
 
-**See also** parameter model documentation at [**StorageExistsRequest**](StorageExistsRequest.md)
+**See also** parameter model documentation at [**StorageExistsRequest**](StorageExistsRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -615,7 +615,7 @@ var result = await api.CloudStorage.Storage.ExistsAsync(request);
 
 **Description:** ExistsAsync method request.
 
-**See also** parameter model documentation at [**StorageExistsRequest**](StorageExistsRequest.md)
+**See also** parameter model documentation at [**StorageExistsRequest**](StorageExistsRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>

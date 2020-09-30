@@ -8,8 +8,6 @@ Email client folder operations.
 **Description**: Create new folder in email account             
 
 
-**Returns:** Returns 200 if create is successful.
-
 **Method call example:**
 ```csharp
 api.Client.Folder.Create(request);
@@ -43,8 +41,6 @@ var request = new ClientFolderCreateRequest
 
 ### Result
 
-**Description:** Returns 200 if create is successful.
-
 **Return type:** void (empty response body)
 
 
@@ -71,7 +67,6 @@ var request = new ClientFolderCreateRequest
 
 // Call method:
 api.Client.Folder.Create(request);
-
 ```
 
 </details>
@@ -86,8 +81,6 @@ api.Client.Folder.Create(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if create is successful.
-
 **Method call example:**
 ```csharp
 await api.Client.Folder.CreateAsync(request);
@@ -121,8 +114,6 @@ var request = new ClientFolderCreateRequest
 
 ### Result
 
-**Description:** Returns 200 if create is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -149,7 +140,6 @@ var request = new ClientFolderCreateRequest
 
 // Call method:
 await api.Client.Folder.CreateAsync(request);
-
 ```
 
 </details>
@@ -160,8 +150,6 @@ await api.Client.Folder.CreateAsync(request);
 
 **Description**: Delete a folder in email account             
 
-
-**Returns:** Returns 200 if delete is successful.
 
 **Method call example:**
 ```csharp
@@ -194,8 +182,6 @@ var request = new ClientFolderDeleteRequest
 
 
 ### Result
-
-**Description:** Returns 200 if delete is successful.
 
 **Return type:** void (empty response body)
 
@@ -222,7 +208,6 @@ var request = new ClientFolderDeleteRequest
 
 // Call method:
 api.Client.Folder.Delete(request);
-
 ```
 
 </details>
@@ -236,8 +221,6 @@ api.Client.Folder.Delete(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if delete is successful.
 
 **Method call example:**
 ```csharp
@@ -271,8 +254,6 @@ var request = new ClientFolderDeleteRequest
 
 ### Result
 
-**Description:** Returns 200 if delete is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -298,7 +279,6 @@ var request = new ClientFolderDeleteRequest
 
 // Call method:
 await api.Client.Folder.DeleteAsync(request);
-
 ```
 
 </details>
@@ -320,7 +300,7 @@ var result = api.Client.Folder.GetList(request);
 
 **Description:** GetList method request.
 
-**See also** parameter model documentation at [**ClientFolderGetListRequest**](ClientFolderGetListRequest.md)
+**See also** parameter model documentation at [**ClientFolderGetListRequest**](ClientFolderGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -399,7 +379,7 @@ var result = await api.Client.Folder.GetListAsync(request);
 
 **Description:** GetListAsync method request.
 
-**See also** parameter model documentation at [**ClientFolderGetListRequest**](ClientFolderGetListRequest.md)
+**See also** parameter model documentation at [**ClientFolderGetListRequest**](ClientFolderGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>

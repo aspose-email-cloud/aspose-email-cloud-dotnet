@@ -7,10 +7,10 @@ Request model for FolderApi.MoveFolder
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**srcPath** | **string**| Folder path to move e.g. &#39;/folder&#39; | 
-**destPath** | **string**| Destination folder path to move to e.g &#39;/dst&#39; | 
-**srcStorageName** | **string**| Source storage name | [optional] 
-**destStorageName** | **string**| Destination storage name | [optional] 
+**srcPath** |**string**|Folder path to move e.g. '/folder' |
+**destPath** |**string**|Destination folder path to move to e.g '/dst' |
+**srcStorageName** |**string**|Source storage name |[optional] 
+**destStorageName** |**string**|Destination storage name |[optional] 
 
 ## Example
 ```csharp

@@ -7,10 +7,10 @@ Request model for EmailApi.Get
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
-**fileName** | **string**| Email document file name. | 
-**folder** | **string**| Path to folder in storage. | [optional] 
-**storage** | **string**| Storage name. | [optional] 
+**format** |**string**|Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |
+**fileName** |**string**|Email document file name. |
+**folder** |**string**|Path to folder in storage. |[optional] 
+**storage** |**string**|Storage name. |[optional] 
 
 ## Example
 ```csharp

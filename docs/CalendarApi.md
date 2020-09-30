@@ -1073,7 +1073,7 @@ var result = api.Calendar.Convert(request);
 
 **Description:** Convert method request.
 
-**See also** parameter model documentation at [**CalendarConvertRequest**](CalendarConvertRequest.md)
+**See also** parameter model documentation at [**CalendarConvertRequest**](CalendarConvertRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1154,7 +1154,7 @@ var result = await api.Calendar.ConvertAsync(request);
 
 **Description:** ConvertAsync method request.
 
-**See also** parameter model documentation at [**CalendarConvertRequest**](CalendarConvertRequest.md)
+**See also** parameter model documentation at [**CalendarConvertRequest**](CalendarConvertRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1231,7 +1231,7 @@ var result = api.Calendar.FromFile(request);
 
 **Description:** FromFile method request.
 
-**See also** parameter model documentation at [**CalendarFromFileRequest**](CalendarFromFileRequest.md)
+**See also** parameter model documentation at [**CalendarFromFileRequest**](CalendarFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1358,7 +1358,7 @@ var result = await api.Calendar.FromFileAsync(request);
 
 **Description:** FromFileAsync method request.
 
-**See also** parameter model documentation at [**CalendarFromFileRequest**](CalendarFromFileRequest.md)
+**See also** parameter model documentation at [**CalendarFromFileRequest**](CalendarFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1481,7 +1481,7 @@ var result = api.Calendar.Get(request);
 
 **Description:** Get method request.
 
-**See also** parameter model documentation at [**CalendarGetRequest**](CalendarGetRequest.md)
+**See also** parameter model documentation at [**CalendarGetRequest**](CalendarGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1612,7 +1612,7 @@ var result = await api.Calendar.GetAsync(request);
 
 **Description:** GetAsync method request.
 
-**See also** parameter model documentation at [**CalendarGetRequest**](CalendarGetRequest.md)
+**See also** parameter model documentation at [**CalendarGetRequest**](CalendarGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1739,7 +1739,7 @@ var result = api.Calendar.GetAsAlternate(request);
 
 **Description:** GetAsAlternate method request.
 
-**See also** parameter model documentation at [**CalendarGetAsAlternateRequest**](CalendarGetAsAlternateRequest.md)
+**See also** parameter model documentation at [**CalendarGetAsAlternateRequest**](CalendarGetAsAlternateRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1874,7 +1874,7 @@ var result = await api.Calendar.GetAsAlternateAsync(request);
 
 **Description:** GetAsAlternateAsync method request.
 
-**See also** parameter model documentation at [**CalendarGetAsAlternateRequest**](CalendarGetAsAlternateRequest.md)
+**See also** parameter model documentation at [**CalendarGetAsAlternateRequest**](CalendarGetAsAlternateRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2005,7 +2005,7 @@ var result = api.Calendar.GetAsFile(request);
 
 **Description:** GetAsFile method request.
 
-**See also** parameter model documentation at [**CalendarGetAsFileRequest**](CalendarGetAsFileRequest.md)
+**See also** parameter model documentation at [**CalendarGetAsFileRequest**](CalendarGetAsFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2090,7 +2090,7 @@ var result = await api.Calendar.GetAsFileAsync(request);
 
 **Description:** GetAsFileAsync method request.
 
-**See also** parameter model documentation at [**CalendarGetAsFileRequest**](CalendarGetAsFileRequest.md)
+**See also** parameter model documentation at [**CalendarGetAsFileRequest**](CalendarGetAsFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2171,7 +2171,7 @@ var result = api.Calendar.GetList(request);
 
 **Description:** GetList method request.
 
-**See also** parameter model documentation at [**CalendarGetListRequest**](CalendarGetListRequest.md)
+**See also** parameter model documentation at [**CalendarGetListRequest**](CalendarGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2334,7 +2334,7 @@ var result = await api.Calendar.GetListAsync(request);
 
 **Description:** GetListAsync method request.
 
-**See also** parameter model documentation at [**CalendarGetListRequest**](CalendarGetListRequest.md)
+**See also** parameter model documentation at [**CalendarGetListRequest**](CalendarGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2483,8 +2483,6 @@ result = new CalendarStorageList
 **Description**: Save iCalendar             
 
 
-**Returns:** Returns 200 if update is successful.
-
 **Method call example:**
 ```csharp
 api.Calendar.Save(request);
@@ -2543,8 +2541,6 @@ var request = new CalendarSaveRequest
 
 
 ### Result
-
-**Description:** Returns 200 if update is successful.
 
 **Return type:** void (empty response body)
 
@@ -2598,7 +2594,6 @@ var request = new CalendarSaveRequest
 
 // Call method:
 api.Calendar.Save(request);
-
 ```
 
 </details>
@@ -2612,8 +2607,6 @@ api.Calendar.Save(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if update is successful.
 
 **Method call example:**
 ```csharp
@@ -2674,8 +2667,6 @@ var request = new CalendarSaveRequest
 
 ### Result
 
-**Description:** Returns 200 if update is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -2728,7 +2719,6 @@ var request = new CalendarSaveRequest
 
 // Call method:
 await api.Calendar.SaveAsync(request);
-
 ```
 
 </details>

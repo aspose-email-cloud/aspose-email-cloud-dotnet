@@ -7,11 +7,11 @@ Request model for ClientThreadApi.GetMessages
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**threadId** | **string**| Thread identifier | 
-**account** | **string**| Email account | 
-**folder** | **string**| Specifies account folder to get thread from              | [optional] 
-**storage** | **string**| Storage name where account file located | [optional] 
-**accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
+**threadId** |**string**|Thread identifier |
+**account** |**string**|Email account |
+**folder** |**string**|Specifies account folder to get thread from              |[optional] 
+**storage** |**string**|Storage name where account file located |[optional] 
+**accountStorageFolder** |**string**|Folder in storage where account file located |[optional] 
 
 ## Example
 ```csharp

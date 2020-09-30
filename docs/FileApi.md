@@ -7,8 +7,6 @@ File operations controller
 **Descrption:** Copy file
 
 
-**Returns:** Returns 200 if the copy is successful.
-
 **Method call example:**
 ```csharp
 api.CloudStorage.File.CopyFile(request);
@@ -18,7 +16,7 @@ api.CloudStorage.File.CopyFile(request);
 
 **Description:** CopyFile method request.
 
-**See also** parameter model documentation at [**CopyFileRequest**](CopyFileRequest.md)
+**See also** parameter model documentation at [**CopyFileRequest**](CopyFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -29,15 +27,13 @@ var request = new CopyFileRequest
     SrcPath = "/storage/path/to/source/file.ext",
     DestPath = "/storage/path/to/destination/file.ext",
     SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage",
+    DestStorageName = "Other Storage"
 };
 ```
 
 </details>
 
 ### Result
-
-**Description:** Returns 200 if the copy is successful.
 
 **Return type:** void (empty response body)
 
@@ -56,7 +52,7 @@ var request = new CopyFileRequest
     SrcPath = "/storage/path/to/source/file.ext",
     DestPath = "/storage/path/to/destination/file.ext",
     SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage",
+    DestStorageName = "Other Storage"
 };
 
 // Call method:
@@ -76,8 +72,6 @@ api.CloudStorage.File.CopyFile(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if the copy is successful.
-
 **Method call example:**
 ```csharp
 await api.CloudStorage.File.CopyFileAsync(request);
@@ -87,7 +81,7 @@ await api.CloudStorage.File.CopyFileAsync(request);
 
 **Description:** CopyFileAsync method request.
 
-**See also** parameter model documentation at [**CopyFileRequest**](CopyFileRequest.md)
+**See also** parameter model documentation at [**CopyFileRequest**](CopyFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -98,15 +92,13 @@ var request = new CopyFileRequest
     SrcPath = "/storage/path/to/source/file.ext",
     DestPath = "/storage/path/to/destination/file.ext",
     SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage",
+    DestStorageName = "Other Storage"
 };
 ```
 
 </details>
 
 ### Result
-
-**Returns:** Returns 200 if the copy is successful.
 
 **Return type:** void (empty response body)
 
@@ -125,7 +117,7 @@ var request = new CopyFileRequest
     SrcPath = "/storage/path/to/source/file.ext",
     DestPath = "/storage/path/to/destination/file.ext",
     SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage",
+    DestStorageName = "Other Storage"
 };
 
 // Call method:
@@ -141,8 +133,6 @@ await api.CloudStorage.File.CopyFileAsync(request);
 **Descrption:** Delete file
 
 
-**Returns:** Returns 200 if the delete is successful.
-
 **Method call example:**
 ```csharp
 api.CloudStorage.File.DeleteFile(request);
@@ -152,7 +142,7 @@ api.CloudStorage.File.DeleteFile(request);
 
 **Description:** DeleteFile method request.
 
-**See also** parameter model documentation at [**DeleteFileRequest**](DeleteFileRequest.md)
+**See also** parameter model documentation at [**DeleteFileRequest**](DeleteFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -161,15 +151,13 @@ api.CloudStorage.File.DeleteFile(request);
 var request = new DeleteFileRequest
 { 
     Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 ```
 
 </details>
 
 ### Result
-
-**Description:** Returns 200 if the delete is successful.
 
 **Return type:** void (empty response body)
 
@@ -186,7 +174,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new DeleteFileRequest
 { 
     Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 
 // Call method:
@@ -206,8 +194,6 @@ api.CloudStorage.File.DeleteFile(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if the delete is successful.
-
 **Method call example:**
 ```csharp
 await api.CloudStorage.File.DeleteFileAsync(request);
@@ -217,7 +203,7 @@ await api.CloudStorage.File.DeleteFileAsync(request);
 
 **Description:** DeleteFileAsync method request.
 
-**See also** parameter model documentation at [**DeleteFileRequest**](DeleteFileRequest.md)
+**See also** parameter model documentation at [**DeleteFileRequest**](DeleteFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -226,15 +212,13 @@ await api.CloudStorage.File.DeleteFileAsync(request);
 var request = new DeleteFileRequest
 { 
     Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 ```
 
 </details>
 
 ### Result
-
-**Returns:** Returns 200 if the delete is successful.
 
 **Return type:** void (empty response body)
 
@@ -251,7 +235,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new DeleteFileRequest
 { 
     Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 
 // Call method:
@@ -278,7 +262,7 @@ var result = api.CloudStorage.File.DownloadFile(request);
 
 **Description:** DownloadFile method request.
 
-**See also** parameter model documentation at [**DownloadFileRequest**](DownloadFileRequest.md)
+**See also** parameter model documentation at [**DownloadFileRequest**](DownloadFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -287,7 +271,7 @@ var result = api.CloudStorage.File.DownloadFile(request);
 var request = new DownloadFileRequest
 { 
     Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 ```
 
@@ -323,7 +307,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new DownloadFileRequest
 { 
     Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 
 // Call method:
@@ -359,7 +343,7 @@ var result = await api.CloudStorage.File.DownloadFileAsync(request);
 
 **Description:** DownloadFileAsync method request.
 
-**See also** parameter model documentation at [**DownloadFileRequest**](DownloadFileRequest.md)
+**See also** parameter model documentation at [**DownloadFileRequest**](DownloadFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -368,7 +352,7 @@ var result = await api.CloudStorage.File.DownloadFileAsync(request);
 var request = new DownloadFileRequest
 { 
     Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 ```
 
@@ -404,7 +388,7 @@ var api = new EmailCloud(appKey, appSid);
 var request = new DownloadFileRequest
 { 
     Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage",
+    StorageName = "First Storage"
 };
 
 // Call method:
@@ -425,8 +409,6 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 **Descrption:** Move file
 
 
-**Returns:** Returns 200 if the move is successful.
-
 **Method call example:**
 ```csharp
 api.CloudStorage.File.MoveFile(request);
@@ -436,7 +418,7 @@ api.CloudStorage.File.MoveFile(request);
 
 **Description:** MoveFile method request.
 
-**See also** parameter model documentation at [**MoveFileRequest**](MoveFileRequest.md)
+**See also** parameter model documentation at [**MoveFileRequest**](MoveFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -447,15 +429,13 @@ var request = new MoveFileRequest
     SrcPath = "/storage/path/to/source/file.ext",
     DestPath = "/storage/path/to/destination/file.ext",
     SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage",
+    DestStorageName = "Other Storage"
 };
 ```
 
 </details>
 
 ### Result
-
-**Description:** Returns 200 if the move is successful.
 
 **Return type:** void (empty response body)
 
@@ -474,7 +454,7 @@ var request = new MoveFileRequest
     SrcPath = "/storage/path/to/source/file.ext",
     DestPath = "/storage/path/to/destination/file.ext",
     SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage",
+    DestStorageName = "Other Storage"
 };
 
 // Call method:
@@ -494,8 +474,6 @@ api.CloudStorage.File.MoveFile(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if the move is successful.
-
 **Method call example:**
 ```csharp
 await api.CloudStorage.File.MoveFileAsync(request);
@@ -505,7 +483,7 @@ await api.CloudStorage.File.MoveFileAsync(request);
 
 **Description:** MoveFileAsync method request.
 
-**See also** parameter model documentation at [**MoveFileRequest**](MoveFileRequest.md)
+**See also** parameter model documentation at [**MoveFileRequest**](MoveFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -516,15 +494,13 @@ var request = new MoveFileRequest
     SrcPath = "/storage/path/to/source/file.ext",
     DestPath = "/storage/path/to/destination/file.ext",
     SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage",
+    DestStorageName = "Other Storage"
 };
 ```
 
 </details>
 
 ### Result
-
-**Returns:** Returns 200 if the move is successful.
 
 **Return type:** void (empty response body)
 
@@ -543,7 +519,7 @@ var request = new MoveFileRequest
     SrcPath = "/storage/path/to/source/file.ext",
     DestPath = "/storage/path/to/destination/file.ext",
     SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage",
+    DestStorageName = "Other Storage"
 };
 
 // Call method:
@@ -570,7 +546,7 @@ var result = api.CloudStorage.File.UploadFile(request);
 
 **Description:** UploadFile method request.
 
-**See also** parameter model documentation at [**UploadFileRequest**](UploadFileRequest.md)
+**See also** parameter model documentation at [**UploadFileRequest**](UploadFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -647,7 +623,7 @@ var result = await api.CloudStorage.File.UploadFileAsync(request);
 
 **Description:** UploadFileAsync method request.
 
-**See also** parameter model documentation at [**UploadFileRequest**](UploadFileRequest.md)
+**See also** parameter model documentation at [**UploadFileRequest**](UploadFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>

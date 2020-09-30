@@ -7,7 +7,7 @@ Request model for StorageApi.Exists
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**storageName** | **string**| Storage name | 
+**storageName** |**string**|Storage name |
 
 ## Example
 ```csharp

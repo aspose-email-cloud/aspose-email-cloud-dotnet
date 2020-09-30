@@ -7,8 +7,8 @@ Request model for StorageApi.GetFileVersions
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**path** | **string**| File path e.g. &#39;/file.ext&#39; | 
-**storageName** | **string**| Storage name | [optional] 
+**path** |**string**|File path e.g. '/file.ext' |
+**storageName** |**string**|Storage name |[optional] 
 
 ## Example
 ```csharp

@@ -836,7 +836,7 @@ var result = api.Contact.Convert(request);
 
 **Description:** Convert method request.
 
-**See also** parameter model documentation at [**ContactConvertRequest**](ContactConvertRequest.md)
+**See also** parameter model documentation at [**ContactConvertRequest**](ContactConvertRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -919,7 +919,7 @@ var result = await api.Contact.ConvertAsync(request);
 
 **Description:** ConvertAsync method request.
 
-**See also** parameter model documentation at [**ContactConvertRequest**](ContactConvertRequest.md)
+**See also** parameter model documentation at [**ContactConvertRequest**](ContactConvertRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -998,7 +998,7 @@ var result = api.Contact.FromFile(request);
 
 **Description:** FromFile method request.
 
-**See also** parameter model documentation at [**ContactFromFileRequest**](ContactFromFileRequest.md)
+**See also** parameter model documentation at [**ContactFromFileRequest**](ContactFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1179,7 +1179,7 @@ var result = await api.Contact.FromFileAsync(request);
 
 **Description:** FromFileAsync method request.
 
-**See also** parameter model documentation at [**ContactFromFileRequest**](ContactFromFileRequest.md)
+**See also** parameter model documentation at [**ContactFromFileRequest**](ContactFromFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1356,7 +1356,7 @@ var result = api.Contact.Get(request);
 
 **Description:** Get method request.
 
-**See also** parameter model documentation at [**ContactGetRequest**](ContactGetRequest.md)
+**See also** parameter model documentation at [**ContactGetRequest**](ContactGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1541,7 +1541,7 @@ var result = await api.Contact.GetAsync(request);
 
 **Description:** GetAsync method request.
 
-**See also** parameter model documentation at [**ContactGetRequest**](ContactGetRequest.md)
+**See also** parameter model documentation at [**ContactGetRequest**](ContactGetRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1722,7 +1722,7 @@ var result = api.Contact.GetAsFile(request);
 
 **Description:** GetAsFile method request.
 
-**See also** parameter model documentation at [**ContactGetAsFileRequest**](ContactGetAsFileRequest.md)
+**See also** parameter model documentation at [**ContactGetAsFileRequest**](ContactGetAsFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1809,7 +1809,7 @@ var result = await api.Contact.GetAsFileAsync(request);
 
 **Description:** GetAsFileAsync method request.
 
-**See also** parameter model documentation at [**ContactGetAsFileRequest**](ContactGetAsFileRequest.md)
+**See also** parameter model documentation at [**ContactGetAsFileRequest**](ContactGetAsFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1892,7 +1892,7 @@ var result = api.Contact.GetList(request);
 
 **Description:** GetList method request.
 
-**See also** parameter model documentation at [**ContactGetListRequest**](ContactGetListRequest.md)
+**See also** parameter model documentation at [**ContactGetListRequest**](ContactGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2109,7 +2109,7 @@ var result = await api.Contact.GetListAsync(request);
 
 **Description:** GetListAsync method request.
 
-**See also** parameter model documentation at [**ContactGetListRequest**](ContactGetListRequest.md)
+**See also** parameter model documentation at [**ContactGetListRequest**](ContactGetListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -2312,8 +2312,6 @@ result = new ContactStorageList
 **Description**: Save contact to storage.             
 
 
-**Returns:** Returns 200 if create is successful.
-
 **Method call example:**
 ```csharp
 api.Contact.Save(request);
@@ -2398,8 +2396,6 @@ var request = new ContactSaveRequest
 
 
 ### Result
-
-**Description:** Returns 200 if create is successful.
 
 **Return type:** void (empty response body)
 
@@ -2479,7 +2475,6 @@ var request = new ContactSaveRequest
 
 // Call method:
 api.Contact.Save(request);
-
 ```
 
 </details>
@@ -2493,8 +2488,6 @@ api.Contact.Save(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if create is successful.
 
 **Method call example:**
 ```csharp
@@ -2581,8 +2574,6 @@ var request = new ContactSaveRequest
 
 ### Result
 
-**Description:** Returns 200 if create is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -2661,7 +2652,6 @@ var request = new ContactSaveRequest
 
 // Call method:
 await api.Contact.SaveAsync(request);
-
 ```
 
 </details>

@@ -343,7 +343,7 @@ var result = api.Client.Message.AppendFile(request);
 
 **Description:** AppendFile method request.
 
-**See also** parameter model documentation at [**ClientMessageAppendFileRequest**](ClientMessageAppendFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageAppendFileRequest**](ClientMessageAppendFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -356,7 +356,7 @@ var request = new ClientMessageAppendFileRequest
     Storage = "First Storage",
     AccountStorageFolder = "email/account/location/on/storage",
     Format = "Eml",
-    Folder = "INBOX",
+    Folder = "INBOX"
 };
 ```
 
@@ -393,7 +393,7 @@ var request = new ClientMessageAppendFileRequest
     Storage = "First Storage",
     AccountStorageFolder = "email/account/location/on/storage",
     Format = "Eml",
-    Folder = "INBOX",
+    Folder = "INBOX"
 };
 
 // Call method:
@@ -426,7 +426,7 @@ var result = await api.Client.Message.AppendFileAsync(request);
 
 **Description:** AppendFileAsync method request.
 
-**See also** parameter model documentation at [**ClientMessageAppendFileRequest**](ClientMessageAppendFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageAppendFileRequest**](ClientMessageAppendFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -439,7 +439,7 @@ var request = new ClientMessageAppendFileRequest
     Storage = "First Storage",
     AccountStorageFolder = "email/account/location/on/storage",
     Format = "Eml",
-    Folder = "INBOX",
+    Folder = "INBOX"
 };
 ```
 
@@ -476,7 +476,7 @@ var request = new ClientMessageAppendFileRequest
     Storage = "First Storage",
     AccountStorageFolder = "email/account/location/on/storage",
     Format = "Eml",
-    Folder = "INBOX",
+    Folder = "INBOX"
 };
 
 // Call method:
@@ -494,8 +494,6 @@ result = ;
 
 **Description**: Delete message.             
 
-
-**Returns:** Returns 200 if send is successful.
 
 **Method call example:**
 ```csharp
@@ -529,8 +527,6 @@ var request = new ClientMessageDeleteRequest
 
 
 ### Result
-
-**Description:** Returns 200 if send is successful.
 
 **Return type:** void (empty response body)
 
@@ -558,7 +554,6 @@ var request = new ClientMessageDeleteRequest
 
 // Call method:
 api.Client.Message.Delete(request);
-
 ```
 
 </details>
@@ -572,8 +567,6 @@ api.Client.Message.Delete(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if send is successful.
 
 **Method call example:**
 ```csharp
@@ -608,8 +601,6 @@ var request = new ClientMessageDeleteRequest
 
 ### Result
 
-**Description:** Returns 200 if send is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -636,7 +627,6 @@ var request = new ClientMessageDeleteRequest
 
 // Call method:
 await api.Client.Message.DeleteAsync(request);
-
 ```
 
 </details>
@@ -658,7 +648,7 @@ var result = api.Client.Message.Fetch(request);
 
 **Description:** Fetch method request.
 
-**See also** parameter model documentation at [**ClientMessageFetchRequest**](ClientMessageFetchRequest.md)
+**See also** parameter model documentation at [**ClientMessageFetchRequest**](ClientMessageFetchRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -666,7 +656,7 @@ var result = api.Client.Message.Fetch(request);
 ```csharp
 var request = new ClientMessageFetchRequest
 { 
-    MessageId = "&lt;put your message identifier here&gt;",
+    MessageId = "<put your message identifier here>",
     Account = "email.multi.account",
     Folder = "INBOX",
     Storage = "First Storage",
@@ -707,7 +697,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new ClientMessageFetchRequest
 { 
-    MessageId = "&lt;put your message identifier here&gt;",
+    MessageId = "<put your message identifier here>",
     Account = "email.multi.account",
     Folder = "INBOX",
     Storage = "First Storage",
@@ -749,7 +739,7 @@ var result = await api.Client.Message.FetchAsync(request);
 
 **Description:** FetchAsync method request.
 
-**See also** parameter model documentation at [**ClientMessageFetchRequest**](ClientMessageFetchRequest.md)
+**See also** parameter model documentation at [**ClientMessageFetchRequest**](ClientMessageFetchRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -757,7 +747,7 @@ var result = await api.Client.Message.FetchAsync(request);
 ```csharp
 var request = new ClientMessageFetchRequest
 { 
-    MessageId = "&lt;put your message identifier here&gt;",
+    MessageId = "<put your message identifier here>",
     Account = "email.multi.account",
     Folder = "INBOX",
     Storage = "First Storage",
@@ -798,7 +788,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new ClientMessageFetchRequest
 { 
-    MessageId = "&lt;put your message identifier here&gt;",
+    MessageId = "<put your message identifier here>",
     Account = "email.multi.account",
     Folder = "INBOX",
     Storage = "First Storage",
@@ -836,7 +826,7 @@ var result = api.Client.Message.FetchFile(request);
 
 **Description:** FetchFile method request.
 
-**See also** parameter model documentation at [**ClientMessageFetchFileRequest**](ClientMessageFetchFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageFetchFileRequest**](ClientMessageFetchFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -844,7 +834,7 @@ var result = api.Client.Message.FetchFile(request);
 ```csharp
 var request = new ClientMessageFetchFileRequest
 { 
-    MessageId = "&lt;put your message identifier here&gt;",
+    MessageId = "<put your message identifier here>",
     Account = "email.multi.account",
     Folder = "INBOX",
     Storage = "First Storage",
@@ -884,7 +874,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new ClientMessageFetchFileRequest
 { 
-    MessageId = "&lt;put your message identifier here&gt;",
+    MessageId = "<put your message identifier here>",
     Account = "email.multi.account",
     Folder = "INBOX",
     Storage = "First Storage",
@@ -925,7 +915,7 @@ var result = await api.Client.Message.FetchFileAsync(request);
 
 **Description:** FetchFileAsync method request.
 
-**See also** parameter model documentation at [**ClientMessageFetchFileRequest**](ClientMessageFetchFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageFetchFileRequest**](ClientMessageFetchFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -933,7 +923,7 @@ var result = await api.Client.Message.FetchFileAsync(request);
 ```csharp
 var request = new ClientMessageFetchFileRequest
 { 
-    MessageId = "&lt;put your message identifier here&gt;",
+    MessageId = "<put your message identifier here>",
     Account = "email.multi.account",
     Folder = "INBOX",
     Storage = "First Storage",
@@ -973,7 +963,7 @@ var api = new EmailCloud(appKey, appSid);
 // Prepare parameters:
 var request = new ClientMessageFetchFileRequest
 { 
-    MessageId = "&lt;put your message identifier here&gt;",
+    MessageId = "<put your message identifier here>",
     Account = "email.multi.account",
     Folder = "INBOX",
     Storage = "First Storage",
@@ -1011,7 +1001,7 @@ var result = api.Client.Message.List(request);
 
 **Description:** List method request.
 
-**See also** parameter model documentation at [**ClientMessageListRequest**](ClientMessageListRequest.md)
+**See also** parameter model documentation at [**ClientMessageListRequest**](ClientMessageListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1021,7 +1011,7 @@ var request = new ClientMessageListRequest
 { 
     Folder = "INBOX",
     Account = "email.multi.account",
-    QueryString = "(&#39;From&#39; Contains &#39;.com&#39;)",
+    QueryString = "('From' Contains '.com')",
     Storage = "First Storage",
     AccountStorageFolder = "email/account/location/on/storage",
     Recursive = true,
@@ -1060,7 +1050,7 @@ var request = new ClientMessageListRequest
 { 
     Folder = "INBOX",
     Account = "email.multi.account",
-    QueryString = "(&#39;From&#39; Contains &#39;.com&#39;)",
+    QueryString = "('From' Contains '.com')",
     Storage = "First Storage",
     AccountStorageFolder = "email/account/location/on/storage",
     Recursive = true,
@@ -1099,7 +1089,7 @@ var result = await api.Client.Message.ListAsync(request);
 
 **Description:** ListAsync method request.
 
-**See also** parameter model documentation at [**ClientMessageListRequest**](ClientMessageListRequest.md)
+**See also** parameter model documentation at [**ClientMessageListRequest**](ClientMessageListRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1109,7 +1099,7 @@ var request = new ClientMessageListRequest
 { 
     Folder = "INBOX",
     Account = "email.multi.account",
-    QueryString = "(&#39;From&#39; Contains &#39;.com&#39;)",
+    QueryString = "('From' Contains '.com')",
     Storage = "First Storage",
     AccountStorageFolder = "email/account/location/on/storage",
     Recursive = true,
@@ -1148,7 +1138,7 @@ var request = new ClientMessageListRequest
 { 
     Folder = "INBOX",
     Account = "email.multi.account",
-    QueryString = "(&#39;From&#39; Contains &#39;.com&#39;)",
+    QueryString = "('From' Contains '.com')",
     Storage = "First Storage",
     AccountStorageFolder = "email/account/location/on/storage",
     Recursive = true,
@@ -1172,8 +1162,6 @@ result = ;
 **Description**: Move message to another folder.             
 
 
-**Returns:** Returns 200 if send is successful.
-
 **Method call example:**
 ```csharp
 api.Client.Message.Move(request);
@@ -1208,8 +1196,6 @@ var request = new ClientMessageMoveRequest
 
 ### Result
 
-**Description:** Returns 200 if send is successful.
-
 **Return type:** void (empty response body)
 
 
@@ -1237,7 +1223,6 @@ var request = new ClientMessageMoveRequest
 
 // Call method:
 api.Client.Message.Move(request);
-
 ```
 
 </details>
@@ -1252,8 +1237,6 @@ api.Client.Message.Move(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if send is successful.
-
 **Method call example:**
 ```csharp
 await api.Client.Message.MoveAsync(request);
@@ -1288,8 +1271,6 @@ var request = new ClientMessageMoveRequest
 
 ### Result
 
-**Description:** Returns 200 if send is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -1317,7 +1298,6 @@ var request = new ClientMessageMoveRequest
 
 // Call method:
 await api.Client.Message.MoveAsync(request);
-
 ```
 
 </details>
@@ -1328,8 +1308,6 @@ await api.Client.Message.MoveAsync(request);
 
 **Description**: Send an email specified by model in request.             
 
-
-**Returns:** Returns 200 if send is successful.
 
 **Method call example:**
 ```csharp
@@ -1399,8 +1377,6 @@ var request = new ClientMessageSendRequest
 
 
 ### Result
-
-**Description:** Returns 200 if send is successful.
 
 **Return type:** void (empty response body)
 
@@ -1464,7 +1440,6 @@ var request = new ClientMessageSendRequest
 
 // Call method:
 api.Client.Message.Send(request);
-
 ```
 
 </details>
@@ -1478,8 +1453,6 @@ api.Client.Message.Send(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if send is successful.
 
 **Method call example:**
 ```csharp
@@ -1550,8 +1523,6 @@ var request = new ClientMessageSendRequest
 
 ### Result
 
-**Description:** Returns 200 if send is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -1614,7 +1585,6 @@ var request = new ClientMessageSendRequest
 
 // Call method:
 await api.Client.Message.SendAsync(request);
-
 ```
 
 </details>
@@ -1625,8 +1595,6 @@ await api.Client.Message.SendAsync(request);
 **Descrption:** Send an email file.             
 
 
-**Returns:** Returns 200 if send is successful.
-
 **Method call example:**
 ```csharp
 api.Client.Message.SendFile(request);
@@ -1636,7 +1604,7 @@ api.Client.Message.SendFile(request);
 
 **Description:** SendFile method request.
 
-**See also** parameter model documentation at [**ClientMessageSendFileRequest**](ClientMessageSendFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageSendFileRequest**](ClientMessageSendFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1655,8 +1623,6 @@ var request = new ClientMessageSendFileRequest
 </details>
 
 ### Result
-
-**Description:** Returns 200 if send is successful.
 
 **Return type:** void (empty response body)
 
@@ -1696,8 +1662,6 @@ api.Client.Message.SendFile(request);
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 
-**Returns:** Returns 200 if send is successful.
-
 **Method call example:**
 ```csharp
 await api.Client.Message.SendFileAsync(request);
@@ -1707,7 +1671,7 @@ await api.Client.Message.SendFileAsync(request);
 
 **Description:** SendFileAsync method request.
 
-**See also** parameter model documentation at [**ClientMessageSendFileRequest**](ClientMessageSendFileRequest.md)
+**See also** parameter model documentation at [**ClientMessageSendFileRequest**](ClientMessageSendFileRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -1726,8 +1690,6 @@ var request = new ClientMessageSendFileRequest
 </details>
 
 ### Result
-
-**Returns:** Returns 200 if send is successful.
 
 **Return type:** void (empty response body)
 
@@ -1764,8 +1726,6 @@ await api.Client.Message.SendFileAsync(request);
 **Description**: Mark message as read or unread.             
 
 
-**Returns:** Returns 200 if send is successful.
-
 **Method call example:**
 ```csharp
 api.Client.Message.SetIsRead(request);
@@ -1798,8 +1758,6 @@ var request = new ClientMessageSetIsReadRequest
 
 
 ### Result
-
-**Description:** Returns 200 if send is successful.
 
 **Return type:** void (empty response body)
 
@@ -1827,7 +1785,6 @@ var request = new ClientMessageSetIsReadRequest
 
 // Call method:
 api.Client.Message.SetIsRead(request);
-
 ```
 
 </details>
@@ -1841,8 +1798,6 @@ api.Client.Message.SetIsRead(request);
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-
-**Returns:** Returns 200 if send is successful.
 
 **Method call example:**
 ```csharp
@@ -1877,8 +1832,6 @@ var request = new ClientMessageSetIsReadRequest
 
 ### Result
 
-**Description:** Returns 200 if send is successful.
-
 **Return type:** Task (empty response body)
 
 
@@ -1905,7 +1858,6 @@ var request = new ClientMessageSetIsReadRequest
 
 // Call method:
 await api.Client.Message.SetIsReadAsync(request);
-
 ```
 
 </details>

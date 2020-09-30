@@ -7,10 +7,10 @@ Request model for ClientFolderApi.GetList
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**account** | **string**| Email account | 
-**storage** | **string**| Storage name where account file located | [optional] 
-**accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
-**parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
+**account** |**string**|Email account |
+**storage** |**string**|Storage name where account file located |[optional] 
+**accountStorageFolder** |**string**|Folder in storage where account file located |[optional] 
+**parentFolder** |**string**|Folder in which subfolders should be listed |[optional] 
 
 ## Example
 ```csharp

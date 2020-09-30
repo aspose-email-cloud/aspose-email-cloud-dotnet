@@ -7,8 +7,8 @@ Request model for FolderApi.CreateFolder
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
-**storageName** | **string**| Storage name | [optional] 
+**path** |**string**|Folder path to create e.g. 'folder_1/folder_2/' |
+**storageName** |**string**|Storage name |[optional] 
 
 ## Example
 ```csharp

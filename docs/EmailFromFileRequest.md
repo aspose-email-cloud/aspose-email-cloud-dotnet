@@ -7,8 +7,8 @@ Request model for EmailApi.FromFile
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**format** | **string**|  Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
-**file** | **System.IO.Stream**| File to convert | 
+**format** |**string**| Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |
+**file** |**System.IO.Stream**|File to convert |
 
 ## Example
 ```csharp

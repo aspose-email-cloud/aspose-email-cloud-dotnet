@@ -18,7 +18,7 @@ var result = api.Ai.Bcr.Parse(request);
 
 **Description:** Parse method request.
 
-**See also** parameter model documentation at [**AiBcrParseRequest**](AiBcrParseRequest.md)
+**See also** parameter model documentation at [**AiBcrParseRequest**](AiBcrParseRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -215,7 +215,7 @@ var result = await api.Ai.Bcr.ParseAsync(request);
 
 **Description:** ParseAsync method request.
 
-**See also** parameter model documentation at [**AiBcrParseRequest**](AiBcrParseRequest.md)
+**See also** parameter model documentation at [**AiBcrParseRequest**](AiBcrParseRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>

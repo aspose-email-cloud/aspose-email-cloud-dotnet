@@ -7,9 +7,9 @@ Request model for EmailApi.Convert
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**fromFormat** | **string**| File format to convert to Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
-**toFormat** | **string**| File format to convert from Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
-**file** | **System.IO.Stream**| File to convert | 
+**fromFormat** |**string**|File format to convert to Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |
+**toFormat** |**string**|File format to convert from Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |
+**file** |**System.IO.Stream**|File to convert |
 
 ## Example
 ```csharp

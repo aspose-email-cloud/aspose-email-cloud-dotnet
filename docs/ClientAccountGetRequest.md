@@ -7,9 +7,9 @@ Request model for ClientAccountApi.Get
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**fileName** | **string**| File name on storage. | 
-**folder** | **string**| Folder on storage. | [optional] 
-**storage** | **string**| Storage name. | [optional] 
+**fileName** |**string**|File name on storage. |
+**folder** |**string**|Folder on storage. |[optional] 
+**storage** |**string**|Storage name. |[optional] 
 
 ## Example
 ```csharp

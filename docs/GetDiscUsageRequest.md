@@ -7,7 +7,7 @@ Request model for StorageApi.GetDiscUsage
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**storageName** | **string**| Storage name | [optional] 
+**storageName** |**string**|Storage name |[optional] 
 
 ## Example
 ```csharp

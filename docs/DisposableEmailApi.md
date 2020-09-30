@@ -18,7 +18,7 @@ var result = api.DisposableEmail.IsDisposable(request);
 
 **Description:** IsDisposable method request.
 
-**See also** parameter model documentation at [**DisposableEmailIsDisposableRequest**](DisposableEmailIsDisposableRequest.md)
+**See also** parameter model documentation at [**DisposableEmailIsDisposableRequest**](DisposableEmailIsDisposableRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>
@@ -91,7 +91,7 @@ var result = await api.DisposableEmail.IsDisposableAsync(request);
 
 **Description:** IsDisposableAsync method request.
 
-**See also** parameter model documentation at [**DisposableEmailIsDisposableRequest**](DisposableEmailIsDisposableRequest.md)
+**See also** parameter model documentation at [**DisposableEmailIsDisposableRequest**](DisposableEmailIsDisposableRequest.md).
 
 <details>
     <summary>Parameter initialization example:</summary>

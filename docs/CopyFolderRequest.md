@@ -7,10 +7,10 @@ Request model for FolderApi.CopyFolder
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-**srcPath** | **string**| Source folder path e.g. &#39;/src&#39; | 
-**destPath** | **string**| Destination folder path e.g. &#39;/dst&#39; | 
-**srcStorageName** | **string**| Source storage name | [optional] 
-**destStorageName** | **string**| Destination storage name | [optional] 
+**srcPath** |**string**|Source folder path e.g. '/src' |
+**destPath** |**string**|Destination folder path e.g. '/dst' |
+**srcStorageName** |**string**|Source storage name |[optional] 
+**destStorageName** |**string**|Destination storage name |[optional] 
 
 ## Example
 ```csharp
