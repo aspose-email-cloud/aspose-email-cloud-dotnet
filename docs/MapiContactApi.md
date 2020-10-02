@@ -391,7 +391,7 @@ var mapiContactDto = new MapiContactDto
 // Call method:
 var result = await api.Mapi.Contact.AsContactDtoAsync(mapiContactDto);
 
-// Result example:
+//Result example:
 result = new ContactDto
 {
     Attachments = new List<Attachment>
@@ -446,6 +446,7 @@ result = new ContactDto
         }
     }
 };
+
 ```
 
 </details>
@@ -705,12 +706,11 @@ var request = new MapiContactAsFileRequest
 
 // Call method:
 var result = await api.Mapi.Contact.AsFileAsync(request);
-
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -933,7 +933,6 @@ var request = new MapiContactFromFileRequest
 // Call method:
 var result = await api.Mapi.Contact.FromFileAsync(request);
 
-// Result example:
 result = new MapiContactDto
 {
     ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
@@ -961,6 +960,7 @@ result = new MapiContactDto
         PrimaryTelephoneNumber = "+49 211 4247 21"
     }
 };
+
 ```
 
 </details>
@@ -1191,7 +1191,6 @@ var request = new MapiContactGetRequest
 // Call method:
 var result = await api.Mapi.Contact.GetAsync(request);
 
-// Result example:
 result = new MapiContactDto
 {
     ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
@@ -1219,6 +1218,7 @@ result = new MapiContactDto
         PrimaryTelephoneNumber = "+49 211 4247 21"
     }
 };
+
 ```
 
 </details>
@@ -1466,6 +1466,7 @@ var request = new MapiContactSaveRequest
 
 // Call method:
 await api.Mapi.Contact.SaveAsync(request);
+
 ```
 
 </details>

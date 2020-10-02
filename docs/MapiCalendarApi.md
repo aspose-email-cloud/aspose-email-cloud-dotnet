@@ -389,7 +389,7 @@ var mapiCalendarDto = new MapiCalendarDto
 // Call method:
 var result = await api.Mapi.Calendar.AsCalendarDtoAsync(mapiCalendarDto);
 
-// Result example:
+//Result example:
 result = new CalendarDto
 {
     Attendees = new List<MailAddress>
@@ -418,6 +418,7 @@ result = new CalendarDto
     StartDate = DateTime.Today,
     Summary = "Some summary"
 };
+
 ```
 
 </details>
@@ -753,12 +754,11 @@ var request = new MapiCalendarAsFileRequest
 
 // Call method:
 var result = await api.Mapi.Calendar.AsFileAsync(request);
-
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -1034,7 +1034,6 @@ var request = new MapiCalendarFromFileRequest
 // Call method:
 var result = await api.Mapi.Calendar.FromFileAsync(request);
 
-// Result example:
 result = new MapiCalendarDto
 {
     Attendees = new MapiCalendarAttendeesDto
@@ -1081,6 +1080,7 @@ result = new MapiCalendarDto
     Body = "Some description",
     Subject = "Some summary"
 };
+
 ```
 
 </details>
@@ -1364,7 +1364,6 @@ var request = new MapiCalendarGetRequest
 // Call method:
 var result = await api.Mapi.Calendar.GetAsync(request);
 
-// Result example:
 result = new MapiCalendarDto
 {
     Attendees = new MapiCalendarAttendeesDto
@@ -1411,6 +1410,7 @@ result = new MapiCalendarDto
     Body = "Some description",
     Subject = "Some summary"
 };
+
 ```
 
 </details>
@@ -1734,6 +1734,7 @@ var request = new MapiCalendarSaveRequest
 
 // Call method:
 await api.Mapi.Calendar.SaveAsync(request);
+
 ```
 
 </details>

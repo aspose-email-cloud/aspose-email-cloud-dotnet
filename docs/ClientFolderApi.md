@@ -140,6 +140,7 @@ var request = new ClientFolderCreateRequest
 
 // Call method:
 await api.Client.Folder.CreateAsync(request);
+
 ```
 
 </details>
@@ -279,6 +280,7 @@ var request = new ClientFolderDeleteRequest
 
 // Call method:
 await api.Client.Folder.DeleteAsync(request);
+
 ```
 
 </details>
@@ -431,8 +433,8 @@ var request = new ClientFolderGetListRequest
 // Call method:
 var result = await api.Client.Folder.GetListAsync(request);
 
-// Result example:
 result = ;
+
 ```
 
 </details>

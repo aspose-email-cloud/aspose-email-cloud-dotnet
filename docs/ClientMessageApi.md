@@ -320,8 +320,9 @@ var request = new ClientMessageAppendRequest
 // Call method:
 var result = await api.Client.Message.AppendAsync(request);
 
-// Result example:
+//Result example:
 result = ;
+
 ```
 
 </details>
@@ -482,8 +483,8 @@ var request = new ClientMessageAppendFileRequest
 // Call method:
 var result = await api.Client.Message.AppendFileAsync(request);
 
-// Result example:
 result = ;
+
 ```
 
 </details>
@@ -627,6 +628,7 @@ var request = new ClientMessageDeleteRequest
 
 // Call method:
 await api.Client.Message.DeleteAsync(request);
+
 ```
 
 </details>
@@ -800,11 +802,11 @@ var request = new ClientMessageFetchRequest
 // Call method:
 var result = await api.Client.Message.FetchAsync(request);
 
-// Result example:
 result = new MailMessageBase
 {
     
 };
+
 ```
 
 </details>
@@ -974,11 +976,11 @@ var request = new ClientMessageFetchFileRequest
 // Call method:
 var result = await api.Client.Message.FetchFileAsync(request);
 
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -1149,8 +1151,8 @@ var request = new ClientMessageListRequest
 // Call method:
 var result = await api.Client.Message.ListAsync(request);
 
-// Result example:
 result = ;
+
 ```
 
 </details>
@@ -1298,6 +1300,7 @@ var request = new ClientMessageMoveRequest
 
 // Call method:
 await api.Client.Message.MoveAsync(request);
+
 ```
 
 </details>
@@ -1585,6 +1588,7 @@ var request = new ClientMessageSendRequest
 
 // Call method:
 await api.Client.Message.SendAsync(request);
+
 ```
 
 </details>
@@ -1714,6 +1718,7 @@ var request = new ClientMessageSendFileRequest
 
 // Call method:
 await api.Client.Message.SendFileAsync(request);
+
 
 ```
 
@@ -1858,6 +1863,7 @@ var request = new ClientMessageSetIsReadRequest
 
 // Call method:
 await api.Client.Message.SetIsReadAsync(request);
+
 ```
 
 </details>

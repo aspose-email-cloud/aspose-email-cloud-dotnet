@@ -140,6 +140,7 @@ var request = new ClientThreadDeleteRequest
 
 // Call method:
 await api.Client.Thread.DeleteAsync(request);
+
 ```
 
 </details>
@@ -433,7 +434,6 @@ var request = new ClientThreadGetListRequest
 // Call method:
 var result = await api.Client.Thread.GetListAsync(request);
 
-// Result example:
 result = new EmailThreadList
 {
     Value = new List<EmailThread>
@@ -482,6 +482,7 @@ result = new EmailThreadList
         }
     }
 };
+
 ```
 
 </details>
@@ -638,8 +639,8 @@ var request = new ClientThreadGetMessagesRequest
 // Call method:
 var result = await api.Client.Thread.GetMessagesAsync(request);
 
-// Result example:
 result = ;
+
 ```
 
 </details>
@@ -783,6 +784,7 @@ var request = new ClientThreadMoveRequest
 
 // Call method:
 await api.Client.Thread.MoveAsync(request);
+
 ```
 
 </details>
@@ -930,6 +932,7 @@ var request = new ClientThreadSetIsReadRequest
 
 // Call method:
 await api.Client.Thread.SetIsReadAsync(request);
+
 ```
 
 </details>

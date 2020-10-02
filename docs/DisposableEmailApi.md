@@ -137,8 +137,8 @@ var request = new DisposableEmailIsDisposableRequest
 // Call method:
 var result = await api.DisposableEmail.IsDisposableAsync(request);
 
-// Result example:
 result = ;
+
 ```
 
 </details>

@@ -326,7 +326,6 @@ var request = new AiBcrParseRequest
 // Call method:
 var result = await api.Ai.Bcr.ParseAsync(request);
 
-// Result example:
 result = new ContactList
 {
     Value = new List<ContactDto>
@@ -387,6 +386,7 @@ result = new ContactList
         }
     }
 };
+
 ```
 
 </details>
@@ -631,7 +631,7 @@ var request = new AiBcrParseStorageRequest
 // Call method:
 var result = await api.Ai.Bcr.ParseStorageAsync(request);
 
-// Result example:
+//Result example:
 result = new StorageFileLocationList
 {
     Value = new List<StorageFileLocation>
@@ -644,6 +644,7 @@ result = new StorageFileLocationList
         }
     }
 };
+
 ```
 
 </details>

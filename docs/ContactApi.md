@@ -360,12 +360,11 @@ var request = new ContactAsFileRequest
 
 // Call method:
 var result = await api.Contact.AsFileAsync(request);
-
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -787,7 +786,7 @@ var contactDto = new ContactDto
 // Call method:
 var result = await api.Contact.AsMapiAsync(contactDto);
 
-// Result example:
+//Result example:
 result = new MapiContactDto
 {
     ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
@@ -815,6 +814,7 @@ result = new MapiContactDto
         PrimaryTelephoneNumber = "+49 211 4247 21"
     }
 };
+
 ```
 
 </details>
@@ -972,11 +972,11 @@ var request = new ContactConvertRequest
 // Call method:
 var result = await api.Contact.ConvertAsync(request);
 
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -1280,7 +1280,6 @@ var request = new ContactFromFileRequest
 // Call method:
 var result = await api.Contact.FromFileAsync(request);
 
-// Result example:
 result = new ContactDto
 {
     Attachments = new List<Attachment>
@@ -1335,6 +1334,7 @@ result = new ContactDto
         }
     }
 };
+
 ```
 
 </details>
@@ -1646,7 +1646,6 @@ var request = new ContactGetRequest
 // Call method:
 var result = await api.Contact.GetAsync(request);
 
-// Result example:
 result = new ContactDto
 {
     Attachments = new List<Attachment>
@@ -1701,6 +1700,7 @@ result = new ContactDto
         }
     }
 };
+
 ```
 
 </details>
@@ -1866,11 +1866,11 @@ var request = new ContactGetAsFileRequest
 // Call method:
 var result = await api.Contact.GetAsFileAsync(request);
 
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -2231,7 +2231,6 @@ var request = new ContactGetListRequest
 // Call method:
 var result = await api.Contact.GetListAsync(request);
 
-// Result example:
 result = new ContactStorageList
 {
     Value = new List<StorageModel<ContactDto>>
@@ -2301,6 +2300,7 @@ result = new ContactStorageList
         }
     }
 };
+
 ```
 
 </details>
@@ -2652,6 +2652,7 @@ var request = new ContactSaveRequest
 
 // Call method:
 await api.Contact.SaveAsync(request);
+
 ```
 
 </details>

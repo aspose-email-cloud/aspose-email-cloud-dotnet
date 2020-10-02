@@ -336,7 +336,7 @@ var request = new CalendarAsAlternateRequest
 // Call method:
 var result = await api.Calendar.AsAlternateAsync(request);
 
-// Result example:
+//Result example:
 result = new AlternateView
 {
     Base64Data = "<File content represented as Base64 string>",
@@ -366,6 +366,7 @@ result = new AlternateView
         }
     }
 };
+
 ```
 
 </details>
@@ -625,12 +626,11 @@ var request = new CalendarAsFileRequest
 
 // Call method:
 var result = await api.Calendar.AsFileAsync(request);
-
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -1005,7 +1005,7 @@ var calendarDto = new CalendarDto
 // Call method:
 var result = await api.Calendar.AsMapiAsync(calendarDto);
 
-// Result example:
+//Result example:
 result = new MapiCalendarDto
 {
     Attendees = new MapiCalendarAttendeesDto
@@ -1052,6 +1052,7 @@ result = new MapiCalendarDto
     Body = "Some description",
     Subject = "Some summary"
 };
+
 ```
 
 </details>
@@ -1205,11 +1206,11 @@ var request = new CalendarConvertRequest
 // Call method:
 var result = await api.Calendar.ConvertAsync(request);
 
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -1431,7 +1432,6 @@ var request = new CalendarFromFileRequest
 // Call method:
 var result = await api.Calendar.FromFileAsync(request);
 
-// Result example:
 result = new CalendarDto
 {
     Attendees = new List<MailAddress>
@@ -1460,6 +1460,7 @@ result = new CalendarDto
     StartDate = DateTime.Today,
     Summary = "Some summary"
 };
+
 ```
 
 </details>
@@ -1689,7 +1690,6 @@ var request = new CalendarGetRequest
 // Call method:
 var result = await api.Calendar.GetAsync(request);
 
-// Result example:
 result = new CalendarDto
 {
     Attendees = new List<MailAddress>
@@ -1718,6 +1718,7 @@ result = new CalendarDto
     StartDate = DateTime.Today,
     Summary = "Some summary"
 };
+
 ```
 
 </details>
@@ -1954,7 +1955,6 @@ var request = new CalendarGetAsAlternateRequest
 // Call method:
 var result = await api.Calendar.GetAsAlternateAsync(request);
 
-// Result example:
 result = new AlternateView
 {
     Base64Data = "<File content represented as Base64 string>",
@@ -1984,6 +1984,7 @@ result = new AlternateView
         }
     }
 };
+
 ```
 
 </details>
@@ -2145,11 +2146,11 @@ var request = new CalendarGetAsFileRequest
 // Call method:
 var result = await api.Calendar.GetAsFileAsync(request);
 
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -2428,7 +2429,6 @@ var request = new CalendarGetListRequest
 // Call method:
 var result = await api.Calendar.GetListAsync(request);
 
-// Result example:
 result = new CalendarStorageList
 {
     Value = new List<StorageModel<CalendarDto>>
@@ -2472,6 +2472,7 @@ result = new CalendarStorageList
         }
     }
 };
+
 ```
 
 </details>
@@ -2719,6 +2720,7 @@ var request = new CalendarSaveRequest
 
 // Call method:
 await api.Calendar.SaveAsync(request);
+
 ```
 
 </details>

@@ -149,12 +149,12 @@ var request = new GetDiscUsageRequest
 // Call method:
 var result = await api.CloudStorage.Storage.GetDiscUsageAsync(request);
 
-// Result example:
 result = new DiscUsage
 {
     UsedSize = 1048576,
     TotalSize = 3145728
 };
+
 ```
 
 </details>
@@ -341,7 +341,6 @@ var request = new GetFileVersionsRequest
 // Call method:
 var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
 
-// Result example:
 result = new FileVersions
 {
     Value = new List<FileVersion>
@@ -357,6 +356,7 @@ result = new FileVersions
         }
     }
 };
+
 ```
 
 </details>
@@ -510,11 +510,11 @@ var request = new ObjectExistsRequest
 // Call method:
 var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
 
-// Result example:
 result = new ObjectExist
 {
     Exists = true
 };
+
 ```
 
 </details>
@@ -664,11 +664,11 @@ var request = new StorageExistsRequest
 // Call method:
 var result = await api.CloudStorage.Storage.ExistsAsync(request);
 
-// Result example:
 result = new StorageExist
 {
     Exists = true
 };
+
 ```
 
 </details>

@@ -13,5 +13,3 @@ Method | HTTP request | Description
 [**MoveFile**](FileApi.md#MoveFile)/[**MoveFileAsync**](FileApi.md#MoveFileAsync)| **PUT** /email/storage/file/move/{srcPath}| Move file
 [**UploadFile**](FileApi.md#UploadFile)/[**UploadFileAsync**](FileApi.md#UploadFileAsync)| **PUT** /email/storage/file/{path}| Upload file
 
-
-

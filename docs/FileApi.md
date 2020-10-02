@@ -123,6 +123,7 @@ var request = new CopyFileRequest
 // Call method:
 await api.CloudStorage.File.CopyFileAsync(request);
 
+
 ```
 
 </details>
@@ -240,6 +241,7 @@ var request = new DeleteFileRequest
 
 // Call method:
 await api.CloudStorage.File.DeleteFileAsync(request);
+
 
 ```
 
@@ -394,11 +396,11 @@ var request = new DownloadFileRequest
 // Call method:
 var result = await api.CloudStorage.File.DownloadFileAsync(request);
 
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -524,6 +526,7 @@ var request = new MoveFileRequest
 
 // Call method:
 await api.CloudStorage.File.MoveFileAsync(request);
+
 
 ```
 
@@ -673,8 +676,8 @@ var request = new UploadFileRequest
 // Call method:
 var result = await api.CloudStorage.File.UploadFileAsync(request);
 
-// Result example:
 result = ;
+
 ```
 
 </details>

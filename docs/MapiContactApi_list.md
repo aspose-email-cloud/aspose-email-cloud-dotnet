@@ -13,5 +13,3 @@ Method | HTTP request | Description
 [**Get**](MapiContactApi.md#Get)/[**GetAsync**](MapiContactApi.md#GetAsync)| **GET** /email/MapiContact| Get MAPI contact document.             
 [**Save**](MapiContactApi.md#Save)/[**SaveAsync**](MapiContactApi.md#SaveAsync)| **PUT** /email/MapiContact| Save MAPI Contact to storage.             
 
-
-

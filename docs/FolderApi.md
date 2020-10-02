@@ -123,6 +123,7 @@ var request = new CopyFolderRequest
 // Call method:
 await api.CloudStorage.Folder.CopyFolderAsync(request);
 
+
 ```
 
 </details>
@@ -240,6 +241,7 @@ var request = new CreateFolderRequest
 
 // Call method:
 await api.CloudStorage.Folder.CreateFolderAsync(request);
+
 
 ```
 
@@ -362,6 +364,7 @@ var request = new DeleteFolderRequest
 
 // Call method:
 await api.CloudStorage.Folder.DeleteFolderAsync(request);
+
 
 ```
 
@@ -543,7 +546,6 @@ var request = new GetFilesListRequest
 // Call method:
 var result = await api.CloudStorage.Folder.GetFilesListAsync(request);
 
-// Result example:
 result = new FilesList
 {
     Value = new List<StorageFile>
@@ -557,6 +559,7 @@ result = new FilesList
         }
     }
 };
+
 ```
 
 </details>
@@ -682,6 +685,7 @@ var request = new MoveFolderRequest
 
 // Call method:
 await api.CloudStorage.Folder.MoveFolderAsync(request);
+
 
 ```
 

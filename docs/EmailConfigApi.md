@@ -334,7 +334,6 @@ var request = new EmailConfigDiscoverRequest
 // Call method:
 var result = await api.EmailConfig.DiscoverAsync(request);
 
-// Result example:
 result = new EmailAccountConfigList
 {
     Value = new List<EmailAccountConfig>
@@ -403,6 +402,7 @@ result = new EmailAccountConfigList
         }
     }
 };
+
 ```
 
 </details>
@@ -763,7 +763,7 @@ var request = new EmailConfigDiscoverOauthRequest
 // Call method:
 var result = await api.EmailConfig.DiscoverOauthAsync(request);
 
-// Result example:
+//Result example:
 result = new EmailAccountConfigList
 {
     Value = new List<EmailAccountConfig>
@@ -832,6 +832,7 @@ result = new EmailAccountConfigList
         }
     }
 };
+
 ```
 
 </details>
@@ -1184,7 +1185,7 @@ var request = new EmailConfigDiscoverPasswordRequest
 // Call method:
 var result = await api.EmailConfig.DiscoverPasswordAsync(request);
 
-// Result example:
+//Result example:
 result = new EmailAccountConfigList
 {
     Value = new List<EmailAccountConfig>
@@ -1253,6 +1254,7 @@ result = new EmailAccountConfigList
         }
     }
 };
+
 ```
 
 </details>

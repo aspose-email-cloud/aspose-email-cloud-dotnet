@@ -184,7 +184,6 @@ var request = new ClientAccountGetRequest
 // Call method:
 var result = await api.Client.Account.GetAsync(request);
 
-// Result example:
 result = new EmailClientAccount
 {
     Host = "smtp.example.com",
@@ -199,6 +198,7 @@ result = new EmailClientAccount
         Login = "example@example.com"
     }
 };
+
 ```
 
 </details>
@@ -470,7 +470,6 @@ var request = new ClientAccountGetMultiRequest
 // Call method:
 var result = await api.Client.Account.GetMultiAsync(request);
 
-// Result example:
 result = new EmailClientMultiAccount
 {
     ReceiveAccounts = new List<EmailClientAccount>
@@ -513,6 +512,7 @@ result = new EmailClientMultiAccount
         }
     }
 };
+
 ```
 
 </details>
@@ -704,6 +704,7 @@ var request = new ClientAccountSaveRequest
 
 // Call method:
 await api.Client.Account.SaveAsync(request);
+
 ```
 
 </details>
@@ -1007,6 +1008,7 @@ var request = new ClientAccountSaveMultiRequest
 
 // Call method:
 await api.Client.Account.SaveMultiAsync(request);
+
 ```
 
 </details>

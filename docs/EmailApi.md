@@ -284,12 +284,11 @@ var request = new EmailAsFileRequest
 
 // Call method:
 var result = await api.Email.AsFileAsync(request);
-
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -674,7 +673,7 @@ var emailDto = new EmailDto
 // Call method:
 var result = await api.Email.AsMapiAsync(emailDto);
 
-// Result example:
+//Result example:
 result = new MapiMessageDto
 {
     MessageBody = "Some body",
@@ -715,6 +714,7 @@ result = new MapiMessageDto
     Subject = "Re: Some subject",
     SubjectPrefix = "Re: "
 };
+
 ```
 
 </details>
@@ -872,11 +872,11 @@ var request = new EmailConvertRequest
 // Call method:
 var result = await api.Email.ConvertAsync(request);
 
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -1123,7 +1123,6 @@ var request = new EmailFromFileRequest
 // Call method:
 var result = await api.Email.FromFileAsync(request);
 
-// Result example:
 result = new EmailDto
 {
     Attachments = new List<Attachment>
@@ -1159,6 +1158,7 @@ result = new EmailDto
         }
     }
 };
+
 ```
 
 </details>
@@ -1413,7 +1413,6 @@ var request = new EmailGetRequest
 // Call method:
 var result = await api.Email.GetAsync(request);
 
-// Result example:
 result = new EmailDto
 {
     Attachments = new List<Attachment>
@@ -1449,6 +1448,7 @@ result = new EmailDto
         }
     }
 };
+
 ```
 
 </details>
@@ -1610,11 +1610,11 @@ var request = new EmailGetAsFileRequest
 // Call method:
 var result = await api.Email.GetAsFileAsync(request);
 
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -1918,7 +1918,6 @@ var request = new EmailGetListRequest
 // Call method:
 var result = await api.Email.GetListAsync(request);
 
-// Result example:
 result = new EmailStorageList
 {
     Value = new List<StorageModel<EmailDto>>
@@ -1969,6 +1968,7 @@ result = new EmailStorageList
         }
     }
 };
+
 ```
 
 </details>
@@ -2248,6 +2248,7 @@ var request = new EmailSaveRequest
 
 // Call method:
 await api.Email.SaveAsync(request);
+
 ```
 
 </details>

@@ -386,7 +386,7 @@ var mapiMessage = new MapiMessageDto
 // Call method:
 var result = await api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
 
-// Result example:
+//Result example:
 result = new EmailDto
 {
     Attachments = new List<Attachment>
@@ -422,6 +422,7 @@ result = new EmailDto
         }
     }
 };
+
 ```
 
 </details>
@@ -733,12 +734,11 @@ var request = new MapiMessageAsFileRequest
 
 // Call method:
 var result = await api.Mapi.Message.AsFileAsync(request);
-
-// Result can be saved to file:
 using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 {
     await result.CopyToAsync(resultFileStream);
 }
+
 ```
 
 </details>
@@ -1000,7 +1000,6 @@ var request = new MapiMessageFromFileRequest
 // Call method:
 var result = await api.Mapi.Message.FromFileAsync(request);
 
-// Result example:
 result = new MapiMessageDto
 {
     MessageBody = "Some body",
@@ -1041,6 +1040,7 @@ result = new MapiMessageDto
     Subject = "Re: Some subject",
     SubjectPrefix = "Re: "
 };
+
 ```
 
 </details>
@@ -1310,7 +1310,6 @@ var request = new MapiMessageGetRequest
 // Call method:
 var result = await api.Mapi.Message.GetAsync(request);
 
-// Result example:
 result = new MapiMessageDto
 {
     MessageBody = "Some body",
@@ -1351,6 +1350,7 @@ result = new MapiMessageDto
     Subject = "Re: Some subject",
     SubjectPrefix = "Re: "
 };
+
 ```
 
 </details>
@@ -1650,6 +1650,7 @@ var request = new MapiMessageSaveRequest
 
 // Call method:
 await api.Mapi.Message.SaveAsync(request);
+
 ```
 
 </details>

@@ -182,7 +182,6 @@ var request = new AiNameCompleteRequest
 // Call method:
 var result = await api.Ai.Name.CompleteAsync(request);
 
-// Result example:
 result = new AiNameWeightedVariants
 {
     Names = new List<AiNameWeighted>
@@ -199,6 +198,7 @@ result = new AiNameWeightedVariants
         }
     }
 };
+
 ```
 
 </details>
@@ -384,7 +384,6 @@ var request = new AiNameExpandRequest
 // Call method:
 var result = await api.Ai.Name.ExpandAsync(request);
 
-// Result example:
 result = new AiNameWeightedVariants
 {
     Names = new List<AiNameWeighted>
@@ -401,6 +400,7 @@ result = new AiNameWeightedVariants
         }
     }
 };
+
 ```
 
 </details>
@@ -577,7 +577,7 @@ var request = ;
 // Call method:
 var result = await api.Ai.Name.ExpandParsedAsync(request);
 
-// Result example:
+//Result example:
 result = new AiNameWeightedVariants
 {
     Names = new List<AiNameWeighted>
@@ -594,6 +594,7 @@ result = new AiNameWeightedVariants
         }
     }
 };
+
 ```
 
 </details>
@@ -750,12 +751,12 @@ var request = new AiNameFormatRequest
 // Call method:
 var result = await api.Ai.Name.FormatAsync(request);
 
-// Result example:
 result = new AiNameFormatted
 {
     Name = "Mr. Cane J. M.",
     Comments = "format: %t%L%f%m; source: parsed format"
 };
+
 ```
 
 </details>
@@ -899,12 +900,13 @@ var request = ;
 // Call method:
 var result = await api.Ai.Name.FormatParsedAsync(request);
 
-// Result example:
+//Result example:
 result = new AiNameFormatted
 {
     Name = "Mr. Cane J. M.",
     Comments = "format: %t%L%f%m; source: parsed format"
 };
+
 ```
 
 </details>
@@ -1045,8 +1047,8 @@ var request = new AiNameGenderizeRequest
 // Call method:
 var result = await api.Ai.Name.GenderizeAsync(request);
 
-// Result example:
 result = ;
+
 ```
 
 </details>
@@ -1178,8 +1180,9 @@ var request = ;
 // Call method:
 var result = await api.Ai.Name.GenderizeParsedAsync(request);
 
-// Result example:
+//Result example:
 result = ;
+
 ```
 
 </details>
@@ -1357,7 +1360,6 @@ var request = new AiNameMatchRequest
 // Call method:
 var result = await api.Ai.Name.MatchAsync(request);
 
-// Result example:
 result = new AiNameMatchResult
 {
     Similarity = 0.6,
@@ -1370,6 +1372,7 @@ result = new AiNameMatchResult
         }
     }
 };
+
 ```
 
 </details>
@@ -1534,7 +1537,7 @@ var request = ;
 // Call method:
 var result = await api.Ai.Name.MatchParsedAsync(request);
 
-// Result example:
+//Result example:
 result = new AiNameMatchResult
 {
     Similarity = 0.6,
@@ -1547,6 +1550,7 @@ result = new AiNameMatchResult
         }
     }
 };
+
 ```
 
 </details>
@@ -1695,8 +1699,8 @@ var request = new AiNameParseRequest
 // Call method:
 var result = await api.Ai.Name.ParseAsync(request);
 
-// Result example:
 result = ;
+
 ```
 
 </details>
@@ -1837,8 +1841,8 @@ var request = new AiNameParseEmailAddressRequest
 // Call method:
 var result = await api.Ai.Name.ParseEmailAddressAsync(request);
 
-// Result example:
 result = ;
+
 ```
 
 </details>
