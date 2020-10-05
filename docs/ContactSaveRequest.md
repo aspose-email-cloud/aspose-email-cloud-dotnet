@@ -35,7 +35,7 @@ var contactSaveRequest = new ContactSaveRequest
         {
             new EmailAddress
             {
-                Category = new EnumWithCustom<EmailAddressCategory>
+                Category = new EnumWithCustomOfEmailAddressCategory
                 {
                     Value = "Custom",
                     Description = "Partners"
@@ -51,7 +51,7 @@ var contactSaveRequest = new ContactSaveRequest
         {
             new PhoneNumber
             {
-                Category = new EnumWithCustom<PhoneNumberCategory>
+                Category = new EnumWithCustomOfPhoneNumberCategory
                 {
                     Value = "Office"
                 },
@@ -65,7 +65,7 @@ var contactSaveRequest = new ContactSaveRequest
         {
             new Url
             {
-                Category = new EnumWithCustom<UrlCategory>
+                Category = new EnumWithCustomOfUrlCategory
                 {
                     Value = "Work"
                 },

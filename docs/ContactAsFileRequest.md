@@ -27,7 +27,7 @@ var contactAsFileRequest = new ContactAsFileRequest
         {
             new EmailAddress
             {
-                Category = new EnumWithCustom<EmailAddressCategory>
+                Category = new EnumWithCustomOfEmailAddressCategory
                 {
                     Value = "Custom",
                     Description = "Partners"
@@ -43,7 +43,7 @@ var contactAsFileRequest = new ContactAsFileRequest
         {
             new PhoneNumber
             {
-                Category = new EnumWithCustom<PhoneNumberCategory>
+                Category = new EnumWithCustomOfPhoneNumberCategory
                 {
                     Value = "Office"
                 },
@@ -57,7 +57,7 @@ var contactAsFileRequest = new ContactAsFileRequest
         {
             new Url
             {
-                Category = new EnumWithCustom<UrlCategory>
+                Category = new EnumWithCustomOfUrlCategory
                 {
                     Value = "Work"
                 },

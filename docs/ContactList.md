@@ -29,7 +29,7 @@ var contactList = new ContactList
             {
                 new EmailAddress
                 {
-                    Category = new EnumWithCustom<EmailAddressCategory>
+                    Category = new EnumWithCustomOfEmailAddressCategory
                     {
                         Value = "Custom",
                         Description = "Partners"
@@ -45,7 +45,7 @@ var contactList = new ContactList
             {
                 new PhoneNumber
                 {
-                    Category = new EnumWithCustom<PhoneNumberCategory>
+                    Category = new EnumWithCustomOfPhoneNumberCategory
                     {
                         Value = "Office"
                     },
@@ -59,7 +59,7 @@ var contactList = new ContactList
             {
                 new Url
                 {
-                    Category = new EnumWithCustom<UrlCategory>
+                    Category = new EnumWithCustomOfUrlCategory
                     {
                         Value = "Work"
                     },

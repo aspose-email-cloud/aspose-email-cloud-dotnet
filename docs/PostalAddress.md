@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 var postalAddress = new PostalAddress
 {
     Address = "221b",
-    Category = new EnumWithCustom<PostalAddressCategory>
+    Category = new EnumWithCustomOfPostalAddressCategory
     {
         
     },

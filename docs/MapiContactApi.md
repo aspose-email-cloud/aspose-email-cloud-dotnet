@@ -82,7 +82,7 @@ result = new ContactDto
     {
         new EmailAddress
         {
-            Category = new EnumWithCustom<EmailAddressCategory>
+            Category = new EnumWithCustomOfEmailAddressCategory
             {
                 Value = "Custom",
                 Description = "Partners"
@@ -98,7 +98,7 @@ result = new ContactDto
     {
         new PhoneNumber
         {
-            Category = new EnumWithCustom<PhoneNumberCategory>
+            Category = new EnumWithCustomOfPhoneNumberCategory
             {
                 Value = "Office"
             },
@@ -112,7 +112,7 @@ result = new ContactDto
     {
         new Url
         {
-            Category = new EnumWithCustom<UrlCategory>
+            Category = new EnumWithCustomOfUrlCategory
             {
                 Value = "Work"
             },
@@ -181,7 +181,7 @@ result = new ContactDto
     {
         new EmailAddress
         {
-            Category = new EnumWithCustom<EmailAddressCategory>
+            Category = new EnumWithCustomOfEmailAddressCategory
             {
                 Value = "Custom",
                 Description = "Partners"
@@ -197,7 +197,7 @@ result = new ContactDto
     {
         new PhoneNumber
         {
-            Category = new EnumWithCustom<PhoneNumberCategory>
+            Category = new EnumWithCustomOfPhoneNumberCategory
             {
                 Value = "Office"
             },
@@ -211,7 +211,7 @@ result = new ContactDto
     {
         new Url
         {
-            Category = new EnumWithCustom<UrlCategory>
+            Category = new EnumWithCustomOfUrlCategory
             {
                 Value = "Work"
             },
@@ -308,7 +308,7 @@ result = new ContactDto
     {
         new EmailAddress
         {
-            Category = new EnumWithCustom<EmailAddressCategory>
+            Category = new EnumWithCustomOfEmailAddressCategory
             {
                 Value = "Custom",
                 Description = "Partners"
@@ -324,7 +324,7 @@ result = new ContactDto
     {
         new PhoneNumber
         {
-            Category = new EnumWithCustom<PhoneNumberCategory>
+            Category = new EnumWithCustomOfPhoneNumberCategory
             {
                 Value = "Office"
             },
@@ -338,7 +338,7 @@ result = new ContactDto
     {
         new Url
         {
-            Category = new EnumWithCustom<UrlCategory>
+            Category = new EnumWithCustomOfUrlCategory
             {
                 Value = "Work"
             },
@@ -407,7 +407,7 @@ result = new ContactDto
     {
         new EmailAddress
         {
-            Category = new EnumWithCustom<EmailAddressCategory>
+            Category = new EnumWithCustomOfEmailAddressCategory
             {
                 Value = "Custom",
                 Description = "Partners"
@@ -423,7 +423,7 @@ result = new ContactDto
     {
         new PhoneNumber
         {
-            Category = new EnumWithCustom<PhoneNumberCategory>
+            Category = new EnumWithCustomOfPhoneNumberCategory
             {
                 Value = "Office"
             },
@@ -437,7 +437,7 @@ result = new ContactDto
     {
         new Url
         {
-            Category = new EnumWithCustom<UrlCategory>
+            Category = new EnumWithCustomOfUrlCategory
             {
                 Value = "Work"
             },

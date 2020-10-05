@@ -12,9 +12,9 @@ See: [ListResponseOfStorageModelOfContactDto](ListResponseOfStorageModelOfContac
 ```csharp
 var contactStorageList = new ContactStorageList
 {
-    Value = new List<StorageModel<ContactDto>>
+    Value = new List<StorageModelOfContactDto>
     {
-        new StorageModel<ContactDto>
+        new StorageModelOfContactDto
         {
             StorageFile = new StorageFileLocation
             {
@@ -37,7 +37,7 @@ var contactStorageList = new ContactStorageList
                 {
                     new EmailAddress
                     {
-                        Category = new EnumWithCustom<EmailAddressCategory>
+                        Category = new EnumWithCustomOfEmailAddressCategory
                         {
                             Value = "Custom",
                             Description = "Partners"
@@ -53,7 +53,7 @@ var contactStorageList = new ContactStorageList
                 {
                     new PhoneNumber
                     {
-                        Category = new EnumWithCustom<PhoneNumberCategory>
+                        Category = new EnumWithCustomOfPhoneNumberCategory
                         {
                             Value = "Office"
                         },
@@ -67,7 +67,7 @@ var contactStorageList = new ContactStorageList
                 {
                     new Url
                     {
-                        Category = new EnumWithCustom<UrlCategory>
+                        Category = new EnumWithCustomOfUrlCategory
                         {
                             Value = "Work"
                         },

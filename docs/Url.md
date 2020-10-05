@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ```csharp
 var url = new Url
 {
-    Category = new EnumWithCustom<UrlCategory>
+    Category = new EnumWithCustomOfUrlCategory
     {
         Value = "Work"
     },

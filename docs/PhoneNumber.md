@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ```csharp
 var phoneNumber = new PhoneNumber
 {
-    Category = new EnumWithCustom<PhoneNumberCategory>
+    Category = new EnumWithCustomOfPhoneNumberCategory
     {
         Value = "Company"
     },

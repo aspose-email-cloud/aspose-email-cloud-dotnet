@@ -12,9 +12,9 @@ See: [ListResponseOfStorageModelOfCalendarDto](ListResponseOfStorageModelOfCalen
 ```csharp
 var calendarStorageList = new CalendarStorageList
 {
-    Value = new List<StorageModel<CalendarDto>>
+    Value = new List<StorageModelOfCalendarDto>
     {
-        new StorageModel<CalendarDto>
+        new StorageModelOfCalendarDto
         {
             StorageFile = new StorageFileLocation
             {

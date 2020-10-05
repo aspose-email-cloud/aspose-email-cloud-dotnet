@@ -2201,9 +2201,9 @@ var request = new CalendarGetListRequest
 ```csharp
 result = new CalendarStorageList
 {
-    Value = new List<StorageModel<CalendarDto>>
+    Value = new List<StorageModelOfCalendarDto>
     {
-        new StorageModel<CalendarDto>
+        new StorageModelOfCalendarDto
         {
             StorageFile = new StorageFileLocation
             {
@@ -2269,9 +2269,9 @@ var result = api.Calendar.GetList(request);
 // Result example:
 result = new CalendarStorageList
 {
-    Value = new List<StorageModel<CalendarDto>>
+    Value = new List<StorageModelOfCalendarDto>
     {
-        new StorageModel<CalendarDto>
+        new StorageModelOfCalendarDto
         {
             StorageFile = new StorageFileLocation
             {
@@ -2364,9 +2364,9 @@ var request = new CalendarGetListRequest
 ```csharp
 result = new CalendarStorageList
 {
-    Value = new List<StorageModel<CalendarDto>>
+    Value = new List<StorageModelOfCalendarDto>
     {
-        new StorageModel<CalendarDto>
+        new StorageModelOfCalendarDto
         {
             StorageFile = new StorageFileLocation
             {
@@ -2431,9 +2431,9 @@ var result = await api.Calendar.GetListAsync(request);
 
 result = new CalendarStorageList
 {
-    Value = new List<StorageModel<CalendarDto>>
+    Value = new List<StorageModelOfCalendarDto>
     {
-        new StorageModel<CalendarDto>
+        new StorageModelOfCalendarDto
         {
             StorageFile = new StorageFileLocation
             {

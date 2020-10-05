@@ -429,7 +429,43 @@ var result = api.Ai.Name.ExpandParsed(request);
     <summary>Parameter initialization example:</summary>
 
 ```csharp
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 ```
 
 </details>
@@ -474,7 +510,43 @@ result = new AiNameWeightedVariants
 var api = new EmailCloud(appKey, appSid);
 
 // Prepare parameters:
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 
 // Call method:
 var result = api.Ai.Name.ExpandParsed(request);
@@ -527,7 +599,43 @@ var result = await api.Ai.Name.ExpandParsedAsync(request);
     <summary>Parameter initialization example:</summary>
 
 ```csharp
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 ```
 
 </details>
@@ -572,7 +680,43 @@ result = new AiNameWeightedVariants
 var api = new EmailCloud(appKey, appSid);
 
 // Prepare parameters:
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 
 // Call method:
 var result = await api.Ai.Name.ExpandParsedAsync(request);
@@ -785,7 +929,43 @@ var result = api.Ai.Name.FormatParsed(request);
     <summary>Parameter initialization example:</summary>
 
 ```csharp
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 ```
 
 </details>
@@ -819,7 +999,43 @@ result = new AiNameFormatted
 var api = new EmailCloud(appKey, appSid);
 
 // Prepare parameters:
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 
 // Call method:
 var result = api.Ai.Name.FormatParsed(request);
@@ -861,7 +1077,43 @@ var result = await api.Ai.Name.FormatParsedAsync(request);
     <summary>Parameter initialization example:</summary>
 
 ```csharp
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 ```
 
 </details>
@@ -895,7 +1147,43 @@ result = new AiNameFormatted
 var api = new EmailCloud(appKey, appSid);
 
 // Prepare parameters:
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 
 // Call method:
 var result = await api.Ai.Name.FormatParsedAsync(request);
@@ -1077,7 +1365,43 @@ var result = api.Ai.Name.GenderizeParsed(request);
     <summary>Parameter initialization example:</summary>
 
 ```csharp
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 ```
 
 </details>
@@ -1107,7 +1431,43 @@ result = ;
 var api = new EmailCloud(appKey, appSid);
 
 // Prepare parameters:
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 
 // Call method:
 var result = api.Ai.Name.GenderizeParsed(request);
@@ -1145,7 +1505,43 @@ var result = await api.Ai.Name.GenderizeParsedAsync(request);
     <summary>Parameter initialization example:</summary>
 
 ```csharp
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 ```
 
 </details>
@@ -1175,7 +1571,43 @@ result = ;
 var api = new EmailCloud(appKey, appSid);
 
 // Prepare parameters:
-var request = ;
+var request = new AiNameParsedRequest
+{
+    CulturalContext = new AiNameCulturalContext
+    {
+        Language = "",
+        Location = "",
+        Script = "",
+        Encoding = ""
+    },
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 
 // Call method:
 var result = await api.Ai.Name.GenderizeParsedAsync(request);
@@ -1598,7 +2030,36 @@ var request = new AiNameParseRequest
     <summary>Result example</summary>
 
 ```csharp
-result = ;
+result = new AiNameComponentList
+{
+    Value = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 ```
 
 </details>
@@ -1623,7 +2084,36 @@ var request = new AiNameParseRequest
 var result = api.Ai.Name.Parse(request);
 
 // Result example:
-result = ;
+result = new AiNameComponentList
+{
+    Value = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 ```
 
 </details>
@@ -1675,7 +2165,36 @@ var request = new AiNameParseRequest
     <summary>Result example</summary>
 
 ```csharp
-result = ;
+result = new AiNameComponentList
+{
+    Value = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 ```
 
 </details>
@@ -1699,7 +2218,36 @@ var request = new AiNameParseRequest
 // Call method:
 var result = await api.Ai.Name.ParseAsync(request);
 
-result = ;
+result = new AiNameComponentList
+{
+    Value = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
 
 ```
 

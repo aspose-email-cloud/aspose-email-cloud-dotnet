@@ -12,7 +12,7 @@ See: [ListResponseOfStorageModelOfEmailDto](ListResponseOfStorageModelOfEmailDto
 ```csharp
 var emailStorageList = new EmailStorageList
 {
-    Value = new List<StorageModel<EmailDto>>
+    Value = new List<StorageModelOfEmailDto>
     {
         new EmailSaveRequest
         {

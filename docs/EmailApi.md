@@ -1666,7 +1666,7 @@ var request = new EmailGetListRequest
 ```csharp
 result = new EmailStorageList
 {
-    Value = new List<StorageModel<EmailDto>>
+    Value = new List<StorageModelOfEmailDto>
     {
         new EmailSaveRequest
         {
@@ -1742,7 +1742,7 @@ var result = api.Email.GetList(request);
 // Result example:
 result = new EmailStorageList
 {
-    Value = new List<StorageModel<EmailDto>>
+    Value = new List<StorageModelOfEmailDto>
     {
         new EmailSaveRequest
         {
@@ -1845,7 +1845,7 @@ var request = new EmailGetListRequest
 ```csharp
 result = new EmailStorageList
 {
-    Value = new List<StorageModel<EmailDto>>
+    Value = new List<StorageModelOfEmailDto>
     {
         new EmailSaveRequest
         {
@@ -1920,7 +1920,7 @@ var result = await api.Email.GetListAsync(request);
 
 result = new EmailStorageList
 {
-    Value = new List<StorageModel<EmailDto>>
+    Value = new List<StorageModelOfEmailDto>
     {
         new EmailSaveRequest
         {

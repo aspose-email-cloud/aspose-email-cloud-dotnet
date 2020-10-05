@@ -59,7 +59,7 @@ var contactDto = new ContactDto
     {
         new EmailAddress
         {
-            Category = new EnumWithCustom<EmailAddressCategory>
+            Category = new EnumWithCustomOfEmailAddressCategory
             {
                 Value = "Custom",
                 Description = "Partners"
@@ -75,7 +75,7 @@ var contactDto = new ContactDto
     {
         new PhoneNumber
         {
-            Category = new EnumWithCustom<PhoneNumberCategory>
+            Category = new EnumWithCustomOfPhoneNumberCategory
             {
                 Value = "Office"
             },
@@ -89,7 +89,7 @@ var contactDto = new ContactDto
     {
         new Url
         {
-            Category = new EnumWithCustom<UrlCategory>
+            Category = new EnumWithCustomOfUrlCategory
             {
                 Value = "Work"
             },

@@ -64,7 +64,7 @@ result = new ContactList
             {
                 new EmailAddress
                 {
-                    Category = new EnumWithCustom<EmailAddressCategory>
+                    Category = new EnumWithCustomOfEmailAddressCategory
                     {
                         Value = "Custom",
                         Description = "Partners"
@@ -80,7 +80,7 @@ result = new ContactList
             {
                 new PhoneNumber
                 {
-                    Category = new EnumWithCustom<PhoneNumberCategory>
+                    Category = new EnumWithCustomOfPhoneNumberCategory
                     {
                         Value = "Office"
                     },
@@ -94,7 +94,7 @@ result = new ContactList
             {
                 new Url
                 {
-                    Category = new EnumWithCustom<UrlCategory>
+                    Category = new EnumWithCustomOfUrlCategory
                     {
                         Value = "Work"
                     },
@@ -149,7 +149,7 @@ result = new ContactList
             {
                 new EmailAddress
                 {
-                    Category = new EnumWithCustom<EmailAddressCategory>
+                    Category = new EnumWithCustomOfEmailAddressCategory
                     {
                         Value = "Custom",
                         Description = "Partners"
@@ -165,7 +165,7 @@ result = new ContactList
             {
                 new PhoneNumber
                 {
-                    Category = new EnumWithCustom<PhoneNumberCategory>
+                    Category = new EnumWithCustomOfPhoneNumberCategory
                     {
                         Value = "Office"
                     },
@@ -179,7 +179,7 @@ result = new ContactList
             {
                 new Url
                 {
-                    Category = new EnumWithCustom<UrlCategory>
+                    Category = new EnumWithCustomOfUrlCategory
                     {
                         Value = "Work"
                     },
@@ -261,7 +261,7 @@ result = new ContactList
             {
                 new EmailAddress
                 {
-                    Category = new EnumWithCustom<EmailAddressCategory>
+                    Category = new EnumWithCustomOfEmailAddressCategory
                     {
                         Value = "Custom",
                         Description = "Partners"
@@ -277,7 +277,7 @@ result = new ContactList
             {
                 new PhoneNumber
                 {
-                    Category = new EnumWithCustom<PhoneNumberCategory>
+                    Category = new EnumWithCustomOfPhoneNumberCategory
                     {
                         Value = "Office"
                     },
@@ -291,7 +291,7 @@ result = new ContactList
             {
                 new Url
                 {
-                    Category = new EnumWithCustom<UrlCategory>
+                    Category = new EnumWithCustomOfUrlCategory
                     {
                         Value = "Work"
                     },
@@ -345,7 +345,7 @@ result = new ContactList
             {
                 new EmailAddress
                 {
-                    Category = new EnumWithCustom<EmailAddressCategory>
+                    Category = new EnumWithCustomOfEmailAddressCategory
                     {
                         Value = "Custom",
                         Description = "Partners"
@@ -361,7 +361,7 @@ result = new ContactList
             {
                 new PhoneNumber
                 {
-                    Category = new EnumWithCustom<PhoneNumberCategory>
+                    Category = new EnumWithCustomOfPhoneNumberCategory
                     {
                         Value = "Office"
                     },
@@ -375,7 +375,7 @@ result = new ContactList
             {
                 new Url
                 {
-                    Category = new EnumWithCustom<UrlCategory>
+                    Category = new EnumWithCustomOfUrlCategory
                     {
                         Value = "Work"
                     },
