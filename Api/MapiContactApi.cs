@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    
+
         /// <summary>
         /// Converts MAPI contact model to ContactDto model.              
         /// </summary>
@@ -93,7 +93,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    
+
         /// <summary>
         /// Converts MAPI contact model to specified format and returns as file.              
         /// </summary>
@@ -133,7 +133,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    
+
         /// <summary>
         /// Converts contact file to a MAPI model representation.              
         /// </summary>
@@ -186,7 +186,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => FromFile(request));
         #endif
 
-                    
+
         /// <summary>
         /// Get MAPI contact document.              
         /// </summary>
@@ -234,7 +234,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Get(request));
         #endif
 
-                    
+
         /// <summary>
         /// Save MAPI Contact to storage.              
         /// </summary>

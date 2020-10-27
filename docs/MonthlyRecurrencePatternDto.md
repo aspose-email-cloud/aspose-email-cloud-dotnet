@@ -1,4 +1,6 @@
-# Model.MonthlyRecurrencePatternDto
+# MonthlyRecurrencePatternDto
+Monthly recurrence pattern.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,6 +12,16 @@ Name | Type | Description | Notes
 
 See: [RecurrencePatternDto](RecurrencePatternDto.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var monthlyRecurrencePatternDto = new MonthlyRecurrencePatternDto
+{
+    StartDay = "Monday",
+    StartPosition = "First",
+    Interval = -1,
+    WeekStart = "Monday"
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

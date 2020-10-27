@@ -1,4 +1,5 @@
-# Model.StorageModelOfMapiContactDto
+# StorageModelOfMapiContactDto
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +7,5 @@ Name | Type | Description | Notes
 **Value** | [**MapiContactDto**](MapiContactDto.md) |  | 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

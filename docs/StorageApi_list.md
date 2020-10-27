@@ -13,5 +13,3 @@ Method | HTTP request | Description
 [**Exists**](StorageApi.md#Exists)/[**ExistsAsync**](StorageApi.md#ExistsAsync)| **GET** /email/storage/{storageName}/exist| Check if storage exists
 
 
-
-

@@ -1,237 +1,1658 @@
-# Aspose.Email.Cloud.Sdk.MapiMessageApi
+# MapiMessageApi (EmailCloud.Mapi.Message)
 
-        <a name="AsEmailDto"></a>
-# AsEmailDto
+MAPI message operations
 
+<a name="AsEmailDto"></a>
+## AsEmailDto
+
+**Description**: Converts MAPI message model to EmailDto model             
+
+
+**Returns:** EmailDto model
+
+**Method call example:**
 ```csharp
-EmailDto AsEmailDto(MapiMessageDto mapiMessage)
+var result = api.Mapi.Message.AsEmailDto(mapiMessage);
 ```
 
-Converts MAPI message model to EmailDto model             
+### Parameter: *mapiMessage*
 
-### Return type
+**Description:** MAPI message model to convert
 
-[**EmailDto**](EmailDto.md)
+**See also** parameter model documentation at [**MapiMessageDto**](MapiMessageDto.md)
 
-### mapiMessage Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [MapiMessageDto](MapiMessageDto.md)
+```csharp
+var mapiMessage = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+```
+
+</details>
+
+
+### Result
+
+**Description:** EmailDto model
+
+**Return type:** [**EmailDto**](EmailDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new EmailDto
+{
+    Attachments = new List<Attachment>
+    {
+        new Attachment
+        {
+            Name = "some-file.txt",
+            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+        }
+    },
+    Body = "Some body",
+    BodyType = "Html",
+    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+    {
+        "OnSuccess",
+        "Delay"
+    },
+    From = new MailAddress
+    {
+        DisplayName = "From Address",
+        Address = "from@aspose.com"
+    },
+    HtmlBody = "<b>Some body</b>",
+    IsBodyHtml = true,
+    IsDraft = true,
+    Subject = "Re: Some subject",
+    To = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "To Address",
+            Address = "to@aspose.com"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var mapiMessage = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+
+// Call method:
+var result = api.Mapi.Message.AsEmailDto(mapiMessage);
+
+// Result example:
+result = new EmailDto
+{
+    Attachments = new List<Attachment>
+    {
+        new Attachment
+        {
+            Name = "some-file.txt",
+            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+        }
+    },
+    Body = "Some body",
+    BodyType = "Html",
+    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+    {
+        "OnSuccess",
+        "Delay"
+    },
+    From = new MailAddress
+    {
+        DisplayName = "From Address",
+        Address = "from@aspose.com"
+    },
+    HtmlBody = "<b>Some body</b>",
+    IsBodyHtml = true,
+    IsDraft = true,
+    Subject = "Re: Some subject",
+    To = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "To Address",
+            Address = "to@aspose.com"
+        }
+    }
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsEmailDtoAsync"></a>
-# AsEmailDtoAsync
+## AsEmailDtoAsync
 
-```csharp
-async Task<EmailDto> AsEmailDtoAsync(MapiMessageDto mapiMessage)
-```
-
-Converts MAPI message model to EmailDto model             
+**Description:** Converts MAPI message model to EmailDto model             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**EmailDto**](EmailDto.md)>
+**Returns:** EmailDto model
 
-### mapiMessage Parameter
-
-See parameter model documentation at [MapiMessageDto](MapiMessageDto.md)
-
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="AsFile"></a>
-# AsFile
-
+**Method call example:**
 ```csharp
-Stream AsFile(MapiMessageAsFileRequest request)
+var result = await api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
 ```
 
-Converts MAPI message model to specified format and returns as file.             
+### Parameter: *mapiMessage*
 
-### Return type
+**Description:** MAPI message model to convert
 
-**Stream**
+**See also** parameter model documentation at [**MapiMessageDto**](MapiMessageDto.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [MapiMessageAsFileRequest](MapiMessageAsFileRequest.md)
+```csharp
+var mapiMessage = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+```
+
+</details>
+
+
+### Result
+
+**Description:** EmailDto model
+
+**Return type:** Task<[**EmailDto**](EmailDto.md)>
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new EmailDto
+{
+    Attachments = new List<Attachment>
+    {
+        new Attachment
+        {
+            Name = "some-file.txt",
+            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+        }
+    },
+    Body = "Some body",
+    BodyType = "Html",
+    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+    {
+        "OnSuccess",
+        "Delay"
+    },
+    From = new MailAddress
+    {
+        DisplayName = "From Address",
+        Address = "from@aspose.com"
+    },
+    HtmlBody = "<b>Some body</b>",
+    IsBodyHtml = true,
+    IsDraft = true,
+    Subject = "Re: Some subject",
+    To = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "To Address",
+            Address = "to@aspose.com"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var mapiMessage = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+
+// Call method:
+var result = await api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
+
+//Result example:
+result = new EmailDto
+{
+    Attachments = new List<Attachment>
+    {
+        new Attachment
+        {
+            Name = "some-file.txt",
+            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+        }
+    },
+    Body = "Some body",
+    BodyType = "Html",
+    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+    {
+        "OnSuccess",
+        "Delay"
+    },
+    From = new MailAddress
+    {
+        DisplayName = "From Address",
+        Address = "from@aspose.com"
+    },
+    HtmlBody = "<b>Some body</b>",
+    IsBodyHtml = true,
+    IsDraft = true,
+    Subject = "Re: Some subject",
+    To = new List<MailAddress>
+    {
+        new MailAddress
+        {
+            DisplayName = "To Address",
+            Address = "to@aspose.com"
+        }
+    }
+};
+
+```
+
+</details>
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="AsFile"></a>
+## AsFile
+
+**Description**: Converts MAPI message model to specified format and returns as file.             
+
+
+**Returns:** File stream in specified format.
+
+**Method call example:**
+```csharp
+var result = api.Mapi.Message.AsFile(request);
+```
+
+### Parameter: *request*
+
+**Description:** MAPI message model to convert.
+
+**See also** parameter model documentation at [**MapiMessageAsFileRequest**](MapiMessageAsFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiMessageAsFileRequest
+{
+    Format = "Msg",
+    Value = new MapiMessageDto
+    {
+        MessageBody = "Some body",
+        ClientSubmitTime = DateTime.Today,
+        DeliveryTime = DateTime.Today,
+        DisplayTo = "To Address",
+        Flags = new List<MapiMessageFlag>
+        {
+            "MsgFlagRead",
+            "MsgFlagUnsent",
+            "MsgFlagHasAttach"
+        },
+        NormalizedSubject = "Some subject",
+        SenderAddressType = "SMTP",
+        SenderEmailAddress = "from@aspose.com",
+        SenderName = "From Address",
+        SenderSmtpAddress = "from@aspose.com",
+        Attachments = new List<MapiAttachmentDto>
+        {
+            new MapiAttachmentDto
+            {
+                Name = "some-file.txt",
+                DataBase64 = "U29tZSBmaWxlIHRleHQ="
+            }
+        },
+        Body = "Some body",
+        MessageClass = "IPM.Note",
+        Recipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "to@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "To Address",
+                RecipientType = "MapiTo"
+            }
+        },
+        Subject = "Re: Some subject",
+        SubjectPrefix = "Re: "
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Description:** File stream in specified format.
+
+**Return type:** **Stream**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    result.CopyTo(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new MapiMessageAsFileRequest
+{
+    Format = "Msg",
+    Value = new MapiMessageDto
+    {
+        MessageBody = "Some body",
+        ClientSubmitTime = DateTime.Today,
+        DeliveryTime = DateTime.Today,
+        DisplayTo = "To Address",
+        Flags = new List<MapiMessageFlag>
+        {
+            "MsgFlagRead",
+            "MsgFlagUnsent",
+            "MsgFlagHasAttach"
+        },
+        NormalizedSubject = "Some subject",
+        SenderAddressType = "SMTP",
+        SenderEmailAddress = "from@aspose.com",
+        SenderName = "From Address",
+        SenderSmtpAddress = "from@aspose.com",
+        Attachments = new List<MapiAttachmentDto>
+        {
+            new MapiAttachmentDto
+            {
+                Name = "some-file.txt",
+                DataBase64 = "U29tZSBmaWxlIHRleHQ="
+            }
+        },
+        Body = "Some body",
+        MessageClass = "IPM.Note",
+        Recipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "to@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "To Address",
+                RecipientType = "MapiTo"
+            }
+        },
+        Subject = "Re: Some subject",
+        SubjectPrefix = "Re: "
+    }
+};
+
+// Call method:
+var result = api.Mapi.Message.AsFile(request);
+
+// Result can be saved to file:
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    result.CopyTo(resultFileStream);
+}
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsFileAsync"></a>
-# AsFileAsync
+## AsFileAsync
 
-```csharp
-async Task<Stream> AsFileAsync(MapiMessageAsFileRequest request)
-```
-
-Converts MAPI message model to specified format and returns as file.             
+**Description:** Converts MAPI message model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-**Task<Stream>**
+**Returns:** File stream in specified format.
 
-### request Parameter
+**Method call example:**
+```csharp
+var result = await api.Mapi.Message.AsFileAsync(request);
+```
 
-See parameter model documentation at [MapiMessageAsFileRequest](MapiMessageAsFileRequest.md)
+### Parameter: *request*
+
+**Description:** MAPI message model to convert.
+
+**See also** parameter model documentation at [**MapiMessageAsFileRequest**](MapiMessageAsFileRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiMessageAsFileRequest
+{
+    Format = "Msg",
+    Value = new MapiMessageDto
+    {
+        MessageBody = "Some body",
+        ClientSubmitTime = DateTime.Today,
+        DeliveryTime = DateTime.Today,
+        DisplayTo = "To Address",
+        Flags = new List<MapiMessageFlag>
+        {
+            "MsgFlagRead",
+            "MsgFlagUnsent",
+            "MsgFlagHasAttach"
+        },
+        NormalizedSubject = "Some subject",
+        SenderAddressType = "SMTP",
+        SenderEmailAddress = "from@aspose.com",
+        SenderName = "From Address",
+        SenderSmtpAddress = "from@aspose.com",
+        Attachments = new List<MapiAttachmentDto>
+        {
+            new MapiAttachmentDto
+            {
+                Name = "some-file.txt",
+                DataBase64 = "U29tZSBmaWxlIHRleHQ="
+            }
+        },
+        Body = "Some body",
+        MessageClass = "IPM.Note",
+        Recipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "to@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "To Address",
+                RecipientType = "MapiTo"
+            }
+        },
+        Subject = "Re: Some subject",
+        SubjectPrefix = "Re: "
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Description:** File stream in specified format.
+
+**Return type:** **Task<Stream>**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    await result.CopyToAsync(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new MapiMessageAsFileRequest
+{
+    Format = "Msg",
+    Value = new MapiMessageDto
+    {
+        MessageBody = "Some body",
+        ClientSubmitTime = DateTime.Today,
+        DeliveryTime = DateTime.Today,
+        DisplayTo = "To Address",
+        Flags = new List<MapiMessageFlag>
+        {
+            "MsgFlagRead",
+            "MsgFlagUnsent",
+            "MsgFlagHasAttach"
+        },
+        NormalizedSubject = "Some subject",
+        SenderAddressType = "SMTP",
+        SenderEmailAddress = "from@aspose.com",
+        SenderName = "From Address",
+        SenderSmtpAddress = "from@aspose.com",
+        Attachments = new List<MapiAttachmentDto>
+        {
+            new MapiAttachmentDto
+            {
+                Name = "some-file.txt",
+                DataBase64 = "U29tZSBmaWxlIHRleHQ="
+            }
+        },
+        Body = "Some body",
+        MessageClass = "IPM.Note",
+        Recipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "to@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "To Address",
+                RecipientType = "MapiTo"
+            }
+        },
+        Subject = "Re: Some subject",
+        SubjectPrefix = "Re: "
+    }
+};
+
+// Call method:
+var result = await api.Mapi.Message.AsFileAsync(request);
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    await result.CopyToAsync(resultFileStream);
+}
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="FromFile"></a>
-# FromFile
+<a name="FromFile"></a>
+## FromFile
+**Descrption:** Converts email file to a MAPI model representation             
 
+
+**Returns:** MAPI model
+
+**Method call example:**
 ```csharp
-MapiMessageDto FromFile(MapiMessageFromFileRequest request)
+var result = api.Mapi.Message.FromFile(request);
 ```
 
-Converts email file to a MAPI model representation             
+### Parameter: *request*
 
-### Return type
+**Description:** FromFile method request.
 
-[**MapiMessageDto**](MapiMessageDto.md)
+**See also** parameter model documentation at [**MapiMessageFromFileRequest**](MapiMessageFromFileRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new MapiMessageFromFileRequest(
-    format,
-    file)
+var request = new MapiMessageFromFileRequest
+{ 
+    Format = "Msg",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.msg"))
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
- **file** | **System.IO.Stream**| File to convert | 
+</details>
+
+### Result
+
+**Description:** MAPI model
+
+**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new MapiMessageFromFileRequest
+{ 
+    Format = "Msg",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.msg"))
+};
+
+// Call method:
+var result = api.Mapi.Message.FromFile(request);
+
+// Result example:
+result = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FromFileAsync"></a>
-# FromFileAsync
+## FromFileAsync
 
-```csharp
-async Task<MapiMessageDto> FromFileAsync(MapiMessageFromFileRequest request)
-```
-
-Converts email file to a MAPI model representation             
+**Description:** Converts email file to a MAPI model representation             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**MapiMessageDto**](MapiMessageDto.md)>
+**Returns:** MAPI model
 
-### request Parameter
+**Method call example:**
 ```csharp
-new MapiMessageFromFileRequest(
-    format,
-    file)
+var result = await api.Mapi.Message.FromFileAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
- **file** | **System.IO.Stream**| File to convert | 
+### Parameter: *request*
+
+**Description:** FromFileAsync method request.
+
+**See also** parameter model documentation at [**MapiMessageFromFileRequest**](MapiMessageFromFileRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiMessageFromFileRequest
+{ 
+    Format = "Msg",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.msg"))
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** MAPI model
+
+**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new MapiMessageFromFileRequest
+{ 
+    Format = "Msg",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.msg"))
+};
+
+// Call method:
+var result = await api.Mapi.Message.FromFileAsync(request);
+
+result = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Get"></a>
-# Get
+<a name="Get"></a>
+## Get
+**Descrption:** Get MAPI message document.             
 
+
+**Returns:** MAPI message document.
+
+**Method call example:**
 ```csharp
-MapiMessageDto Get(MapiMessageGetRequest request)
+var result = api.Mapi.Message.Get(request);
 ```
 
-Get MAPI message document.             
+### Parameter: *request*
 
-### Return type
+**Description:** Get method request.
 
-[**MapiMessageDto**](MapiMessageDto.md)
+**See also** parameter model documentation at [**MapiMessageGetRequest**](MapiMessageGetRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new MapiMessageGetRequest(
-    format,
-    fileName,
-    folder=folder,
-    storage=storage)
+var request = new MapiMessageGetRequest
+{ 
+    Format = "Eml",
+    FileName = "email.eml",
+    Folder = "folder/on/storage",
+    Storage = "First Storage"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
- **fileName** | **string**| Email document file name. | 
- **folder** | **string**| Path to folder in storage. | [optional] 
- **storage** | **string**| Storage name. | [optional] 
+</details>
+
+### Result
+
+**Description:** MAPI message document.
+
+**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new MapiMessageGetRequest
+{ 
+    Format = "Eml",
+    FileName = "email.eml",
+    Folder = "folder/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = api.Mapi.Message.Get(request);
+
+// Result example:
+result = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsync"></a>
-# GetAsync
+## GetAsync
 
-```csharp
-async Task<MapiMessageDto> GetAsync(MapiMessageGetRequest request)
-```
-
-Get MAPI message document.             
+**Description:** Get MAPI message document.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**MapiMessageDto**](MapiMessageDto.md)>
+**Returns:** MAPI message document.
 
-### request Parameter
+**Method call example:**
 ```csharp
-new MapiMessageGetRequest(
-    format,
-    fileName,
-    folder=folder,
-    storage=storage)
+var result = await api.Mapi.Message.GetAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
- **fileName** | **string**| Email document file name. | 
- **folder** | **string**| Path to folder in storage. | [optional] 
- **storage** | **string**| Storage name. | [optional] 
+### Parameter: *request*
+
+**Description:** GetAsync method request.
+
+**See also** parameter model documentation at [**MapiMessageGetRequest**](MapiMessageGetRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiMessageGetRequest
+{ 
+    Format = "Eml",
+    FileName = "email.eml",
+    Folder = "folder/on/storage",
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** MAPI message document.
+
+**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new MapiMessageGetRequest
+{ 
+    Format = "Eml",
+    FileName = "email.eml",
+    Folder = "folder/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = await api.Mapi.Message.GetAsync(request);
+
+result = new MapiMessageDto
+{
+    MessageBody = "Some body",
+    ClientSubmitTime = DateTime.Today,
+    DeliveryTime = DateTime.Today,
+    DisplayTo = "To Address",
+    Flags = new List<MapiMessageFlag>
+    {
+        "MsgFlagRead",
+        "MsgFlagUnsent",
+        "MsgFlagHasAttach"
+    },
+    NormalizedSubject = "Some subject",
+    SenderAddressType = "SMTP",
+    SenderEmailAddress = "from@aspose.com",
+    SenderName = "From Address",
+    SenderSmtpAddress = "from@aspose.com",
+    Attachments = new List<MapiAttachmentDto>
+    {
+        new MapiAttachmentDto
+        {
+            Name = "some-file.txt",
+            DataBase64 = "U29tZSBmaWxlIHRleHQ="
+        }
+    },
+    Body = "Some body",
+    MessageClass = "IPM.Note",
+    Recipients = new List<MapiRecipientDto>
+    {
+        new MapiRecipientDto
+        {
+            EmailAddress = "to@aspose.com",
+            AddressType = "SMTP",
+            DisplayName = "To Address",
+            RecipientType = "MapiTo"
+        }
+    },
+    Subject = "Re: Some subject",
+    SubjectPrefix = "Re: "
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Save"></a>
-# Save
+<a name="Save"></a>
+## Save
 
+**Description**: Save MAPI message to storage.             
+
+
+**Method call example:**
 ```csharp
-void Save(MapiMessageSaveRequest request)
+api.Mapi.Message.Save(request);
 ```
 
-Save MAPI message to storage.             
+### Parameter: *request*
 
-### Return type
+**Description:** Message create/update request.
 
-void (empty response body)
+**See also** parameter model documentation at [**MapiMessageSaveRequest**](MapiMessageSaveRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [MapiMessageSaveRequest](MapiMessageSaveRequest.md)
+```csharp
+var request = new MapiMessageSaveRequest
+{
+    Format = "Msg",
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "message.msg",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new MapiMessageDto
+    {
+        MessageBody = "Some body",
+        ClientSubmitTime = DateTime.Today,
+        DeliveryTime = DateTime.Today,
+        DisplayTo = "To Address",
+        Flags = new List<MapiMessageFlag>
+        {
+            "MsgFlagRead",
+            "MsgFlagUnsent",
+            "MsgFlagHasAttach"
+        },
+        NormalizedSubject = "Some subject",
+        SenderAddressType = "SMTP",
+        SenderEmailAddress = "from@aspose.com",
+        SenderName = "From Address",
+        SenderSmtpAddress = "from@aspose.com",
+        Attachments = new List<MapiAttachmentDto>
+        {
+            new MapiAttachmentDto
+            {
+                Name = "some-file.txt",
+                DataBase64 = "U29tZSBmaWxlIHRleHQ="
+            }
+        },
+        Body = "Some body",
+        MessageClass = "IPM.Note",
+        Recipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "to@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "To Address",
+                RecipientType = "MapiTo"
+            }
+        },
+        Subject = "Re: Some subject",
+        SubjectPrefix = "Re: "
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new MapiMessageSaveRequest
+{
+    Format = "Msg",
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "message.msg",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new MapiMessageDto
+    {
+        MessageBody = "Some body",
+        ClientSubmitTime = DateTime.Today,
+        DeliveryTime = DateTime.Today,
+        DisplayTo = "To Address",
+        Flags = new List<MapiMessageFlag>
+        {
+            "MsgFlagRead",
+            "MsgFlagUnsent",
+            "MsgFlagHasAttach"
+        },
+        NormalizedSubject = "Some subject",
+        SenderAddressType = "SMTP",
+        SenderEmailAddress = "from@aspose.com",
+        SenderName = "From Address",
+        SenderSmtpAddress = "from@aspose.com",
+        Attachments = new List<MapiAttachmentDto>
+        {
+            new MapiAttachmentDto
+            {
+                Name = "some-file.txt",
+                DataBase64 = "U29tZSBmaWxlIHRleHQ="
+            }
+        },
+        Body = "Some body",
+        MessageClass = "IPM.Note",
+        Recipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "to@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "To Address",
+                RecipientType = "MapiTo"
+            }
+        },
+        Subject = "Re: Some subject",
+        SubjectPrefix = "Re: "
+    }
+};
+
+// Call method:
+api.Mapi.Message.Save(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveAsync"></a>
-# SaveAsync
+## SaveAsync
 
-```csharp
-async Task SaveAsync(MapiMessageSaveRequest request)
-```
-
-Save MAPI message to storage.             
+**Description:** Save MAPI message to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
+**Method call example:**
+```csharp
+await api.Mapi.Message.SaveAsync(request);
+```
 
-### request Parameter
+### Parameter: *request*
 
-See parameter model documentation at [MapiMessageSaveRequest](MapiMessageSaveRequest.md)
+**Description:** Message create/update request.
+
+**See also** parameter model documentation at [**MapiMessageSaveRequest**](MapiMessageSaveRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new MapiMessageSaveRequest
+{
+    Format = "Msg",
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "message.msg",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new MapiMessageDto
+    {
+        MessageBody = "Some body",
+        ClientSubmitTime = DateTime.Today,
+        DeliveryTime = DateTime.Today,
+        DisplayTo = "To Address",
+        Flags = new List<MapiMessageFlag>
+        {
+            "MsgFlagRead",
+            "MsgFlagUnsent",
+            "MsgFlagHasAttach"
+        },
+        NormalizedSubject = "Some subject",
+        SenderAddressType = "SMTP",
+        SenderEmailAddress = "from@aspose.com",
+        SenderName = "From Address",
+        SenderSmtpAddress = "from@aspose.com",
+        Attachments = new List<MapiAttachmentDto>
+        {
+            new MapiAttachmentDto
+            {
+                Name = "some-file.txt",
+                DataBase64 = "U29tZSBmaWxlIHRleHQ="
+            }
+        },
+        Body = "Some body",
+        MessageClass = "IPM.Note",
+        Recipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "to@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "To Address",
+                RecipientType = "MapiTo"
+            }
+        },
+        Subject = "Re: Some subject",
+        SubjectPrefix = "Re: "
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new MapiMessageSaveRequest
+{
+    Format = "Msg",
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "message.msg",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new MapiMessageDto
+    {
+        MessageBody = "Some body",
+        ClientSubmitTime = DateTime.Today,
+        DeliveryTime = DateTime.Today,
+        DisplayTo = "To Address",
+        Flags = new List<MapiMessageFlag>
+        {
+            "MsgFlagRead",
+            "MsgFlagUnsent",
+            "MsgFlagHasAttach"
+        },
+        NormalizedSubject = "Some subject",
+        SenderAddressType = "SMTP",
+        SenderEmailAddress = "from@aspose.com",
+        SenderName = "From Address",
+        SenderSmtpAddress = "from@aspose.com",
+        Attachments = new List<MapiAttachmentDto>
+        {
+            new MapiAttachmentDto
+            {
+                Name = "some-file.txt",
+                DataBase64 = "U29tZSBmaWxlIHRleHQ="
+            }
+        },
+        Body = "Some body",
+        MessageClass = "IPM.Note",
+        Recipients = new List<MapiRecipientDto>
+        {
+            new MapiRecipientDto
+            {
+                EmailAddress = "to@aspose.com",
+                AddressType = "SMTP",
+                DisplayName = "To Address",
+                RecipientType = "MapiTo"
+            }
+        },
+        Subject = "Re: Some subject",
+        SubjectPrefix = "Re: "
+    }
+};
+
+// Call method:
+await api.Mapi.Message.SaveAsync(request);
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

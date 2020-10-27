@@ -1,4 +1,6 @@
-# Model.MapiCalendarTimeZoneRuleDto
+# MapiCalendarTimeZoneRuleDto
+Represents time zone rule that indicate when to begin using the Standard/Daylight time.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -13,7 +15,5 @@ Name | Type | Description | Notes
 **Year** | **int?** | Year.              | 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

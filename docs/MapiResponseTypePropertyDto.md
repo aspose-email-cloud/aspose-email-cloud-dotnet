@@ -1,4 +1,6 @@
-# Model.MapiResponseTypePropertyDto
+# MapiResponseTypePropertyDto
+Mapi property with response type value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -8,6 +10,17 @@ Name | Type | Description | Notes
 
 See: [MapiPropertyDto](MapiPropertyDto.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var mapiResponseTypePropertyDto = new MapiResponseTypePropertyDto
+{
+    Value = "Accept",
+    Descriptor = new MapiKnownPropertyDescriptor
+    {
+        Name = "ResponseStatus"
+    }
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

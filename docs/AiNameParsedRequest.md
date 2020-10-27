@@ -1,4 +1,6 @@
-# Model.AiNameParsedRequest
+# AiNameParsedRequest
+Parsed name request model             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -7,7 +9,39 @@ Name | Type | Description | Notes
 **ParsedName** | [**List&lt;AiNameComponent&gt;**](AiNameComponent.md) | Parsed name              | 
 
 
+## Example
+```csharp
+var aiNameParsedRequest = new AiNameParsedRequest
+{
+    ParsedName = new List<AiNameComponent>
+    {
+        new AiNameComponent
+        {
+            Value = "John",
+            Category = "FirstName",
+            Score = 0.95
+        },
+        new AiNameComponent
+        {
+            Value = "Cane",
+            Category = "LastName",
+            Score = 0.5,
+            Position = 5
+        },
+        new AiNameComponent
+        {
+            Value = "%F%L",
+            Category = "Format"
+        },
+        new AiNameComponent
+        {
+            Value = "0.5",
+            Category = "Score",
+            Score = 0.5
+        }
+    }
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

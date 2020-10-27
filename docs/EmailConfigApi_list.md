@@ -11,5 +11,3 @@ Method | HTTP request | Description
 [**DiscoverOauth**](EmailConfigApi.md#DiscoverOauth)/[**DiscoverOauthAsync**](EmailConfigApi.md#DiscoverOauthAsync)| **PUT** /email/config/discover/oauth| Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
 [**DiscoverPassword**](EmailConfigApi.md#DiscoverPassword)/[**DiscoverPasswordAsync**](EmailConfigApi.md#DiscoverPasswordAsync)| **PUT** /email/config/discover/password| Discover email accounts by email address. Validates discovered accounts using login and password.             
 
-
-

@@ -1,4 +1,6 @@
-# Model.StorageFileLocationList
+# StorageFileLocationList
+List of files located on storage.             
+
 ## Properties
 Class has no properties
 
@@ -6,6 +8,21 @@ Class has no properties
 
 See: [ListResponseOfStorageFileLocation](ListResponseOfStorageFileLocation.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var storageFileLocationList = new StorageFileLocationList
+{
+    Value = new List<StorageFileLocation>
+    {
+        new StorageFileLocation
+        {
+            FileName = "fileOnStorage.txt",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
+        }
+    }
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

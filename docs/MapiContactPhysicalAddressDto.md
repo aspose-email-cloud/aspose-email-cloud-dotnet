@@ -1,4 +1,6 @@
-# Model.MapiContactPhysicalAddressDto
+# MapiContactPhysicalAddressDto
+Refers to the group of properties that define physical address for a contact.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -13,7 +15,5 @@ Name | Type | Description | Notes
 **PostOfficeBox** | **string** | Gets or sets the post office box              | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

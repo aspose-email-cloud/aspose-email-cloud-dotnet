@@ -1,4 +1,6 @@
-# Model.ClientFolderCreateRequest
+# ClientFolderCreateRequest
+Email Client create folder request.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,6 +11,20 @@ Name | Type | Description | Notes
 
 See: [ClientAccountBaseRequest](ClientAccountBaseRequest.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var clientFolderCreateRequest = new ClientFolderCreateRequest
+{
+    ParentFolder = "INBOX/SubFolder/ParentFolder",
+    FolderName = "NewFolder",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

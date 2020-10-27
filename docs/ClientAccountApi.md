@@ -1,198 +1,1016 @@
-# Aspose.Email.Cloud.Sdk.ClientAccountApi
+# ClientAccountApi (EmailCloud.Client.Account)
 
-        <a name="Get"></a>
-# Get
+Email server account for built-in client operations.
 
+<a name="Get"></a>
+## Get
+**Descrption:** Get email client account from storage.             
+
+
+**Returns:** Email client account from storage.
+
+**Method call example:**
 ```csharp
-EmailClientAccount Get(ClientAccountGetRequest request)
+var result = api.Client.Account.Get(request);
 ```
 
-Get email client account from storage.             
+### Parameter: *request*
 
-### Return type
+**Description:** Get method request.
 
-[**EmailClientAccount**](EmailClientAccount.md)
+**See also** parameter model documentation at [**ClientAccountGetRequest**](ClientAccountGetRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new ClientAccountGetRequest(
-    fileName,
-    folder=folder,
-    storage=storage)
+var request = new ClientAccountGetRequest
+{ 
+    FileName = "email.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| File name on storage. | 
- **folder** | **string**| Folder on storage. | [optional] 
- **storage** | **string**| Storage name. | [optional] 
+</details>
+
+### Result
+
+**Description:** Email client account from storage.
+
+**Return type:** [**EmailClientAccount**](EmailClientAccount.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new EmailClientAccount
+{
+    Host = "smtp.example.com",
+    Port = 465,
+    SecurityOptions = "SSLAuto",
+    ProtocolType = "SMTP",
+    Credentials = new EmailClientAccountOauthCredentials
+    {
+        ClientId = "clientId",
+        ClientSecret = "clientSecret",
+        RefreshToken = "refreshToken",
+        Login = "example@example.com"
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientAccountGetRequest
+{ 
+    FileName = "email.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = api.Client.Account.Get(request);
+
+// Result example:
+result = new EmailClientAccount
+{
+    Host = "smtp.example.com",
+    Port = 465,
+    SecurityOptions = "SSLAuto",
+    ProtocolType = "SMTP",
+    Credentials = new EmailClientAccountOauthCredentials
+    {
+        ClientId = "clientId",
+        ClientSecret = "clientSecret",
+        RefreshToken = "refreshToken",
+        Login = "example@example.com"
+    }
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsync"></a>
-# GetAsync
+## GetAsync
 
-```csharp
-async Task<EmailClientAccount> GetAsync(ClientAccountGetRequest request)
-```
-
-Get email client account from storage.             
+**Description:** Get email client account from storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**EmailClientAccount**](EmailClientAccount.md)>
+**Returns:** Email client account from storage.
 
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientAccountGetRequest(
-    fileName,
-    folder=folder,
-    storage=storage)
+var result = await api.Client.Account.GetAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| File name on storage. | 
- **folder** | **string**| Folder on storage. | [optional] 
- **storage** | **string**| Storage name. | [optional] 
+### Parameter: *request*
+
+**Description:** GetAsync method request.
+
+**See also** parameter model documentation at [**ClientAccountGetRequest**](ClientAccountGetRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientAccountGetRequest
+{ 
+    FileName = "email.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** Email client account from storage.
+
+**Return type:** [**EmailClientAccount**](EmailClientAccount.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new EmailClientAccount
+{
+    Host = "smtp.example.com",
+    Port = 465,
+    SecurityOptions = "SSLAuto",
+    ProtocolType = "SMTP",
+    Credentials = new EmailClientAccountOauthCredentials
+    {
+        ClientId = "clientId",
+        ClientSecret = "clientSecret",
+        RefreshToken = "refreshToken",
+        Login = "example@example.com"
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientAccountGetRequest
+{ 
+    FileName = "email.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = await api.Client.Account.GetAsync(request);
+
+result = new EmailClientAccount
+{
+    Host = "smtp.example.com",
+    Port = 465,
+    SecurityOptions = "SSLAuto",
+    ProtocolType = "SMTP",
+    Credentials = new EmailClientAccountOauthCredentials
+    {
+        ClientId = "clientId",
+        ClientSecret = "clientSecret",
+        RefreshToken = "refreshToken",
+        Login = "example@example.com"
+    }
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="GetMulti"></a>
-# GetMulti
+<a name="GetMulti"></a>
+## GetMulti
+**Descrption:** Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
 
+
+**Returns:** Email client multi account from storage
+
+**Method call example:**
 ```csharp
-EmailClientMultiAccount GetMulti(ClientAccountGetMultiRequest request)
+var result = api.Client.Account.GetMulti(request);
 ```
 
-Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+### Parameter: *request*
 
-### Return type
+**Description:** GetMulti method request.
 
-[**EmailClientMultiAccount**](EmailClientMultiAccount.md)
+**See also** parameter model documentation at [**ClientAccountGetMultiRequest**](ClientAccountGetMultiRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new ClientAccountGetMultiRequest(
-    fileName,
-    folder=folder,
-    storage=storage)
+var request = new ClientAccountGetMultiRequest
+{ 
+    FileName = "email.multi.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| File name on storage | 
- **folder** | **string**| Folder on storage | [optional] 
- **storage** | **string**| Storage name | [optional] 
+</details>
+
+### Result
+
+**Description:** Email client multi account from storage
+
+**Return type:** [**EmailClientMultiAccount**](EmailClientMultiAccount.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new EmailClientMultiAccount
+{
+    ReceiveAccounts = new List<EmailClientAccount>
+    {
+        new EmailClientAccount
+        {
+            Host = "imap.gmail.com",
+            Port = 993,
+            SecurityOptions = "SSLAuto",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        },
+        new EmailClientAccount
+        {
+            Host = "exchange@outlook.com",
+            Port = 443,
+            ProtocolType = "EWS",
+            Credentials = new EmailClientAccountOauthCredentials
+            {
+                ClientId = "clientId",
+                ClientSecret = "clientSecret",
+                RefreshToken = "refreshToken",
+                Login = "example@outlook.com"
+            }
+        }
+    },
+    SendAccount = new EmailClientAccount
+    {
+        Host = "smtp.gmail.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountPasswordCredentials
+        {
+            Password = "password",
+            Login = "example@gmail.com"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientAccountGetMultiRequest
+{ 
+    FileName = "email.multi.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = api.Client.Account.GetMulti(request);
+
+// Result example:
+result = new EmailClientMultiAccount
+{
+    ReceiveAccounts = new List<EmailClientAccount>
+    {
+        new EmailClientAccount
+        {
+            Host = "imap.gmail.com",
+            Port = 993,
+            SecurityOptions = "SSLAuto",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        },
+        new EmailClientAccount
+        {
+            Host = "exchange@outlook.com",
+            Port = 443,
+            ProtocolType = "EWS",
+            Credentials = new EmailClientAccountOauthCredentials
+            {
+                ClientId = "clientId",
+                ClientSecret = "clientSecret",
+                RefreshToken = "refreshToken",
+                Login = "example@outlook.com"
+            }
+        }
+    },
+    SendAccount = new EmailClientAccount
+    {
+        Host = "smtp.gmail.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountPasswordCredentials
+        {
+            Password = "password",
+            Login = "example@gmail.com"
+        }
+    }
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetMultiAsync"></a>
-# GetMultiAsync
+## GetMultiAsync
 
-```csharp
-async Task<EmailClientMultiAccount> GetMultiAsync(ClientAccountGetMultiRequest request)
-```
-
-Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+**Description:** Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**EmailClientMultiAccount**](EmailClientMultiAccount.md)>
+**Returns:** Email client multi account from storage
 
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientAccountGetMultiRequest(
-    fileName,
-    folder=folder,
-    storage=storage)
+var result = await api.Client.Account.GetMultiAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fileName** | **string**| File name on storage | 
- **folder** | **string**| Folder on storage | [optional] 
- **storage** | **string**| Storage name | [optional] 
+### Parameter: *request*
+
+**Description:** GetMultiAsync method request.
+
+**See also** parameter model documentation at [**ClientAccountGetMultiRequest**](ClientAccountGetMultiRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientAccountGetMultiRequest
+{ 
+    FileName = "email.multi.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** Email client multi account from storage
+
+**Return type:** [**EmailClientMultiAccount**](EmailClientMultiAccount.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new EmailClientMultiAccount
+{
+    ReceiveAccounts = new List<EmailClientAccount>
+    {
+        new EmailClientAccount
+        {
+            Host = "imap.gmail.com",
+            Port = 993,
+            SecurityOptions = "SSLAuto",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        },
+        new EmailClientAccount
+        {
+            Host = "exchange@outlook.com",
+            Port = 443,
+            ProtocolType = "EWS",
+            Credentials = new EmailClientAccountOauthCredentials
+            {
+                ClientId = "clientId",
+                ClientSecret = "clientSecret",
+                RefreshToken = "refreshToken",
+                Login = "example@outlook.com"
+            }
+        }
+    },
+    SendAccount = new EmailClientAccount
+    {
+        Host = "smtp.gmail.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountPasswordCredentials
+        {
+            Password = "password",
+            Login = "example@gmail.com"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientAccountGetMultiRequest
+{ 
+    FileName = "email.multi.account",
+    Folder = "email/account/location/on/storage",
+    Storage = "First Storage"
+};
+
+// Call method:
+var result = await api.Client.Account.GetMultiAsync(request);
+
+result = new EmailClientMultiAccount
+{
+    ReceiveAccounts = new List<EmailClientAccount>
+    {
+        new EmailClientAccount
+        {
+            Host = "imap.gmail.com",
+            Port = 993,
+            SecurityOptions = "SSLAuto",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        },
+        new EmailClientAccount
+        {
+            Host = "exchange@outlook.com",
+            Port = 443,
+            ProtocolType = "EWS",
+            Credentials = new EmailClientAccountOauthCredentials
+            {
+                ClientId = "clientId",
+                ClientSecret = "clientSecret",
+                RefreshToken = "refreshToken",
+                Login = "example@outlook.com"
+            }
+        }
+    },
+    SendAccount = new EmailClientAccount
+    {
+        Host = "smtp.gmail.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountPasswordCredentials
+        {
+            Password = "password",
+            Login = "example@gmail.com"
+        }
+    }
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Save"></a>
-# Save
+<a name="Save"></a>
+## Save
 
+**Description**: Create/update email client account file (*.account) with credentials             
+
+
+**Method call example:**
 ```csharp
-void Save(ClientAccountSaveRequest request)
+api.Client.Account.Save(request);
 ```
 
-Create/update email client account file (*.account) with credentials             
+### Parameter: *request*
 
-### Return type
+**Description:** Email account information
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientAccountSaveRequest**](ClientAccountSaveRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientAccountSaveRequest](ClientAccountSaveRequest.md)
+```csharp
+var request = new ClientAccountSaveRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientAccount
+    {
+        Host = "smtp.example.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountOauthCredentials
+        {
+            ClientId = "clientId",
+            ClientSecret = "clientSecret",
+            RefreshToken = "refreshToken",
+            Login = "example@example.com"
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientAccountSaveRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientAccount
+    {
+        Host = "smtp.example.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountOauthCredentials
+        {
+            ClientId = "clientId",
+            ClientSecret = "clientSecret",
+            RefreshToken = "refreshToken",
+            Login = "example@example.com"
+        }
+    }
+};
+
+// Call method:
+api.Client.Account.Save(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveAsync"></a>
-# SaveAsync
+## SaveAsync
 
-```csharp
-async Task SaveAsync(ClientAccountSaveRequest request)
-```
-
-Create/update email client account file (*.account) with credentials             
+**Description:** Create/update email client account file (*.account) with credentials             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
-
-### request Parameter
-
-See parameter model documentation at [ClientAccountSaveRequest](ClientAccountSaveRequest.md)
-
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="SaveMulti"></a>
-# SaveMulti
-
+**Method call example:**
 ```csharp
-void SaveMulti(ClientAccountSaveMultiRequest request)
+await api.Client.Account.SaveAsync(request);
 ```
 
-Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+### Parameter: *request*
 
-### Return type
+**Description:** Email account information
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientAccountSaveRequest**](ClientAccountSaveRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientAccountSaveMultiRequest](ClientAccountSaveMultiRequest.md)
+```csharp
+var request = new ClientAccountSaveRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientAccount
+    {
+        Host = "smtp.example.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountOauthCredentials
+        {
+            ClientId = "clientId",
+            ClientSecret = "clientSecret",
+            RefreshToken = "refreshToken",
+            Login = "example@example.com"
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientAccountSaveRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientAccount
+    {
+        Host = "smtp.example.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountOauthCredentials
+        {
+            ClientId = "clientId",
+            ClientSecret = "clientSecret",
+            RefreshToken = "refreshToken",
+            Login = "example@example.com"
+        }
+    }
+};
+
+// Call method:
+await api.Client.Account.SaveAsync(request);
+
+```
+
+</details>
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="SaveMulti"></a>
+## SaveMulti
+
+**Description**: Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+
+
+**Method call example:**
+```csharp
+api.Client.Account.SaveMulti(request);
+```
+
+### Parameter: *request*
+
+**Description:** Email accounts information.
+
+**See also** parameter model documentation at [**ClientAccountSaveMultiRequest**](ClientAccountSaveMultiRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientAccountSaveMultiRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.multi.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientMultiAccount
+    {
+        ReceiveAccounts = new List<EmailClientAccount>
+        {
+            new EmailClientAccount
+            {
+                Host = "imap.gmail.com",
+                Port = 993,
+                SecurityOptions = "SSLAuto",
+                Credentials = new EmailClientAccountPasswordCredentials
+                {
+                    Password = "password",
+                    Login = "example@gmail.com"
+                }
+            },
+            new EmailClientAccount
+            {
+                Host = "exchange@outlook.com",
+                Port = 443,
+                ProtocolType = "EWS",
+                Credentials = new EmailClientAccountOauthCredentials
+                {
+                    ClientId = "clientId",
+                    ClientSecret = "clientSecret",
+                    RefreshToken = "refreshToken",
+                    Login = "example@outlook.com"
+                }
+            }
+        },
+        SendAccount = new EmailClientAccount
+        {
+            Host = "smtp.gmail.com",
+            Port = 465,
+            SecurityOptions = "SSLAuto",
+            ProtocolType = "SMTP",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientAccountSaveMultiRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.multi.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientMultiAccount
+    {
+        ReceiveAccounts = new List<EmailClientAccount>
+        {
+            new EmailClientAccount
+            {
+                Host = "imap.gmail.com",
+                Port = 993,
+                SecurityOptions = "SSLAuto",
+                Credentials = new EmailClientAccountPasswordCredentials
+                {
+                    Password = "password",
+                    Login = "example@gmail.com"
+                }
+            },
+            new EmailClientAccount
+            {
+                Host = "exchange@outlook.com",
+                Port = 443,
+                ProtocolType = "EWS",
+                Credentials = new EmailClientAccountOauthCredentials
+                {
+                    ClientId = "clientId",
+                    ClientSecret = "clientSecret",
+                    RefreshToken = "refreshToken",
+                    Login = "example@outlook.com"
+                }
+            }
+        },
+        SendAccount = new EmailClientAccount
+        {
+            Host = "smtp.gmail.com",
+            Port = 465,
+            SecurityOptions = "SSLAuto",
+            ProtocolType = "SMTP",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        }
+    }
+};
+
+// Call method:
+api.Client.Account.SaveMulti(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveMultiAsync"></a>
-# SaveMultiAsync
+## SaveMultiAsync
 
-```csharp
-async Task SaveMultiAsync(ClientAccountSaveMultiRequest request)
-```
-
-Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
+**Description:** Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
+**Method call example:**
+```csharp
+await api.Client.Account.SaveMultiAsync(request);
+```
 
-### request Parameter
+### Parameter: *request*
 
-See parameter model documentation at [ClientAccountSaveMultiRequest](ClientAccountSaveMultiRequest.md)
+**Description:** Email accounts information.
+
+**See also** parameter model documentation at [**ClientAccountSaveMultiRequest**](ClientAccountSaveMultiRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientAccountSaveMultiRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.multi.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientMultiAccount
+    {
+        ReceiveAccounts = new List<EmailClientAccount>
+        {
+            new EmailClientAccount
+            {
+                Host = "imap.gmail.com",
+                Port = 993,
+                SecurityOptions = "SSLAuto",
+                Credentials = new EmailClientAccountPasswordCredentials
+                {
+                    Password = "password",
+                    Login = "example@gmail.com"
+                }
+            },
+            new EmailClientAccount
+            {
+                Host = "exchange@outlook.com",
+                Port = 443,
+                ProtocolType = "EWS",
+                Credentials = new EmailClientAccountOauthCredentials
+                {
+                    ClientId = "clientId",
+                    ClientSecret = "clientSecret",
+                    RefreshToken = "refreshToken",
+                    Login = "example@outlook.com"
+                }
+            }
+        },
+        SendAccount = new EmailClientAccount
+        {
+            Host = "smtp.gmail.com",
+            Port = 465,
+            SecurityOptions = "SSLAuto",
+            ProtocolType = "SMTP",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        }
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientAccountSaveMultiRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.multi.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientMultiAccount
+    {
+        ReceiveAccounts = new List<EmailClientAccount>
+        {
+            new EmailClientAccount
+            {
+                Host = "imap.gmail.com",
+                Port = 993,
+                SecurityOptions = "SSLAuto",
+                Credentials = new EmailClientAccountPasswordCredentials
+                {
+                    Password = "password",
+                    Login = "example@gmail.com"
+                }
+            },
+            new EmailClientAccount
+            {
+                Host = "exchange@outlook.com",
+                Port = 443,
+                ProtocolType = "EWS",
+                Credentials = new EmailClientAccountOauthCredentials
+                {
+                    ClientId = "clientId",
+                    ClientSecret = "clientSecret",
+                    RefreshToken = "refreshToken",
+                    Login = "example@outlook.com"
+                }
+            }
+        },
+        SendAccount = new EmailClientAccount
+        {
+            Host = "smtp.gmail.com",
+            Port = 465,
+            SecurityOptions = "SSLAuto",
+            ProtocolType = "SMTP",
+            Credentials = new EmailClientAccountPasswordCredentials
+            {
+                Password = "password",
+                Login = "example@gmail.com"
+            }
+        }
+    }
+};
+
+// Call method:
+await api.Client.Account.SaveMultiAsync(request);
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

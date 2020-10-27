@@ -1,4 +1,6 @@
-# Model.MapiCalendarEventRecurrenceDto
+# MapiCalendarEventRecurrenceDto
+Recurrence properties of calendar object.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,7 +12,5 @@ Name | Type | Description | Notes
 **TimeZoneStruct** | [**MapiCalendarTimeZoneDto**](MapiCalendarTimeZoneDto.md) | Time zone information for a recurring meeting.              | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 
