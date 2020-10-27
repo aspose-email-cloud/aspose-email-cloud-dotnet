@@ -1,257 +1,940 @@
-# Aspose.Email.Cloud.Sdk.ClientThreadApi
+# ClientThreadApi (EmailCloud.Client.Thread)
 
-        <a name="Delete"></a>
-# Delete
+Email client thread operations.
 
+<a name="Delete"></a>
+## Delete
+
+**Description**: Delete thread by id. All messages from thread will also be deleted.             
+
+
+**Method call example:**
 ```csharp
-void Delete(ClientThreadDeleteRequest request)
+api.Client.Thread.Delete(request);
 ```
 
-Delete thread by id. All messages from thread will also be deleted.             
+### Parameter: *request*
 
-### Return type
+**Description:** Delete email thread request.
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientThreadDeleteRequest**](ClientThreadDeleteRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientThreadDeleteRequest](ClientThreadDeleteRequest.md)
+```csharp
+var request = new ClientThreadDeleteRequest
+{
+    Folder = "INBOX/SubFolder",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadDeleteRequest
+{
+    Folder = "INBOX/SubFolder",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+api.Client.Thread.Delete(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteAsync"></a>
-# DeleteAsync
+## DeleteAsync
 
-```csharp
-async Task DeleteAsync(ClientThreadDeleteRequest request)
-```
-
-Delete thread by id. All messages from thread will also be deleted.             
+**Description:** Delete thread by id. All messages from thread will also be deleted.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
+**Method call example:**
+```csharp
+await api.Client.Thread.DeleteAsync(request);
+```
 
-### request Parameter
+### Parameter: *request*
 
-See parameter model documentation at [ClientThreadDeleteRequest](ClientThreadDeleteRequest.md)
+**Description:** Delete email thread request.
+
+**See also** parameter model documentation at [**ClientThreadDeleteRequest**](ClientThreadDeleteRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientThreadDeleteRequest
+{
+    Folder = "INBOX/SubFolder",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadDeleteRequest
+{
+    Folder = "INBOX/SubFolder",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+await api.Client.Thread.DeleteAsync(request);
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="GetList"></a>
-# GetList
+<a name="GetList"></a>
+## GetList
+**Descrption:** Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
 
+
+**Returns:** List of threads
+
+**Method call example:**
 ```csharp
-EmailThreadList GetList(ClientThreadGetListRequest request)
+var result = api.Client.Thread.GetList(request);
 ```
 
-Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
+### Parameter: *request*
 
-### Return type
+**Description:** GetList method request.
 
-[**EmailThreadList**](EmailThreadList.md)
+**See also** parameter model documentation at [**ClientThreadGetListRequest**](ClientThreadGetListRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new ClientThreadGetListRequest(
-    folder,
-    account,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    updateFolderCache=updateFolderCache,
-    messagesCacheLimit=messagesCacheLimit)
+var request = new ClientThreadGetListRequest
+{ 
+    Folder = "INBOX/SubFolder",
+    Account = "email.account",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folder** | **string**| A folder in email account.              | 
- **account** | **string**| Email account | 
- **storage** | **string**| Storage name where account file located | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
- **updateFolderCache** | **bool?**| This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account              | [optional] [default to true]
- **messagesCacheLimit** | **int?**| Limit messages cache size if CacheFile is used. Ignored in accounts without limits support              | [optional] [default to 200]
+</details>
+
+### Result
+
+**Description:** List of threads
+
+**Return type:** [**EmailThreadList**](EmailThreadList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new EmailThreadList
+{
+    Value = new List<EmailThread>
+    {
+        new EmailThread
+        {
+            Id = "123",
+            Subject = "Some email subject",
+            Messages = new List<EmailDto>
+            {
+                new EmailDto
+                {
+                    Date = DateTime.Today,
+                    From = new MailAddress
+                    {
+                        Address = "from@aspose.com"
+                    },
+                    MessageId = "1",
+                    Subject = "Some email subject",
+                    To = new List<MailAddress>
+                    {
+                        new MailAddress
+                        {
+                            Address = "to@aspose.com"
+                        }
+                    }
+                },
+                new EmailDto
+                {
+                    Date = DateTime.Today,
+                    From = new MailAddress
+                    {
+                        Address = "from@aspose.com"
+                    },
+                    MessageId = "3",
+                    Subject = "Re: Some email subject",
+                    To = new List<MailAddress>
+                    {
+                        new MailAddress
+                        {
+                            Address = "to@aspose.com"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadGetListRequest
+{ 
+    Folder = "INBOX/SubFolder",
+    Account = "email.account",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage"
+};
+
+// Call method:
+var result = api.Client.Thread.GetList(request);
+
+// Result example:
+result = new EmailThreadList
+{
+    Value = new List<EmailThread>
+    {
+        new EmailThread
+        {
+            Id = "123",
+            Subject = "Some email subject",
+            Messages = new List<EmailDto>
+            {
+                new EmailDto
+                {
+                    Date = DateTime.Today,
+                    From = new MailAddress
+                    {
+                        Address = "from@aspose.com"
+                    },
+                    MessageId = "1",
+                    Subject = "Some email subject",
+                    To = new List<MailAddress>
+                    {
+                        new MailAddress
+                        {
+                            Address = "to@aspose.com"
+                        }
+                    }
+                },
+                new EmailDto
+                {
+                    Date = DateTime.Today,
+                    From = new MailAddress
+                    {
+                        Address = "from@aspose.com"
+                    },
+                    MessageId = "3",
+                    Subject = "Re: Some email subject",
+                    To = new List<MailAddress>
+                    {
+                        new MailAddress
+                        {
+                            Address = "to@aspose.com"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetListAsync"></a>
-# GetListAsync
+## GetListAsync
 
-```csharp
-async Task<EmailThreadList> GetListAsync(ClientThreadGetListRequest request)
-```
-
-Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
+**Description:** Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**EmailThreadList**](EmailThreadList.md)>
+**Returns:** List of threads
 
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientThreadGetListRequest(
-    folder,
-    account,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    updateFolderCache=updateFolderCache,
-    messagesCacheLimit=messagesCacheLimit)
+var result = await api.Client.Thread.GetListAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folder** | **string**| A folder in email account.              | 
- **account** | **string**| Email account | 
- **storage** | **string**| Storage name where account file located | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
- **updateFolderCache** | **bool?**| This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account              | [optional] [default to true]
- **messagesCacheLimit** | **int?**| Limit messages cache size if CacheFile is used. Ignored in accounts without limits support              | [optional] [default to 200]
+### Parameter: *request*
+
+**Description:** GetListAsync method request.
+
+**See also** parameter model documentation at [**ClientThreadGetListRequest**](ClientThreadGetListRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientThreadGetListRequest
+{ 
+    Folder = "INBOX/SubFolder",
+    Account = "email.account",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** List of threads
+
+**Return type:** [**EmailThreadList**](EmailThreadList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new EmailThreadList
+{
+    Value = new List<EmailThread>
+    {
+        new EmailThread
+        {
+            Id = "123",
+            Subject = "Some email subject",
+            Messages = new List<EmailDto>
+            {
+                new EmailDto
+                {
+                    Date = DateTime.Today,
+                    From = new MailAddress
+                    {
+                        Address = "from@aspose.com"
+                    },
+                    MessageId = "1",
+                    Subject = "Some email subject",
+                    To = new List<MailAddress>
+                    {
+                        new MailAddress
+                        {
+                            Address = "to@aspose.com"
+                        }
+                    }
+                },
+                new EmailDto
+                {
+                    Date = DateTime.Today,
+                    From = new MailAddress
+                    {
+                        Address = "from@aspose.com"
+                    },
+                    MessageId = "3",
+                    Subject = "Re: Some email subject",
+                    To = new List<MailAddress>
+                    {
+                        new MailAddress
+                        {
+                            Address = "to@aspose.com"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadGetListRequest
+{ 
+    Folder = "INBOX/SubFolder",
+    Account = "email.account",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage"
+};
+
+// Call method:
+var result = await api.Client.Thread.GetListAsync(request);
+
+result = new EmailThreadList
+{
+    Value = new List<EmailThread>
+    {
+        new EmailThread
+        {
+            Id = "123",
+            Subject = "Some email subject",
+            Messages = new List<EmailDto>
+            {
+                new EmailDto
+                {
+                    Date = DateTime.Today,
+                    From = new MailAddress
+                    {
+                        Address = "from@aspose.com"
+                    },
+                    MessageId = "1",
+                    Subject = "Some email subject",
+                    To = new List<MailAddress>
+                    {
+                        new MailAddress
+                        {
+                            Address = "to@aspose.com"
+                        }
+                    }
+                },
+                new EmailDto
+                {
+                    Date = DateTime.Today,
+                    From = new MailAddress
+                    {
+                        Address = "from@aspose.com"
+                    },
+                    MessageId = "3",
+                    Subject = "Re: Some email subject",
+                    To = new List<MailAddress>
+                    {
+                        new MailAddress
+                        {
+                            Address = "to@aspose.com"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="GetMessages"></a>
-# GetMessages
+<a name="GetMessages"></a>
+## GetMessages
+**Descrption:** Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
 
+
+**Returns:** Requested thread with fully fetched messages
+
+**Method call example:**
 ```csharp
-EmailList GetMessages(ClientThreadGetMessagesRequest request)
+var result = api.Client.Thread.GetMessages(request);
 ```
 
-Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+### Parameter: *request*
 
-### Return type
+**Description:** GetMessages method request.
 
-[**EmailList**](EmailList.md)
+**See also** parameter model documentation at [**ClientThreadGetMessagesRequest**](ClientThreadGetMessagesRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new ClientThreadGetMessagesRequest(
-    threadId,
-    account,
-    folder=folder,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder)
+var request = new ClientThreadGetMessagesRequest
+{ 
+    ThreadId = "5",
+    Account = "email.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **threadId** | **string**| Thread identifier | 
- **account** | **string**| Email account | 
- **folder** | **string**| Specifies account folder to get thread from              | [optional] 
- **storage** | **string**| Storage name where account file located | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
+</details>
+
+### Result
+
+**Description:** Requested thread with fully fetched messages
+
+**Return type:** [**EmailList**](EmailList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = ;
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadGetMessagesRequest
+{ 
+    ThreadId = "5",
+    Account = "email.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage"
+};
+
+// Call method:
+var result = api.Client.Thread.GetMessages(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetMessagesAsync"></a>
-# GetMessagesAsync
+## GetMessagesAsync
 
-```csharp
-async Task<EmailList> GetMessagesAsync(ClientThreadGetMessagesRequest request)
-```
-
-Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
+**Description:** Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**EmailList**](EmailList.md)>
+**Returns:** Requested thread with fully fetched messages
 
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientThreadGetMessagesRequest(
-    threadId,
-    account,
-    folder=folder,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder)
+var result = await api.Client.Thread.GetMessagesAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **threadId** | **string**| Thread identifier | 
- **account** | **string**| Email account | 
- **folder** | **string**| Specifies account folder to get thread from              | [optional] 
- **storage** | **string**| Storage name where account file located | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
+### Parameter: *request*
+
+**Description:** GetMessagesAsync method request.
+
+**See also** parameter model documentation at [**ClientThreadGetMessagesRequest**](ClientThreadGetMessagesRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientThreadGetMessagesRequest
+{ 
+    ThreadId = "5",
+    Account = "email.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** Requested thread with fully fetched messages
+
+**Return type:** [**EmailList**](EmailList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = ;
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadGetMessagesRequest
+{ 
+    ThreadId = "5",
+    Account = "email.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage"
+};
+
+// Call method:
+var result = await api.Client.Thread.GetMessagesAsync(request);
+
+result = ;
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Move"></a>
-# Move
+<a name="Move"></a>
+## Move
 
+**Description**: Move thread to another folder.             
+
+
+**Method call example:**
 ```csharp
-void Move(ClientThreadMoveRequest request)
+api.Client.Thread.Move(request);
 ```
 
-Move thread to another folder.             
+### Parameter: *request*
 
-### Return type
+**Description:** Move thread request.
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientThreadMoveRequest**](ClientThreadMoveRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientThreadMoveRequest](ClientThreadMoveRequest.md)
+```csharp
+var request = new ClientThreadMoveRequest
+{
+    DestinationFolder = "INBOX/SubFolder",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadMoveRequest
+{
+    DestinationFolder = "INBOX/SubFolder",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+api.Client.Thread.Move(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MoveAsync"></a>
-# MoveAsync
+## MoveAsync
 
-```csharp
-async Task MoveAsync(ClientThreadMoveRequest request)
-```
-
-Move thread to another folder.             
+**Description:** Move thread to another folder.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
-
-### request Parameter
-
-See parameter model documentation at [ClientThreadMoveRequest](ClientThreadMoveRequest.md)
-
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="SetIsRead"></a>
-# SetIsRead
-
+**Method call example:**
 ```csharp
-void SetIsRead(ClientThreadSetIsReadRequest request)
+await api.Client.Thread.MoveAsync(request);
 ```
 
-Mark all messages in thread as read or unread.             
+### Parameter: *request*
 
-### Return type
+**Description:** Move thread request.
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientThreadMoveRequest**](ClientThreadMoveRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientThreadSetIsReadRequest](ClientThreadSetIsReadRequest.md)
+```csharp
+var request = new ClientThreadMoveRequest
+{
+    DestinationFolder = "INBOX/SubFolder",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadMoveRequest
+{
+    DestinationFolder = "INBOX/SubFolder",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+await api.Client.Thread.MoveAsync(request);
+
+```
+
+</details>
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="SetIsRead"></a>
+## SetIsRead
+
+**Description**: Mark all messages in thread as read or unread.             
+
+
+**Method call example:**
+```csharp
+api.Client.Thread.SetIsRead(request);
+```
+
+### Parameter: *request*
+
+**Description:** Email account specifier and IsRead flag.
+
+**See also** parameter model documentation at [**ClientThreadSetIsReadRequest**](ClientThreadSetIsReadRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientThreadSetIsReadRequest
+{
+    IsRead = true,
+    Folder = "INBOX",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadSetIsReadRequest
+{
+    IsRead = true,
+    Folder = "INBOX",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+api.Client.Thread.SetIsRead(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SetIsReadAsync"></a>
-# SetIsReadAsync
+## SetIsReadAsync
 
-```csharp
-async Task SetIsReadAsync(ClientThreadSetIsReadRequest request)
-```
-
-Mark all messages in thread as read or unread.             
+**Description:** Mark all messages in thread as read or unread.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
+**Method call example:**
+```csharp
+await api.Client.Thread.SetIsReadAsync(request);
+```
 
-### request Parameter
+### Parameter: *request*
 
-See parameter model documentation at [ClientThreadSetIsReadRequest](ClientThreadSetIsReadRequest.md)
+**Description:** Email account specifier and IsRead flag.
+
+**See also** parameter model documentation at [**ClientThreadSetIsReadRequest**](ClientThreadSetIsReadRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientThreadSetIsReadRequest
+{
+    IsRead = true,
+    Folder = "INBOX",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientThreadSetIsReadRequest
+{
+    IsRead = true,
+    Folder = "INBOX",
+    ThreadId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+await api.Client.Thread.SetIsReadAsync(request);
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

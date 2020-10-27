@@ -1,4 +1,6 @@
-# Model.AiNameFormatted
+# AiNameFormatted
+Formatted name             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +8,14 @@ Name | Type | Description | Notes
 **Comments** | **string** | Usually empty; can contain extra message describing some issue occurred during the formatting              | [optional] 
 
 
+## Example
+```csharp
+var aiNameFormatted = new AiNameFormatted
+{
+    Name = "Mr. Cane J. M.",
+    Comments = "format: %t%L%f%m; source: parsed format"
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    
+
         /// <summary>
         /// Converts contact model to specified format and returns as file              
         /// </summary>
@@ -94,7 +94,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    
+
         /// <summary>
         /// Converts ContactDto to MapiContactDto.              
         /// </summary>
@@ -133,7 +133,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    
+
         /// <summary>
         /// Converts contact document to specified format and returns as file              
         /// </summary>
@@ -195,7 +195,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Convert(request));
         #endif
 
-                    
+
         /// <summary>
         /// Converts contact document to a model representation              
         /// </summary>
@@ -248,7 +248,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => FromFile(request));
         #endif
 
-                    
+
         /// <summary>
         /// Get contact document from storage.              
         /// </summary>
@@ -296,7 +296,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Get(request));
         #endif
 
-                    
+
         /// <summary>
         /// Converts contact document from storage to specified format and returns as file              
         /// </summary>
@@ -354,7 +354,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetAsFile(request));
         #endif
 
-                    
+
         /// <summary>
         /// Get contact list from storage folder.              
         /// </summary>
@@ -396,7 +396,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetList(request));
         #endif
 
-                    
+
         /// <summary>
         /// Save contact to storage.              
         /// </summary>

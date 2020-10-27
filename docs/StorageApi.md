@@ -1,218 +1,676 @@
-# Aspose.Email.Cloud.Sdk.StorageApi
+# StorageApi (EmailCloud.CloudStorage.Storage)
 
-        <a name="GetDiscUsage"></a>
-# GetDiscUsage
+Storage operations controller
 
+<a name="GetDiscUsage"></a>
+## GetDiscUsage
+**Descrption:** Get disc usage
+
+
+**Returns:** Disc usage.
+
+**Method call example:**
 ```csharp
-DiscUsage GetDiscUsage(GetDiscUsageRequest request)
+var result = api.CloudStorage.Storage.GetDiscUsage(request);
 ```
 
-Get disc usage
+### Parameter: *request*
 
-### Return type
+**Description:** GetDiscUsage method request.
 
-[**DiscUsage**](DiscUsage.md)
+**See also** parameter model documentation at [**GetDiscUsageRequest**](GetDiscUsageRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new GetDiscUsageRequest(
-    storageName=storageName)
+var request = new GetDiscUsageRequest
+{ 
+    StorageName = "First Storage"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **storageName** | **string**| Storage name | [optional] 
+</details>
+
+### Result
+
+**Description:** Disc usage.
+
+**Return type:** [**DiscUsage**](DiscUsage.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new DiscUsage
+{
+    UsedSize = 1048576,
+    TotalSize = 3145728
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new GetDiscUsageRequest
+{ 
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = api.CloudStorage.Storage.GetDiscUsage(request);
+
+// Result example:
+result = new DiscUsage
+{
+    UsedSize = 1048576,
+    TotalSize = 3145728
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetDiscUsageAsync"></a>
-# GetDiscUsageAsync
+## GetDiscUsageAsync
 
-```csharp
-async Task<DiscUsage> GetDiscUsageAsync(GetDiscUsageRequest request)
-```
-
-Get disc usage
+**Description:** Get disc usage
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**DiscUsage**](DiscUsage.md)>
+**Returns:** Disc usage.
 
-### request Parameter
+**Method call example:**
 ```csharp
-new GetDiscUsageRequest(
-    storageName=storageName)
+var result = await api.CloudStorage.Storage.GetDiscUsageAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **storageName** | **string**| Storage name | [optional] 
+### Parameter: *request*
+
+**Description:** GetDiscUsageAsync method request.
+
+**See also** parameter model documentation at [**GetDiscUsageRequest**](GetDiscUsageRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new GetDiscUsageRequest
+{ 
+    StorageName = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** Disc usage.
+
+**Return type:** [**DiscUsage**](DiscUsage.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new DiscUsage
+{
+    UsedSize = 1048576,
+    TotalSize = 3145728
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new GetDiscUsageRequest
+{ 
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = await api.CloudStorage.Storage.GetDiscUsageAsync(request);
+
+result = new DiscUsage
+{
+    UsedSize = 1048576,
+    TotalSize = 3145728
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="GetFileVersions"></a>
-# GetFileVersions
+<a name="GetFileVersions"></a>
+## GetFileVersions
+**Descrption:** Get file versions
 
+
+**Returns:** File versions.
+
+**Method call example:**
 ```csharp
-FileVersions GetFileVersions(GetFileVersionsRequest request)
+var result = api.CloudStorage.Storage.GetFileVersions(request);
 ```
 
-Get file versions
+### Parameter: *request*
 
-### Return type
+**Description:** GetFileVersions method request.
 
-[**FileVersions**](FileVersions.md)
+**See also** parameter model documentation at [**GetFileVersionsRequest**](GetFileVersionsRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new GetFileVersionsRequest(
-    path,
-    storageName=storageName)
+var request = new GetFileVersionsRequest
+{ 
+    Path = "/storage/path/to/file.ext",
+    StorageName = "First Storage"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+</details>
+
+### Result
+
+**Description:** File versions.
+
+**Return type:** [**FileVersions**](FileVersions.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new FileVersions
+{
+    Value = new List<FileVersion>
+    {
+        new FileVersion
+        {
+            VersionId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+            IsLatest = true,
+            Name = "file.ext",
+            ModifiedDate = DateTime.Today,
+            Size = 4096,
+            Path = "/storage/path/to"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new GetFileVersionsRequest
+{ 
+    Path = "/storage/path/to/file.ext",
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = api.CloudStorage.Storage.GetFileVersions(request);
+
+// Result example:
+result = new FileVersions
+{
+    Value = new List<FileVersion>
+    {
+        new FileVersion
+        {
+            VersionId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+            IsLatest = true,
+            Name = "file.ext",
+            ModifiedDate = DateTime.Today,
+            Size = 4096,
+            Path = "/storage/path/to"
+        }
+    }
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetFileVersionsAsync"></a>
-# GetFileVersionsAsync
+## GetFileVersionsAsync
 
-```csharp
-async Task<FileVersions> GetFileVersionsAsync(GetFileVersionsRequest request)
-```
-
-Get file versions
+**Description:** Get file versions
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**FileVersions**](FileVersions.md)>
+**Returns:** File versions.
 
-### request Parameter
+**Method call example:**
 ```csharp
-new GetFileVersionsRequest(
-    path,
-    storageName=storageName)
+var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **path** | **string**| File path e.g. &#39;/file.ext&#39; | 
- **storageName** | **string**| Storage name | [optional] 
+### Parameter: *request*
+
+**Description:** GetFileVersionsAsync method request.
+
+**See also** parameter model documentation at [**GetFileVersionsRequest**](GetFileVersionsRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new GetFileVersionsRequest
+{ 
+    Path = "/storage/path/to/file.ext",
+    StorageName = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** File versions.
+
+**Return type:** [**FileVersions**](FileVersions.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new FileVersions
+{
+    Value = new List<FileVersion>
+    {
+        new FileVersion
+        {
+            VersionId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+            IsLatest = true,
+            Name = "file.ext",
+            ModifiedDate = DateTime.Today,
+            Size = 4096,
+            Path = "/storage/path/to"
+        }
+    }
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new GetFileVersionsRequest
+{ 
+    Path = "/storage/path/to/file.ext",
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
+
+result = new FileVersions
+{
+    Value = new List<FileVersion>
+    {
+        new FileVersion
+        {
+            VersionId = "d5afd857-8797-4ca0-b806-a03fdfc3831f",
+            IsLatest = true,
+            Name = "file.ext",
+            ModifiedDate = DateTime.Today,
+            Size = 4096,
+            Path = "/storage/path/to"
+        }
+    }
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="ObjectExists"></a>
-# ObjectExists
+<a name="ObjectExists"></a>
+## ObjectExists
+**Descrption:** Check if file or folder exists
 
+
+**Returns:** Object exist result.
+
+**Method call example:**
 ```csharp
-ObjectExist ObjectExists(ObjectExistsRequest request)
+var result = api.CloudStorage.Storage.ObjectExists(request);
 ```
 
-Check if file or folder exists
+### Parameter: *request*
 
-### Return type
+**Description:** ObjectExists method request.
 
-[**ObjectExist**](ObjectExist.md)
+**See also** parameter model documentation at [**ObjectExistsRequest**](ObjectExistsRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new ObjectExistsRequest(
-    path,
-    storageName=storageName,
-    versionId=versionId)
+var request = new ObjectExistsRequest
+{ 
+    Path = "/storage/path/to/folder/or/file.ext",
+    StorageName = "First Storage"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **path** | **string**| File or folder path e.g. &#39;/file.ext&#39; or &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **versionId** | **string**| File version ID | [optional] 
+</details>
+
+### Result
+
+**Description:** Object exist result.
+
+**Return type:** [**ObjectExist**](ObjectExist.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new ObjectExist
+{
+    Exists = true
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ObjectExistsRequest
+{ 
+    Path = "/storage/path/to/folder/or/file.ext",
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = api.CloudStorage.Storage.ObjectExists(request);
+
+// Result example:
+result = new ObjectExist
+{
+    Exists = true
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ObjectExistsAsync"></a>
-# ObjectExistsAsync
+## ObjectExistsAsync
 
-```csharp
-async Task<ObjectExist> ObjectExistsAsync(ObjectExistsRequest request)
-```
-
-Check if file or folder exists
+**Description:** Check if file or folder exists
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**ObjectExist**](ObjectExist.md)>
+**Returns:** Object exist result.
 
-### request Parameter
+**Method call example:**
 ```csharp
-new ObjectExistsRequest(
-    path,
-    storageName=storageName,
-    versionId=versionId)
+var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **path** | **string**| File or folder path e.g. &#39;/file.ext&#39; or &#39;/folder&#39; | 
- **storageName** | **string**| Storage name | [optional] 
- **versionId** | **string**| File version ID | [optional] 
+### Parameter: *request*
+
+**Description:** ObjectExistsAsync method request.
+
+**See also** parameter model documentation at [**ObjectExistsRequest**](ObjectExistsRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ObjectExistsRequest
+{ 
+    Path = "/storage/path/to/folder/or/file.ext",
+    StorageName = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** Object exist result.
+
+**Return type:** [**ObjectExist**](ObjectExist.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new ObjectExist
+{
+    Exists = true
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ObjectExistsRequest
+{ 
+    Path = "/storage/path/to/folder/or/file.ext",
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
+
+result = new ObjectExist
+{
+    Exists = true
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Exists"></a>
-# Exists
+<a name="Exists"></a>
+## Exists
+**Descrption:** Check if storage exists
 
+
+**Returns:** Storage exist result.
+
+**Method call example:**
 ```csharp
-StorageExist Exists(StorageExistsRequest request)
+var result = api.CloudStorage.Storage.Exists(request);
 ```
 
-Check if storage exists
+### Parameter: *request*
 
-### Return type
+**Description:** Exists method request.
 
-[**StorageExist**](StorageExist.md)
+**See also** parameter model documentation at [**StorageExistsRequest**](StorageExistsRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new StorageExistsRequest(
-    storageName)
+var request = new StorageExistsRequest
+{ 
+    StorageName = "First Storage"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **storageName** | **string**| Storage name | 
+</details>
+
+### Result
+
+**Description:** Storage exist result.
+
+**Return type:** [**StorageExist**](StorageExist.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new StorageExist
+{
+    Exists = true
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new StorageExistsRequest
+{ 
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = api.CloudStorage.Storage.Exists(request);
+
+// Result example:
+result = new StorageExist
+{
+    Exists = true
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ExistsAsync"></a>
-# ExistsAsync
+## ExistsAsync
 
-```csharp
-async Task<StorageExist> ExistsAsync(StorageExistsRequest request)
-```
-
-Check if storage exists
+**Description:** Check if storage exists
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**StorageExist**](StorageExist.md)>
+**Returns:** Storage exist result.
 
-### request Parameter
+**Method call example:**
 ```csharp
-new StorageExistsRequest(
-    storageName)
+var result = await api.CloudStorage.Storage.ExistsAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **storageName** | **string**| Storage name | 
+### Parameter: *request*
+
+**Description:** ExistsAsync method request.
+
+**See also** parameter model documentation at [**StorageExistsRequest**](StorageExistsRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new StorageExistsRequest
+{ 
+    StorageName = "First Storage"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** Storage exist result.
+
+**Return type:** [**StorageExist**](StorageExist.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new StorageExist
+{
+    Exists = true
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new StorageExistsRequest
+{ 
+    StorageName = "First Storage"
+};
+
+// Call method:
+var result = await api.CloudStorage.Storage.ExistsAsync(request);
+
+result = new StorageExist
+{
+    Exists = true
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

@@ -1,4 +1,6 @@
-# Model.MapiPidTagPropertyDescriptor
+# MapiPidTagPropertyDescriptor
+A property that is defined by a 16-bit property ID and a 16-bit property type. The property ID for a tagged property is in the range 0x001 - 0x7FFF. Property IDs in the range 0x8000 - 0x8FFF are reserved for assignment to named properties             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,6 +11,5 @@ Name | Type | Description | Notes
 
 See: [MapiPidPropertyDescriptor](MapiPidPropertyDescriptor.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

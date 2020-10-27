@@ -1,4 +1,6 @@
-# Model.AssociatedPerson
+# AssociatedPerson
+Describes associated person.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -7,7 +9,5 @@ Name | Type | Description | Notes
 **Preferred** | **bool?** | Defines whether associated person is preferred.              | 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

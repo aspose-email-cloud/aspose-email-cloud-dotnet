@@ -1,4 +1,6 @@
-# Model.StorageFileLocation
+# StorageFileLocation
+A storage file location information             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -8,6 +10,15 @@ Name | Type | Description | Notes
 
 See: [StorageFolderLocation](StorageFolderLocation.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var storageFileLocation = new StorageFileLocation
+{
+    FileName = "fileOnStorage.txt",
+    Storage = "First Storage",
+    FolderPath = "file/location/folder/on/storage"
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

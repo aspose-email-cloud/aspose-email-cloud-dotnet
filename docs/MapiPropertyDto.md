@@ -1,4 +1,6 @@
-# Model.MapiPropertyDto
+# MapiPropertyDto
+Mapi property             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -6,7 +8,16 @@ Name | Type | Description | Notes
 **Discriminator** | **string** |  | 
 
 
+## Example
+```csharp
+var mapiPropertyDto = new MapiPropertyDto
+{
+    Descriptor = new MapiKnownPropertyDescriptor
+    {
+        Name = "DisplayName"
+    }
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

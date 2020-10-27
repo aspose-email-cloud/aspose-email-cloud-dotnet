@@ -1,4 +1,6 @@
-# Model.MapiCalendarTimeZoneInfoDto
+# MapiCalendarTimeZoneInfoDto
+Represents the mapi calendar time zone rule.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -11,7 +13,5 @@ Name | Type | Description | Notes
 **Year** | **int?** | Year in which this rule is scheduled to take effect.              | 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

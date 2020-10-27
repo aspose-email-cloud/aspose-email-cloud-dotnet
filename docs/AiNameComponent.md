@@ -1,4 +1,6 @@
-# Model.AiNameComponent
+# AiNameComponent
+Parsed name component             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -8,7 +10,5 @@ Name | Type | Description | Notes
 **Position** | **int?** | Component position from 0              | 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

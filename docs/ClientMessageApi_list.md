@@ -18,5 +18,3 @@ Method | HTTP request | Description
 [**SendFile**](ClientMessageApi.md#SendFile)/[**SendFileAsync**](ClientMessageApi.md#SendFileAsync)| **POST** /email/client/message/file| Send an email file.             
 [**SetIsRead**](ClientMessageApi.md#SetIsRead)/[**SetIsReadAsync**](ClientMessageApi.md#SetIsReadAsync)| **PUT** /email/client/message/set-is-read| Mark message as read or unread.             
 
-
-

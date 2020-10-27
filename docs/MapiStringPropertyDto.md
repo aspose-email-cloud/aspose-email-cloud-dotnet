@@ -1,4 +1,6 @@
-# Model.MapiStringPropertyDto
+# MapiStringPropertyDto
+Mapi property with string value             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -8,6 +10,17 @@ Name | Type | Description | Notes
 
 See: [MapiPropertyDto](MapiPropertyDto.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var mapiStringPropertyDto = new MapiStringPropertyDto
+{
+    Value = "SomeName",
+    Descriptor = new MapiKnownPropertyDescriptor
+    {
+        Name = "DisplayName"
+    }
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

@@ -1,4 +1,6 @@
-# Model.CalendarReminder
+# CalendarReminder
+Provides a grouping of component properties that define an alarm.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -12,7 +14,5 @@ Name | Type | Description | Notes
 **Trigger** | [**ReminderTrigger**](ReminderTrigger.md) | Specifies when an alarm will trigger. | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

@@ -1,4 +1,6 @@
-# Model.MapiContactProfessionalPropertySetDto
+# MapiContactProfessionalPropertySetDto
+Properties are used to store professional details for the person represented by the contact             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -11,7 +13,5 @@ Name | Type | Description | Notes
 **Profession** | **string** | Gets or sets the profession of the contact              | [optional] 
 
 
-
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

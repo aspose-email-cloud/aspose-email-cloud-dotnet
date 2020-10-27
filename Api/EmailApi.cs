@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    
+
         /// <summary>
         /// Converts Email model to specified format and returns as file.              
         /// </summary>
@@ -94,7 +94,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    
+
         /// <summary>
         /// Converts EmailDto to MapiMessageDto.              
         /// </summary>
@@ -133,7 +133,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    
+
         /// <summary>
         /// Converts email document to specified format and returns as file              
         /// </summary>
@@ -195,7 +195,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Convert(request));
         #endif
 
-                    
+
         /// <summary>
         /// Converts email document to a model representation              
         /// </summary>
@@ -248,7 +248,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => FromFile(request));
         #endif
 
-                    
+
         /// <summary>
         /// Get email document from storage.              
         /// </summary>
@@ -296,7 +296,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Get(request));
         #endif
 
-                    
+
         /// <summary>
         /// Converts email document from storage to specified format and returns as file              
         /// </summary>
@@ -346,7 +346,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetAsFile(request));
         #endif
 
-                    
+
         /// <summary>
         /// Get email list from storage folder.              
         /// </summary>
@@ -388,7 +388,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetList(request));
         #endif
 
-                    
+
         /// <summary>
         /// Save email document to storage.              
         /// </summary>

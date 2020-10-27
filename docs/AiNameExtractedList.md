@@ -1,4 +1,6 @@
-# Model.AiNameExtractedList
+# AiNameExtractedList
+Extracted name list.             
+
 ## Properties
 Class has no properties
 
@@ -6,6 +8,5 @@ Class has no properties
 
 See: [ListResponseOfAiNameExtracted](ListResponseOfAiNameExtracted.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

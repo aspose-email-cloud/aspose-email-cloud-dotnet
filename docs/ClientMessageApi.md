@@ -1,568 +1,1871 @@
-# Aspose.Email.Cloud.Sdk.ClientMessageApi
+# ClientMessageApi (EmailCloud.Client.Message)
 
-        <a name="Append"></a>
-# Append
+Email client message operations.
 
+<a name="Append"></a>
+## Append
+
+**Description**: Add email message to specified folder in email account.             
+
+
+**Returns:** Message id.
+
+**Method call example:**
 ```csharp
-ValueTOfString Append(ClientMessageAppendRequest request)
+var result = api.Client.Message.Append(request);
 ```
 
-Add email message to specified folder in email account.             
+### Parameter: *request*
 
-### Return type
+**Description:** Append email request.
 
-[**ValueTOfString**](ValueTOfString.md)
+**See also** parameter model documentation at [**ClientMessageAppendRequest**](ClientMessageAppendRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientMessageAppendRequest](ClientMessageAppendRequest.md)
+```csharp
+var request = new ClientMessageAppendRequest
+{
+    Folder = "INBOX/SubFolder",
+    Message = new MailMessageDto
+    {
+        Value = new EmailDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "some-file.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            Body = "Some body",
+            BodyType = "Html",
+            DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+            {
+                "OnSuccess",
+                "Delay"
+            },
+            From = new MailAddress
+            {
+                DisplayName = "From Address",
+                Address = "from@aspose.com"
+            },
+            HtmlBody = "<b>Some body</b>",
+            IsBodyHtml = true,
+            IsDraft = true,
+            Subject = "Re: Some subject",
+            To = new List<MailAddress>
+            {
+                new MailAddress
+                {
+                    DisplayName = "To Address",
+                    Address = "to@aspose.com"
+                }
+            }
+        }
+    },
+    MarkAsSent = true,
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Description:** Message id.
+
+**Return type:** [**ValueTOfString**](ValueTOfString.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = ;
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageAppendRequest
+{
+    Folder = "INBOX/SubFolder",
+    Message = new MailMessageDto
+    {
+        Value = new EmailDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "some-file.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            Body = "Some body",
+            BodyType = "Html",
+            DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+            {
+                "OnSuccess",
+                "Delay"
+            },
+            From = new MailAddress
+            {
+                DisplayName = "From Address",
+                Address = "from@aspose.com"
+            },
+            HtmlBody = "<b>Some body</b>",
+            IsBodyHtml = true,
+            IsDraft = true,
+            Subject = "Re: Some subject",
+            To = new List<MailAddress>
+            {
+                new MailAddress
+                {
+                    DisplayName = "To Address",
+                    Address = "to@aspose.com"
+                }
+            }
+        }
+    },
+    MarkAsSent = true,
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+var result = api.Client.Message.Append(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AppendAsync"></a>
-# AppendAsync
+## AppendAsync
 
-```csharp
-async Task<ValueTOfString> AppendAsync(ClientMessageAppendRequest request)
-```
-
-Add email message to specified folder in email account.             
+**Description:** Add email message to specified folder in email account.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**ValueTOfString**](ValueTOfString.md)>
+**Returns:** Message id.
 
-### request Parameter
+**Method call example:**
+```csharp
+var result = await api.Client.Message.AppendAsync(request);
+```
 
-See parameter model documentation at [ClientMessageAppendRequest](ClientMessageAppendRequest.md)
+### Parameter: *request*
+
+**Description:** Append email request.
+
+**See also** parameter model documentation at [**ClientMessageAppendRequest**](ClientMessageAppendRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageAppendRequest
+{
+    Folder = "INBOX/SubFolder",
+    Message = new MailMessageDto
+    {
+        Value = new EmailDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "some-file.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            Body = "Some body",
+            BodyType = "Html",
+            DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+            {
+                "OnSuccess",
+                "Delay"
+            },
+            From = new MailAddress
+            {
+                DisplayName = "From Address",
+                Address = "from@aspose.com"
+            },
+            HtmlBody = "<b>Some body</b>",
+            IsBodyHtml = true,
+            IsDraft = true,
+            Subject = "Re: Some subject",
+            To = new List<MailAddress>
+            {
+                new MailAddress
+                {
+                    DisplayName = "To Address",
+                    Address = "to@aspose.com"
+                }
+            }
+        }
+    },
+    MarkAsSent = true,
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Description:** Message id.
+
+**Return type:** Task<[**ValueTOfString**](ValueTOfString.md)>
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = ;
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageAppendRequest
+{
+    Folder = "INBOX/SubFolder",
+    Message = new MailMessageDto
+    {
+        Value = new EmailDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "some-file.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            Body = "Some body",
+            BodyType = "Html",
+            DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+            {
+                "OnSuccess",
+                "Delay"
+            },
+            From = new MailAddress
+            {
+                DisplayName = "From Address",
+                Address = "from@aspose.com"
+            },
+            HtmlBody = "<b>Some body</b>",
+            IsBodyHtml = true,
+            IsDraft = true,
+            Subject = "Re: Some subject",
+            To = new List<MailAddress>
+            {
+                new MailAddress
+                {
+                    DisplayName = "To Address",
+                    Address = "to@aspose.com"
+                }
+            }
+        }
+    },
+    MarkAsSent = true,
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+var result = await api.Client.Message.AppendAsync(request);
+
+//Result example:
+result = ;
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="AppendFile"></a>
-# AppendFile
+<a name="AppendFile"></a>
+## AppendFile
+**Descrption:** Add email message from file to specified folder in email account.             
 
+
+**Returns:** Message id.
+
+**Method call example:**
 ```csharp
-ValueTOfString AppendFile(ClientMessageAppendFileRequest request)
+var result = api.Client.Message.AppendFile(request);
 ```
 
-Add email message from file to specified folder in email account.             
+### Parameter: *request*
 
-### Return type
+**Description:** AppendFile method request.
 
-[**ValueTOfString**](ValueTOfString.md)
+**See also** parameter model documentation at [**ClientMessageAppendFileRequest**](ClientMessageAppendFileRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new ClientMessageAppendFileRequest(
-    account,
-    file,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    format=format,
-    folder=folder,
-    markAsSent=markAsSent)
+var request = new ClientMessageAppendFileRequest
+{ 
+    Account = "email.multi.account",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml")),
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml",
+    Folder = "INBOX"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account** | **string**| Email account. | 
- **file** | **System.IO.Stream**| Message file to append. | 
- **storage** | **string**| Storage name where account file located. | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
- **format** | **string**| Email file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
- **folder** | **string**| Path to folder on email server to append message to. | [optional] 
- **markAsSent** | **bool?**| Determines that appended message should be market as sent or not. | [optional] [default to true]
+</details>
+
+### Result
+
+**Description:** Message id.
+
+**Return type:** [**ValueTOfString**](ValueTOfString.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = ;
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageAppendFileRequest
+{ 
+    Account = "email.multi.account",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml")),
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml",
+    Folder = "INBOX"
+};
+
+// Call method:
+var result = api.Client.Message.AppendFile(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AppendFileAsync"></a>
-# AppendFileAsync
+## AppendFileAsync
 
-```csharp
-async Task<ValueTOfString> AppendFileAsync(ClientMessageAppendFileRequest request)
-```
-
-Add email message from file to specified folder in email account.             
+**Description:** Add email message from file to specified folder in email account.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**ValueTOfString**](ValueTOfString.md)>
+**Returns:** Message id.
 
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientMessageAppendFileRequest(
-    account,
-    file,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    format=format,
-    folder=folder,
-    markAsSent=markAsSent)
+var result = await api.Client.Message.AppendFileAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account** | **string**| Email account. | 
- **file** | **System.IO.Stream**| Message file to append. | 
- **storage** | **string**| Storage name where account file located. | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
- **format** | **string**| Email file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
- **folder** | **string**| Path to folder on email server to append message to. | [optional] 
- **markAsSent** | **bool?**| Determines that appended message should be market as sent or not. | [optional] [default to true]
+### Parameter: *request*
+
+**Description:** AppendFileAsync method request.
+
+**See also** parameter model documentation at [**ClientMessageAppendFileRequest**](ClientMessageAppendFileRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageAppendFileRequest
+{ 
+    Account = "email.multi.account",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml")),
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml",
+    Folder = "INBOX"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** Message id.
+
+**Return type:** [**ValueTOfString**](ValueTOfString.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = ;
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageAppendFileRequest
+{ 
+    Account = "email.multi.account",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml")),
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml",
+    Folder = "INBOX"
+};
+
+// Call method:
+var result = await api.Client.Message.AppendFileAsync(request);
+
+result = ;
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Delete"></a>
-# Delete
+<a name="Delete"></a>
+## Delete
 
+**Description**: Delete message.             
+
+
+**Method call example:**
 ```csharp
-void Delete(ClientMessageDeleteRequest request)
+api.Client.Message.Delete(request);
 ```
 
-Delete message.             
+### Parameter: *request*
 
-### Return type
+**Description:** Delete message request.
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientMessageDeleteRequest**](ClientMessageDeleteRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
+```csharp
+var request = new ClientMessageDeleteRequest
+{
+    Folder = "INBOX",
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageDeleteRequest
+{
+    Folder = "INBOX",
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+api.Client.Message.Delete(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteAsync"></a>
-# DeleteAsync
+## DeleteAsync
 
-```csharp
-async Task DeleteAsync(ClientMessageDeleteRequest request)
-```
-
-Delete message.             
+**Description:** Delete message.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
+**Method call example:**
+```csharp
+await api.Client.Message.DeleteAsync(request);
+```
 
-### request Parameter
+### Parameter: *request*
 
-See parameter model documentation at [ClientMessageDeleteRequest](ClientMessageDeleteRequest.md)
+**Description:** Delete message request.
+
+**See also** parameter model documentation at [**ClientMessageDeleteRequest**](ClientMessageDeleteRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageDeleteRequest
+{
+    Folder = "INBOX",
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageDeleteRequest
+{
+    Folder = "INBOX",
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+await api.Client.Message.DeleteAsync(request);
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Fetch"></a>
-# Fetch
+<a name="Fetch"></a>
+## Fetch
+**Descrption:** Fetch message from email account             
 
+
+**Returns:** MailMessageBase object that represents fetched message in requested format.
+
+**Method call example:**
 ```csharp
-MailMessageBase Fetch(ClientMessageFetchRequest request)
+var result = api.Client.Message.Fetch(request);
 ```
 
-Fetch message from email account             
+### Parameter: *request*
 
-### Return type
+**Description:** Fetch method request.
 
-[**MailMessageBase**](MailMessageBase.md)
+**See also** parameter model documentation at [**ClientMessageFetchRequest**](ClientMessageFetchRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new ClientMessageFetchRequest(
-    messageId,
-    account,
-    folder=folder,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    type=type,
-    format=format)
+var request = new ClientMessageFetchRequest
+{ 
+    MessageId = "<put your message identifier here>",
+    Account = "email.multi.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Type = "Dto",
+    Format = "Eml"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **messageId** | **string**| Message identifier | 
- **account** | **string**| Email account | 
- **folder** | **string**| Account folder to fetch from (should be specified for some protocols such as IMAP)              | [optional] 
- **storage** | **string**| Storage name where account file located. | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
- **type** | **string**| MailMessageBase type. Using this property you can fetch message in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64 | [optional] [default to 0]
- **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
+</details>
+
+### Result
+
+**Description:** MailMessageBase object that represents fetched message in requested format.
+
+**Return type:** [**MailMessageBase**](MailMessageBase.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MailMessageBase
+{
+    
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageFetchRequest
+{ 
+    MessageId = "<put your message identifier here>",
+    Account = "email.multi.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Type = "Dto",
+    Format = "Eml"
+};
+
+// Call method:
+var result = api.Client.Message.Fetch(request);
+
+// Result example:
+result = new MailMessageBase
+{
+    
+};
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FetchAsync"></a>
-# FetchAsync
+## FetchAsync
 
-```csharp
-async Task<MailMessageBase> FetchAsync(ClientMessageFetchRequest request)
-```
-
-Fetch message from email account             
+**Description:** Fetch message from email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task<[**MailMessageBase**](MailMessageBase.md)>
+**Returns:** MailMessageBase object that represents fetched message in requested format.
 
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientMessageFetchRequest(
-    messageId,
-    account,
-    folder=folder,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    type=type,
-    format=format)
+var result = await api.Client.Message.FetchAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **messageId** | **string**| Message identifier | 
- **account** | **string**| Email account | 
- **folder** | **string**| Account folder to fetch from (should be specified for some protocols such as IMAP)              | [optional] 
- **storage** | **string**| Storage name where account file located. | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
- **type** | **string**| MailMessageBase type. Using this property you can fetch message in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64 | [optional] [default to 0]
- **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
+### Parameter: *request*
+
+**Description:** FetchAsync method request.
+
+**See also** parameter model documentation at [**ClientMessageFetchRequest**](ClientMessageFetchRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageFetchRequest
+{ 
+    MessageId = "<put your message identifier here>",
+    Account = "email.multi.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Type = "Dto",
+    Format = "Eml"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** MailMessageBase object that represents fetched message in requested format.
+
+**Return type:** [**MailMessageBase**](MailMessageBase.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = new MailMessageBase
+{
+    
+};
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageFetchRequest
+{ 
+    MessageId = "<put your message identifier here>",
+    Account = "email.multi.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Type = "Dto",
+    Format = "Eml"
+};
+
+// Call method:
+var result = await api.Client.Message.FetchAsync(request);
+
+result = new MailMessageBase
+{
+    
+};
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="FetchFile"></a>
-# FetchFile
+<a name="FetchFile"></a>
+## FetchFile
+**Descrption:** Fetch message as file from email account             
 
+
+**Returns:** Email message file in requested format.
+
+**Method call example:**
 ```csharp
-Stream FetchFile(ClientMessageFetchFileRequest request)
+var result = api.Client.Message.FetchFile(request);
 ```
 
-Fetch message as file from email account             
+### Parameter: *request*
 
-### Return type
+**Description:** FetchFile method request.
 
-**Stream**
+**See also** parameter model documentation at [**ClientMessageFetchFileRequest**](ClientMessageFetchFileRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new ClientMessageFetchFileRequest(
-    messageId,
-    account,
-    folder=folder,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    format=format)
+var request = new ClientMessageFetchFileRequest
+{ 
+    MessageId = "<put your message identifier here>",
+    Account = "email.multi.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **messageId** | **string**| Message identifier | 
- **account** | **string**| Email account | 
- **folder** | **string**| Account folder to fetch from (should be specified for some protocols such as IMAP)              | [optional] 
- **storage** | **string**| Storage name where account file located. | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
- **format** | **string**| Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
+</details>
+
+### Result
+
+**Description:** Email message file in requested format.
+
+**Return type:** **Stream**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    result.CopyTo(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageFetchFileRequest
+{ 
+    MessageId = "<put your message identifier here>",
+    Account = "email.multi.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml"
+};
+
+// Call method:
+var result = api.Client.Message.FetchFile(request);
+
+// Result can be saved to file:
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    result.CopyTo(resultFileStream);
+}
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FetchFileAsync"></a>
-# FetchFileAsync
+## FetchFileAsync
 
-```csharp
-async Task<Stream> FetchFileAsync(ClientMessageFetchFileRequest request)
-```
-
-Fetch message as file from email account             
+**Description:** Fetch message as file from email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-**Task<Stream>**
+**Returns:** Email message file in requested format.
 
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientMessageFetchFileRequest(
-    messageId,
-    account,
-    folder=folder,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    format=format)
+var result = await api.Client.Message.FetchFileAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **messageId** | **string**| Message identifier | 
- **account** | **string**| Email account | 
- **folder** | **string**| Account folder to fetch from (should be specified for some protocols such as IMAP)              | [optional] 
- **storage** | **string**| Storage name where account file located. | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
- **format** | **string**| Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
+### Parameter: *request*
+
+**Description:** FetchFileAsync method request.
+
+**See also** parameter model documentation at [**ClientMessageFetchFileRequest**](ClientMessageFetchFileRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageFetchFileRequest
+{ 
+    MessageId = "<put your message identifier here>",
+    Account = "email.multi.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** Email message file in requested format.
+
+**Return type:** **Stream**
+
+<details>
+    <summary>Result can be saved to file:</summary>
+
+```csharp
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    await result.CopyToAsync(resultFileStream);
+}
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageFetchFileRequest
+{ 
+    MessageId = "<put your message identifier here>",
+    Account = "email.multi.account",
+    Folder = "INBOX",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml"
+};
+
+// Call method:
+var result = await api.Client.Message.FetchFileAsync(request);
+
+using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
+{
+    await result.CopyToAsync(resultFileStream);
+}
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="List"></a>
-# List
-
-```csharp
-MailMessageBaseList List(ClientMessageListRequest request)
-```
-
-Get messages from folder, filtered by query             
+<a name="List"></a>
+## List
+**Descrption:** Get messages from folder, filtered by query             
 
 The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3     >,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
 
-### Return type
+**Returns:** List of MailMessageBase objects that represent fetched message in requested format.
 
-[**MailMessageBaseList**](MailMessageBaseList.md)
-
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientMessageListRequest(
-    folder,
-    account,
-    queryString=queryString,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    recursive=recursive,
-    type=type,
-    format=format)
+var result = api.Client.Message.List(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folder** | **string**| A folder in email account | 
- **account** | **string**| Email account | 
- **queryString** | **string**| A MailQuery search string | [optional] 
- **storage** | **string**| Storage name where account file located | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
- **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
- **type** | **string**| MailMessageBase type. Using this property you can get messages in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64 | [optional] [default to 0]
- **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
+### Parameter: *request*
+
+**Description:** List method request.
+
+**See also** parameter model documentation at [**ClientMessageListRequest**](ClientMessageListRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageListRequest
+{ 
+    Folder = "INBOX",
+    Account = "email.multi.account",
+    QueryString = "('From' Contains '.com')",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Recursive = true,
+    Type = "Dto",
+    Format = "Eml"
+};
+```
+
+</details>
+
+### Result
+
+**Description:** List of MailMessageBase objects that represent fetched message in requested format.
+
+**Return type:** [**MailMessageBaseList**](MailMessageBaseList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = ;
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageListRequest
+{ 
+    Folder = "INBOX",
+    Account = "email.multi.account",
+    QueryString = "('From' Contains '.com')",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Recursive = true,
+    Type = "Dto",
+    Format = "Eml"
+};
+
+// Call method:
+var result = api.Client.Message.List(request);
+
+// Result example:
+result = ;
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ListAsync"></a>
-# ListAsync
+## ListAsync
 
-```csharp
-async Task<MailMessageBaseList> ListAsync(ClientMessageListRequest request)
-```
-
-Get messages from folder, filtered by query             
+**Description:** Get messages from folder, filtered by query             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
 The query string should have the following view.      The example of a simple expression:       '<Field name>' <Comparison operator> '<Field value>',  where &lt;Field Name&gt; - the name of a message field through which filtering is made, &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare message field and specified value, &lt;Field value&gt; - value to be compared with a message field.      The number of simple expressions can make a compound one, ex.:     (<Simple expression 1> & <Simple expression 2>) | <Simple expression 3     >,  where \"&amp;\" - logical-AND operator, \"|\" - logical-OR operator      At present the following values are allowed as a field name (<Field name>):  \"To\" - represents a TO field of message, \"Text\" - represents string in the header or body of the message, \"Bcc\" - represents a BCC field of message, \"Body\" - represents a string in the body of message, \"Cc\" - represents a CC field of message, \"From\" - represents a From field of message, \"Subject\" - represents a string in the subject of message, \"InternalDate\" - represents an internal date of message, \"SentDate\" - represents a sent date of message      Additionally, the following field names are allowed for IMAP-protocol:  \"Answered\" - represents an /Answered flag of message \"Seen\" - represents a /Seen flag of message \"Flagged\" - represents a /Flagged flag of message \"Draft\" - represents a /Draft flag of message \"Deleted\" - represents a Deleted/ flag of message \"Recent\" - represents a Deleted/ flag of message \"MessageSize\" - represents a size (in bytes) of message      Additionally, the following field names are allowed for Exchange:  \"IsRead\" - Indicates whether the message has been read \"HasAttachment\" - Indicates whether or not the message has attachments \"IsSubmitted\" - Indicates whether the message has been submitted to the Outbox \"ContentClass\" - represents a content class of item      Additionally, the following field names are allowed for pst/ost files:  \"MessageClass\" - Represents a message class \"ContainerClass\" - Represents a folder container class \"Importance\" - Represents a message importance \"MessageSize\" - represents a size (in bytes) of message \"FolderName\" - represents a folder name \"ContentsCount\" - represents a total number of items in the folder \"UnreadContentsCount\" - represents the number of unread items in the folder. \"Subfolders\" - Indicates whether or not the folder has subfolders \"Read\" - the message is marked as having been read \"HasAttachment\" - the message has at least one attachment \"Unsent\" - the message is still being composed \"Unmodified\" - the message has not been modified since it was first saved (if unsent) or it was delivered (if sent) \"FromMe\" - the user receiving the message was also the user who sent the message \"Resend\" - the message includes a request for a resend operation with a non-delivery report \"NotifyRead\" - the user who sent the message has requested notification when a recipient first reads it \"NotifyUnread\" - the user who sent the message has requested notification when a recipient deletes it before reading or the Message object expires \"EverRead\" - the message has been read at least once      The field value (<Field value>) can take the following values:     For text fields - any string,     For date type fields - the string of \"d-MMM-yyy\" format, ex. \"10-Feb-2009\",     For flags (fields of boolean type) - either \"True\", or \"False\"              
 
-### Return type
+**Returns:** List of MailMessageBase objects that represent fetched message in requested format.
 
-Task<[**MailMessageBaseList**](MailMessageBaseList.md)>
-
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientMessageListRequest(
-    folder,
-    account,
-    queryString=queryString,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    recursive=recursive,
-    type=type,
-    format=format)
+var result = await api.Client.Message.ListAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **folder** | **string**| A folder in email account | 
- **account** | **string**| Email account | 
- **queryString** | **string**| A MailQuery search string | [optional] 
- **storage** | **string**| Storage name where account file located | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
- **recursive** | **bool?**| Specifies that should message be searched in subfolders recursively | [optional] [default to false]
- **type** | **string**| MailMessageBase type. Using this property you can get messages in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64 | [optional] [default to 0]
- **format** | **string**| Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
+### Parameter: *request*
+
+**Description:** ListAsync method request.
+
+**See also** parameter model documentation at [**ClientMessageListRequest**](ClientMessageListRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageListRequest
+{ 
+    Folder = "INBOX",
+    Account = "email.multi.account",
+    QueryString = "('From' Contains '.com')",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Recursive = true,
+    Type = "Dto",
+    Format = "Eml"
+};
+```
+
+</details>
+
+### Result
+
+**Returns:** List of MailMessageBase objects that represent fetched message in requested format.
+
+**Return type:** [**MailMessageBaseList**](MailMessageBaseList.md)
+
+<details>
+    <summary>Result example</summary>
+
+```csharp
+result = ;
+```
+
+</details>
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageListRequest
+{ 
+    Folder = "INBOX",
+    Account = "email.multi.account",
+    QueryString = "('From' Contains '.com')",
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Recursive = true,
+    Type = "Dto",
+    Format = "Eml"
+};
+
+// Call method:
+var result = await api.Client.Message.ListAsync(request);
+
+result = ;
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Move"></a>
-# Move
+<a name="Move"></a>
+## Move
 
+**Description**: Move message to another folder.             
+
+
+**Method call example:**
 ```csharp
-void Move(ClientMessageMoveRequest request)
+api.Client.Message.Move(request);
 ```
 
-Move message to another folder.             
+### Parameter: *request*
 
-### Return type
+**Description:** Move message request.
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientMessageMoveRequest**](ClientMessageMoveRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientMessageMoveRequest](ClientMessageMoveRequest.md)
+```csharp
+var request = new ClientMessageMoveRequest
+{
+    SourceFolder = "INBOX",
+    DestinationFolder = "INBOX/SubFolder",
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageMoveRequest
+{
+    SourceFolder = "INBOX",
+    DestinationFolder = "INBOX/SubFolder",
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+api.Client.Message.Move(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MoveAsync"></a>
-# MoveAsync
+## MoveAsync
 
-```csharp
-async Task MoveAsync(ClientMessageMoveRequest request)
-```
-
-Move message to another folder.             
+**Description:** Move message to another folder.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
-
-### request Parameter
-
-See parameter model documentation at [ClientMessageMoveRequest](ClientMessageMoveRequest.md)
-
-[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="Send"></a>
-# Send
-
+**Method call example:**
 ```csharp
-void Send(ClientMessageSendRequest request)
+await api.Client.Message.MoveAsync(request);
 ```
 
-Send an email specified by model in request.             
+### Parameter: *request*
 
-### Return type
+**Description:** Move message request.
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientMessageMoveRequest**](ClientMessageMoveRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientMessageSendRequest](ClientMessageSendRequest.md)
+```csharp
+var request = new ClientMessageMoveRequest
+{
+    SourceFolder = "INBOX",
+    DestinationFolder = "INBOX/SubFolder",
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageMoveRequest
+{
+    SourceFolder = "INBOX",
+    DestinationFolder = "INBOX/SubFolder",
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+await api.Client.Message.MoveAsync(request);
+
+```
+
+</details>
+
+[[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
+<a name="Send"></a>
+## Send
+
+**Description**: Send an email specified by model in request.             
+
+
+**Method call example:**
+```csharp
+api.Client.Message.Send(request);
+```
+
+### Parameter: *request*
+
+**Description:** Send email request.
+
+**See also** parameter model documentation at [**ClientMessageSendRequest**](ClientMessageSendRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageSendRequest
+{
+    Message = new MailMessageDto
+    {
+        Value = new EmailDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "some-file.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            Body = "Some body",
+            BodyType = "Html",
+            DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+            {
+                "OnSuccess",
+                "Delay"
+            },
+            From = new MailAddress
+            {
+                DisplayName = "From Address",
+                Address = "from@aspose.com"
+            },
+            HtmlBody = "<b>Some body</b>",
+            IsBodyHtml = true,
+            IsDraft = true,
+            Subject = "Re: Some subject",
+            To = new List<MailAddress>
+            {
+                new MailAddress
+                {
+                    DisplayName = "To Address",
+                    Address = "to@aspose.com"
+                }
+            }
+        }
+    },
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageSendRequest
+{
+    Message = new MailMessageDto
+    {
+        Value = new EmailDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "some-file.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            Body = "Some body",
+            BodyType = "Html",
+            DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+            {
+                "OnSuccess",
+                "Delay"
+            },
+            From = new MailAddress
+            {
+                DisplayName = "From Address",
+                Address = "from@aspose.com"
+            },
+            HtmlBody = "<b>Some body</b>",
+            IsBodyHtml = true,
+            IsDraft = true,
+            Subject = "Re: Some subject",
+            To = new List<MailAddress>
+            {
+                new MailAddress
+                {
+                    DisplayName = "To Address",
+                    Address = "to@aspose.com"
+                }
+            }
+        }
+    },
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+api.Client.Message.Send(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SendAsync"></a>
-# SendAsync
+## SendAsync
 
-```csharp
-async Task SendAsync(ClientMessageSendRequest request)
-```
-
-Send an email specified by model in request.             
+**Description:** Send an email specified by model in request.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
+**Method call example:**
+```csharp
+await api.Client.Message.SendAsync(request);
+```
 
-### request Parameter
+### Parameter: *request*
 
-See parameter model documentation at [ClientMessageSendRequest](ClientMessageSendRequest.md)
+**Description:** Send email request.
+
+**See also** parameter model documentation at [**ClientMessageSendRequest**](ClientMessageSendRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageSendRequest
+{
+    Message = new MailMessageDto
+    {
+        Value = new EmailDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "some-file.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            Body = "Some body",
+            BodyType = "Html",
+            DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+            {
+                "OnSuccess",
+                "Delay"
+            },
+            From = new MailAddress
+            {
+                DisplayName = "From Address",
+                Address = "from@aspose.com"
+            },
+            HtmlBody = "<b>Some body</b>",
+            IsBodyHtml = true,
+            IsDraft = true,
+            Subject = "Re: Some subject",
+            To = new List<MailAddress>
+            {
+                new MailAddress
+                {
+                    DisplayName = "To Address",
+                    Address = "to@aspose.com"
+                }
+            }
+        }
+    },
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageSendRequest
+{
+    Message = new MailMessageDto
+    {
+        Value = new EmailDto
+        {
+            Attachments = new List<Attachment>
+            {
+                new Attachment
+                {
+                    Name = "some-file.txt",
+                    Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
+                }
+            },
+            Body = "Some body",
+            BodyType = "Html",
+            DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
+            {
+                "OnSuccess",
+                "Delay"
+            },
+            From = new MailAddress
+            {
+                DisplayName = "From Address",
+                Address = "from@aspose.com"
+            },
+            HtmlBody = "<b>Some body</b>",
+            IsBodyHtml = true,
+            IsDraft = true,
+            Subject = "Re: Some subject",
+            To = new List<MailAddress>
+            {
+                new MailAddress
+                {
+                    DisplayName = "To Address",
+                    Address = "to@aspose.com"
+                }
+            }
+        }
+    },
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+await api.Client.Message.SendAsync(request);
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="SendFile"></a>
-# SendFile
+<a name="SendFile"></a>
+## SendFile
+**Descrption:** Send an email file.             
 
+
+**Method call example:**
 ```csharp
-void SendFile(ClientMessageSendFileRequest request)
+api.Client.Message.SendFile(request);
 ```
 
-Send an email file.             
+### Parameter: *request*
 
-### Return type
+**Description:** SendFile method request.
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientMessageSendFileRequest**](ClientMessageSendFileRequest.md).
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
+
 ```csharp
-new ClientMessageSendFileRequest(
-    account,
-    file,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    format=format)
+var request = new ClientMessageSendFileRequest
+{ 
+    Account = "email.multi.account",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml")),
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml"
+};
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account** | **string**| Email account | 
- **file** | **System.IO.Stream**| File to send | 
- **storage** | **string**| Storage name where account file located. | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
- **format** | **string**| Email file format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
+</details>
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageSendFileRequest
+{ 
+    Account = "email.multi.account",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml")),
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml"
+};
+
+// Call method:
+api.Client.Message.SendFile(request);
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SendFileAsync"></a>
-# SendFileAsync
+## SendFileAsync
 
-```csharp
-async Task SendFileAsync(ClientMessageSendFileRequest request)
-```
-
-Send an email file.             
+**Description:** Send an email file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
-
-### request Parameter
+**Method call example:**
 ```csharp
-new ClientMessageSendFileRequest(
-    account,
-    file,
-    storage=storage,
-    accountStorageFolder=accountStorageFolder,
-    format=format)
+await api.Client.Message.SendFileAsync(request);
 ```
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **account** | **string**| Email account | 
- **file** | **System.IO.Stream**| File to send | 
- **storage** | **string**| Storage name where account file located. | [optional] 
- **accountStorageFolder** | **string**| Folder in storage where account file located. | [optional] 
- **format** | **string**| Email file format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | [optional] [default to 0]
+### Parameter: *request*
+
+**Description:** SendFileAsync method request.
+
+**See also** parameter model documentation at [**ClientMessageSendFileRequest**](ClientMessageSendFileRequest.md).
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageSendFileRequest
+{ 
+    Account = "email.multi.account",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml")),
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml"
+};
+```
+
+</details>
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageSendFileRequest
+{ 
+    Account = "email.multi.account",
+    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml")),
+    Storage = "First Storage",
+    AccountStorageFolder = "email/account/location/on/storage",
+    Format = "Eml"
+};
+
+// Call method:
+await api.Client.Message.SendFileAsync(request);
+
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-        <a name="SetIsRead"></a>
-# SetIsRead
+<a name="SetIsRead"></a>
+## SetIsRead
 
+**Description**: Mark message as read or unread.             
+
+
+**Method call example:**
 ```csharp
-void SetIsRead(ClientMessageSetIsReadRequest request)
+api.Client.Message.SetIsRead(request);
 ```
 
-Mark message as read or unread.             
+### Parameter: *request*
 
-### Return type
+**Description:** Delete message request.
 
-void (empty response body)
+**See also** parameter model documentation at [**ClientMessageSetIsReadRequest**](ClientMessageSetIsReadRequest.md)
 
-### request Parameter
+<details>
+    <summary>Parameter initialization example:</summary>
 
-See parameter model documentation at [ClientMessageSetIsReadRequest](ClientMessageSetIsReadRequest.md)
+```csharp
+var request = new ClientMessageSetIsReadRequest
+{
+    IsRead = true,
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** void (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageSetIsReadRequest
+{
+    IsRead = true,
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+api.Client.Message.SetIsRead(request);
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SetIsReadAsync"></a>
-# SetIsReadAsync
+## SetIsReadAsync
 
-```csharp
-async Task SetIsReadAsync(ClientMessageSetIsReadRequest request)
-```
-
-Mark message as read or unread.             
+**Description:** Mark message as read or unread.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
-### Return type
 
-Task (empty response body)
+**Method call example:**
+```csharp
+await api.Client.Message.SetIsReadAsync(request);
+```
 
-### request Parameter
+### Parameter: *request*
 
-See parameter model documentation at [ClientMessageSetIsReadRequest](ClientMessageSetIsReadRequest.md)
+**Description:** Delete message request.
+
+**See also** parameter model documentation at [**ClientMessageSetIsReadRequest**](ClientMessageSetIsReadRequest.md)
+
+<details>
+    <summary>Parameter initialization example:</summary>
+
+```csharp
+var request = new ClientMessageSetIsReadRequest
+{
+    IsRead = true,
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+```
+
+</details>
+
+
+### Result
+
+**Return type:** Task (empty response body)
+
+
+### Complete example:
+
+<details>
+    <summary>Method call example:</summary>
+
+```csharp
+var api = new EmailCloud(appKey, appSid);
+
+// Prepare parameters:
+var request = new ClientMessageSetIsReadRequest
+{
+    IsRead = true,
+    MessageId = "5",
+    AccountLocation = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    }
+};
+
+// Call method:
+await api.Client.Message.SetIsReadAsync(request);
+
+```
+
+</details>
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

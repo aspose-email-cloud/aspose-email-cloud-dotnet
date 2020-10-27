@@ -1,4 +1,6 @@
-# Model.EmailClientAccount
+# EmailClientAccount
+A universal email client account             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,7 +12,23 @@ Name | Type | Description | Notes
 **CacheFile** | [**StorageFileLocation**](StorageFileLocation.md) | File with messages cache. Used to provide extra functions, which are not supported by account              | [optional] 
 
 
+## Example
+```csharp
+var emailClientAccount = new EmailClientAccount
+{
+    Host = "smtp.example.com",
+    Port = 465,
+    SecurityOptions = "SSLAuto",
+    ProtocolType = "SMTP",
+    Credentials = new EmailClientAccountOauthCredentials
+    {
+        ClientId = "clientId",
+        ClientSecret = "clientSecret",
+        RefreshToken = "refreshToken",
+        Login = "example@example.com"
+    }
+};
+```
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
-
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

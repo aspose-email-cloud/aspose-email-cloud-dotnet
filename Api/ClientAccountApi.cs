@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-                    
+
         /// <summary>
         /// Get email client account from storage.              
         /// </summary>
@@ -94,7 +94,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => Get(request));
         #endif
 
-                    
+
         /// <summary>
         /// Get email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.              
         /// </summary>
@@ -134,7 +134,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => GetMulti(request));
         #endif
 
-                    
+
         /// <summary>
         /// Create/update email client account file (*.account) with credentials              
         /// </summary>
@@ -170,7 +170,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         ));
         #endif
 
-                    
+
         /// <summary>
         /// Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.              
         /// </summary>

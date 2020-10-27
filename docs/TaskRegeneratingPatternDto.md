@@ -1,4 +1,6 @@
-# Model.TaskRegeneratingPatternDto
+# TaskRegeneratingPatternDto
+Represents the regenerating recurrence pattern that specifies how many days, weeks, months or years after the completion of the current task the next occurrence will be due.             
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -8,6 +10,16 @@ Name | Type | Description | Notes
 
 See: [RecurrencePatternDto](RecurrencePatternDto.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var taskRegeneratingPatternDto = new TaskRegeneratingPatternDto
+{
+    Interval = 1,
+    Occurs = 2,
+    EndDate = DateTime.Today,
+    WeekStart = "Sunday"
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

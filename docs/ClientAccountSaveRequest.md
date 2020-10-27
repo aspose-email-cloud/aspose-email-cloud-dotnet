@@ -1,4 +1,6 @@
-# Model.ClientAccountSaveRequest
+# ClientAccountSaveRequest
+Email client account save request             
+
 ## Properties
 Class has no properties
 
@@ -6,6 +8,32 @@ Class has no properties
 
 See: [StorageModelOfEmailClientAccount](StorageModelOfEmailClientAccount.md)
 
-[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+## Example
+```csharp
+var clientAccountSaveRequest = new ClientAccountSaveRequest
+{
+    StorageFile = new StorageFileLocation
+    {
+        FileName = "email.account",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
+    },
+    Value = new EmailClientAccount
+    {
+        Host = "smtp.example.com",
+        Port = 465,
+        SecurityOptions = "SSLAuto",
+        ProtocolType = "SMTP",
+        Credentials = new EmailClientAccountOauthCredentials
+        {
+            ClientId = "clientId",
+            ClientSecret = "clientSecret",
+            RefreshToken = "refreshToken",
+            Login = "example@example.com"
+        }
+    }
+};
+```
 
+[[Back to Model list]](Models.md) [[Back to README]](README.md)
 
