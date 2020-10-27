@@ -32,7 +32,6 @@ Aspose.Email Cloud 20.10.0 comes with SDK improvements:
 
 See [Release notes](https://docs.aspose.cloud/email/aspose-email-cloud-20-10-release-notes/).
 
-
 ## How to use the SDK?
 The complete source code is available in the [GIT repository](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/tree/master/Api).
 
