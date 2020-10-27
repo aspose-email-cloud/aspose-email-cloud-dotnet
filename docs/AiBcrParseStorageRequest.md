@@ -1,6 +1,4 @@
-# AiBcrParseStorageRequest
-Parse business card images from Storage request             
-
+# Model.AiBcrParseStorageRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,30 +7,7 @@ Name | Type | Description | Notes
 **Options** | [**AiBcrOptions**](AiBcrOptions.md) | Recognition options.              | [optional] 
 
 
-## Example
-```csharp
-var aiBcrParseStorageRequest = new AiBcrParseStorageRequest
-{
-    OutFolder = new StorageFolderLocation
-    {
-        Storage = "First Storage",
-        FolderPath = "VCard/files/produced/by/parser/will/be/placed/here"
-    },
-    Images = new List<AiBcrImageStorageFile>
-    {
-        new AiBcrImageStorageFile
-        {
-            File = new StorageFileLocation
-            {
-                FileName = "VCardScanImage.jpg",
-                Storage = "First Storage",
-                FolderPath = "image/location/on/storage"
-            },
-            IsSingle = true
-        }
-    }
-};
-```
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

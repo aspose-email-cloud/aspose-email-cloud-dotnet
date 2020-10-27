@@ -1,685 +1,313 @@
-# FileApi (EmailCloud.CloudStorage.File)
+# Aspose.Email.Cloud.Sdk.FileApi
 
-File operations controller
-
-<a name="CopyFile"></a>
-## CopyFile
-**Descrption:** Copy file
-
-
-**Method call example:**
-```csharp
-api.CloudStorage.File.CopyFile(request);
-```
-
-### Parameter: *request*
-
-**Description:** CopyFile method request.
-
-**See also** parameter model documentation at [**CopyFileRequest**](CopyFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="CopyFile"></a>
+# CopyFile
 
 ```csharp
-var request = new CopyFileRequest
-{ 
-    SrcPath = "/storage/path/to/source/file.ext",
-    DestPath = "/storage/path/to/destination/file.ext",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
+void CopyFile(CopyFileRequest request)
 ```
 
-</details>
+Copy file
 
-### Result
+### Return type
 
-**Return type:** void (empty response body)
+void (empty response body)
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
+### request Parameter
 ```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new CopyFileRequest
-{ 
-    SrcPath = "/storage/path/to/source/file.ext",
-    DestPath = "/storage/path/to/destination/file.ext",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-
-// Call method:
-api.CloudStorage.File.CopyFile(request);
-
+new CopyFileRequest(
+    srcPath,
+    destPath,
+    srcStorageName=srcStorageName,
+    destStorageName=destStorageName,
+    versionId=versionId)
 ```
 
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **srcPath** | **string**| Source file path e.g. &#39;/folder/file.ext&#39; | 
+ **destPath** | **string**| Destination file path | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
+ **versionId** | **string**| File version ID to copy | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CopyFileAsync"></a>
-## CopyFileAsync
+# CopyFileAsync
 
-**Description:** Copy file
+```csharp
+async Task CopyFileAsync(CopyFileRequest request)
+```
+
+Copy file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
+Task (empty response body)
+
+### request Parameter
 ```csharp
-await api.CloudStorage.File.CopyFileAsync(request);
+new CopyFileRequest(
+    srcPath,
+    destPath,
+    srcStorageName=srcStorageName,
+    destStorageName=destStorageName,
+    versionId=versionId)
 ```
 
-### Parameter: *request*
-
-**Description:** CopyFileAsync method request.
-
-**See also** parameter model documentation at [**CopyFileRequest**](CopyFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new CopyFileRequest
-{ 
-    SrcPath = "/storage/path/to/source/file.ext",
-    DestPath = "/storage/path/to/destination/file.ext",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Return type:** void (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new CopyFileRequest
-{ 
-    SrcPath = "/storage/path/to/source/file.ext",
-    DestPath = "/storage/path/to/destination/file.ext",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-
-// Call method:
-await api.CloudStorage.File.CopyFileAsync(request);
-
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **srcPath** | **string**| Source file path e.g. &#39;/folder/file.ext&#39; | 
+ **destPath** | **string**| Destination file path | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
+ **versionId** | **string**| File version ID to copy | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="DeleteFile"></a>
-## DeleteFile
-**Descrption:** Delete file
-
-
-**Method call example:**
-```csharp
-api.CloudStorage.File.DeleteFile(request);
-```
-
-### Parameter: *request*
-
-**Description:** DeleteFile method request.
-
-**See also** parameter model documentation at [**DeleteFileRequest**](DeleteFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="DeleteFile"></a>
+# DeleteFile
 
 ```csharp
-var request = new DeleteFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage"
-};
+void DeleteFile(DeleteFileRequest request)
 ```
 
-</details>
+Delete file
 
-### Result
+### Return type
 
-**Return type:** void (empty response body)
+void (empty response body)
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
+### request Parameter
 ```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new DeleteFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage"
-};
-
-// Call method:
-api.CloudStorage.File.DeleteFile(request);
-
+new DeleteFileRequest(
+    path,
+    storageName=storageName,
+    versionId=versionId)
 ```
 
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID to delete | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteFileAsync"></a>
-## DeleteFileAsync
+# DeleteFileAsync
 
-**Description:** Delete file
+```csharp
+async Task DeleteFileAsync(DeleteFileRequest request)
+```
+
+Delete file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
+Task (empty response body)
+
+### request Parameter
 ```csharp
-await api.CloudStorage.File.DeleteFileAsync(request);
+new DeleteFileRequest(
+    path,
+    storageName=storageName,
+    versionId=versionId)
 ```
 
-### Parameter: *request*
-
-**Description:** DeleteFileAsync method request.
-
-**See also** parameter model documentation at [**DeleteFileRequest**](DeleteFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new DeleteFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Return type:** void (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new DeleteFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage"
-};
-
-// Call method:
-await api.CloudStorage.File.DeleteFileAsync(request);
-
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID to delete | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="DownloadFile"></a>
-## DownloadFile
-**Descrption:** Download file
-
-
-**Returns:** The raw data of the file.
-
-**Method call example:**
-```csharp
-var result = api.CloudStorage.File.DownloadFile(request);
-```
-
-### Parameter: *request*
-
-**Description:** DownloadFile method request.
-
-**See also** parameter model documentation at [**DownloadFileRequest**](DownloadFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="DownloadFile"></a>
+# DownloadFile
 
 ```csharp
-var request = new DownloadFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage"
-};
+Stream DownloadFile(DownloadFileRequest request)
 ```
 
-</details>
+Download file
 
-### Result
+### Return type
 
-**Description:** The raw data of the file.
+**Stream**
 
-**Return type:** **Stream**
-
-<details>
-    <summary>Result can be saved to file:</summary>
-
+### request Parameter
 ```csharp
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    result.CopyTo(resultFileStream);
-}
+new DownloadFileRequest(
+    path,
+    storageName=storageName,
+    versionId=versionId)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new DownloadFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage"
-};
-
-// Call method:
-var result = api.CloudStorage.File.DownloadFile(request);
-
-// Result can be saved to file:
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    result.CopyTo(resultFileStream);
-}
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID to download | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DownloadFileAsync"></a>
-## DownloadFileAsync
+# DownloadFileAsync
 
-**Description:** Download file
+```csharp
+async Task<Stream> DownloadFileAsync(DownloadFileRequest request)
+```
+
+Download file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** The raw data of the file.
+**Task<Stream>**
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.CloudStorage.File.DownloadFileAsync(request);
+new DownloadFileRequest(
+    path,
+    storageName=storageName,
+    versionId=versionId)
 ```
 
-### Parameter: *request*
-
-**Description:** DownloadFileAsync method request.
-
-**See also** parameter model documentation at [**DownloadFileRequest**](DownloadFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new DownloadFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** The raw data of the file.
-
-**Return type:** **Stream**
-
-<details>
-    <summary>Result can be saved to file:</summary>
-
-```csharp
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    await result.CopyToAsync(resultFileStream);
-}
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new DownloadFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    StorageName = "First Storage"
-};
-
-// Call method:
-var result = await api.CloudStorage.File.DownloadFileAsync(request);
-
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    await result.CopyToAsync(resultFileStream);
-}
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| File path e.g. &#39;/folder/file.ext&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **versionId** | **string**| File version ID to download | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="MoveFile"></a>
-## MoveFile
-**Descrption:** Move file
-
-
-**Method call example:**
-```csharp
-api.CloudStorage.File.MoveFile(request);
-```
-
-### Parameter: *request*
-
-**Description:** MoveFile method request.
-
-**See also** parameter model documentation at [**MoveFileRequest**](MoveFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="MoveFile"></a>
+# MoveFile
 
 ```csharp
-var request = new MoveFileRequest
-{ 
-    SrcPath = "/storage/path/to/source/file.ext",
-    DestPath = "/storage/path/to/destination/file.ext",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
+void MoveFile(MoveFileRequest request)
 ```
 
-</details>
+Move file
 
-### Result
+### Return type
 
-**Return type:** void (empty response body)
+void (empty response body)
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
+### request Parameter
 ```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new MoveFileRequest
-{ 
-    SrcPath = "/storage/path/to/source/file.ext",
-    DestPath = "/storage/path/to/destination/file.ext",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-
-// Call method:
-api.CloudStorage.File.MoveFile(request);
-
+new MoveFileRequest(
+    srcPath,
+    destPath,
+    srcStorageName=srcStorageName,
+    destStorageName=destStorageName,
+    versionId=versionId)
 ```
 
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **srcPath** | **string**| Source file path e.g. &#39;/src.ext&#39; | 
+ **destPath** | **string**| Destination file path e.g. &#39;/dest.ext&#39; | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
+ **versionId** | **string**| File version ID to move | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MoveFileAsync"></a>
-## MoveFileAsync
+# MoveFileAsync
 
-**Description:** Move file
+```csharp
+async Task MoveFileAsync(MoveFileRequest request)
+```
+
+Move file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
+Task (empty response body)
+
+### request Parameter
 ```csharp
-await api.CloudStorage.File.MoveFileAsync(request);
+new MoveFileRequest(
+    srcPath,
+    destPath,
+    srcStorageName=srcStorageName,
+    destStorageName=destStorageName,
+    versionId=versionId)
 ```
 
-### Parameter: *request*
-
-**Description:** MoveFileAsync method request.
-
-**See also** parameter model documentation at [**MoveFileRequest**](MoveFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new MoveFileRequest
-{ 
-    SrcPath = "/storage/path/to/source/file.ext",
-    DestPath = "/storage/path/to/destination/file.ext",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Return type:** void (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new MoveFileRequest
-{ 
-    SrcPath = "/storage/path/to/source/file.ext",
-    DestPath = "/storage/path/to/destination/file.ext",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-
-// Call method:
-await api.CloudStorage.File.MoveFileAsync(request);
-
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **srcPath** | **string**| Source file path e.g. &#39;/src.ext&#39; | 
+ **destPath** | **string**| Destination file path e.g. &#39;/dest.ext&#39; | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
+ **versionId** | **string**| File version ID to move | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="UploadFile"></a>
-## UploadFile
-**Descrption:** Upload file
-
-
-**Returns:** Empty error list if the upload is successful.
-
-**Method call example:**
-```csharp
-var result = api.CloudStorage.File.UploadFile(request);
-```
-
-### Parameter: *request*
-
-**Description:** UploadFile method request.
-
-**See also** parameter model documentation at [**UploadFileRequest**](UploadFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="UploadFile"></a>
+# UploadFile
 
 ```csharp
-var request = new UploadFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    File = new MemoryStream(File.ReadAllBytes("/local/file/system/path/to/file.ext")),
-    StorageName = "First Storage"
-};
+FilesUploadResult UploadFile(UploadFileRequest request)
 ```
 
-</details>
+Upload file
 
-### Result
+### Return type
 
-**Description:** Empty error list if the upload is successful.
+[**FilesUploadResult**](FilesUploadResult.md)
 
-**Return type:** [**FilesUploadResult**](FilesUploadResult.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = ;
+new UploadFileRequest(
+    path,
+    file,
+    storageName=storageName)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new UploadFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    File = new MemoryStream(File.ReadAllBytes("/local/file/system/path/to/file.ext")),
-    StorageName = "First Storage"
-};
-
-// Call method:
-var result = api.CloudStorage.File.UploadFile(request);
-
-// Result example:
-result = ;
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| Path where to upload including filename and extension e.g. /file.ext or /Folder 1/file.ext             If the content is multipart and path does not contains the file name it tries to get them from filename parameter             from Content-Disposition header.              | 
+ **file** | **System.IO.Stream**| File to upload | 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="UploadFileAsync"></a>
-## UploadFileAsync
+# UploadFileAsync
 
-**Description:** Upload file
+```csharp
+async Task<FilesUploadResult> UploadFileAsync(UploadFileRequest request)
+```
+
+Upload file
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Empty error list if the upload is successful.
+Task<[**FilesUploadResult**](FilesUploadResult.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.CloudStorage.File.UploadFileAsync(request);
+new UploadFileRequest(
+    path,
+    file,
+    storageName=storageName)
 ```
 
-### Parameter: *request*
-
-**Description:** UploadFileAsync method request.
-
-**See also** parameter model documentation at [**UploadFileRequest**](UploadFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new UploadFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    File = new MemoryStream(File.ReadAllBytes("/local/file/system/path/to/file.ext")),
-    StorageName = "First Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Empty error list if the upload is successful.
-
-**Return type:** [**FilesUploadResult**](FilesUploadResult.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = ;
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new UploadFileRequest
-{ 
-    Path = "/storage/path/to/file.ext",
-    File = new MemoryStream(File.ReadAllBytes("/local/file/system/path/to/file.ext")),
-    StorageName = "First Storage"
-};
-
-// Call method:
-var result = await api.CloudStorage.File.UploadFileAsync(request);
-
-result = ;
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| Path where to upload including filename and extension e.g. /file.ext or /Folder 1/file.ext             If the content is multipart and path does not contains the file name it tries to get them from filename parameter             from Content-Disposition header.              | 
+ **file** | **System.IO.Stream**| File to upload | 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

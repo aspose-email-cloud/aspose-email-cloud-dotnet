@@ -1,6 +1,4 @@
-# ObjectExist
-Object exists
-
+# Model.ObjectExist
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -8,13 +6,7 @@ Name | Type | Description | Notes
 **IsFolder** | **bool?** | True if it is a folder, false if it is a file. | 
 
 
-## Example
-```csharp
-var objectExist = new ObjectExist
-{
-    Exists = true
-};
-```
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

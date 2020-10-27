@@ -1,6 +1,4 @@
-# LinkedResource
-Represents an embedded resource in a message.             
-
+# Model.LinkedResource
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,5 +8,6 @@ Name | Type | Description | Notes
 
 See: [AttachmentBase](AttachmentBase.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

@@ -1,6 +1,4 @@
-# AiNameMatchParsedRequest
-Two parsed names to match request             
-
+# Model.AiNameMatchParsedRequest
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,5 +8,6 @@ Name | Type | Description | Notes
 
 See: [AiNameParsedRequest](AiNameParsedRequest.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

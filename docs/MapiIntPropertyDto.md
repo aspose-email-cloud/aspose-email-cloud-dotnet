@@ -1,6 +1,4 @@
-# MapiIntPropertyDto
-Mapi property with Integer value             
-
+# Model.MapiIntPropertyDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,5 +8,6 @@ Name | Type | Description | Notes
 
 See: [MapiPropertyDto](MapiPropertyDto.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

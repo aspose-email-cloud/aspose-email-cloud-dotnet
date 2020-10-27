@@ -1,6 +1,4 @@
-# MapiContactEventPropertySetDto
-Specify events associated with a contact.             
-
+# Model.MapiContactEventPropertySetDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -8,5 +6,7 @@ Name | Type | Description | Notes
 **WeddingAnniversary** | **DateTime?** | Specifies the wedding anniversary of the contact.              | 
 
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

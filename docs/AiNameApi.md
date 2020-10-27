@@ -1,2398 +1,663 @@
-# AiNameApi (EmailCloud.Ai.Name)
+# Aspose.Email.Cloud.Sdk.AiNameApi
 
-AI Name operations.
-
-<a name="Complete"></a>
-## Complete
-**Descrption:** The call proposes k most probable names for given starting characters.             
-
-
-**Returns:** List of name variations.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.Complete(request);
-```
-
-### Parameter: *request*
-
-**Description:** Complete method request.
-
-**See also** parameter model documentation at [**AiNameCompleteRequest**](AiNameCompleteRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Complete"></a>
+# Complete
 
 ```csharp
-var request = new AiNameCompleteRequest
-{ 
-    Name = "Dav"
-};
+AiNameWeightedVariants Complete(AiNameCompleteRequest request)
 ```
 
-</details>
+The call proposes k most probable names for given starting characters.             
 
-### Result
+### Return type
 
-**Description:** List of name variations.
+[**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
-**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
+new AiNameCompleteRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameCompleteRequest
-{ 
-    Name = "Dav"
-};
-
-// Call method:
-var result = api.Ai.Name.Complete(request);
-
-// Result example:
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to complete. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CompleteAsync"></a>
-## CompleteAsync
+# CompleteAsync
 
-**Description:** The call proposes k most probable names for given starting characters.             
+```csharp
+async Task<AiNameWeightedVariants> CompleteAsync(AiNameCompleteRequest request)
+```
+
+The call proposes k most probable names for given starting characters.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** List of name variations.
+Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Ai.Name.CompleteAsync(request);
+new AiNameCompleteRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-### Parameter: *request*
-
-**Description:** CompleteAsync method request.
-
-**See also** parameter model documentation at [**AiNameCompleteRequest**](AiNameCompleteRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameCompleteRequest
-{ 
-    Name = "Dav"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** List of name variations.
-
-**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameCompleteRequest
-{ 
-    Name = "Dav"
-};
-
-// Call method:
-var result = await api.Ai.Name.CompleteAsync(request);
-
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to complete. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="Expand"></a>
-## Expand
-**Descrption:** Expands a person's name into a list of possible alternatives using options for expanding instructions.             
-
-
-**Returns:** List of name variations.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.Expand(request);
-```
-
-### Parameter: *request*
-
-**Description:** Expand method request.
-
-**See also** parameter model documentation at [**AiNameExpandRequest**](AiNameExpandRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Expand"></a>
+# Expand
 
 ```csharp
-var request = new AiNameExpandRequest
-{ 
-    Name = "John Cane"
-};
+AiNameWeightedVariants Expand(AiNameExpandRequest request)
 ```
 
-</details>
+Expands a person's name into a list of possible alternatives using options for expanding instructions.             
 
-### Result
+### Return type
 
-**Description:** List of name variations.
+[**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
-**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
+new AiNameExpandRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameExpandRequest
-{ 
-    Name = "John Cane"
-};
-
-// Call method:
-var result = api.Ai.Name.Expand(request);
-
-// Result example:
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to expand. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ExpandAsync"></a>
-## ExpandAsync
+# ExpandAsync
 
-**Description:** Expands a person's name into a list of possible alternatives using options for expanding instructions.             
+```csharp
+async Task<AiNameWeightedVariants> ExpandAsync(AiNameExpandRequest request)
+```
+
+Expands a person's name into a list of possible alternatives using options for expanding instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** List of name variations.
+Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Ai.Name.ExpandAsync(request);
+new AiNameExpandRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-### Parameter: *request*
-
-**Description:** ExpandAsync method request.
-
-**See also** parameter model documentation at [**AiNameExpandRequest**](AiNameExpandRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameExpandRequest
-{ 
-    Name = "John Cane"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** List of name variations.
-
-**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameExpandRequest
-{ 
-    Name = "John Cane"
-};
-
-// Call method:
-var result = await api.Ai.Name.ExpandAsync(request);
-
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to expand. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="ExpandParsed"></a>
-## ExpandParsed
-
-**Description**: Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
-
-
-**Returns:** List of name variations.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.ExpandParsed(request);
-```
-
-### Parameter: *request*
-
-**Description:** Parsed name with options.
-
-**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="ExpandParsed"></a>
+# ExpandParsed
 
 ```csharp
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
+AiNameWeightedVariants ExpandParsed(AiNameParsedRequest request)
 ```
 
-</details>
+Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
 
+### Return type
 
-### Result
+[**AiNameWeightedVariants**](AiNameWeightedVariants.md)
 
-**Description:** List of name variations.
+### request Parameter
 
-**Return type:** [**AiNameWeightedVariants**](AiNameWeightedVariants.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-
-// Call method:
-var result = api.Ai.Name.ExpandParsed(request);
-
-// Result example:
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-```
-
-</details>
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ExpandParsedAsync"></a>
-## ExpandParsedAsync
+# ExpandParsedAsync
 
-**Description:** Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
+```csharp
+async Task<AiNameWeightedVariants> ExpandParsedAsync(AiNameParsedRequest request)
+```
+
+Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** List of name variations.
+Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
 
-**Method call example:**
-```csharp
-var result = await api.Ai.Name.ExpandParsedAsync(request);
-```
+### request Parameter
 
-### Parameter: *request*
-
-**Description:** Parsed name with options.
-
-**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-```
-
-</details>
-
-
-### Result
-
-**Description:** List of name variations.
-
-**Return type:** Task<[**AiNameWeightedVariants**](AiNameWeightedVariants.md)>
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-
-// Call method:
-var result = await api.Ai.Name.ExpandParsedAsync(request);
-
-//Result example:
-result = new AiNameWeightedVariants
-{
-    Names = new List<AiNameWeighted>
-    {
-        new AiNameWeighted
-        {
-            Name = "J. Cane",
-            Score = 1
-        },
-        new AiNameWeighted
-        {
-            Name = "Mr. Cane",
-            Score = 0.75
-        }
-    }
-};
-
-```
-
-</details>
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="Format"></a>
-## Format
-**Descrption:** Formats a person's name in correct case and name order using options for formatting instructions.             
-
-
-**Returns:** Formatted name.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.Format(request);
-```
-
-### Parameter: *request*
-
-**Description:** Format method request.
-
-**See also** parameter model documentation at [**AiNameFormatRequest**](AiNameFormatRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Format"></a>
+# Format
 
 ```csharp
-var request = new AiNameFormatRequest
-{ 
-    Name = "Mr. John Michael Cane",
-    Format = "%t%L%f%m"
-};
+AiNameFormatted Format(AiNameFormatRequest request)
 ```
 
-</details>
+Formats a person's name in correct case and name order using options for formatting instructions.             
 
-### Result
+### Return type
 
-**Description:** Formatted name.
+[**AiNameFormatted**](AiNameFormatted.md)
 
-**Return type:** [**AiNameFormatted**](AiNameFormatted.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = new AiNameFormatted
-{
-    Name = "Mr. Cane J. M.",
-    Comments = "format: %t%L%f%m; source: parsed format"
-};
+new AiNameFormatRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    format=format,
+    style=style)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameFormatRequest
-{ 
-    Name = "Mr. John Michael Cane",
-    Format = "%t%L%f%m"
-};
-
-// Call method:
-var result = api.Ai.Name.Format(request);
-
-// Result example:
-result = new AiNameFormatted
-{
-    Name = "Mr. Cane J. M.",
-    Comments = "format: %t%L%f%m; source: parsed format"
-};
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to format. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **format** | **string**| Format of the name. Predefined format can be used by ID, or custom format can be specified. Predefined formats:      /format/default/ (&#x3D; &#39;%t%F%m%N%L%p&#39;)     /format/FN+LN/ (&#x3D; &#39;%F%L&#39;)     /format/title+FN+LN/ (&#x3D; &#39;%t%F%L&#39;)     /format/FN+MN+LN/ (&#x3D; &#39;%F%M%N%L&#39;)     /format/title+FN+MN+LN/ (&#x3D; &#39;%t%F%M%N%L&#39;)     /format/FN+MI+LN/ (&#x3D; &#39;%F%m%N%L&#39;)     /format/title+FN+MI+LN/ (&#x3D; &#39;%t%F%m%N%L&#39;)     /format/LN/ (&#x3D; &#39;%L&#39;)     /format/title+LN/ (&#x3D; &#39;%t%L&#39;)     /format/LN+FN+MN/ (&#x3D; &#39;%L,%F%M%N&#39;)     /format/LN+title+FN+MN/ (&#x3D; &#39;%L,%t%F%M%N&#39;)     /format/LN+FN+MI/ (&#x3D; &#39;%L,%F%m%N&#39;)     /format/LN+title+FN+MI/ (&#x3D; &#39;%L,%t%F%m%N&#39;)  Custom format string - custom combination of characters and the next term placeholders:      &#39;%t&#39; - Title (prefix)     &#39;%F&#39; - First name     &#39;%f&#39; - First initial     &#39;%M&#39; - Middle name(s)     &#39;%m&#39; - Middle initial(s)     &#39;%N&#39; - Nickname     &#39;%L&#39; - Last name     &#39;%l&#39; - Last initial     &#39;%p&#39; - Postfix  If no value for format option was provided, its default value is &#39;%t%F%m%N%L%p&#39;              | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FormatAsync"></a>
-## FormatAsync
+# FormatAsync
 
-**Description:** Formats a person's name in correct case and name order using options for formatting instructions.             
+```csharp
+async Task<AiNameFormatted> FormatAsync(AiNameFormatRequest request)
+```
+
+Formats a person's name in correct case and name order using options for formatting instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Formatted name.
+Task<[**AiNameFormatted**](AiNameFormatted.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Ai.Name.FormatAsync(request);
+new AiNameFormatRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    format=format,
+    style=style)
 ```
 
-### Parameter: *request*
-
-**Description:** FormatAsync method request.
-
-**See also** parameter model documentation at [**AiNameFormatRequest**](AiNameFormatRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameFormatRequest
-{ 
-    Name = "Mr. John Michael Cane",
-    Format = "%t%L%f%m"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Formatted name.
-
-**Return type:** [**AiNameFormatted**](AiNameFormatted.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameFormatted
-{
-    Name = "Mr. Cane J. M.",
-    Comments = "format: %t%L%f%m; source: parsed format"
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameFormatRequest
-{ 
-    Name = "Mr. John Michael Cane",
-    Format = "%t%L%f%m"
-};
-
-// Call method:
-var result = await api.Ai.Name.FormatAsync(request);
-
-result = new AiNameFormatted
-{
-    Name = "Mr. Cane J. M.",
-    Comments = "format: %t%L%f%m; source: parsed format"
-};
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to format. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **format** | **string**| Format of the name. Predefined format can be used by ID, or custom format can be specified. Predefined formats:      /format/default/ (&#x3D; &#39;%t%F%m%N%L%p&#39;)     /format/FN+LN/ (&#x3D; &#39;%F%L&#39;)     /format/title+FN+LN/ (&#x3D; &#39;%t%F%L&#39;)     /format/FN+MN+LN/ (&#x3D; &#39;%F%M%N%L&#39;)     /format/title+FN+MN+LN/ (&#x3D; &#39;%t%F%M%N%L&#39;)     /format/FN+MI+LN/ (&#x3D; &#39;%F%m%N%L&#39;)     /format/title+FN+MI+LN/ (&#x3D; &#39;%t%F%m%N%L&#39;)     /format/LN/ (&#x3D; &#39;%L&#39;)     /format/title+LN/ (&#x3D; &#39;%t%L&#39;)     /format/LN+FN+MN/ (&#x3D; &#39;%L,%F%M%N&#39;)     /format/LN+title+FN+MN/ (&#x3D; &#39;%L,%t%F%M%N&#39;)     /format/LN+FN+MI/ (&#x3D; &#39;%L,%F%m%N&#39;)     /format/LN+title+FN+MI/ (&#x3D; &#39;%L,%t%F%m%N&#39;)  Custom format string - custom combination of characters and the next term placeholders:      &#39;%t&#39; - Title (prefix)     &#39;%F&#39; - First name     &#39;%f&#39; - First initial     &#39;%M&#39; - Middle name(s)     &#39;%m&#39; - Middle initial(s)     &#39;%N&#39; - Nickname     &#39;%L&#39; - Last name     &#39;%l&#39; - Last initial     &#39;%p&#39; - Postfix  If no value for format option was provided, its default value is &#39;%t%F%m%N%L%p&#39;              | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="FormatParsed"></a>
-## FormatParsed
-
-**Description**: Formats a person's parsed name in correct case and name order using options for formatting instructions.             
-
-
-**Returns:** Formatted name.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.FormatParsed(request);
-```
-
-### Parameter: *request*
-
-**Description:** Parsed name with options.
-
-**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="FormatParsed"></a>
+# FormatParsed
 
 ```csharp
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
+AiNameFormatted FormatParsed(AiNameParsedRequest request)
 ```
 
-</details>
+Formats a person's parsed name in correct case and name order using options for formatting instructions.             
 
+### Return type
 
-### Result
+[**AiNameFormatted**](AiNameFormatted.md)
 
-**Description:** Formatted name.
+### request Parameter
 
-**Return type:** [**AiNameFormatted**](AiNameFormatted.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameFormatted
-{
-    Name = "Mr. Cane J. M.",
-    Comments = "format: %t%L%f%m; source: parsed format"
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-
-// Call method:
-var result = api.Ai.Name.FormatParsed(request);
-
-// Result example:
-result = new AiNameFormatted
-{
-    Name = "Mr. Cane J. M.",
-    Comments = "format: %t%L%f%m; source: parsed format"
-};
-```
-
-</details>
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FormatParsedAsync"></a>
-## FormatParsedAsync
+# FormatParsedAsync
 
-**Description:** Formats a person's parsed name in correct case and name order using options for formatting instructions.             
+```csharp
+async Task<AiNameFormatted> FormatParsedAsync(AiNameParsedRequest request)
+```
+
+Formats a person's parsed name in correct case and name order using options for formatting instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Formatted name.
+Task<[**AiNameFormatted**](AiNameFormatted.md)>
 
-**Method call example:**
-```csharp
-var result = await api.Ai.Name.FormatParsedAsync(request);
-```
+### request Parameter
 
-### Parameter: *request*
-
-**Description:** Parsed name with options.
-
-**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-```
-
-</details>
-
-
-### Result
-
-**Description:** Formatted name.
-
-**Return type:** Task<[**AiNameFormatted**](AiNameFormatted.md)>
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameFormatted
-{
-    Name = "Mr. Cane J. M.",
-    Comments = "format: %t%L%f%m; source: parsed format"
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-
-// Call method:
-var result = await api.Ai.Name.FormatParsedAsync(request);
-
-//Result example:
-result = new AiNameFormatted
-{
-    Name = "Mr. Cane J. M.",
-    Comments = "format: %t%L%f%m; source: parsed format"
-};
-
-```
-
-</details>
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="Genderize"></a>
-## Genderize
-**Descrption:** Detect person's gender from name string.             
-
-
-**Returns:** Hypotheses about person&#39;s gender.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.Genderize(request);
-```
-
-### Parameter: *request*
-
-**Description:** Genderize method request.
-
-**See also** parameter model documentation at [**AiNameGenderizeRequest**](AiNameGenderizeRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Genderize"></a>
+# Genderize
 
 ```csharp
-var request = new AiNameGenderizeRequest
-{ 
-    Name = "John Cane"
-};
+AiNameGenderHypothesisList Genderize(AiNameGenderizeRequest request)
 ```
 
-</details>
+Detect person's gender from name string.             
 
-### Result
+### Return type
 
-**Description:** Hypotheses about person's gender.
+[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
-**Return type:** [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = ;
+new AiNameGenderizeRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameGenderizeRequest
-{ 
-    Name = "John Cane"
-};
-
-// Call method:
-var result = api.Ai.Name.Genderize(request);
-
-// Result example:
-result = ;
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to genderize. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GenderizeAsync"></a>
-## GenderizeAsync
+# GenderizeAsync
 
-**Description:** Detect person's gender from name string.             
+```csharp
+async Task<AiNameGenderHypothesisList> GenderizeAsync(AiNameGenderizeRequest request)
+```
+
+Detect person's gender from name string.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Hypotheses about person's gender.
+Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Ai.Name.GenderizeAsync(request);
+new AiNameGenderizeRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-### Parameter: *request*
-
-**Description:** GenderizeAsync method request.
-
-**See also** parameter model documentation at [**AiNameGenderizeRequest**](AiNameGenderizeRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameGenderizeRequest
-{ 
-    Name = "John Cane"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Hypotheses about person's gender.
-
-**Return type:** [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = ;
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameGenderizeRequest
-{ 
-    Name = "John Cane"
-};
-
-// Call method:
-var result = await api.Ai.Name.GenderizeAsync(request);
-
-result = ;
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to genderize. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="GenderizeParsed"></a>
-## GenderizeParsed
-
-**Description**: Detect person's gender from parsed name.             
-
-
-**Returns:** Hypotheses about person's gender.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.GenderizeParsed(request);
-```
-
-### Parameter: *request*
-
-**Description:** Gender detection request data.
-
-**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="GenderizeParsed"></a>
+# GenderizeParsed
 
 ```csharp
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
+AiNameGenderHypothesisList GenderizeParsed(AiNameParsedRequest request)
 ```
 
-</details>
+Detect person's gender from parsed name.             
 
+### Return type
 
-### Result
+[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
 
-**Description:** Hypotheses about person's gender.
+### request Parameter
 
-**Return type:** [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = ;
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-
-// Call method:
-var result = api.Ai.Name.GenderizeParsed(request);
-
-// Result example:
-result = ;
-```
-
-</details>
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GenderizeParsedAsync"></a>
-## GenderizeParsedAsync
+# GenderizeParsedAsync
 
-**Description:** Detect person's gender from parsed name.             
+```csharp
+async Task<AiNameGenderHypothesisList> GenderizeParsedAsync(AiNameParsedRequest request)
+```
+
+Detect person's gender from parsed name.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Hypotheses about person's gender.
+Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
 
-**Method call example:**
-```csharp
-var result = await api.Ai.Name.GenderizeParsedAsync(request);
-```
+### request Parameter
 
-### Parameter: *request*
-
-**Description:** Gender detection request data.
-
-**See also** parameter model documentation at [**AiNameParsedRequest**](AiNameParsedRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-```
-
-</details>
-
-
-### Result
-
-**Description:** Hypotheses about person's gender.
-
-**Return type:** Task<[**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md)>
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = ;
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParsedRequest
-{
-    CulturalContext = new AiNameCulturalContext
-    {
-        Language = "",
-        Location = "",
-        Script = "",
-        Encoding = ""
-    },
-    ParsedName = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-
-// Call method:
-var result = await api.Ai.Name.GenderizeParsedAsync(request);
-
-//Result example:
-result = ;
-
-```
-
-</details>
+See parameter model documentation at [AiNameParsedRequest](AiNameParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="Match"></a>
-## Match
-**Descrption:** Compare people's names. Uses options for comparing instructions.             
-
-
-**Returns:** Match result.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.Match(request);
-```
-
-### Parameter: *request*
-
-**Description:** Match method request.
-
-**See also** parameter model documentation at [**AiNameMatchRequest**](AiNameMatchRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Match"></a>
+# Match
 
 ```csharp
-var request = new AiNameMatchRequest
-{ 
-    Name = "John Michael Cane",
-    OtherName = "Cane J."
-};
+AiNameMatchResult Match(AiNameMatchRequest request)
 ```
 
-</details>
+Compare people's names. Uses options for comparing instructions.             
 
-### Result
+### Return type
 
-**Description:** Match result.
+[**AiNameMatchResult**](AiNameMatchResult.md)
 
-**Return type:** [**AiNameMatchResult**](AiNameMatchResult.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = new AiNameMatchResult
-{
-    Similarity = 0.6,
-    Mismatches = new List<AiNameMismatch>
-    {
-        new AiNameMismatch
-        {
-            Category = "Gender",
-            Explanation = "no_match"
-        }
-    }
-};
+new AiNameMatchRequest(
+    name,
+    otherName,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameMatchRequest
-{ 
-    Name = "John Michael Cane",
-    OtherName = "Cane J."
-};
-
-// Call method:
-var result = api.Ai.Name.Match(request);
-
-// Result example:
-result = new AiNameMatchResult
-{
-    Similarity = 0.6,
-    Mismatches = new List<AiNameMismatch>
-    {
-        new AiNameMismatch
-        {
-            Category = "Gender",
-            Explanation = "no_match"
-        }
-    }
-};
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to match. | 
+ **otherName** | **string**| Another name to match. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MatchAsync"></a>
-## MatchAsync
+# MatchAsync
 
-**Description:** Compare people's names. Uses options for comparing instructions.             
+```csharp
+async Task<AiNameMatchResult> MatchAsync(AiNameMatchRequest request)
+```
+
+Compare people's names. Uses options for comparing instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Match result.
+Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Ai.Name.MatchAsync(request);
+new AiNameMatchRequest(
+    name,
+    otherName,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-### Parameter: *request*
-
-**Description:** MatchAsync method request.
-
-**See also** parameter model documentation at [**AiNameMatchRequest**](AiNameMatchRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameMatchRequest
-{ 
-    Name = "John Michael Cane",
-    OtherName = "Cane J."
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Match result.
-
-**Return type:** [**AiNameMatchResult**](AiNameMatchResult.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameMatchResult
-{
-    Similarity = 0.6,
-    Mismatches = new List<AiNameMismatch>
-    {
-        new AiNameMismatch
-        {
-            Category = "Gender",
-            Explanation = "no_match"
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameMatchRequest
-{ 
-    Name = "John Michael Cane",
-    OtherName = "Cane J."
-};
-
-// Call method:
-var result = await api.Ai.Name.MatchAsync(request);
-
-result = new AiNameMatchResult
-{
-    Similarity = 0.6,
-    Mismatches = new List<AiNameMismatch>
-    {
-        new AiNameMismatch
-        {
-            Category = "Gender",
-            Explanation = "no_match"
-        }
-    }
-};
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to match. | 
+ **otherName** | **string**| Another name to match. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="MatchParsed"></a>
-## MatchParsed
-
-**Description**: Compare people's parsed names and attributes. Uses options for comparing instructions.             
-
-
-**Returns:** Match result.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.MatchParsed(request);
-```
-
-### Parameter: *request*
-
-**Description:** Parsed names to match.
-
-**See also** parameter model documentation at [**AiNameMatchParsedRequest**](AiNameMatchParsedRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="MatchParsed"></a>
+# MatchParsed
 
 ```csharp
-var request = ;
+AiNameMatchResult MatchParsed(AiNameMatchParsedRequest request)
 ```
 
-</details>
+Compare people's parsed names and attributes. Uses options for comparing instructions.             
 
+### Return type
 
-### Result
+[**AiNameMatchResult**](AiNameMatchResult.md)
 
-**Description:** Match result.
+### request Parameter
 
-**Return type:** [**AiNameMatchResult**](AiNameMatchResult.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameMatchResult
-{
-    Similarity = 0.6,
-    Mismatches = new List<AiNameMismatch>
-    {
-        new AiNameMismatch
-        {
-            Category = "Gender",
-            Explanation = "no_match"
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = ;
-
-// Call method:
-var result = api.Ai.Name.MatchParsed(request);
-
-// Result example:
-result = new AiNameMatchResult
-{
-    Similarity = 0.6,
-    Mismatches = new List<AiNameMismatch>
-    {
-        new AiNameMismatch
-        {
-            Category = "Gender",
-            Explanation = "no_match"
-        }
-    }
-};
-```
-
-</details>
+See parameter model documentation at [AiNameMatchParsedRequest](AiNameMatchParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MatchParsedAsync"></a>
-## MatchParsedAsync
+# MatchParsedAsync
 
-**Description:** Compare people's parsed names and attributes. Uses options for comparing instructions.             
+```csharp
+async Task<AiNameMatchResult> MatchParsedAsync(AiNameMatchParsedRequest request)
+```
+
+Compare people's parsed names and attributes. Uses options for comparing instructions.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Match result.
+Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
 
-**Method call example:**
-```csharp
-var result = await api.Ai.Name.MatchParsedAsync(request);
-```
+### request Parameter
 
-### Parameter: *request*
-
-**Description:** Parsed names to match.
-
-**See also** parameter model documentation at [**AiNameMatchParsedRequest**](AiNameMatchParsedRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = ;
-```
-
-</details>
-
-
-### Result
-
-**Description:** Match result.
-
-**Return type:** Task<[**AiNameMatchResult**](AiNameMatchResult.md)>
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameMatchResult
-{
-    Similarity = 0.6,
-    Mismatches = new List<AiNameMismatch>
-    {
-        new AiNameMismatch
-        {
-            Category = "Gender",
-            Explanation = "no_match"
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = ;
-
-// Call method:
-var result = await api.Ai.Name.MatchParsedAsync(request);
-
-//Result example:
-result = new AiNameMatchResult
-{
-    Similarity = 0.6,
-    Mismatches = new List<AiNameMismatch>
-    {
-        new AiNameMismatch
-        {
-            Category = "Gender",
-            Explanation = "no_match"
-        }
-    }
-};
-
-```
-
-</details>
+See parameter model documentation at [AiNameMatchParsedRequest](AiNameMatchParsedRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="Parse"></a>
-## Parse
-**Descrption:** Parse name to components.             
-
-
-**Returns:** List of name components.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.Parse(request);
-```
-
-### Parameter: *request*
-
-**Description:** Parse method request.
-
-**See also** parameter model documentation at [**AiNameParseRequest**](AiNameParseRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Parse"></a>
+# Parse
 
 ```csharp
-var request = new AiNameParseRequest
-{ 
-    Name = "John Cane",
-    Language = "eng",
-    Location = "USA"
-};
+AiNameComponentList Parse(AiNameParseRequest request)
 ```
 
-</details>
+Parse name to components.             
 
-### Result
+### Return type
 
-**Description:** List of name components.
+[**AiNameComponentList**](AiNameComponentList.md)
 
-**Return type:** [**AiNameComponentList**](AiNameComponentList.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = new AiNameComponentList
-{
-    Value = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
+new AiNameParseRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParseRequest
-{ 
-    Name = "John Cane",
-    Language = "eng",
-    Location = "USA"
-};
-
-// Call method:
-var result = api.Ai.Name.Parse(request);
-
-// Result example:
-result = new AiNameComponentList
-{
-    Value = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to parse. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ParseAsync"></a>
-## ParseAsync
+# ParseAsync
 
-**Description:** Parse name to components.             
+```csharp
+async Task<AiNameComponentList> ParseAsync(AiNameParseRequest request)
+```
+
+Parse name to components.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** List of name components.
+Task<[**AiNameComponentList**](AiNameComponentList.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Ai.Name.ParseAsync(request);
+new AiNameParseRequest(
+    name,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-### Parameter: *request*
-
-**Description:** ParseAsync method request.
-
-**See also** parameter model documentation at [**AiNameParseRequest**](AiNameParseRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameParseRequest
-{ 
-    Name = "John Cane",
-    Language = "eng",
-    Location = "USA"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** List of name components.
-
-**Return type:** [**AiNameComponentList**](AiNameComponentList.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new AiNameComponentList
-{
-    Value = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParseRequest
-{ 
-    Name = "John Cane",
-    Language = "eng",
-    Location = "USA"
-};
-
-// Call method:
-var result = await api.Ai.Name.ParseAsync(request);
-
-result = new AiNameComponentList
-{
-    Value = new List<AiNameComponent>
-    {
-        new AiNameComponent
-        {
-            Value = "John",
-            Category = "FirstName",
-            Score = 0.95
-        },
-        new AiNameComponent
-        {
-            Value = "Cane",
-            Category = "LastName",
-            Score = 0.5,
-            Position = 5
-        },
-        new AiNameComponent
-        {
-            Value = "%F%L",
-            Category = "Format"
-        },
-        new AiNameComponent
-        {
-            Value = "0.5",
-            Category = "Score",
-            Score = 0.5
-        }
-    }
-};
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **string**| A name to parse. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="ParseEmailAddress"></a>
-## ParseEmailAddress
-**Descrption:** Parse person's name out of an email address.             
-
-
-**Returns:** Match result.
-
-**Method call example:**
-```csharp
-var result = api.Ai.Name.ParseEmailAddress(request);
-```
-
-### Parameter: *request*
-
-**Description:** ParseEmailAddress method request.
-
-**See also** parameter model documentation at [**AiNameParseEmailAddressRequest**](AiNameParseEmailAddressRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="ParseEmailAddress"></a>
+# ParseEmailAddress
 
 ```csharp
-var request = new AiNameParseEmailAddressRequest
-{ 
-    EmailAddress = "john-cane@gmail.com"
-};
+AiNameExtractedList ParseEmailAddress(AiNameParseEmailAddressRequest request)
 ```
 
-</details>
+Parse person's name out of an email address.             
 
-### Result
+### Return type
 
-**Description:** Match result.
+[**AiNameExtractedList**](AiNameExtractedList.md)
 
-**Return type:** [**AiNameExtractedList**](AiNameExtractedList.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = ;
+new AiNameParseEmailAddressRequest(
+    emailAddress,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParseEmailAddressRequest
-{ 
-    EmailAddress = "john-cane@gmail.com"
-};
-
-// Call method:
-var result = api.Ai.Name.ParseEmailAddress(request);
-
-// Result example:
-result = ;
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailAddress** | **string**| Email address to parse. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ParseEmailAddressAsync"></a>
-## ParseEmailAddressAsync
+# ParseEmailAddressAsync
 
-**Description:** Parse person's name out of an email address.             
+```csharp
+async Task<AiNameExtractedList> ParseEmailAddressAsync(AiNameParseEmailAddressRequest request)
+```
+
+Parse person's name out of an email address.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Match result.
+Task<[**AiNameExtractedList**](AiNameExtractedList.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Ai.Name.ParseEmailAddressAsync(request);
+new AiNameParseEmailAddressRequest(
+    emailAddress,
+    language=language,
+    location=location,
+    encoding=encoding,
+    script=script,
+    style=style)
 ```
 
-### Parameter: *request*
-
-**Description:** ParseEmailAddressAsync method request.
-
-**See also** parameter model documentation at [**AiNameParseEmailAddressRequest**](AiNameParseEmailAddressRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new AiNameParseEmailAddressRequest
-{ 
-    EmailAddress = "john-cane@gmail.com"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Match result.
-
-**Return type:** [**AiNameExtractedList**](AiNameExtractedList.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = ;
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new AiNameParseEmailAddressRequest
-{ 
-    EmailAddress = "john-cane@gmail.com"
-};
-
-// Call method:
-var result = await api.Ai.Name.ParseEmailAddressAsync(request);
-
-result = ;
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailAddress** | **string**| Email address to parse. | 
+ **language** | **string**| An ISO-639 code of the language; either 639-1 or 639-3 (e.g. \&quot;it\&quot; or \&quot;ita\&quot; for Italian).              | [optional] 
+ **location** | **string**| A geographic code such as an ISO-3166 two letter country code, for example \&quot;FR\&quot; for France.              | [optional] 
+ **encoding** | **string**| A character encoding name. | [optional] 
+ **script** | **string**| A writing system code; starts with the ISO-15924 script name. | [optional] 
+ **style** | **string**| Name writing style. Enum, available values: Formal, Informal, Legal, Academic | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

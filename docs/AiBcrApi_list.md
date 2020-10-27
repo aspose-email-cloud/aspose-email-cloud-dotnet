@@ -10,3 +10,5 @@ Method | HTTP request | Description
 [**Parse**](AiBcrApi.md#Parse)/[**ParseAsync**](AiBcrApi.md#ParseAsync)| **PUT** /email/AiBcr/parse| Parse images to vCard document models             
 [**ParseStorage**](AiBcrApi.md#ParseStorage)/[**ParseStorageAsync**](AiBcrApi.md#ParseStorageAsync)| **PUT** /email/AiBcr/parse-storage| Parse images from storage to vCard files             
 
+
+

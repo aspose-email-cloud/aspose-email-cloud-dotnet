@@ -1,694 +1,297 @@
-# FolderApi (EmailCloud.CloudStorage.Folder)
+# Aspose.Email.Cloud.Sdk.FolderApi
 
-Folder operations controller
-
-<a name="CopyFolder"></a>
-## CopyFolder
-**Descrption:** Copy folder
-
-
-**Method call example:**
-```csharp
-api.CloudStorage.Folder.CopyFolder(request);
-```
-
-### Parameter: *request*
-
-**Description:** CopyFolder method request.
-
-**See also** parameter model documentation at [**CopyFolderRequest**](CopyFolderRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="CopyFolder"></a>
+# CopyFolder
 
 ```csharp
-var request = new CopyFolderRequest
-{ 
-    SrcPath = "/storage/path/to/source/folder",
-    DestPath = "/storage/path/to/destination/folder",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
+void CopyFolder(CopyFolderRequest request)
 ```
 
-</details>
+Copy folder
 
-### Result
+### Return type
 
-**Return type:** void (empty response body)
+void (empty response body)
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
+### request Parameter
 ```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new CopyFolderRequest
-{ 
-    SrcPath = "/storage/path/to/source/folder",
-    DestPath = "/storage/path/to/destination/folder",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-
-// Call method:
-api.CloudStorage.Folder.CopyFolder(request);
-
+new CopyFolderRequest(
+    srcPath,
+    destPath,
+    srcStorageName=srcStorageName,
+    destStorageName=destStorageName)
 ```
 
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **srcPath** | **string**| Source folder path e.g. &#39;/src&#39; | 
+ **destPath** | **string**| Destination folder path e.g. &#39;/dst&#39; | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CopyFolderAsync"></a>
-## CopyFolderAsync
+# CopyFolderAsync
 
-**Description:** Copy folder
+```csharp
+async Task CopyFolderAsync(CopyFolderRequest request)
+```
+
+Copy folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
+Task (empty response body)
+
+### request Parameter
 ```csharp
-await api.CloudStorage.Folder.CopyFolderAsync(request);
+new CopyFolderRequest(
+    srcPath,
+    destPath,
+    srcStorageName=srcStorageName,
+    destStorageName=destStorageName)
 ```
 
-### Parameter: *request*
-
-**Description:** CopyFolderAsync method request.
-
-**See also** parameter model documentation at [**CopyFolderRequest**](CopyFolderRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new CopyFolderRequest
-{ 
-    SrcPath = "/storage/path/to/source/folder",
-    DestPath = "/storage/path/to/destination/folder",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Return type:** void (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new CopyFolderRequest
-{ 
-    SrcPath = "/storage/path/to/source/folder",
-    DestPath = "/storage/path/to/destination/folder",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-
-// Call method:
-await api.CloudStorage.Folder.CopyFolderAsync(request);
-
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **srcPath** | **string**| Source folder path e.g. &#39;/src&#39; | 
+ **destPath** | **string**| Destination folder path e.g. &#39;/dst&#39; | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="CreateFolder"></a>
-## CreateFolder
-**Descrption:** Create the folder
-
-
-**Method call example:**
-```csharp
-api.CloudStorage.Folder.CreateFolder(request);
-```
-
-### Parameter: *request*
-
-**Description:** CreateFolder method request.
-
-**See also** parameter model documentation at [**CreateFolderRequest**](CreateFolderRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="CreateFolder"></a>
+# CreateFolder
 
 ```csharp
-var request = new CreateFolderRequest
-{ 
-    Path = "/storage/path/to/new/folder",
-    StorageName = "First Storage"
-};
+void CreateFolder(CreateFolderRequest request)
 ```
 
-</details>
+Create the folder
 
-### Result
+### Return type
 
-**Return type:** void (empty response body)
+void (empty response body)
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
+### request Parameter
 ```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new CreateFolderRequest
-{ 
-    Path = "/storage/path/to/new/folder",
-    StorageName = "First Storage"
-};
-
-// Call method:
-api.CloudStorage.Folder.CreateFolder(request);
-
+new CreateFolderRequest(
+    path,
+    storageName=storageName)
 ```
 
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CreateFolderAsync"></a>
-## CreateFolderAsync
+# CreateFolderAsync
 
-**Description:** Create the folder
+```csharp
+async Task CreateFolderAsync(CreateFolderRequest request)
+```
+
+Create the folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
+Task (empty response body)
+
+### request Parameter
 ```csharp
-await api.CloudStorage.Folder.CreateFolderAsync(request);
+new CreateFolderRequest(
+    path,
+    storageName=storageName)
 ```
 
-### Parameter: *request*
-
-**Description:** CreateFolderAsync method request.
-
-**See also** parameter model documentation at [**CreateFolderRequest**](CreateFolderRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new CreateFolderRequest
-{ 
-    Path = "/storage/path/to/new/folder",
-    StorageName = "First Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Return type:** void (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new CreateFolderRequest
-{ 
-    Path = "/storage/path/to/new/folder",
-    StorageName = "First Storage"
-};
-
-// Call method:
-await api.CloudStorage.Folder.CreateFolderAsync(request);
-
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| Folder path to create e.g. &#39;folder_1/folder_2/&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="DeleteFolder"></a>
-## DeleteFolder
-**Descrption:** Delete folder
-
-
-**Method call example:**
-```csharp
-api.CloudStorage.Folder.DeleteFolder(request);
-```
-
-### Parameter: *request*
-
-**Description:** DeleteFolder method request.
-
-**See also** parameter model documentation at [**DeleteFolderRequest**](DeleteFolderRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="DeleteFolder"></a>
+# DeleteFolder
 
 ```csharp
-var request = new DeleteFolderRequest
-{ 
-    Path = "/storage/path/to/folder",
-    StorageName = "First Storage",
-    Recursive = true
-};
+void DeleteFolder(DeleteFolderRequest request)
 ```
 
-</details>
+Delete folder
 
-### Result
+### Return type
 
-**Return type:** void (empty response body)
+void (empty response body)
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
+### request Parameter
 ```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new DeleteFolderRequest
-{ 
-    Path = "/storage/path/to/folder",
-    StorageName = "First Storage",
-    Recursive = true
-};
-
-// Call method:
-api.CloudStorage.Folder.DeleteFolder(request);
-
+new DeleteFolderRequest(
+    path,
+    storageName=storageName,
+    recursive=recursive)
 ```
 
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteFolderAsync"></a>
-## DeleteFolderAsync
+# DeleteFolderAsync
 
-**Description:** Delete folder
+```csharp
+async Task DeleteFolderAsync(DeleteFolderRequest request)
+```
+
+Delete folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
+Task (empty response body)
+
+### request Parameter
 ```csharp
-await api.CloudStorage.Folder.DeleteFolderAsync(request);
+new DeleteFolderRequest(
+    path,
+    storageName=storageName,
+    recursive=recursive)
 ```
 
-### Parameter: *request*
-
-**Description:** DeleteFolderAsync method request.
-
-**See also** parameter model documentation at [**DeleteFolderRequest**](DeleteFolderRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new DeleteFolderRequest
-{ 
-    Path = "/storage/path/to/folder",
-    StorageName = "First Storage",
-    Recursive = true
-};
-```
-
-</details>
-
-### Result
-
-**Return type:** void (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new DeleteFolderRequest
-{ 
-    Path = "/storage/path/to/folder",
-    StorageName = "First Storage",
-    Recursive = true
-};
-
-// Call method:
-await api.CloudStorage.Folder.DeleteFolderAsync(request);
-
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
+ **recursive** | **bool?**| Enable to delete folders, subfolders and files | [optional] [default to false]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="GetFilesList"></a>
-## GetFilesList
-**Descrption:** Get all files and folders within a folder
-
-
-**Returns:** Returns all files and folders contained by the folder.
-
-**Method call example:**
-```csharp
-var result = api.CloudStorage.Folder.GetFilesList(request);
-```
-
-### Parameter: *request*
-
-**Description:** GetFilesList method request.
-
-**See also** parameter model documentation at [**GetFilesListRequest**](GetFilesListRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="GetFilesList"></a>
+# GetFilesList
 
 ```csharp
-var request = new GetFilesListRequest
-{ 
-    Path = "/storage/path/to/folder",
-    StorageName = "First Storage"
-};
+FilesList GetFilesList(GetFilesListRequest request)
 ```
 
-</details>
+Get all files and folders within a folder
 
-### Result
+### Return type
 
-**Description:** Returns all files and folders contained by the folder.
+[**FilesList**](FilesList.md)
 
-**Return type:** [**FilesList**](FilesList.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = new FilesList
-{
-    Value = new List<StorageFile>
-    {
-        new StorageFile
-        {
-            Name = "file.ext",
-            ModifiedDate = DateTime.Today,
-            Size = 1024,
-            Path = "/path/to/file/on/storage"
-        }
-    }
-};
+new GetFilesListRequest(
+    path,
+    storageName=storageName)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new GetFilesListRequest
-{ 
-    Path = "/storage/path/to/folder",
-    StorageName = "First Storage"
-};
-
-// Call method:
-var result = api.CloudStorage.Folder.GetFilesList(request);
-
-// Result example:
-result = new FilesList
-{
-    Value = new List<StorageFile>
-    {
-        new StorageFile
-        {
-            Name = "file.ext",
-            ModifiedDate = DateTime.Today,
-            Size = 1024,
-            Path = "/path/to/file/on/storage"
-        }
-    }
-};
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetFilesListAsync"></a>
-## GetFilesListAsync
+# GetFilesListAsync
 
-**Description:** Get all files and folders within a folder
+```csharp
+async Task<FilesList> GetFilesListAsync(GetFilesListRequest request)
+```
+
+Get all files and folders within a folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Returns all files and folders contained by the folder.
+Task<[**FilesList**](FilesList.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.CloudStorage.Folder.GetFilesListAsync(request);
+new GetFilesListRequest(
+    path,
+    storageName=storageName)
 ```
 
-### Parameter: *request*
-
-**Description:** GetFilesListAsync method request.
-
-**See also** parameter model documentation at [**GetFilesListRequest**](GetFilesListRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new GetFilesListRequest
-{ 
-    Path = "/storage/path/to/folder",
-    StorageName = "First Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Returns all files and folders contained by the folder.
-
-**Return type:** [**FilesList**](FilesList.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new FilesList
-{
-    Value = new List<StorageFile>
-    {
-        new StorageFile
-        {
-            Name = "file.ext",
-            ModifiedDate = DateTime.Today,
-            Size = 1024,
-            Path = "/path/to/file/on/storage"
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new GetFilesListRequest
-{ 
-    Path = "/storage/path/to/folder",
-    StorageName = "First Storage"
-};
-
-// Call method:
-var result = await api.CloudStorage.Folder.GetFilesListAsync(request);
-
-result = new FilesList
-{
-    Value = new List<StorageFile>
-    {
-        new StorageFile
-        {
-            Name = "file.ext",
-            ModifiedDate = DateTime.Today,
-            Size = 1024,
-            Path = "/path/to/file/on/storage"
-        }
-    }
-};
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **path** | **string**| Folder path e.g. &#39;/folder&#39; | 
+ **storageName** | **string**| Storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="MoveFolder"></a>
-## MoveFolder
-**Descrption:** Move folder
-
-
-**Method call example:**
-```csharp
-api.CloudStorage.Folder.MoveFolder(request);
-```
-
-### Parameter: *request*
-
-**Description:** MoveFolder method request.
-
-**See also** parameter model documentation at [**MoveFolderRequest**](MoveFolderRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="MoveFolder"></a>
+# MoveFolder
 
 ```csharp
-var request = new MoveFolderRequest
-{ 
-    SrcPath = "/storage/path/to/source/folder",
-    DestPath = "/storage/path/to/destination/folder",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
+void MoveFolder(MoveFolderRequest request)
 ```
 
-</details>
+Move folder
 
-### Result
+### Return type
 
-**Return type:** void (empty response body)
+void (empty response body)
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
+### request Parameter
 ```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new MoveFolderRequest
-{ 
-    SrcPath = "/storage/path/to/source/folder",
-    DestPath = "/storage/path/to/destination/folder",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-
-// Call method:
-api.CloudStorage.Folder.MoveFolder(request);
-
+new MoveFolderRequest(
+    srcPath,
+    destPath,
+    srcStorageName=srcStorageName,
+    destStorageName=destStorageName)
 ```
 
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **srcPath** | **string**| Folder path to move e.g. &#39;/folder&#39; | 
+ **destPath** | **string**| Destination folder path to move to e.g &#39;/dst&#39; | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="MoveFolderAsync"></a>
-## MoveFolderAsync
+# MoveFolderAsync
 
-**Description:** Move folder
+```csharp
+async Task MoveFolderAsync(MoveFolderRequest request)
+```
+
+Move folder
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
+Task (empty response body)
+
+### request Parameter
 ```csharp
-await api.CloudStorage.Folder.MoveFolderAsync(request);
+new MoveFolderRequest(
+    srcPath,
+    destPath,
+    srcStorageName=srcStorageName,
+    destStorageName=destStorageName)
 ```
 
-### Parameter: *request*
-
-**Description:** MoveFolderAsync method request.
-
-**See also** parameter model documentation at [**MoveFolderRequest**](MoveFolderRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new MoveFolderRequest
-{ 
-    SrcPath = "/storage/path/to/source/folder",
-    DestPath = "/storage/path/to/destination/folder",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Return type:** void (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new MoveFolderRequest
-{ 
-    SrcPath = "/storage/path/to/source/folder",
-    DestPath = "/storage/path/to/destination/folder",
-    SrcStorageName = "First Storage",
-    DestStorageName = "Other Storage"
-};
-
-// Call method:
-await api.CloudStorage.Folder.MoveFolderAsync(request);
-
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **srcPath** | **string**| Folder path to move e.g. &#39;/folder&#39; | 
+ **destPath** | **string**| Destination folder path to move to e.g &#39;/dst&#39; | 
+ **srcStorageName** | **string**| Source storage name | [optional] 
+ **destStorageName** | **string**| Destination storage name | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

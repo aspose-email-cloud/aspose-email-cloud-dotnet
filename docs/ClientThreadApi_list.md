@@ -13,3 +13,5 @@ Method | HTTP request | Description
 [**Move**](ClientThreadApi.md#Move)/[**MoveAsync**](ClientThreadApi.md#MoveAsync)| **PUT** /email/client/thread/move| Move thread to another folder.             
 [**SetIsRead**](ClientThreadApi.md#SetIsRead)/[**SetIsReadAsync**](ClientThreadApi.md#SetIsReadAsync)| **PUT** /email/client/thread/set-is-read| Mark all messages in thread as read or unread.             
 
+
+

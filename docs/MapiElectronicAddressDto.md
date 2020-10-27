@@ -1,6 +1,4 @@
-# MapiElectronicAddressDto
-Refers to the group of properties that define the e-mail address or fax address.             
-
+# Model.MapiElectronicAddressDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -11,5 +9,7 @@ Name | Type | Description | Notes
 **OriginalDisplayName** | **string** | SMTP e-mail address that  corresponds to the e-mail address.              | [optional] 
 
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

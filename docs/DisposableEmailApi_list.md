@@ -9,3 +9,5 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**IsDisposable**](DisposableEmailApi.md#IsDisposable)/[**IsDisposableAsync**](DisposableEmailApi.md#IsDisposableAsync)| **GET** /email/disposable/is-disposable| Check email address is disposable             
 
+
+

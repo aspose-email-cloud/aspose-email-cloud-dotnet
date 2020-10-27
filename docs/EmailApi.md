@@ -1,2256 +1,426 @@
-# EmailApi (EmailCloud.Email)
+# Aspose.Email.Cloud.Sdk.EmailApi
 
-Email document (*.eml) operations.
-
-<a name="AsFile"></a>
-## AsFile
-
-**Description**: Converts Email model to specified format and returns as file.             
-
-
-**Returns:** File stream in specified format.
-
-**Method call example:**
-```csharp
-var result = api.Email.AsFile(request);
-```
-
-### Parameter: *request*
-
-**Description:** Email model and format to convert.
-
-**See also** parameter model documentation at [**EmailAsFileRequest**](EmailAsFileRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="AsFile"></a>
+# AsFile
 
 ```csharp
-var request = new EmailAsFileRequest
-{
-    Value = new EmailDto
-    {
-        Attachments = new List<Attachment>
-        {
-            new Attachment
-            {
-                Name = "some-file.txt",
-                Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-            }
-        },
-        Body = "Some body",
-        BodyType = "Html",
-        DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-        {
-            "OnSuccess",
-            "Delay"
-        },
-        From = new MailAddress
-        {
-            DisplayName = "From Address",
-            Address = "from@aspose.com"
-        },
-        HtmlBody = "<b>Some body</b>",
-        IsBodyHtml = true,
-        IsDraft = true,
-        Subject = "Re: Some subject",
-        To = new List<MailAddress>
-        {
-            new MailAddress
-            {
-                DisplayName = "To Address",
-                Address = "to@aspose.com"
-            }
-        }
-    }
-};
+Stream AsFile(EmailAsFileRequest request)
 ```
 
-</details>
+Converts Email model to specified format and returns as file.             
 
+### Return type
 
-### Result
+**Stream**
 
-**Description:** File stream in specified format.
+### request Parameter
 
-**Return type:** **Stream**
-
-<details>
-    <summary>Result can be saved to file:</summary>
-
-```csharp
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    result.CopyTo(resultFileStream);
-}
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailAsFileRequest
-{
-    Value = new EmailDto
-    {
-        Attachments = new List<Attachment>
-        {
-            new Attachment
-            {
-                Name = "some-file.txt",
-                Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-            }
-        },
-        Body = "Some body",
-        BodyType = "Html",
-        DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-        {
-            "OnSuccess",
-            "Delay"
-        },
-        From = new MailAddress
-        {
-            DisplayName = "From Address",
-            Address = "from@aspose.com"
-        },
-        HtmlBody = "<b>Some body</b>",
-        IsBodyHtml = true,
-        IsDraft = true,
-        Subject = "Re: Some subject",
-        To = new List<MailAddress>
-        {
-            new MailAddress
-            {
-                DisplayName = "To Address",
-                Address = "to@aspose.com"
-            }
-        }
-    }
-};
-
-// Call method:
-var result = api.Email.AsFile(request);
-
-// Result can be saved to file:
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    result.CopyTo(resultFileStream);
-}
-```
-
-</details>
+See parameter model documentation at [EmailAsFileRequest](EmailAsFileRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsFileAsync"></a>
-## AsFileAsync
+# AsFileAsync
 
-**Description:** Converts Email model to specified format and returns as file.             
+```csharp
+async Task<Stream> AsFileAsync(EmailAsFileRequest request)
+```
+
+Converts Email model to specified format and returns as file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** File stream in specified format.
+**Task<Stream>**
 
-**Method call example:**
-```csharp
-var result = await api.Email.AsFileAsync(request);
-```
+### request Parameter
 
-### Parameter: *request*
-
-**Description:** Email model and format to convert.
-
-**See also** parameter model documentation at [**EmailAsFileRequest**](EmailAsFileRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new EmailAsFileRequest
-{
-    Value = new EmailDto
-    {
-        Attachments = new List<Attachment>
-        {
-            new Attachment
-            {
-                Name = "some-file.txt",
-                Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-            }
-        },
-        Body = "Some body",
-        BodyType = "Html",
-        DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-        {
-            "OnSuccess",
-            "Delay"
-        },
-        From = new MailAddress
-        {
-            DisplayName = "From Address",
-            Address = "from@aspose.com"
-        },
-        HtmlBody = "<b>Some body</b>",
-        IsBodyHtml = true,
-        IsDraft = true,
-        Subject = "Re: Some subject",
-        To = new List<MailAddress>
-        {
-            new MailAddress
-            {
-                DisplayName = "To Address",
-                Address = "to@aspose.com"
-            }
-        }
-    }
-};
-```
-
-</details>
-
-
-### Result
-
-**Description:** File stream in specified format.
-
-**Return type:** **Task<Stream>**
-
-<details>
-    <summary>Result can be saved to file:</summary>
-
-```csharp
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    await result.CopyToAsync(resultFileStream);
-}
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailAsFileRequest
-{
-    Value = new EmailDto
-    {
-        Attachments = new List<Attachment>
-        {
-            new Attachment
-            {
-                Name = "some-file.txt",
-                Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-            }
-        },
-        Body = "Some body",
-        BodyType = "Html",
-        DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-        {
-            "OnSuccess",
-            "Delay"
-        },
-        From = new MailAddress
-        {
-            DisplayName = "From Address",
-            Address = "from@aspose.com"
-        },
-        HtmlBody = "<b>Some body</b>",
-        IsBodyHtml = true,
-        IsDraft = true,
-        Subject = "Re: Some subject",
-        To = new List<MailAddress>
-        {
-            new MailAddress
-            {
-                DisplayName = "To Address",
-                Address = "to@aspose.com"
-            }
-        }
-    }
-};
-
-// Call method:
-var result = await api.Email.AsFileAsync(request);
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    await result.CopyToAsync(resultFileStream);
-}
-
-```
-
-</details>
+See parameter model documentation at [EmailAsFileRequest](EmailAsFileRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="AsMapi"></a>
-## AsMapi
-
-**Description**: Converts EmailDto to MapiMessageDto.             
-
-
-**Returns:** MAPI model message representation
-
-**Method call example:**
-```csharp
-var result = api.Email.AsMapi(emailDto);
-```
-
-### Parameter: *emailDto*
-
-**Description:** Email model to convert
-
-**See also** parameter model documentation at [**EmailDto**](EmailDto.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="AsMapi"></a>
+# AsMapi
 
 ```csharp
-var emailDto = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
+MapiMessageDto AsMapi(EmailDto emailDto)
 ```
 
-</details>
+Converts EmailDto to MapiMessageDto.             
 
+### Return type
 
-### Result
+[**MapiMessageDto**](MapiMessageDto.md)
 
-**Description:** MAPI model message representation
+### emailDto Parameter
 
-**Return type:** [**MapiMessageDto**](MapiMessageDto.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new MapiMessageDto
-{
-    MessageBody = "Some body",
-    ClientSubmitTime = DateTime.Today,
-    DeliveryTime = DateTime.Today,
-    DisplayTo = "To Address",
-    Flags = new List<MapiMessageFlag>
-    {
-        "MsgFlagRead",
-        "MsgFlagUnsent",
-        "MsgFlagHasAttach"
-    },
-    NormalizedSubject = "Some subject",
-    SenderAddressType = "SMTP",
-    SenderEmailAddress = "from@aspose.com",
-    SenderName = "From Address",
-    SenderSmtpAddress = "from@aspose.com",
-    Attachments = new List<MapiAttachmentDto>
-    {
-        new MapiAttachmentDto
-        {
-            Name = "some-file.txt",
-            DataBase64 = "U29tZSBmaWxlIHRleHQ="
-        }
-    },
-    Body = "Some body",
-    MessageClass = "IPM.Note",
-    Recipients = new List<MapiRecipientDto>
-    {
-        new MapiRecipientDto
-        {
-            EmailAddress = "to@aspose.com",
-            AddressType = "SMTP",
-            DisplayName = "To Address",
-            RecipientType = "MapiTo"
-        }
-    },
-    Subject = "Re: Some subject",
-    SubjectPrefix = "Re: "
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var emailDto = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
-
-// Call method:
-var result = api.Email.AsMapi(emailDto);
-
-// Result example:
-result = new MapiMessageDto
-{
-    MessageBody = "Some body",
-    ClientSubmitTime = DateTime.Today,
-    DeliveryTime = DateTime.Today,
-    DisplayTo = "To Address",
-    Flags = new List<MapiMessageFlag>
-    {
-        "MsgFlagRead",
-        "MsgFlagUnsent",
-        "MsgFlagHasAttach"
-    },
-    NormalizedSubject = "Some subject",
-    SenderAddressType = "SMTP",
-    SenderEmailAddress = "from@aspose.com",
-    SenderName = "From Address",
-    SenderSmtpAddress = "from@aspose.com",
-    Attachments = new List<MapiAttachmentDto>
-    {
-        new MapiAttachmentDto
-        {
-            Name = "some-file.txt",
-            DataBase64 = "U29tZSBmaWxlIHRleHQ="
-        }
-    },
-    Body = "Some body",
-    MessageClass = "IPM.Note",
-    Recipients = new List<MapiRecipientDto>
-    {
-        new MapiRecipientDto
-        {
-            EmailAddress = "to@aspose.com",
-            AddressType = "SMTP",
-            DisplayName = "To Address",
-            RecipientType = "MapiTo"
-        }
-    },
-    Subject = "Re: Some subject",
-    SubjectPrefix = "Re: "
-};
-```
-
-</details>
+See parameter model documentation at [EmailDto](EmailDto.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="AsMapiAsync"></a>
-## AsMapiAsync
+# AsMapiAsync
 
-**Description:** Converts EmailDto to MapiMessageDto.             
+```csharp
+async Task<MapiMessageDto> AsMapiAsync(EmailDto emailDto)
+```
+
+Converts EmailDto to MapiMessageDto.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** MAPI model message representation
+Task<[**MapiMessageDto**](MapiMessageDto.md)>
 
-**Method call example:**
-```csharp
-var result = await api.Email.AsMapiAsync(emailDto);
-```
+### emailDto Parameter
 
-### Parameter: *emailDto*
-
-**Description:** Email model to convert
-
-**See also** parameter model documentation at [**EmailDto**](EmailDto.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var emailDto = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
-```
-
-</details>
-
-
-### Result
-
-**Description:** MAPI model message representation
-
-**Return type:** Task<[**MapiMessageDto**](MapiMessageDto.md)>
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new MapiMessageDto
-{
-    MessageBody = "Some body",
-    ClientSubmitTime = DateTime.Today,
-    DeliveryTime = DateTime.Today,
-    DisplayTo = "To Address",
-    Flags = new List<MapiMessageFlag>
-    {
-        "MsgFlagRead",
-        "MsgFlagUnsent",
-        "MsgFlagHasAttach"
-    },
-    NormalizedSubject = "Some subject",
-    SenderAddressType = "SMTP",
-    SenderEmailAddress = "from@aspose.com",
-    SenderName = "From Address",
-    SenderSmtpAddress = "from@aspose.com",
-    Attachments = new List<MapiAttachmentDto>
-    {
-        new MapiAttachmentDto
-        {
-            Name = "some-file.txt",
-            DataBase64 = "U29tZSBmaWxlIHRleHQ="
-        }
-    },
-    Body = "Some body",
-    MessageClass = "IPM.Note",
-    Recipients = new List<MapiRecipientDto>
-    {
-        new MapiRecipientDto
-        {
-            EmailAddress = "to@aspose.com",
-            AddressType = "SMTP",
-            DisplayName = "To Address",
-            RecipientType = "MapiTo"
-        }
-    },
-    Subject = "Re: Some subject",
-    SubjectPrefix = "Re: "
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var emailDto = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
-
-// Call method:
-var result = await api.Email.AsMapiAsync(emailDto);
-
-//Result example:
-result = new MapiMessageDto
-{
-    MessageBody = "Some body",
-    ClientSubmitTime = DateTime.Today,
-    DeliveryTime = DateTime.Today,
-    DisplayTo = "To Address",
-    Flags = new List<MapiMessageFlag>
-    {
-        "MsgFlagRead",
-        "MsgFlagUnsent",
-        "MsgFlagHasAttach"
-    },
-    NormalizedSubject = "Some subject",
-    SenderAddressType = "SMTP",
-    SenderEmailAddress = "from@aspose.com",
-    SenderName = "From Address",
-    SenderSmtpAddress = "from@aspose.com",
-    Attachments = new List<MapiAttachmentDto>
-    {
-        new MapiAttachmentDto
-        {
-            Name = "some-file.txt",
-            DataBase64 = "U29tZSBmaWxlIHRleHQ="
-        }
-    },
-    Body = "Some body",
-    MessageClass = "IPM.Note",
-    Recipients = new List<MapiRecipientDto>
-    {
-        new MapiRecipientDto
-        {
-            EmailAddress = "to@aspose.com",
-            AddressType = "SMTP",
-            DisplayName = "To Address",
-            RecipientType = "MapiTo"
-        }
-    },
-    Subject = "Re: Some subject",
-    SubjectPrefix = "Re: "
-};
-
-```
-
-</details>
+See parameter model documentation at [EmailDto](EmailDto.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="Convert"></a>
-## Convert
-**Descrption:** Converts email document to specified format and returns as file             
-
-
-**Returns:** File stream in specified format
-
-**Method call example:**
-```csharp
-var result = api.Email.Convert(request);
-```
-
-### Parameter: *request*
-
-**Description:** Convert method request.
-
-**See also** parameter model documentation at [**EmailConvertRequest**](EmailConvertRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Convert"></a>
+# Convert
 
 ```csharp
-var request = new EmailConvertRequest
-{ 
-    FromFormat = "Msg",
-    ToFormat = "Mhtml",
-    File = new MemoryStream(File.ReadAllBytes("/path/to/message.msg"))
-};
+Stream Convert(EmailConvertRequest request)
 ```
 
-</details>
+Converts email document to specified format and returns as file             
 
-### Result
+### Return type
 
-**Description:** File stream in specified format
+**Stream**
 
-**Return type:** **Stream**
-
-<details>
-    <summary>Result can be saved to file:</summary>
-
+### request Parameter
 ```csharp
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    result.CopyTo(resultFileStream);
-}
+new EmailConvertRequest(
+    fromFormat,
+    toFormat,
+    file)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailConvertRequest
-{ 
-    FromFormat = "Msg",
-    ToFormat = "Mhtml",
-    File = new MemoryStream(File.ReadAllBytes("/path/to/message.msg"))
-};
-
-// Call method:
-var result = api.Email.Convert(request);
-
-// Result can be saved to file:
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    result.CopyTo(resultFileStream);
-}
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fromFormat** | **string**| File format to convert to Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **toFormat** | **string**| File format to convert from Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="ConvertAsync"></a>
-## ConvertAsync
+# ConvertAsync
 
-**Description:** Converts email document to specified format and returns as file             
+```csharp
+async Task<Stream> ConvertAsync(EmailConvertRequest request)
+```
+
+Converts email document to specified format and returns as file             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** File stream in specified format
+**Task<Stream>**
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Email.ConvertAsync(request);
+new EmailConvertRequest(
+    fromFormat,
+    toFormat,
+    file)
 ```
 
-### Parameter: *request*
-
-**Description:** ConvertAsync method request.
-
-**See also** parameter model documentation at [**EmailConvertRequest**](EmailConvertRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new EmailConvertRequest
-{ 
-    FromFormat = "Msg",
-    ToFormat = "Mhtml",
-    File = new MemoryStream(File.ReadAllBytes("/path/to/message.msg"))
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** File stream in specified format
-
-**Return type:** **Stream**
-
-<details>
-    <summary>Result can be saved to file:</summary>
-
-```csharp
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    await result.CopyToAsync(resultFileStream);
-}
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailConvertRequest
-{ 
-    FromFormat = "Msg",
-    ToFormat = "Mhtml",
-    File = new MemoryStream(File.ReadAllBytes("/path/to/message.msg"))
-};
-
-// Call method:
-var result = await api.Email.ConvertAsync(request);
-
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    await result.CopyToAsync(resultFileStream);
-}
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fromFormat** | **string**| File format to convert to Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **toFormat** | **string**| File format to convert from Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="FromFile"></a>
-## FromFile
-**Descrption:** Converts email document to a model representation             
-
-
-**Returns:** Email document model
-
-**Method call example:**
-```csharp
-var result = api.Email.FromFile(request);
-```
-
-### Parameter: *request*
-
-**Description:** FromFile method request.
-
-**See also** parameter model documentation at [**EmailFromFileRequest**](EmailFromFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="FromFile"></a>
+# FromFile
 
 ```csharp
-var request = new EmailFromFileRequest
-{ 
-    Format = "Eml",
-    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml"))
-};
+EmailDto FromFile(EmailFromFileRequest request)
 ```
 
-</details>
+Converts email document to a model representation             
 
-### Result
+### Return type
 
-**Description:** Email document model
+[**EmailDto**](EmailDto.md)
 
-**Return type:** [**EmailDto**](EmailDto.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
+new EmailFromFileRequest(
+    format,
+    file)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailFromFileRequest
-{ 
-    Format = "Eml",
-    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml"))
-};
-
-// Call method:
-var result = api.Email.FromFile(request);
-
-// Result example:
-result = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**|  Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="FromFileAsync"></a>
-## FromFileAsync
+# FromFileAsync
 
-**Description:** Converts email document to a model representation             
+```csharp
+async Task<EmailDto> FromFileAsync(EmailFromFileRequest request)
+```
+
+Converts email document to a model representation             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Email document model
+Task<[**EmailDto**](EmailDto.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Email.FromFileAsync(request);
+new EmailFromFileRequest(
+    format,
+    file)
 ```
 
-### Parameter: *request*
-
-**Description:** FromFileAsync method request.
-
-**See also** parameter model documentation at [**EmailFromFileRequest**](EmailFromFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new EmailFromFileRequest
-{ 
-    Format = "Eml",
-    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml"))
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Email document model
-
-**Return type:** [**EmailDto**](EmailDto.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailFromFileRequest
-{ 
-    Format = "Eml",
-    File = new MemoryStream(File.ReadAllBytes("/path/to/message.eml"))
-};
-
-// Call method:
-var result = await api.Email.FromFileAsync(request);
-
-result = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**|  Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **file** | **System.IO.Stream**| File to convert | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="Get"></a>
-## Get
-**Descrption:** Get email document from storage.             
-
-
-**Returns:** Email document.
-
-**Method call example:**
-```csharp
-var result = api.Email.Get(request);
-```
-
-### Parameter: *request*
-
-**Description:** Get method request.
-
-**See also** parameter model documentation at [**EmailGetRequest**](EmailGetRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Get"></a>
+# Get
 
 ```csharp
-var request = new EmailGetRequest
-{ 
-    Format = "Eml",
-    FileName = "email.eml",
-    Folder = "folder/on/storage",
-    Storage = "First Storage"
-};
+EmailDto Get(EmailGetRequest request)
 ```
 
-</details>
+Get email document from storage.             
 
-### Result
+### Return type
 
-**Description:** Email document.
+[**EmailDto**](EmailDto.md)
 
-**Return type:** [**EmailDto**](EmailDto.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
+new EmailGetRequest(
+    format,
+    fileName,
+    folder=folder,
+    storage=storage)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailGetRequest
-{ 
-    Format = "Eml",
-    FileName = "email.eml",
-    Folder = "folder/on/storage",
-    Storage = "First Storage"
-};
-
-// Call method:
-var result = api.Email.Get(request);
-
-// Result example:
-result = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **fileName** | **string**| Email document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsync"></a>
-## GetAsync
+# GetAsync
 
-**Description:** Get email document from storage.             
+```csharp
+async Task<EmailDto> GetAsync(EmailGetRequest request)
+```
+
+Get email document from storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Email document.
+Task<[**EmailDto**](EmailDto.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Email.GetAsync(request);
+new EmailGetRequest(
+    format,
+    fileName,
+    folder=folder,
+    storage=storage)
 ```
 
-### Parameter: *request*
-
-**Description:** GetAsync method request.
-
-**See also** parameter model documentation at [**EmailGetRequest**](EmailGetRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new EmailGetRequest
-{ 
-    Format = "Eml",
-    FileName = "email.eml",
-    Folder = "folder/on/storage",
-    Storage = "First Storage"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Email document.
-
-**Return type:** [**EmailDto**](EmailDto.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailGetRequest
-{ 
-    Format = "Eml",
-    FileName = "email.eml",
-    Folder = "folder/on/storage",
-    Storage = "First Storage"
-};
-
-// Call method:
-var result = await api.Email.GetAsync(request);
-
-result = new EmailDto
-{
-    Attachments = new List<Attachment>
-    {
-        new Attachment
-        {
-            Name = "some-file.txt",
-            Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-        }
-    },
-    Body = "Some body",
-    BodyType = "Html",
-    DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-    {
-        "OnSuccess",
-        "Delay"
-    },
-    From = new MailAddress
-    {
-        DisplayName = "From Address",
-        Address = "from@aspose.com"
-    },
-    HtmlBody = "<b>Some body</b>",
-    IsBodyHtml = true,
-    IsDraft = true,
-    Subject = "Re: Some subject",
-    To = new List<MailAddress>
-    {
-        new MailAddress
-        {
-            DisplayName = "To Address",
-            Address = "to@aspose.com"
-        }
-    }
-};
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **fileName** | **string**| Email document file name. | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="GetAsFile"></a>
-## GetAsFile
-**Descrption:** Converts email document from storage to specified format and returns as file             
-
-
-**Returns:** File stream in specified format
-
-**Method call example:**
-```csharp
-var result = api.Email.GetAsFile(request);
-```
-
-### Parameter: *request*
-
-**Description:** GetAsFile method request.
-
-**See also** parameter model documentation at [**EmailGetAsFileRequest**](EmailGetAsFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="GetAsFile"></a>
+# GetAsFile
 
 ```csharp
-var request = new EmailGetAsFileRequest
-{ 
-    FileName = "email.eml",
-    Format = "Mhtml",
-    Storage = "First Storage",
-    Folder = "folder/on/storage"
-};
+Stream GetAsFile(EmailGetAsFileRequest request)
 ```
 
-</details>
+Converts email document from storage to specified format and returns as file             
 
-### Result
+### Return type
 
-**Description:** File stream in specified format
+**Stream**
 
-**Return type:** **Stream**
-
-<details>
-    <summary>Result can be saved to file:</summary>
-
+### request Parameter
 ```csharp
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    result.CopyTo(resultFileStream);
-}
+new EmailGetAsFileRequest(
+    fileName,
+    format,
+    storage=storage,
+    folder=folder)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailGetAsFileRequest
-{ 
-    FileName = "email.eml",
-    Format = "Mhtml",
-    Storage = "First Storage",
-    Folder = "folder/on/storage"
-};
-
-// Call method:
-var result = api.Email.GetAsFile(request);
-
-// Result can be saved to file:
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    result.CopyTo(resultFileStream);
-}
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Email document file name | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetAsFileAsync"></a>
-## GetAsFileAsync
+# GetAsFileAsync
 
-**Description:** Converts email document from storage to specified format and returns as file             
+```csharp
+async Task<Stream> GetAsFileAsync(EmailGetAsFileRequest request)
+```
+
+Converts email document from storage to specified format and returns as file             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** File stream in specified format
+**Task<Stream>**
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Email.GetAsFileAsync(request);
+new EmailGetAsFileRequest(
+    fileName,
+    format,
+    storage=storage,
+    folder=folder)
 ```
 
-### Parameter: *request*
-
-**Description:** GetAsFileAsync method request.
-
-**See also** parameter model documentation at [**EmailGetAsFileRequest**](EmailGetAsFileRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new EmailGetAsFileRequest
-{ 
-    FileName = "email.eml",
-    Format = "Mhtml",
-    Storage = "First Storage",
-    Folder = "folder/on/storage"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** File stream in specified format
-
-**Return type:** **Stream**
-
-<details>
-    <summary>Result can be saved to file:</summary>
-
-```csharp
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    await result.CopyToAsync(resultFileStream);
-}
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailGetAsFileRequest
-{ 
-    FileName = "email.eml",
-    Format = "Mhtml",
-    Storage = "First Storage",
-    Folder = "folder/on/storage"
-};
-
-// Call method:
-var result = await api.Email.GetAsFileAsync(request);
-
-using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
-{
-    await result.CopyToAsync(resultFileStream);
-}
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileName** | **string**| Email document file name | 
+ **format** | **string**| File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **storage** | **string**| Storage name | [optional] 
+ **folder** | **string**| Path to folder in storage | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="GetList"></a>
-## GetList
-**Descrption:** Get email list from storage folder.             
-
-
-**Returns:** Email document list.
-
-**Method call example:**
-```csharp
-var result = api.Email.GetList(request);
-```
-
-### Parameter: *request*
-
-**Description:** GetList method request.
-
-**See also** parameter model documentation at [**EmailGetListRequest**](EmailGetListRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="GetList"></a>
+# GetList
 
 ```csharp
-var request = new EmailGetListRequest
-{ 
-    Format = "Eml",
-    Folder = "folder/on/storage",
-    Storage = "First Storage",
-    ItemsPerPage = 10,
-    PageNumber = 0
-};
+EmailStorageList GetList(EmailGetListRequest request)
 ```
 
-</details>
+Get email list from storage folder.             
 
-### Result
+### Return type
 
-**Description:** Email document list.
+[**EmailStorageList**](EmailStorageList.md)
 
-**Return type:** [**EmailStorageList**](EmailStorageList.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = new EmailStorageList
-{
-    Value = new List<StorageModelOfEmailDto>
-    {
-        new EmailSaveRequest
-        {
-            StorageFile = new StorageFileLocation
-            {
-                FileName = "message.eml",
-                Storage = "First Storage",
-                FolderPath = "file/location/folder/on/storage"
-            },
-            Value = new EmailDto
-            {
-                Attachments = new List<Attachment>
-                {
-                    new Attachment
-                    {
-                        Name = "some-file.txt",
-                        Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-                    }
-                },
-                Body = "Some body",
-                BodyType = "Html",
-                DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-                {
-                    "OnSuccess",
-                    "Delay"
-                },
-                From = new MailAddress
-                {
-                    DisplayName = "From Address",
-                    Address = "from@aspose.com"
-                },
-                HtmlBody = "<b>Some body</b>",
-                IsBodyHtml = true,
-                IsDraft = true,
-                Subject = "Re: Some subject",
-                To = new List<MailAddress>
-                {
-                    new MailAddress
-                    {
-                        DisplayName = "To Address",
-                        Address = "to@aspose.com"
-                    }
-                }
-            }
-        }
-    }
-};
+new EmailGetListRequest(
+    format,
+    folder=folder,
+    storage=storage,
+    itemsPerPage=itemsPerPage,
+    pageNumber=pageNumber)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailGetListRequest
-{ 
-    Format = "Eml",
-    Folder = "folder/on/storage",
-    Storage = "First Storage",
-    ItemsPerPage = 10,
-    PageNumber = 0
-};
-
-// Call method:
-var result = api.Email.GetList(request);
-
-// Result example:
-result = new EmailStorageList
-{
-    Value = new List<StorageModelOfEmailDto>
-    {
-        new EmailSaveRequest
-        {
-            StorageFile = new StorageFileLocation
-            {
-                FileName = "message.eml",
-                Storage = "First Storage",
-                FolderPath = "file/location/folder/on/storage"
-            },
-            Value = new EmailDto
-            {
-                Attachments = new List<Attachment>
-                {
-                    new Attachment
-                    {
-                        Name = "some-file.txt",
-                        Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-                    }
-                },
-                Body = "Some body",
-                BodyType = "Html",
-                DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-                {
-                    "OnSuccess",
-                    "Delay"
-                },
-                From = new MailAddress
-                {
-                    DisplayName = "From Address",
-                    Address = "from@aspose.com"
-                },
-                HtmlBody = "<b>Some body</b>",
-                IsBodyHtml = true,
-                IsDraft = true,
-                Subject = "Re: Some subject",
-                To = new List<MailAddress>
-                {
-                    new MailAddress
-                    {
-                        DisplayName = "To Address",
-                        Address = "to@aspose.com"
-                    }
-                }
-            }
-        }
-    }
-};
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+ **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
+ **pageNumber** | **int?**| Page number. | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetListAsync"></a>
-## GetListAsync
+# GetListAsync
 
-**Description:** Get email list from storage folder.             
+```csharp
+async Task<EmailStorageList> GetListAsync(EmailGetListRequest request)
+```
+
+Get email list from storage folder.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Email document list.
+Task<[**EmailStorageList**](EmailStorageList.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Email.GetListAsync(request);
+new EmailGetListRequest(
+    format,
+    folder=folder,
+    storage=storage,
+    itemsPerPage=itemsPerPage,
+    pageNumber=pageNumber)
 ```
 
-### Parameter: *request*
-
-**Description:** GetListAsync method request.
-
-**See also** parameter model documentation at [**EmailGetListRequest**](EmailGetListRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new EmailGetListRequest
-{ 
-    Format = "Eml",
-    Folder = "folder/on/storage",
-    Storage = "First Storage",
-    ItemsPerPage = 10,
-    PageNumber = 0
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Email document list.
-
-**Return type:** [**EmailStorageList**](EmailStorageList.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = new EmailStorageList
-{
-    Value = new List<StorageModelOfEmailDto>
-    {
-        new EmailSaveRequest
-        {
-            StorageFile = new StorageFileLocation
-            {
-                FileName = "message.eml",
-                Storage = "First Storage",
-                FolderPath = "file/location/folder/on/storage"
-            },
-            Value = new EmailDto
-            {
-                Attachments = new List<Attachment>
-                {
-                    new Attachment
-                    {
-                        Name = "some-file.txt",
-                        Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-                    }
-                },
-                Body = "Some body",
-                BodyType = "Html",
-                DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-                {
-                    "OnSuccess",
-                    "Delay"
-                },
-                From = new MailAddress
-                {
-                    DisplayName = "From Address",
-                    Address = "from@aspose.com"
-                },
-                HtmlBody = "<b>Some body</b>",
-                IsBodyHtml = true,
-                IsDraft = true,
-                Subject = "Re: Some subject",
-                To = new List<MailAddress>
-                {
-                    new MailAddress
-                    {
-                        DisplayName = "To Address",
-                        Address = "to@aspose.com"
-                    }
-                }
-            }
-        }
-    }
-};
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailGetListRequest
-{ 
-    Format = "Eml",
-    Folder = "folder/on/storage",
-    Storage = "First Storage",
-    ItemsPerPage = 10,
-    PageNumber = 0
-};
-
-// Call method:
-var result = await api.Email.GetListAsync(request);
-
-result = new EmailStorageList
-{
-    Value = new List<StorageModelOfEmailDto>
-    {
-        new EmailSaveRequest
-        {
-            StorageFile = new StorageFileLocation
-            {
-                FileName = "message.eml",
-                Storage = "First Storage",
-                FolderPath = "file/location/folder/on/storage"
-            },
-            Value = new EmailDto
-            {
-                Attachments = new List<Attachment>
-                {
-                    new Attachment
-                    {
-                        Name = "some-file.txt",
-                        Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-                    }
-                },
-                Body = "Some body",
-                BodyType = "Html",
-                DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-                {
-                    "OnSuccess",
-                    "Delay"
-                },
-                From = new MailAddress
-                {
-                    DisplayName = "From Address",
-                    Address = "from@aspose.com"
-                },
-                HtmlBody = "<b>Some body</b>",
-                IsBodyHtml = true,
-                IsDraft = true,
-                Subject = "Re: Some subject",
-                To = new List<MailAddress>
-                {
-                    new MailAddress
-                    {
-                        DisplayName = "To Address",
-                        Address = "to@aspose.com"
-                    }
-                }
-            }
-        }
-    }
-};
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **format** | **string**| Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+ **folder** | **string**| Path to folder in storage. | [optional] 
+ **storage** | **string**| Storage name. | [optional] 
+ **itemsPerPage** | **int?**| Count of items on page. | [optional] [default to 10]
+ **pageNumber** | **int?**| Page number. | [optional] [default to 0]
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="Save"></a>
-## Save
-
-**Description**: Save email document to storage.             
-
-
-**Method call example:**
-```csharp
-api.Email.Save(request);
-```
-
-### Parameter: *request*
-
-**Description:** Email document create/update request.
-
-**See also** parameter model documentation at [**EmailSaveRequest**](EmailSaveRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Save"></a>
+# Save
 
 ```csharp
-var request = new EmailSaveRequest
-{
-    Format = "Msg",
-    StorageFile = new StorageFileLocation
-    {
-        FileName = "email.eml",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    },
-    Value = new EmailDto
-    {
-        Attachments = new List<Attachment>
-        {
-            new Attachment
-            {
-                Name = "some-file.txt",
-                Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-            }
-        },
-        Body = "Some body",
-        BodyType = "Html",
-        DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-        {
-            "OnSuccess",
-            "Delay"
-        },
-        From = new MailAddress
-        {
-            DisplayName = "From Address",
-            Address = "from@aspose.com"
-        },
-        HtmlBody = "<b>Some body</b>",
-        IsBodyHtml = true,
-        IsDraft = true,
-        Subject = "Re: Some subject",
-        To = new List<MailAddress>
-        {
-            new MailAddress
-            {
-                DisplayName = "To Address",
-                Address = "to@aspose.com"
-            }
-        }
-    }
-};
+void Save(EmailSaveRequest request)
 ```
 
-</details>
+Save email document to storage.             
 
+### Return type
 
-### Result
+void (empty response body)
 
-**Return type:** void (empty response body)
+### request Parameter
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailSaveRequest
-{
-    Format = "Msg",
-    StorageFile = new StorageFileLocation
-    {
-        FileName = "email.eml",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    },
-    Value = new EmailDto
-    {
-        Attachments = new List<Attachment>
-        {
-            new Attachment
-            {
-                Name = "some-file.txt",
-                Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-            }
-        },
-        Body = "Some body",
-        BodyType = "Html",
-        DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-        {
-            "OnSuccess",
-            "Delay"
-        },
-        From = new MailAddress
-        {
-            DisplayName = "From Address",
-            Address = "from@aspose.com"
-        },
-        HtmlBody = "<b>Some body</b>",
-        IsBodyHtml = true,
-        IsDraft = true,
-        Subject = "Re: Some subject",
-        To = new List<MailAddress>
-        {
-            new MailAddress
-            {
-                DisplayName = "To Address",
-                Address = "to@aspose.com"
-            }
-        }
-    }
-};
-
-// Call method:
-api.Email.Save(request);
-```
-
-</details>
+See parameter model documentation at [EmailSaveRequest](EmailSaveRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="SaveAsync"></a>
-## SaveAsync
+# SaveAsync
 
-**Description:** Save email document to storage.             
+```csharp
+async Task SaveAsync(EmailSaveRequest request)
+```
+
+Save email document to storage.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
-```csharp
-await api.Email.SaveAsync(request);
-```
+Task (empty response body)
 
-### Parameter: *request*
+### request Parameter
 
-**Description:** Email document create/update request.
-
-**See also** parameter model documentation at [**EmailSaveRequest**](EmailSaveRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new EmailSaveRequest
-{
-    Format = "Msg",
-    StorageFile = new StorageFileLocation
-    {
-        FileName = "email.eml",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    },
-    Value = new EmailDto
-    {
-        Attachments = new List<Attachment>
-        {
-            new Attachment
-            {
-                Name = "some-file.txt",
-                Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-            }
-        },
-        Body = "Some body",
-        BodyType = "Html",
-        DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-        {
-            "OnSuccess",
-            "Delay"
-        },
-        From = new MailAddress
-        {
-            DisplayName = "From Address",
-            Address = "from@aspose.com"
-        },
-        HtmlBody = "<b>Some body</b>",
-        IsBodyHtml = true,
-        IsDraft = true,
-        Subject = "Re: Some subject",
-        To = new List<MailAddress>
-        {
-            new MailAddress
-            {
-                DisplayName = "To Address",
-                Address = "to@aspose.com"
-            }
-        }
-    }
-};
-```
-
-</details>
-
-
-### Result
-
-**Return type:** Task (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new EmailSaveRequest
-{
-    Format = "Msg",
-    StorageFile = new StorageFileLocation
-    {
-        FileName = "email.eml",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    },
-    Value = new EmailDto
-    {
-        Attachments = new List<Attachment>
-        {
-            new Attachment
-            {
-                Name = "some-file.txt",
-                Base64Data = "U29tZSBmaWxlIGNvbnRlbnQ="
-            }
-        },
-        Body = "Some body",
-        BodyType = "Html",
-        DeliveryNotificationOptions = new List<EmailDeliveryNotificationOptions>
-        {
-            "OnSuccess",
-            "Delay"
-        },
-        From = new MailAddress
-        {
-            DisplayName = "From Address",
-            Address = "from@aspose.com"
-        },
-        HtmlBody = "<b>Some body</b>",
-        IsBodyHtml = true,
-        IsDraft = true,
-        Subject = "Re: Some subject",
-        To = new List<MailAddress>
-        {
-            new MailAddress
-            {
-                DisplayName = "To Address",
-                Address = "to@aspose.com"
-            }
-        }
-    }
-};
-
-// Call method:
-await api.Email.SaveAsync(request);
-
-```
-
-</details>
+See parameter model documentation at [EmailSaveRequest](EmailSaveRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

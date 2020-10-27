@@ -1,442 +1,143 @@
-# ClientFolderApi (EmailCloud.Client.Folder)
+# Aspose.Email.Cloud.Sdk.ClientFolderApi
 
-Email client folder operations.
-
-<a name="Create"></a>
-## Create
-
-**Description**: Create new folder in email account             
-
-
-**Method call example:**
-```csharp
-api.Client.Folder.Create(request);
-```
-
-### Parameter: *request*
-
-**Description:** Create folder request
-
-**See also** parameter model documentation at [**ClientFolderCreateRequest**](ClientFolderCreateRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Create"></a>
+# Create
 
 ```csharp
-var request = new ClientFolderCreateRequest
-{
-    ParentFolder = "INBOX/SubFolder/ParentFolder",
-    FolderName = "NewFolder",
-    AccountLocation = new StorageFileLocation
-    {
-        FileName = "email.account",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    }
-};
+void Create(ClientFolderCreateRequest request)
 ```
 
-</details>
+Create new folder in email account             
 
+### Return type
 
-### Result
+void (empty response body)
 
-**Return type:** void (empty response body)
+### request Parameter
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new ClientFolderCreateRequest
-{
-    ParentFolder = "INBOX/SubFolder/ParentFolder",
-    FolderName = "NewFolder",
-    AccountLocation = new StorageFileLocation
-    {
-        FileName = "email.account",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    }
-};
-
-// Call method:
-api.Client.Folder.Create(request);
-```
-
-</details>
+See parameter model documentation at [ClientFolderCreateRequest](ClientFolderCreateRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="CreateAsync"></a>
-## CreateAsync
+# CreateAsync
 
-**Description:** Create new folder in email account             
+```csharp
+async Task CreateAsync(ClientFolderCreateRequest request)
+```
+
+Create new folder in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
-```csharp
-await api.Client.Folder.CreateAsync(request);
-```
+Task (empty response body)
 
-### Parameter: *request*
+### request Parameter
 
-**Description:** Create folder request
-
-**See also** parameter model documentation at [**ClientFolderCreateRequest**](ClientFolderCreateRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new ClientFolderCreateRequest
-{
-    ParentFolder = "INBOX/SubFolder/ParentFolder",
-    FolderName = "NewFolder",
-    AccountLocation = new StorageFileLocation
-    {
-        FileName = "email.account",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    }
-};
-```
-
-</details>
-
-
-### Result
-
-**Return type:** Task (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new ClientFolderCreateRequest
-{
-    ParentFolder = "INBOX/SubFolder/ParentFolder",
-    FolderName = "NewFolder",
-    AccountLocation = new StorageFileLocation
-    {
-        FileName = "email.account",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    }
-};
-
-// Call method:
-await api.Client.Folder.CreateAsync(request);
-
-```
-
-</details>
+See parameter model documentation at [ClientFolderCreateRequest](ClientFolderCreateRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="Delete"></a>
-## Delete
-
-**Description**: Delete a folder in email account             
-
-
-**Method call example:**
-```csharp
-api.Client.Folder.Delete(request);
-```
-
-### Parameter: *request*
-
-**Description:** Delete folder request
-
-**See also** parameter model documentation at [**ClientFolderDeleteRequest**](ClientFolderDeleteRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="Delete"></a>
+# Delete
 
 ```csharp
-var request = new ClientFolderDeleteRequest
-{
-    Folder = "INBOX/SubFolder/FolderToDelete",
-    AccountLocation = new StorageFileLocation
-    {
-        FileName = "email.account",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    }
-};
+void Delete(ClientFolderDeleteRequest request)
 ```
 
-</details>
+Delete a folder in email account             
 
+### Return type
 
-### Result
+void (empty response body)
 
-**Return type:** void (empty response body)
+### request Parameter
 
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new ClientFolderDeleteRequest
-{
-    Folder = "INBOX/SubFolder/FolderToDelete",
-    AccountLocation = new StorageFileLocation
-    {
-        FileName = "email.account",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    }
-};
-
-// Call method:
-api.Client.Folder.Delete(request);
-```
-
-</details>
+See parameter model documentation at [ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="DeleteAsync"></a>
-## DeleteAsync
+# DeleteAsync
 
-**Description:** Delete a folder in email account             
+```csharp
+async Task DeleteAsync(ClientFolderDeleteRequest request)
+```
+
+Delete a folder in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Method call example:**
-```csharp
-await api.Client.Folder.DeleteAsync(request);
-```
+Task (empty response body)
 
-### Parameter: *request*
+### request Parameter
 
-**Description:** Delete folder request
-
-**See also** parameter model documentation at [**ClientFolderDeleteRequest**](ClientFolderDeleteRequest.md)
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new ClientFolderDeleteRequest
-{
-    Folder = "INBOX/SubFolder/FolderToDelete",
-    AccountLocation = new StorageFileLocation
-    {
-        FileName = "email.account",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    }
-};
-```
-
-</details>
-
-
-### Result
-
-**Return type:** Task (empty response body)
-
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new ClientFolderDeleteRequest
-{
-    Folder = "INBOX/SubFolder/FolderToDelete",
-    AccountLocation = new StorageFileLocation
-    {
-        FileName = "email.account",
-        Storage = "First Storage",
-        FolderPath = "file/location/folder/on/storage"
-    }
-};
-
-// Call method:
-await api.Client.Folder.DeleteAsync(request);
-
-```
-
-</details>
+See parameter model documentation at [ClientFolderDeleteRequest](ClientFolderDeleteRequest.md)
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
-<a name="GetList"></a>
-## GetList
-**Descrption:** Get folders list in email account             
-
-
-**Returns:** Folders list
-
-**Method call example:**
-```csharp
-var result = api.Client.Folder.GetList(request);
-```
-
-### Parameter: *request*
-
-**Description:** GetList method request.
-
-**See also** parameter model documentation at [**ClientFolderGetListRequest**](ClientFolderGetListRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="GetList"></a>
+# GetList
 
 ```csharp
-var request = new ClientFolderGetListRequest
-{ 
-    Account = "email.multi.account",
-    Storage = "First Storage",
-    AccountStorageFolder = "email/account/location/on/storage",
-    ParentFolder = "INBOX"
-};
+MailServerFolderList GetList(ClientFolderGetListRequest request)
 ```
 
-</details>
+Get folders list in email account             
 
-### Result
+### Return type
 
-**Description:** Folders list
+[**MailServerFolderList**](MailServerFolderList.md)
 
-**Return type:** [**MailServerFolderList**](MailServerFolderList.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = ;
+new ClientFolderGetListRequest(
+    account,
+    storage=storage,
+    accountStorageFolder=accountStorageFolder,
+    parentFolder=parentFolder)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new ClientFolderGetListRequest
-{ 
-    Account = "email.multi.account",
-    Storage = "First Storage",
-    AccountStorageFolder = "email/account/location/on/storage",
-    ParentFolder = "INBOX"
-};
-
-// Call method:
-var result = api.Client.Folder.GetList(request);
-
-// Result example:
-result = ;
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **account** | **string**| Email account | 
+ **storage** | **string**| Storage name where account file located | [optional] 
+ **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
+ **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="GetListAsync"></a>
-## GetListAsync
+# GetListAsync
 
-**Description:** Get folders list in email account             
+```csharp
+async Task<MailServerFolderList> GetListAsync(ClientFolderGetListRequest request)
+```
+
+Get folders list in email account             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** Folders list
+Task<[**MailServerFolderList**](MailServerFolderList.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.Client.Folder.GetListAsync(request);
+new ClientFolderGetListRequest(
+    account,
+    storage=storage,
+    accountStorageFolder=accountStorageFolder,
+    parentFolder=parentFolder)
 ```
 
-### Parameter: *request*
-
-**Description:** GetListAsync method request.
-
-**See also** parameter model documentation at [**ClientFolderGetListRequest**](ClientFolderGetListRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new ClientFolderGetListRequest
-{ 
-    Account = "email.multi.account",
-    Storage = "First Storage",
-    AccountStorageFolder = "email/account/location/on/storage",
-    ParentFolder = "INBOX"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** Folders list
-
-**Return type:** [**MailServerFolderList**](MailServerFolderList.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = ;
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new ClientFolderGetListRequest
-{ 
-    Account = "email.multi.account",
-    Storage = "First Storage",
-    AccountStorageFolder = "email/account/location/on/storage",
-    ParentFolder = "INBOX"
-};
-
-// Call method:
-var result = await api.Client.Folder.GetListAsync(request);
-
-result = ;
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **account** | **string**| Email account | 
+ **storage** | **string**| Storage name where account file located | [optional] 
+ **accountStorageFolder** | **string**| Folder in storage where account file located | [optional] 
+ **parentFolder** | **string**| Folder in which subfolders should be listed | [optional] 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

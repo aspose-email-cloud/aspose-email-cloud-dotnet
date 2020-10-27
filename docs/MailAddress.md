@@ -1,6 +1,4 @@
-# MailAddress
-Represents the address of a message.
-
+# Model.MailAddress
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,5 +8,7 @@ Name | Type | Description | Notes
 **OriginalAddressString** | **string** | The original e-mail address string              | [optional] 
 
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

@@ -1,19 +1,11 @@
-# MapiPropertyDescriptor
-Mapi property descriptor             
-
+# Model.MapiPropertyDescriptor
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Discriminator** | **string** |  | 
 
 
-## Example
-```csharp
-var mapiPropertyDescriptor = new MapiPropertyDescriptor
-{
-    
-};
-```
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

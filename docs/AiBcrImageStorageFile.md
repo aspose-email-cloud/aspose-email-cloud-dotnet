@@ -1,6 +1,4 @@
-# AiBcrImageStorageFile
-Image from storage for recognition             
-
+# Model.AiBcrImageStorageFile
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,19 +8,6 @@ Name | Type | Description | Notes
 
 See: [AiBcrImage](AiBcrImage.md)
 
-## Example
-```csharp
-var aiBcrImageStorageFile = new AiBcrImageStorageFile
-{
-    File = new StorageFileLocation
-    {
-        FileName = "VCardScanImage.jpg",
-        Storage = "First Storage",
-        FolderPath = "image/location/on/storage"
-    },
-    IsSingle = true
-};
-```
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

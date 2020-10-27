@@ -1,6 +1,4 @@
-# MapiContactNamePropertySetDto
-The properties are used to specify the name of the person represented by the contact             
-
+# Model.MapiContactNamePropertySetDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -16,5 +14,7 @@ Name | Type | Description | Notes
 **Surname** | **string** | Surname (family name) of the contact              | [optional] 
 
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

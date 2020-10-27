@@ -1,6 +1,4 @@
-# MapiPidLidPropertyDescriptor
-Property identified by an unsigned 32-bit quantity along with a property set             
-
+# Model.MapiPidLidPropertyDescriptor
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -11,5 +9,6 @@ Name | Type | Description | Notes
 
 See: [MapiPidPropertyDescriptor](MapiPidPropertyDescriptor.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

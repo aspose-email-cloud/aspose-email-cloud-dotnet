@@ -21,17 +21,16 @@ Aspose.Email Cloud is a REST API for creating email applications that work with 
 - Email configuration discovery.
 - Disposable email address detection.
 
-## New features in version 20.9
+## New features in version 20.10
 
-Aspose.Email Cloud SDK 20.9.0 is based on a new v4.0 REST API.
+Aspose.Email Cloud 20.10.0 comes with SDK improvements:
 
-- All SDK functions are divided into groups (Email, Calendar, Contact, Client, Ai, Mapi, etc.).
-- Unified file API provided for supported file types (Save, Get, Convert, AsFile, FromFile, AsMapi/AsDto).
-- HierarchicalObject based API is removed.
-- All models are stored in one folder/namespace.
-- The request models are simplified.
+- Typescript, PHP, Java SDKs now have model builders to simplify their initialization.
+- All SDK methods now have code examples with parameters initialization.
+- Some models now have initialization examples for all SDKs.
+- SDK reference documentation with examples now available at url [docs.aspose.cloud/email/reference-api](https://docs.aspose.cloud/email/reference-api/) 
 
-See [Release notes](https://docs.aspose.cloud/display/emailcloud/Aspose.Email+Cloud+20.9+Release+Notes).
+See [Release notes](https://docs.aspose.cloud/email/aspose-email-cloud-20-10-release-notes/).
 
 
 ## How to use the SDK?

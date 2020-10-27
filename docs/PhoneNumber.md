@@ -1,6 +1,4 @@
-# PhoneNumber
-A phone number.             
-
+# Model.PhoneNumber
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,18 +7,7 @@ Name | Type | Description | Notes
 **Preferred** | **bool?** | Defines whether phone number is preferred.              | 
 
 
-## Example
-```csharp
-var phoneNumber = new PhoneNumber
-{
-    Category = new EnumWithCustomOfPhoneNumberCategory
-    {
-        Value = "Company"
-    },
-    Number = "+44 141 628 8900",
-    Preferred = true
-};
-```
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

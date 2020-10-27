@@ -1,146 +1,53 @@
-# DisposableEmailApi (EmailCloud.DisposableEmail)
+# Aspose.Email.Cloud.Sdk.DisposableEmailApi
 
-Check email address is disposable operations
-
-<a name="IsDisposable"></a>
-## IsDisposable
-**Descrption:** Check email address is disposable             
-
-
-**Returns:** true if address is disposable
-
-**Method call example:**
-```csharp
-var result = api.DisposableEmail.IsDisposable(request);
-```
-
-### Parameter: *request*
-
-**Description:** IsDisposable method request.
-
-**See also** parameter model documentation at [**DisposableEmailIsDisposableRequest**](DisposableEmailIsDisposableRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
+        <a name="IsDisposable"></a>
+# IsDisposable
 
 ```csharp
-var request = new DisposableEmailIsDisposableRequest
-{ 
-    Address = "example@mailcatch.com"
-};
+ValueTOfBoolean IsDisposable(DisposableEmailIsDisposableRequest request)
 ```
 
-</details>
+Check email address is disposable             
 
-### Result
+### Return type
 
-**Description:** true if address is disposable
+[**ValueTOfBoolean**](ValueTOfBoolean.md)
 
-**Return type:** [**ValueTOfBoolean**](ValueTOfBoolean.md)
-
-<details>
-    <summary>Result example</summary>
-
+### request Parameter
 ```csharp
-result = ;
+new DisposableEmailIsDisposableRequest(
+    address)
 ```
 
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new DisposableEmailIsDisposableRequest
-{ 
-    Address = "example@mailcatch.com"
-};
-
-// Call method:
-var result = api.DisposableEmail.IsDisposable(request);
-
-// Result example:
-result = ;
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **address** | **string**| An email address to check | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)
 
 <a name="IsDisposableAsync"></a>
-## IsDisposableAsync
+# IsDisposableAsync
 
-**Description:** Check email address is disposable             
+```csharp
+async Task<ValueTOfBoolean> IsDisposableAsync(DisposableEmailIsDisposableRequest request)
+```
+
+Check email address is disposable             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
+### Return type
 
-**Returns:** true if address is disposable
+Task<[**ValueTOfBoolean**](ValueTOfBoolean.md)>
 
-**Method call example:**
+### request Parameter
 ```csharp
-var result = await api.DisposableEmail.IsDisposableAsync(request);
+new DisposableEmailIsDisposableRequest(
+    address)
 ```
 
-### Parameter: *request*
-
-**Description:** IsDisposableAsync method request.
-
-**See also** parameter model documentation at [**DisposableEmailIsDisposableRequest**](DisposableEmailIsDisposableRequest.md).
-
-<details>
-    <summary>Parameter initialization example:</summary>
-
-```csharp
-var request = new DisposableEmailIsDisposableRequest
-{ 
-    Address = "example@mailcatch.com"
-};
-```
-
-</details>
-
-### Result
-
-**Returns:** true if address is disposable
-
-**Return type:** [**ValueTOfBoolean**](ValueTOfBoolean.md)
-
-<details>
-    <summary>Result example</summary>
-
-```csharp
-result = ;
-```
-
-</details>
-
-### Complete example:
-
-<details>
-    <summary>Method call example:</summary>
-
-```csharp
-var api = new EmailCloud(appKey, appSid);
-
-// Prepare parameters:
-var request = new DisposableEmailIsDisposableRequest
-{ 
-    Address = "example@mailcatch.com"
-};
-
-// Call method:
-var result = await api.DisposableEmail.IsDisposableAsync(request);
-
-result = ;
-
-```
-
-</details>
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **address** | **string**| An email address to check | 
 
 [[Back to top]](#) [[Back to Model list]](Models.md) [[Back to README]](README.md)

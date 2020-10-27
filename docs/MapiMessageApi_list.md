@@ -13,3 +13,5 @@ Method | HTTP request | Description
 [**Get**](MapiMessageApi.md#Get)/[**GetAsync**](MapiMessageApi.md#GetAsync)| **GET** /email/MapiMessage| Get MAPI message document.             
 [**Save**](MapiMessageApi.md#Save)/[**SaveAsync**](MapiMessageApi.md#SaveAsync)| **PUT** /email/MapiMessage| Save MAPI message to storage.             
 
+
+

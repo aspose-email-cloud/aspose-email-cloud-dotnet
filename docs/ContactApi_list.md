@@ -16,3 +16,5 @@ Method | HTTP request | Description
 [**GetList**](ContactApi.md#GetList)/[**GetListAsync**](ContactApi.md#GetListAsync)| **GET** /email/Contact/list| Get contact list from storage folder.             
 [**Save**](ContactApi.md#Save)/[**SaveAsync**](ContactApi.md#SaveAsync)| **PUT** /email/Contact| Save contact to storage.             
 
+
+

@@ -1,6 +1,4 @@
-# YearlyRecurrencePatternDto
-Yearly recurrence pattern.             
-
+# Model.YearlyRecurrencePatternDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -13,16 +11,6 @@ Name | Type | Description | Notes
 
 See: [RecurrencePatternDto](RecurrencePatternDto.md)
 
-## Example
-```csharp
-var yearlyRecurrencePatternDto = new YearlyRecurrencePatternDto
-{
-    StartMonth = "January",
-    StartOffset = 30,
-    Interval = -1,
-    WeekStart = "Monday"
-};
-```
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

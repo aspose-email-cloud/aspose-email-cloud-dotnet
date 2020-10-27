@@ -19,3 +19,5 @@ Method | HTTP request | Description
 [**Parse**](AiNameApi.md#Parse)/[**ParseAsync**](AiNameApi.md#ParseAsync)| **GET** /email/AiName/parse| Parse name to components.             
 [**ParseEmailAddress**](AiNameApi.md#ParseEmailAddress)/[**ParseEmailAddressAsync**](AiNameApi.md#ParseEmailAddressAsync)| **GET** /email/AiName/parse-email-address| Parse person&#39;s name out of an email address.             
 
+
+

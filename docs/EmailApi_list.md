@@ -16,3 +16,5 @@ Method | HTTP request | Description
 [**GetList**](EmailApi.md#GetList)/[**GetListAsync**](EmailApi.md#GetListAsync)| **GET** /email/list| Get email list from storage folder.             
 [**Save**](EmailApi.md#Save)/[**SaveAsync**](EmailApi.md#SaveAsync)| **PUT** /email| Save email document to storage.             
 
+
+

@@ -1,6 +1,4 @@
-# MapiCalendarAttendeesDto
-Mapi calendar attendees.             
-
+# Model.MapiCalendarAttendeesDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,5 +8,7 @@ Name | Type | Description | Notes
 **ResponseRequested** | **bool?** | Value indicating whether a response is requested to a Message object.              | 
 
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

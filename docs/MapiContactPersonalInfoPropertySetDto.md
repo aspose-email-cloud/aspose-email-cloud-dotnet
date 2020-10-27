@@ -1,6 +1,4 @@
-# MapiContactPersonalInfoPropertySetDto
-Specify other additional contact information.             
-
+# Model.MapiContactPersonalInfoPropertySetDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -25,5 +23,7 @@ Name | Type | Description | Notes
 **Children** | **List&lt;string&gt;** | Contains a list of names of children.              | [optional] 
 
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

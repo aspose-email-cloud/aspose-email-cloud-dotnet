@@ -1,6 +1,4 @@
-# MapiCalendarYearlyAndMonthlyRecurrencePatternDto
-Represents the yearly and monthly recurrence pattern of the mapi calendar             
-
+# Model.MapiCalendarYearlyAndMonthlyRecurrencePatternDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -12,5 +10,6 @@ Name | Type | Description | Notes
 
 See: [MapiCalendarRecurrencePatternDto](MapiCalendarRecurrencePatternDto.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

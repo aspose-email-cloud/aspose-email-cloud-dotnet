@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             this.configuration = configuration;
             this.apiInvoker = apiInvoker;
         }
-
+                    
         /// <summary>
         /// Copy file 
         /// </summary>
@@ -100,7 +100,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => CopyFile(request));
         #endif
 
-
+                    
         /// <summary>
         /// Delete file 
         /// </summary>
@@ -137,7 +137,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => DeleteFile(request));
         #endif
 
-
+                    
         /// <summary>
         /// Download file 
         /// </summary>
@@ -179,7 +179,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => DownloadFile(request));
         #endif
 
-
+                    
         /// <summary>
         /// Move file 
         /// </summary>
@@ -225,7 +225,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
             await Task.Run(() => MoveFile(request));
         #endif
 
-
+                    
         /// <summary>
         /// Upload file 
         /// </summary>

@@ -13,3 +13,5 @@ Method | HTTP request | Description
 [**GetFilesList**](FolderApi.md#GetFilesList)/[**GetFilesListAsync**](FolderApi.md#GetFilesListAsync)| **GET** /email/storage/folder/{path}| Get all files and folders within a folder
 [**MoveFolder**](FolderApi.md#MoveFolder)/[**MoveFolderAsync**](FolderApi.md#MoveFolderAsync)| **PUT** /email/storage/folder/move/{srcPath}| Move folder
 
+
+

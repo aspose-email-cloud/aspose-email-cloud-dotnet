@@ -13,3 +13,5 @@ Method | HTTP request | Description
 [**Get**](MapiCalendarApi.md#Get)/[**GetAsync**](MapiCalendarApi.md#GetAsync)| **GET** /email/MapiCalendar| Get MAPI calendar document.             
 [**Save**](MapiCalendarApi.md#Save)/[**SaveAsync**](MapiCalendarApi.md#SaveAsync)| **PUT** /email/MapiCalendar| Save MAPI Calendar to storage.             
 
+
+

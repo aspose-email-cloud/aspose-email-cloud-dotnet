@@ -18,3 +18,5 @@ Method | HTTP request | Description
 [**GetList**](CalendarApi.md#GetList)/[**GetListAsync**](CalendarApi.md#GetListAsync)| **GET** /email/Calendar/list| Get iCalendar list from storage folder.             
 [**Save**](CalendarApi.md#Save)/[**SaveAsync**](CalendarApi.md#SaveAsync)| **PUT** /email/Calendar| Save iCalendar             
 
+
+

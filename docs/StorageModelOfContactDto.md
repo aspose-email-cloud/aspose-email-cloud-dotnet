@@ -1,5 +1,4 @@
-# StorageModelOfContactDto
-
+# Model.StorageModelOfContactDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -7,5 +6,7 @@ Name | Type | Description | Notes
 **Value** | [**ContactDto**](ContactDto.md) |  | 
 
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

@@ -1,6 +1,4 @@
-# Url
-Url and its category.             
-
+# Model.Url
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -9,18 +7,7 @@ Name | Type | Description | Notes
 **Href** | **string** | URL.              | [optional] 
 
 
-## Example
-```csharp
-var url = new Url
-{
-    Category = new EnumWithCustomOfUrlCategory
-    {
-        Value = "Work"
-    },
-    Preferred = true,
-    Href = "https://products.aspose.cloud/email"
-};
-```
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

@@ -1,6 +1,4 @@
-# MailMessageBase64
-Email message represented as file, encoded to Base64 format.             
-
+# Model.MailMessageBase64
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -11,13 +9,6 @@ Name | Type | Description | Notes
 
 See: [MailMessageBase](MailMessageBase.md)
 
-## Example
-```csharp
-var mailMessageBase64 = new MailMessageBase64
-{
-    ValueBase64 = "RnJvbTogZkBmLnVzClRvOiB0QHQudXMKU3ViamVjdDogUwoKQm9keQ=="
-};
-```
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
 

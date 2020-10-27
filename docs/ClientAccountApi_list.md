@@ -12,3 +12,5 @@ Method | HTTP request | Description
 [**Save**](ClientAccountApi.md#Save)/[**SaveAsync**](ClientAccountApi.md#SaveAsync)| **PUT** /email/client/account| Create/update email client account file (*.account) with credentials             
 [**SaveMulti**](ClientAccountApi.md#SaveMulti)/[**SaveMultiAsync**](ClientAccountApi.md#SaveMultiAsync)| **PUT** /email/client/account/multi| Create email client multi account file (*.multi.account). Will respond error if file extension is not \&quot;.multi.account\&quot;.             
 
+
+

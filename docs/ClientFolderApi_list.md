@@ -11,3 +11,5 @@ Method | HTTP request | Description
 [**Delete**](ClientFolderApi.md#Delete)/[**DeleteAsync**](ClientFolderApi.md#DeleteAsync)| **DELETE** /email/client/folder| Delete a folder in email account             
 [**GetList**](ClientFolderApi.md#GetList)/[**GetListAsync**](ClientFolderApi.md#GetListAsync)| **GET** /email/client/folder/list| Get folders list in email account             
 
+
+

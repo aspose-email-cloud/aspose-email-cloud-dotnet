@@ -1,6 +1,4 @@
-# AiNameGenderHypothesisList
-Hypotheses about person's gender             
-
+# Model.AiNameGenderHypothesisList
 ## Properties
 Class has no properties
 
@@ -8,5 +6,6 @@ Class has no properties
 
 See: [ListResponseOfAiNameGenderHypothesis](ListResponseOfAiNameGenderHypothesis.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 

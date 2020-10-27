@@ -1,6 +1,4 @@
-# MapiFileAsPropertyDto
-Mapi property with FileAsMapping value             
-
+# Model.MapiFileAsPropertyDto
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -10,5 +8,6 @@ Name | Type | Description | Notes
 
 See: [MapiPropertyDto](MapiPropertyDto.md)
 
-[[Back to Model list]](Models.md) [[Back to README]](README.md)
+[[Back to Model list]](Models.doc) [[Back to README]](README.md)
+
 
