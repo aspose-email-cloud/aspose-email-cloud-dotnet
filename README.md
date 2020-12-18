@@ -46,7 +46,7 @@ To use this SDK, you need:
     - MonoAndroid 6.0
     - Xamarin.iOS 1.0
     - Xamarin.Mac 2.0
-- An App SID and an App Key; they can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (it requires free registration in Aspose Cloud for this).
+- A Client id and a Client secret; they can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (it requires free registration in Aspose Cloud for this).
 
 ### Installation
 You can use SDK directly in your project via the source code or get a [NuGet Package](https://www.nuget.org/packages/Aspose.Email-Cloud/).
