@@ -68,7 +68,7 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameCompleteRequest
@@ -171,7 +171,7 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameCompleteRequest
@@ -270,7 +270,7 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameExpandRequest
@@ -373,7 +373,7 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameExpandRequest
@@ -500,7 +500,7 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParsedRequest
@@ -656,7 +656,7 @@ result = new AiNameWeightedVariants
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParsedRequest
@@ -772,7 +772,7 @@ result = new AiNameFormatted
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameFormatRequest
@@ -855,7 +855,7 @@ result = new AiNameFormatted
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameFormatRequest
@@ -961,7 +961,7 @@ result = new AiNameFormatted
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParsedRequest
@@ -1095,7 +1095,7 @@ result = new AiNameFormatted
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParsedRequest
@@ -1195,7 +1195,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameGenderizeRequest
@@ -1268,7 +1268,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameGenderizeRequest
@@ -1365,7 +1365,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParsedRequest
@@ -1491,7 +1491,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParsedRequest
@@ -1599,7 +1599,7 @@ result = new AiNameMatchResult
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameMatchRequest
@@ -1696,7 +1696,7 @@ result = new AiNameMatchResult
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameMatchRequest
@@ -1843,7 +1843,7 @@ result = new AiNameMatchResult
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameMatchParsedRequest
@@ -2045,7 +2045,7 @@ result = new AiNameMatchResult
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameMatchParsedRequest
@@ -2210,7 +2210,7 @@ result = new AiNameComponentList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParseRequest
@@ -2345,7 +2345,7 @@ result = new AiNameComponentList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParseRequest
@@ -2445,7 +2445,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParseEmailAddressRequest
@@ -2518,7 +2518,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiNameParseEmailAddressRequest

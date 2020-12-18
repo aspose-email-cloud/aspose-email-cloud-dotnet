@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 ```csharp
 var request = new EmailConfigDiscoverRequest
 { 
+    Address = "address@gmail.com"
 };
 ```
 

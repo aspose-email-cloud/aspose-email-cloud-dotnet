@@ -115,7 +115,7 @@ result = new ContactList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiBcrParseRequest
@@ -312,7 +312,7 @@ result = new ContactList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiBcrParseRequest
@@ -473,7 +473,7 @@ result = new StorageFileLocationList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiBcrParseStorageRequest
@@ -603,7 +603,7 @@ result = new StorageFileLocationList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new AiBcrParseStorageRequest

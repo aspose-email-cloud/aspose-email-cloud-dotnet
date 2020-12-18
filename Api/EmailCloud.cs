@@ -42,10 +42,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailCloud"/> class.
         /// </summary>
-        /// <param name="apiKey">The api Key.</param>
-        /// <param name="appSid">The app Sid.</param>
-        public EmailCloud(string apiKey, string appSid)
-            : this(new Configuration { ClientSecret = apiKey, ClientId = appSid })
+        /// <param name="clientSecret">The Client secret.</param>
+        /// <param name="clientId">The Client id.</param>
+        public EmailCloud(string clientSecret, string clientId)
+            : this(new Configuration { ClientSecret = clientSecret, ClientId = clientId })
         {
         }
 

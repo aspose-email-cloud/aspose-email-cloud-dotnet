@@ -50,7 +50,7 @@ var request = new ClientFolderCreateRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientFolderCreateRequest
@@ -123,7 +123,7 @@ var request = new ClientFolderCreateRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientFolderCreateRequest
@@ -193,7 +193,7 @@ var request = new ClientFolderDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientFolderDeleteRequest
@@ -264,7 +264,7 @@ var request = new ClientFolderDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientFolderDeleteRequest
@@ -340,7 +340,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientFolderGetListRequest
@@ -419,7 +419,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientFolderGetListRequest

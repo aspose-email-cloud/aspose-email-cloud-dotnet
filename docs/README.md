@@ -1,13 +1,13 @@
 # Reference documentation for Aspose.Email Cloud API
 
 `EmailCloud` is the main API class. It provides an access to all of Aspose.Email Cloud functions.
-`AppKey` and `AppSid` credentials should be obtained from [dashboard](https://dashboard.aspose.cloud/#/) to use `EmailCloud`:
+`ClientSecret` and `ClientId` credentials should be obtained from [dashboard](https://dashboard.aspose.cloud/#/) to use `EmailCloud`:
 
 ```csharp
-var appKey = "Your App Key";
-var appSid = "Your App SID";
+var clientSecret = "Your client secret";
+var clientId = "Your client id";
 
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 ```
 
 All Aspose.Email Cloud functions are divided into groups and represented as `EmailCloud` fields:

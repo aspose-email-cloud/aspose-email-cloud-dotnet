@@ -57,7 +57,7 @@ result = new DiscUsage
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new GetDiscUsageRequest
@@ -138,7 +138,7 @@ result = new DiscUsage
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new GetDiscUsageRequest
@@ -226,7 +226,7 @@ result = new FileVersions
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new GetFileVersionsRequest
@@ -329,7 +329,7 @@ result = new FileVersions
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new GetFileVersionsRequest
@@ -417,7 +417,7 @@ result = new ObjectExist
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ObjectExistsRequest
@@ -498,7 +498,7 @@ result = new ObjectExist
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ObjectExistsRequest
@@ -574,7 +574,7 @@ result = new StorageExist
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new StorageExistsRequest
@@ -653,7 +653,7 @@ result = new StorageExist
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new StorageExistsRequest

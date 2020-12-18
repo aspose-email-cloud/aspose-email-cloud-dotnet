@@ -44,7 +44,7 @@ var request = new CopyFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new CopyFolderRequest
@@ -109,7 +109,7 @@ var request = new CopyFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new CopyFolderRequest
@@ -169,7 +169,7 @@ var request = new CreateFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new CreateFolderRequest
@@ -230,7 +230,7 @@ var request = new CreateFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new CreateFolderRequest
@@ -289,7 +289,7 @@ var request = new DeleteFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new DeleteFolderRequest
@@ -352,7 +352,7 @@ var request = new DeleteFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new DeleteFolderRequest
@@ -435,7 +435,7 @@ result = new FilesList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new GetFilesListRequest
@@ -534,7 +534,7 @@ result = new FilesList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new GetFilesListRequest
@@ -607,7 +607,7 @@ var request = new MoveFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MoveFolderRequest
@@ -672,7 +672,7 @@ var request = new MoveFolderRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MoveFolderRequest

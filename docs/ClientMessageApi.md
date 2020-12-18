@@ -100,7 +100,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageAppendRequest
@@ -264,7 +264,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageAppendRequest
@@ -384,7 +384,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageAppendFileRequest
@@ -467,7 +467,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageAppendFileRequest
@@ -538,7 +538,7 @@ var request = new ClientMessageDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageDeleteRequest
@@ -611,7 +611,7 @@ var request = new ClientMessageDeleteRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageDeleteRequest
@@ -694,7 +694,7 @@ result = new MailMessageBase
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageFetchRequest
@@ -785,7 +785,7 @@ result = new MailMessageBase
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageFetchRequest
@@ -871,7 +871,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageFetchFileRequest
@@ -960,7 +960,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageFetchFileRequest
@@ -1045,7 +1045,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageListRequest
@@ -1133,7 +1133,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageListRequest
@@ -1207,7 +1207,7 @@ var request = new ClientMessageMoveRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageMoveRequest
@@ -1282,7 +1282,7 @@ var request = new ClientMessageMoveRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageMoveRequest
@@ -1390,7 +1390,7 @@ var request = new ClientMessageSendRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageSendRequest
@@ -1535,7 +1535,7 @@ var request = new ClientMessageSendRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageSendRequest
@@ -1637,7 +1637,7 @@ var request = new ClientMessageSendFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageSendFileRequest
@@ -1704,7 +1704,7 @@ var request = new ClientMessageSendFileRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageSendFileRequest
@@ -1773,7 +1773,7 @@ var request = new ClientMessageSetIsReadRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageSetIsReadRequest
@@ -1846,7 +1846,7 @@ var request = new ClientMessageSetIsReadRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientMessageSetIsReadRequest

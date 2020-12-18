@@ -125,7 +125,7 @@ result = new EmailDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var mapiMessage = new MapiMessageDto
@@ -339,7 +339,7 @@ result = new EmailDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var mapiMessage = new MapiMessageDto
@@ -524,7 +524,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MapiMessageAsFileRequest
@@ -684,7 +684,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MapiMessageAsFileRequest
@@ -835,7 +835,7 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MapiMessageFromFileRequest
@@ -988,7 +988,7 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MapiMessageFromFileRequest
@@ -1139,7 +1139,7 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MapiMessageGetRequest
@@ -1296,7 +1296,7 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MapiMessageGetRequest
@@ -1443,7 +1443,7 @@ var request = new MapiMessageSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MapiMessageSaveRequest
@@ -1594,7 +1594,7 @@ var request = new MapiMessageSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new MapiMessageSaveRequest

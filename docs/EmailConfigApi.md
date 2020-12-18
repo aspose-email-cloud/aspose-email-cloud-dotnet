@@ -26,6 +26,7 @@ var result = api.EmailConfig.Discover(request);
 ```csharp
 var request = new EmailConfigDiscoverRequest
 { 
+    Address = "address@gmail.com"
 };
 ```
 
@@ -119,11 +120,12 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailConfigDiscoverRequest
 { 
+    Address = "address@gmail.com"
 };
 
 // Call method:
@@ -231,6 +233,7 @@ var result = await api.EmailConfig.DiscoverAsync(request);
 ```csharp
 var request = new EmailConfigDiscoverRequest
 { 
+    Address = "address@gmail.com"
 };
 ```
 
@@ -324,11 +327,12 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailConfigDiscoverRequest
 { 
+    Address = "address@gmail.com"
 };
 
 // Call method:
@@ -532,7 +536,7 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailConfigDiscoverOauthRequest
@@ -748,7 +752,7 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailConfigDiscoverOauthRequest
@@ -960,7 +964,7 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailConfigDiscoverPasswordRequest
@@ -1172,7 +1176,7 @@ result = new EmailAccountConfigList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailConfigDiscoverPasswordRequest

@@ -68,7 +68,7 @@ result = new EmailClientAccount
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientAccountGetRequest
@@ -171,7 +171,7 @@ result = new EmailClientAccount
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientAccountGetRequest
@@ -298,7 +298,7 @@ result = new EmailClientMultiAccount
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientAccountGetMultiRequest
@@ -457,7 +457,7 @@ result = new EmailClientMultiAccount
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientAccountGetMultiRequest
@@ -578,7 +578,7 @@ var request = new ClientAccountSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientAccountSaveRequest
@@ -675,7 +675,7 @@ var request = new ClientAccountSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientAccountSaveRequest
@@ -798,7 +798,7 @@ var request = new ClientAccountSaveMultiRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientAccountSaveMultiRequest
@@ -951,7 +951,7 @@ var request = new ClientAccountSaveMultiRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new ClientAccountSaveMultiRequest
