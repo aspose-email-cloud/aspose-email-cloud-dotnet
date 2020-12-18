@@ -130,8 +130,8 @@ namespace Aspose.Email.Cloud.Sdk.Client.Internal.RequestHandlers
             var requestUrl = configuration.AuthUrl + "connect/token";
 
             var postData = "grant_type=client_credentials";
-            postData += "&client_id=" + configuration.AppSid;
-            postData += "&client_secret=" + configuration.AppKey;
+            postData += "&client_id=" + configuration.ClientId;
+            postData += "&client_secret=" + configuration.ClientSecret;
 
             RequestToken(requestUrl, postData);
         }

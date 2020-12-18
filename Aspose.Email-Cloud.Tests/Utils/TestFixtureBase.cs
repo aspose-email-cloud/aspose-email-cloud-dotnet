@@ -17,7 +17,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Utils
         protected string Folder;
         /// <summary>
         /// EmailApi setup.
-        /// Uses ConfigurationHelper to get appKey, appSid and apiBaseUrl.
+        /// Uses ConfigurationHelper to get clientId, clientSecret and apiBaseUrl.
         /// This data can be configured using:
         /// - NUnit test parameters (command line "--params" or from runsettings file
         /// - Environment Variables
@@ -33,8 +33,8 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Utils
                 ApiVersion = "v4.0",
                 ApiBaseUrl =
                     configurationHelper.GetValue("apiBaseUrl", "https://api-qa.aspose.cloud"),
-                AppKey = configurationHelper.GetValue("appKey", string.Empty),
-                AppSid = configurationHelper.GetValue("appSid", string.Empty),
+                ClientSecret = configurationHelper.GetValue("clientSecret", string.Empty),
+                ClientId = configurationHelper.GetValue("clientId", string.Empty),
                 AuthUrl = configurationHelper.GetValue<string>("authUrl", null)
             };
             Api = new EmailCloud(apiConfiguration);

@@ -45,7 +45,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <param name="apiKey">The api Key.</param>
         /// <param name="appSid">The app Sid.</param>
         public EmailCloud(string apiKey, string appSid)
-            : this(new Configuration { AppKey = apiKey, AppSid = appSid })
+            : this(new Configuration { ClientSecret = apiKey, ClientId = appSid })
         {
         }
 
