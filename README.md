@@ -24,9 +24,11 @@ Aspose.Email Cloud is a REST API for creating email applications that work with 
 
 ## What's new in version 20.12
 
-Aspose.Email Cloud 20.12.0 comes with SDK breaking change:
+Aspose.Email Cloud 20.12.0 comes with SDK breaking changes:
+- AppKey renamed to ClientSecret. 
+- AppSID renamed to ClientId.
 
-AppKey renamed to ClientSecret, AppSID renamed to ClientId.
+Some [SDK reference documentation](https://docs.aspose.cloud/email/reference-api/) improvements were made.
 
 See [Release notes](https://docs.aspose.cloud/email/aspose-email-cloud-20-12-release-notes/).
 

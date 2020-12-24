@@ -5,7 +5,7 @@ Email document (*.eml) operations.
 <a name="AsFile"></a>
 ## AsFile
 
-**Description**: Converts Email model to specified format and returns as file.             
+**Description**: Converts Email model to a specified format and returns as a file.             
 
 
 **Returns:** File stream in specified format.
@@ -151,7 +151,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsFileAsync"></a>
 ## AsFileAsync
 
-**Description:** Converts Email model to specified format and returns as file.             
+**Description:** Converts Email model to a specified format and returns as a file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
