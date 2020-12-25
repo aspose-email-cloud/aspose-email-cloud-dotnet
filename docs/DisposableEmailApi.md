@@ -1,6 +1,6 @@
 # DisposableEmailApi (EmailCloud.DisposableEmail)
 
-Check email address is disposable operations
+Checks if an email is a disposable one
 
 <a name="IsDisposable"></a>
 ## IsDisposable
@@ -53,7 +53,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new DisposableEmailIsDisposableRequest
@@ -126,7 +126,7 @@ result = ;
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new DisposableEmailIsDisposableRequest

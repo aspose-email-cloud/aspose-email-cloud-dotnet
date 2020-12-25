@@ -7,7 +7,7 @@ All methods have Async versions. These async versions are not available on .NETF
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AsFile**](EmailApi.md#AsFile)/[**AsFileAsync**](EmailApi.md#AsFileAsync)| **PUT** /email/as-file| Converts Email model to specified format and returns as file.             
+[**AsFile**](EmailApi.md#AsFile)/[**AsFileAsync**](EmailApi.md#AsFileAsync)| **PUT** /email/as-file| Converts Email model to a specified format and returns as a file.             
 [**AsMapi**](EmailApi.md#AsMapi)/[**AsMapiAsync**](EmailApi.md#AsMapiAsync)| **PUT** /email/as-mapi| Converts EmailDto to MapiMessageDto.             
 [**Convert**](EmailApi.md#Convert)/[**ConvertAsync**](EmailApi.md#ConvertAsync)| **PUT** /email/convert| Converts email document to specified format and returns as file             
 [**FromFile**](EmailApi.md#FromFile)/[**FromFileAsync**](EmailApi.md#FromFileAsync)| **PUT** /email/from-file| Converts email document to a model representation             

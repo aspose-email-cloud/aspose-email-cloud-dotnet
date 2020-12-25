@@ -22,16 +22,15 @@ Aspose.Email Cloud is a REST API for creating email applications that work with 
 - Email configuration discovery.
 - Disposable email address detection.
 
-## New features in version 20.10
+## What's new in version 20.12
 
-Aspose.Email Cloud 20.10.0 comes with SDK improvements:
+Aspose.Email Cloud 20.12.0 comes with SDK breaking changes:
+- AppKey renamed to ClientSecret. 
+- AppSID renamed to ClientId.
 
-- Typescript, PHP, Java SDKs now have model builders to simplify their initialization.
-- All SDK methods now have code examples with parameters initialization.
-- Some models now have initialization examples for all SDKs.
-- SDK reference documentation with examples now available at url [docs.aspose.cloud/email/reference-api](https://docs.aspose.cloud/email/reference-api/) 
+Some [SDK reference documentation](https://docs.aspose.cloud/email/reference-api/) improvements were made.
 
-See [Release notes](https://docs.aspose.cloud/email/aspose-email-cloud-20-10-release-notes/).
+See [Release notes](https://docs.aspose.cloud/email/aspose-email-cloud-20-12-release-notes/).
 
 
 ## How to use the SDK?
@@ -49,7 +48,7 @@ To use this SDK, you need:
     - MonoAndroid 6.0
     - Xamarin.iOS 1.0
     - Xamarin.Mac 2.0
-- An App SID and an App Key; they can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (it requires free registration in Aspose Cloud for this).
+- A Client id and a Client secret; they can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (it requires free registration in Aspose Cloud for this).
 
 ### Installation
 You can use SDK directly in your project via the source code or get a [NuGet Package](https://www.nuget.org/packages/Aspose.Email-Cloud/).
@@ -74,9 +73,9 @@ using Aspose.Email.Cloud.Sdk.Api; //EmailApi class is here
 using Aspose.Email.Cloud.Sdk.Model; //REST API models are here
 
 ...
-var appKey = "Your App Key";
-var appSid = "Your App SID";
-var api = new EmailCloud(appKey, appSid);
+var clientSecret = "Your client secret";
+var clientId = "Your client id";
+var api = new EmailCloud(clientSecret, clientId);
 
 var result = await api.Calendar.GetAsync(new CalendarGetRequest(calendarFile, folder, StorageName));
 ```

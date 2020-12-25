@@ -19,7 +19,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /** <summary>Email document (*.eml) operations.</summary>*/
         public EmailApi Email {get;}
     
-        /** <summary>Check email address is disposable operations</summary>*/
+        /** <summary>Checks if an email is a disposable one</summary>*/
         public DisposableEmailApi DisposableEmail {get;}
     
         /** <summary>Email server configuration discovery.</summary>*/
@@ -42,10 +42,10 @@ namespace Aspose.Email.Cloud.Sdk.Api
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailCloud"/> class.
         /// </summary>
-        /// <param name="apiKey">The api Key.</param>
-        /// <param name="appSid">The app Sid.</param>
-        public EmailCloud(string apiKey, string appSid)
-            : this(new Configuration { AppKey = apiKey, AppSid = appSid })
+        /// <param name="clientSecret">The Client secret.</param>
+        /// <param name="clientId">The Client id.</param>
+        public EmailCloud(string clientSecret, string clientId)
+            : this(new Configuration { ClientSecret = clientSecret, ClientId = clientId })
         {
         }
 

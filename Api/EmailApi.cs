@@ -56,7 +56,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
         }
 
         /// <summary>
-        /// Converts Email model to specified format and returns as file.              
+        /// Converts Email model to a specified format and returns as a file.              
         /// </summary>
         /// <param name="request">Email model and format to convert.</param>
         /// <returns><see cref="System.IO.Stream"/></returns>
@@ -84,7 +84,7 @@ namespace Aspose.Email.Cloud.Sdk.Api
 
         #if (NET452 || NETSTANDARD2_0)
         /// <summary>
-        /// Converts Email model to specified format and returns as file.              
+        /// Converts Email model to a specified format and returns as a file.              
         /// </summary>
         /// <param name="request">Email model and format to convert.</param>
         /// <returns><see cref="System.IO.Stream"/></returns>

@@ -5,7 +5,7 @@ Email document (*.eml) operations.
 <a name="AsFile"></a>
 ## AsFile
 
-**Description**: Converts Email model to specified format and returns as file.             
+**Description**: Converts Email model to a specified format and returns as a file.             
 
 
 **Returns:** File stream in specified format.
@@ -92,7 +92,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailAsFileRequest
@@ -151,7 +151,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
 <a name="AsFileAsync"></a>
 ## AsFileAsync
 
-**Description:** Converts Email model to specified format and returns as file.             
+**Description:** Converts Email model to a specified format and returns as a file.             
 
 Performs operation asynchronously. Not available on .NETFramework v2.0
 
@@ -240,7 +240,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailAsFileRequest
@@ -417,7 +417,7 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var emailDto = new EmailDto
@@ -631,7 +631,7 @@ result = new MapiMessageDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var emailDto = new EmailDto
@@ -776,7 +776,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailConvertRequest
@@ -859,7 +859,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailConvertRequest
@@ -968,7 +968,7 @@ result = new EmailDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailFromFileRequest
@@ -1111,7 +1111,7 @@ result = new EmailDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailFromFileRequest
@@ -1252,7 +1252,7 @@ result = new EmailDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailGetRequest
@@ -1399,7 +1399,7 @@ result = new EmailDto
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailGetRequest
@@ -1511,7 +1511,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailGetAsFileRequest
@@ -1596,7 +1596,7 @@ using(var resultFileStream = File.OpenWrite("/path/to/local/file/to/write/to"))
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailGetAsFileRequest
@@ -1724,7 +1724,7 @@ result = new EmailStorageList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailGetListRequest
@@ -1903,7 +1903,7 @@ result = new EmailStorageList
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailGetListRequest
@@ -2056,7 +2056,7 @@ var request = new EmailSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailSaveRequest
@@ -2197,7 +2197,7 @@ var request = new EmailSaveRequest
     <summary>Method call example:</summary>
 
 ```csharp
-var api = new EmailCloud(appKey, appSid);
+var api = new EmailCloud(clientSecret, clientId);
 
 // Prepare parameters:
 var request = new EmailSaveRequest
