@@ -100,19 +100,25 @@ var api = new EmailCloud(clientSecret, clientId);
 var result = await api.Calendar.GetAsync(new CalendarGetRequest(calendarFile, folder, StorageName));
 ```
 
-#### Business cards recognition API
-
-Use `EmailCloud.Ai.Bcr.Parse` method to parse business card image to VCard DTO:
+## Delete Email Message in Dotnet
 
 ```csharp
-var imageFilePath = "path/to/image/to/parse.png";
-using (var file = File.OpenRead(imageFilePath))
-{
-    var result = await api.Ai.Bcr.ParseAsync(
-        new AiBcrParseRequest(file, isSingle: true));
-    ContactDto contact = result.Value.First();
-    Assert.AreEqual("Parsed Display Name", contact.DisplayName);
-}
+	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+	var config = new Configuration
+	{
+		ClientId = "MY_CLIENT_ID",
+		ClientSecret = "MY_CLIENT_SECRET"
+	};
+
+	var emailApi = new EmailApi(config);
+	
+	
+    var accountLocation = "myemails"; // Account location on storage.
+    var messageId = 17; //  Message identifier.
+    var folder = "temps1"; //  Folder to delete message from.
+
+	var request new ClientMessageDeleteRequest(accountLocation, messageId, folder);
+	await api.Client.Message.DeleteAsync(request);
 ```
 
 ## Aspose.Email Cloud SDKs in Popular Languages
