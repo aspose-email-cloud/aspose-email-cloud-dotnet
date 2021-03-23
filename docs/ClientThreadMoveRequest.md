@@ -5,6 +5,7 @@ Email client move thread request.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DestinationFolder** | **string** | Email account folder to move thread to.              | 
+**SourceFolder** | **string** | Email account folder to move thread from.              | [optional] 
 
 ## Parent class
 
@@ -15,6 +16,7 @@ See: [ClientThreadBaseRequest](ClientThreadBaseRequest.md)
 var clientThreadMoveRequest = new ClientThreadMoveRequest
 {
     DestinationFolder = "INBOX/SubFolder",
+    SourceFolder = "INBOX",
     ThreadId = "5",
     AccountLocation = new StorageFileLocation
     {
