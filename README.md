@@ -1,6 +1,6 @@
-# Manage Emails in Cloud via .NET REST SDK
 [![NuGet](https://img.shields.io/nuget/v/Aspose.Email-Cloud.svg)](https://www.nuget.org/packages/Aspose.Email-Cloud/) [![License](https://img.shields.io/github/license/aspose-email-cloud/aspose-email-cloud-dotnet)](https://www.nuget.org/packages/Aspose.Email-Cloud/)
 
+# Manage Emails in Cloud via .NET REST SDK
 [Aspose.Email Cloud SDK for .NET](https://products.aspose.cloud/email/net) is a REST API SDK for creating email applications that work with standard email file formats such as Outlook MSG, EML, iCalendar files and VCard.
 
 This SDK allows you to work with Aspose.Email Cloud REST APIs in your .NET applications quickly and easily, with zero initial cost.
@@ -29,6 +29,26 @@ Aspose.Email Cloud is a REST API for creating email applications that work with 
 
 See [Release notes](https://docs.aspose.cloud/email/aspose-email-cloud-21-3-release-notes/).
 
+- All SDK functions are divided into groups (Email, Calendar, Contact, Client, Ai, Mapi, etc.).
+- Unified file API provided for supported file types (Save, Get, Convert, AsFile, FromFile, AsMapi/AsDto).
+- HierarchicalObject based API is removed.
+- All models are stored in one folder/namespace.
+- The request models are simplified
+
+## Enhancements in Version 20.9
+- Lets developers manipulate different emails' formats such as Outlook MSG, EML, VCard, and iCalendar files.
+- Supports AI functions:
+  - Business card recognition.
+  - The Name API for parsing and handling personal names.
+- Has a built-in email client. This client provides:
+  - Unified REST API for different email protocols: IMAP, POP3, SMTP, EWS, WebDav.
+  - Virtual multi-account.
+  - Message threads (POP3 accounts are also supported).
+- Email configuration discovery.
+- Disposable email address detection.
+
+
+See [Release notes](https://docs.aspose.cloud/email/release-notes/).
 
 ## How to use the SDK?
 The complete source code is available in the [GIT repository](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/tree/master/Api).
@@ -77,19 +97,32 @@ var api = new EmailCloud(clientSecret, clientId);
 var result = await api.Calendar.GetAsync(new CalendarGetRequest(calendarFile, folder, StorageName));
 ```
 
-#### Business cards recognition API
-
-Use `EmailCloud.Ai.Bcr.Parse` method to parse business card image to VCard DTO:
+## Delete Email Message in Dotnet
 
 ```csharp
-var imageFilePath = "path/to/image/to/parse.png";
-using (var file = File.OpenRead(imageFilePath))
-{
-    var result = await api.Ai.Bcr.ParseAsync(
-        new AiBcrParseRequest(file, isSingle: true));
-    ContactDto contact = result.Value.First();
-    Assert.AreEqual("Parsed Display Name", contact.DisplayName);
-}
+	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+	var config = new Configuration
+	{
+		ClientId = "MY_CLIENT_ID",
+		ClientSecret = "MY_CLIENT_SECRET"
+	};
+
+	var emailApi = new EmailApi(config);
+	
+	
+    var accountLocation = "myemails"; // Account location on storage.
+    var messageId = 17; //  Message identifier.
+    var folder = "temps1"; //  Folder to delete message from.
+
+	var request new ClientMessageDeleteRequest(accountLocation, messageId, folder);
+	await api.Client.Message.DeleteAsync(request);
 ```
+
+## Aspose.Email Cloud SDKs in Popular Languages
+
+| .NET | Java | PHP | Python | Ruby | Node.js |
+|---|---|---|---|---|---|
+| [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet) | [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-java) | [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-php) | [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-python) | [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-ruby)  | [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-node) | [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-android) | [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-swift)|[GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-dart) |[GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-go) |
+| [NuGet](https://www.nuget.org/packages/Aspose.Email-Cloud/) | [Maven](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-email-cloud) | [Composer](https://packagist.org/packages/aspose/aspose-email-cloud) | [PIP](https://pypi.org/project/aspose.email-cloud/) | [GEM](https://rubygems.org/gems/aspose_email_cloud)  | [NPM](https://www.npmjs.com/package/@asposecloud/aspose-email-cloud) |
 
 [Product Page](https://products.aspose.cloud/email/net) | [Documentation](https://docs.aspose.cloud/email/) | [Demo](https://products.aspose.app/email/family) | [Swagger UI](https://apireference.aspose.cloud/email/) | [Blog](https://blog.aspose.cloud/category/email/) | [Free support](https://forum.aspose.cloud/c/email) | [Free trial](https://dashboard.aspose.cloud/#/apps) | [SDK reference documentation](https://docs.aspose.cloud/email/reference-api)
