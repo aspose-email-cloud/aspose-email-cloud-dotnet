@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Threading.Tasks;
 using Aspose.Email.Cloud.Sdk.Api;
 using Aspose.Email.Cloud.Sdk.Client;
@@ -15,6 +14,7 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Utils
         protected const string StorageName = "First Storage";
         protected EmailCloud Api;
         protected string Folder;
+
         /// <summary>
         /// EmailApi setup.
         /// Uses ConfigurationHelper to get clientId, clientSecret and apiBaseUrl.
@@ -39,28 +39,36 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Utils
             };
             Api = new EmailCloud(apiConfiguration);
         }
-        
+
         [OneTimeTearDown]
         public async Task OneTimeTearDown()
         {
-            var existRequest = new ObjectExistsRequest(Folder, StorageName);
+            var existRequest = new ObjectExistsRequest
+            {
+                Path = Folder,
+                StorageName = StorageName
+            };
             var folderExist = await Api.CloudStorage.Storage.ObjectExistsAsync(existRequest);
             if (folderExist.Exists == true && folderExist.IsFolder == true)
             {
-                var deleteRequest = new DeleteFolderRequest(Folder, StorageName, true);
+                var deleteRequest = new DeleteFolderRequest
+                {
+                    Path = Folder,
+                    StorageName = StorageName,
+                    Recursive = true
+                };
                 await Api.CloudStorage.Folder.DeleteFolderAsync(deleteRequest);
             }
         }
-        protected static string FileToBase64(string filePath)
-        {
-            var bytes = File.ReadAllBytes(filePath);
-            return Convert.ToBase64String(bytes);
-        }
-        
+
         protected async Task<bool> IsFileExist(string fileName, string folderPath = null)
         {
             var path = $"{folderPath ?? Folder}/{fileName}";
-            var request = new ObjectExistsRequest(path, StorageName);
+            var request = new ObjectExistsRequest
+            {
+                Path = path,
+                StorageName = StorageName
+            };
             var result = await Api.CloudStorage.Storage.ObjectExistsAsync(request);
             return result.IsFolder != true && result.Exists == true;
         }

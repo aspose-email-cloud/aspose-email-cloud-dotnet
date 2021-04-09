@@ -15,11 +15,20 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
     {
         private static MapiMessageDto MapiMessage => new MapiMessageDto
         {
-            Body = "Some body", Subject = "Re: Some subject", BodyType = "PlainText",
-            DeliveryTime = DateTime.Today, DisplayTo = "To Address", MessageBody = "Some body",
-            MessageClass = "IPM.Note", MessageFormat = "Ascii", NormalizedSubject = "Some subject",
-            SenderName = "From Address", SubjectPrefix = "Re: ", ClientSubmitTime = DateTime.Today,
-            SenderAddressType = "SMTP", SenderEmailAddress = "from@aspose.com",
+            Body = "Some body",
+            Subject = "Re: Some subject",
+            BodyType = "PlainText",
+            DeliveryTime = DateTime.Today,
+            DisplayTo = "To Address",
+            MessageBody = "Some body",
+            MessageClass = "IPM.Note",
+            MessageFormat = "Ascii",
+            NormalizedSubject = "Some subject",
+            SenderName = "From Address",
+            SubjectPrefix = "Re: ",
+            ClientSubmitTime = DateTime.Today,
+            SenderAddressType = "SMTP",
+            SenderEmailAddress = "from@aspose.com",
             SenderSmtpAddress = "from@aspose.com",
             Attachments = new List<MapiAttachmentDto>
             {
@@ -29,13 +38,20 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                     Name = "some-file.txt"
                 }
             },
-            Flags = new List<string> {"MsgFlagRead", "MsgFlagUnsent", "MsgFlagHasAttach"},
+            Flags = new List<string>
+            {
+                "MsgFlagRead",
+                "MsgFlagUnsent",
+                "MsgFlagHasAttach"
+            },
             Recipients = new List<MapiRecipientDto>
             {
                 new MapiRecipientDto
                 {
-                    AddressType = "SMTP", DisplayName = "To Address",
-                    EmailAddress = "to@aspose.com", RecipientType = "MapiTo"
+                    AddressType = "SMTP",
+                    DisplayName = "To Address",
+                    EmailAddress = "to@aspose.com",
+                    RecipientType = "MapiTo"
                 }
             }
         };
@@ -54,7 +70,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         {
             var emlStream =
                 await Api.Mapi.Message.AsFileAsync(
-                    new MapiMessageAsFileRequest("Eml", MapiMessage));
+                    new MapiMessageAsFileRequest
+                    {
+                        Format = "Eml",
+                        Value = MapiMessage
+                    });
             using (var memoryStream = new MemoryStream())
             {
                 await emlStream.CopyToAsync(memoryStream);
@@ -65,7 +85,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             emlStream.Seek(0, SeekOrigin.Begin);
             var mapiMessageConverted =
                 await Api.Mapi.Message.FromFileAsync(
-                    new MapiMessageFromFileRequest("Eml", emlStream));
+                    new MapiMessageFromFileRequest
+                    {
+                        Format = "Eml",
+                        File = emlStream
+                    });
             Assert.AreEqual(MapiMessage.Subject, mapiMessageConverted.Subject);
             //Subject is also available as MapiPropertyDto:
             var subjectProperty = mapiMessageConverted.Properties.First(p =>
@@ -81,11 +105,21 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task StorageTest()
         {
             var fileName = $"{Guid.NewGuid()}.msg";
-            await Api.Mapi.Message.SaveAsync(new MapiMessageSaveRequest(
-                new StorageFileLocation(StorageName, Folder, fileName), MapiMessage, "Msg"));
+            await Api.Mapi.Message.SaveAsync(new MapiMessageSaveRequest
+            {
+                StorageFile = new StorageFileLocation(StorageName, Folder, fileName),
+                Value = MapiMessage,
+                Format = "Msg"
+            });
             var mapiMessageFromStorage =
                 await Api.Mapi.Message.GetAsync(
-                    new MapiMessageGetRequest("Msg", fileName, Folder, StorageName));
+                    new MapiMessageGetRequest
+                    {
+                        Format = "Msg",
+                        FileName = fileName,
+                        Folder = Folder,
+                        Storage = StorageName
+                    });
             Assert.AreEqual(MapiMessage.Subject, mapiMessageFromStorage.Subject);
         }
     }

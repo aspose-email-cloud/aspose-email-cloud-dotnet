@@ -14,6 +14,23 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
     {
         private const string BcrAiTestFilePath = "TestData/test_single_0001.png";
 
+        [SetUp]
+        public async Task SetUp()
+        {
+            //WarmUp AI
+            try
+            {
+                await Api.Ai.Name.GenderizeAsync(new AiNameGenderizeRequest
+                {
+                    Name = "John Cane"
+                });
+            }
+            catch
+            {
+                //ignore
+            }
+        }
+
         /// <summary>
         /// Test name gender detection
         /// </summary>
@@ -22,7 +39,10 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task AiNameGenderizeTest()
         {
             var result =
-                await Api.Ai.Name.GenderizeAsync(new AiNameGenderizeRequest("John Cane"));
+                await Api.Ai.Name.GenderizeAsync(new AiNameGenderizeRequest
+                {
+                    Name = "John Cane"
+                });
             Assert.GreaterOrEqual(result.Value.Count, 1);
             Assert.True(result.Value.Any(item => item.Gender == "Male"));
         }
@@ -35,7 +55,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task AiNameFormatTest()
         {
             var result = await Api.Ai.Name.FormatAsync(
-                new AiNameFormatRequest("Mr. John Michael Cane", format: "%t%L%f%m"));
+                new AiNameFormatRequest
+                {
+                    Name = "Mr. John Michael Cane",
+                    Format = "%t%L%f%m"
+                });
             Assert.AreEqual("Mr. Cane J. M.", result.Name);
         }
 
@@ -49,7 +73,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             const string first = "John Michael Cane";
             const string second = "Cane J.";
             var result = await Api.Ai.Name.MatchAsync(
-                new AiNameMatchRequest(first, second));
+                new AiNameMatchRequest
+                {
+                    Name = first,
+                    OtherName = second
+                });
             Assert.True(result.Similarity > 0.5);
         }
 
@@ -59,7 +87,10 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         {
             const string name = "Smith Bobby";
             var result = await Api.Ai.Name.ExpandAsync(
-                new AiNameExpandRequest(name));
+                new AiNameExpandRequest
+                {
+                    Name = name
+                });
             var expandedNames = result.Names
                 .Select(weightedName => weightedName.Name)
                 .ToList();
@@ -76,7 +107,10 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         {
             const string prefix = "Dav";
             var result = await Api.Ai.Name.CompleteAsync(
-                new AiNameCompleteRequest(prefix));
+                new AiNameCompleteRequest
+                {
+                    Name = prefix
+                });
             var names = result.Names
                 .Select(weightedName => $"{prefix}{weightedName.Name}")
                 .ToList();
@@ -91,7 +125,10 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         {
             const string address = "john-cane@gmail.com";
             var result = await Api.Ai.Name.ParseEmailAddressAsync(
-                new AiNameParseEmailAddressRequest(address));
+                new AiNameParseEmailAddressRequest
+                {
+                    EmailAddress = address
+                });
             var extractedValues = result.Value
                 .SelectMany(value => value.Name)
                 .ToList();
@@ -111,31 +148,44 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             // 1) Upload business card image to storage
             using (var stream = File.OpenRead(BcrAiTestFilePath))
             {
-                await Api.CloudStorage.File.UploadFileAsync(new UploadFileRequest(
-                    $"{Folder}/{fileName}", stream,
-                    StorageName));
+                await Api.CloudStorage.File.UploadFileAsync(new UploadFileRequest
+                {
+                    Path = $"{Folder}/{fileName}",
+                    File = stream,
+                    StorageName = StorageName
+                });
             }
 
             var outFolder = Guid.NewGuid().ToString();
             var outFolderPath = $"{Folder}/{outFolder}";
             await Api.CloudStorage.Folder.CreateFolderAsync(
-                new CreateFolderRequest(outFolderPath, StorageName));
+                new CreateFolderRequest
+                {
+                    Path = outFolderPath,
+                    StorageName = StorageName
+                });
             // 2) Call business card recognition action
-            var result = await Api.Ai.Bcr.ParseStorageAsync(new AiBcrParseStorageRequest(
-                new StorageFolderLocation(StorageName, outFolderPath),
-                new List<AiBcrImageStorageFile>
+            var result = await Api.Ai.Bcr.ParseStorageAsync(new AiBcrParseStorageRequest
+            {
+                OutFolder = new StorageFolderLocation(StorageName, outFolderPath),
+                Images = new List<AiBcrImageStorageFile>
                 {
                     new AiBcrImageStorageFile(true,
                         new StorageFileLocation(StorageName, Folder, fileName))
-                }, null));
+                }
+            });
             //Check that only one file produced
             Assert.True(result.Value.Count == 1);
             // 3) Get file name from recognition result
             var contactFile = result.Value.First();
 
             // 4) Download VCard file, produced by recognition method, check it contains text "Thomas"
-            using (var contactFileStream = await Api.CloudStorage.File.DownloadFileAsync(new DownloadFileRequest(
-                $"{contactFile.FolderPath}/{contactFile.FileName}", contactFile.Storage)))
+            using (var contactFileStream = await Api.CloudStorage.File.DownloadFileAsync(
+                new DownloadFileRequest
+                {
+                    Path = $"{contactFile.FolderPath}/{contactFile.FileName}",
+                    StorageName = contactFile.Storage
+                }))
             using (var memoryStream = new MemoryStream())
             {
                 await contactFileStream.CopyToAsync(memoryStream);
@@ -150,7 +200,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             using (var file = File.OpenRead(BcrAiTestFilePath))
             {
                 var result = await Api.Ai.Bcr.ParseAsync(
-                    new AiBcrParseRequest(file, isSingle: true));
+                    new AiBcrParseRequest
+                    {
+                        File = file,
+                        IsSingle = true
+                    });
                 Assert.AreEqual("Alex Thomas", result.Value.First().DisplayName);
             }
         }

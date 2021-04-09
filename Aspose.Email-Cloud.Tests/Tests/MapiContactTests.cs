@@ -16,15 +16,27 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             ElectronicAddresses = new MapiContactElectronicAddressPropertySetDto
             {
                 DefaultEmailAddress = new MapiContactElectronicAddressDto
-                    {EmailAddress = "email@aspose.com"}
+                {
+                    EmailAddress = "email@aspose.com"
+                }
             },
-            NameInfo = new MapiContactNamePropertySetDto {GivenName = "Alex", Surname = "Thomas"},
+            NameInfo = new MapiContactNamePropertySetDto
+            {
+                GivenName = "Alex",
+                Surname = "Thomas"
+            },
             PersonalInfo = new MapiContactPersonalInfoPropertySetDto
-                {BusinessHomePage = "www.aspose.com"},
+            {
+                BusinessHomePage = "www.aspose.com"
+            },
             ProfessionalInfo = new MapiContactProfessionalPropertySetDto
-                {Profession = "GENERAL DIRECTOR"},
+            {
+                Profession = "GENERAL DIRECTOR"
+            },
             Telephones = new MapiContactTelephonePropertySetDto
-                {PrimaryTelephoneNumber = "+49 211 4247 21"}
+            {
+                PrimaryTelephoneNumber = "+49 211 4247 21"
+            }
         };
 
         [Test]
@@ -41,7 +53,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         {
             var vcardStream =
                 await Api.Mapi.Contact.AsFileAsync(
-                    new MapiContactAsFileRequest("VCard", MapiContact));
+                    new MapiContactAsFileRequest
+                    {
+                        Format = "VCard",
+                        Value = MapiContact
+                    });
             using (var memoryStream = new MemoryStream())
             {
                 await vcardStream.CopyToAsync(memoryStream);
@@ -52,7 +68,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             vcardStream.Seek(0, SeekOrigin.Begin);
             var mapiContactConverted =
                 await Api.Mapi.Contact.FromFileAsync(
-                    new MapiContactFromFileRequest("VCard", vcardStream));
+                    new MapiContactFromFileRequest
+                    {
+                        Format = "VCard",
+                        File = vcardStream
+                    });
             Assert.AreEqual(MapiContact.NameInfo.Surname, mapiContactConverted.NameInfo.Surname);
         }
 
@@ -60,11 +80,21 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task StorageTest()
         {
             var fileName = $"{Guid.NewGuid()}.msg";
-            await Api.Mapi.Contact.SaveAsync(new MapiContactSaveRequest(
-                new StorageFileLocation(StorageName, Folder, fileName), MapiContact, "Msg"));
+            await Api.Mapi.Contact.SaveAsync(new MapiContactSaveRequest
+            {
+                StorageFile = new StorageFileLocation(StorageName, Folder, fileName),
+                Value = MapiContact,
+                Format = "Msg"
+            });
             var mapiContactFromStorage =
                 await Api.Mapi.Contact.GetAsync(
-                    new MapiContactGetRequest("Msg", fileName, Folder, StorageName));
+                    new MapiContactGetRequest
+                    {
+                        Format = "Msg",
+                        FileName = fileName,
+                        Folder = Folder,
+                        Storage = StorageName
+                    });
             Assert.AreEqual(MapiContact.NameInfo.Surname, mapiContactFromStorage.NameInfo.Surname);
         }
     }

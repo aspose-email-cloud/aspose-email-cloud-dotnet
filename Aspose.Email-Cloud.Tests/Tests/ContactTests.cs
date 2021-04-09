@@ -46,9 +46,12 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         {
             var contactFile = $"{Guid.NewGuid().ToString()}.vcf";
             await Api.Contact.SaveAsync(
-                new ContactSaveRequest(
-                    new StorageFileLocation(StorageName, Folder, contactFile),
-                    Contact, "VCard"));
+                new ContactSaveRequest
+                {
+                    StorageFile = new StorageFileLocation(StorageName, Folder, contactFile),
+                    Value = Contact,
+                    Format = "VCard"
+                });
             var exists = await IsFileExist(contactFile);
             Assert.True(exists);
         }
@@ -57,9 +60,18 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         public async Task ConvertContactTest()
         {
             var mapiStream = await Api.Contact.AsFileAsync(
-                new ContactAsFileRequest("Msg", Contact));
+                new ContactAsFileRequest
+                {
+                    Format = "Msg",
+                    Value = Contact
+                });
             var vcardStream = await Api.Contact.ConvertAsync(
-                new ContactConvertRequest("VCard", "Msg", mapiStream));
+                new ContactConvertRequest
+                {
+                    ToFormat = "VCard",
+                    FromFormat = "Msg",
+                    File = mapiStream
+                });
             using (var memoryStream = new MemoryStream())
             {
                 await vcardStream.CopyToAsync(memoryStream);
@@ -69,7 +81,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
 
             vcardStream.Seek(0, SeekOrigin.Begin);
             var dto = await Api.Contact.FromFileAsync(
-                new ContactFromFileRequest("VCard", vcardStream));
+                new ContactFromFileRequest
+                {
+                    Format = "VCard",
+                    File = vcardStream
+                });
             Assert.AreEqual(Surname, dto.Surname);
         }
 
