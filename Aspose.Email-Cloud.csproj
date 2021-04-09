@@ -35,6 +35,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Demos\**" />
+    <Compile Remove="Demos\**" />
+    <EmbeddedResource Remove="Demos\**" />
     <None Remove="Aspose.Email-Cloud.Tests\**" />
     <Compile Remove="Aspose.Email-Cloud.Tests\**" />
     <EmbeddedResource Remove="Aspose.Email-Cloud.Tests\**" />
