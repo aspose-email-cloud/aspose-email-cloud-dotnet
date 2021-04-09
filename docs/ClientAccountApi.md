@@ -56,6 +56,12 @@ result = new EmailClientAccount
         ClientSecret = "clientSecret",
         RefreshToken = "refreshToken",
         Login = "example@example.com"
+    },
+    CacheFile = new StorageFileLocation
+    {
+        FileName = "account.cache",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
     }
 };
 ```
@@ -94,6 +100,12 @@ result = new EmailClientAccount
         ClientSecret = "clientSecret",
         RefreshToken = "refreshToken",
         Login = "example@example.com"
+    },
+    CacheFile = new StorageFileLocation
+    {
+        FileName = "account.cache",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
     }
 };
 ```
@@ -159,6 +171,12 @@ result = new EmailClientAccount
         ClientSecret = "clientSecret",
         RefreshToken = "refreshToken",
         Login = "example@example.com"
+    },
+    CacheFile = new StorageFileLocation
+    {
+        FileName = "account.cache",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
     }
 };
 ```
@@ -196,6 +214,12 @@ result = new EmailClientAccount
         ClientSecret = "clientSecret",
         RefreshToken = "refreshToken",
         Login = "example@example.com"
+    },
+    CacheFile = new StorageFileLocation
+    {
+        FileName = "account.cache",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
     }
 };
 
@@ -559,6 +583,12 @@ var request = new ClientAccountSaveRequest
             ClientSecret = "clientSecret",
             RefreshToken = "refreshToken",
             Login = "example@example.com"
+        },
+        CacheFile = new StorageFileLocation
+        {
+            FileName = "account.cache",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
         }
     }
 };
@@ -601,6 +631,12 @@ var request = new ClientAccountSaveRequest
             ClientSecret = "clientSecret",
             RefreshToken = "refreshToken",
             Login = "example@example.com"
+        },
+        CacheFile = new StorageFileLocation
+        {
+            FileName = "account.cache",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
         }
     }
 };
@@ -656,6 +692,12 @@ var request = new ClientAccountSaveRequest
             ClientSecret = "clientSecret",
             RefreshToken = "refreshToken",
             Login = "example@example.com"
+        },
+        CacheFile = new StorageFileLocation
+        {
+            FileName = "account.cache",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
         }
     }
 };
@@ -698,6 +740,12 @@ var request = new ClientAccountSaveRequest
             ClientSecret = "clientSecret",
             RefreshToken = "refreshToken",
             Login = "example@example.com"
+        },
+        CacheFile = new StorageFileLocation
+        {
+            FileName = "account.cache",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
         }
     }
 };

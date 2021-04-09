@@ -30,6 +30,12 @@ var clientAccountSaveRequest = new ClientAccountSaveRequest
             ClientSecret = "clientSecret",
             RefreshToken = "refreshToken",
             Login = "example@example.com"
+        },
+        CacheFile = new StorageFileLocation
+        {
+            FileName = "account.cache",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
         }
     }
 };

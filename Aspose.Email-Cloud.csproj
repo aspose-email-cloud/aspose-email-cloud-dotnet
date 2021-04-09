@@ -12,7 +12,7 @@
     <RepositoryUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</RepositoryUrl>
     <PackageTags>ASPOSE EMAIL CLOUD SDK Outlook MSG EML MHT</PackageTags>
     <RootNamespace>Aspose.Email.Cloud.Sdk</RootNamespace>
-    <Version>21.3.0.132</Version>
+    <Version>21.4.0.135</Version>
     <AndroidUseIntermediateDesignerFile>False</AndroidUseIntermediateDesignerFile>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' OR '$(TargetFramework)' == 'Xamarin.Mac20' OR '$(TargetFramework)' == 'MonoAndroid60'">
