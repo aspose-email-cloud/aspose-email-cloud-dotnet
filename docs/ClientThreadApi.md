@@ -670,6 +670,7 @@ api.Client.Thread.Move(request);
 var request = new ClientThreadMoveRequest
 {
     DestinationFolder = "INBOX/SubFolder",
+    SourceFolder = "INBOX",
     ThreadId = "5",
     AccountLocation = new StorageFileLocation
     {
@@ -700,6 +701,7 @@ var api = new EmailCloud(clientSecret, clientId);
 var request = new ClientThreadMoveRequest
 {
     DestinationFolder = "INBOX/SubFolder",
+    SourceFolder = "INBOX",
     ThreadId = "5",
     AccountLocation = new StorageFileLocation
     {
@@ -743,6 +745,7 @@ await api.Client.Thread.MoveAsync(request);
 var request = new ClientThreadMoveRequest
 {
     DestinationFolder = "INBOX/SubFolder",
+    SourceFolder = "INBOX",
     ThreadId = "5",
     AccountLocation = new StorageFileLocation
     {
@@ -773,6 +776,7 @@ var api = new EmailCloud(clientSecret, clientId);
 var request = new ClientThreadMoveRequest
 {
     DestinationFolder = "INBOX/SubFolder",
+    SourceFolder = "INBOX",
     ThreadId = "5",
     AccountLocation = new StorageFileLocation
     {

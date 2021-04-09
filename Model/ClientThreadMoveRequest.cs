@@ -46,6 +46,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>
         public string DestinationFolder { get; set; }
 
+        /// <summary>
+        /// Email account folder to move thread from.             
+        /// </summary>
+        public string SourceFolder { get; set; }
+
 
         /// <summary>ClientThreadMoveRequest constructor</summary>
         public ClientThreadMoveRequest() {}
@@ -55,15 +60,18 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="accountLocation">Email client account configuration location on storage.             </param>
         /// <param name="threadId">Thread identifier.             </param>
         /// <param name="destinationFolder">Email account folder to move thread to.             </param>
+        /// <param name="sourceFolder">Email account folder to move thread from.             </param>
         public ClientThreadMoveRequest(
             StorageFileLocation accountLocation,
             string threadId,
-            string destinationFolder
+            string destinationFolder,
+            string sourceFolder
         )
         { 
             AccountLocation = accountLocation;
             ThreadId = threadId;
             DestinationFolder = destinationFolder;
+            SourceFolder = sourceFolder;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -76,6 +84,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  AccountLocation: ").Append(this.AccountLocation).Append("\n");
           sb.Append("  ThreadId: ").Append(this.ThreadId).Append("\n");
           sb.Append("  DestinationFolder: ").Append(this.DestinationFolder).Append("\n");
+          sb.Append("  SourceFolder: ").Append(this.SourceFolder).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }
