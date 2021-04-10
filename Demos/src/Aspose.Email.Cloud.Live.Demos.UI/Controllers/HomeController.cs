@@ -3,20 +3,20 @@ using System.Web.Mvc;
 
 namespace Aspose.Email.Cloud.Live.Demos.UI.Controllers
 {
-	public class HomeController : BaseController
-	{
-	
-		public override string Product => (string)RouteData.Values["productname"];
-		
+    public class HomeController : BaseController
+    {
 
-		public ActionResult Default()
-		{
-			ViewBag.PageTitle = Resources["emailConversionPageTitle"];
-			ViewBag.MetaDescription = Resources["emailConversionMetaDescription"];
+        public override string Product => (string)RouteData.Values["productname"];
 
-			var model = new LandingPageModel(this);
 
-			return View(model);
-		}
-	}
+        public ActionResult Default()
+        {
+            ViewBag.PageTitle = Resources["emailConversionPageTitle"];
+            ViewBag.MetaDescription = Resources["emailConversionMetaDescription"];
+
+            var model = new LandingPageModel(this);
+
+            return View(model);
+        }
+    }
 }
