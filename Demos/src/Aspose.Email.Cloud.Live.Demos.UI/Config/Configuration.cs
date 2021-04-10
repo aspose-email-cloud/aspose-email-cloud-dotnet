@@ -8,7 +8,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
 {
     public static class Configuration
     {
-
         private static string _asposeEmailCloudLiveDemosPath = ConfigurationManager.AppSettings["AsposeEmailCloudLiveDemosPath"].ToString();
         private static string _resourceFileSessionName = ConfigurationManager.AppSettings["ResourceFileSessionName"];
         private static string _fileViewLink = ConfigurationManager.AppSettings["FileViewLink"];
@@ -22,6 +21,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         {
             get { return _resourceFileSessionName; }
         }
+
         /// <summary>
         /// Get Working Directory
         /// </summary>
@@ -40,7 +40,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         }
 
         /// <summary>
-        /// Get Working Directory
+        /// Get Output Directory
         /// </summary>
         public static string OutputDirectory
         {
@@ -55,18 +55,22 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 return OutputFilespath;
             }
         }
+
         public static string AsposeEmailCloudLiveDemosPath
         {
             get { return _asposeEmailCloudLiveDemosPath; }
         }
+
         public static string AppKey
         {
             get { return _appKey; }
         }
+
         public static string BaseProductURI
         {
             get { return _baseProductURI; }
         }
+
         public static string AppSID
         {
             get { return _appSID; }
@@ -76,11 +80,11 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         {
             get { return _asposeCloudStorage; }
         }
+
         public static string AsposeEmailCloudAppsAssetURL
         {
             get { return _asposeEmailCloudAppsAssetURL; }
         }
-
 
         public static string FileViewLink
         {

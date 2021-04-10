@@ -11,7 +11,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
     {
         private AsposeEmailCloudContext _atcContext;
 
-
         /// <summary>
         /// Main context object to access all the dcContent specific context info
         /// </summary>
@@ -26,7 +25,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
 
         private Dictionary<string, string> _resources;
 
-
         /// <summary>
         /// key/value pair containing all the error messages defined in resources.xml file
         /// </summary>
@@ -38,6 +36,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 return _resources;
             }
         }
+
         protected override void OnInit(EventArgs e)
         {
             // Initialize our base class (System.Web,UI.Page) 
@@ -64,6 +63,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 }
             }
         }
+
         protected override void OnLoad(EventArgs e)
         {
             // Sync the central context store with the first loaded context for this page

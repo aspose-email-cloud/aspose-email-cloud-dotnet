@@ -1,5 +1,4 @@
 using System.IO;
-//using Aspose.Email.Cloud.Sdk.Model.Requests;
 using Aspose.Email.Cloud.Sdk.Model;
 using Aspose.Email.Cloud.Sdk.Api;
 
@@ -26,12 +25,8 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Models
 
             using (var file = File.OpenRead(filenamepath))
             {
-                //eml to msg, eml to oft, msg to eml, msg to oft, msg to tnf done
                 EmailConvertRequest ecr = new EmailConvertRequest(fromFormat, toFormat, file);
                 var result = emailApi.Email.Convert(ecr);
-
-                //byte[] buff = new byte[result.Length];
-                //result.Read(buff, 0, buff.Length);
 
                 outputFileName = Path.GetFileNameWithoutExtension(fileName) + "." + outputType;
 
@@ -55,8 +50,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Models
                 Status = "Output type not found",
                 StatusCode = 500
             };
-
         }
-
     }
 }

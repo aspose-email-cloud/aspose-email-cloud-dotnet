@@ -11,13 +11,11 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
     /// </summary>
     public class GlobalAppHelper
     {
-
         public GlobalAppHelper(HttpContext hc, HttpApplicationState appState, string SessionID, string language)
         {
+            AsposeEmailCloudContext.atcc = new AsposeEmailCloudContext(hc);
 
-            AsposeEmailCloudContext.atcc = new AsposeEmailCloudContext(hc); // sync the context
-
-            string ResourcesFile = hc.Server.MapPath("~/App_Data/resources_EN" + ".xml");   // reference all the extra info and resources files       
+            string ResourcesFile = hc.Server.MapPath("~/App_Data/resources_EN" + ".xml");
             if (language.Trim() != "")
             {
                 string filPath = hc.Server.MapPath("~/App_Data/resources_" + language + ".xml");
@@ -30,6 +28,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
             // Load info from all these files into the cache
             initResources(ResourcesFile, SessionID);
         }
+
         /// <summary>
         /// Reads/parses the resources file and loads them into the cache in form of a dictionary
         /// </summary>
@@ -39,23 +38,19 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
             SessionID = "R" + SessionID;
             if (AsposeEmailCloudContext.Current.Cache[SessionID] == null)
             {
-                // Added to solve the file not found problem, the wait is one time only when the application initializes or associated files are modified
-                //System.Threading.Thread.Sleep(500);
                 Dictionary<string, string> resources = new Dictionary<string, string>();
                 XmlDocument xd = new XmlDocument();
-                // TextWriter tr = (TextWriter)File.CreateText("F:\\assets\\my.log");tr.WriteLine(ResourcesFile);
-                // tr.WriteLine(File.Exists(ResourcesFile)); tr.Close();
+
                 if (ResourcesFile.Trim() != "")
                 {
                     xd.Load(ResourcesFile);
                 }
+
                 XmlNodeList xl = xd.SelectNodes("resources/res"); // use xpath to reach the res tag within resources
                 foreach (XmlNode n in xl) // read the name attribute for key name and values from in between the tags
                     resources.Add(n.Attributes["name"].Value, n.InnerText);
 
                 // Add this dictionary into the cache with no expiration and associate a reload method in case of file change
-
-
                 AsposeEmailCloudContext.Current.Cache.Add(
                    SessionID,
                     resources,
@@ -66,7 +61,5 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                     delegate (string key, object value, CacheItemRemovedReason reason) { initResources(ResourcesFile, SessionID); });
             }
         }
-
-
     }
 }

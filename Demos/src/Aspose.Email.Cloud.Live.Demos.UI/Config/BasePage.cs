@@ -12,6 +12,14 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
     public class BasePage : BaseRootPage
     {
         private string _product;
+        private string _feature;
+        public string _pageProductTitle;
+        private string _productH1 = "";
+        private string _productH4 = "";
+        private string _extension1 = "";
+        private int _appURLID = 0;
+        private string _extension1Description = "";
+
         /// <summary>
         /// Product name (e.g. words, cells)
         /// </summary>
@@ -31,10 +39,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
             set => _product = value;
         }
 
-        private string _feature;
-        /// <summary>
-        /// Product name (e.g. words, cells)
-        /// </summary>
         public string Feature
         {
             get
@@ -50,11 +54,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
             set => _feature = value;
         }
 
-
-        public string _pageProductTitle;
-        /// <summary>
-        /// Product title (e.g. Aspose.Words)
-        /// </summary>
         public string PageProductTitle
         {
             get
@@ -64,7 +63,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 return _pageProductTitle;
             }
         }
-        private string _productH1 = "";
+
         public string ProductH1
         {
             get
@@ -72,7 +71,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 return _productH1;
             }
         }
-        private string _productH4 = "";
+
         public string ProductH4
         {
             get
@@ -80,7 +79,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 return _productH4;
             }
         }
-        private string _extension1 = "";
+
         public string Extension1
         {
             get
@@ -88,7 +87,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 return _extension1;
             }
         }
-        private int _appURLID = 0;
+
         public int AppURLID
         {
             get
@@ -96,7 +95,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 return _appURLID;
             }
         }
-        private string _extension1Description = "";
+
         public string Extension1Description
         {
             get
@@ -131,9 +130,9 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         /// <param name="validators"></param>
         protected void SetValidation(params RegularExpressionValidator[] validators)
         {
-
             var validationExpression = "";
             var validFileExtensions = "";
+
             // Check for format like .Doc
             if (Page.RouteData.Values["Format"] != null)
             {
@@ -166,11 +165,9 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         /// </summary>
         protected string SetValidation(string validationExpression, params RegularExpressionValidator[] validators)
         {
-
             // Check for format if format is available then valid expression will be only format for auto generated URLs
             if (Page.RouteData.Values["Format"] != null)
             {
-
                 validationExpression = "." + Page.RouteData.Values["Format"].ToString().ToLower();
             }
 
@@ -187,15 +184,10 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                         SetAccept(validationExpression, inpufile);
                 }
             }
+
             return validFileExtensions;
         }
 
-        /// <summary>
-        /// Get the text of valid file extensions
-        /// e.g. DOC, DOCX, DOT, DOTX, RTF or ODT
-        /// </summary>
-        /// <param name="validationExpression"></param>
-        /// <returns></returns>
         protected string GetValidFileExtensions(string validationExpression)
         {
             var validFileExtensions = validationExpression.Replace(".", "").Replace("|", ", ").ToUpper();
@@ -211,13 +203,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
             return validFileExtensions;
         }
 
-
-
-        /// <summary>
-        /// Check for null and ContentLength of the PostedFile
-        /// </summary>
-        /// <param name="fileInputs"></param>
-        /// <returns></returns>
         protected bool CheckFileInputs(params HtmlInputFile[] fileInputs)
         {
             return fileInputs.All(x => x != null && x.PostedFile.ContentLength > 0);
@@ -277,21 +262,19 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
             }
             ShowErrorMessage(control, txt);
         }
+
         protected void SetFormatInformations(string format, HtmlControl dvAppProductSection, HtmlControl dvHowToSection, HtmlControl dvExtensionDescription)
         {
             if (Page.RouteData.Values[format] != null)
             {
-                // Populate contents from database based on URL
                 string _url = HttpContext.Current.Request.Url.AbsolutePath.ToLower();
                 if (dvAppProductSection != null)
                 {
                     dvAppProductSection.Visible = false;
                 }
-
-                //Page.Title = hMainTitle.InnerText; // Resources["PerformOCR"];		
-
             }
         }
+
         protected void ShowErrorMessage(HtmlGenericControl control, string message)
         {
             if (message.ToLower().Contains("password"))

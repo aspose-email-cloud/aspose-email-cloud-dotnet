@@ -33,14 +33,11 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Controllers
                         {
                             throw new Exception(Resources["ResponseTime"]);
                         }
-
                     }
                 }
-
             }
 
             return response;
-
         }
 
         public ActionResult Conversion()
@@ -54,7 +51,5 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Controllers
 
             return View(model);
         }
-
-
     }
 }

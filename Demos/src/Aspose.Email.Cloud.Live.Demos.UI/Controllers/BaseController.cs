@@ -7,16 +7,11 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Controllers
 {
     public abstract class BaseController : Controller
     {
-
-        /// <summary>
-        /// Response when uploaded files exceed the limits
-        /// </summary>
         protected Response BadDocumentResponse = new Response()
         {
             Status = "Some of your documents are corrupted",
             StatusCode = 500
         };
-
 
         public abstract string Product { get; }
 
@@ -29,10 +24,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Controllers
 
         private AsposeEmailCloudContext _atcContext;
 
-
-        /// <summary>
-        /// Main context object to access all the dcContent specific context info
-        /// </summary>
         public AsposeEmailCloudContext AsposeEmailCloudContext
         {
             get
@@ -44,9 +35,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Controllers
 
         private Dictionary<string, string> _resources;
 
-        /// <summary>
-        /// key/value pair containing all the error messages defined in resources.xml file
-        /// </summary>
         public Dictionary<string, string> Resources
         {
             get
@@ -55,9 +43,5 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Controllers
                 return _resources;
             }
         }
-
-
-
-
     }
 }

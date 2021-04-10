@@ -16,11 +16,14 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         /// </summary>
         /// <param name="hc"></param>
         internal AsposeEmailCloudContext(HttpContext hc) : base(hc) { Thread.SetData(Thread.GetNamedDataSlot(Configuration.ResourceFileSessionName + "ContextSlot"), hc); }
+
         private static AsposeEmailCloudContext atc;
+
         /// <summary>
         ///  Use for internal syncing of the context
         /// </summary>
         internal static AsposeEmailCloudContext atcc { set { atc = value; } }
+
         internal static AsposeEmailCloudContext Current
         {
             get { return atc; }

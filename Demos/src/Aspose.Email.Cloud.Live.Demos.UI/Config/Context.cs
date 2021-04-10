@@ -18,12 +18,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         public Context(HttpContext hc)
         {
             _context = hc;
-
-            //if (_context.applicationa != null)
-            //{
-            //  _host = _context.Request.Url.Host.ToLower();
-            //}
-            //else
         }
 
         /// <summary>
@@ -33,6 +27,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         {
             get { return _context.Cache; }
         }
+
         /// <summary>
         /// simple session wrapper
         /// </summary>
@@ -40,6 +35,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         {
             get { return _context.Session; }
         }
+
         /// <summary>
         /// Stores the specified key value pair in the cache indefinitely, removed only on application reset or explicit removal
         /// </summary>
@@ -54,6 +50,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
             _context.Request.Url.Host.StartsWith("zh.")
             ? "ZH"
             : "EN";
+
         /// <summary>
         /// key/value based storage for all the error messages picked up from resources.xml file
         /// </summary>
@@ -65,6 +62,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 return (Dictionary<string, string>)Cache["R" + sessionID];
             }
         }
+
         /// <summary>
         /// Simple cookie wrapper
         /// </summary>
