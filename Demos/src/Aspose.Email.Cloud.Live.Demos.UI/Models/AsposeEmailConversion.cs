@@ -16,9 +16,9 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Models
         ///</Summary>
         public Response Convert(string fileName, string folderName, string outputType)
         {
-            EmailCloud emailApi = new EmailCloud(Config.Configuration.AppKey, Config.Configuration.AppSID);
+            EmailCloud emailApi = new EmailCloud(clientSecret: Config.Configuration.AppKey, clientId: Config.Configuration.AppSID);
 
-            string filenamepath = Config.Configuration.WorkingDirectory + folderName + "\\"+ fileName;
+            string filenamepath = Config.Configuration.WorkingDirectory + folderName + "\\" + fileName;
 
             string fromFormat = Path.GetExtension(fileName).Substring(1);
             string toFormat = outputType;
@@ -35,11 +35,11 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Models
 
                 outputFileName = Path.GetFileNameWithoutExtension(fileName) + "." + outputType;
 
-                UploadFileRequest ufr = new UploadFileRequest(path: outputFileName, file:result);
+                UploadFileRequest ufr = new UploadFileRequest(path: outputFileName, file: result);
                 emailApi.CloudStorage.File.UploadFile(ufr);
             }
 
-            if (string.IsNullOrEmpty(outputFileName)==false)
+            if (string.IsNullOrEmpty(outputFileName) == false)
             {
                 return new Response
                 {
@@ -48,7 +48,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Models
                     StatusCode = 200,
                 };
             }
-            
+
             return new Response
             {
                 FileName = null,
