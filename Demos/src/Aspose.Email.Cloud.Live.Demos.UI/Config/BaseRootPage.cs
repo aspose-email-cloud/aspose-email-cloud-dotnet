@@ -7,16 +7,15 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
     /// <summary>
     /// The base page for all the other base page types, initializes access to the provider libraries and context
     /// </summary>
-    public class BaseRootPage :  System.Web.UI.Page
+    public class BaseRootPage : System.Web.UI.Page
     {
         private AsposeEmailCloudContext _atcContext;
 
-       
         /// <summary>
         /// Main context object to access all the dcContent specific context info
         /// </summary>
         public AsposeEmailCloudContext AsposeEmailCloudContext
-		{
+        {
             get
             {
                 if (_atcContext == null) _atcContext = new AsposeEmailCloudContext(HttpContext.Current);
@@ -24,21 +23,21 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
             }
         }
 
-		private Dictionary<string, string> _resources;
+        private Dictionary<string, string> _resources;
 
+        /// <summary>
+        /// key/value pair containing all the error messages defined in resources.xml file
+        /// </summary>
+        public Dictionary<string, string> Resources
+        {
+            get
+            {
+                if (_resources == null) _resources = AsposeEmailCloudContext.Resources;
+                return _resources;
+            }
+        }
 
-		/// <summary>
-		/// key/value pair containing all the error messages defined in resources.xml file
-		/// </summary>
-		public Dictionary<string, string> Resources
-		{
-			get
-			{
-				if (_resources == null) _resources = AsposeEmailCloudContext.Resources;
-				return _resources;
-			}
-		}
-		protected override void OnInit(EventArgs e)
+        protected override void OnInit(EventArgs e)
         {
             // Initialize our base class (System.Web,UI.Page) 
             base.OnInit(e);
@@ -64,6 +63,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
                 }
             }
         }
+
         protected override void OnLoad(EventArgs e)
         {
             // Sync the central context store with the first loaded context for this page

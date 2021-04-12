@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Web;
 using System.Web.UI;
 
@@ -14,7 +13,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
         /// Main context object to access all the SybContent specific context info
         /// </summary>
         public AsposeEmailCloudContext AsposeEmailCloudContext
-		{
+        {
             get
             {
                 if (_atContext == null) _atContext = new AsposeEmailCloudContext(HttpContext.Current);
@@ -22,24 +21,24 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Config
             }
         }
 
-		private Dictionary<string, string> _resources;
+        private Dictionary<string, string> _resources;
 
-		/// <summary>
-		/// key/value pair containing all the error messages defined in resources.xml file
-		/// </summary>
-		public Dictionary<string, string> Resources
-		{
-			get
-			{
-				if (_resources == null) _resources = AsposeEmailCloudContext.Resources;
-				return _resources;
-			}
-		}
-
-		protected override void OnLoad(EventArgs e)
+        /// <summary>
+        /// key/value pair containing all the error messages defined in resources.xml file
+        /// </summary>
+        public Dictionary<string, string> Resources
         {
-			// Sync the central context store with the first loaded context for this page
-			AsposeEmailCloudContext.atcc = AsposeEmailCloudContext;
+            get
+            {
+                if (_resources == null) _resources = AsposeEmailCloudContext.Resources;
+                return _resources;
+            }
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            // Sync the central context store with the first loaded context for this page
+            AsposeEmailCloudContext.atcc = AsposeEmailCloudContext;
             base.OnLoad(e);
         }
     }

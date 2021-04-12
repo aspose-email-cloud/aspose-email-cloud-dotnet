@@ -219,3 +219,5 @@ project.lock.json
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
+
+src/Aspose.Email.Cloud.Live.Demos.UI/Aspose.Email.Cloud.Live.Demos.UI.csproj.user
