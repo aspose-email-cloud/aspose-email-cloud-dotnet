@@ -8,6 +8,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Models
         public string FolderId { get; set; }
         public long FileLength { get; set; }
 
-       
+
     }
 }

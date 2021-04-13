@@ -1,11 +1,9 @@
+using Aspose.Email.Cloud.Live.Demos.UI.Config;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Aspose.Email.Cloud.Live.Demos.UI.Config;
 
 
 namespace Aspose.Email.Cloud.Live.Demos.UI
@@ -45,7 +43,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI
         {
             routes.RouteExistingFiles = true;
             routes.Ignore("{resource}.axd/{*pathInfo}");
-            
+
             routes.MapRoute(
                 name: "NoUrl",
                 url: "",
