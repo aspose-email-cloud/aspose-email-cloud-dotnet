@@ -1,53 +1,53 @@
-using System;
-using System.IO;
-using System.Diagnostics;
 using Aspose.Email.Cloud.Live.Demos.UI.Models;
+using System;
+using System.Diagnostics;
+using System.IO;
 
 namespace Aspose.Email.Cloud.Live.Demos.UI.Services
 {
-    public static class FileManager 
+    public static class FileManager
     {
-		
-		public static FileUploadResult UploadFile( System.Web.HttpPostedFileBase postedFile)
-		{
-			FileUploadResult uploadResult = null;
-			string fn = "";
 
-			try
-			{
-				string folderName = Guid.NewGuid().ToString();
+        public static FileUploadResult UploadFile(System.Web.HttpPostedFileBase postedFile)
+        {
+            FileUploadResult uploadResult = null;
+            string fn = "";
 
-				// Prepare a path in which the result file will be
-				string uploadPath = Config.Configuration.WorkingDirectory + "\\" + folderName;
+            try
+            {
+                string folderName = Guid.NewGuid().ToString();
 
-				// Check directroy already exist or not
-				if (!Directory.Exists(uploadPath))
-					Directory.CreateDirectory(uploadPath);
+                // Prepare a path in which the result file will be
+                string uploadPath = Config.Configuration.WorkingDirectory + "\\" + folderName;
 
-				// Check if File is available.
-				if (postedFile != null && postedFile.ContentLength > 0)
-				{
-					fn = System.IO.Path.GetFileName(postedFile.FileName);
+                // Check directroy already exist or not
+                if (!Directory.Exists(uploadPath))
+                    Directory.CreateDirectory(uploadPath);
 
-					postedFile.SaveAs(uploadPath + "\\" + fn);
-				}
+                // Check if File is available.
+                if (postedFile != null && postedFile.ContentLength > 0)
+                {
+                    fn = System.IO.Path.GetFileName(postedFile.FileName);
 
-				// Create response
-				return new FileUploadResult
-				{
-					FileName = fn,
-					FolderId = folderName
-				};
-			}
-			catch (Exception ex)
-			{
-				Debug.WriteLine(ex.Message);
-			}
-			return uploadResult;
-		}
-		
-		
-       
-		
-	}
+                    postedFile.SaveAs(uploadPath + "\\" + fn);
+                }
+
+                // Create response
+                return new FileUploadResult
+                {
+                    FileName = fn,
+                    FolderId = folderName
+                };
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            return uploadResult;
+        }
+
+
+
+
+    }
 }
