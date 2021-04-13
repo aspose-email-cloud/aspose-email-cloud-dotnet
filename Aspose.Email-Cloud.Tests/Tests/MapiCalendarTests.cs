@@ -14,32 +14,49 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
     {
         private static MapiCalendarDto MapiCalendar => new MapiCalendarDto
         {
-            BusyStatus = "Tentative", EndDate = DateTime.Today.AddDays(1),
-            Location = "Some location", StartDate = DateTime.Today, Body = "Some description",
-            BodyType = "PlainText", Subject = "Some summary",
+            BusyStatus = "Tentative",
+            EndDate = DateTime.Today.AddDays(1),
+            Location = "Some location",
+            StartDate = DateTime.Today,
+            Body = "Some description",
+            BodyType = "PlainText",
+            Subject = "Some summary",
             Attendees = new MapiCalendarAttendeesDto
             {
                 AppointmentRecipients = new List<MapiRecipientDto>
                 {
                     new MapiRecipientDto
                     {
-                        AddressType = "SMTP", DisplayName = "Organizer Name",
-                        EmailAddress = "organizer@aspose.com", RecipientType = "MapiTo"
+                        AddressType = "SMTP",
+                        DisplayName = "Organizer Name",
+                        EmailAddress = "organizer@aspose.com",
+                        RecipientType = "MapiTo"
                     },
                     new MapiRecipientDto
                     {
-                        AddressType = "SMTP", DisplayName = "Attendee Name",
-                        EmailAddress = "attendee@aspose.com", RecipientType = "MapiTo"
+                        AddressType = "SMTP",
+                        DisplayName = "Attendee Name",
+                        EmailAddress = "attendee@aspose.com",
+                        RecipientType = "MapiTo"
                     }
                 }
             },
-            ClientIntent = new List<string> {"Manager"},
+            ClientIntent = new List<string>
+            {
+                "Manager"
+            },
             Recurrence = new MapiCalendarEventRecurrenceDto
             {
                 RecurrencePattern = new MapiCalendarDailyRecurrencePatternDto
-                    {OccurrenceCount = 10, WeekStartDay = "Monday"}
+                {
+                    OccurrenceCount = 10,
+                    WeekStartDay = "Monday"
+                }
             },
-            Organizer = new MapiElectronicAddressDto {EmailAddress = "organizer@aspose.com"},
+            Organizer = new MapiElectronicAddressDto
+            {
+                EmailAddress = "organizer@aspose.com"
+            },
         };
 
         [Test]
@@ -55,7 +72,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
         {
             var icsStream =
                 await Api.Mapi.Calendar.AsFileAsync(
-                    new MapiCalendarAsFileRequest("Ics", MapiCalendar));
+                    new MapiCalendarAsFileRequest
+                    {
+                        Format = "Ics",
+                        Value = MapiCalendar
+                    });
             using (var memoryStream = new MemoryStream())
             {
                 await icsStream.CopyToAsync(memoryStream);
@@ -65,7 +86,10 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
 
             icsStream.Seek(0, SeekOrigin.Begin);
             var mapiCalendarConverted =
-                await Api.Mapi.Calendar.FromFileAsync(new MapiCalendarFromFileRequest(icsStream));
+                await Api.Mapi.Calendar.FromFileAsync(new MapiCalendarFromFileRequest
+                {
+                    File = icsStream
+                });
             Assert.AreEqual(MapiCalendar.Location, mapiCalendarConverted.Location);
         }
 

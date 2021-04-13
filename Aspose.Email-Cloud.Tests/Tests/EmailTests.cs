@@ -31,10 +31,24 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                     Name = "some-file.txt"
                 }
             },
-            DeliveryNotificationOptions = new List<string> {"OnSuccess", "Delay"},
-            From = new MailAddress {Address = FromAddress, DisplayName = "From Address"},
+            DeliveryNotificationOptions = new List<string>
+            {
+                "OnSuccess",
+                "Delay"
+            },
+            From = new MailAddress
+            {
+                Address = FromAddress,
+                DisplayName = "From Address"
+            },
             To = new List<MailAddress>
-                {new MailAddress {Address = "to@aspose.com", DisplayName = "To Address"}}
+            {
+                new MailAddress
+                {
+                    Address = "to@aspose.com",
+                    DisplayName = "To Address"
+                }
+            }
         };
 
         [Test]
@@ -43,7 +57,12 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var mapiStream = await Api.Email.AsFileAsync(
                 new EmailAsFileRequest("Msg", Email));
             var emlStream =
-                await Api.Email.ConvertAsync(new EmailConvertRequest("Msg", "Eml", mapiStream));
+                await Api.Email.ConvertAsync(new EmailConvertRequest
+                {
+                    FromFormat = "Msg",
+                    ToFormat = "Eml",
+                    File = mapiStream
+                });
             using (var memoryStream = new MemoryStream())
             {
                 await emlStream.CopyToAsync(memoryStream);
@@ -52,7 +71,11 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             }
 
             emlStream.Seek(0, SeekOrigin.Begin);
-            var dto = await Api.Email.FromFileAsync(new EmailFromFileRequest("Eml", emlStream));
+            var dto = await Api.Email.FromFileAsync(new EmailFromFileRequest
+            {
+                Format = "Eml",
+                File = emlStream
+            });
             Assert.AreEqual(FromAddress, dto.From.Address);
         }
 

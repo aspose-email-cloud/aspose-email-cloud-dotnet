@@ -16,7 +16,9 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
 
         private static CalendarDto Calendar => new CalendarDto
         {
-            Location = Location, Description = "Some description", Summary = "Some summary",
+            Location = Location,
+            Description = "Some description",
+            Summary = "Some summary",
             StartDate = DateTime.UtcNow.AddDays(1).AddHours(12),
             EndDate = DateTime.UtcNow.AddDays(1).AddHours(13),
             Attendees = new List<MailAddress>
@@ -40,7 +42,12 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var calendarFile = await CreateCalendar();
             // ReSharper disable once MethodHasAsyncOverload
             var calendar =
-                Api.Calendar.Get(new CalendarGetRequest(calendarFile, Folder, StorageName));
+                Api.Calendar.Get(new CalendarGetRequest
+                {
+                    FileName = calendarFile,
+                    Folder = Folder,
+                    Storage = StorageName
+                });
             Assert.AreEqual(Location, calendar.Location);
         }
 
@@ -55,14 +62,27 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
             var newFileName = $"{Guid.NewGuid().ToString()}.ics";
             var newPath = $"{Folder}/{newFileName}";
             using (var stream = await Api.CloudStorage.File.DownloadFileAsync(
-                new DownloadFileRequest($"{Folder}/{calendarFile}", StorageName)))
+                new DownloadFileRequest
+                {
+                    Path = $"{Folder}/{calendarFile}",
+                    StorageName = StorageName
+                }))
             {
-                var uploadRequest = new UploadFileRequest(newPath, stream, StorageName);
+                var uploadRequest = new UploadFileRequest
+                {
+                    Path = newPath,
+                    File = stream,
+                    StorageName = StorageName
+                };
                 await Api.CloudStorage.File.UploadFileAsync(uploadRequest);
             }
 
             var newFileExist = await Api.CloudStorage.Storage.ObjectExistsAsync(
-                new ObjectExistsRequest(newPath, StorageName));
+                new ObjectExistsRequest
+                {
+                    Path = newPath,
+                    StorageName = StorageName
+                });
             Assert.IsTrue(newFileExist.Exists);
             Assert.IsFalse(newFileExist.IsFolder);
         }
@@ -83,10 +103,15 @@ namespace Aspose.Email.Cloud.Sdk.Tests.Tests
                     new CalendarAsAlternateRequest(Calendar, "Create", null));
             var email = new EmailDto
             {
-                AlternateViews = new List<AlternateView> {alternate},
+                AlternateViews = new List<AlternateView>
+                {
+                    alternate
+                },
                 From = new MailAddress("From address", "cloud.em@yandex.ru", "Accepted", null),
                 To = new List<MailAddress>
-                    {new MailAddress("To address", "cloud.em@yandex.ru", null, null)},
+                {
+                    new MailAddress("To address", "cloud.em@yandex.ru", null, null)
+                },
                 Subject = "Some subject",
                 Body = "Some body"
             };
