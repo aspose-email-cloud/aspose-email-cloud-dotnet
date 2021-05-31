@@ -103,6 +103,7 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Models
         public bool IsCanonical;
 
         public HowToModel HowToModel { get; set; }
+        public bool HowTo => HowToModel != null;
 
         public ViewModel(BaseController controller, string app)
         {

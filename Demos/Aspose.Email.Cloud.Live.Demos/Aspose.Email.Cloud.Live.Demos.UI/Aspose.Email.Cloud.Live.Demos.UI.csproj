@@ -149,7 +149,12 @@
     <Compile Include="Models\ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AsposeEmailCloudApiService.cs" />
+    <Content Include="img\anywhere.png" />
+    <Content Include="img\aspose-email-app.png" />
+    <Content Include="img\quality.png" />
     <Content Include="Views\Shared\Download.cshtml" />
+    <Content Include="Views\Shared\FooterProduct.cshtml" />
+    <Content Include="Views\Shared\HowTo.cshtml" />
     <None Include="Views\Shared\SaveAs.cshtml" />
   </ItemGroup>
   <ItemGroup>

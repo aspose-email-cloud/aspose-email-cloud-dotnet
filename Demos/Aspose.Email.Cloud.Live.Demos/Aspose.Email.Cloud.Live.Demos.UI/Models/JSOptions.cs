@@ -8,9 +8,6 @@ namespace Aspose.Email.Cloud.Live.Demos.UI.Models
         private readonly ViewModel Parent;
         private Dictionary<string, string> Resources => Parent.Resources;
 
-        //public string AppUrl => Parent.AppUrl;
-        //public string AppName => Parent.AppName;
-
         string GetUIBasePath()
         {
             var request = Parent.Controller.Request;
