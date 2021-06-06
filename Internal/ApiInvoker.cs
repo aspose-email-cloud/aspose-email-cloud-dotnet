@@ -112,75 +112,47 @@ namespace Aspose.Email.Cloud.Sdk
             Stream formDataStream = new MemoryStream();
             var needsCrLf = false;
 
-            if (postParameters.Count > 1)
+            foreach (var param in postParameters)
             {
-                foreach (var param in postParameters)
+                // Thanks to feedback from commenters, add a CRLF to allow multiple parameters to be added.
+                // Skip it on the first parameter, add it to subsequent parameters.
+                if (needsCrLf)
                 {
-                    // Thanks to feedback from commenters, add a CRLF to allow multiple parameters to be added.
-                    // Skip it on the first parameter, add it to subsequent parameters.
-                    if (needsCrLf)
+                    formDataStream.Write(Encoding.UTF8.GetBytes("\r\n"), 0, Encoding.UTF8.GetByteCount("\r\n"));
+                }
+
+                needsCrLf = true;
+
+                if (param.Value is FileInfo fileInfo)
+                {
+                    var postData =
+                        $"--{boundary}\r\nContent-Disposition: form-data; name=\"{param.Key}\"; filename=\"{param.Key}\"\r\nContent-Type: {fileInfo.MimeType}\r\n\r\n";
+                    formDataStream.Write(Encoding.UTF8.GetBytes(postData), 0, Encoding.UTF8.GetByteCount(postData));
+
+                    // Write the file data directly to the Stream, rather than serializing it to a string.
+                    formDataStream.Write(fileInfo.FileContent, 0, fileInfo.FileContent.Length);
+                }
+                else
+                {
+                    string stringData;
+                    if (param.Value is string value)
                     {
-                        formDataStream.Write(Encoding.UTF8.GetBytes("\r\n"), 0, Encoding.UTF8.GetByteCount("\r\n"));
-                    }
-
-                    needsCrLf = true;
-
-                    if (param.Value is FileInfo fileInfo)
-                    {
-                        var postData =
-                            $"--{boundary}\r\nContent-Disposition: form-data; name=\"{param.Key}\"; filename=\"{param.Key}\"\r\nContent-Type: {fileInfo.MimeType}\r\n\r\n";
-                        formDataStream.Write(Encoding.UTF8.GetBytes(postData), 0, Encoding.UTF8.GetByteCount(postData));
-
-                        // Write the file data directly to the Stream, rather than serializing it to a string.
-                        formDataStream.Write(fileInfo.FileContent, 0, fileInfo.FileContent.Length);
+                        stringData = value;
                     }
                     else
                     {
-                        string stringData;
-                        if (param.Value is string value)
-                        {
-                            stringData = value;
-                        }
-                        else
-                        {
-                            stringData = SerializationHelper.Serialize(param.Value);
-                        }
-                        
-                        var postData =
-                            $"--{boundary}\r\nContent-Disposition: form-data; name=\"{param.Key}\"\r\n\r\n{stringData}";
-                        formDataStream.Write(Encoding.UTF8.GetBytes(postData), 0, Encoding.UTF8.GetByteCount(postData));
+                        stringData = SerializationHelper.Serialize(param.Value);
                     }
-                }
-
-                // Add the end of the request.  Start with a newline
-                string footer = "\r\n--" + boundary + "--\r\n";
-                formDataStream.Write(Encoding.UTF8.GetBytes(footer), 0, Encoding.UTF8.GetByteCount(footer));
-            }
-            else
-            {
-                foreach (var param in postParameters)
-                {
-                    if (param.Value is FileInfo fileInfo)
-                    {
-                        // Write the file data directly to the Stream, rather than serializing it to a string.
-                        formDataStream.Write(fileInfo.FileContent, 0, fileInfo.FileContent.Length);
-                    }
-                    else
-                    {
-                        string postData;
-                        if (!(param.Value is string))
-                        {
-                            postData = SerializationHelper.Serialize(param.Value);
-                        }
-                        else
-                        {
-                            postData = (string)param.Value;
-                        }
-
-                        formDataStream.Write(Encoding.UTF8.GetBytes(postData), 0, Encoding.UTF8.GetByteCount(postData));
-                    }
+                    
+                    var postData =
+                        $"--{boundary}\r\nContent-Disposition: form-data; name=\"{param.Key}\"\r\n\r\n{stringData}";
+                    formDataStream.Write(Encoding.UTF8.GetBytes(postData), 0, Encoding.UTF8.GetByteCount(postData));
                 }
             }
+
+            // Add the end of the request.  Start with a newline
+            string footer = "\r\n--" + boundary + "--\r\n";
+            formDataStream.Write(Encoding.UTF8.GetBytes(footer), 0, Encoding.UTF8.GetByteCount(footer));
 
             // Dump the Stream into a byte[]
             formDataStream.Position = 0;
@@ -241,18 +213,9 @@ namespace Aspose.Email.Cloud.Sdk
             byte[] formData = null;
             if (formParams.Count > 0)
             {
-                if (formParams.Count > 1)
-                {
-                    const string formDataBoundary = "Something";
-                    client.ContentType = "multipart/form-data; boundary=" + formDataBoundary;
-                    formData = GetMultipartFormData(formParams, formDataBoundary);
-                }
-                else
-                {
-                    client.ContentType = "multipart/form-data";
-                    formData = GetMultipartFormData(formParams, string.Empty);
-                }
-
+                var formDataBoundary = Guid.NewGuid().ToString();
+                client.ContentType = "multipart/form-data; boundary=" + formDataBoundary;
+                formData = GetMultipartFormData(formParams, formDataBoundary);
                 client.ContentLength = formData.Length;
             }
             else
