@@ -12,7 +12,7 @@
     <RepositoryUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</RepositoryUrl>
     <PackageTags>Aspose.Email Aspose.Email-Cloud Aspose.Total-Cloud Cloud REST API MSG EML MHTML HTML VCF ICS TNEF EMLX PNG JPG JPEG TIFF BMP GIF iCalendar MAPI vCard Email-Conversion Convert Converter Read-Email-Message Calendar Email-Attachment Contact-Card Image-to-vCard Virtual-Card Search-Email SMTP POP3 IMAP EWS WebDav SSLExplicit SSLImplicit SSLAuto iCalendar Email Validation OAuth2.0 Message-Thread iCalendar-Conversion vCard-Conversion Email-Conversion OAuth2.0 MIME Flag-Email Email-Attachment Email-Client Exchange Name-API name-parser name-matcher name BCR contact-scan business-card Outlook EML-to-MSG MSG-to-EML EML-to-MHTML MSG-to-MHTML ICS-to-MSG MSG-to-ICS VCF-to-MSG MSG-to-VCF Disposable-email email-configuration-discovery autodiscover email-configuration</PackageTags>
     <RootNamespace>Aspose.Email.Cloud.Sdk</RootNamespace>
-    <Version>21.4.0.149</Version>
+    <Version>21.4.0.150</Version>
     <AndroidUseIntermediateDesignerFile>False</AndroidUseIntermediateDesignerFile>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' OR '$(TargetFramework)' == 'Xamarin.Mac20' OR '$(TargetFramework)' == 'MonoAndroid60'">
