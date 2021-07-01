@@ -99,6 +99,7 @@ function request(url, data) {
             return myXhr;
         },
         error: function (err) {
+            hideLoader();
             if (err.data !== undefined && err.data.Status !== undefined)
                 showAlert(err.data.Status);
             else

@@ -36,21 +36,26 @@ namespace Aspose.Email.Cloud.Live.Demos.Controllers
         [HttpPost]
         public async Task<Response> Conversion(string outputType)
         {
-            MemoryStream ms = new MemoryStream();
-
             IFormFile postedFile = Request.Form.Files[0];
             string fileName = postedFile.FileName;
-            await postedFile.CopyToAsync(ms);
-            ms.Position = 0;
+            string fileData = string.Empty;
+            string outputFileName = string.Empty;
 
-            string fromFormat = Path.GetExtension(fileName).Substring(1);
-            string toFormat = outputType;
-            var file = ms;
-            string outputFileName = Path.GetFileNameWithoutExtension(fileName) + "." + outputType;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                await postedFile.CopyToAsync(ms);
+                ms.Position = 0;
 
-            MemoryStream convertResult = EmailService.Convert(file, fromFormat, toFormat) as MemoryStream;
+                string fromFormat = Path.GetExtension(fileName).Substring(1);
+                string toFormat = outputType;
+                var file = ms;
+                outputFileName = Path.GetFileNameWithoutExtension(fileName) + "." + outputType;
 
-            string fileData = Convert.ToHexString(convertResult.ToArray());
+                using (MemoryStream convertResult = EmailService.Convert(file, fromFormat, toFormat) as MemoryStream)
+                {
+                    fileData = Convert.ToHexString(convertResult.ToArray());
+                }
+            }
 
             return new Response
             {
