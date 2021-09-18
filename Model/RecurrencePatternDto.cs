@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DateTime? EndDate { get; set; }
 
         /// <summary>
-        /// Represents the day of the week./nEnum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay
+        /// Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay
         /// </summary>
         public string WeekStart { get; set; }
 
@@ -79,7 +79,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="interval">Number of recurrence units.             </param>
         /// <param name="occurs">Number of occurrences of the recurrence pattern.             </param>
         /// <param name="endDate">End date.             </param>
-        /// <param name="weekStart">Represents the day of the week./nEnum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
+        /// <param name="weekStart">Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
         public RecurrencePatternDto(
             int? interval,
             int? occurs,

@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>MapiContactPhotoDto constructor</summary>
-        /// <param name="photoImageFormat">MapiContact photo image format./nEnum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff</param>
+        /// <param name="photoImageFormat">MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff</param>
         /// <param name="base64Data">Photo serialized as base64 string.             </param>
         public MapiContactPhotoDto(
             string photoImageFormat,

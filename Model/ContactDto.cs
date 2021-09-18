@@ -92,7 +92,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string FileAs { get; set; }
 
         /// <summary>
-        /// Specifies how to generate and recompute the value of the dispidFileAs property when other contact name properties change. Coincides MS-OXPROPS revision 16.2 from 7/31/2014./nEnum, available values: Empty, DisplayName, FirstName, LastName, Organization, LastFirstMiddle, OrgLastFirstMiddle, LastFirstMiddleOrg, LastFirstMiddle2, LastFirstMiddle3, OrgLastFirstMiddle2, OrgLastFirstMiddle3, LastFirstMiddleOrg2, LastFirstMiddleOrg3, LastFirstMiddleGen, FirstMiddleLastGen, LastFirstMiddleGen2, BestMatch, AccordingToLocale, None
+        /// Specifies how to generate and recompute the value of the dispidFileAs property when other contact name properties change. Coincides MS-OXPROPS revision 16.2 from 7/31/2014. Enum, available values: Empty, DisplayName, FirstName, LastName, Organization, LastFirstMiddle, OrgLastFirstMiddle, LastFirstMiddleOrg, LastFirstMiddle2, LastFirstMiddle3, OrgLastFirstMiddle2, OrgLastFirstMiddle3, LastFirstMiddleOrg2, LastFirstMiddleOrg3, LastFirstMiddleGen, FirstMiddleLastGen, LastFirstMiddleGen2, BestMatch, AccordingToLocale, None
         /// </summary>
         public string FileAsMapping { get; set; }
 
@@ -102,7 +102,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string FreeBusyLocation { get; set; }
 
         /// <summary>
-        /// Enum defines gender of a person./nEnum, available values: Unspecified, Female, Male
+        /// Enum defines gender of a person. Enum, available values: Unspecified, Female, Male
         /// </summary>
         public string Gender { get; set; }
 
@@ -162,7 +162,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Notes { get; set; }
 
         /// <summary>
-        /// Defines format of a text./nEnum, available values: Text, Html
+        /// Defines format of a text. Enum, available values: Text, Html
         /// </summary>
         public string NotesFormat { get; set; }
 
@@ -237,9 +237,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="emailAddresses">Person's email addresses.             </param>
         /// <param name="events">Person's events.             </param>
         /// <param name="fileAs">A name used for sorting.             </param>
-        /// <param name="fileAsMapping">Specifies how to generate and recompute the value of the dispidFileAs property when other contact name properties change. Coincides MS-OXPROPS revision 16.2 from 7/31/2014./nEnum, available values: Empty, DisplayName, FirstName, LastName, Organization, LastFirstMiddle, OrgLastFirstMiddle, LastFirstMiddleOrg, LastFirstMiddle2, LastFirstMiddle3, OrgLastFirstMiddle2, OrgLastFirstMiddle3, LastFirstMiddleOrg2, LastFirstMiddleOrg3, LastFirstMiddleGen, FirstMiddleLastGen, LastFirstMiddleGen2, BestMatch, AccordingToLocale, None</param>
+        /// <param name="fileAsMapping">Specifies how to generate and recompute the value of the dispidFileAs property when other contact name properties change. Coincides MS-OXPROPS revision 16.2 from 7/31/2014. Enum, available values: Empty, DisplayName, FirstName, LastName, Organization, LastFirstMiddle, OrgLastFirstMiddle, LastFirstMiddleOrg, LastFirstMiddle2, LastFirstMiddle3, OrgLastFirstMiddle2, OrgLastFirstMiddle3, LastFirstMiddleOrg2, LastFirstMiddleOrg3, LastFirstMiddleGen, FirstMiddleLastGen, LastFirstMiddleGen2, BestMatch, AccordingToLocale, None</param>
         /// <param name="freeBusyLocation">URL path from which a client can retrieve free/busy information for the contact as an iCal file.             </param>
-        /// <param name="gender">Enum defines gender of a person./nEnum, available values: Unspecified, Female, Male</param>
+        /// <param name="gender">Enum defines gender of a person. Enum, available values: Unspecified, Female, Male</param>
         /// <param name="givenName">Person's given name.             </param>
         /// <param name="governmentIdNumber">Government id number.             </param>
         /// <param name="hobbies">Person's hobbies.             </param>
@@ -251,7 +251,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="middleName">Person's middle name.             </param>
         /// <param name="nickname">Person's nickname.             </param>
         /// <param name="notes">Notes.             </param>
-        /// <param name="notesFormat">Defines format of a text./nEnum, available values: Text, Html</param>
+        /// <param name="notesFormat">Defines format of a text. Enum, available values: Text, Html</param>
         /// <param name="officeLocation">Office location.             </param>
         /// <param name="organizationalIdNumber">Contains an identifier for the mail user used within the mail user's organization.             </param>
         /// <param name="phoneNumbers">Person's phone numbers.             </param>

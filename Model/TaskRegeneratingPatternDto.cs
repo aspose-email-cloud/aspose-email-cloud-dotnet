@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class TaskRegeneratingPatternDto : RecurrencePatternDto 
     {
         /// <summary>
-        /// Enumerates the types of regenerating pattern./nEnum, available values: Daily, Weekly, Monthly, Yearly
+        /// Enumerates the types of regenerating pattern. Enum, available values: Daily, Weekly, Monthly, Yearly
         /// </summary>
         public string RegeneratingType { get; set; }
 
@@ -55,8 +55,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="interval">Number of recurrence units.             </param>
         /// <param name="occurs">Number of occurrences of the recurrence pattern.             </param>
         /// <param name="endDate">End date.             </param>
-        /// <param name="weekStart">Represents the day of the week./nEnum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
-        /// <param name="regeneratingType">Enumerates the types of regenerating pattern./nEnum, available values: Daily, Weekly, Monthly, Yearly</param>
+        /// <param name="weekStart">Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay</param>
+        /// <param name="regeneratingType">Enumerates the types of regenerating pattern. Enum, available values: Daily, Weekly, Monthly, Yearly</param>
         public TaskRegeneratingPatternDto(
             int? interval,
             int? occurs,

@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public CalendarDto Value { get; set; }
 
         /// <summary>
-        /// iCalendar actions./nEnum, available values: Create, Update, Cancel
+        /// iCalendar actions. Enum, available values: Create, Update, Cancel
         /// </summary>
         public string Action { get; set; }
 
@@ -63,7 +63,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>CalendarAsAlternateRequest constructor</summary>
         /// <param name="value">iCalendar document model             </param>
-        /// <param name="action">iCalendar actions./nEnum, available values: Create, Update, Cancel</param>
+        /// <param name="action">iCalendar actions. Enum, available values: Create, Update, Cancel</param>
         /// <param name="sequenceId">iCalendar sequence id             </param>
         public CalendarAsAlternateRequest(
             CalendarDto value,

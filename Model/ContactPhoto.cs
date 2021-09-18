@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class ContactPhoto 
     {
         /// <summary>
-        /// MapiContact photo image format./nEnum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff
+        /// MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff
         /// </summary>
         public string PhotoImageFormat { get; set; }
 
@@ -66,7 +66,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>ContactPhoto constructor</summary>
-        /// <param name="photoImageFormat">MapiContact photo image format./nEnum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff</param>
+        /// <param name="photoImageFormat">MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff</param>
         /// <param name="base64Data">Photo serialized as base64 string.             </param>
         public ContactPhoto(
             string photoImageFormat,

@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DateTime? Date { get; set; }
 
         /// <summary>
-        /// Day of week./nEnum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+        /// Day of week. Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
         /// </summary>
         public string DayOfWeek { get; set; }
 
@@ -72,7 +72,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public int? Month { get; set; }
 
         /// <summary>
-        /// Day positions, typically found in a month./nEnum, available values: None, First, Second, Third, Fourth, Last
+        /// Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last
         /// </summary>
         public string Position { get; set; }
 
@@ -93,12 +93,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>MapiCalendarTimeZoneRuleDto constructor</summary>
         /// <param name="date">Date and time that indicate when to begin using the Standard/Daylight time.             </param>
-        /// <param name="dayOfWeek">Day of week./nEnum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
+        /// <param name="dayOfWeek">Day of week. Enum, available values: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday</param>
         /// <param name="hour">Hour.             </param>
         /// <param name="milliseconds">Milliseconds.             </param>
         /// <param name="minute">Minute.             </param>
         /// <param name="month">Month.             </param>
-        /// <param name="position">Day positions, typically found in a month./nEnum, available values: None, First, Second, Third, Fourth, Last</param>
+        /// <param name="position">Day positions, typically found in a month. Enum, available values: None, First, Second, Third, Fourth, Last</param>
         /// <param name="seconds">Seconds.             </param>
         /// <param name="year">Year.             </param>
         public MapiCalendarTimeZoneRuleDto(

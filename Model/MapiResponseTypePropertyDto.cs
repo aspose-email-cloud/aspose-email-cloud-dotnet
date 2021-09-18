@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class MapiResponseTypePropertyDto : MapiPropertyDto 
     {
         /// <summary>
-        /// Represents the types of recipient responses that are received for a meeting./nEnum, available values: Unknown, Organizer, Tentative, Accept, Decline, NoResponseReceived
+        /// Represents the types of recipient responses that are received for a meeting. Enum, available values: Unknown, Organizer, Tentative, Accept, Decline, NoResponseReceived
         /// </summary>
         public string Value { get; set; }
 
@@ -53,7 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>MapiResponseTypePropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="value">Represents the types of recipient responses that are received for a meeting./nEnum, available values: Unknown, Organizer, Tentative, Accept, Decline, NoResponseReceived</param>
+        /// <param name="value">Represents the types of recipient responses that are received for a meeting. Enum, available values: Unknown, Organizer, Tentative, Accept, Decline, NoResponseReceived</param>
         public MapiResponseTypePropertyDto(
             MapiPropertyDescriptor descriptor
             ,

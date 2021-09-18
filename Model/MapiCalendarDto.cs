@@ -52,12 +52,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public MapiCalendarAttendeesDto Attendees { get; set; }
 
         /// <summary>
-        /// Enumerates the mapi calendar possible busy status./nEnum, available values: Free, Tentative, Busy, OutOfOffice
+        /// Enumerates the mapi calendar possible busy status. Enum, available values: Free, Tentative, Busy, OutOfOffice
         /// </summary>
         public string BusyStatus { get; set; }
 
         /// <summary>
-        /// Actions the user has taken on this Meeting object.              Items: Enumerates the actions the user can taken on the Meeting object./nEnum, available values: Manager, Delegate, DeletedWithNoResponse, DeletedExceptionWithNoResponse, RespondedTentative, RespondedAccept, RespondedDecline, ModifiedStartTime, ModifiedEndTime, ModifiedLocation, RespondedExceptionDecline, Canceled, ExceptionCanceled
+        /// Actions the user has taken on this Meeting object.              Items: Enumerates the actions the user can taken on the Meeting object. Enum, available values: Manager, Delegate, DeletedWithNoResponse, DeletedExceptionWithNoResponse, RespondedTentative, RespondedAccept, RespondedDecline, ModifiedStartTime, ModifiedEndTime, ModifiedLocation, RespondedExceptionDecline, Canceled, ExceptionCanceled
         /// </summary>
         public List<string> ClientIntent { get; set; }
 
@@ -142,20 +142,20 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="body">Message text.             </param>
         /// <param name="bodyHtml">Gets the BodyRtf of the message converted to HTML, if present, otherwise an empty string.             </param>
         /// <param name="bodyRtf">RTF formatted message text.             </param>
-        /// <param name="bodyType">The content type of message body./nEnum, available values: PlainText, Html, Rtf</param>
+        /// <param name="bodyType">The content type of message body. Enum, available values: PlainText, Html, Rtf</param>
         /// <param name="categories">Contains keywords or categories for the message object.             </param>
         /// <param name="companies">Contains the names of the companies that are associated with an item.             </param>
         /// <param name="itemId">The item id, uses with a server.             </param>
         /// <param name="messageClass">Case-sensitive string that identifies the sender-defined message class, such as IPM.Note. The message class specifies the type, purpose, or content of the message.             </param>
         /// <param name="mileage">Contains the mileage information that is associated with an item.             </param>
         /// <param name="recipients">Recipients of the message.             </param>
-        /// <param name="sensitivity">Contains values that indicate the message sensitivity./nEnum, available values: None, Personal, Private, CompanyConfidential</param>
+        /// <param name="sensitivity">Contains values that indicate the message sensitivity. Enum, available values: None, Personal, Private, CompanyConfidential</param>
         /// <param name="subject">Subject of the message.             </param>
         /// <param name="subjectPrefix">Subject prefix that typically indicates some action on a message, such as \"FW: \" for forwarding.             </param>
         /// <param name="properties">List of MAPI properties             </param>
         /// <param name="appointmentCounterProposal">Value indicating whether a Meeting Response object is a counter proposal.             </param>
         /// <param name="attendees">Attendees             </param>
-        /// <param name="busyStatus">Enumerates the mapi calendar possible busy status./nEnum, available values: Free, Tentative, Busy, OutOfOffice</param>
+        /// <param name="busyStatus">Enumerates the mapi calendar possible busy status. Enum, available values: Free, Tentative, Busy, OutOfOffice</param>
         /// <param name="clientIntent">Actions the user has taken on this Meeting object.             </param>
         /// <param name="endDate">End date and time of the event. If the date is not set, default value for DateTime is returned.             </param>
         /// <param name="endDateTimeZone">Time zone information that indicates the time zone of the EndDate property.             </param>

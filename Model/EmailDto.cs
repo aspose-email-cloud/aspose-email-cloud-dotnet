@@ -67,7 +67,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string BodyEncoding { get; set; }
 
         /// <summary>
-        /// The content type of message body./nEnum, available values: PlainText, Html, Rtf
+        /// The content type of message body. Enum, available values: PlainText, Html, Rtf
         /// </summary>
         public string BodyType { get; set; }
 
@@ -82,7 +82,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DateTime? Date { get; set; }
 
         /// <summary>
-        /// Delivery notifications. Items: Email delivery notification options./nEnum, available values: Delay, Never, None, OnFailure, OnSuccess
+        /// Delivery notifications. Items: Email delivery notification options. Enum, available values: Delay, Never, None, OnFailure, OnSuccess
         /// </summary>
         public List<string> DeliveryNotificationOptions { get; set; }
 
@@ -147,7 +147,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string PreferredTextEncoding { get; set; }
 
         /// <summary>
-        /// Email priority status./nEnum, available values: High, Low, Normal
+        /// Email priority status. Enum, available values: High, Low, Normal
         /// </summary>
         public string Priority { get; set; }
 
@@ -172,7 +172,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public MailAddress Sender { get; set; }
 
         /// <summary>
-        /// Specifies the sensitivity of a MailMessage./nEnum, available values: None, Normal, Personal, Private, CompanyConfidential
+        /// Specifies the sensitivity of a MailMessage. Enum, available values: None, Normal, Personal, Private, CompanyConfidential
         /// </summary>
         public string Sensitivity { get; set; }
 
@@ -222,7 +222,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="bcc">BCC recipients.             </param>
         /// <param name="body">Email message body as plain text.             </param>
         /// <param name="bodyEncoding">Body encoding.             </param>
-        /// <param name="bodyType">The content type of message body./nEnum, available values: PlainText, Html, Rtf</param>
+        /// <param name="bodyType">The content type of message body. Enum, available values: PlainText, Html, Rtf</param>
         /// <param name="cc">CC recipients.             </param>
         /// <param name="date">Message date.             </param>
         /// <param name="deliveryNotificationOptions">Delivery notifications.</param>
@@ -238,12 +238,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="messageId">Message id.             </param>
         /// <param name="originalIsTnef">Indicates whether original EML message is in TNEF format. Read only.             </param>
         /// <param name="preferredTextEncoding">Preferred encoding.             </param>
-        /// <param name="priority">Email priority status./nEnum, available values: High, Low, Normal</param>
+        /// <param name="priority">Email priority status. Enum, available values: High, Low, Normal</param>
         /// <param name="readReceiptTo">Read receipt addresses.             </param>
         /// <param name="replyToList">The list of addresses to reply to for the mail message.             </param>
         /// <param name="reversePath">ReversePath address.             </param>
         /// <param name="sender">Sender address.             </param>
-        /// <param name="sensitivity">Specifies the sensitivity of a MailMessage./nEnum, available values: None, Normal, Personal, Private, CompanyConfidential</param>
+        /// <param name="sensitivity">Specifies the sensitivity of a MailMessage. Enum, available values: None, Normal, Personal, Private, CompanyConfidential</param>
         /// <param name="subject">Message subject.             </param>
         /// <param name="subjectEncoding">Subject encoding.             </param>
         /// <param name="timeZoneOffset">Coordinated Universal Time (UTC) offset for the message dates. This property defines the time zone difference, between the local time and UTC represented as count of ticks (10 000 per millisecond).             </param>

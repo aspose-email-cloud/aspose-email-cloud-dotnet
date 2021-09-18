@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class EnumWithCustomOfPostalAddressCategory 
     {
         /// <summary>
-        /// Address category./nEnum, available values: Home, Work, Custom
+        /// Address category. Enum, available values: Home, Work, Custom
         /// </summary>
         public string Value { get; set; }
 
@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>EnumWithCustomOfPostalAddressCategory constructor</summary>
-        /// <param name="value">Address category./nEnum, available values: Home, Work, Custom</param>
+        /// <param name="value">Address category. Enum, available values: Home, Work, Custom</param>
         /// <param name="description"></param>
         public EnumWithCustomOfPostalAddressCategory(
             string value,

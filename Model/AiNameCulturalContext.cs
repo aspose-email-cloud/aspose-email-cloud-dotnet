@@ -62,7 +62,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Encoding { get; set; }
 
         /// <summary>
-        /// Name writing style./nEnum, available values: Formal, Informal, Legal, Academic
+        /// Name writing style. Enum, available values: Formal, Informal, Legal, Academic
         /// </summary>
         public string Style { get; set; }
 
@@ -76,7 +76,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="location">A geographic code such as an ISO-3166 two letter country code, for example \"FR\" for France             </param>
         /// <param name="script">A writing system code; starts with the ISO-15924 script name             </param>
         /// <param name="encoding">A character encoding name             </param>
-        /// <param name="style">Name writing style./nEnum, available values: Formal, Informal, Legal, Academic</param>
+        /// <param name="style">Name writing style. Enum, available values: Formal, Informal, Legal, Academic</param>
         public AiNameCulturalContext(
             string language,
             string location,

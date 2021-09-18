@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class AiNameGenderHypothesis 
     {
         /// <summary>
-        /// Recognized name gender./nEnum, available values: Male, Female, Unknown
+        /// Recognized name gender. Enum, available values: Male, Female, Unknown
         /// </summary>
         public string Gender { get; set; }
 
@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>AiNameGenderHypothesis constructor</summary>
-        /// <param name="gender">Recognized name gender./nEnum, available values: Male, Female, Unknown</param>
+        /// <param name="gender">Recognized name gender. Enum, available values: Male, Female, Unknown</param>
         /// <param name="score">Hypothesis score             </param>
         public AiNameGenderHypothesis(
             string gender,

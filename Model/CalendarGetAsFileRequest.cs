@@ -48,7 +48,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// Initializes a new instance of the <see cref="CalendarGetAsFileRequest"/> class.
         /// </summary>
         /// <param name="fileName">Calendar document file name.</param>
-        /// <param name="format">File format./nEnum, available values: Ics, Msg</param>
+        /// <param name="format">File format. Enum, available values: Ics, Msg</param>
         /// <param name="storage">Storage name.</param>
         /// <param name="folder">Path to folder in storage.</param>
         public CalendarGetAsFileRequest(string fileName, string format, string storage = null, string folder = null)
@@ -65,7 +65,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string FileName { get; set; }
 
         /// <summary>
-        /// File format./nEnum, available values: Ics, Msg
+        /// File format. Enum, available values: Ics, Msg
         /// </summary>
         public string Format { get; set; }
 

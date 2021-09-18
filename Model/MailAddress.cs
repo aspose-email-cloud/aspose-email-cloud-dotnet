@@ -52,7 +52,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Address { get; set; }
 
         /// <summary>
-        /// Identifies the participation status for the calendar user./nEnum, available values: NeedsAction, Accepted, Declined, Tentative, Delegated
+        /// Identifies the participation status for the calendar user. Enum, available values: NeedsAction, Accepted, Declined, Tentative, Delegated
         /// </summary>
         public string ParticipationStatus { get; set; }
 
@@ -69,7 +69,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>MailAddress constructor</summary>
         /// <param name="displayName">Display name             </param>
         /// <param name="address">Address             </param>
-        /// <param name="participationStatus">Identifies the participation status for the calendar user./nEnum, available values: NeedsAction, Accepted, Declined, Tentative, Delegated</param>
+        /// <param name="participationStatus">Identifies the participation status for the calendar user. Enum, available values: NeedsAction, Accepted, Declined, Tentative, Delegated</param>
         /// <param name="originalAddressString">The original e-mail address string             </param>
         public MailAddress(
             string displayName,

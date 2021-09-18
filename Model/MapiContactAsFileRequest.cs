@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class MapiContactAsFileRequest 
     {
         /// <summary>
-        /// Enumerates contact formats./nEnum, available values: VCard, WebDav, Msg
+        /// Enumerates contact formats. Enum, available values: VCard, WebDav, Msg
         /// </summary>
         public string Format { get; set; }
 
@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>MapiContactAsFileRequest constructor</summary>
-        /// <param name="format">Enumerates contact formats./nEnum, available values: VCard, WebDav, Msg</param>
+        /// <param name="format">Enumerates contact formats. Enum, available values: VCard, WebDav, Msg</param>
         /// <param name="value">MAPI contact model.             </param>
         public MapiContactAsFileRequest(
             string format,

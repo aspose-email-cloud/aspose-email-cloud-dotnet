@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string DisplayName { get; set; }
 
         /// <summary>
-        /// Represent the PR_RECIPIENT_TYPE property which contains the recipient type for a message recipient./nEnum, available values: Unknown, MapiBcc, MapiCc, MapiP1, MapiSubmitted, MapiTo
+        /// Represent the PR_RECIPIENT_TYPE property which contains the recipient type for a message recipient. Enum, available values: Unknown, MapiBcc, MapiCc, MapiP1, MapiSubmitted, MapiTo
         /// </summary>
         public string RecipientType { get; set; }
 
@@ -70,7 +70,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="emailAddress">Email address of the message recipient or sender.             </param>
         /// <param name="addressType">Type of the address of the message recipient or sender.             </param>
         /// <param name="displayName">Display name of the message recipient or sender.             </param>
-        /// <param name="recipientType">Represent the PR_RECIPIENT_TYPE property which contains the recipient type for a message recipient./nEnum, available values: Unknown, MapiBcc, MapiCc, MapiP1, MapiSubmitted, MapiTo</param>
+        /// <param name="recipientType">Represent the PR_RECIPIENT_TYPE property which contains the recipient type for a message recipient. Enum, available values: Unknown, MapiBcc, MapiCc, MapiP1, MapiSubmitted, MapiTo</param>
         public MapiRecipientDto(
             string emailAddress,
             string addressType,

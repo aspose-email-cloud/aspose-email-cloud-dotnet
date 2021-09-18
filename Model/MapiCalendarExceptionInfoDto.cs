@@ -52,7 +52,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Body { get; set; }
 
         /// <summary>
-        /// Enumerates the mapi calendar possible busy status./nEnum, available values: Free, Tentative, Busy, OutOfOffice
+        /// Enumerates the mapi calendar possible busy status. Enum, available values: Free, Tentative, Busy, OutOfOffice
         /// </summary>
         public string BusyStatus { get; set; }
 
@@ -72,7 +72,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Location { get; set; }
 
         /// <summary>
-        /// Enumerates the appointment state./nEnum, available values: Meeting, Received, Canceled
+        /// Enumerates the appointment state. Enum, available values: Meeting, Received, Canceled
         /// </summary>
         public string MeetingType { get; set; }
 
@@ -82,7 +82,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public DateTime? OriginalStartDate { get; set; }
 
         /// <summary>
-        /// Override flags.              Items: Specifies what data in the MapiCalendarOverride structure has a value different from the recurring series./nEnum, available values: Subject, MeetingType, ReminderDelta, Reminder, Location, BusyStatus, Attachment, Subtype, AppointmentColor, ExceptionalBody
+        /// Override flags.              Items: Specifies what data in the MapiCalendarOverride structure has a value different from the recurring series. Enum, available values: Subject, MeetingType, ReminderDelta, Reminder, Location, BusyStatus, Attachment, Subtype, AppointmentColor, ExceptionalBody
         /// </summary>
         public List<string> OverrideFlags { get; set; }
 
@@ -119,11 +119,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>MapiCalendarExceptionInfoDto constructor</summary>
         /// <param name="attachments">Attachments in the recurrence exception.             </param>
         /// <param name="body">Body.             </param>
-        /// <param name="busyStatus">Enumerates the mapi calendar possible busy status./nEnum, available values: Free, Tentative, Busy, OutOfOffice</param>
+        /// <param name="busyStatus">Enumerates the mapi calendar possible busy status. Enum, available values: Free, Tentative, Busy, OutOfOffice</param>
         /// <param name="endDateTime">End date.             </param>
         /// <param name="hasAttachment">Value of this field specifies whether the Exception Embedded Message object contains attachments.             </param>
         /// <param name="location">Location.             </param>
-        /// <param name="meetingType">Enumerates the appointment state./nEnum, available values: Meeting, Received, Canceled</param>
+        /// <param name="meetingType">Enumerates the appointment state. Enum, available values: Meeting, Received, Canceled</param>
         /// <param name="originalStartDate">Original start date.             </param>
         /// <param name="overrideFlags">Override flags.             </param>
         /// <param name="reminderDelta">Reminder delta.             </param>

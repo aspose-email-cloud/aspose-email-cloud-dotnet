@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class MapiPhysicalAddressIndexPropertyDto : MapiPropertyDto 
     {
         /// <summary>
-        /// Identifies the display types for physical addresses./nEnum, available values: None, Home, Business, Other
+        /// Identifies the display types for physical addresses. Enum, available values: None, Home, Business, Other
         /// </summary>
         public string Value { get; set; }
 
@@ -53,7 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>MapiPhysicalAddressIndexPropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="value">Identifies the display types for physical addresses./nEnum, available values: None, Home, Business, Other</param>
+        /// <param name="value">Identifies the display types for physical addresses. Enum, available values: None, Home, Business, Other</param>
         public MapiPhysicalAddressIndexPropertyDto(
             MapiPropertyDescriptor descriptor
             ,

@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string DisplayName { get; set; }
 
         /// <summary>
-        /// Type of connection protocol./nEnum, available values: IMAP, POP3, SMTP, EWS, WebDav
+        /// Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav
         /// </summary>
         public string ProtocolType { get; set; }
 
@@ -62,12 +62,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public int? Port { get; set; }
 
         /// <summary>
-        /// Email account security mode./nEnum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
+        /// Email account security mode. Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto
         /// </summary>
         public string SocketType { get; set; }
 
         /// <summary>
-        /// Supported authentication types.              Items: Email account authentication types./nEnum, available values: NoAuth, OAuth2, PasswordCleartext, PasswordEncrypted, SmtpAfterPop, ClientIpAddress
+        /// Supported authentication types.              Items: Email account authentication types. Enum, available values: NoAuth, OAuth2, PasswordCleartext, PasswordEncrypted, SmtpAfterPop, ClientIpAddress
         /// </summary>
         public List<string> AuthenticationTypes { get; set; }
 
@@ -88,10 +88,10 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>EmailAccountConfig constructor</summary>
         /// <param name="displayName">Email account display name             </param>
-        /// <param name="protocolType">Type of connection protocol./nEnum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
+        /// <param name="protocolType">Type of connection protocol. Enum, available values: IMAP, POP3, SMTP, EWS, WebDav</param>
         /// <param name="host">Email account host.             </param>
         /// <param name="port">Port.             </param>
-        /// <param name="socketType">Email account security mode./nEnum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
+        /// <param name="socketType">Email account security mode. Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto</param>
         /// <param name="authenticationTypes">Supported authentication types.             </param>
         /// <param name="extraInfo">Extra account information.             </param>
         /// <param name="isValidated">Determines that configuration validated. Set to false if validation skipped.             </param>
