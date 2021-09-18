@@ -47,8 +47,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ContactConvertRequest"/> class.
         /// </summary>
-        /// <param name="toFormat">File format to convert to Enum, available values: VCard, WebDav, Msg</param>
-        /// <param name="fromFormat">File format to convert from Enum, available values: VCard, WebDav, Msg</param>
+        /// <param name="toFormat">File format to convert to./nEnum, available values: VCard, WebDav, Msg</param>
+        /// <param name="fromFormat">File format to convert from./nEnum, available values: VCard, WebDav, Msg</param>
         /// <param name="file">File to convert</param>
         public ContactConvertRequest(string toFormat, string fromFormat, System.IO.Stream file)
         {
@@ -58,12 +58,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// File format to convert to Enum, available values: VCard, WebDav, Msg
+        /// File format to convert to./nEnum, available values: VCard, WebDav, Msg
         /// </summary>
         public string ToFormat { get; set; }
 
         /// <summary>
-        /// File format to convert from Enum, available values: VCard, WebDav, Msg
+        /// File format to convert from./nEnum, available values: VCard, WebDav, Msg
         /// </summary>
         public string FromFormat { get; set; }
 

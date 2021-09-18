@@ -48,8 +48,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// Initializes a new instance of the <see cref="ContactGetAsFileRequest"/> class.
         /// </summary>
         /// <param name="fileName">Calendar document file name</param>
-        /// <param name="toFormat">File format Enum, available values: VCard, WebDav, Msg</param>
-        /// <param name="fromFormat">File format to convert from Enum, available values: VCard, WebDav, Msg</param>
+        /// <param name="toFormat">File format./nEnum, available values: VCard, WebDav, Msg</param>
+        /// <param name="fromFormat">File format to convert from./nEnum, available values: VCard, WebDav, Msg</param>
         /// <param name="storage">Storage name</param>
         /// <param name="folder">Path to folder in storage</param>
         public ContactGetAsFileRequest(string fileName, string toFormat, string fromFormat, string storage = null, string folder = null)
@@ -67,12 +67,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string FileName { get; set; }
 
         /// <summary>
-        /// File format Enum, available values: VCard, WebDav, Msg
+        /// File format./nEnum, available values: VCard, WebDav, Msg
         /// </summary>
         public string ToFormat { get; set; }
 
         /// <summary>
-        /// File format to convert from Enum, available values: VCard, WebDav, Msg
+        /// File format to convert from./nEnum, available values: VCard, WebDav, Msg
         /// </summary>
         public string FromFormat { get; set; }
 

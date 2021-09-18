@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class ContactSaveRequest : StorageModelOfContactDto 
     {
         /// <summary>
-        /// Enumerates contact formats. Enum, available values: VCard, WebDav, Msg
+        /// Enumerates contact formats./nEnum, available values: VCard, WebDav, Msg
         /// </summary>
         public string Format { get; set; }
 
@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>ContactSaveRequest constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
-        /// <param name="format">Enumerates contact formats. Enum, available values: VCard, WebDav, Msg</param>
+        /// <param name="format">Enumerates contact formats./nEnum, available values: VCard, WebDav, Msg</param>
         public ContactSaveRequest(
             StorageFileLocation storageFile,
             ContactDto value,

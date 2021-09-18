@@ -47,8 +47,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="EmailConvertRequest"/> class.
         /// </summary>
-        /// <param name="fromFormat">File format to convert to Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
-        /// <param name="toFormat">File format to convert from Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
+        /// <param name="fromFormat">File format to convert from./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
+        /// <param name="toFormat">File format to convert to./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         /// <param name="file">File to convert</param>
         public EmailConvertRequest(string fromFormat, string toFormat, System.IO.Stream file)
         {
@@ -58,12 +58,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// File format to convert to Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
+        /// File format to convert from./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
         public string FromFormat { get; set; }
 
         /// <summary>
-        /// File format to convert from Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
+        /// File format to convert to./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
         public string ToFormat { get; set; }
 

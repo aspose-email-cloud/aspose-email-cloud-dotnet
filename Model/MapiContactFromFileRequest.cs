@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="MapiContactFromFileRequest"/> class.
         /// </summary>
-        /// <param name="format">File format Enum, available values: VCard, WebDav, Msg</param>
+        /// <param name="format">File format./nEnum, available values: VCard, WebDav, Msg</param>
         /// <param name="file">File to convert</param>
         public MapiContactFromFileRequest(string format, System.IO.Stream file)
         {
@@ -56,7 +56,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// File format Enum, available values: VCard, WebDav, Msg
+        /// File format./nEnum, available values: VCard, WebDav, Msg
         /// </summary>
         public string Format { get; set; }
 

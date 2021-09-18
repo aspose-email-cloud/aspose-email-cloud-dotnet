@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CalendarConvertRequest"/> class.
         /// </summary>
-        /// <param name="format">File format. Enum, available values: Ics, Msg</param>
+        /// <param name="format">File format./nEnum, available values: Ics, Msg</param>
         /// <param name="file">File to convert</param>
         public CalendarConvertRequest(string format, System.IO.Stream file)
         {
@@ -56,7 +56,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// File format. Enum, available values: Ics, Msg
+        /// File format./nEnum, available values: Ics, Msg
         /// </summary>
         public string Format { get; set; }
 

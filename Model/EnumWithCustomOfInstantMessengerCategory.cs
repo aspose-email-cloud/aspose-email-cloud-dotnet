@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class EnumWithCustomOfInstantMessengerCategory 
     {
         /// <summary>
-        /// Instant messenger address category. Enum, available values: GoogleTalk, Aim, Yahoo, Skype, Qq, Msn, Icq, Jabber, Custom, ImAddress1, ImAddress2, ImAddress3
+        /// Instant messenger address category./nEnum, available values: GoogleTalk, Aim, Yahoo, Skype, Qq, Msn, Icq, Jabber, Custom, ImAddress1, ImAddress2, ImAddress3
         /// </summary>
         public string Value { get; set; }
 
@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>EnumWithCustomOfInstantMessengerCategory constructor</summary>
-        /// <param name="value">Instant messenger address category. Enum, available values: GoogleTalk, Aim, Yahoo, Skype, Qq, Msn, Icq, Jabber, Custom, ImAddress1, ImAddress2, ImAddress3</param>
+        /// <param name="value">Instant messenger address category./nEnum, available values: GoogleTalk, Aim, Yahoo, Skype, Qq, Msn, Icq, Jabber, Custom, ImAddress1, ImAddress2, ImAddress3</param>
         /// <param name="description"></param>
         public EnumWithCustomOfInstantMessengerCategory(
             string value,

@@ -67,7 +67,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string EndTimeZone { get; set; }
 
         /// <summary>
-        /// Appointment flags. Items: Enumerates iCalendar flags. Enum, available values: None, AllDayEvent
+        /// Appointment flags. Items: Enumerates iCalendar flags./nEnum, available values: None, AllDayEvent
         /// </summary>
         public List<string> Flags { get; set; }
 
@@ -82,17 +82,17 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Location { get; set; }
 
         /// <summary>
-        /// Defines the iCalendar object method type associated with the calendar document. Enum, available values: None, Publish, Request, Reply, Add, Cancel, Refresh, Counter, DeclineCounter
+        /// Defines the iCalendar object method type associated with the calendar document./nEnum, available values: None, Publish, Request, Reply, Add, Cancel, Refresh, Counter, DeclineCounter
         /// </summary>
         public string Method { get; set; }
 
         /// <summary>
-        /// Specifies the BUSY status. Enum, available values: NotDefined, Free, Tentative, Busy, Oof
+        /// Specifies the BUSY status./nEnum, available values: NotDefined, Free, Tentative, Busy, Oof
         /// </summary>
         public string MicrosoftBusyStatus { get; set; }
 
         /// <summary>
-        /// Specifies the INTENDED status. Enum, available values: NotDefined, Free, Tentative, Busy, Oof
+        /// Specifies the INTENDED status./nEnum, available values: NotDefined, Free, Tentative, Busy, Oof
         /// </summary>
         public string MicrosoftIntendedStatus { get; set; }
 
@@ -137,7 +137,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string StartTimeZone { get; set; }
 
         /// <summary>
-        /// Defines the overall status or confirmation for the calendar document. Enum, available values: NotDefined, Cancelled, Tentative, Confirmed
+        /// Defines the overall status or confirmation for the calendar document./nEnum, available values: NotDefined, Cancelled, Tentative, Confirmed
         /// </summary>
         public string Status { get; set; }
 
@@ -147,9 +147,19 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string Summary { get; set; }
 
         /// <summary>
-        /// Specifies whether or not this appointment is intended to be visible in availability searches. Enum, available values: NotDefined, Transparent, Opaque
+        /// Specifies whether or not this appointment is intended to be visible in availability searches./nEnum, available values: NotDefined, Transparent, Opaque
         /// </summary>
         public string Transparency { get; set; }
+
+        /// <summary>
+        /// Defines the access classification for the calendar./nEnum, available values: Public, Private, Confidential, NotDefined
+        /// </summary>
+        public string Class { get; set; }
+
+        /// <summary>
+        /// Specifies the importance of a calendar object./nEnum, available values: Low, Normal, High, NotDefined
+        /// </summary>
+        public string MicrosoftImportance { get; set; }
 
 
         /// <summary>CalendarDto constructor</summary>
@@ -165,9 +175,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="flags">Appointment flags.</param>
         /// <param name="isDescriptionHtml">Indicates if description is in HTML format.</param>
         /// <param name="location">Location.</param>
-        /// <param name="method">Defines the iCalendar object method type associated with the calendar document. Enum, available values: None, Publish, Request, Reply, Add, Cancel, Refresh, Counter, DeclineCounter</param>
-        /// <param name="microsoftBusyStatus">Specifies the BUSY status. Enum, available values: NotDefined, Free, Tentative, Busy, Oof</param>
-        /// <param name="microsoftIntendedStatus">Specifies the INTENDED status. Enum, available values: NotDefined, Free, Tentative, Busy, Oof</param>
+        /// <param name="method">Defines the iCalendar object method type associated with the calendar document./nEnum, available values: None, Publish, Request, Reply, Add, Cancel, Refresh, Counter, DeclineCounter</param>
+        /// <param name="microsoftBusyStatus">Specifies the BUSY status./nEnum, available values: NotDefined, Free, Tentative, Busy, Oof</param>
+        /// <param name="microsoftIntendedStatus">Specifies the INTENDED status./nEnum, available values: NotDefined, Free, Tentative, Busy, Oof</param>
         /// <param name="optionalAttendees">Optional attendees.             </param>
         /// <param name="organizer">Event organizer.             </param>
         /// <param name="recurrenceString">Deprecated, use 'Recurrence' property. String representation of recurrence pattern (See iCalendar RFC, \"Recurrence rule\" section). For example:               For daily recurrence:         \"FREQ=DAILY;COUNT=10;WKST=MO\"                   For monthly recurrence:         \"BYSETPOS=1;BYDAY=MO,TU,WE,TH,FR;FREQ=MONTHLY;INTERVAL=10;WKST=MO\"                   For yearly recurrence:         \"BYMONTHDAY=30;BYMONTH=1;FREQ=YEARLY;WKST=MO\"                   </param>
@@ -176,9 +186,11 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="sequenceId">The sequence id. Read only.</param>
         /// <param name="startDate">Start date.</param>
         /// <param name="startTimeZone">Start time zone.</param>
-        /// <param name="status">Defines the overall status or confirmation for the calendar document. Enum, available values: NotDefined, Cancelled, Tentative, Confirmed</param>
+        /// <param name="status">Defines the overall status or confirmation for the calendar document./nEnum, available values: NotDefined, Cancelled, Tentative, Confirmed</param>
         /// <param name="summary">Summary.</param>
-        /// <param name="transparency">Specifies whether or not this appointment is intended to be visible in availability searches. Enum, available values: NotDefined, Transparent, Opaque</param>
+        /// <param name="transparency">Specifies whether or not this appointment is intended to be visible in availability searches./nEnum, available values: NotDefined, Transparent, Opaque</param>
+        /// <param name="_class">Defines the access classification for the calendar./nEnum, available values: Public, Private, Confidential, NotDefined</param>
+        /// <param name="microsoftImportance">Specifies the importance of a calendar object./nEnum, available values: Low, Normal, High, NotDefined</param>
         public CalendarDto(
             List<Attachment> attachments,
             List<MailAddress> attendees,
@@ -201,7 +213,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
             string startTimeZone,
             string status,
             string summary,
-            string transparency
+            string transparency,
+            string _class,
+            string microsoftImportance
         )
         { 
             Attachments = attachments;
@@ -226,6 +240,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
             Status = status;
             Summary = summary;
             Transparency = transparency;
+            Class = _class;
+            MicrosoftImportance = microsoftImportance;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -257,6 +273,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  Status: ").Append(this.Status).Append("\n");
           sb.Append("  Summary: ").Append(this.Summary).Append("\n");
           sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
+          sb.Append("  Class: ").Append(this.Class).Append("\n");
+          sb.Append("  MicrosoftImportance: ").Append(this.MicrosoftImportance).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

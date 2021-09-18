@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class EnumWithCustomOfUrlCategory 
     {
         /// <summary>
-        /// Url category. Enum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom
+        /// Url category./nEnum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom
         /// </summary>
         public string Value { get; set; }
 
@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>EnumWithCustomOfUrlCategory constructor</summary>
-        /// <param name="value">Url category. Enum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom</param>
+        /// <param name="value">Url category./nEnum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom</param>
         /// <param name="description"></param>
         public EnumWithCustomOfUrlCategory(
             string value,

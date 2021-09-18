@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class EnumWithCustomOfEventCategory 
     {
         /// <summary>
-        /// Event category. Enum, available values: Custom, Birthday, Anniversary
+        /// Event category./nEnum, available values: Custom, Birthday, Anniversary
         /// </summary>
         public string Value { get; set; }
 
@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>EnumWithCustomOfEventCategory constructor</summary>
-        /// <param name="value">Event category. Enum, available values: Custom, Birthday, Anniversary</param>
+        /// <param name="value">Event category./nEnum, available values: Custom, Birthday, Anniversary</param>
         /// <param name="description"></param>
         public EnumWithCustomOfEventCategory(
             string value,

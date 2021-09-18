@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class AiNameMismatch 
     {
         /// <summary>
-        /// Mismatch type. Enum, available values: Unknown, FirstName, MiddleName, MiddleLastName, MiddleNickname, Gender, Context
+        /// Mismatch type./nEnum, available values: Unknown, FirstName, MiddleName, MiddleLastName, MiddleNickname, Gender, Context
         /// </summary>
         public string Category { get; set; }
 
@@ -62,7 +62,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>AiNameMismatch constructor</summary>
-        /// <param name="category">Mismatch type. Enum, available values: Unknown, FirstName, MiddleName, MiddleLastName, MiddleNickname, Gender, Context</param>
+        /// <param name="category">Mismatch type./nEnum, available values: Unknown, FirstName, MiddleName, MiddleLastName, MiddleNickname, Gender, Context</param>
         /// <param name="similarity">Similarity score             </param>
         /// <param name="explanation">Explanation or mismatch subtype             </param>
         public AiNameMismatch(

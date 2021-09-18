@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ContactGetListRequest"/> class.
         /// </summary>
-        /// <param name="format">Contact document format. Enum, available values: VCard, WebDav, Msg</param>
+        /// <param name="format">Contact document format./nEnum, available values: VCard, WebDav, Msg</param>
         /// <param name="folder">Path to folder in storage.</param>
         /// <param name="storage">Storage name.</param>
         /// <param name="itemsPerPage">Count of items on page.</param>
@@ -62,7 +62,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         }
 
         /// <summary>
-        /// Contact document format. Enum, available values: VCard, WebDav, Msg
+        /// Contact document format./nEnum, available values: VCard, WebDav, Msg
         /// </summary>
         public string Format { get; set; }
 

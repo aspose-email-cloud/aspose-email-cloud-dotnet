@@ -87,7 +87,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string DisplayTo { get; set; }
 
         /// <summary>
-        /// Message flags.              Items: Mapi message flags. Enum, available values: MsgFlagZero, MsgFlagRead, MsgFlagUnmodified, MsgFlagSubmit, MsgFlagUnsent, MsgFlagHasAttach, MsgFlagFromMe, MsgFlagAssociated, MsgFlagResend, MsgFlagNotifyRead, MsgFlagNotifyUnread, MsgFlagEverRead, MsgFlagOriginX400, MsgFlagOriginInternet, MsgFlagOriginMiscExt
+        /// Message flags.              Items: Mapi message flags./nEnum, available values: MsgFlagZero, MsgFlagRead, MsgFlagUnmodified, MsgFlagSubmit, MsgFlagUnsent, MsgFlagHasAttach, MsgFlagFromMe, MsgFlagAssociated, MsgFlagResend, MsgFlagNotifyRead, MsgFlagNotifyUnread, MsgFlagEverRead, MsgFlagOriginX400, MsgFlagOriginInternet, MsgFlagOriginMiscExt
         /// </summary>
         public List<string> Flags { get; set; }
 
@@ -102,7 +102,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string InternetMessageId { get; set; }
 
         /// <summary>
-        /// Represents outlook message format. Enum, available values: Ascii, Unicode
+        /// Represents outlook message format./nEnum, available values: Ascii, Unicode
         /// </summary>
         public string MessageFormat { get; set; }
 
@@ -177,14 +177,14 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="body">Message text.             </param>
         /// <param name="bodyHtml">Gets the BodyRtf of the message converted to HTML, if present, otherwise an empty string.             </param>
         /// <param name="bodyRtf">RTF formatted message text.             </param>
-        /// <param name="bodyType">The content type of message body. Enum, available values: PlainText, Html, Rtf</param>
+        /// <param name="bodyType">The content type of message body./nEnum, available values: PlainText, Html, Rtf</param>
         /// <param name="categories">Contains keywords or categories for the message object.             </param>
         /// <param name="companies">Contains the names of the companies that are associated with an item.             </param>
         /// <param name="itemId">The item id, uses with a server.             </param>
         /// <param name="messageClass">Case-sensitive string that identifies the sender-defined message class, such as IPM.Note. The message class specifies the type, purpose, or content of the message.             </param>
         /// <param name="mileage">Contains the mileage information that is associated with an item.             </param>
         /// <param name="recipients">Recipients of the message.             </param>
-        /// <param name="sensitivity">Contains values that indicate the message sensitivity. Enum, available values: None, Personal, Private, CompanyConfidential</param>
+        /// <param name="sensitivity">Contains values that indicate the message sensitivity./nEnum, available values: None, Personal, Private, CompanyConfidential</param>
         /// <param name="subject">Subject of the message.             </param>
         /// <param name="subjectPrefix">Subject prefix that typically indicates some action on a message, such as \"FW: \" for forwarding.             </param>
         /// <param name="properties">List of MAPI properties             </param>
@@ -200,7 +200,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="flags">Message flags.             </param>
         /// <param name="headers">Transport message headers             </param>
         /// <param name="internetMessageId">Internet message id of the message.             </param>
-        /// <param name="messageFormat">Represents outlook message format. Enum, available values: Ascii, Unicode</param>
+        /// <param name="messageFormat">Represents outlook message format./nEnum, available values: Ascii, Unicode</param>
         /// <param name="normalizedSubject">Normalized subject of the message.             </param>
         /// <param name="readReceiptRequested">Value indicating whether the read receipt is requested.</param>
         /// <param name="replyTo">Reply to names.</param>

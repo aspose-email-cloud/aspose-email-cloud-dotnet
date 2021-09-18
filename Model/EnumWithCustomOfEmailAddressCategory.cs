@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class EnumWithCustomOfEmailAddressCategory 
     {
         /// <summary>
-        /// Represents category for an email address. Enum, available values: Home, Work, Custom, Email1, Email2, Email3
+        /// Represents category for an email address./nEnum, available values: Home, Work, Custom, Email1, Email2, Email3
         /// </summary>
         public string Value { get; set; }
 
@@ -57,7 +57,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>EnumWithCustomOfEmailAddressCategory constructor</summary>
-        /// <param name="value">Represents category for an email address. Enum, available values: Home, Work, Custom, Email1, Email2, Email3</param>
+        /// <param name="value">Represents category for an email address./nEnum, available values: Home, Work, Custom, Email1, Email2, Email3</param>
         /// <param name="description"></param>
         public EnumWithCustomOfEmailAddressCategory(
             string value,

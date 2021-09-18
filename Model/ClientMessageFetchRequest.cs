@@ -52,8 +52,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="folder">Account folder to fetch from (should be specified for some protocols such as IMAP)             </param>
         /// <param name="storage">Storage name where account file located.</param>
         /// <param name="accountStorageFolder">Folder in storage where account file located.</param>
-        /// <param name="type">MailMessageBase type. Using this property you can fetch message in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64</param>
-        /// <param name="format">Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
+        /// <param name="type">MailMessageBase type. Using this property you can fetch message in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string)./nEnum, available values: Dto, Mapi, Base64</param>
+        /// <param name="format">Base64 data format. Used only if type is set to Base64./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         public ClientMessageFetchRequest(string messageId, string account, string folder = null, string storage = null, string accountStorageFolder = null, string type = null, string format = null)
         {
             MessageId = messageId;
@@ -91,12 +91,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string AccountStorageFolder { get; set; }
 
         /// <summary>
-        /// MailMessageBase type. Using this property you can fetch message in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).              Enum, available values: Dto, Mapi, Base64
+        /// MailMessageBase type. Using this property you can fetch message in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string)./nEnum, available values: Dto, Mapi, Base64
         /// </summary>
         public string Type { get; set; }
 
         /// <summary>
-        /// Base64 data format. Used only if type is set to Base64. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
+        /// Base64 data format. Used only if type is set to Base64./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
         public string Format { get; set; }
   }

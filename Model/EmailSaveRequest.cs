@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class EmailSaveRequest : StorageModelOfEmailDto 
     {
         /// <summary>
-        /// Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
+        /// Email document format./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
         public string Format { get; set; }
 
@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>EmailSaveRequest constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
-        /// <param name="format">Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
+        /// <param name="format">Email document format./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         public EmailSaveRequest(
             StorageFileLocation storageFile,
             EmailDto value,

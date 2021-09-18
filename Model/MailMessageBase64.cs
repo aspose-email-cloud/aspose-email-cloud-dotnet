@@ -47,7 +47,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string ValueBase64 { get; set; }
 
         /// <summary>
-        /// Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
+        /// Email document format./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft
         /// </summary>
         public string Format { get; set; }
 
@@ -58,7 +58,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>MailMessageBase64 constructor</summary>
         /// <param name="valueBase64">Email message file data encoded to Base64 string.             </param>
-        /// <param name="format">Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
+        /// <param name="format">Email document format./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft</param>
         public MailMessageBase64(
             //,
             string valueBase64,

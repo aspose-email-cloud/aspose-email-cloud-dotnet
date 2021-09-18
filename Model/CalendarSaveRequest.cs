@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class CalendarSaveRequest : StorageModelOfCalendarDto 
     {
         /// <summary>
-        /// Calendar file format Enum, available values: Ics, Msg
+        /// Calendar file format./nEnum, available values: Ics, Msg
         /// </summary>
         public string Format { get; set; }
 
@@ -54,7 +54,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>CalendarSaveRequest constructor</summary>
         /// <param name="storageFile"></param>
         /// <param name="value"></param>
-        /// <param name="format">Calendar file format Enum, available values: Ics, Msg</param>
+        /// <param name="format">Calendar file format./nEnum, available values: Ics, Msg</param>
         public CalendarSaveRequest(
             StorageFileLocation storageFile,
             CalendarDto value,

@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class CalendarReminder 
     {
         /// <summary>
-        /// Defines the action to be invoked when an alarm is triggered. Enum, available values: Audio, Display, Email, Procedure, None
+        /// Defines the action to be invoked when an alarm is triggered./nEnum, available values: Audio, Display, Email, Procedure, None
         /// </summary>
         public string Action { get; set; }
 
@@ -87,7 +87,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>CalendarReminder constructor</summary>
-        /// <param name="action">Defines the action to be invoked when an alarm is triggered. Enum, available values: Audio, Display, Email, Procedure, None</param>
+        /// <param name="action">Defines the action to be invoked when an alarm is triggered./nEnum, available values: Audio, Display, Email, Procedure, None</param>
         /// <param name="attachments">Collection of Reminder Attachments. Could be an absolute URI or Base64 string representation of attachment content             </param>
         /// <param name="attendees">Contains collection of ReminderAttendee objects.             </param>
         /// <param name="description">Provides a more complete description of the alarm.</param>

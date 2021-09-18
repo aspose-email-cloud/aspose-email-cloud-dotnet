@@ -52,7 +52,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public long? Duration { get; set; }
 
         /// <summary>
-        /// Specify the relationship of the alarm trigger with respect to the start or end of the event. Enum, available values: Start, End
+        /// Specify the relationship of the alarm trigger with respect to the start or end of the event./nEnum, available values: Start, End
         /// </summary>
         public string Related { get; set; }
 
@@ -64,7 +64,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <summary>ReminderTrigger constructor</summary>
         /// <param name="dateTime">A trigger set to an absolute date/time.</param>
         /// <param name="duration">Specifies a relative time in ticks for the trigger of the alarm.             </param>
-        /// <param name="related">Specify the relationship of the alarm trigger with respect to the start or end of the event. Enum, available values: Start, End</param>
+        /// <param name="related">Specify the relationship of the alarm trigger with respect to the start or end of the event./nEnum, available values: Start, End</param>
         public ReminderTrigger(
             DateTime? dateTime,
             long? duration,

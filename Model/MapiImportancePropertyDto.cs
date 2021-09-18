@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class MapiImportancePropertyDto : MapiPropertyDto 
     {
         /// <summary>
-        /// Levels of importance for an item. Enum, available values: Low, Normal, High
+        /// Levels of importance for an item./nEnum, available values: Low, Normal, High
         /// </summary>
         public string Value { get; set; }
 
@@ -53,7 +53,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
         /// <summary>MapiImportancePropertyDto constructor</summary>
         /// <param name="descriptor">Property descriptor             </param>
-        /// <param name="value">Levels of importance for an item. Enum, available values: Low, Normal, High</param>
+        /// <param name="value">Levels of importance for an item./nEnum, available values: Low, Normal, High</param>
         public MapiImportancePropertyDto(
             MapiPropertyDescriptor descriptor
             ,
