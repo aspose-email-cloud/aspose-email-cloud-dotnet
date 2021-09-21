@@ -151,6 +151,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>
         public string Transparency { get; set; }
 
+        /// <summary>
+        /// Defines the access classification for the calendar. Enum, available values: Public, Private, Confidential, NotDefined
+        /// </summary>
+        public string Class { get; set; }
+
+        /// <summary>
+        /// Specifies the importance of a calendar object. Enum, available values: Low, Normal, High, NotDefined
+        /// </summary>
+        public string MicrosoftImportance { get; set; }
+
 
         /// <summary>CalendarDto constructor</summary>
         public CalendarDto() {}
@@ -179,6 +189,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="status">Defines the overall status or confirmation for the calendar document. Enum, available values: NotDefined, Cancelled, Tentative, Confirmed</param>
         /// <param name="summary">Summary.</param>
         /// <param name="transparency">Specifies whether or not this appointment is intended to be visible in availability searches. Enum, available values: NotDefined, Transparent, Opaque</param>
+        /// <param name="_class">Defines the access classification for the calendar. Enum, available values: Public, Private, Confidential, NotDefined</param>
+        /// <param name="microsoftImportance">Specifies the importance of a calendar object. Enum, available values: Low, Normal, High, NotDefined</param>
         public CalendarDto(
             List<Attachment> attachments,
             List<MailAddress> attendees,
@@ -201,7 +213,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
             string startTimeZone,
             string status,
             string summary,
-            string transparency
+            string transparency,
+            string _class,
+            string microsoftImportance
         )
         { 
             Attachments = attachments;
@@ -226,6 +240,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
             Status = status;
             Summary = summary;
             Transparency = transparency;
+            Class = _class;
+            MicrosoftImportance = microsoftImportance;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -257,6 +273,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  Status: ").Append(this.Status).Append("\n");
           sb.Append("  Summary: ").Append(this.Summary).Append("\n");
           sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
+          sb.Append("  Class: ").Append(this.Class).Append("\n");
+          sb.Append("  MicrosoftImportance: ").Append(this.MicrosoftImportance).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

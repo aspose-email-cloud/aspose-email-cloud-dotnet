@@ -42,7 +42,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
     public class MapiCalendarWeeklyRecurrencePatternDto : MapiCalendarRecurrencePatternDto 
     {
         /// <summary>
-        /// Days of week at which the event occurs.              Items: Enumerates the days of week of the mapi calendar recurrence pattern Enum, available values: Saturday, Friday, Thursday, Wednesday, Tuesday, Monday, Sunday
+        /// Days of week at which the event occurs.              Items: Enumerates the days of week of the mapi calendar recurrence pattern. Enum, available values: Saturday, Friday, Thursday, Wednesday, Tuesday, Monday, Sunday
         /// </summary>
         public List<string> DayOfWeek { get; set; }
 
@@ -52,15 +52,15 @@ namespace Aspose.Email.Cloud.Sdk.Model
 
 
         /// <summary>MapiCalendarWeeklyRecurrencePatternDto constructor</summary>
-        /// <param name="calendarType">Enumerated the calendar type of the mapi recurrence Enum, available values: Default, CalGregorian, CalGregorianUs, CalJapan, CalTaiwan, CalKorea, CalHijri, CalThai, CalHebrew, CalGregorianMeFrench, CalGregorianArabic, CalGregorianXLitEnglish, CalGregorianXLitFrench, CalLunarJapanese, CalChineseLunar, CalSaka, CalLunarEtoChn, CalLunarEtoKor, CalLunarRokuyou, CalLunarKorean, CalUmAlQura</param>
+        /// <param name="calendarType">Enumerated the calendar type of the mapi recurrence. Enum, available values: Default, CalGregorian, CalGregorianUs, CalJapan, CalTaiwan, CalKorea, CalHijri, CalThai, CalHebrew, CalGregorianMeFrench, CalGregorianArabic, CalGregorianXLitEnglish, CalGregorianXLitFrench, CalLunarJapanese, CalChineseLunar, CalSaka, CalLunarEtoChn, CalLunarEtoKor, CalLunarRokuyou, CalLunarKorean, CalUmAlQura</param>
         /// <param name="deletedInstanceDates">An array of dates, each of which is the original instance date of either a deleted instance or a modified instance for this recurrence.             </param>
         /// <param name="endDate">End date of an item recurrence pattern.             </param>
         /// <param name="endType">Enumerates the ending type for the recurrence. Enum, available values: None, EndAfterDate, EndAfterNOccurrences, NeverEnd</param>
         /// <param name="exceptions">An exception specifies changes to an instance of a recurring series.             </param>
-        /// <param name="frequency">Enumerates mapi calendar recurrence frequency Enum, available values: None, Daily, Weekly, Monthly, Yearly</param>
+        /// <param name="frequency">Enumerates mapi calendar recurrence frequency. Enum, available values: None, Daily, Weekly, Monthly, Yearly</param>
         /// <param name="modifiedInstanceDates">An array of dates, each of which is the date of a modified instance.             </param>
         /// <param name="occurrenceCount">Number of occurrences in a recurrence.             </param>
-        /// <param name="patternType">Enumerates the mapi calendar recurrence pattern types Enum, available values: Day, Week, Month, MonthEnd, MonthNth, HjMonth, HjMonthNth, HjMonthEnd</param>
+        /// <param name="patternType">Enumerates the mapi calendar recurrence pattern types. Enum, available values: Day, Week, Month, MonthEnd, MonthNth, HjMonth, HjMonthNth, HjMonthEnd</param>
         /// <param name="period">Interval at which the meeting pattern repeats.             </param>
         /// <param name="slidingFlag">Defines whether pattern is sliding or not.             </param>
         /// <param name="startDate">Start date of an item recurrence pattern.             </param>

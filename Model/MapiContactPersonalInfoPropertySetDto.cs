@@ -122,7 +122,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public string ComputerNetworkName { get; set; }
 
         /// <summary>
-        /// Gender of the contact Enum, available values: Unspecified, Female, Male
+        /// Gender of the contact. Enum, available values: Unspecified, Female, Male
         /// </summary>
         public string Gender { get; set; }
 
@@ -158,7 +158,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="businessHomePage">Specifies the contact's business web page URL             </param>
         /// <param name="ftpSite">Specifies the contact's File Transfer Protocol (FTP) URL             </param>
         /// <param name="computerNetworkName">Specifies the name of the network to which the contact's computer is connected             </param>
-        /// <param name="gender">Gender of the contact Enum, available values: Unspecified, Female, Male</param>
+        /// <param name="gender">Gender of the contact. Enum, available values: Unspecified, Female, Male</param>
         /// <param name="referredByName">Specifies the name of the person who referred this contact to the user             </param>
         /// <param name="children">Contains a list of names of children.             </param>
         public MapiContactPersonalInfoPropertySetDto(

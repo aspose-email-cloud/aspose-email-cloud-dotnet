@@ -201,6 +201,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>
         public string XMailer { get; set; }
 
+        /// <summary>
+        /// Gets or sets an epilogue text. It is located after the last boundary.
+        /// </summary>
+        public string Epilogue { get; set; }
+
+        /// <summary>
+        /// Gets or sets a preamble text. It is located before the first boundary and generally includes an explanatory note to non-MIME conformant readers.
+        /// </summary>
+        public string Preamble { get; set; }
+
 
         /// <summary>EmailDto constructor</summary>
         public EmailDto() {}
@@ -239,6 +249,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="timeZoneOffset">Coordinated Universal Time (UTC) offset for the message dates. This property defines the time zone difference, between the local time and UTC represented as count of ticks (10 000 per millisecond).             </param>
         /// <param name="to">The address collection that contains the recipients of message.             </param>
         /// <param name="xMailer">The X-Mailer the software that created the e-mail message.             </param>
+        /// <param name="epilogue">Gets or sets an epilogue text. It is located after the last boundary.</param>
+        /// <param name="preamble">Gets or sets a preamble text. It is located before the first boundary and generally includes an explanatory note to non-MIME conformant readers.</param>
         public EmailDto(
             List<AlternateView> alternateViews,
             List<Attachment> attachments,
@@ -271,7 +283,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
             string subjectEncoding,
             long? timeZoneOffset,
             List<MailAddress> to,
-            string xMailer
+            string xMailer,
+            string epilogue,
+            string preamble
         )
         { 
             AlternateViews = alternateViews;
@@ -306,6 +320,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
             TimeZoneOffset = timeZoneOffset;
             To = to;
             XMailer = xMailer;
+            Epilogue = epilogue;
+            Preamble = preamble;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -347,6 +363,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  TimeZoneOffset: ").Append(this.TimeZoneOffset).Append("\n");
           sb.Append("  To: ").Append(this.To).Append("\n");
           sb.Append("  XMailer: ").Append(this.XMailer).Append("\n");
+          sb.Append("  Epilogue: ").Append(this.Epilogue).Append("\n");
+          sb.Append("  Preamble: ").Append(this.Preamble).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

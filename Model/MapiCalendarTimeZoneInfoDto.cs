@@ -67,7 +67,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public MapiCalendarTimeZoneRuleDto StandardDate { get; set; }
 
         /// <summary>
-        /// Individual bit flags that specify information about this TimeZoneRule.              Items: Enumerates the individual bit flags that specify information about TimeZoneRule Enum, available values: TzRuleFlagRecurCurrentTzReg, TzRuleFlagEffectiveTzReg
+        /// Individual bit flags that specify information about this TimeZoneRule.              Items: Enumerates the individual bit flags that specify information about TimeZoneRule. Enum, available values: TzRuleFlagRecurCurrentTzReg, TzRuleFlagEffectiveTzReg
         /// </summary>
         public List<string> TimeZoneFlags { get; set; }
 

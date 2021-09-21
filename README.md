@@ -23,12 +23,16 @@ Aspose.Email Cloud is a REST API for creating email applications that work with 
 - Email configuration discovery.
 - Disposable email address detection.
 
-## Enhancements in Version 21.4
+## Improvements in version 21.9
 
-- IMAP native threads support added to the built-in Email client.
-- New field ClientThreadMoveRequest.SourceFolder added to specify a folder to move a thread from.
+Aspose.Email Cloud 21.9.0 comes with improvements described below:
 
-See [Release notes](https://docs.aspose.cloud/email/aspose-email-cloud-21-4-release-notes/).
+- `EmailCloud.Email.Convert` method documentation fixed.
+- Some documentation improvements.
+- SDK dependencies updated.
+
+See [Release notes](https://docs.aspose.cloud/email/aspose-email-cloud-21-9-release-notes/).
+
 
 
 ## How to use the SDK?

@@ -52,12 +52,12 @@ namespace Aspose.Email.Cloud.Sdk.Model
         public MapiCalendarAttendeesDto Attendees { get; set; }
 
         /// <summary>
-        /// Enumerates the mapi calendar possible busy status Enum, available values: Free, Tentative, Busy, OutOfOffice
+        /// Enumerates the mapi calendar possible busy status. Enum, available values: Free, Tentative, Busy, OutOfOffice
         /// </summary>
         public string BusyStatus { get; set; }
 
         /// <summary>
-        /// Actions the user has taken on this Meeting object.              Items: Enumerates the actions the user can taken on the Meeting object Enum, available values: Manager, Delegate, DeletedWithNoResponse, DeletedExceptionWithNoResponse, RespondedTentative, RespondedAccept, RespondedDecline, ModifiedStartTime, ModifiedEndTime, ModifiedLocation, RespondedExceptionDecline, Canceled, ExceptionCanceled
+        /// Actions the user has taken on this Meeting object.              Items: Enumerates the actions the user can taken on the Meeting object. Enum, available values: Manager, Delegate, DeletedWithNoResponse, DeletedExceptionWithNoResponse, RespondedTentative, RespondedAccept, RespondedDecline, ModifiedStartTime, ModifiedEndTime, ModifiedLocation, RespondedExceptionDecline, Canceled, ExceptionCanceled
         /// </summary>
         public List<string> ClientIntent { get; set; }
 
@@ -155,7 +155,7 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="properties">List of MAPI properties             </param>
         /// <param name="appointmentCounterProposal">Value indicating whether a Meeting Response object is a counter proposal.             </param>
         /// <param name="attendees">Attendees             </param>
-        /// <param name="busyStatus">Enumerates the mapi calendar possible busy status Enum, available values: Free, Tentative, Busy, OutOfOffice</param>
+        /// <param name="busyStatus">Enumerates the mapi calendar possible busy status. Enum, available values: Free, Tentative, Busy, OutOfOffice</param>
         /// <param name="clientIntent">Actions the user has taken on this Meeting object.             </param>
         /// <param name="endDate">End date and time of the event. If the date is not set, default value for DateTime is returned.             </param>
         /// <param name="endDateTimeZone">Time zone information that indicates the time zone of the EndDate property.             </param>
