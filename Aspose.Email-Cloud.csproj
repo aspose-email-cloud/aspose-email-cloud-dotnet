@@ -1,33 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <Title>Aspose.Email Cloud SDK for .NET</Title>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <Description>Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats. It lets developers manipulate message formats such as Outlook MSG, EML and MHT files.</Description>
-        <Copyright>Copyright (c) 2002-2020 Aspose Pty Ltd</Copyright>
-        <PackageProjectUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</PackageProjectUrl>
-        <License>MIT</License>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageIcon>aspose_email-for-cloud-icon.png</PackageIcon>
-        <RepositoryUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</RepositoryUrl>
-        <PackageTags>Aspose.Email Aspose.Email-Cloud Aspose.Total-Cloud Cloud REST API MSG EML MHTML HTML VCF ICS TNEF EMLX PNG JPG JPEG TIFF BMP GIF iCalendar MAPI vCard Email-Conversion Convert Converter Read-Email-Message Calendar Email-Attachment Contact-Card Image-to-vCard Virtual-Card Search-Email SMTP POP3 IMAP EWS WebDav SSLExplicit SSLImplicit SSLAuto iCalendar Email Validation OAuth2.0 Message-Thread iCalendar-Conversion vCard-Conversion Email-Conversion OAuth2.0 MIME Flag-Email Email-Attachment Email-Client Exchange Name-API name-parser name-matcher name BCR contact-scan business-card Outlook EML-to-MSG MSG-to-EML EML-to-MHTML MSG-to-MHTML ICS-to-MSG MSG-to-ICS VCF-to-MSG MSG-to-VCF Disposable-email email-configuration-discovery autodiscover email-configuration</PackageTags>
-        <RootNamespace>Aspose.Email.Cloud.Sdk</RootNamespace>
-        <Version>21.9.0.152</Version>
-        <AndroidUseIntermediateDesignerFile>False</AndroidUseIntermediateDesignerFile>
-    </PropertyGroup>
-    <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
-        <PackageReference Include="RestSharp" Version="106.12.0"/>
-        <None Include="resources\aspose_email-for-cloud-icon.png">
-            <Pack>True</Pack>
-            <PackagePath>
-            </PackagePath>
-        </None>
-        <None Remove="Demos\**"/>
-        <Compile Remove="Demos\**"/>
-        <EmbeddedResource Remove="Demos\**"/>
-        <None Remove="Aspose.Email-Cloud.Tests\**"/>
-        <Compile Remove="Aspose.Email-Cloud.Tests\**"/>
-        <EmbeddedResource Remove="Aspose.Email-Cloud.Tests\**"/>
-    </ItemGroup>
+  <PropertyGroup>
+    <Title>Aspose.Email Cloud SDK for .NET</Title>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats. It lets developers manipulate message formats such as Outlook MSG, EML and MHT files.</Description>
+    <Copyright>Copyright (c) 2002-2020 Aspose Pty Ltd</Copyright>
+    <PackageProjectUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</PackageProjectUrl>
+    <License>MIT</License>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>aspose_email-for-cloud-icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</RepositoryUrl>
+    <PackageTags>Aspose.Email Aspose.Email-Cloud Aspose.Total-Cloud Cloud REST API MSG EML MHTML HTML VCF ICS TNEF EMLX PNG JPG JPEG TIFF BMP GIF iCalendar MAPI vCard Email-Conversion Convert Converter Read-Email-Message Calendar Email-Attachment Contact-Card Image-to-vCard Virtual-Card Search-Email SMTP POP3 IMAP EWS WebDav SSLExplicit SSLImplicit SSLAuto iCalendar Email Validation OAuth2.0 Message-Thread iCalendar-Conversion vCard-Conversion Email-Conversion OAuth2.0 MIME Flag-Email Email-Attachment Email-Client Exchange Name-API name-parser name-matcher name BCR contact-scan business-card Outlook EML-to-MSG MSG-to-EML EML-to-MHTML MSG-to-MHTML ICS-to-MSG MSG-to-ICS VCF-to-MSG MSG-to-VCF Disposable-email email-configuration-discovery autodiscover email-configuration</PackageTags>
+    <RootNamespace>Aspose.Email.Cloud.Sdk</RootNamespace>
+    <Version>21.9.0.0</Version>
+    <AndroidUseIntermediateDesignerFile>False</AndroidUseIntermediateDesignerFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="106.12.0" />
+    <None Include="resources\aspose_email-for-cloud-icon.png">
+      <Pack>True</Pack>
+      <PackagePath>
+      </PackagePath>
+    </None>
+    <None Remove="build\**" />
+    <None Remove="Demos\**" />
+    <None Remove="Aspose.Email-Cloud.Tests\**" />
+    <Compile Remove="Demos\**" />
+    <Compile Remove="build\**" />
+    <Compile Remove="Aspose.Email-Cloud.Tests\**" />
+    <EmbeddedResource Remove="build\**" />
+    <EmbeddedResource Remove="Demos\**" />
+    <EmbeddedResource Remove="Aspose.Email-Cloud.Tests\**" />
+  </ItemGroup>
 </Project>

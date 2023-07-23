@@ -4,12 +4,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Email-Cloud.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Email-Cloud", "Aspose.Email-Cloud.csproj", "{7D3934AC-804A-427D-AB5B-0177749638BE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{44B17B3E-6372-4CA9-AC06-4D46D110D53C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44B17B3E-6372-4CA9-AC06-4D46D110D53C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B17B3E-6372-4CA9-AC06-4D46D110D53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A72777A7-94F8-41AD-8EA7-CEB43A9837F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A72777A7-94F8-41AD-8EA7-CEB43A9837F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A72777A7-94F8-41AD-8EA7-CEB43A9837F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
