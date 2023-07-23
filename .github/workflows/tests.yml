@@ -1,0 +1,21 @@
+name: tests
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Prepare
+        run: chmod u+x ./build.sh
+      - name: Setup .NET Core SDK 6.0.412
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.412
+      - name: Run tests
+        run: ./build.sh Test
+        env:
+          clientId: ${{secrets.CLIENT_ID_PROD}}
+          clientSecret: ${{secrets.CLIENT_SECRET_PROD}}
+          apiBaseUrl: "https://api.aspose.cloud"

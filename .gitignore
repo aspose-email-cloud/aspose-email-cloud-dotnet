@@ -8,3 +8,5 @@ bin/
 private-appsettings.json
 .vscode
 *.DotSettings
+.nuke/build.schema.json
+.nuke/temp
