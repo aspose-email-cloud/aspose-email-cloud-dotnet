@@ -1,0 +1,27 @@
+name: Deploy
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Prepare
+        run: chmod u+x ./build.sh
+      - name: Setup .NET Core SDK 6.0.412
+        uses: actions/setup-dotnet@v3
+      - name: Set up JDK 8
+        uses: actions/setup-java@v2
+        with:
+          dotnet-version: 6.0.412
+      - name: Deploy
+        run: ./build.sh Deploy
+        env:
+          clientId: ${{secrets.CLIENT_ID_PROD}}
+          clientSecret: ${{secrets.CLIENT_SECRET_PROD}}
+          apiBaseUrl: "https://api.aspose.cloud"
+          nuGetApiKey: ${{secrets.NUGET_API_KEY}}

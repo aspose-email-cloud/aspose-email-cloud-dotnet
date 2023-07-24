@@ -10,3 +10,4 @@ private-appsettings.json
 *.DotSettings
 .nuke/build.schema.json
 .nuke/temp
+*.nupkg
