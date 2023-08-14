@@ -34,9 +34,6 @@ using System.Net;
 
 namespace Aspose.Email.Cloud.Sdk
 {
-    #if NET20
-    using RestSharp.Contrib;
-    #endif
     using System;
 
     internal static class UrlHelper

@@ -17,7 +17,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="RestSharp" Version="106.12.0" />
     <None Include="resources\aspose_email-for-cloud-icon.png">
       <Pack>True</Pack>
       <PackagePath>
