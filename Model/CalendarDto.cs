@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="CalendarDto.cs">
-//   Copyright (c) 2016-2020 Aspose.Email for Cloud
+//   Copyright (c) 2016-2023 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -161,6 +161,16 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// </summary>
         public string MicrosoftImportance { get; set; }
 
+        /// <summary>
+        /// HTML representation of description.             
+        /// </summary>
+        public string HtmlDescription { get; set; }
+
+        /// <summary>
+        /// Date/time that the instance of the iCalendar object was created.             
+        /// </summary>
+        public DateTime? DateTimeStamp { get; set; }
+
 
         /// <summary>CalendarDto constructor</summary>
         public CalendarDto() {}
@@ -191,6 +201,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
         /// <param name="transparency">Specifies whether or not this appointment is intended to be visible in availability searches. Enum, available values: NotDefined, Transparent, Opaque</param>
         /// <param name="_class">Defines the access classification for the calendar. Enum, available values: Public, Private, Confidential, NotDefined</param>
         /// <param name="microsoftImportance">Specifies the importance of a calendar object. Enum, available values: Low, Normal, High, NotDefined</param>
+        /// <param name="htmlDescription">HTML representation of description.             </param>
+        /// <param name="dateTimeStamp">Date/time that the instance of the iCalendar object was created.             </param>
         public CalendarDto(
             List<Attachment> attachments,
             List<MailAddress> attendees,
@@ -215,7 +227,9 @@ namespace Aspose.Email.Cloud.Sdk.Model
             string summary,
             string transparency,
             string _class,
-            string microsoftImportance
+            string microsoftImportance,
+            string htmlDescription,
+            DateTime? dateTimeStamp
         )
         { 
             Attachments = attachments;
@@ -242,6 +256,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
             Transparency = transparency;
             Class = _class;
             MicrosoftImportance = microsoftImportance;
+            HtmlDescription = htmlDescription;
+            DateTimeStamp = dateTimeStamp;
         }
         /// <summary>
         /// Get the string presentation of the object
@@ -275,6 +291,8 @@ namespace Aspose.Email.Cloud.Sdk.Model
           sb.Append("  Transparency: ").Append(this.Transparency).Append("\n");
           sb.Append("  Class: ").Append(this.Class).Append("\n");
           sb.Append("  MicrosoftImportance: ").Append(this.MicrosoftImportance).Append("\n");
+          sb.Append("  HtmlDescription: ").Append(this.HtmlDescription).Append("\n");
+          sb.Append("  DateTimeStamp: ").Append(this.DateTimeStamp).Append("\n");
           sb.Append("}\n");
           return sb.ToString();
         }

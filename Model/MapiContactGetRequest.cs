@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright company="Aspose" file="MapiContactGetRequest.cs">
-//   Copyright (c) 2018-2020 Aspose.Email for Cloud
+//   Copyright (c) 2018-2023 Aspose.Email for Cloud
 // </copyright>
 // <summary>
 //   Permission is hereby granted, free of charge, to any person obtaining a copy
