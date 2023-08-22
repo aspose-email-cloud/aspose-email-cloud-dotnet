@@ -13,5 +13,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Nuke.Common" Version="7.0.2" />
+    <PackageDownload Include="ThirdLicense" Version="[1.2.0]" />
   </ItemGroup>
 </Project>

@@ -42,25 +42,25 @@ class Build : NukeBuild
     ///   - JetBrains Rider            https://nuke.build/rider
     ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
     ///   - Microsoft VSCode           https://nuke.build/vscode
-
-    public static int Main () => Execute<Build>(x => x.Test);
+    public static int Main() => Execute<Build>(x => x.Test);
 
     [Parameter("API base URL")] public string ApiBaseUrl = "https://api.aspose.cloud";
 
     [Parameter("Client ID")] public string ClientId = "email.cloud";
     [Parameter("Client Secret")] public string ClientSecret = "email.cloud";
-    
+
     [Parameter("NuGet API key")] public string? NuGetApiKey;
 
     [Solution] public Solution Solution = null!;
 
     AbsolutePath BuildOut => Solution.Directory / "build_out";
 
-    Target Test => _ => _
+    Target Test => t => t
         .Executes(() =>
         {
-            var testProject = Solution.GetProject($"{Solution.Name}.Tests") ?? throw new Exception("Test project not found");
-            DotNetTest(__ => __
+            var testProject = Solution.GetProject($"{Solution.Name}.Tests") ??
+                              throw new Exception("Test project not found");
+            DotNetTest(c => c
                 .SetProjectFile(testProject.Path)
                 .SetFilter("TestCategory=Pipeline")
                 .SetProcessWorkingDirectory(testProject.Directory)
@@ -70,15 +70,26 @@ class Build : NukeBuild
                 .SetProcessEnvironmentVariable("apiBaseUrl", ApiBaseUrl));
         });
 
-    Target Pack => _ => _
-        .DependsOn(Test)
-        .Executes(() => DotNetPack(__ => __
+    [NuGetPackage(packageId: "ThirdLicense", packageExecutable: "ThirdLicense.dll", Framework = "net6.0")]
+    readonly Tool ThirdLicense = null!;
+
+    Target ThirdParty => t => t
+        .Executes(() =>
+        {
+            var outputFile = Solution.Directory / "third_party_licenses.txt";
+            var project = Solution.GetProject(Solution.Name);
+            ThirdLicense($"--project {project} --output {outputFile}");
+        });
+
+    Target Pack => t => t
+        .DependsOn(Test, ThirdParty)
+        .Executes(() => DotNetPack(c => c
             .SetProject(Solution.GetProject(Solution.Name))
             .SetConfiguration(Configuration.Release)
             .SetOutputDirectory(BuildOut)));
 
     [UsedImplicitly]
-    Target Deploy => _ => _
+    Target Deploy => t => t
         .DependsOn(Pack)
         .Requires(() => NuGetApiKey != null)
         .Executes(() =>
@@ -86,7 +97,7 @@ class Build : NukeBuild
             var version = GetVersionString();
             var package = BuildOut / $"{Solution.Name}.{version}.nupkg";
             Assert.True(File.Exists(package), $"Package file with version {version} not found");
-            DotNetNuGetPush(__ => __
+            DotNetNuGetPush(c => c
                 .SetApiKey(NuGetApiKey)
                 .SetSource("nuget.org")
                 .SetTargetPath(package));

@@ -11,3 +11,4 @@ private-appsettings.json
 .nuke/build.schema.json
 .nuke/temp
 *.nupkg
+*.snupkg
