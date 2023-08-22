@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Title>Aspose.Email Cloud SDK for .NET</Title>
     <Description>Aspose.Email Cloud is a REST API for creating email applications that work with common email file formats. It lets developers manipulate message formats such as Outlook MSG, EML and MHT files.</Description>
-    <Copyright>(c) 2001-2020 Aspose Pty Ltd. All Rights Reserved.</Copyright>
+    <Copyright>(c) 2001-2023 Aspose Pty Ltd. All Rights Reserved.</Copyright>
     <PackageProjectUrl>https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet</PackageProjectUrl>
     <License>MIT</License>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -15,7 +15,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>https://docs.aspose.cloud/email/aspose-email-cloud-21-9-release-notes/</PackageReleaseNotes>
     <RootNamespace>Aspose.Email.Cloud.Sdk</RootNamespace>
-    <Version>21.9.0.34</Version>
+    <Version>21.9.0.0</Version>
     <AndroidUseIntermediateDesignerFile>False</AndroidUseIntermediateDesignerFile>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
